@@ -228,6 +228,28 @@ def page(title, body, depth, tail=""):
 """ % (esc(title), CSS, up or "./", up, body, tail)
 
 
+def tv_scenes(slug, n, verse_at):
+    """Write site/tv/<slug>/<n>.json for TV mode and return its site path, or None when the chapter has no pictures.
+
+    A chapter's scene plan is data/tv/<slug>/<NNN>.json: {"scenes": [{"verse": 1, "image": "01-hands.jpg", ...}]},
+    each scene starting at the first word of its verse (the first scene at the chapter's first word). Its pictures
+    are site/pictures/<slug>/<n>/<image>. TV mode is offered only when every picture of the plan is there."""
+    plan = os.path.join(ROOT, "data", "tv", slug, "%03d.json" % n)
+    if not os.path.exists(plan):
+        return None
+    start = dict(verse_at)
+    scenes = []
+    for k, s in enumerate(json.load(open(plan, encoding="utf-8"))["scenes"]):
+        img = "pictures/%s/%d/%s" % (slug, n, s["image"])
+        if s["verse"] not in start or not os.path.exists(os.path.join(OUT, img)):
+            return None
+        scenes.append({"w": 0 if k == 0 else start[s["verse"]], "img": img})
+    rel = "tv/%s/%d.json" % (slug, n)
+    os.makedirs(os.path.join(OUT, "tv", slug), exist_ok=True)
+    json.dump({"verses": verse_at, "scenes": scenes}, open(os.path.join(OUT, rel), "w", encoding="utf-8"))
+    return rel
+
+
 def durations():
     """Length in seconds of each recording, cached in site/audio/durations.json."""
     import subprocess
@@ -276,7 +298,7 @@ def main():
     if os.path.isdir(OUT):
         # keep audio; rebuild everything else
         for name in os.listdir(OUT):
-            if name == "audio":
+            if name in ("audio", "pictures"):
                 continue
             full = os.path.join(OUT, name)
             shutil.rmtree(full) if os.path.isdir(full) else os.remove(full)
@@ -297,6 +319,7 @@ def main():
         meta, blocks = parse(path)
         intro = "%s, chapter %d." % (b["name"], n)
         parts, speech = [], [intro]
+        verse_at, spoken_words = [], len(words(intro))   # where each verse starts, counted in spoken words (for TV mode)
         if meta.get("numbering"):
             parts.append('<div class="numbering">%s</div>' % inline(meta["numbering"]))
         for kind, val in blocks:
@@ -305,10 +328,14 @@ def main():
             elif kind == "t":
                 parts.append('<p class="title">%s</p>' % inline(val, True))
                 speech.append(plain(val))
+                spoken_words += len(words(speech[-1]))
             else:
                 parts.append('<p class="v">%s</p>' % " ".join(
                     '<sup class="n" id="v%d">%d</sup>%s' % (vn, vn, inline(t, True)) for vn, t in val))
-                speech.extend(plain(t) for _, t in val)
+                for vn, t in val:
+                    verse_at.append([vn, spoken_words])
+                    speech.append(plain(t))
+                    spoken_words += len(words(speech[-1]))
         prev_ = chapters[idx - 1] if idx > 0 else None
         next_ = chapters[idx + 1] if idx + 1 < len(chapters) else None
 
@@ -342,6 +369,9 @@ def main():
             buttons = '<button class="btn" id="lr-start" type="button">&#9654; Listen + Read</button> '
         if sync_url:
             data += ' data-sync="../%s"' % sync_url
+        tv_url = tv_scenes(b["slug"], n, verse_at) if has_audio else None
+        if tv_url:
+            buttons += '<a class="btn ghost" href="../tv/?c=%s-%d">TV mode</a> ' % (b["slug"], n)
         if next_:
             data += ' data-next="../%s/%d.html"' % (next_[0]["slug"], next_[1])
             if audio_of(next_):
@@ -368,6 +398,7 @@ def main():
             "duration": lengths.get(audio_url) if has_audio else None,
             "text": "text/%s/%d.txt" % (b["slug"], n),
             "sync": sync_url,
+            "tv": tv_url,
         })
 
     # book pages
@@ -420,6 +451,8 @@ try{var r=JSON.parse(localStorage.getItem('lastRead')||'null');if(r){var a=docum
     listen = open(os.path.join(ROOT, "scripts", "listen.html"), encoding="utf-8").read()
     open(os.path.join(OUT, "listen", "index.html"), "w", encoding="utf-8").write(
         page("Listen", listen, 1))
+    os.makedirs(os.path.join(OUT, "tv"), exist_ok=True)
+    shutil.copyfile(os.path.join(ROOT, "scripts", "tv.html"), os.path.join(OUT, "tv", "index.html"))
     print("Built %d chapters into site/" % len(chapters))
 
 

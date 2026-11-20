@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>TV mode</title>
+<style>
+:root{--bg:#171223;--panel:#1E1830;--text:#E8E2F2;--text-soft:#B3A7C9;--heading:#C9B8EC;--rule:#372C52;--accent:#B79BE8;--num:#7A6A9A;
+--sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--serif:Georgia,"Times New Roman",Times,serif}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:#000;color:var(--text);overflow:hidden;-webkit-text-size-adjust:100%}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+#stage{position:fixed;inset:0;background:#000;overflow:hidden;user-select:none;-webkit-user-select:none}
+#stage.idle{cursor:none}
+
+/* the pictures: two layers that fade into each other, each drifting slowly while it is up */
+.pic{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease;overflow:hidden}
+.pic.on{opacity:1}
+.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:20s linear both;will-change:transform}
+#stage.paused .pic img{animation-play-state:paused}
+@keyframes kb0{from{transform:scale(1.02) translate(-.8%,0)}to{transform:scale(1.1) translate(.8%,-.6%)}}
+@keyframes kb1{from{transform:scale(1.1) translate(.8%,-.4%)}to{transform:scale(1.02) translate(-.6%,0)}}
+@keyframes kb2{from{transform:scale(1.02) translate(.6%,.4%)}to{transform:scale(1.1) translate(-.8%,-.4%)}}
+@keyframes kb3{from{transform:scale(1.1) translate(-.6%,-.6%)}to{transform:scale(1.02) translate(.6%,0)}}
+@media (prefers-reduced-motion:reduce){.pic img{animation:none!important}}
+.scrim{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(to bottom,rgba(0,0,0,.42) 0,rgba(0,0,0,0) 16%,rgba(0,0,0,0) 52%,rgba(8,5,16,.62) 76%,rgba(8,5,16,.9) 100%)}
+
+/* where we are */
+.tag{position:absolute;top:max(3.2vh,env(safe-area-inset-top));left:max(3vw,env(safe-area-inset-left));font-family:var(--sans);font-size:clamp(.72rem,1.25vw,1.15rem);
+  letter-spacing:.14em;text-transform:uppercase;color:#fff;opacity:.86;text-shadow:0 1px 6px rgba(0,0,0,.8)}
+.tag span{color:var(--accent);margin-left:.9em}
+
+/* the words, lighting up as they are spoken */
+.cap{position:absolute;left:50%;bottom:max(9vh,calc(env(safe-area-inset-bottom) + 3.4rem));transform:translateX(-50%);width:min(88vw,34em);
+  font-family:var(--serif);font-size:clamp(1.25rem,3.3vw,3.3rem);line-height:1.32;text-align:center;text-wrap:balance;
+  color:rgba(232,226,242,.58);text-shadow:0 2px 3px rgba(0,0,0,.9),0 0 22px rgba(0,0,0,.75);transition:opacity .22s ease}
+.cap.out{opacity:0}
+.cap .w{transition:color .12s linear}
+.cap .w.on{color:#fff}
+
+/* controls */
+.bar{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:clamp(.5rem,1.4vw,1.1rem);
+  padding:.7rem max(3vw,env(safe-area-inset-right)) max(.8rem,env(safe-area-inset-bottom)) max(3vw,env(safe-area-inset-left));
+  font-family:var(--sans);font-size:.82rem;color:#fff;background:linear-gradient(to top,rgba(0,0,0,.78),rgba(0,0,0,0));
+  transition:opacity .3s ease}
+#stage.idle .bar{opacity:0;pointer-events:none}
+.bar button{width:2.6rem;height:2.6rem;flex:none;display:grid;place-items:center;border-radius:50%}
+.bar button:hover,.bar button:focus-visible{background:rgba(255,255,255,.14);outline:none}
+.bar svg{width:1.5rem;height:1.5rem;fill:none;stroke:#fff;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.bar svg .solid{fill:#fff;stroke:none}
+.bar .t{font-variant-numeric:tabular-nums;min-width:2.6em;text-align:center;opacity:.9}
+.bar #rate{width:auto;border-radius:999px;padding:0 .7rem;font-size:.82rem;font-variant-numeric:tabular-nums}
+.seek{flex:1;min-width:3rem;height:1.6rem;-webkit-appearance:none;appearance:none;background:transparent;cursor:pointer;margin:0}
+.seek::-webkit-slider-runnable-track{height:4px;border-radius:2px;background:linear-gradient(to right,var(--accent) var(--p,0%),rgba(255,255,255,.3) var(--p,0%))}
+.seek::-moz-range-track{height:4px;border-radius:2px;background:rgba(255,255,255,.3)}
+.seek::-moz-range-progress{height:4px;border-radius:2px;background:var(--accent)}
+.seek::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:#fff;margin-top:-5px}
+.seek::-moz-range-thumb{width:14px;height:14px;border:0;border-radius:50%;background:#fff}
+
+/* the opening and closing card */
+.cover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.1rem;text-align:center;padding:6vh 6vw;
+  background:rgba(12,8,22,.62);transition:opacity .5s ease}
+.cover[hidden]{display:none}
+.cover small{font-family:var(--sans);font-size:clamp(.72rem,1.2vw,1rem);letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.cover h1{font-family:var(--serif);font-weight:normal;color:#fff;font-size:clamp(2rem,6vw,5rem);line-height:1.15;margin:0;text-shadow:0 2px 18px rgba(0,0,0,.7)}
+.cover p{font-family:var(--sans);color:var(--text-soft);font-size:clamp(.85rem,1.3vw,1.05rem);margin:0;max-width:30em}
+.cover .go{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--sans);font-size:clamp(1rem,1.5vw,1.25rem);color:#171223;background:var(--accent);
+  border-radius:999px;padding:.8rem 1.6rem .8rem 1.3rem;margin-top:.4rem}
+.cover .go svg{width:1.3em;height:1.3em;fill:#171223}
+.cover .go[disabled]{opacity:.55;cursor:default}
+.cover a{font-family:var(--sans);font-size:.9rem;color:var(--text-soft);text-decoration:underline;text-underline-offset:.2em}
+
+/* a phone held upright: the picture on top, the words below it */
+@media (orientation:portrait){
+  .pic{bottom:auto;height:58vh}
+  .scrim{background:linear-gradient(to bottom,rgba(0,0,0,.42) 0,rgba(0,0,0,0) 12%,rgba(0,0,0,0) 40%,#000 58%,#000 100%)}
+  .cap{bottom:auto;top:58vh;height:calc(42vh - 4.6rem);display:flex;align-items:center;justify-content:center;width:88vw;font-size:clamp(1.35rem,6.4vw,2.3rem)}
+  .cap>span{display:block}
+}
+</style></head>
+<body>
+<div id="stage" class="paused">
+  <div class="pic" id="pa"><img alt=""></div>
+  <div class="pic" id="pb"><img alt=""></div>
+  <div class="scrim"></div>
+  <div class="tag" id="tag"></div>
+  <div class="cap out" id="cap" aria-live="off"><span></span></div>
+  <div class="bar" id="bar">
+    <button id="play" type="button" aria-label="Play"><svg viewBox="0 0 24 24" id="ico"></svg></button>
+    <span class="t" id="cur">0:00</span>
+    <input class="seek" id="seek" type="range" min="0" max="100" step="0.1" value="0" aria-label="Position in chapter">
+    <span class="t" id="rem">0:00</span>
+    <button id="rate" type="button" aria-label="Speed">1&times;</button>
+    <button id="full" type="button" aria-label="Full screen"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+    <button id="close" type="button" aria-label="Back to the chapter"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <div class="cover" id="cover">
+    <small id="c-kick">TV mode</small>
+    <h1 id="c-title">&nbsp;</h1>
+    <p id="c-msg">Loading&hellip;</p>
+    <button class="go" id="c-go" type="button" disabled><svg viewBox="0 0 24 24"><path d="M8 5.2v13.6a.6.6 0 0 0 .9.5l11-6.800a.6.6 0 0 0 0-1L8.900 4.700a.6.6 0 0 0-.900.500z"/></svg><span id="c-go-t">Play</span></button>
+    <a id="c-back" href="../">Back to the chapter</a>
+  </div>
+</div>
+<audio id="audio" preload="auto"></audio>
+<script>
+/* TV mode: a chapter's recording with a picture for each part of it and the words lighting up as they are spoken.
+   It reuses what Listen + Read already has: the recording, the read-aloud text (text/<book>/<n>.txt) and the start
+   time of every word (audio/<book>/<n>.json, made by scripts/align.py). The only new data is tv/<book>/<n>.json:
+   which picture starts at which word. */
+(function(){
+'use strict';
+var d=document,$=function(id){return d.getElementById(id)};
+var stage=$('stage'),audio=$('audio'),cap=$('cap'),capIn=cap.firstElementChild,seek=$('seek'),cover=$('cover');
+var layers=[$('pa'),$('pb')],top=0;
+var PLAY='<path class="solid" d="M8 5.2v13.6a.6.6 0 0 0 .9.5l11-6.800a.6.6 0 0 0 0-1L8.900 4.700a.6.6 0 0 0-.900.500z"/>';
+var PAUSE='<path class="solid" d="M7 5h3.5v14H7zM13.5 5H17v14h-3.500z"/>';
+var WORD=/[^\s—–]*[\p{L}\p{N}_][^\s—–]*/gu;   // the same rule as scripts/build.py
+var LEAD=0.06,RATES=[1,1.1,1.25,1.5];
+var manifest=null,me=null,next=null,words=[],seps=[],T=[],cards=[],scenes=[],verses=[];
+var curScene=-1,curCard=-1,curWord=-1,ready=false,dragging=false,raf=0,idleT=0,wake=null,serial=0,blobUrl=null,ended=false;
+
+function get(k,v){try{var x=localStorage.getItem(k);return x==null?v:JSON.parse(x)}catch(e){return v}}
+function put(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function fmt(s){if(!isFinite(s)||s<0)s=0;s=Math.floor(s);var m=Math.floor(s/60),x=s%60;return m+':'+(x<10?'0':'')+x}
+function rate(){var r=parseFloat(get('tvRate',1));return RATES.indexOf(r)<0?1:r}
+function site(rel){return new URL('../'+rel,location.href).href}
+function json(u){return fetch(u).then(function(r){if(!r.ok)throw new Error(u);return r.json()})}
+
+/* ---- loading a chapter ---- */
+function load(id,auto){
+  var mine=++serial; ready=false; ended=false; audio.pause(); curScene=curCard=curWord=-1;
+  cap.classList.add('out'); $('c-go').disabled=true; $('c-msg').textContent='Loading…'; $('c-go-t').textContent='Play';
+  if(!auto){ cover.hidden=false; }
+  (manifest?Promise.resolve(manifest):json(site('manifest.json'))).then(function(m){
+    manifest=m; var i=-1; for(var k=0;k<m.length;k++) if(m[k].id===id) i=k;
+    me=i<0?null:m[i]; next=(i>=0&&m[i+1]&&m[i+1].tv&&m[i+1].audio)?m[i+1]:null;
+    if(!me) throw new Error('unknown');
+    d.title=me.book+' '+me.chapter+' · TV mode'; $('c-title').textContent=me.book+' '+me.chapter;
+    $('c-back').href=site(me.url); $('c-kick').textContent='TV mode';
+    if(!me.tv||!me.audio) throw new Error('none');
+    return Promise.all([json(site(me.tv)),fetch(site(me.text)).then(function(r){return r.text()}),
+      me.sync?json(site(me.sync)).catch(function(){return null}):null,
+      fetch(site(me.audio)).then(function(r){if(!r.ok)throw new Error('audio');return r.blob()})]);
+  }).then(function(got){
+    if(mine!==serial)return;
+    var tv=got[0],text=got[1],sync=got[2];
+    words=[]; seps=[]; var m,last=0; WORD.lastIndex=0;
+    while((m=WORD.exec(text))){ seps.push(text.slice(last,m.index)); words.push(m[0]); last=m.index+m[0].length; }
+    scenes=tv.scenes||[]; verses=tv.verses||[];
+    if(blobUrl) URL.revokeObjectURL(blobUrl); blobUrl=URL.createObjectURL(got[3]);
+    audio.src=blobUrl; audio.defaultPlaybackRate=rate(); audio.playbackRate=rate();
+    audio.addEventListener('loadedmetadata',function once(){ audio.removeEventListener('loadedmetadata',once);
+      if(mine!==serial)return;
+      T=(sync&&sync.t&&sync.t.length===words.length)?sync.t.map(function(x){return x/100}):spread(audio.duration);
+      makeCards(); scenes.forEach(function(s){ s.at=s.w>0?Math.max(0,T[s.w]-0.35):0; });
+      ready=true; seek.max=audio.duration; paint(); show(0,true); preload(1);
+      $('c-msg').textContent=''; $('c-go').disabled=false;
+      if(auto){ cover.hidden=true; play(); }
+      if('mediaSession' in navigator){ try{navigator.mediaSession.metadata=new MediaMetadata({title:me.book+' '+me.chapter,artist:'The Bible, Freshly Translated',album:'TV mode'});}catch(e){} }
+    });
+    audio.load();
+    history.replaceState(null,'','?c='+encodeURIComponent(id));
+  }).catch(function(e){
+    if(mine!==serial)return;
+    $('c-msg').textContent=e.message==='none'?'This chapter has no pictures yet. They are on the way.':
+      e.message==='unknown'?'That chapter was not found.':'This chapter could not be loaded. Check your connection and try again.';
+  });
+}
+function spread(dur){   // no measured timings: spread the words evenly by their length
+  var total=0,run=0,out=[],k; for(k=0;k<words.length;k++) total+=words[k].length+2;
+  for(k=0;k<words.length;k++){ out.push(dur*run/total); run+=words[k].length+2; } return out;
+}
+function makeCards(){
+  // A card is what is on screen at once: a sentence, or a phrase of a long one. A new picture always starts a new card.
+  var starts={},k; scenes.forEach(function(s){ starts[s.w]=1; }); verses.forEach(function(v){ starts[v[1]]=2; });
+  cards=[]; var from=0,len=0;
+  function cut(to){ if(to>from){ cards.push({a:from,b:to}); from=to; len=0; } }
+  for(k=0;k<words.length;k++){
+    if(starts[k]===1) cut(k);
+    else if(starts[k]===2&&len>=34) cut(k);
+    var w=words[k],dash=/[—–]/.test(seps[k+1]||''); len+=w.length+1;
+    if(/[.?!]["'”’)]*$/.test(w)) cut(k+1);
+    else if(len>=40&&(/[,;:]["'”’)]*$/.test(w)||dash)) cut(k+1);
+    else if(len>=84) cut(k+1);
+  }
+  cut(words.length);
+  // a card of one or two words joins the one before it, unless a picture starts there
+  for(k=cards.length-1;k>0;k--){ var c=cards[k],p=cards[k-1];
+    if(c.b-c.a<3&&starts[c.a]!==1&&textOf(p.a,c.b).length<=96){ p.b=c.b; cards.splice(k,1); } }
+}
+function textOf(a,b){ var s=''; for(var k=a;k<b;k++) s+=(k>a?seps[k]:'')+words[k]; return s; }
+
+/* ---- drawing ---- */
+function find(arr,t,key){ var lo=0,hi=arr.length-1,k=-1; while(lo<=hi){ var mid=(lo+hi)>>1,v=key?arr[mid][key]:arr[mid]; if(v<=t){k=mid;lo=mid+1}else hi=mid-1 } return k; }
+function preload(i){ if(scenes[i]&&!scenes[i]._img){ var im=new Image(); im.src=site(scenes[i].img); scenes[i]._img=im; } }
+function show(i,instant){
+  if(i===curScene||!scenes[i])return; curScene=i; preload(i); preload(i+1);
+  var s=scenes[i],lay=layers[top^1],img=lay.firstElementChild,end=scenes[i+1]?scenes[i+1].at:audio.duration;
+  function up(){ if(curScene!==i)return;
+    img.style.animationName='none'; void img.offsetWidth;
+    img.style.animationDuration=Math.max(8,(end-s.at)/audio.playbackRate+3)+'s'; img.style.animationName='kb'+(i%4);
+    if(instant){ lay.style.transition='none'; layers[top].style.transition='none'; }
+    lay.classList.add('on'); layers[top].classList.remove('on'); top^=1;
+    if(instant){ void lay.offsetWidth; lay.style.transition=''; layers[top^1].style.transition=''; }
+  }
+  img.src=site(s.img);
+  if(img.decode) img.decode().then(up,up); else up();
+}
+function card(i){
+  if(i===curCard)return; curCard=i; curWord=-1;
+  if(i<0){ cap.classList.add('out'); return; }
+  var c=cards[i],h='',k,esc=function(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')};
+  for(k=c.a;k<c.b;k++) h+=(k>c.a?esc(seps[k]):'')+'<span class="w">'+esc(words[k])+'</span>';
+  if(c.b<words.length&&/[—–]/.test(seps[c.b])) h+='—';
+  capIn.innerHTML=h; cap.classList.remove('out');
+}
+function mark(){
+  if(!ready)return;
+  var t=audio.currentTime;
+  var s=find(scenes,t,'at'); if(s<0)s=0; show(s,false);
+  var w=find(T,t+LEAD),ci=-1,k;
+  if(w>=0){ for(k=Math.max(curCard,0);k<cards.length;k++){ if(w<cards[k].b){ ci=k; break; } } if(ci>=0&&w<cards[ci].a){ for(ci=0;ci<cards.length;ci++) if(w<cards[ci].b)break; } }
+  else ci=0;
+  // bring the next card up just before its first word, so the eye is ready for it
+  if(ci>=0&&cards[ci+1]&&T[cards[ci+1].a]-t<0.18) { ci++; }
+  card(ci);
+  if(ci>=0&&w!==curWord){ var sp=capIn.querySelectorAll('.w'),a=cards[ci].a; for(k=0;k<sp.length;k++) sp[k].classList.toggle('on',a+k<=w); curWord=w; }
+  var v=find(verses,w<0?0:w,1); $('tag').innerHTML=(me?me.book+' '+me.chapter:'')+(v>=0?'<span>verse '+verses[v][0]+'</span>':'');
+}
+function paint(){
+  var dur=isFinite(audio.duration)?audio.duration:0,t=dragging?parseFloat(seek.value):audio.currentTime||0;
+  if(!dragging) seek.value=t;
+  seek.style.setProperty('--p',(dur?Math.min(100,t/dur*100):0)+'%');
+  $('cur').textContent=fmt(t); $('rem').textContent='-'+fmt((dur-t)/audio.playbackRate);
+  $('rate').innerHTML=String(rate())+'&times;';
+}
+function loop(){ if(raf)return; raf=requestAnimationFrame(function step(){ raf=0; mark(); if(!audio.paused) raf=requestAnimationFrame(step); }); }
+function icon(){ $('ico').innerHTML=audio.paused?PLAY:PAUSE; $('play').setAttribute('aria-label',audio.paused?'Play':'Pause'); }
+
+/* ---- playing ---- */
+function play(){ if(!ready)return; ended=false; cover.hidden=true; audio.playbackRate=rate(); audio.play().catch(function(){ cover.hidden=false; }); }
+function pause(){ audio.pause(); }
+function jump(t){ if(!ready)return; audio.currentTime=Math.max(0,Math.min(audio.duration-0.2,t)); paint(); mark(); }
+function awake(on){
+  if(!('wakeLock' in navigator))return;
+  if(on){ if(!wake&&!d.hidden) navigator.wakeLock.request('screen').then(function(w){ wake=w; w.addEventListener('release',function(){ if(wake===w) wake=null; }); }).catch(function(){}); }
+  else if(wake){ var w=wake; wake=null; w.release().catch(function(){}); }
+}
+function poke(){ stage.classList.remove('idle'); clearTimeout(idleT); if(!audio.paused) idleT=setTimeout(function(){ if(!audio.paused&&!dragging) stage.classList.add('idle'); },2800); }
+function full(){
+  var el=d.documentElement;
+  if(d.fullscreenElement){ d.exitFullscreen(); return; }
+  var p=el.requestFullscreen?el.requestFullscreen():null;
+  if(p&&p.then) p.then(function(){ try{ screen.orientation.lock('landscape').catch(function(){}); }catch(e){} }).catch(function(){});
+}
+audio.addEventListener('play',function(){ stage.classList.remove('paused'); icon(); loop(); awake(true); poke(); });
+audio.addEventListener('pause',function(){ stage.classList.add('paused'); icon(); awake(false); poke(); });
+audio.addEventListener('timeupdate',function(){ paint(); mark(); });
+audio.addEventListener('seeked',function(){ paint(); mark(); });
+audio.addEventListener('ended',function(){
+  ended=true;
+  if(next){ load(next.id,true); return; }
+  $('c-kick').textContent='End of '+me.book+' '+me.chapter; $('c-msg').textContent='Pictures for more chapters are on the way.';
+  $('c-go-t').textContent='Play again'; cover.hidden=false; stage.classList.remove('idle');
+});
+$('play').onclick=function(){ audio.paused?play():pause(); };
+$('c-go').onclick=function(){ if(ended) audio.currentTime=0; play(); if(matchMedia('(pointer:coarse)').matches&&!d.fullscreenElement) full(); };
+$('full').onclick=full;
+$('close').onclick=function(){ location.href=me?site(me.url):'../'; };
+$('rate').onclick=function(){ var r=RATES[(RATES.indexOf(rate())+1)%RATES.length]; put('tvRate',r); audio.defaultPlaybackRate=r; audio.playbackRate=r; paint(); };
+seek.addEventListener('input',function(){ dragging=true; paint(); });
+seek.addEventListener('change',function(){ var v=parseFloat(seek.value); dragging=false; jump(v); });
+['mousemove','touchstart','keydown'].forEach(function(ev){ d.addEventListener(ev,poke,{passive:true}); });
+stage.addEventListener('click',function(e){ if(e.target.closest('.bar')||e.target.closest('.cover'))return;
+  if(stage.classList.contains('idle')) poke(); else if(!audio.paused) stage.classList.add('idle'); });
+d.addEventListener('keydown',function(e){ if(/INPUT/.test(e.target.tagName))return;
+  if(e.key===' '||e.key==='Enter'||e.key==='MediaPlayPause'){ if(e.target.tagName==='BUTTON'&&e.key!=='MediaPlayPause')return; e.preventDefault(); audio.paused?play():pause(); }
+  else if(e.key==='ArrowLeft') jump(audio.currentTime-10); else if(e.key==='ArrowRight') jump(audio.currentTime+10);
+  else if(e.key==='f'||e.key==='F') full(); });
+d.addEventListener('visibilitychange',function(){ if(!d.hidden&&!audio.paused) awake(true); });
+if('mediaSession' in navigator){
+  var set=function(a,f){try{navigator.mediaSession.setActionHandler(a,f)}catch(e){}};
+  set('play',play); set('pause',pause);
+  set('seekbackward',function(){ jump(audio.currentTime-10); }); set('seekforward',function(){ jump(audio.currentTime+10); });
+}
+icon();
+var id=new URLSearchParams(location.search).get('c');
+if(id) load(id,false); else { $('c-msg').textContent='Open a chapter and choose TV mode.'; }
+})();
+</script>
+</body></html>

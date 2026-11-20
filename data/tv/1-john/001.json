@@ -1,0 +1,45 @@
+{
+ "note": "Hand-made test, 2026-11-20. Each scene starts at the first word of its verse (the first at the chapter's first word). Pictures: OpenAI gpt-image-2.5-sunburst, medium, 1920x1088, about 1 cent each; 03 was made from 01 so the writer keeps his face. Rules: only what the verses say, no figure for God, nothing glowing, no text in the picture.",
+ "scenes": [
+  {
+   "verse": 1,
+   "image": "01-hands.jpg",
+   "shows": "An old man looks at his own open hands, remembering what they touched."
+  },
+  {
+   "verse": 2,
+   "image": "02-revealed.jpg",
+   "shows": "Men and women on a lake shore watch the sunrise."
+  },
+  {
+   "verse": 3,
+   "image": "03-writing.jpg",
+   "shows": "The same old man writes the letter, two companions beside him, all glad."
+  },
+  {
+   "verse": 5,
+   "image": "04-light.jpg",
+   "shows": "Clear sunlight over hills and a lake; nothing dark, no one in it."
+  },
+  {
+   "verse": 6,
+   "image": "05-darkness.jpg",
+   "shows": "A man walks alone into a dark alley, leaving a lit doorway behind."
+  },
+  {
+   "verse": 7,
+   "image": "06-walking-in-light.jpg",
+   "shows": "A group of men and women walk together in bright morning light."
+  },
+  {
+   "verse": 8,
+   "image": "07-cleansed.jpg",
+   "shows": "A man kneels at a stream and washes his face in clean water."
+  },
+  {
+   "verse": 10,
+   "image": "08-closed-scroll.jpg",
+   "shows": "A closed scroll lies untouched on a table; the daylight does not reach it."
+  }
+ ]
+}
