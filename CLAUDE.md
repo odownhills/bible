@@ -8,8 +8,9 @@ Accuracy matters more than speed.
 ## How much to translate
 `python3 scripts/next.py` prints this run's plan: one line per chapter (`<slug> <n> <Book> <estimated words>`),
 whole chapters adding up to this run's share of the pace. The pace is set in `data/settings.json`:
-`"words_per_week"` (Obay's weekly word target) and `"runs_per_day"` (how many scheduled runs share a
-day; they are spaced more than 5 hours apart so each falls in its own usage window).
+`"words_per_week"` (Obay's weekly word target) and `"runs_per_week"` (how many scheduled runs
+there are in a week: four each weekday and one each weekend night, spaced so each falls in its
+own 5-hour usage window).
 Only Obay changes these. If the plan prints `DONE`, stop.
 
 ## Steps, repeated for each chapter in the plan, in order

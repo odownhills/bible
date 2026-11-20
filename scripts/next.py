@@ -6,8 +6,9 @@ Prints one line per chapter to translate in this run, in order:
 
 The pace is set in data/settings.json:
     "words_per_week": how many words to translate per week (Obay's setting)
-    "runs_per_day":   how many scheduled runs share each day's words
-Each run's target is words_per_week / 7 / runs_per_day. Whole chapters are added in canonical
+    "runs_per_week":  how many scheduled runs there are in a week
+                      (4 each weekday + 1 each weekend day = 22)
+Each run's target is words_per_week / runs_per_week. Whole chapters are added in canonical
 order, stopping at whichever chapter boundary lands closest to the target (always at least one
 chapter). Estimates are each chapter's word count in a standard English Bible.
 Prints DONE when all 1,189 chapters exist.
@@ -18,7 +19,7 @@ Prints DONE when all 1,189 chapters exist.
 import json, os, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 cfg = json.load(open(os.path.join(ROOT, "data", "settings.json")))
-target = cfg["words_per_week"] / 7 / cfg.get("runs_per_day", 1)
+target = cfg["words_per_week"] / cfg["runs_per_week"]
 todo = [(b["slug"], n, b["name"], b["words"][n - 1])
         for b in json.load(open(os.path.join(ROOT, "data", "books.json")))
         for n in range(1, b["chapters"] + 1)
