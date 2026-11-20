@@ -15,7 +15,7 @@ Every new recording is checked word for word against the chapter before it is ke
 model now and then invents, repeats or skips lines). The check listens with scripts/align.py and
 needs `pip install sherpa-onnx numpy`; without those it is skipped with a warning. A recording that
 fails is thrown away and counted in site/audio/rejected.json; the chapter is tried again on the
-next run, up to 3 times. To record a chapter again, add its id (for example "genesis-5") to the
+next run, in shorter pieces, up to 3 times. To record a chapter again, add its id (for example "genesis-5") to the
 list in site/audio/redo.json: the old recording stays until a new one passes the check.
 
     python3 scripts/tts.py --max 5
@@ -207,7 +207,10 @@ def main():
         out = os.path.join(ROOT, "site", "audio", slug, "%d.mp3" % c["chapter"])
         text = open(os.path.join(ROOT, "site", c["text"]), encoding="utf-8").read()
         try:
-            pieces = [speak(p, key, state) for p in chunks(text, CHUNK)]
+            # A chapter whose last take failed the check is read in shorter pieces: the voice loses
+            # its place less often in short passages (long lists of names and ages trip it up).
+            size = (CHUNK, 1600, 900)[min(rejected.get(c["id"], 0), 2)]
+            pieces = [speak(p, key, state) for p in chunks(text, size)]
         except OutOfQuota:
             print("Gemini's free daily limit is used up; %s %d and later chapters will be recorded on the next run."
                   % (c["book"], c["chapter"]))
