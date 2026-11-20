@@ -65,6 +65,8 @@ def speak(text, key):
         except urllib.error.HTTPError as e:
             msg = e.read().decode(errors="replace")[:500]
             if e.code in (400, 401, 403) and ("API key" in msg or "API_KEY" in msg or "blocked" in msg.lower() or e.code != 400):
+                if "--strict" in sys.argv:
+                    raise SystemExit("Gemini refused the request (HTTP %s): %s" % (e.code, msg))
                 print("No working Gemini key or host not allowed (HTTP %s); skipping audio." % e.code)
                 raise SystemExit(0)
             if e.code == 429 and ("per day" in msg.lower() or "PerDay" in msg):

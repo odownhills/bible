@@ -1,0 +1,43 @@
+name: Record chapter audio
+
+# Records Gemini voice audio for chapters that have text but no recording yet,
+# then commits the mp3 files so the site's Listen page can play them.
+on:
+  push:
+    branches: [main]
+    paths: ["translations/**"]
+  schedule:
+    - cron: "23 14 * * *"   # daily catch-up, 6:23 AM Pacific
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audio
+  cancel-in-progress: false
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then echo "No GEMINI_API_KEY secret yet; nothing to do."; exit 0; fi
+          sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || true
+          python3 scripts/build.py
+          python3 scripts/tts.py --max 3 --strict
+          python3 scripts/build.py
+      - name: Publish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A site
+          if git diff --cached --quiet; then echo "No new audio."; exit 0; fi
+          git commit -m "Add chapter audio"
+          git pull --rebase origin main
+          git push origin main
