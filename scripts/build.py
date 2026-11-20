@@ -157,6 +157,35 @@ def page(title, body, depth):
 """ % (esc(title), CSS, up or "./", up, body)
 
 
+def durations():
+    """Length in seconds of each recording, cached in site/audio/durations.json."""
+    import subprocess
+    adir = os.path.join(OUT, "audio")
+    cache_path = os.path.join(adir, "durations.json")
+    cache = json.load(open(cache_path)) if os.path.exists(cache_path) else {}
+    fresh = {}
+    for base, _, files in os.walk(adir):
+        for f in files:
+            if not f.endswith(".mp3"):
+                continue
+            full = os.path.join(base, f)
+            rel = os.path.relpath(full, OUT).replace(os.sep, "/")
+            size = os.path.getsize(full)
+            old = cache.get(rel)
+            if old and old[0] == size:
+                fresh[rel] = old
+                continue
+            try:
+                out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                                      "-of", "csv=p=0", full], capture_output=True, text=True).stdout.strip()
+                fresh[rel] = [size, round(float(out))]
+            except (OSError, ValueError):
+                fresh[rel] = [size, None]
+    if fresh != cache and os.path.isdir(adir):
+        json.dump(fresh, open(cache_path, "w"), sort_keys=True)
+    return {k: v[1] for k, v in fresh.items()}
+
+
 def collect():
     """Ordered list of available chapters across the canon."""
     chapters = []
@@ -183,6 +212,7 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     have = {(b["slug"], n) for b, n, _ in chapters}
     manifest = []
+    lengths = durations()
 
     for idx, (b, n, path) in enumerate(chapters):
         meta, blocks = parse(path)
@@ -221,11 +251,15 @@ def main():
         os.makedirs(os.path.join(OUT, b["slug"]), exist_ok=True)
         open(os.path.join(OUT, b["slug"], "%d.html" % n), "w", encoding="utf-8").write(
             page("%s %d" % (b["name"], n), body, 1))
+        audio_url = audio_rel.replace(os.sep, "/")
+        os.makedirs(os.path.join(OUT, "text", b["slug"]), exist_ok=True)
+        open(os.path.join(OUT, "text", b["slug"], "%d.txt" % n), "w", encoding="utf-8").write(" ".join(speech))
         manifest.append({
-            "id": "%s-%d" % (b["slug"], n), "book": b["name"], "chapter": n,
-            "url": "%s/%d.html" % (b["slug"], n),
-            "audio": audio_rel.replace(os.sep, "/") if has_audio else None,
-            "text": " ".join(speech),
+            "id": "%s-%d" % (b["slug"], n), "book": b["name"], "slug": b["slug"], "chapter": n,
+            "total": b["chapters"], "url": "%s/%d.html" % (b["slug"], n),
+            "audio": audio_url if has_audio else None,
+            "duration": lengths.get(audio_url) if has_audio else None,
+            "text": "text/%s/%d.txt" % (b["slug"], n),
         })
 
     # book pages

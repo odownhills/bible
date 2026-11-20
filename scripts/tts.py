@@ -29,8 +29,8 @@ import urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODELS = os.environ.get("GEMINI_TTS_MODELS", "gemini-3.8-flash-tts").split(",")
 VOICE = os.environ.get("GEMINI_TTS_VOICE", "Sulafat")
-STYLE = ("Read the following Bible passage aloud as an audiobook narrator: calm, warm, unhurried, "
-         "clear, with natural pauses between paragraphs. Read only the passage text.\n\n")
+# Send only the words to be spoken. Any instruction placed before the passage is read aloud
+# by the voice model (found 2026-11-20), so there is deliberately no style prompt.
 CHUNK = 6000        # characters per request
 RATE = 24000        # samples per second, 16-bit mono
 MIN_CPS = 26        # faster than this many characters per second means the audio was cut short
@@ -55,7 +55,7 @@ def chunks(text, size):
 
 def request(text, key, model):
     body = json.dumps({
-        "contents": [{"parts": [{"text": STYLE + text}]}],
+        "contents": [{"parts": [{"text": text}]}],
         "generationConfig": {
             "responseModalities": ["AUDIO"],
             "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": VOICE}}},
@@ -130,8 +130,9 @@ def main():
     for c in todo:
         slug = c["id"].rsplit("-", 1)[0]
         out = os.path.join(ROOT, "site", "audio", slug, "%d.mp3" % c["chapter"])
+        text = open(os.path.join(ROOT, "site", c["text"]), encoding="utf-8").read()
         try:
-            pieces = [speak(p, key, state) for p in chunks(c["text"], CHUNK)]
+            pieces = [speak(p, key, state) for p in chunks(text, CHUNK)]
         except OutOfQuota:
             print("Gemini's free daily limit is used up; %s %d and later chapters will be recorded on the next run."
                   % (c["book"], c["chapter"]))
@@ -144,7 +145,7 @@ def main():
                         "-i", f.name, "-codec:a", "libmp3lame", "-b:a", "40k", out], check=True)
         os.remove(f.name)
         print("Recorded %s %d (%d characters, %.0f seconds, %s) -> %s"
-              % (c["book"], c["chapter"], len(c["text"]), len(pcm) / 2 / RATE,
+              % (c["book"], c["chapter"], len(text), len(pcm) / 2 / RATE,
                  MODELS[min(state["model"], len(MODELS) - 1)], os.path.relpath(out, ROOT)), flush=True)
 
 
