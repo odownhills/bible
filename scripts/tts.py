@@ -53,8 +53,10 @@ def speak(text, key):
     }).encode()
     url = "https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent" % MODEL
     for attempt in range(5):
-        req = urllib.request.Request(url, data=body, headers={
-            "Content-Type": "application/json", "x-goog-api-key": key})
+        headers = {"Content-Type": "application/json"}
+        if key:
+            headers["x-goog-api-key"] = key
+        req = urllib.request.Request(url, data=body, headers=headers)
         try:
             with urllib.request.urlopen(req, timeout=300) as r:
                 data = json.load(r)
@@ -62,20 +64,25 @@ def speak(text, key):
             return base64.b64decode(part)
         except urllib.error.HTTPError as e:
             msg = e.read().decode(errors="replace")[:500]
+            if e.code in (400, 401, 403) and ("API key" in msg or "API_KEY" in msg or "blocked" in msg.lower() or e.code != 400):
+                print("No working Gemini key or host not allowed (HTTP %s); skipping audio." % e.code)
+                raise SystemExit(0)
             if e.code == 429 and ("per day" in msg.lower() or "PerDay" in msg):
                 raise SystemExit("Gemini daily free limit reached; audio will catch up tomorrow.\n" + msg)
             if e.code in (429, 500, 503) and attempt < 4:
                 time.sleep(30 * (attempt + 1))
                 continue
             raise SystemExit("Gemini TTS error %s: %s" % (e.code, msg))
+        except (urllib.error.URLError, OSError) as e:
+            print("Could not reach Gemini (%s); skipping audio." % e)
+            raise SystemExit(0)
     raise SystemExit("Gemini TTS failed after retries")
 
 
 def main():
-    key = os.environ.get("GEMINI_API_KEY")
-    if not key:
-        print("No GEMINI_API_KEY set; skipping audio.")
-        return
+    # The key comes from GEMINI_API_KEY, or is added to the request by the environment's
+    # network secret for generativelanguage.googleapis.com (then no variable is set here).
+    key = os.environ.get("GEMINI_API_KEY", "")
     limit = int(sys.argv[sys.argv.index("--max") + 1]) if "--max" in sys.argv else 2
     manifest = json.load(open(os.path.join(ROOT, "site", "manifest.json"), encoding="utf-8"))
     todo = [c for c in manifest if not c.get("audio")][:limit]

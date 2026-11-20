@@ -14,8 +14,9 @@ order from Genesis 1 to Revelation 22. Accuracy matters more than speed.
 3. `python3 scripts/check.py translations/<slug>/<NNN>.md` must print OK. If it fails, send the
    failures back to the same translation agent to fix (up to 3 rounds). Never publish a failing file.
 4. `python3 scripts/build.py`
-5. If `GEMINI_API_KEY` is set: `python3 scripts/tts.py --max 2`, then `python3 scripts/build.py` again.
-   Audio problems never block publishing the text.
+5. `python3 scripts/tts.py --max 2`, then `python3 scripts/build.py` again. The script skips quietly
+   when no Gemini key is configured. Audio problems never block publishing the text: if it fails,
+   publish the text anyway and mention the audio problem in the summary.
 6. Commit on `main` with message `Add <Book> <n>` and push. Cloudflare Pages deploys on push.
 
 Only add one chapter per run. Never edit an earlier chapter unless Obay asks.
