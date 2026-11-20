@@ -23,7 +23,7 @@ import urllib.error
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MODEL = os.environ.get("GEMINI_TTS_MODEL", "gemini-2.5-flash-preview-tts")
+MODEL = os.environ.get("GEMINI_TTS_MODEL", "gemini-3.8-flash-tts")
 VOICE = os.environ.get("GEMINI_TTS_VOICE", "Charon")
 STYLE = ("Read the following Bible passage aloud as an audiobook narrator: calm, warm, unhurried, "
          "clear, with natural pauses between paragraphs. Read only the passage text.\n\n")
