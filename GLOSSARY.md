@@ -32,3 +32,22 @@ When a chapter settles a new recurring term, add one line here in the same commi
 - toledot "generations" [alt: account].
 - Sentence-opening "and" is kept where the Hebrew narrative chain has it; "Now" marks a break in the chain.
 - Day formula: "And there was evening and there was morning" followed by a dash and the day.
+
+## Settled in Genesis 3
+- nachash "snake". arum (3:1) "shrewd". arur "cursed".
+- Infinitive absolute with its own verb: "certainly" (2:16-17; 3:4); harbah arbeh "greatly multiply" (3:16).
+- pen "so that ... not" (3:3, 22).
+- ta'avah "delight"; nechmad "desirable"; teshuqah "longing" (3:16; 4:7). Keep the three distinct.
+- haskil (3:6) "gain insight" [alt: contemplate].
+- qol "sound" (3:8, 10) or "voice" (3:17), by context.
+- eivah "hostility".
+- zera: "seed" for plants (chapter 1); "offspring" [alt: seed] for descendants (3:15).
+- shuf (3:15) "strike" [alt: crush, or bruise], the same English both times.
+- itsavon "painful toil" (3:16, 17; 5:29); etsev "pain".
+- mashal stays "govern" in 3:16 (the husband) and 4:7, so it remains distinct from radah "rule over".
+- ish / ishshah with a possessive: "husband" / "wife".
+- adam without the article (2:20; 3:17, 21): "Adam [alt: the human]".
+- Chavvah "Eve". keruvim "cherubim". kuttonet "tunic".
+- shalach (piel) "send out"; garash "drive out".
+- shamar "watch over" (2:15) or "guard" (3:24), by context.
+- hen "look", the same as hinneh.
