@@ -72,3 +72,15 @@ When a chapter settles a new recurring term, add one line here in the same commi
 - wayehi before a time clause: "And after ..." / "And when ...", with no separate "it came to pass".
 - adam with no article and no preposition (4:25): "Adam", with no alt.
 - Where the Hebrew text breaks off or spells a name two ways (4:8, 18), the main text gives a readable form and the other goes in an [alt: ...].
+
+## Settled in Genesis 5
+- sefer (5:1) "book". demut "likeness"; tselem "image" (1:26-27; 5:1, 3), keeping the prepositions as they stand: be- "in", ke- "according to".
+- adam in 5:1b-2 (the collective, as in 1:26-27): "humankind" [alt: Adam]; in 5:1a and 5:3-5 it is the name "Adam".
+- holid (hiphil of yalad; 5:3-32) "fathered", the same English as qal yalad of a father (4:18). Where it has no object (5:3): "fathered one", so that it stays distinct from "fathered a son" (5:28).
+- Genealogy formula: "And X lived N years, and he fathered Y. And X lived N years after he fathered Y, and he fathered sons and daughters. And all the days of X were N years, and he died."
+- Numbers are written out in words in normal English order ("a hundred and thirty years", "nine hundred and sixty-nine years"). ben N shanah "N years old".
+- hithallekh et-ha'elohim (5:22, 24) "walked with God"; hithallekh on its own stays "walk about" (3:8). ha'elohim (with the article) "God", the same as Elohim.
+- einennu (5:24) "he was no more". laqach "take". mut "die".
+- nacham (piel; 5:29) "comfort"; with min, "bring comfort from".
+- ma'aseh (5:29) "work" (it shares its English with melakhah "work" in 2:2-3).
+- Names: Seth, Enosh, Kenan, Mahalalel, Jared, Enoch, Methuselah, Lamech, Noah, Shem, Ham, Japheth.
