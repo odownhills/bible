@@ -8,8 +8,10 @@ The pace is set in data/settings.json:
     "words_per_week": how many words to translate per week (Obay's setting)
     "runs_per_week":  how many scheduled runs there are in a week
                       (4 each weekday + 1 each weekend day = 22)
+    "first_books":    optional list of book slugs to translate before the rest, in that order
+                      (Obay, 2026-11-20: 1 John, then John, then back to canonical order)
 Each run's target is words_per_week / runs_per_week. Whole chapters are added in canonical
-order, stopping at whichever chapter boundary lands closest to the target (always at least one
+order (after any "first_books"), stopping at whichever chapter boundary lands closest to the target (always at least one
 chapter). Estimates are each chapter's word count in a standard English Bible.
 Prints DONE when all 1,189 chapters exist.
 
@@ -20,8 +22,11 @@ import json, os, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 cfg = json.load(open(os.path.join(ROOT, "data", "settings.json")))
 target = cfg["words_per_week"] / cfg["runs_per_week"]
+books = json.load(open(os.path.join(ROOT, "data", "books.json")))
+first = cfg.get("first_books", [])
+books.sort(key=lambda b: first.index(b["slug"]) if b["slug"] in first else len(first))
 todo = [(b["slug"], n, b["name"], b["words"][n - 1])
-        for b in json.load(open(os.path.join(ROOT, "data", "books.json")))
+        for b in books
         for n in range(1, b["chapters"] + 1)
         if not os.path.exists(os.path.join(ROOT, "translations", b["slug"], "%03d.md" % n))]
 plan, total = [], 0

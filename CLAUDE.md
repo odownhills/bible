@@ -2,7 +2,9 @@
 
 This repository is Obay's original English translation of the Bible, published at
 https://bible.odownhills.workers.dev (Cloudflare deploys the `site/` folder on every push to main).
-Whole chapters are added every day, in canonical order from Genesis 1 to Revelation 22.
+Whole chapters are added every day. Books listed in `"first_books"` in `data/settings.json` come first
+(currently 1 John, then John); after them the run continues in canonical order from the first
+untranslated chapter, Genesis 1 to Revelation 22.
 Accuracy matters more than speed.
 
 ## How much to translate
@@ -20,7 +22,7 @@ Only Obay changes these. If the plan prints `DONE`, stop.
    delegate it with the Agent tool using `model: "fable"` and `effort: "xhigh"`, one agent per chapter,
    one chapter at a time (not in parallel, so each chapter sees the glossary as the last one left it).
    Tell the agent to read TRANSLATION_RULES.md, GLOSSARY.md and the previous chapter's file (for
-   continuity of wording), translate verse by verse from the original text without adapting any
+   continuity of wording; for a book's first chapter, the last chapter translated), translate verse by verse from the original text without adapting any
    existing English translation, write the file, run the check, reread the result against the
    original and correct anything added, dropped or softened, and append any newly settled recurring
    term to GLOSSARY.md. Do not translate it yourself on another model.
