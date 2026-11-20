@@ -5,7 +5,10 @@ For every site/audio/<slug>/<n>.mp3 that has no up-to-date site/audio/<slug>/<n>
 listens to the recording with an offline speech recognizer, matches what it heard against the
 chapter's read-aloud text (site/text/<slug>/<n>.txt) and writes the start time of every word:
 
-    {"words": 812, "sum": "<checksum of the text>", "t": [0, 41, 78, ...]}   # hundredths of a second
+    {"words": 812, "sum": "<checksum of the text>", "size": <bytes of the mp3>, "t": [0, 41, 78, ...]}
+
+("t" is in hundredths of a second.) The same listening is used by scripts/tts.py to check every new
+recording word for word before it is published: see problems() and check().
 
 "words" counts the words exactly as scripts/build.py wraps them on a chapter page (build.words).
 Words the recognizer missed (mostly unusual names) get a time estimated from the words on either
@@ -214,6 +217,31 @@ def align(text, heard, length):
     return out, (matched / float(len(ref)) if ref else 0.0)
 
 
+def problems(text, heard):
+    """Places where the recording does not say what the text says: speech that is not in the
+    chapter (the voice sometimes invents or repeats lines), or text that was skipped.
+    Single misheard words and unusual names are ignored; only runs of 5 or more words count."""
+    ref = [s for w in display_words(text) for s in sound_words(w)]
+    hyp = [w for w, _ in heard]
+    found = []
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, ref, hyp, autojunk=False).get_opcodes():
+        if tag == "equal":
+            continue
+        extra, missing = (j2 - j1) - (i2 - i1), (i2 - i1) - (j2 - j1)
+        at = heard[min(j1, len(heard) - 1)][1] if heard else 0.0
+        if extra >= 5:
+            found.append("at %d:%02d the voice says words that are not in the chapter: \"%s\""
+                         % (at // 60, at % 60, " ".join(hyp[j1:j2])[:160]))
+        elif missing >= 5:
+            found.append("at %d:%02d the voice skips: \"%s\"" % (at // 60, at % 60, " ".join(ref[i1:i2])[:160]))
+    return found
+
+
+def check(mp3, text, rec=None):
+    """Problems found in one recording (an empty list means it matches the text)."""
+    return problems(text, hear(rec or recognizer(), load(mp3)))
+
+
 def snap(times, samples):
     """Move the word nearest the end of each pause onto the moment the voice starts again."""
     found, n = pauses(samples)
@@ -240,7 +268,8 @@ def main():
         out = os.path.join(SITE, c["audio"][:-4] + ".json")
         if not force and os.path.exists(out):
             try:
-                if json.load(open(out)).get("sum") == checksum(text):
+                old = json.load(open(out))
+                if old.get("sum") == checksum(text) and old.get("size") == os.path.getsize(os.path.join(SITE, c["audio"])):
                     continue
             except ValueError:
                 pass
@@ -255,7 +284,10 @@ def main():
     for c, text, out in todo:
         samples = load(os.path.join(SITE, c["audio"]))
         length = len(samples) / float(RATE)
-        times, share = align(text, hear(rec, samples), length)
+        heard = hear(rec, samples)
+        for p in problems(text, heard):
+            print("CHECK %s %d: %s" % (c["book"], c["chapter"], p), flush=True)
+        times, share = align(text, heard, length)
         times = snap(times, samples)
         if share < 0.5:
             # the recording does not match this text (for example the chapter was reworded later)
@@ -264,7 +296,8 @@ def main():
             if os.path.exists(out):
                 os.remove(out)
             continue
-        json.dump({"words": len(times), "sum": checksum(text), "t": [int(round(t * 100)) for t in times]},
+        json.dump({"words": len(times), "sum": checksum(text), "size": os.path.getsize(os.path.join(SITE, c["audio"])),
+                   "t": [int(round(t * 100)) for t in times]},
                   open(out, "w"), separators=(",", ":"))
         print("Timed %s %d: %d words, %d%% heard directly -> %s"
               % (c["book"], c["chapter"], len(times), share * 100, os.path.relpath(out, ROOT)), flush=True)

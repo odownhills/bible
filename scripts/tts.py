@@ -11,6 +11,13 @@ allows only about 10 requests per model per day, so:
   * when every model is used up, the script stops cleanly (exit 0), keeping the chapters it
     finished. The next run picks up where it stopped.
 
+Every new recording is checked word for word against the chapter before it is kept (the voice
+model now and then invents, repeats or skips lines). The check listens with scripts/align.py and
+needs `pip install sherpa-onnx numpy`; without those it is skipped with a warning. A recording that
+fails is thrown away and counted in site/audio/rejected.json; the chapter is tried again on the
+next run, up to 3 times. To record a chapter again, add its id (for example "genesis-5") to the
+list in site/audio/redo.json: the old recording stays until a new one passes the check.
+
     python3 scripts/tts.py --max 5
     python3 scripts/tts.py --max 5 --strict   # exit non-zero when the key is refused
 Run scripts/build.py afterwards so pages and the Listen playlist pick up the new audio.
@@ -20,6 +27,7 @@ import base64
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -159,12 +167,41 @@ def speak(text, key, state):
     raise OutOfQuota("all models")
 
 
+def note(name, default):
+    """A small JSON file kept beside the recordings (site/audio/<name>)."""
+    path = os.path.join(ROOT, "site", "audio", name)
+    try:
+        return json.load(open(path)), path
+    except (OSError, ValueError):
+        return default, path
+
+
+def save(value, path):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    json.dump(value, open(path, "w"), sort_keys=True)
+
+
+def checker():
+    """A function (mp3 path, text) -> list of problems, or None when the listener is not installed."""
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import align
+        rec = align.recognizer()
+    except Exception as e:  # missing packages, or the speech model could not be downloaded
+        print("WARNING: recordings are not being checked against the text (%s)." % e, flush=True)
+        return None
+    return lambda mp3, text: align.check(mp3, text, rec)
+
+
 def main():
     key = os.environ.get("GEMINI_API_KEY", "")
     limit = int(sys.argv[sys.argv.index("--max") + 1]) if "--max" in sys.argv else 2
     manifest = json.load(open(os.path.join(ROOT, "site", "manifest.json"), encoding="utf-8"))
-    todo = [c for c in manifest if not c.get("audio")][:limit]
+    redo, redo_path = note("redo.json", [])
+    rejected, rejected_path = note("rejected.json", {})
+    todo = [c for c in manifest if (not c.get("audio") or c["id"] in redo) and rejected.get(c["id"], 0) < 3][:limit]
     state = {"model": 0}
+    check = False                                       # loaded when the first recording is ready
     for c in todo:
         slug = c["id"].rsplit("-", 1)[0]
         out = os.path.join(ROOT, "site", "audio", slug, "%d.mp3" % c["chapter"])
@@ -179,9 +216,29 @@ def main():
         os.makedirs(os.path.dirname(out), exist_ok=True)
         with tempfile.NamedTemporaryFile(suffix=".pcm", delete=False) as f:
             f.write(pcm)
+        new = f.name[:-4] + ".mp3"
         subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-f", "s16le", "-ar", str(RATE), "-ac", "1",
-                        "-i", f.name, "-codec:a", "libmp3lame", "-b:a", "40k", out], check=True)
+                        "-i", f.name, "-codec:a", "libmp3lame", "-b:a", "40k", new], check=True)
         os.remove(f.name)
+        if check is False:
+            check = checker()
+        wrong = check(new, text) if check else []
+        if wrong:
+            os.remove(new)
+            rejected[c["id"]] = rejected.get(c["id"], 0) + 1
+            save(rejected, rejected_path)
+            print("Threw away a recording of %s %d (attempt %d of 3) because it does not match the text:"
+                  % (c["book"], c["chapter"], rejected[c["id"]]), flush=True)
+            for w in wrong[:6]:
+                print("   " + w, flush=True)
+            continue
+        shutil.move(new, out)
+        if c["id"] in redo:
+            redo.remove(c["id"])
+            save(redo, redo_path)
+        if c["id"] in rejected:
+            del rejected[c["id"]]
+            save(rejected, rejected_path)
         print("Recorded %s %d (%d characters, %.0f seconds, %s) -> %s"
               % (c["book"], c["chapter"], len(text), len(pcm) / 2 / RATE,
                  MODELS[min(state["model"], len(MODELS) - 1)], os.path.relpath(out, ROOT)), flush=True)

@@ -1,6 +1,7 @@
 name: Record chapter audio
 
-# Records Gemini voice audio for chapters that have text but no recording yet, works out when
+# Records Gemini voice audio for chapters that have text but no recording yet, checks each new
+# recording word for word against the chapter (a mismatch is thrown away and retried), works out when
 # each word is spoken (for Listen + Read mode), then commits the files so the site can use them.
 on:
   push:
@@ -35,6 +36,7 @@ jobs:
         run: |
           if [ -z "$GEMINI_API_KEY" ]; then echo "No GEMINI_API_KEY secret yet; nothing to do."; exit 0; fi
           command -v ffmpeg >/dev/null || sudo apt-get install -y -qq ffmpeg
+          python3 -m pip install --quiet --break-system-packages sherpa-onnx numpy || echo "Could not install the listener; recordings will not be checked."
           python3 scripts/build.py
           python3 scripts/tts.py --max "${MAX_CHAPTERS:-10}" --strict
           python3 scripts/build.py
