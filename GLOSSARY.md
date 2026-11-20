@@ -130,3 +130,30 @@ When a chapter settles a new recurring term, add one line here in the same commi
 - ean of an expected event (2:28) "when" [alt: if]; elsewhere "if". parresia "boldness". aischynomai apo (2:28) "be ashamed before". parousia "coming".
 - dikaiosyne "righteousness"; poiein ten dikaiosynen "do righteousness", like "do the truth". The [alt: just] for dikaios is given at its first occurrence in a chapter (2:1), not at every one.
 - hoti in 2:12-14 "because" [alt: that], the alt given once, at 2:12. An aorist is put in the English perfect where a past act explains a present state (2:11 "has blinded").
+
+## Settled in 1 John 3
+- Greek text, applying the 1 John 1 line: where the earliest manuscripts divide over a sentence-opening kai (3:13, 19) it is left out, and 3:7 reads teknia "Little children" (not paidia); none of these is noted, since the sense is intact.
+- idete (3:1; the imperative of horao) "See". potapos "what kind of". homoios "like".
+- dia touto "for this reason"; eis touto (3:8) "for this purpose"; charin tinos (3:12) "for what reason".
+- hina after a noun whose content it gives (3:11 the message, 3:23 the commandment): "that we should"; elsewhere still "so that" (3:1, 5, 8).
+- The aorist egno (3:1) "did not know", a simple past, kept apart from the perfect "have come to know".
+- ean phanerothe (3:2) "when he is revealed" [alt: when it is revealed, or if he is revealed], as in 2:28.
+- elpis "hope"; elpida echein epi (3:3) "have hope set on". hagnizo "purify"; hagnos "pure", kept distinct from katharizo "cleanse".
+- poiein ten hamartian "do sin", like "do righteousness". anomia "lawlessness". airo (3:5) "take away".
+- diabolos "the devil", lowercase. lyo (3:8) "undo" [alt: destroy]. ho huios tou theou "the Son of God".
+- ergon "work" (ta erga "the works": 3:8, 12); in the pair with logos (3:18) "deed".
+- sperma (3:9) "seed" [alt: offspring], the mirror image of zera in Gen 3:15. ou dynatai "cannot".
+- phaneros (3:10) "revealed" (phanera estin "are revealed"), so that the echo with phaneroo survives.
+- pas ho with a participle and a negated verb stays "everyone who ... does not" (3:6, 9, 10, as in 2:23); pas with a noun and a negative (3:15, as in 2:21) "no ...".
+- ou kathos (3:12) "not as", with no alt: "not just as" would read in English as "not merely as". Kain "Cain". sphazo "slaughter", kept distinct from "kill" and "strike down" (Gen 4).
+- thaumazo (3:13) "be surprised". metabaino ek ... eis "cross over from ... into". thanatos "death". anthropoktonos "murderer". zoe aionios without the article "eternal life".
+- psyche (3:16) "life" [alt: soul], a different word from zoe "life"; the alt is given once in a chapter. tithenai ten psychen hyper "lay down one's life for".
+- bios (3:17) "possessions", with no alt where "life" is not a possible reading. theoreo (3:17) "see", the same English as horao (no second plain verb fits here; "gaze at" stays for theaomai). chreian echon "in need".
+- splanchna (3:17) "compassion" (kleio ta splanchna apo "shut off one's compassion from"), kept distinct from kardia "heart". glossa "tongue".
+- kardia "heart", singular as in the Greek ("our heart"). emprosthen "before"; enopion "in the sight of". peitho (3:19) "reassure" [alt: persuade]. meizon "greater".
+- kataginosko "condemn"; its echo with ginosko "know" is explained in one bracketed note (3:20).
+- 3:19-20: the first hoti ean is read as ho ti ean "in whatever" and the second hoti as "because"; the other reading ("persuade our heart that, if ...") is the alt.
+- parresian echein pros "have boldness toward". aiteo "ask"; lambano "receive". arestos "pleasing". allelous "one another".
+- pisteuo with the dative (3:23) "believe" [alt: believe in], leaving "believe in" for pisteuo eis. onoma "name". didonai entolen "give a commandment".
+- pneuma (3:24) "spirit", lowercase, as with ruach elohim in Genesis 1:2.
+- Where a hoti clause depends on the verse before (3:11), the sentence runs on across the verse break as "because", rather than opening a new sentence with "For" (kept for gar).
