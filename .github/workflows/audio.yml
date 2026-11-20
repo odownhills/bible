@@ -9,6 +9,10 @@ on:
   schedule:
     - cron: "23 14 * * *"   # daily catch-up, 6:23 AM Pacific
   workflow_dispatch:
+    inputs:
+      max:
+        description: "How many chapters to record in this run"
+        default: "3"
 
 permissions:
   contents: write
@@ -20,17 +24,18 @@ concurrency:
 jobs:
   record:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - name: Record
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MAX_CHAPTERS: ${{ inputs.max }}
         run: |
           if [ -z "$GEMINI_API_KEY" ]; then echo "No GEMINI_API_KEY secret yet; nothing to do."; exit 0; fi
-          sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || true
+          command -v ffmpeg >/dev/null || sudo apt-get install -y -qq ffmpeg
           python3 scripts/build.py
-          python3 scripts/tts.py --max 3 --strict
+          python3 scripts/tts.py --max "${MAX_CHAPTERS:-3}" --strict
           python3 scripts/build.py
       - name: Publish
         run: |
