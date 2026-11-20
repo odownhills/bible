@@ -84,3 +84,23 @@ When a chapter settles a new recurring term, add one line here in the same commi
 - nacham (piel; 5:29) "comfort"; with min, "bring comfort from".
 - ma'aseh (5:29) "work" (it shares its English with melakhah "work" in 2:2-3).
 - Names: Seth, Enosh, Kenan, Mahalalel, Jared, Enoch, Methuselah, Lamech, Noah, Shem, Ham, Japheth.
+
+## Settled in 1 John 1
+- Greek text: the main text follows the earliest manuscripts, as in the standard critical editions. Where many manuscripts read differently in a way that changes the meaning (1:4), the other reading goes in an [alt: ..., as other manuscripts read].
+- arche "beginning" (ap' arches "from the beginning"). logos "word"; ho logos tes zoes (1:1) "the word of life" [alt: the Word of life].
+- zoe "life"; he zoe he aionios "the eternal life" (aionios "eternal").
+- akouo "hear"; horao "see"; theaomai "gaze at", kept distinct from horao. pselaphao "feel" (with the hands), kept distinct from "touch" (Gen 3:3).
+- phaneroo "reveal"; passive "was revealed".
+- martyreo "testify". apangello "announce"; anangello "declare"; angelia "message". Keep the two verbs distinct.
+- koinonia "fellowship"; koinonian echein meta "have fellowship with".
+- pater of God "the Father"; huios of Jesus "Son" ("his Son"), both capitalized as titles. Pronouns for God and for Jesus stay lowercase, as in Genesis. Iesous Christos "Jesus Christ".
+- chara "joy"; pleroo of joy (1:4) "make full", so that "complete" stays free for another verb.
+- phos "light". skotia (1:5) and skotos (1:6) both "darkness": two forms of one word, like hen / hinneh.
+- peripateo "walk". pseudomai "lie"; pseustes "liar". aletheia "truth"; poiein ten aletheian (1:6) "do the truth".
+- haima "blood". katharizo "cleanse". hamartia "sin" (the same English as chatta't); hamartano "sin" (verb).
+- planao "lead astray", kept distinct from "deceive" (Gen 3:13).
+- homologeo "confess". pistos "faithful". dikaios "righteous" [alt: just]; adikia "unrighteousness", so that the echo between the two survives. aphiemi of sins "forgive".
+- hina "so that" (purpose in 1:3-4; result in 1:9).
+- An explicit subject pronoun that carries emphasis: "we ourselves" (hemeis, 1:4), "he himself" (autos, 1:7).
+- Sentence-opening kai is kept as "And", as with the Hebrew narrative chain. kai ... de (1:3) "And indeed".
+- The opening sentence (1:1-3) breaks off and resumes in the Greek; the breaks are marked with dashes and the sentence is not smoothed out.
