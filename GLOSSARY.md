@@ -104,3 +104,29 @@ When a chapter settles a new recurring term, add one line here in the same commi
 - An explicit subject pronoun that carries emphasis: "we ourselves" (hemeis, 1:4), "he himself" (autos, 1:7).
 - Sentence-opening kai is kept as "And", as with the Hebrew narrative chain. kai ... de (1:3) "And indeed".
 - The opening sentence (1:1-3) breaks off and resumes in the Greek; the breaks are marked with dashes and the sentence is not smoothed out.
+
+## Settled in 1 John 2
+- Verse numbers: the sentence to the paidia ("I have written to you, young children") opens 2:14, as in the Greek editions and many English versions; the KJV counts it as the end of 2:13. The chapter's `numbering:` line says so once.
+- Greek text, applying the 1 John 1 line: another reading is noted only where it changes what the sentence says (2:20, pantes "all of you know" / panta "you know all things"). A different form of address, a different tense, or an added or missing phrase that leaves the sense intact is not noted (2:7, 14, 23, 27).
+- teknia "little children"; paidia "young children" (leaving "children" for tekna). pateres "fathers"; neaniskoi "young men". adelphos "brother". agapetoi (address) "Beloved".
+- grapho "I am writing"; egrapsa (of this letter: 2:14, 21, 26) "I have written".
+- parakletos "advocate". hilasmos "atonement" [alt: appeasement]. kosmos "world".
+- ginosko and oida both "know" (English has no second plain verb for it); perfect egnoka "have come to know". en touto ginoskomen "by this we know".
+- entole "commandment"; tereo "keep". opheilo "ought".
+- ho with a participle "the one who"; hos an "whoever"; pas ho "everyone who"; ean tis "if anyone". houtos of a person (2:4-5) "this person". ekeinos of Jesus (2:6) "that one", kept distinct from autos "he".
+- agape "love" (noun); agapao "love" (verb); miseo "hate". he agape tou theou / tou patros "the love of God / of the Father", leaving the genitive as open in English as it is in Greek.
+- teleioo "make complete" (2:5 "has been made complete"); this is the verb that "complete" was kept free for.
+- meno "remain" (never "abide"). kathos "just as"; hos "as".
+- kainos "new"; palaios "old". palin where it marks a contrast (2:8) "then again".
+- alethes and alethinos both "true" (two adjectives from one root, like skotia / skotos); alethos "truly". pseudos "a lie".
+- paragomai "pass away". phaino "shine". heos arti "until now". skandalon "cause of stumbling". typhloo "blind" (verb). hypago "go".
+- nikao "conquer". poneros "evil"; ho poneros "the evil one". ischyros "strong".
+- epithymia "desire" (kept apart from "delight", "desirable" and "longing" in Genesis 3). sarx "flesh". alazoneia "arrogance". bios "possessions" [alt: life], kept distinct from zoe "life". thelema "will". eis ton aiona "forever".
+- einai ek "be from" (2:16, 19, 21) and gennao (passive) ek "be born from" (2:29): the same English preposition for both, so that the link between them survives. exerchomai ek "go out from".
+- eschate hora "the last hour". antichristos "antichrist", lowercase: without the article (2:18) "antichrist", with it (2:22) "the antichrist". ginomai of the antichrists (2:18) "arise". hothen "from which".
+- chrisma "anointing". ho Christos as a title (2:22) "the Christ". The echo between anointing, Christ and antichrist is explained in one bracketed note (2:20). ho hagios (2:20) "the Holy One".
+- arneomai "deny". echein ton patera "have the Father". epangelia "promise"; epangellomai "promise" (verb). didasko "teach". chreian echein hina (2:27) "have need for (anyone) to".
+- hymeis standing first, outside its clause (2:24, 27): "As for you"; as an emphatic subject (2:20): "you yourselves".
+- ean of an expected event (2:28) "when" [alt: if]; elsewhere "if". parresia "boldness". aischynomai apo (2:28) "be ashamed before". parousia "coming".
+- dikaiosyne "righteousness"; poiein ten dikaiosynen "do righteousness", like "do the truth". The [alt: just] for dikaios is given at its first occurrence in a chapter (2:1), not at every one.
+- hoti in 2:12-14 "because" [alt: that], the alt given once, at 2:12. An aorist is put in the English perfect where a past act explains a present state (2:11 "has blinded").
