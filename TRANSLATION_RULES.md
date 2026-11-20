@@ -9,10 +9,10 @@ These are Obay's standing rules. Every chapter follows them exactly.
 - Divine names: YHWH is "Yahweh," Elohim is "God," Adonai is "Lord."
 - Follow the Ketiv (the written text). Where the Qere differs in a way that changes meaning, give it as an alternate reading. If the Ketiv can't be read as meaningful Hebrew (a clear scribal slip), follow the Qere and note it in brackets.
 - When a word or phrase has more than one likely reading, put the primary reading in the main text and the alternative in brackets: `[alt: ...]`
-- When wordplay can't survive translation (names, puns, sound echoes), keep the primary sense and add a short bracketed note explaining it, e.g. `[The name Adam echoes adamah, "ground."]`
+- When wordplay can't survive translation (names, puns, sound echoes), keep the primary sense and add a short bracketed note explaining it in English, e.g. `[In Hebrew the name sounds like the word for "ground."]`
 - Where the syntax runs a sentence across a verse break, keep the sentence intact rather than chopping it at the number.
 - Use standard English chapter and verse numbering (KJV/NIV scheme). Where the Hebrew numbering differs (psalm titles, Joel, Malachi, etc.), say so once in the `numbering:` line of the front matter.
-- English only. No Hebrew or Greek script, and no transliteration in the body text except inside a short bracketed wordplay note where the echo can't be explained otherwise. No translation notes beyond the bracketed alternates and wordplay notes.
+- English only. No Hebrew or Greek script, and no transliteration anywhere, including inside bracketed notes (describe a sound echo in English instead). No translation notes beyond the bracketed alternates and wordplay notes.
 - Section headings: short editorial labels breaking the chapter into narrative units.
 
 ## File format
