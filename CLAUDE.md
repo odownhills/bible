@@ -6,7 +6,8 @@ order from Genesis 1 to Revelation 22. Accuracy matters more than speed.
 
 ## Steps for each run
 1. `python3 scripts/next.py` prints the next chapter (`<slug> <n> <Book>`). If it prints `DONE`, stop.
-2. Translate that chapter following `TRANSLATION_RULES.md` exactly, and write it to
+2. Translate that chapter following `TRANSLATION_RULES.md` and the settled renderings in
+   `GLOSSARY.md` exactly (give the translation agent both files), and write it to
    `translations/<slug>/<NNN>.md` (three-digit chapter number).
    The translation must be done by Fable 5.2 at extra-high effort (Obay's explicit requirement):
    delegate it with the Agent tool using `model: "fable"` and `effort: "xhigh"`, giving the agent
@@ -18,4 +19,7 @@ order from Genesis 1 to Revelation 22. Accuracy matters more than speed.
    (it uses the repository secret `GEMINI_API_KEY`). You do not need to record audio in the run.
 6. Commit on `main` with message `Add <Book> <n>` and push. Cloudflare Pages deploys on push.
 
-Only add one chapter per run. Never edit an earlier chapter unless Obay asks.
+Only add one chapter per run. Never edit an earlier chapter unless Obay asks. If the translator
+finds that an earlier chapter conflicts with the new one, do not change it: say so in the summary.
+The one file a run may extend besides the new chapter is `GLOSSARY.md`: append a line for each
+new recurring term the chapter settles, and never change a line under "Decided by Obay".

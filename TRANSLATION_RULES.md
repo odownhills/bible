@@ -14,6 +14,7 @@ These are Obay's standing rules. Every chapter follows them exactly.
 - Use standard English chapter and verse numbering (KJV/NIV scheme). Where the Hebrew numbering differs (psalm titles, Joel, Malachi, etc.), say so once in the `numbering:` line of the front matter.
 - English only. No Hebrew or Greek script, and no transliteration anywhere, including inside bracketed notes (describe a sound echo in English instead). No translation notes beyond the bracketed alternates and wordplay notes.
 - Section headings: short editorial labels breaking the chapter into narrative units.
+- Consistency: render a recurring original-language term the same way every time, as listed in `GLOSSARY.md`. Keep distinct original terms distinct in English.
 
 ## File format
 One file per chapter: `translations/<book-slug>/<NNN>.md` (three-digit chapter, e.g. `translations/genesis/001.md`, `translations/1-kings/002.md`). Book slugs are in `data/books.json`.
