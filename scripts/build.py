@@ -18,6 +18,7 @@ Source format for one chapter (translations/genesis/001.md):
 Inline brackets: [alt: ...] is an alternate reading; any other [ ... ] is a short note.
 Run: python3 scripts/build.py   (no dependencies beyond the standard library)
 """
+import hashlib
 import html
 import json
 import os
@@ -56,7 +57,7 @@ sup.n{font-family:var(--sans);font-size:.6em;color:var(--num);user-select:none;-
 .pn a,.pn span{flex:1;display:block;padding:.85rem 1rem;border:1px solid var(--rule);border-radius:10px;background:var(--panel);text-decoration:none}
 .pn .next{text-align:right}
 .pn span{color:var(--num)}
-.btn{display:inline-block;font-family:var(--sans);font-size:.85rem;color:var(--bg);background:var(--accent);border:0;border-radius:999px;padding:.5rem 1rem;text-decoration:none;cursor:pointer}
+.btn{display:inline-block;font-family:var(--sans);font-size:.85rem;line-height:1.4;color:var(--bg);background:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:.5rem 1rem;text-decoration:none;cursor:pointer}
 .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(9.5rem,1fr));gap:.6rem;font-family:var(--sans);font-size:.95rem}
 .grid.ch{grid-template-columns:repeat(auto-fill,minmax(3.4rem,1fr))}
@@ -72,6 +73,49 @@ sup.n{font-family:var(--sans);font-size:.6em;color:var(--num);user-select:none;-
 .continue small{color:var(--text-soft)}
 .continue[hidden]{display:none}
 footer{margin-top:3rem;font-family:var(--sans);font-size:.75rem;color:var(--num);text-align:center}
+.seek{display:block;width:100%;margin:0;height:28px;background:transparent;-webkit-appearance:none;appearance:none;cursor:pointer;touch-action:none}
+.seek:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
+.seek::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:linear-gradient(to right,var(--accent) var(--p,0%),var(--rule) var(--p,0%))}
+.seek::-moz-range-track{height:6px;border-radius:3px;background:var(--rule)}
+.seek::-moz-range-progress{height:6px;border-radius:3px;background:var(--accent)}
+.seek::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--heading);margin-top:-6px;border:0}
+.seek::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--heading);border:0}
+.seek:disabled{opacity:.45}
+.times{display:flex;justify-content:space-between;font-size:.8rem;color:var(--text-soft);font-variant-numeric:tabular-nums;margin-top:.1rem}
+.tb{background:transparent;border:0;color:var(--text);padding:0;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;cursor:pointer;position:relative;-webkit-tap-highlight-color:transparent}
+.tb:active{background:var(--shade)}
+.tb:focus-visible{outline:2px solid var(--accent)}
+.tb:disabled{color:var(--num);cursor:default}
+.tb svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tb .solid{fill:currentColor;stroke:none}
+.tb.skip svg{width:36px;height:36px}
+.tb.skip span{position:absolute;font-size:.62rem;font-weight:700;top:50%;left:50%;transform:translate(-50%,-38%);font-variant-numeric:tabular-nums}
+.tb.main{width:72px;height:72px;background:var(--accent);color:var(--bg)}
+.tb.main:active{background:var(--heading)}
+.tb.main svg{width:34px;height:34px}
+.chips{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center}
+.chip{font:inherit;font-size:.82rem;color:var(--text);background:var(--shade);border:1px solid var(--rule);border-radius:999px;padding:.5rem .85rem;text-decoration:none;min-height:40px;display:inline-flex;align-items:center;gap:.35rem}
+select.chip{-webkit-appearance:none;appearance:none;text-align:center;cursor:pointer}
+.chip:focus-visible{outline:2px solid var(--accent)}
+body.lr{padding-bottom:10rem}
+body.lr #ch .w{color:#9383B7;border-radius:4px;cursor:pointer;transition:color .18s ease-out,background-color .18s ease-out;-webkit-tap-highlight-color:transparent}
+body.lr #ch .w.on{color:#fff}
+body.lr #ch .w.now{color:#fff;background:rgba(183,155,232,.3);box-shadow:0 0 0 3px rgba(183,155,232,.3)}
+body.lr #ch .alt,body.lr #ch .note{opacity:.55}
+.sub .btn{margin:0 .35rem .4rem 0}
+.lr-bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--panel);border-top:1px solid var(--rule);font-family:var(--sans);padding:.3rem 14px calc(.5rem + env(safe-area-inset-bottom,0px))}
+.lr-bar[hidden]{display:none}
+.lr-in{max-width:42rem;margin:0 auto}
+.lr-row{display:flex;align-items:center;justify-content:space-between;gap:.25rem;margin-top:.2rem}
+.lr-mid{display:flex;align-items:center;gap:.7rem}
+.lr-bar .tb{width:46px;height:46px}
+.lr-bar .tb.main{width:56px;height:56px}
+.lr-bar .tb.main svg{width:28px;height:28px}
+.lr-bar .tb.skip svg{width:32px;height:32px}
+.lr-bar .tb.x svg{width:22px;height:22px}
+.lr-bar .chip{min-height:40px;padding:.35rem .5rem;min-width:4.4rem;justify-content:center}
+.lr-msg{font-size:.78rem;color:var(--text-soft);text-align:center;margin:.3rem 0 0}
+.lr-msg[hidden]{display:none}
 """
 
 
@@ -79,18 +123,45 @@ def esc(s):
     return html.escape(s, quote=True)
 
 
-def inline(text):
-    """Escape text and turn [alt: ...] / [...] into styled spans."""
+# One spoken word: a run of characters with no space or long dash in it that holds a letter or digit.
+# Chapter pages wrap each one in <span class="w">, and scripts/align.py times each one, in the same order.
+WORD = re.compile(r"[^\s\u2014\u2013]*\w[^\s\u2014\u2013]*")
+
+
+def words(text):
+    return WORD.findall(text)
+
+
+def checksum(text):
+    """Fingerprint of a chapter's read-aloud words, so stale word timings are noticed."""
+    return hashlib.sha1(" ".join(words(text)).encode("utf-8")).hexdigest()[:12]
+
+
+def spans(text):
+    """Escape text and wrap each spoken word for Listen + Read highlighting."""
     out, i = [], 0
-    for m in re.finditer(r"\[([^\[\]]+)\]", text):
+    for m in WORD.finditer(text):
         out.append(esc(text[i:m.start()]))
+        out.append('<span class="w">%s</span>' % esc(m.group()))
+        i = m.end()
+    out.append(esc(text[i:]))
+    return "".join(out)
+
+
+def inline(text, spoken=False):
+    """Escape text and turn [alt: ...] / [...] into styled spans. With spoken=True the words
+    outside brackets (the ones read aloud) are wrapped for highlighting."""
+    out, i = [], 0
+    put = spans if spoken else esc
+    for m in re.finditer(r"\[([^\[\]]+)\]", text):
+        out.append(put(text[i:m.start()]))
         body = m.group(1).strip()
         if body.lower().startswith("alt:"):
             out.append('<span class="alt">[alt: %s]</span>' % esc(body[4:].strip()))
         else:
             out.append('<span class="note">[%s]</span>' % esc(body))
         i = m.end()
-    out.append(esc(text[i:]))
+    out.append(put(text[i:]))
     return "".join(out)
 
 
@@ -141,7 +212,7 @@ def parse(path):
     return meta, blocks
 
 
-def page(title, body, depth):
+def page(title, body, depth, tail=""):
     up = "../" * depth
     return """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -153,8 +224,8 @@ def page(title, body, depth):
 <nav class="top"><a href="%s">Books</a><a href="%slisten/">Listen</a></nav>
 %s
 <footer>An original translation from the Hebrew and Greek.</footer>
-</div></body></html>
-""" % (esc(title), CSS, up or "./", up, body)
+</div>%s</body></html>
+""" % (esc(title), CSS, up or "./", up, body, tail)
 
 
 def durations():
@@ -213,21 +284,30 @@ def main():
     have = {(b["slug"], n) for b, n, _ in chapters}
     manifest = []
     lengths = durations()
+    read_js = open(os.path.join(ROOT, "scripts", "read.js"), encoding="utf-8").read()
+    open(os.path.join(OUT, "read.js"), "w", encoding="utf-8").write(read_js)
+    read_tag = '<script src="../read.js?v=%s" defer></script>' % hashlib.sha1(read_js.encode("utf-8")).hexdigest()[:8]
+
+    def audio_of(c):
+        """Site path of a chapter's recording, or None when it has none yet."""
+        rel = "audio/%s/%d.mp3" % (c[0]["slug"], c[1])
+        return rel if os.path.exists(os.path.join(OUT, rel)) else None
 
     for idx, (b, n, path) in enumerate(chapters):
         meta, blocks = parse(path)
-        parts, speech = [], ["%s, chapter %d." % (b["name"], n)]
+        intro = "%s, chapter %d." % (b["name"], n)
+        parts, speech = [], [intro]
         if meta.get("numbering"):
             parts.append('<div class="numbering">%s</div>' % inline(meta["numbering"]))
         for kind, val in blocks:
             if kind == "h":
                 parts.append('<h2 class="sec">%s</h2>' % esc(val))
             elif kind == "t":
-                parts.append('<p class="title">%s</p>' % inline(val))
+                parts.append('<p class="title">%s</p>' % inline(val, True))
                 speech.append(plain(val))
             else:
                 parts.append('<p class="v">%s</p>' % " ".join(
-                    '<sup class="n" id="v%d">%d</sup>%s' % (vn, vn, inline(t)) for vn, t in val))
+                    '<sup class="n" id="v%d">%d</sup>%s' % (vn, vn, inline(t, True)) for vn, t in val))
                 speech.extend(plain(t) for _, t in val)
         prev_ = chapters[idx - 1] if idx > 0 else None
         next_ = chapters[idx + 1] if idx + 1 < len(chapters) else None
@@ -239,27 +319,55 @@ def main():
             href = ("%d.html" % cn) if cb is b else ("../%s/%d.html" % (cb["slug"], cn))
             return '<a class="%s" href="%s">%s %s %d</a>' % (cls, href, label, esc(cb["name"]), cn)
 
-        audio_rel = os.path.join("audio", b["slug"], "%d.mp3" % n)
-        has_audio = os.path.exists(os.path.join(OUT, audio_rel))
+        audio_url = "audio/%s/%d.mp3" % (b["slug"], n)
+        has_audio = os.path.exists(os.path.join(OUT, audio_url))
+        spoken = " ".join(speech)
+        html_body = "\n".join(parts)
+        # Word timings for Listen + Read (written by scripts/align.py) count only if they were made
+        # for exactly this text and the page has one highlightable word for each timed word.
+        sync_url, skip = None, len(words(intro))
+        if has_audio:
+            try:
+                timing = json.load(open(os.path.join(OUT, audio_url[:-4] + ".json")))
+                if (timing.get("sum") == checksum(spoken) and timing.get("words") == len(words(spoken))
+                        and html_body.count('<span class="w">') == len(words(spoken)) - skip):
+                    sync_url = audio_url[:-4] + ".json"
+            except (OSError, ValueError):
+                pass
+        data = ' data-id="%s-%d" data-title="%s %d" data-url="%s/%d.html" data-skip="%d"' % (
+            b["slug"], n, esc(b["name"]), n, b["slug"], n, skip)
+        buttons = ""
+        if has_audio:
+            data += ' data-audio="../%s"' % audio_url
+            buttons = '<button class="btn" id="lr-start" type="button">&#9654; Listen + Read</button> '
+        if sync_url:
+            data += ' data-sync="../%s"' % sync_url
+        if next_:
+            data += ' data-next="../%s/%d.html"' % (next_[0]["slug"], next_[1])
+            if audio_of(next_):
+                data += ' data-next-audio="../%s"' % audio_of(next_)
         body = """<h1>%s %d</h1>
-<p class="sub"><a class="btn ghost" href="../listen/?from=%s-%d">&#9654; Listen from here</a></p>
+<p class="sub">%s<a class="btn ghost" href="../listen/?from=%s-%d">%s</a></p>
+<div id="ch"%s>
 %s
+</div>
 <div class="pn">%s%s</div>""" % (
-            esc(b["name"]), n, b["slug"], n, "\n".join(parts),
+            esc(b["name"]), n, buttons, b["slug"], n, "Listen only" if has_audio else "&#9654; Listen from here",
+            data, html_body,
             link(prev_, "prev", "&larr;"), link(next_, "next", "&rarr;") if next_ else
             '<span class="next">Next chapter coming soon</span>')
         os.makedirs(os.path.join(OUT, b["slug"]), exist_ok=True)
         open(os.path.join(OUT, b["slug"], "%d.html" % n), "w", encoding="utf-8").write(
-            page("%s %d" % (b["name"], n), body, 1))
-        audio_url = audio_rel.replace(os.sep, "/")
+            page("%s %d" % (b["name"], n), body, 1, read_tag))
         os.makedirs(os.path.join(OUT, "text", b["slug"]), exist_ok=True)
-        open(os.path.join(OUT, "text", b["slug"], "%d.txt" % n), "w", encoding="utf-8").write(" ".join(speech))
+        open(os.path.join(OUT, "text", b["slug"], "%d.txt" % n), "w", encoding="utf-8").write(spoken)
         manifest.append({
             "id": "%s-%d" % (b["slug"], n), "book": b["name"], "slug": b["slug"], "chapter": n,
             "total": b["chapters"], "url": "%s/%d.html" % (b["slug"], n),
             "audio": audio_url if has_audio else None,
             "duration": lengths.get(audio_url) if has_audio else None,
             "text": "text/%s/%d.txt" % (b["slug"], n),
+            "sync": sync_url,
         })
 
     # book pages

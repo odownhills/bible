@@ -28,7 +28,7 @@ sup.n{font-family:var(--sans);font-size:.6em;color:var(--num);user-select:none;-
 .pn a,.pn span{flex:1;display:block;padding:.85rem 1rem;border:1px solid var(--rule);border-radius:10px;background:var(--panel);text-decoration:none}
 .pn .next{text-align:right}
 .pn span{color:var(--num)}
-.btn{display:inline-block;font-family:var(--sans);font-size:.85rem;color:var(--bg);background:var(--accent);border:0;border-radius:999px;padding:.5rem 1rem;text-decoration:none;cursor:pointer}
+.btn{display:inline-block;font-family:var(--sans);font-size:.85rem;line-height:1.4;color:var(--bg);background:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:.5rem 1rem;text-decoration:none;cursor:pointer}
 .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(9.5rem,1fr));gap:.6rem;font-family:var(--sans);font-size:.95rem}
 .grid.ch{grid-template-columns:repeat(auto-fill,minmax(3.4rem,1fr))}
@@ -44,14 +44,6 @@ sup.n{font-family:var(--sans);font-size:.6em;color:var(--num);user-select:none;-
 .continue small{color:var(--text-soft)}
 .continue[hidden]{display:none}
 footer{margin-top:3rem;font-family:var(--sans);font-size:.75rem;color:var(--num);text-align:center}
-</style></head>
-<body><div class="wrap">
-<nav class="top"><a href="../">Books</a><a href="../listen/">Listen</a></nav>
-<style>
-.player{background:var(--panel);border:1px solid var(--rule);border-radius:18px;padding:1.25rem 1.1rem 1.1rem;font-family:var(--sans);margin-top:.5rem}
-.np-label{color:var(--text-soft);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;text-align:center}
-.np-title{font-family:var(--serif);color:var(--heading);font-size:1.9rem;line-height:1.2;text-align:center;margin:.25rem 0 0}
-.np-sub{color:var(--text-soft);font-size:.8rem;text-align:center;min-height:1.3em;margin:.2rem 0 1rem}
 .seek{display:block;width:100%;margin:0;height:28px;background:transparent;-webkit-appearance:none;appearance:none;cursor:pointer;touch-action:none}
 .seek:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
 .seek::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:linear-gradient(to right,var(--accent) var(--p,0%),var(--rule) var(--p,0%))}
@@ -61,7 +53,6 @@ footer{margin-top:3rem;font-family:var(--sans);font-size:.75rem;color:var(--num)
 .seek::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--heading);border:0}
 .seek:disabled{opacity:.45}
 .times{display:flex;justify-content:space-between;font-size:.8rem;color:var(--text-soft);font-variant-numeric:tabular-nums;margin-top:.1rem}
-.transport{display:flex;align-items:center;justify-content:space-between;margin:1rem 0 .9rem}
 .tb{background:transparent;border:0;color:var(--text);padding:0;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;cursor:pointer;position:relative;-webkit-tap-highlight-color:transparent}
 .tb:active{background:var(--shade)}
 .tb:focus-visible{outline:2px solid var(--accent)}
@@ -77,6 +68,34 @@ footer{margin-top:3rem;font-family:var(--sans);font-size:.75rem;color:var(--num)
 .chip{font:inherit;font-size:.82rem;color:var(--text);background:var(--shade);border:1px solid var(--rule);border-radius:999px;padding:.5rem .85rem;text-decoration:none;min-height:40px;display:inline-flex;align-items:center;gap:.35rem}
 select.chip{-webkit-appearance:none;appearance:none;text-align:center;cursor:pointer}
 .chip:focus-visible{outline:2px solid var(--accent)}
+body.lr{padding-bottom:10rem}
+body.lr #ch .w{color:#9383B7;border-radius:4px;cursor:pointer;transition:color .18s ease-out,background-color .18s ease-out;-webkit-tap-highlight-color:transparent}
+body.lr #ch .w.on{color:#fff}
+body.lr #ch .w.now{color:#fff;background:rgba(183,155,232,.3);box-shadow:0 0 0 3px rgba(183,155,232,.3)}
+body.lr #ch .alt,body.lr #ch .note{opacity:.55}
+.sub .btn{margin:0 .35rem .4rem 0}
+.lr-bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--panel);border-top:1px solid var(--rule);font-family:var(--sans);padding:.3rem 14px calc(.5rem + env(safe-area-inset-bottom,0px))}
+.lr-bar[hidden]{display:none}
+.lr-in{max-width:42rem;margin:0 auto}
+.lr-row{display:flex;align-items:center;justify-content:space-between;gap:.25rem;margin-top:.2rem}
+.lr-mid{display:flex;align-items:center;gap:.7rem}
+.lr-bar .tb{width:46px;height:46px}
+.lr-bar .tb.main{width:56px;height:56px}
+.lr-bar .tb.main svg{width:28px;height:28px}
+.lr-bar .tb.skip svg{width:32px;height:32px}
+.lr-bar .tb.x svg{width:22px;height:22px}
+.lr-bar .chip{min-height:40px;padding:.35rem .5rem;min-width:4.4rem;justify-content:center}
+.lr-msg{font-size:.78rem;color:var(--text-soft);text-align:center;margin:.3rem 0 0}
+.lr-msg[hidden]{display:none}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../">Books</a><a href="../listen/">Listen</a></nav>
+<style>
+.player{background:var(--panel);border:1px solid var(--rule);border-radius:18px;padding:1.25rem 1.1rem 1.1rem;font-family:var(--sans);margin-top:.5rem}
+.np-label{color:var(--text-soft);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;text-align:center}
+.np-title{font-family:var(--serif);color:var(--heading);font-size:1.9rem;line-height:1.2;text-align:center;margin:.25rem 0 0}
+.np-sub{color:var(--text-soft);font-size:.8rem;text-align:center;min-height:1.3em;margin:.2rem 0 1rem}
+.transport{display:flex;align-items:center;justify-content:space-between;margin:1rem 0 .9rem}
 .note-line{font-size:.78rem;color:var(--text-soft);text-align:center;margin:.9rem 0 0}
 .note-line[hidden]{display:none}
 .lib{margin-top:1.75rem;font-family:var(--sans)}
@@ -170,7 +189,7 @@ function rows(){
   $('rows').innerHTML=h;
 }
 function show(){
-  var c=list[i]; $('title').textContent=c.book+' '+c.chapter; $('read').href='../'+c.url;
+  var c=list[i]; $('title').textContent=c.book+' '+c.chapter; $('read').href='../'+c.url+(c.audio?'#listen-read':''); $('read').textContent=c.audio?'Listen + Read':'Read along';
   $('prev').disabled=false; $('next').disabled=i>=list.length-1;
   if($('book').value!==c.slug) $('book').value=c.slug;
   var n=$('note');
