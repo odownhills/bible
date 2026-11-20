@@ -157,3 +157,25 @@ When a chapter settles a new recurring term, add one line here in the same commi
 - pisteuo with the dative (3:23) "believe" [alt: believe in], leaving "believe in" for pisteuo eis. onoma "name". didonai entolen "give a commandment".
 - pneuma (3:24) "spirit", lowercase, as with ruach elohim in Genesis 1:2.
 - Where a hoti clause depends on the verse before (3:11), the sentence runs on across the verse break as "because", rather than opening a new sentence with "For" (kept for gar).
+
+## Settled in 1 John 4
+- Greek text, applying the 1 John 1 line: the other reading is noted at 4:19 (agapomen with no object; many manuscripts add "him", some "God"). Not noted, since the sense is intact: 4:3, where many manuscripts repeat "Christ as having come in the flesh" from 4:2, and 4:20, where many read a question ("how can he love ...?").
+- pneuma stays "spirit", lowercase, all through the chapter: to pneuma tou theou "the spirit of God" (as with ruach elohim), "the spirit of truth", "his spirit". to tou antichristou (4:3) "the spirit of the antichrist": the neuter article stands for pneuma, so the noun is repeated in English.
+- dokimazo "test". pseudoprophetes "false prophet". laleo "speak". exerchomai eis "go out into".
+- homologein Iesoun Christon en sarki eleluthota (4:2) "confess Jesus Christ as having come in the flesh" [alt: confess Jesus as the Christ who has come in the flesh]; a perfect participle "having come", "has come".
+- An emphatic subject pronoun, continued: hymeis / autoi / hemeis (4:4-6) "You yourselves / They themselves / We ourselves"; kai hemeis in a main clause after "if" (4:11) "we ourselves also".
+- ho en with a noun (4:4) "the one in". hos with the indicative (4:6) "whoever", the same English as hos an.
+- akouo with the genitive of a person (4:5-6) stays "hear" [alt: listen to], the alt given once in a chapter.
+- ek toutou (4:6) "from this", kept distinct from en touto "by this". en touto estin (4:10) "in this is"; en touto with any other verb stays "by this" (4:9, 13, 17), with a comma where "this" could be misread with the next noun (4:17).
+- plane "error" [alt: leading astray]; the alt carries the echo with planao "lead astray". With plane, he aletheia loses its article in English ("the spirit of truth and the spirit of error").
+- ouk egno (4:8) "did not know", as in 3:1, even with a present-tense subject; the perfect stays "have come to know" (4:16).
+- en hemin "in us" all through the chapter (4:12, 13), with the other reading as an alt where it is likely: 4:9 [alt: among us]; 4:16 agapen echein en "have love in" [alt: for].
+- monogenes "only" ("his only Son") [alt: only-born]. apostello "send": perfect "has sent" (4:9, 14), aorist "sent" (4:10). zao "live"; dia with the genitive "through".
+- A second accusative naming a role (4:10, 14): "as" ("as the atonement", "as savior of the world"). soter "savior", lowercase.
+- houtos (the adverb; 4:11) "in this way" [alt: so much]. popote "ever". protos "first".
+- pisteuo with the accusative (4:16) "believe"; with the dative of a thing or spirit (4:1) "believe", with no alt.
+- teleios "complete" (he teleia agape "complete love"), so that the echo with teleioo "make complete" survives; teteleiomene estin (4:12) "has been made complete", the same English as teteleiotai.
+- meta with the genitive (4:17) "with". hemera tes kriseos "the day of judgment"; krisis "judgment". kathos ... kai (4:17) "just as ..., so", as in 2:18.
+- phobos "fear"; phobeomai "fear" (verb; ho phoboumenos "the one who fears"). exo ballein "throw out", kept distinct from "drive out" (Gen 3:24). kolasis "punishment"; kolasin echei "has punishment", left as compressed as the Greek.
+- agapomen (4:19), which can be a statement or an appeal: "we love" [alt: let us love]; in 4:7, without a pronoun and after "Beloved", "let us love".
+- hina after entole (4:21) "that ... should", as in 3:23.
