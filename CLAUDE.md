@@ -2,13 +2,15 @@
 
 This repository is Obay's original English translation of the Bible, published at
 https://bible.odownhills.workers.dev (Cloudflare deploys the `site/` folder on every push to main).
-Whole chapters are added each night, in canonical order from Genesis 1 to Revelation 22.
+Whole chapters are added every day, in canonical order from Genesis 1 to Revelation 22.
 Accuracy matters more than speed.
 
 ## How much to translate
-`python3 scripts/next.py` prints tonight's plan: one line per chapter (`<slug> <n> <Book> <estimated words>`),
-whole chapters totalling the nightly word target. The target is the single setting in
-`data/settings.json` (`"words_per_night": [low, high]`). Only Obay changes it. If the plan prints `DONE`, stop.
+`python3 scripts/next.py` prints this run's plan: one line per chapter (`<slug> <n> <Book> <estimated words>`),
+whole chapters adding up to this run's share of the pace. The pace is set in `data/settings.json`:
+`"words_per_week"` (Obay's weekly word target) and `"runs_per_day"` (how many scheduled runs share a
+day; they are spaced more than 5 hours apart so each falls in its own usage window).
+Only Obay changes these. If the plan prints `DONE`, stop.
 
 ## Steps, repeated for each chapter in the plan, in order
 1. Translate the chapter following `TRANSLATION_RULES.md` and the settled renderings in `GLOSSARY.md`
@@ -33,7 +35,7 @@ Audio is recorded separately by the GitHub Action in `.github/workflows/audio.ym
 pushes to main, so `git pull --rebase origin main` before each push.
 
 ## Limits
-- Translate only the chapters in tonight's plan. Never edit an earlier chapter unless Obay asks.
+- Translate only the chapters in this run's plan. Never edit an earlier chapter unless Obay asks.
   If a translator finds that an earlier chapter conflicts with the new one, do not change it:
   say so in the summary.
 - Besides new chapter files and the rebuilt `site/`, the only file a run may change is `GLOSSARY.md`,
