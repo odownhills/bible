@@ -15,6 +15,7 @@ allows only about 10 requests per model per day, so:
     python3 scripts/tts.py --max 5 --strict   # exit non-zero when the key is refused
 Run scripts/build.py afterwards so pages and the Listen playlist pick up the new audio.
 """
+import array
 import base64
 import json
 import os
@@ -31,6 +32,7 @@ MODELS = os.environ.get("GEMINI_TTS_MODELS", "gemini-3.8-flash-tts").split(",")
 VOICE = os.environ.get("GEMINI_TTS_VOICE", "Sulafat")
 # Send only the words to be spoken. Any instruction placed before the passage is read aloud
 # by the voice model (found 2026-11-20), so there is deliberately no style prompt.
+# Gemini also ends every reply with a short burst of static, which trim_noise() removes.
 CHUNK = 6000        # characters per request
 RATE = 24000        # samples per second, 16-bit mono
 MIN_CPS = 26        # faster than this many characters per second means the audio was cut short
@@ -53,6 +55,37 @@ def chunks(text, size):
     return out
 
 
+def trim_noise(pcm):
+    """Cut the burst of static that Gemini puts at the very end of a reply.
+
+    Every reply measured on 2026-11-20 ended with a pause and then about 0.16 seconds of loud
+    static, heard as a scratchy sound at the end of a chapter. Speech never looks like that (a short,
+    very loud block right after silence, at the very end), so it is safe to remove when found.
+    """
+    frame = RATE // 100                                 # 10 ms
+    a = array.array("h")
+    a.frombytes(pcm[max(0, len(pcm) - 2 * RATE):])      # the last second
+    if sys.byteorder == "big":
+        a.byteswap()
+    level = [(sum(x * x for x in a[i:i + frame]) / frame) ** 0.5 / 32768
+             for i in range(0, len(a) - frame + 1, frame)]
+    quiet = None                                        # frame just after the last pause of 60 ms or more
+    for i in range(len(level) - 6, -1, -1):
+        if max(level[i:i + 6]) < 0.02:
+            quiet = i + 6
+            break
+    if quiet is None:
+        return pcm
+    while quiet < len(level) and level[quiet] < 0.02:
+        quiet += 1
+    tail = level[quiet:]
+    if not tail or len(tail) > 40 or sum(1 for v in tail if v > 0.3) < 0.6 * len(tail):
+        return pcm
+    cut = len(pcm) - (len(a) - quiet * frame) * 2
+    print("Removed %.2f seconds of static from the end of a reply." % ((len(pcm) - cut) / 2.0 / RATE), flush=True)
+    return pcm[:cut]
+
+
 def request(text, key, model):
     body = json.dumps({
         "contents": [{"parts": [{"text": text}]}],
@@ -70,8 +103,13 @@ def request(text, key, model):
         try:
             with urllib.request.urlopen(req, timeout=600) as r:
                 data = json.load(r)
-            parts = data["candidates"][0]["content"]["parts"]
-            return b"".join(base64.b64decode(p["inlineData"]["data"]) for p in parts if "inlineData" in p)
+            parts = [p["inlineData"] for p in data["candidates"][0]["content"]["parts"] if "inlineData" in p]
+            sound = [p for p in parts if p.get("mimeType", "audio/").startswith("audio/")]
+            if len(parts) != 1 or len(sound) != len(parts):
+                print("Reply parts:", ", ".join("%s (%d characters)" % (p.get("mimeType"), len(p["data"]))
+                                                for p in parts), flush=True)
+            pcm = b"".join(base64.b64decode(p["data"]) for p in sound)
+            return trim_noise(pcm[:len(pcm) // 2 * 2])
         except urllib.error.HTTPError as e:
             msg = e.read().decode(errors="replace")[:600]
             if e.code in (401, 403) or (e.code == 400 and "API key" in msg):
