@@ -179,3 +179,28 @@ When a chapter settles a new recurring term, add one line here in the same commi
 - phobos "fear"; phobeomai "fear" (verb; ho phoboumenos "the one who fears"). exo ballein "throw out", kept distinct from "drive out" (Gen 3:24). kolasis "punishment"; kolasin echei "has punishment", left as compressed as the Greek.
 - agapomen (4:19), which can be a statement or an appeal: "we love" [alt: let us love]; in 4:7, without a pronoun and after "Beloved", "let us love".
 - hina after entole (4:21) "that ... should", as in 3:23.
+
+## Settled in 1 John 5
+- Greek text, applying the 1 John 1 line: 5:7-8 follows the earliest manuscripts, and almost all the others with them: "there are three who testify, the spirit and the water and the blood". The longer reading (three who testify "in heaven, the Father, the Word and the Holy Spirit", and three "on earth"), found in a few late manuscripts and in the KJV, is not in the main text and has no note; whether to note it is for Obay to decide. The verse break falls where the Greek editions and most modern English versions put it.
+- 5:18: the earliest manuscripts divide between auton ("the one who was born from God keeps him") and heauton ("keeps himself"), and the sense changes, so both are given: auton in the main text, as in the editions whose readings were followed at 1:7 and 3:7, and heauton as the alt.
+- Not noted, since the sense is intact: 5:2 (many read "keep" for "do"), 5:5 (de, which the earliest have, is kept as "And"), 5:10 (en heauto / en auto, both "in himself"), 5:13 (many add "and so that you may believe in the name of the Son of God"), 5:21 (many add "Amen"). Also not noted: 5:6, where some add "and spirit" after "water and blood", and 5:10, where a few read "the Son" for "God".
+- gennao active (5:1) "father", as with holid in Genesis 5: ho gennesas "the one who fathered", left without an object as in the Greek; its echo with the passive "be born" is explained in one bracketed note. Perfect passive "has been born" (5:1, 4, 18); the aorist ho gennetheis (5:18) "the one who was born", kept apart from the perfect.
+- hotan (5:2) "when". poiein tas entolas (5:2) "do his commandments", kept distinct from tereo "keep" (5:3). barys (5:3) "burdensome".
+- hina after "the love of God" (5:3) and after lego (5:16) "that ... should", as in 3:11, 23.
+- pan to with a neuter participle (5:4) "everything that". nike "victory"; pistis "faith". Their echoes with nikao "conquer" and pisteuo "believe" are explained in one bracketed note (5:4). The aorist participle he nikesasa (5:4) "that conquered", a simple past, kept apart from the perfect "have conquered" (2:13-14; 4:4).
+- de where it carries the thought forward (5:5, 20) "And"; where it contrasts it stays "but".
+- hydor "water". erchomai dia (5:6) "come through"; en to hydati / en to haimati "in the water / in the blood" [alt: with], keeping en distinct from dia.
+- to martyroun (5:6, neuter) "the one that testifies"; hoi martyrountes (5:7, masculine) "who testify".
+- A hoti that opens a new sentence in the Greek editions (5:7) still runs on as "because", after a semicolon, as in 3:11.
+- eis to hen einai (5:8) "be at one" [alt: be one].
+- martyria "testimony"; he martyria hen memartyreken (5:10) "the testimony that God has testified", keeping the cognate object as in 2:25. anthropoi (5:9) "human beings".
+- pisteuo eis "believe in" (5:10, 13); pisteuo with the dative of God (5:10) "believe", with no alt: the point is that what God has said is not believed.
+- he zoe with the article (5:12) "the life", pointing back to "this life" (5:11).
+- A dative participle set after its clause, in apposition to "you" or "him" (5:13, 16), stays at the end of the English sentence.
+- kata with the accusative (5:14) "according to". ho ean (5:15) "whatever", as in 3:22. aitema "request" (noun; it shares its English with erotao). erotao (5:16) "make a request", kept distinct from aiteo "ask".
+- hamartanein hamartian (5:16) "sin a sin", keeping the cognate object. pros thanaton "toward death", pros as in "boldness toward"; me and ou before it are both "not". tois hamartanousin me pros thanaton "those sinning not toward death": the participle is kept as "-ing" here, because "those who sin not" would read as old English for "do not sin".
+- The subject of "he will give" (5:16) is left as open as in the Greek. ekeines (5:16) "that sin": the feminine pronoun stands for hamartia, so the noun is repeated, as in 4:3. hamartia without the article (5:16-17) "sin", with no article in English.
+- haptomai "touch", the same English as naga in Gen 3:3. keimai en (5:19) "lie in" (of position). holos "whole". en to ponero (5:19) "in the evil one" [alt: in evil].
+- heko (5:20) "has come", the same English as the perfect of erchomai (English has no second plain verb for it). dianoia "understanding". ho alethinos "the true one", lowercase like "the righteous one" (2:1) and "the evil one".
+- houtos (5:20) "This", with no noun added, so that it points back as openly as in the Greek.
+- phylasso (5:21) "guard", the same English as shamar in Gen 3:24, kept distinct from tereo "keep". eidolon "idol"; apo ton eidolon "from idols", without the article in English.
