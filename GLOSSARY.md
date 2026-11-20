@@ -243,3 +243,32 @@ When a chapter settles a new recurring term, add one line here in the same commi
 - amen amen "Amen, amen" [alt: Truly, truly]: the Greek keeps the Hebrew word untranslated, and "truly" is alethos (1:47).
 - A plural "you" spoken to one person (1:51 hymin, opsesthe) "you all", so that the change of number is not lost.
 - For Obay to decide (each is easy to reverse): "the Word" capitalized; "the only Son, God" at 1:18; "Amen, amen" or "Truly, truly"; the historical present kept as a present; "you all" for a plural "you" at 1:51; "baptize" or "immerse"; "grace" or "favor" for charis; "the Son of Man" or a rendering with "human being"; whether "[alt: the Judeans]" should be repeated in later chapters; "in holy spirit" with no article and no capital.
+
+## Settled in John 2
+- Greek text, applying the 1 John 1 line: the other reading is noted at 2:15 (phragellion "a whip"; the two earliest papyri and many others read hos phragellion "something like a whip"). Not noted, since the sense is intact: 2:4 (the opening kai, which the earliest papyri have, is kept), 2:10 (many add tote "then" before "the lesser"), 2:12 (the doubtful autou after "brothers" is not marked), 2:17 (kataphagetai "will devour"; a few late manuscripts and the KJV read katephagen "has devoured"), 2:22 (many add "to them"), 2:24 (auton / heauton, both "himself"). Also not noted: 2:3, where one early manuscript has a longer wording ("they had no wine, because the wine of the wedding was finished").
+- gamos "wedding". meter "mother". oinos "wine". hystereo (2:3) "run short". oupo "not yet". heko of the hour (2:4) "has come", as in 1 Jn 5:20.
+- kaleo of a guest (2:2) "invite" [alt: call]; elsewhere it stays "call". A singular verb with two subjects (2:2) is put in ordinary English ("Jesus and his disciples were also invited").
+- ti emoi kai soi (2:4) "What do I have to do with you?": the set idiom, in a form that also fits where no "that" is in view (Mark 1:24; 5:7; Judg 11:12). The other reading ("What is that to me and to you?") is the alt. gynai as an address "woman", with nothing added.
+- diakonos "servant" (to be kept distinct from doulos). ho ti an "whatever", as with ho ean.
+- hydria "water jar"; lithinos "stone". keimai of things put in place (2:6) "be set" (keimai en "lie in" stays for 1 Jn 5:19). katharismos "cleansing", like katharizo "cleanse"; kata ton katharismon "according to the cleansing" [alt: for the cleansing]. choreo "hold"; ana "each". metretes "measure": the unit is translated, not converted and not explained.
+- hoi Ioudaioi: until Obay decides, "[alt: the Judeans]" is given once in a chapter, at the first occurrence (2:6), like the other standing alts.
+- gemizo "fill" (leaving "make full" for pleroo); heos ano "up to the top". antleo "draw (out)", its object ("some") supplied in English. phero "carry", kept distinct from ago "bring".
+- architriklinos "the master of the banquet" [alt: the head steward], the alt given once in a chapter. geuomai "taste". nymphios "bridegroom".
+- An aside by the writer inside a sentence (2:9) stands in parentheses, as in 1:38.
+- pas anthropos (2:10) "every human being", as in 1:9; ho anthropos for people as a class (2:25) "a human being". An indefinite third-person plural (2:10 methysthosin) "people".
+- kalos (of wine) "fine", kept distinct from agathos "good". elasson "lesser", the pair of meizon "greater". methysko (passive) "become drunk", not softened. tithemi of wine "set out". sy (2:10, 20) "you yourself", as an emphatic subject.
+- semeion "sign" (the same English as ot in Genesis); poiein semeion "do a sign". arche ton semeion "the beginning of the signs", arche as always; the second accusative is "as", as in 1 Jn 4:10.
+- katabaino of a journey (2:12) "go down", the pair of anabaino "go up"; of what descends from heaven it stays "come down". meta touto "after this". meno of lodging stays "stay" [alt: remain], the alt given once in a chapter. ou pollas hemeras "not many days", left as the Greek puts it.
+- pascha "Passover"; heorte "festival". engys "near". Kana "Cana"; Kapharnaoum "Capernaum"; Hierosolyma "Jerusalem".
+- hieron "temple" (the whole sacred enclosure: 2:14, 15); naos "sanctuary" [alt: temple] (the house itself: 2:19-21), the alt given once in a chapter. Keep the two distinct: the saying about the body uses the second word.
+- poleo "sell". bous "cattle"; probaton "sheep". kermatistes "coin changer" and kerma "coins" (2:14-15), keeping their echo; kollybistes "money changer". trapeza "table". phragellion "whip"; schoinion "cord".
+- ekballo "drive out", the same English as garash (Gen 3:24); exo ballein stays "throw out". ekcheo "pour out". anatrepo "overturn". enteuthen "from here".
+- 2:15 pantas ... ta te probata kai tous boas: "them all ..., both the sheep and the cattle" [alt: along with the sheep and the cattle]: "all" may be the animals alone, or the people with the animals.
+- oikos "house"; ho oikos tou patros mou "my Father's house"; oikos emporiou "a house of trade".
+- mimneskomai "remember". gegrammenon estin "it is written". zelos "zeal"; ho zelos tou oikou sou (2:17) "zeal for your house", since the genitive can only be the object here. katesthio "devour", kept distinct from "eat".
+- deiknymi "show". hoti after a question (2:18) "since".
+- lyo of a building (2:19) "destroy", the listed alt of 1 Jn 3:8, because "undo" cannot be said of a building. egeiro "raise", of a building and of the dead alike, so that the double sense survives. egerthe ek nekron (2:22) "was raised from the dead" [alt: rose from the dead]. nekros "dead".
+- oikodomeo "build"; 2:20 "was built in forty-six years" [alt: has been under construction for forty-six years]. soma "body". graphe "scripture", lowercase like "law".
+- lego peri with no object (2:21) "speak concerning" (it shares its English with laleo); elsewhere lego stays "say" (2:22 "the word that Jesus had said").
+- pisteuein heauton with the dative (2:24) "entrust oneself to"; its echo with pisteuo "believe" (2:23) is explained in one bracketed note, set at the end of the sentence (2:25). pantas (2:24, masculine) "everyone".
+- For Obay to decide (each is easy to reverse): "What do I have to do with you, woman?" or "What is that to me and to you, woman?" as the main text at 2:4; "sanctuary" for naos beside "temple" for hieron, or "temple" for both; "fine" or "good" for kalos; "measures" left unconverted at 2:6; whether to note "something like a whip" at 2:15; "a human being" at 2:25, which loses the link to "a man" in 3:1.
