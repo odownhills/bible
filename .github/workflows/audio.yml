@@ -7,12 +7,13 @@ on:
     branches: [main]
     paths: ["translations/**"]
   schedule:
+    - cron: "17 8 * * *"    # 12:17 AM Pacific, just after Gemini's free daily limit resets
     - cron: "23 14 * * *"   # daily catch-up, 6:23 AM Pacific
   workflow_dispatch:
     inputs:
       max:
         description: "How many chapters to record in this run"
-        default: "3"
+        default: "10"
 
 permissions:
   contents: write
@@ -35,12 +36,14 @@ jobs:
           if [ -z "$GEMINI_API_KEY" ]; then echo "No GEMINI_API_KEY secret yet; nothing to do."; exit 0; fi
           command -v ffmpeg >/dev/null || sudo apt-get install -y -qq ffmpeg
           python3 scripts/build.py
-          python3 scripts/tts.py --max "${MAX_CHAPTERS:-3}" --strict
+          python3 scripts/tts.py --max "${MAX_CHAPTERS:-10}" --strict
           python3 scripts/build.py
       - name: Publish
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python3 scripts/build.py
           git add -A site
           if git diff --cached --quiet; then echo "No new audio."; exit 0; fi
           git commit -m "Add chapter audio"
