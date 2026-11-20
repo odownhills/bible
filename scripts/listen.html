@@ -1,0 +1,85 @@
+<h1>Listen</h1>
+<p class="sub">Plays chapter after chapter until you stop it.</p>
+<style>
+.player{background:var(--panel);border:1px solid var(--rule);border-radius:14px;padding:1.1rem;font-family:var(--sans)}
+.now{color:var(--text-soft);font-size:.8rem;text-transform:uppercase;letter-spacing:.1em}
+.now b{display:block;font-family:var(--serif);font-weight:normal;text-transform:none;letter-spacing:0;color:var(--heading);font-size:1.6rem;margin:.2rem 0 .8rem}
+.controls{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+.controls .btn{font-size:1rem;padding:.65rem 1.1rem}
+.player select{width:100%;margin-top:1rem;font:inherit;font-size:.95rem;color:var(--text);background:var(--shade);border:1px solid var(--rule);border-radius:8px;padding:.6rem}
+.player label{display:block;margin-top:1rem;font-size:.8rem;color:var(--text-soft)}
+.hint{font-family:var(--sans);font-size:.8rem;color:var(--text-soft);margin-top:1rem}
+progress{width:100%;margin-top:1rem;accent-color:var(--accent)}
+</style>
+<div class="player">
+  <div class="now">Now playing<b id="title">&hellip;</b></div>
+  <div class="controls">
+    <button class="btn ghost" id="prev" aria-label="Previous chapter">&#9198;</button>
+    <button class="btn" id="play">&#9654; Play</button>
+    <button class="btn ghost" id="next" aria-label="Next chapter">&#9197;</button>
+    <a class="btn ghost" id="read" href="#">Read</a>
+  </div>
+  <progress id="prog" value="0" max="1"></progress>
+  <label>Start from <select id="pick"></select></label>
+  <label>Speed <select id="rate"><option>0.9</option><option selected>1</option><option>1.1</option><option>1.25</option><option>1.5</option></select></label>
+  <p class="hint" id="mode"></p>
+</div>
+<audio id="audio" preload="auto"></audio>
+<script>
+(function(){
+var list=[],i=0,playing=false,sents=[],si=0;
+var $=function(id){return document.getElementById(id)};
+var audio=$('audio'),synth=window.speechSynthesis;
+function save(){try{localStorage.setItem('listenAt',list[i].id)}catch(e){}}
+function rate(){return parseFloat($('rate').value)||1}
+function show(){
+  var c=list[i];if(!c)return;
+  $('title').textContent=c.book+' '+c.chapter;$('pick').value=c.id;$('read').href='../'+c.url;
+  $('mode').textContent=c.audio?'Recorded voice. Keeps playing with the screen off.':
+    'This chapter has no recording yet, so your phone’s built-in voice reads it. Keep the screen on while it plays.';
+  if('mediaSession' in navigator){navigator.mediaSession.metadata=new MediaMetadata({title:c.book+' '+c.chapter,artist:'The Bible, Freshly Translated'});}
+}
+function stopAll(){audio.pause();if(synth)synth.cancel();}
+function speakNext(){
+  if(!playing)return;
+  if(si>=sents.length){advance();return;}
+  var u=new SpeechSynthesisUtterance(sents[si]);u.rate=rate();
+  u.onend=function(){si++;$('prog').value=si/sents.length;speakNext();};
+  u.onerror=function(e){if(e.error!=='interrupted'&&e.error!=='canceled'){si++;speakNext();}};
+  synth.speak(u);
+}
+function start(){
+  var c=list[i];stopAll();show();save();$('prog').value=0;
+  if(c.audio){audio.src='../'+c.audio;audio.playbackRate=rate();audio.play().catch(function(){});}
+  else if(synth){sents=c.text.match(/[^.!?;:]+[.!?;:]*["”’')]*\s*/g)||[c.text];si=0;speakNext();}
+}
+function advance(){if(i+1<list.length){i++;start();}else{playing=false;$('play').innerHTML='&#9654; Play';$('title').textContent='All caught up';}}
+function toggle(){
+  playing=!playing;$('play').innerHTML=playing?'&#10074;&#10074; Pause':'&#9654; Play';
+  if(!playing){stopAll();return;}
+  var c=list[i];
+  if(c.audio&&audio.src&&!audio.ended&&audio.currentTime>0){audio.play();}else{start();}
+}
+audio.addEventListener('ended',function(){if(playing)advance();});
+audio.addEventListener('timeupdate',function(){if(audio.duration)$('prog').value=audio.currentTime/audio.duration;});
+$('play').onclick=toggle;
+$('next').onclick=function(){if(i+1<list.length){i++;playing?start():show();}};
+$('prev').onclick=function(){if(i>0){i--;playing?start():show();}};
+$('pick').onchange=function(){for(var k=0;k<list.length;k++)if(list[k].id===this.value)i=k;playing?start():(show(),save());};
+$('rate').onchange=function(){audio.playbackRate=rate();};
+if('mediaSession' in navigator){
+  navigator.mediaSession.setActionHandler('play',function(){if(!playing)toggle();});
+  navigator.mediaSession.setActionHandler('pause',function(){if(playing)toggle();});
+  navigator.mediaSession.setActionHandler('nexttrack',function(){$('next').onclick();});
+  navigator.mediaSession.setActionHandler('previoustrack',function(){$('prev').onclick();});
+}
+fetch('../manifest.json').then(function(r){return r.json()}).then(function(m){
+  list=m;if(!list.length){$('title').textContent='Nothing yet';return;}
+  $('pick').innerHTML=list.map(function(c){return '<option value="'+c.id+'">'+c.book+' '+c.chapter+(c.audio?'':' (phone voice)')+'</option>'}).join('');
+  var want=new URLSearchParams(location.search).get('from');
+  if(!want){try{want=localStorage.getItem('listenAt')}catch(e){}}
+  for(var k=0;k<list.length;k++)if(list[k].id===want)i=k;
+  show();
+});
+})();
+</script>
