@@ -51,3 +51,24 @@ When a chapter settles a new recurring term, add one line here in the same commi
 - shalach (piel) "send out"; garash "drive out".
 - shamar "watch over" (2:15) or "guard" (3:24), by context.
 - hen "look", the same as hinneh.
+
+## Settled in Genesis 4
+- yada (sexual: 4:1, 17, 25) "knew" [alt: was intimate with], kept distinct from "lie with" and "go in to".
+- harah "conceive". yalad: of a mother "give birth to" (the same verb as "bear children" in 3:16); of a father (4:18) "fathered"; passive "was born". yeled (4:23) "boy" [alt: young man].
+- qanah (4:1) "acquire" [alt: bring into being].
+- ro'eh "shepherd"; tson "flock(s)"; miqneh "herds", kept distinct from behemah "livestock".
+- minchah "offering". sha'ah el (4:4-5) "look at" [alt: look with favor on].
+- charah le- "be angry". hetiv (4:7) "do good". se'et (4:7) "a lifting up" [alt: be accepted, or forgiveness].
+- chatta't "sin". ravats (4:7) "crouch". petach "entrance" ("door" is kept for delet).
+- harag "kill". hikkah (4:15) "strike down", kept distinct from shuf "strike". naqam "avenge" / "take vengeance"; shiv'atayim "seven times over".
+- shomer (4:9) "guardian". tsa'aq "cry out".
+- avon "punishment" or "guilt", by context (never "iniquity").
+- na wanad (4:12, 14) "a drifter and a wanderer".
+- panim "face" (4:5-6, 14); millifnei YHWH "from the presence of Yahweh" (4:16), as in 3:8.
+- ot "sign" (1:14; 4:15). yashav "live" (4:16, 20). lakhen "therefore".
+- kinnor "lyre"; ugav "pipe"; nechoshet "bronze"; barzel "iron".
+- shit (4:25) "set", so that the echo with the name "Seth" survives in English.
+- qara beshem YHWH "call on the name of Yahweh". qara shem "name" (verb), as in 3:20.
+- wayehi before a time clause: "And after ..." / "And when ...", with no separate "it came to pass".
+- adam with no article and no preposition (4:25): "Adam", with no alt.
+- Where the Hebrew text breaks off or spells a name two ways (4:8, 18), the main text gives a readable form and the other goes in an [alt: ...].
