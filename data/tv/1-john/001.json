@@ -1,45 +1,59 @@
 {
- "note": "Hand-made test, 2026-11-20. Each scene starts at the first word of its verse (the first at the chapter's first word). Pictures: OpenAI gpt-image-2.5-sunburst, medium, 1920x1088, about 1 cent each; 03 was made from 01 so the writer keeps his face. Rules: only what the verses say, no figure for God, nothing glowing, no text in the picture.",
+ "note": "Hand-made test, 2026-11-20, second set. Obay asked for pictures that illustrate the key principle of each part instead of a historical scene, so each one is a present-day symbolic picture of what its verses teach. Each scene starts at the first word of its verse. Pictures: OpenAI gpt-image-2.5-sunburst, medium, 1920x1088, about 1 cent each. No figure for God, nothing glowing, no text in the picture.",
  "scenes": [
   {
    "verse": 1,
-   "image": "01-hands.jpg",
-   "shows": "An old man looks at his own open hands, remembering what they touched."
+   "image": "01-touch.jpg",
+   "principle": "What is announced was heard, seen and touched, not a theory.",
+   "shows": "Real and firsthand: a hand reaches out and touches the light."
   },
   {
    "verse": 2,
-   "image": "02-revealed.jpg",
-   "shows": "Men and women on a lake shore watch the sunrise."
+   "image": "02-life.jpg",
+   "principle": "Life that was hidden has been shown.",
+   "shows": "A seedling breaks through dry, cracked ground at sunrise."
   },
   {
    "verse": 3,
-   "image": "03-writing.jpg",
-   "shows": "The same old man writes the letter, two companions beside him, all glad."
+   "image": "03-shared.jpg",
+   "principle": "What was received is passed on so others share in it, and that completes the joy.",
+   "shows": "A flame is passed from one candle to another among glad faces."
   },
   {
    "verse": 5,
    "image": "04-light.jpg",
-   "shows": "Clear sunlight over hills and a lake; nothing dark, no one in it."
+   "principle": "God is light, with no darkness at all.",
+   "shows": "Above the clouds at sunrise, light from edge to edge."
   },
   {
    "verse": 6,
-   "image": "05-darkness.jpg",
-   "shows": "A man walks alone into a dark alley, leaving a lit doorway behind."
+   "image": "05-mask.jpg",
+   "principle": "Saying one thing and living another is a lie.",
+   "shows": "A man in the dark holds a smiling mask over his face."
   },
   {
    "verse": 7,
-   "image": "06-walking-in-light.jpg",
-   "shows": "A group of men and women walk together in bright morning light."
+   "image": "06-together.jpg",
+   "principle": "Living in the light, with nothing hidden, joins people to one another.",
+   "shows": "People of today walk together in open morning light."
   },
   {
    "verse": 8,
-   "image": "07-cleansed.jpg",
-   "shows": "A man kneels at a stream and washes his face in clean water."
+   "image": "07-blind.jpg",
+   "principle": "Denying our sin is fooling ourselves.",
+   "shows": "A man at a mirror covers his own eyes."
+  },
+  {
+   "verse": 9,
+   "image": "08-washed.jpg",
+   "principle": "Owning our sins honestly is met with forgiveness and cleansing.",
+   "shows": "Muddy hands held open under clean running water."
   },
   {
    "verse": 10,
-   "image": "08-closed-scroll.jpg",
-   "shows": "A closed scroll lies untouched on a table; the daylight does not reach it."
+   "image": "09-unopened.jpg",
+   "principle": "Claiming we have never sinned shuts his word out of us.",
+   "shows": "A closed book gathers dust where the daylight does not reach."
   }
  ]
 }
