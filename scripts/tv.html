@@ -70,12 +70,15 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .cover .go[disabled]{opacity:.55;cursor:default}
 .cover a{font-family:var(--sans);font-size:.9rem;color:var(--text-soft);text-decoration:underline;text-underline-offset:.2em}
 
-/* a phone held upright: the picture on top, the words below it */
+/* a phone held upright: a tall picture fills the screen with the words over it, when the chapter has tall pictures;
+   otherwise the wide picture sits on top with the words below it */
 @media (orientation:portrait){
-  .pic{bottom:auto;height:58vh}
-  .scrim{background:linear-gradient(to bottom,rgba(0,0,0,.42) 0,rgba(0,0,0,0) 12%,rgba(0,0,0,0) 40%,#000 58%,#000 100%)}
-  .cap{bottom:auto;top:58vh;height:calc(42vh - 4.6rem);display:flex;align-items:center;justify-content:center;width:88vw;font-size:clamp(1.35rem,6.4vw,2.3rem)}
-  .cap>span{display:block}
+  #stage:not(.hastall) .pic{bottom:auto;height:58vh}
+  #stage:not(.hastall) .scrim{background:linear-gradient(to bottom,rgba(0,0,0,.42) 0,rgba(0,0,0,0) 12%,rgba(0,0,0,0) 40%,#000 58%,#000 100%)}
+  #stage:not(.hastall) .cap{bottom:auto;top:58vh;height:calc(42vh - 4.6rem);display:flex;align-items:center;justify-content:center;width:88vw;font-size:clamp(1.35rem,6.4vw,2.3rem)}
+  #stage:not(.hastall) .cap>span{display:block}
+  #stage.hastall .scrim{background:linear-gradient(to bottom,rgba(0,0,0,.45) 0,rgba(0,0,0,0) 11%,rgba(0,0,0,0) 44%,rgba(8,5,16,.6) 66%,rgba(8,5,16,.92) 100%)}
+  #stage.hastall .cap{width:88vw;bottom:max(12vh,calc(env(safe-area-inset-bottom) + 5.4rem));font-size:clamp(1.4rem,6.6vw,2.5rem);line-height:1.3}
 }
 </style></head>
 <body>
@@ -118,6 +121,7 @@ var PAUSE='<path class="solid" d="M7 5h3.5v14H7zM13.5 5H17v14h-3.500z"/>';
 var WORD=/[^\s—–]*[\p{L}\p{N}_][^\s—–]*/gu;   // the same rule as scripts/build.py
 var LEAD=0.06,RATES=[1,1.1,1.25,1.5];
 var manifest=null,me=null,next=null,words=[],seps=[],T=[],cards=[],scenes=[],verses=[];
+var tallQ=matchMedia('(orientation:portrait)'),hasTall=false;
 var curScene=-1,curCard=-1,curWord=-1,ready=false,dragging=false,raf=0,idleT=0,wake=null,serial=0,blobUrl=null,ended=false;
 
 function get(k,v){try{var x=localStorage.getItem(k);return x==null?v:JSON.parse(x)}catch(e){return v}}
@@ -148,6 +152,7 @@ function load(id,auto){
     words=[]; seps=[]; var m,last=0; WORD.lastIndex=0;
     while((m=WORD.exec(text))){ seps.push(text.slice(last,m.index)); words.push(m[0]); last=m.index+m[0].length; }
     scenes=tv.scenes||[]; verses=tv.verses||[];
+    hasTall=scenes.length>0&&scenes.every(function(s){return !!s.tall}); stage.classList.toggle('hastall',hasTall);
     if(blobUrl) URL.revokeObjectURL(blobUrl); blobUrl=URL.createObjectURL(got[3]);
     audio.src=blobUrl; audio.defaultPlaybackRate=rate(); audio.playbackRate=rate();
     audio.addEventListener('loadedmetadata',function once(){ audio.removeEventListener('loadedmetadata',once);
@@ -193,7 +198,8 @@ function textOf(a,b){ var s=''; for(var k=a;k<b;k++) s+=(k>a?seps[k]:'')+words[k
 
 /* ---- drawing ---- */
 function find(arr,t,key){ var lo=0,hi=arr.length-1,k=-1; while(lo<=hi){ var mid=(lo+hi)>>1,v=key?arr[mid][key]:arr[mid]; if(v<=t){k=mid;lo=mid+1}else hi=mid-1 } return k; }
-function preload(i){ if(scenes[i]&&!scenes[i]._img){ var im=new Image(); im.src=site(scenes[i].img); scenes[i]._img=im; } }
+function pic(s){ return site(hasTall&&tallQ.matches?s.tall:s.img); }   // the tall picture when the screen is upright
+function preload(i){ var s=scenes[i]; if(s&&s._pre!==pic(s)){ var im=new Image(); im.src=s._pre=pic(s); s._img=im; } }
 function show(i,instant){
   if(i===curScene||!scenes[i])return; curScene=i; preload(i); preload(i+1);
   var s=scenes[i],lay=layers[top^1],img=lay.firstElementChild,end=scenes[i+1]?scenes[i+1].at:audio.duration;
@@ -204,7 +210,7 @@ function show(i,instant){
     lay.classList.add('on'); layers[top].classList.remove('on'); top^=1;
     if(instant){ void lay.offsetWidth; lay.style.transition=''; layers[top^1].style.transition=''; }
   }
-  img.src=site(s.img);
+  img.src=pic(s);
   if(img.decode) img.decode().then(up,up); else up();
 }
 function card(i){
@@ -252,7 +258,8 @@ function full(){
   var el=d.documentElement;
   if(d.fullscreenElement){ d.exitFullscreen(); return; }
   var p=el.requestFullscreen?el.requestFullscreen():null;
-  if(p&&p.then) p.then(function(){ try{ screen.orientation.lock('landscape').catch(function(){}); }catch(e){} }).catch(function(){});
+  // a chapter with only wide pictures is best sideways; one with tall pictures works either way round
+  if(p&&p.then) p.then(function(){ if(hasTall)return; try{ screen.orientation.lock('landscape').catch(function(){}); }catch(e){} }).catch(function(){});
 }
 audio.addEventListener('play',function(){ stage.classList.remove('paused'); icon(); loop(); awake(true); poke(); });
 audio.addEventListener('pause',function(){ stage.classList.add('paused'); icon(); awake(false); poke(); });
@@ -278,6 +285,7 @@ d.addEventListener('keydown',function(e){ if(/INPUT/.test(e.target.tagName))retu
   if(e.key===' '||e.key==='Enter'||e.key==='MediaPlayPause'){ if(e.target.tagName==='BUTTON'&&e.key!=='MediaPlayPause')return; e.preventDefault(); audio.paused?play():pause(); }
   else if(e.key==='ArrowLeft') jump(audio.currentTime-10); else if(e.key==='ArrowRight') jump(audio.currentTime+10);
   else if(e.key==='f'||e.key==='F') full(); });
+(tallQ.addEventListener?tallQ.addEventListener.bind(tallQ,'change'):tallQ.addListener.bind(tallQ))(function(){ if(hasTall&&ready&&curScene>=0){ var i=curScene; curScene=-1; show(i,true); } });
 d.addEventListener('visibilitychange',function(){ if(!d.hidden&&!audio.paused) awake(true); });
 if('mediaSession' in navigator){
   var set=function(a,f){try{navigator.mediaSession.setActionHandler(a,f)}catch(e){}};

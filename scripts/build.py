@@ -231,7 +231,8 @@ def page(title, body, depth, tail=""):
 def tv_scenes(slug, n, verse_at):
     """Write site/tv/<slug>/<n>.json for TV mode and return its site path, or None when the chapter has no pictures.
 
-    A chapter's scene plan is data/tv/<slug>/<NNN>.json: {"scenes": [{"verse": 1, "image": "01-hands.jpg", ...}]},
+    A chapter's scene plan is data/tv/<slug>/<NNN>.json: {"scenes": [{"verse": 1, "image": "01-touch.jpg",
+    "tall": "tall/01-touch.jpg", ...}]} ("tall" is optional: the same scene made for a phone held upright),
     each scene starting at the first word of its verse (the first scene at the chapter's first word). Its pictures
     are site/pictures/<slug>/<n>/<image>. TV mode is offered only when every picture of the plan is there."""
     plan = os.path.join(ROOT, "data", "tv", slug, "%03d.json" % n)
@@ -243,7 +244,11 @@ def tv_scenes(slug, n, verse_at):
         img = "pictures/%s/%d/%s" % (slug, n, s["image"])
         if s["verse"] not in start or not os.path.exists(os.path.join(OUT, img)):
             return None
-        scenes.append({"w": 0 if k == 0 else start[s["verse"]], "img": img})
+        scene = {"w": 0 if k == 0 else start[s["verse"]], "img": img}
+        tall = "pictures/%s/%d/%s" % (slug, n, s.get("tall") or "")
+        if s.get("tall") and os.path.exists(os.path.join(OUT, tall)):
+            scene["tall"] = tall   # the same scene made tall, for a phone held upright
+        scenes.append(scene)
     rel = "tv/%s/%d.json" % (slug, n)
     os.makedirs(os.path.join(OUT, "tv", slug), exist_ok=True)
     json.dump({"verses": verse_at, "scenes": scenes}, open(os.path.join(OUT, rel), "w", encoding="utf-8"))
