@@ -194,11 +194,18 @@ function load(k,auto){
   busy=true; stopAll(); i=k; var c=list[i]; want=!!auto; setIcon(); show();
   if(c.audio){
     mode='audio'; seek.disabled=false; seek.step=0.1; paint(0,c.duration||0);
-    audio.defaultPlaybackRate=rate(); audio.src='../'+c.audio; audio.playbackRate=rate();
-    var resume=pos[c.id]||0;
-    audio.addEventListener('loadedmetadata',function once(){ audio.removeEventListener('loadedmetadata',once);
-      busy=false; if(resume&&resume<audio.duration-5) audio.currentTime=resume; paint(audio.currentTime,audio.duration); posState(); });
-    audio.load(); if(auto) audio.play().catch(function(){want=false;setIcon();});
+    var resume=pos[c.id]||0; seek.disabled=true; $('sub').textContent='Loading\u2026';
+    // The whole recording is downloaded first and played from memory. The site's host does not
+    // answer partial-file requests, and without them the browser cannot jump ahead in a file.
+    whole(c).then(function(src){
+      if(list[i]!==c)return;
+      audio.defaultPlaybackRate=rate(); audio.src=src; audio.playbackRate=rate();
+      audio.addEventListener('loadedmetadata',function once(){ audio.removeEventListener('loadedmetadata',once);
+        busy=false; seek.disabled=false; $('sub').textContent='Chapter '+c.chapter+' of '+c.total;
+        if(resume&&resume<audio.duration-5) audio.currentTime=resume; paint(audio.currentTime,audio.duration); posState();
+        if(list[i+1]&&list[i+1].audio) whole(list[i+1]); });
+      audio.load(); if(want) audio.play().catch(function(){want=false;setIcon();});
+    });
   }else{
     mode='tts'; busy=false; audio.removeAttribute('src'); sents=[]; si=0; seek.step=1; paint(0,1);
     if(!synth){ $('note').textContent='No recording for this chapter yet, and this browser cannot read aloud.'; seek.disabled=true; return; }
@@ -206,13 +213,24 @@ function load(k,auto){
       if(list[i]!==c)return; sents=t.match(/[^.!?;:]+[.!?;:]*["”’')]*\s*/g)||[t]; paint(0,sents.length); if(want)speakNext(); });
   }
 }
+var blobs={},order=[];
+function whole(c){
+  if(blobs[c.id])return blobs[c.id];
+  var pr=fetch('../'+c.audio).then(function(r){ if(!r.ok)throw 0; return r.blob(); })
+    .then(function(b){ return URL.createObjectURL(b); })
+    .catch(function(){ delete blobs[c.id]; return '../'+c.audio; });
+  blobs[c.id]=pr; order.push(c.id);
+  while(order.length>4){ var old=order.shift(); if(list[i]&&old===list[i].id){ order.push(old); break; }
+    (function(q){ if(q) q.then(function(u){ if(u.indexOf('blob:')===0) URL.revokeObjectURL(u); }); })(blobs[old]); delete blobs[old]; }
+  return pr;
+}
 function ended(){
   var c=list[i]; done[c.id]=1; put('listenDone',done); delete pos[c.id]; put('listenPos',pos);
   if(stopAtEnd){ stopAtEnd=false; $('sleep').value='0'; want=false; setIcon(); rows(); return; }
   if(i+1<list.length) load(i+1,true); else { want=false; setIcon(); rows(); $('sub').textContent='You are all caught up'; }
 }
-function play(){ want=true; setIcon(); if(mode==='audio'){ audio.playbackRate=rate(); audio.play().catch(function(){want=false;setIcon();}); } else speakNext(); }
-function pause(){ want=false; setIcon(); if(mode==='audio'){ audio.pause(); savePos(true); } else if(synth) synth.cancel(); }
+function play(){ want=true; setIcon(); if(mode==='audio'){ if(busy)return; audio.playbackRate=rate(); audio.play().catch(function(){want=false;setIcon();}); } else speakNext(); }
+function pause(){ want=false; setIcon(); if(mode==='audio'){ if(busy)return; audio.pause(); savePos(true); } else if(synth) synth.cancel(); }
 function toggle(){ want?pause():play(); }
 function seekBy(d){
   if(mode==='audio'){ if(!isFinite(audio.duration))return; audio.currentTime=Math.max(0,Math.min(audio.duration-0.2,audio.currentTime+d)); paint(audio.currentTime,audio.duration); posState(); savePos(true); }
