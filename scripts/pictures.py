@@ -49,7 +49,8 @@ _NOBODY = "There are no people, faces or figures of any kind anywhere in the fra
 SHAPES = {
     "wide": ("1920x1088",
              "Photorealistic cinematic photograph, wide 16:9 frame, shallow depth of field, natural light. ",
-             "Subject in the centre of the frame, and the lower quarter of the frame simple and uncluttered."),
+             "Put the subject and every important detail in the upper two thirds of the frame, and keep the "
+             "bottom third simple, darker and free of anything that matters, because words will be shown over it."),
     "tall": ("1088x1920",
              "Photorealistic cinematic photograph in a tall 9:16 portrait frame, made to fill a phone held upright, "
              "shallow depth of field, natural light. ",
