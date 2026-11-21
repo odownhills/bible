@@ -92,6 +92,7 @@ function savePos(force){
   var pos=get('listenPos',{}),id=ch.dataset.id;
   if(audio.currentTime>3&&(!audio.duration||audio.currentTime<audio.duration-3)) pos[id]=Math.floor(audio.currentTime); else delete pos[id];
   put('listenPos',pos);
+  spot({mode:'lr',t:pos[id]||0});
 }
 function paint(){
   var seek=$('lr-seek'),dur=audio.duration,t=audio.currentTime||0;
@@ -141,13 +142,13 @@ function whole(url){
   return blobs[url]=fetch(url).then(function(r){ if(!r.ok)throw 0; return r.blob(); })
     .then(function(b){ return URL.createObjectURL(b); }).catch(function(){ delete blobs[url]; return url; });
 }
-function begin(auto){
+function begin(auto,note){
   build(); chapter();
   if(!ch||!ch.dataset.audio){ if(active) { want=false; icon(); msg('This chapter has no recording yet. It will be added soon.'); } return; }
   var mine=++serial,id=ch.dataset.id,src=abs(ch.dataset.audio),sync=ch.dataset.sync?abs(ch.dataset.sync):null,skip=parseInt(ch.dataset.skip||'0',10);
   active=true; busy=true; ready=false; follow=true; want=!!auto; d.body.classList.add('lr'); bar.hidden=false; msg(''); icon();
   $('lr-seek').disabled=true; audio.pause(); paint(); put('listenAt',id);
-  put('lastRead',{url:ch.dataset.url,label:ch.dataset.title});
+  spot({mode:'lr',t:get('listenPos',{})[id]||0});
   var timing=sync?fetch(sync).then(function(r){ return r.ok?r.json():null; }).catch(function(){ return null; }):Promise.resolve(null);
   Promise.all([whole(src),timing]).then(function(got){
     if(mine!==serial)return;
@@ -159,6 +160,7 @@ function begin(auto){
       var resume=get('listenPos',{})[id]||0;
       if(resume&&resume<audio.duration-5) audio.currentTime=resume;
       busy=false; ready=true; $('lr-seek').disabled=false; paint(); mark(); posState(); scrollToWord(true);
+      if(note&&!want) msg(resume?'Back where you left off, at '+fmt(resume)+'. Press play to carry on.':'Press play to start.');
       if(ch.dataset.nextAudio) whole(abs(ch.dataset.nextAudio));
     });
     audio.load();
@@ -209,5 +211,69 @@ d.addEventListener('click',function(e){
 window.addEventListener('popstate',function(){ if(active||history.state&&history.state.lr) location.reload(); });
 d.addEventListener('keydown',function(e){ if(!active||/SELECT|INPUT|BUTTON|A/.test(e.target.tagName))return;
   if(e.key===' '){ e.preventDefault(); want?pause():play(); } else if(e.key==='ArrowLeft') jump(audio.currentTime-10); else if(e.key==='ArrowRight') jump(audio.currentTime+10); });
-if(location.hash==='#listen-read'&&$('ch')&&$('ch').dataset.audio){ history.replaceState(null,'',location.pathname+location.search); begin(true); }
+
+/* ---- your place ----
+   Everything is kept in this browser's own storage (no account, no server):
+   lastSpot  the one place the site reopens to: {mode:'read'|'lr'|'listen', id, url, label, v (verse), t (seconds)}
+   readPos   the verse you had reached in each chapter you left partway through */
+function spot(o){
+  var c=$('ch'); if(!c)return;
+  o.id=c.dataset.id; o.url=c.dataset.url; o.label=c.dataset.title; o.at=Date.now(); put('lastSpot',o);
+}
+var moved=false,placeT=0;
+function verseAtTop(c){
+  var vs=c.querySelectorAll('sup.n'),line=90,v=1;
+  for(var k=0;k<vs.length;k++){ if(vs[k].getBoundingClientRect().top<=line) v=parseInt(vs[k].id.slice(1),10)||v; else break; }
+  return v;
+}
+function savePlace(){
+  var c=$('ch'); if(!c||active)return;
+  var id=c.dataset.id,pos=get('readPos',{}),pn=d.querySelector('.pn'),v=verseAtTop(c);
+  var end=pn&&window.scrollY>200&&pn.getBoundingClientRect().top<window.innerHeight-20;
+  delete pos[id];
+  if(end){
+    // Finished the chapter: next time, start the next one from the top.
+    var nx=d.querySelector('.pn a.next');
+    if(nx&&c.dataset.next){ var u=c.dataset.next.replace(/^\.\.\//,''); put('lastSpot',{mode:'read',id:u.replace('/','-').replace('.html',''),url:u,label:nx.textContent.replace(/^[^A-Za-z0-9]+/,''),v:1,at:Date.now()}); }
+    else spot({mode:'read',v:v});
+  }else{
+    if(v>1) pos[id]=v;
+    spot({mode:'read',v:v});
+  }
+  var keys=Object.keys(pos); while(keys.length>80) delete pos[keys.shift()];
+  put('readPos',pos);
+}
+function toast(text,actions){
+  var t=d.createElement('div'); t.className='toast'; t.setAttribute('role','status');
+  var p=d.createElement('p'); p.textContent=text; t.appendChild(p);
+  actions.forEach(function(a){
+    var el=d.createElement(typeof a[1]==='string'?'a':'button'); el.textContent=a[0];
+    if(typeof a[1]==='string') el.href=a[1]; else { el.type='button'; el.onclick=function(){ a[1](); t.remove(); }; }
+    t.appendChild(el);
+  });
+  var x=d.createElement('button'); x.type='button'; x.className='x'; x.setAttribute('aria-label','Close'); x.textContent='\u2715'; x.onclick=function(){ t.remove(); }; t.appendChild(x);
+  d.body.appendChild(t); setTimeout(function(){ if(t.parentNode) t.remove(); },12000);
+}
+function restore(){
+  var c=$('ch'); if(!c)return;
+  var ls=get('lastSpot',null);
+  // Left this chapter in Listen + Read: reopen it that way, paused at the same second.
+  if(ls&&ls.mode==='lr'&&ls.id===c.dataset.id&&c.dataset.audio){ begin(false,true); return; }
+  var v=get('readPos',{})[c.dataset.id],s=v&&$('v'+v);
+  if(!s){ spot({mode:'read',v:1}); return; }
+  if('scrollRestoration' in history) history.scrollRestoration='manual';
+  var to=function(){ if(!moved) window.scrollTo(0,s.getBoundingClientRect().top+window.scrollY-64); };
+  s.classList.add('here'); setTimeout(function(){ s.classList.remove('here'); },6000);
+  to(); window.addEventListener('load',to); setTimeout(to,400);
+  spot({mode:'read',v:v});
+  toast('Back where you left off, at verse '+v+'.',[['Start of chapter',function(){ moved=true; window.scrollTo({top:0,behavior:'smooth'}); }],['All books','../?home']]);
+}
+['touchstart','wheel','keydown','mousedown'].forEach(function(ev){ window.addEventListener(ev,function(){ moved=true; },{passive:true}); });
+window.addEventListener('scroll',function(){ if(active)return; clearTimeout(placeT); placeT=setTimeout(savePlace,350); },{passive:true});
+d.addEventListener('visibilitychange',function(){ if(d.hidden&&!active&&moved) savePlace(); });
+window.addEventListener('pagehide',function(){ if(!active&&moved) savePlace(); });
+
+var h=location.hash,hasAudio=$('ch')&&$('ch').dataset.audio;
+if((h==='#listen-read'||h==='#resume-lr')&&hasAudio){ history.replaceState(null,'',location.pathname+location.search); begin(h==='#listen-read',h==='#resume-lr'); }
+else if(!h) restore();
 })();
