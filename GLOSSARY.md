@@ -272,3 +272,38 @@ When a chapter settles a new recurring term, add one line here in the same commi
 - lego peri with no object (2:21) "speak concerning" (it shares its English with laleo); elsewhere lego stays "say" (2:22 "the word that Jesus had said").
 - pisteuein heauton with the dative (2:24) "entrust oneself to"; its echo with pisteuo "believe" (2:23) is explained in one bracketed note, set at the end of the sentence (2:25). pantas (2:24, masculine) "everyone".
 - For Obay to decide (each is easy to reverse): "What do I have to do with you, woman?" or "What is that to me and to you, woman?" as the main text at 2:4; "sanctuary" for naos beside "temple" for hieron, or "temple" for both; "fine" or "good" for kalos; "measures" left unconverted at 2:6; whether to note "something like a whip" at 2:15; "a human being" at 2:25, which loses the link to "a man" in 3:1.
+
+## Settled in John 3
+- Greek text, applying the 1 John 1 line: the other reading is noted at 3:13 (the earliest manuscripts end at "the Son of Man"; many add ho on en to ourano "who is in heaven") and 3:25 (meta Ioudaiou "with a Jew"; one of the earliest papyri and many others read meta Ioudaion "with Jews"). 3:15 reads en auto, as in the editions; the earliest manuscripts divide between en auto, ep' auto and eis auton, and the alt there covers them. Not noted, since the sense is intact: 3:2 (many read "to Jesus" for "to him"), 3:15 (many add "should not perish but" from 3:16), 3:16 and 3:17 (many read "his only Son", "his Son"), 3:31 (the second "is above all", over which the earliest divide, is kept, as in the editions), 3:32 (many open with kai), 3:34 (many add ho theos as the subject of "gives"; "he" is left as open as in the Greek, as at 1 Jn 5:16).
+- anthropos stays as in John 1 and 2: of one particular man (3:1) "man"; for people as a class (3:4, 27) "a human being"; hoi anthropoi (3:19) "human beings". So the link between 2:25 and 3:1 is still not visible (see the John 2 line for Obay).
+- archon "ruler". Nikodemos onoma auto "his name was Nicodemus", as in 1:6. nyktos "at night".
+- ean me "unless"; ean me tis "unless someone ..., he". dynamai "can"; ou dynatai "cannot".
+- anothen "from above" [alt: again], the alt given once in a chapter (3:3). The word has both senses; Nicodemus answers with deuteron "a second time", and at 3:31 it can only be "from above".
+- basileia "kingdom"; he basileia tou theou "the kingdom of God". eiserchomai eis "enter" (the English verb needs no "into"). koilia "womb". geron on "when he is old".
+- me opening a question that expects the answer no (3:4): a statement with a tag, "He cannot ..., can he?"
+- gennao passive stays "be born" all through 3:3-8; to gegennemenon "what has been born"; ex hydatos kai pneumatos (3:5) "from water and spirit", without articles as in the Greek; ek tou pneumatos (3:6, 8) "from the spirit". dei "must".
+- pneuma at its first occurrence in 3:8 "wind" [alt: spirit], with pneo "blow" and phone "sound" [alt: voice]; one bracketed note says that wind and spirit are the same word. phone elsewhere stays "voice" (3:29).
+- houtos (the adverb) "in this way", as in 1 Jn 4:11: houtos estin (3:8) "it is this way with"; kathos ... houtos (3:14) "just as ..., in this way" (kathos ... kai stays "just as ..., so"); houtos ... hoste (3:16) "in this way [alt: so much], that".
+- A plural "you" spoken to one person, continued (3:7, 11, 12): "you all", once in a sentence, and placed where it cannot be misread (3:12 "said ... to you all", not "told you all the ...").
+- lambanein ten martyrian "receive the testimony". martyreo with an accusative (3:11, 32) and with a dative of the person (3:26) "testify to"; moi martyreite (3:28) "testify for me", since "testify to me" would say something else in English.
+- ta epigeia / ta epourania "the earthly things / the heavenly things". An aorist beside a present (3:12 eipon ... ou pisteuete) is put in the English perfect, as in 1 Jn 2:11. ei me (3:13) "except". eis ton ouranon "into heaven".
+- hypsoo "lift up" (its other sense, "exalt", is not noted). ophis "snake", the same English as nachash.
+- 3:15 ho pisteuon en auto: en auto is read with "have" ("may have eternal life in him"), since "believe in" in John is always pisteuo eis; the reading with "believes" is the alt.
+- hina after a past tense "so that ... might" (3:16, 17); after a present "so that ... may" (3:15, 20, 21), as in John 1 and 1 John.
+- ton huion ton monogene (3:16) "the only Son" [alt: the only-born Son], the alt given once in a chapter; 3:18 "the only Son of God".
+- apollymi (middle) "perish". sozo "save". krino "judge", never "condemn" (which is kept for kataginosko), so that the echo with krisis "judgment" survives: ou krinetai "is not judged", kekritai "has been judged". ede "already".
+- mallon ... e (3:19) "rather than" [alt: more than].
+- phaulos "worthless", kept distinct from poneros "evil" in the verse before, and leaving "bad" for kakos. prasso "practice", kept distinct from poieo "do". elencho (3:20) "expose".
+- ergazomai "work" (verb): estin eirgasmena (3:21) "have been worked", keeping the echo with erga "works". hoti in 3:21 "that" [alt: because], on the pattern of 1 Jn 2:19.
+- meta tauta "after these things". he Ioudaia ge "the Judean land"; ge "land" (3:22) or "earth" (3:31), by context. diatribo "spend time". Ainon "Aenon"; Saleim "Salim". hydata polla (a plural) "much water", as with haimata. paraginomai "arrive", kept distinct from erchomai "come". ballo "throw"; phylake "prison".
+- zetesis "debate"; ginomai of a debate (3:25) "arise"; ek ton matheton "from (John's) disciples". pantes of people (3:26) "everyone", as in 2:24.
+- A relative clause left hanging and picked up by houtos (3:26) is marked with a dash.
+- autoi hymeis (3:28) "You yourselves". emprosthen ekeinou (3:28) "ahead of that one", as in 1:15.
+- nymphe "bride". philos "friend". histemi (perfect) "stand". chairo "rejoice"; chara chairei "rejoices with joy", keeping the cognate dative. dia with the accusative "because of". he chara he eme "this joy of mine".
+- auxano "grow"; elattoo (passive) "become less", keeping the echo with elasson "lesser" (2:10).
+- epano panton (3:31) "above all", left as open as the Greek (all people or all things).
+- A perfect and an aorist under one relative (3:32 ho heoraken kai ekousen) "what he has seen and heard". touto picking up the relative clause: "to this he testifies".
+- sphragizo "set one's seal" (3:33 "set his seal to this: that"). rhema "word" (it shares its English with logos; in John it is always plural). ek metrou "by measure". cheir "hand"; didonai en te cheiri "give into his hand".
+- apeitheo "disobey" [alt: refuse to believe], kept distinct from me pisteuo "not believe". orge "anger" (plain English for what is often put as "wrath"). menei ep' auton "remains on him", as in 1:32.
+- Quotation marks: the Greek does not mark where a speech ends. Where nothing signals a change of speaker, the speech runs on: Jesus' words close at 3:21 and John's at 3:36. A new paragraph inside a speech opens with a quotation mark.
+- For Obay to decide (each is easy to reverse): where the two speeches end (3:21 and 3:36 here; many readers end them at 3:15 and 3:30 and take what follows as the writer's own words); "born from above" with "born again" as the alt, or the other way round; "wind" as the main text at 3:8; "in this way [alt: so much]" at 3:16; "judge" rather than "condemn" in 3:17-18; "worthless" for phaulos; "anger" or "wrath" for orge; "disobeys" or "does not believe" at 3:36; whether "who is in heaven" at 3:13 should be noted.
