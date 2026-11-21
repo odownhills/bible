@@ -1,13 +1,13 @@
 {
- "note": "Pilot chapter, 2026-11-20, made the way the automatic version will work: one principle and one present-day symbolic picture per scene, each made once wide (1920x1088) and once tall (1088x1920) from the same description. Each scene starts at the first word of its verse. Pictures are made by scripts/pictures.py from each scene's prompt; \"people\": false means the picture must hold no figure at all.",
+ "note": "Pilot chapter, 2026-11-20, made the way the automatic version will work: one principle and one present-day symbolic picture per scene, each made once wide (1920x1088) and once tall (1088x1920) from the same description. Each scene starts at the first word of its verse. Pictures are made by scripts/pictures.py from each scene's prompt; \"people\": false means the picture must hold no figure at all. Reviewed 2026-11-21 at Obay's request: after the ideas are written, each one is checked again against the question 'is this the best possible picture for what these verses mean?' and replaced if not.",
  "scenes": [
   {
    "verse": 1,
-   "image": "01-lifted.jpg",
-   "tall": "tall/01-lifted.jpg",
-   "principle": "The aim is not to sin. When we do fall, we are not left alone: one who is righteous speaks for us.",
-   "shows": "A child who has fallen reaches up to a hand that helps.",
-   "prompt": "A sunlit path in an ordinary neighbourhood park. A small child of about three who has just fallen down sits on the ground, looking up with trust and reaching one hand toward a grown-up's hand that reaches down into the frame to help. Only the adult's forearm and hand are seen, in a plain denim jacket sleeve. The child is calm, not crying."
+   "image": "01-advocate.jpg",
+   "tall": "tall/01-advocate.jpg",
+   "principle": "The aim is not to sin. When we do, we do not stand alone: one who is righteous stands beside us and speaks for us.",
+   "shows": "In a courtroom, a lawyer stands with a hand on the shoulder of a man whose head is bowed.",
+   "prompt": "A present-day courtroom seen from just behind the defence table. A man in an ordinary shirt sits with his head bowed. Beside him his lawyer, a grey-haired man in a dark suit, stands with one hand resting firmly on the seated man's shoulder, facing forward to speak for him. Both are seen from behind. The judge's bench ahead is out of focus and no judge or anyone else is visible. Warm daylight from tall windows. No flags, seals or lettering, and nobody wears white."
   },
   {
    "verse": 3,
@@ -112,11 +112,12 @@
   },
   {
    "verse": 22,
-   "image": "14-turned.jpg",
-   "tall": "tall/14-turned.jpg",
-   "principle": "To deny the Son is to be without the Father. To own the Son is to have the Father too.",
-   "shows": "A man walks away down a dim corridor, his back to a doorway full of daylight.",
-   "prompt": "A long dim corridor in an ordinary building. At the far end a doorway stands open, full of warm daylight; the doorway is empty and nobody stands in it. A man in everyday clothes walks away from it toward the camera into the shadow, his back to the light, his head down and his face in shade."
+   "image": "14-key.jpg",
+   "tall": "tall/14-key.jpg",
+   "principle": "The Son is the way to the Father. Refuse the Son and the Father is out of reach; own the Son and you have the Father too.",
+   "shows": "A house key thrown down on the doorstep of a warmly lit home, the door shut.",
+   "prompt": "Night at the front door of an ordinary home. A single house key lies discarded on the wet doorstep, in sharp focus, catching the light. Behind it the front door is closed, and warm lamplight glows through the small window in the door and from inside the house. The key is the subject.",
+   "people": false
   },
   {
    "verse": 24,
