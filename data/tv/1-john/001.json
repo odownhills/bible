@@ -1,70 +1,5 @@
 {
- "note": "Hand-made test, 2026-11-20, second set. Obay asked for pictures that illustrate the key principle of each part instead of a historical scene, so each one is a present-day symbolic picture of what its verses teach. Each scene starts at the first word of its verse. Pictures: OpenAI gpt-image-2.5-sunburst, medium, 1920x1088, about 1 cent each. No figure for God, nothing glowing, no text in the picture. Each scene also has a tall picture (1088x1920) from the same description, for a phone held upright.",
- "scenes": [
-  {
-   "verse": 1,
-   "image": "01-touch.jpg",
-   "principle": "What is announced was heard, seen and touched, not a theory.",
-   "shows": "Real and firsthand: a hand reaches out and touches the light.",
-   "tall": "tall/01-touch.jpg"
-  },
-  {
-   "verse": 2,
-   "image": "02-life.jpg",
-   "principle": "Life that was hidden has been shown.",
-   "shows": "A seedling breaks through dry, cracked ground at sunrise.",
-   "tall": "tall/02-life.jpg"
-  },
-  {
-   "verse": 3,
-   "image": "03-shared.jpg",
-   "principle": "What was received is passed on so others share in it, and that completes the joy.",
-   "shows": "A flame is passed from one candle to another among glad faces.",
-   "tall": "tall/03-shared.jpg"
-  },
-  {
-   "verse": 5,
-   "image": "04-light.jpg",
-   "principle": "God is light, with no darkness at all.",
-   "shows": "Above the clouds at sunrise, light from edge to edge.",
-   "tall": "tall/04-light.jpg"
-  },
-  {
-   "verse": 6,
-   "image": "05-mask.jpg",
-   "principle": "Saying one thing and living another is a lie.",
-   "shows": "A man in the dark holds a smiling mask over his face.",
-   "tall": "tall/05-mask.jpg"
-  },
-  {
-   "verse": 7,
-   "image": "06-together.jpg",
-   "principle": "Living in the light, with nothing hidden, joins people to one another.",
-   "shows": "People of today walk together in open morning light.",
-   "tall": "tall/06-together.jpg"
-  },
-  {
-   "verse": 8,
-   "image": "07-blind.jpg",
-   "principle": "Denying our sin is fooling ourselves.",
-   "shows": "A man at a mirror covers his own eyes.",
-   "tall": "tall/07-blind.jpg"
-  },
-  {
-   "verse": 9,
-   "image": "08-washed.jpg",
-   "principle": "Owning our sins honestly is met with forgiveness and cleansing.",
-   "shows": "Muddy hands held open under clean running water.",
-   "tall": "tall/08-washed.jpg"
-  },
-  {
-   "verse": 10,
-   "image": "09-unopened.jpg",
-   "principle": "Claiming we have never sinned shuts his word out of us.",
-   "shows": "A closed book gathers dust where the daylight does not reach.",
-   "tall": "tall/09-unopened.jpg"
-  }
- ],
+ "note": "Made by Obay's second method (see \"method\"): the chapter is split into sections that each carry one deep meaning, 10 picture ideas are written for each (\"sections\"), the top two for each picture are made and the better is chosen by eye. Each scene is made wide (1920x1088) and tall (1088x1920) from the same description and starts at the first word of its verse, or at its \"from\" words inside the verse. Pictures already used in the chapters beside this one are not repeated, and the important part of every picture sits in the upper two thirds, clear of the words.",
  "method": "Second method, asked for by Obay on 2026-11-21 after the sentence-by-sentence pictures did not connect: (1) split the chapter into sections that each carry one deep meaning, written as one plain sentence; (2) write 10 different picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye. A section has one or two pictures. What he said went wrong before: he could not tell why some pictures were there, could not connect them to the meaning, and some were too abstract.",
  "sections": [
   {
@@ -116,59 +51,59 @@
    ]
   }
  ],
- "candidates": [
+ "scenes": [
   {
-   "image": "cand/a1-telling.jpg",
+   "verse": 1,
    "section": "1-4",
-   "slot": 1,
+   "image": "01-telling.jpg",
+   "tall": "tall/01-telling.jpg",
+   "principle": "This is real and first-hand: what we heard, saw and touched, we now tell you.",
+   "shows": "An old man tells his grandchildren what he once saw, his hands open as if he still holds it.",
    "prompt": "An old man sits at a kitchen table, leaning forward, telling his two grandchildren about something wonderful he once saw with his own eyes. His eyes are bright and alive, and his weathered hands are held open and cupped in front of him as if he can still feel what he once held. The children, about seven and nine, lean in close, wide-eyed, hanging on every word. Soft clear daylight from a window."
   },
   {
-   "image": "cand/a1-news.jpg",
+   "verse": 3,
    "section": "1-4",
-   "slot": 1,
-   "prompt": "A young woman has just come in through the front door of her family home, coat still on, breathless and beaming, telling her family what she has just seen with her own eyes, both hands lifted as she speaks. Her mother, father and younger brother in the living room have all turned toward her, their faces lighting up, the father half risen from his chair. Bright daylight."
-  },
-  {
-   "image": "cand/a2-chair.jpg",
-   "section": "1-4",
-   "slot": 2,
-   "prompt": "A long table set outdoors under trees for a shared meal, a dozen friends and family of all ages laughing together. In the middle a man has stood up: with one hand he pulls out an empty chair and with the other he waves a shy newcomer, who has just arrived at the edge of the table, to come and sit, with a broad welcoming smile. The others turn and smile at the newcomer too. Bright dappled midday light."
-  },
-  {
-   "image": "cand/a2-photo.jpg",
-   "section": "1-4",
-   "slot": 2,
+   "image": "02-photo.jpg",
+   "tall": "tall/02-photo.jpg",
+   "principle": "We tell you so that you can share it with us, and our joy can be full.",
+   "shows": "Friends pull a shy newcomer into the middle of their group photograph.",
    "prompt": "A group of friends of different ages stand close together for a group photograph in a sunny garden, laughing, arms around one another's shoulders. Two of them reach out and pull a shy newcomer by the arm into the very middle of the group, and he is breaking into a surprised, happy smile. Full bright afternoon daylight."
   },
   {
-   "image": "cand/b1-meadow.jpg",
+   "verse": 5,
    "section": "5-7",
-   "slot": 1,
+   "image": "03-meadow.jpg",
+   "tall": "tall/03-meadow.jpg",
+   "principle": "God is light, and in him there is no darkness at all.",
+   "shows": "A small girl in a meadow lifts her face to the morning sun, everything flooded with light.",
    "prompt": "A small girl of about six stands in a wide open meadow in the full clear light of morning with her eyes closed and her face lifted to the sun, her arms a little out from her sides, smiling, completely bathed in bright golden-white light. The whole landscape around her is flooded with light: there is no dark corner and no deep shadow anywhere in the picture."
   },
   {
-   "image": "cand/b2-stepout.jpg",
+   "verse": 6,
    "section": "5-7",
-   "slot": 2,
+   "image": "04-stepout.jpg",
+   "tall": "tall/04-stepout.jpg",
+   "principle": "To walk with him is to leave the dark and live in the light, where we have each other.",
+   "shows": "A man steps out of a dark doorway into a sunlit street where friends wait for him.",
    "prompt": "A man steps out of a dark, shadowed doorway into a bright sunlit street where three friends wait for him with open, glad faces, one of them holding out a hand to him. His back foot is still in the darkness, and his face and shoulders are already in the sunlight; he is beginning to smile. Clear late-morning light, with a strong contrast between the dark doorway and the bright street."
   },
   {
-   "image": "cand/c1-chocolate.jpg",
+   "verse": 8,
    "section": "8-10",
-   "slot": 1,
+   "image": "05-chocolate.jpg",
+   "tall": "tall/05-chocolate.jpg",
+   "principle": "Saying we have no sin fools only ourselves.",
+   "shows": "A small boy with chocolate all over his face shakes his head: it was not me.",
    "prompt": "A small boy of about four stands at a kitchen table beside a chocolate cake with a big piece plainly missing. His mouth, cheeks and fingers are smeared with chocolate, and he looks straight up at someone out of frame with wide innocent eyes, shaking his head, both sticky hands spread as if to say it was not him. Bright, even kitchen daylight. No adult is in the picture."
   },
   {
-   "image": "cand/c2-vase.jpg",
+   "verse": 9,
    "section": "8-10",
-   "slot": 2,
-   "prompt": "In a living room a boy of about seven stands holding out the broken pieces of a vase in both hands, his face lifted, having just owned up to it. His mother has knelt down on the floor in front of him and is drawing him into a warm embrace, her face gentle and smiling, with no anger at all. A few flowers lie on the floor beside them. Soft bright daylight from a window."
-  },
-  {
-   "image": "cand/c2-tap.jpg",
-   "section": "8-10",
-   "slot": 2,
+   "image": "06-tap.jpg",
+   "tall": "tall/06-tap.jpg",
+   "principle": "Own up to it, and he forgives us and washes us clean.",
+   "shows": "A father washes thick mud off his small son's hands at the garden tap.",
    "prompt": "In a back garden a father crouches at an outdoor tap, gently washing thick mud off the hands of his small son, about five, whose clothes and knees are muddy too. Clean water runs over the small hands and the mud streams away; the boy looks up at his father, relieved and trusting, and the father smiles. The father is seen from the side and a little from behind. Bright overcast daylight."
   }
  ]
