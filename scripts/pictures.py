@@ -6,7 +6,7 @@ Needs the OPENAI_API_KEY environment variable. Run by .github/workflows/pictures
 A scene plan is data/tv/<slug>/<NNN>.json. Each scene names a wide picture ("image") and usually a
 tall one ("tall", for a phone held upright), and carries the "prompt" that describes the picture.
 Both shapes are made from the same prompt plus a fixed style block (below), wide at 1920x1088 and
-tall at 1088x1920. A scene with "people": false gets the style block that forbids any figure,
+tall at 1088x1920 (tall ones only when PICTURES_TALL=1; they are switched off for now). A scene with "people": false gets the style block that forbids any figure,
 because the image model otherwise tends to add one.
 
 A plan may also carry "candidates": scenes in the same form (usually wide only, named cand/<name>.jpg) that are
@@ -33,6 +33,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODEL = os.environ.get("OPENAI_IMAGE_MODEL", "gpt-image-2.5-sunburst")
 QUALITY = os.environ.get("OPENAI_IMAGE_QUALITY", "medium")
 MAX_USD = float(os.environ.get("PICTURES_MAX_USD", "1.00"))
+# Tall pictures (for a phone held upright) are switched off for now, at Obay's wish (2026-11-21): only the wide
+# TV pictures are made. Plans keep their "tall" names and the tall pictures already made stay in the site, so
+# setting PICTURES_TALL=1 brings them back and fills in the ones that are missing.
+MAKE_TALL = os.environ.get("PICTURES_TALL", "0") == "1"
 WORKERS = 4
 # Measured 2026-11-20: a medium picture of either shape is 344 output tokens, $0.0103.
 USD_PER_OUTPUT_TOKEN = 30.0 / 1e6
@@ -81,7 +85,7 @@ def missing():
             plan = json.load(open(os.path.join(base, slug, name), encoding="utf-8"))
             for scene in plan["scenes"] + plan.get("candidates", []):
                 for shape, key in (("wide", "image"), ("tall", "tall")):
-                    if not scene.get(key):
+                    if not scene.get(key) or (shape == "tall" and not MAKE_TALL):
                         continue
                     path = os.path.join(ROOT, "site", "pictures", slug, str(n), scene[key])
                     if os.path.exists(path):
