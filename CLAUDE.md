@@ -3,7 +3,7 @@
 This repository is Obay's original English translation of the Bible, published at
 https://bible.odownhills.workers.dev (Cloudflare deploys the `site/` folder on every push to main).
 Whole chapters are added every day. Books listed in `"first_books"` in `data/settings.json` come first
-(currently 1 John, then John); after them the run continues in canonical order from the first
+(currently Job, then John; 1 John is done); after them the run continues in canonical order from the first
 untranslated chapter, Genesis 1 to Revelation 22.
 Accuracy matters more than speed.
 
@@ -26,12 +26,20 @@ Only Obay changes these. If the plan prints `DONE`, stop.
    existing English translation, write the file, run the check, reread the result against the
    original and correct anything added, dropped or softened, and append any newly settled recurring
    term to GLOSSARY.md. Do not translate it yourself on another model.
-2. `python3 scripts/check.py translations/<slug>/<NNN>.md` must print OK. If it fails, send the
+   The same agent writes the chapter's decision log, `decisions/<slug>/<NNN>.md`: one entry for every
+   `[alt: ...]` in the chapter, in the format at the end of TRANSLATION_RULES.md. A bracket is only
+   for a real alternate; two English wordings of one meaning get no bracket and no log entry.
+   Reasons in the log point to Scripture, never to scholars, translations or tradition.
+2. `python3 scripts/check.py translations/<slug>/<NNN>.md` must print OK (it also checks the
+   decision log against the chapter's brackets). If it fails, send the
    failures back to the same translation agent to fix (up to 3 rounds). Never publish a failing file;
    if a chapter cannot pass, stop the run there and report it.
 3. `python3 scripts/build.py`
 4. Commit on `main` with message `Add <Book> <n>` and push, before starting the next chapter, so
-   finished chapters are never lost.
+   finished chapters are never lost. The commit includes the chapter's decision log.
+
+Obay reviews the decision logs from time to time. Never wait for him: publish, and end the run's
+summary with the new chapters' `call: ask` entries (verse, the two readings, one line of why).
 
 Audio is recorded separately by the GitHub Action in `.github/workflows/audio.yml` after each push
 (it uses the repository secret `GEMINI_API_KEY`); the same Action then runs `scripts/align.py`, which
@@ -44,7 +52,8 @@ pushes to main, so `git pull --rebase origin main` before each push.
 - Translate only the chapters in this run's plan. Never edit an earlier chapter unless Obay asks.
   If a translator finds that an earlier chapter conflicts with the new one, do not change it:
   say so in the summary.
-- Besides new chapter files and the rebuilt `site/`, the only file a run may change is `GLOSSARY.md`,
-  by appending lines. Never change a line under "Decided by Obay".
+- Besides new chapter files, their decision logs and the rebuilt `site/`, the only file a run may
+  change is `GLOSSARY.md`, by appending lines. Never change a line under "Decided by Obay", and never
+  change a `review:` line that Obay has set in a decision log.
 - If usage limits or errors stop the run partway, that is fine: the next night continues from
   the first untranslated chapter.
