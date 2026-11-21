@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Record chapter audio with Gemini text-to-speech into site/audio/<slug>/<n>.mp3.
 
-Needs the GEMINI_API_KEY environment variable and ffmpeg.
+Needs the GEMINI_API_KEY environment variable and ffmpeg. Each recording that passes the check is
+uploaded to the Cloudflare R2 bucket and listed in data/audio.json (see scripts/media.py); the
+mp3 files themselves are never committed to git.
 
 Works through chapters that have text but no audio yet, in site order. The free Gemini tier
 allows only about 10 requests per model per day, so:
@@ -34,6 +36,9 @@ import tempfile
 import time
 import urllib.error
 import urllib.request
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import media  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODELS = os.environ.get("GEMINI_TTS_MODELS", "gemini-3.8-flash-tts").split(",")
@@ -184,7 +189,6 @@ def save(value, path):
 def checker():
     """A function (mp3 path, text) -> list of problems, or None when the listener is not installed."""
     try:
-        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
         import align
         rec = align.recognizer()
     except Exception as e:  # missing packages, or the speech model could not be downloaded
@@ -195,6 +199,9 @@ def checker():
 
 def main():
     key = os.environ.get("GEMINI_API_KEY", "")
+    if not media.configured():
+        raise SystemExit("Recordings are stored in Cloudflare R2: set R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY "
+                         "and R2_ENDPOINT (see scripts/media.py).")
     limit = int(sys.argv[sys.argv.index("--max") + 1]) if "--max" in sys.argv else 2
     manifest = json.load(open(os.path.join(ROOT, "site", "manifest.json"), encoding="utf-8"))
     redo, redo_path = note("redo.json", [])
@@ -236,6 +243,7 @@ def main():
                 print("   " + w, flush=True)
             continue
         shutil.move(new, out)
+        media.publish(out, "audio/%s/%d.mp3" % (slug, c["chapter"]))
         if c["id"] in redo:
             redo.remove(c["id"])
             save(redo, redo_path)

@@ -1,0 +1,15 @@
+// Cloudflare deploys this Worker (named "bible", served at bible.odownhills.workers.dev) on every
+// push to main. Static files come from site/; recordings and pictures come from the R2 bucket.
+{
+  "name": "bible",
+  "main": "worker/index.js",
+  "compatibility_date": "2025-10-01",
+  "assets": {
+    "directory": "./site",
+    "binding": "ASSETS",
+    "run_worker_first": ["/audio/*", "/pictures/*"]
+  },
+  "r2_buckets": [
+    { "binding": "MEDIA", "bucket_name": "bible-media" }
+  ]
+}

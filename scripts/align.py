@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Work out when each word of a chapter is spoken in its recording, for Listen + Read mode.
 
-For every site/audio/<slug>/<n>.mp3 that has no up-to-date site/audio/<slug>/<n>.json, this
+For every recording listed in data/audio.json (fetched from R2 when not on disk) that has no up-to-date site/audio/<slug>/<n>.json, this
 listens to the recording with an offline speech recognizer, matches what it heard against the
 chapter's read-aloud text (site/text/<slug>/<n>.txt) and writes the start time of every word:
 
@@ -32,6 +32,7 @@ import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build import checksum, words as display_words  # noqa: E402  (the same word rule as the pages)
+import media  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, "site")
@@ -260,6 +261,7 @@ def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     force = "--force" in sys.argv
     manifest = json.load(open(os.path.join(SITE, "manifest.json"), encoding="utf-8"))
+    listed = media.index()
     todo = []
     for c in manifest:
         if not c.get("audio") or (args and c["id"] not in args):
@@ -269,7 +271,7 @@ def main():
         if not force and os.path.exists(out):
             try:
                 old = json.load(open(out))
-                if old.get("sum") == checksum(text) and old.get("size") == os.path.getsize(os.path.join(SITE, c["audio"])):
+                if old.get("sum") == checksum(text) and old.get("size") == listed.get(c["audio"], [None])[0]:
                     continue
             except ValueError:
                 pass
@@ -282,7 +284,8 @@ def main():
         return
     rec = recognizer()
     for c, text, out in todo:
-        samples = load(os.path.join(SITE, c["audio"]))
+        mp3 = media.local(c["audio"])
+        samples = load(mp3)
         length = len(samples) / float(RATE)
         heard = hear(rec, samples)
         for p in problems(text, heard):
@@ -296,7 +299,7 @@ def main():
             if os.path.exists(out):
                 os.remove(out)
             continue
-        json.dump({"words": len(times), "sum": checksum(text), "size": os.path.getsize(os.path.join(SITE, c["audio"])),
+        json.dump({"words": len(times), "sum": checksum(text), "size": os.path.getsize(mp3),
                    "t": [int(round(t * 100)) for t in times]},
                   open(out, "w"), separators=(",", ":"))
         print("Timed %s %d: %d words, %d%% heard directly -> %s"

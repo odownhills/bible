@@ -2,11 +2,12 @@ name: Record chapter audio
 
 # Records Gemini voice audio for chapters that have text but no recording yet, checks each new
 # recording word for word against the chapter (a mismatch is thrown away and retried), works out when
-# each word is spoken (for Listen + Read mode), then commits the files so the site can use them.
+# each word is spoken (for Listen + Read mode). Recordings go to the Cloudflare R2 bucket (see
+# scripts/media.py); only the small files (word timings, data/audio.json) are committed.
 on:
   push:
     branches: [main]
-    paths: ["translations/**"]
+    paths: ["translations/**", "scripts/media.py"]
   schedule:
     - cron: "17 8 * * *"    # 12:17 AM Pacific, just after Gemini's free daily limit resets
     - cron: "23 14 * * *"   # daily catch-up, 6:23 AM Pacific
@@ -27,8 +28,22 @@ jobs:
   record:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    env:
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
     steps:
       - uses: actions/checkout@v4
+      - name: Check the R2 secrets
+        id: r2
+        run: |
+          if [ -z "$R2_ACCESS_KEY_ID" ] || [ -z "$R2_SECRET_ACCESS_KEY" ] || [ -z "$R2_ENDPOINT" ]; then
+            echo "::error::Add the R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY and R2_ENDPOINT repository secrets (see scripts/media.py)."
+            exit 1
+          fi
+          command -v aws >/dev/null || python3 -m pip install --quiet --break-system-packages awscli
+      - name: Move recordings still in git to R2
+        run: python3 scripts/media.py migrate
       - name: Record
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -41,7 +56,7 @@ jobs:
           python3 scripts/tts.py --max "${MAX_CHAPTERS:-10}" --strict
           python3 scripts/build.py
       - name: Time the words for Listen + Read
-        if: always()
+        if: always() && steps.r2.outcome == 'success'
         run: |
           python3 scripts/build.py
           if [ "$(python3 scripts/align.py --pending)" = "0" ]; then echo "Word timings are up to date."; exit 0; fi
@@ -49,12 +64,13 @@ jobs:
           python3 -m pip install --quiet --break-system-packages sherpa-onnx numpy
           python3 scripts/align.py
       - name: Publish
-        if: always()
+        if: always() && steps.r2.outcome == 'success'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           python3 scripts/build.py
-          git add -A site
+          git add -A site data/audio.json
+          if git ls-files site | grep -q '\.mp3$'; then echo "::error::A recording is about to be committed to git."; exit 1; fi
           if git diff --cached --quiet; then echo "No new audio."; exit 0; fi
           git commit -m "Add chapter audio"
           git pull --rebase origin main
