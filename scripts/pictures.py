@@ -9,6 +9,9 @@ Both shapes are made from the same prompt plus a fixed style block (below), wide
 tall at 1088x1920. A scene with "people": false gets the style block that forbids any figure,
 because the image model otherwise tends to add one.
 
+A plan may also carry "candidates": scenes in the same form (usually wide only, named cand/<name>.jpg) that are
+made so the best of several ideas can be chosen by eye. The site ignores them; the losers are deleted afterwards.
+
 Pictures that already exist are never remade: to redo one, delete its file (or change its name in
 the plan) and run again. Spending is capped per run by PICTURES_MAX_USD (default 1.00).
 
@@ -73,7 +76,7 @@ def missing():
                 continue
             n = int(name[:-5])
             plan = json.load(open(os.path.join(base, slug, name), encoding="utf-8"))
-            for scene in plan["scenes"]:
+            for scene in plan["scenes"] + plan.get("candidates", []):
                 for shape, key in (("wide", "image"), ("tall", "tall")):
                     if not scene.get(key):
                         continue

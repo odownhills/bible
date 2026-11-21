@@ -166,5 +166,190 @@
    "hard": true,
    "hard_note": "'Remains in him, and he in him' is the language of living in a home. This shows how you know a house is lived in: by the light and the warmth inside."
   }
+ ],
+ "method": "Second method, asked for by Obay on 2026-11-21 after the sentence-by-sentence pictures did not connect: (1) split the chapter into sections that each carry one deep meaning, written as one plain sentence; (2) write 10 different picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye. A section has one or two pictures. What he said went wrong before: he could not tell why some pictures were there, could not connect them to the meaning, and some were too abstract.",
+ "sections": [
+  {
+   "verses": "1-3",
+   "meaning": "God's love has made us his children. That is who we are now, and we are growing to be like him.",
+   "ideas": [
+    "A small boy runs in through an open front door into waiting arms",
+    "A very small hand wrapped around a parent's finger",
+    "A boy standing in his father's big work boots",
+    "A boy stretching against height marks on a door frame",
+    "A small girl held tight, her face peaceful over a shoulder",
+    "A boy copying his father shaving at the mirror",
+    "A new framed photo being hung on the family wall",
+    "Morning light falling on a child asleep, a hand tucking the blanket",
+    "A new small chair set at the family table",
+    "A sapling beside a great tree of the same kind"
+   ]
+  },
+  {
+   "verses": "4-6",
+   "meaning": "Sin is rebellion against God, and Jesus came to take it away. A life in him and a life of sin do not go together.",
+   "ideas": [
+    "Handcuffs fall open from a man's wrists, another hand holding the key",
+    "A stain washing out of a white shirt under clear water",
+    "A heavy muddy pack lifted off a hiker's back",
+    "A car running a red light",
+    "A wall of scrawl being painted clean",
+    "A man dropping a bottle into a bin and walking on",
+    "Rubbish bags carried out of a filthy room",
+    "A man walking out of a dark alley into a bright street",
+    "A chalkboard wiped clean",
+    "A mud-covered child laughing as he is hosed clean"
+   ]
+  },
+  {
+   "verses": "7-10",
+   "meaning": "Do not be fooled: your life shows whose child you are. What you do again and again shows the family you belong to.",
+   "ideas": [
+    "A small girl kneading dough exactly the way her mother does",
+    "A boy and his father walking with the same stride",
+    "A son sanding wood beside his father with the same motion",
+    "A man handing back a dropped wallet",
+    "An older brother wrapping his jacket around his little brother",
+    "A boy tying his little brother's shoelace",
+    "Old and young faces in profile with the same features",
+    "A man studying his own face in a mirror",
+    "A teenager alone at night doing the right thing unseen",
+    "A boy whose shadow on the wall has his father's shape"
+   ]
+  },
+  {
+   "verses": "11-15",
+   "meaning": "Love one another. Hating a brother is death at work in you, and love is how you know you are alive.",
+   "ideas": [
+    "One brother is praised while the other stares down, jaw tight",
+    "A man walks away from his brother's outstretched hand",
+    "A man asleep at his brother's hospital bed, holding his hand",
+    "Two brothers in a fierce embrace after years apart",
+    "A photograph of two brothers torn in two",
+    "A footbridge from a burnt wood into a green one",
+    "Two brothers back to back on either side of a shut door",
+    "An empty place at a family table",
+    "A clenched fist beside an open hand",
+    "A dead houseplant beside a living one"
+   ]
+  },
+  {
+   "verses": "16-18",
+   "meaning": "Love is not talk. Love gives itself: he laid down his life for us, so we give what we have for one another.",
+   "ideas": [
+    "A man wades through floodwater carrying an old man on his back",
+    "A firefighter walks alone into a smoking house",
+    "A lifeguard plunging into storm surf",
+    "Someone wraps their own coat around a man sitting in the cold",
+    "A workman breaks his sandwich and gives half away",
+    "A well-dressed man walks past someone in need, looking away",
+    "A kidney donor and the one who received it, hand in hand",
+    "A mother gives her child her own plate of food",
+    "A nurse asleep, worn out, at a patient's bedside",
+    "A stranger pays for the shopping of the person in front"
+   ]
+  },
+  {
+   "verses": "19-24",
+   "meaning": "We can rest our hearts before God. He is greater than our guilt, he hears us, and he lives in us as we trust his Son and love one another.",
+   "ideas": [
+    "A man on the edge of his bed lifts his face into the morning light",
+    "A woman praying with open hands and an unafraid face",
+    "A child who broke a vase held close anyway",
+    "A little girl holding her cup up to be filled",
+    "Family and friends joining hands around a dinner table",
+    "One candle lighting another in a circle of people",
+    "A small house in the snow with every window lit",
+    "Open hands, palms up, in a shaft of light",
+    "Friends walking with arms around each other's shoulders",
+    "Breath rising in cold morning air"
+   ]
+  }
+ ],
+ "candidates": [
+  {
+   "image": "cand/a1-welcome.jpg",
+   "section": "1-3",
+   "slot": 1,
+   "prompt": "Seen from inside the bright hallway of a home, looking out through the wide-open front door: a small boy of about five with a little backpack runs in from the doorstep with a huge, joyful smile and his arms flung wide, straight toward two pairs of open arms reaching out to him from the near edges of the frame. Only the adults' outstretched arms and hands are visible. Warm light from inside the house falls on the boy's face. Clear morning daylight outside."
+  },
+  {
+   "image": "cand/a2-height.jpg",
+   "section": "1-3",
+   "slot": 2,
+   "prompt": "A small boy of about five stands very straight with his back against a white door frame at home, heels together, stretching up as tall as he can with a proud, hopeful face and one hand flat on top of his head. On the frame beside and above him is a column of short pencil lines at rising heights, the highest far above his head. There are no numbers and no writing, only plain pencil lines. Bright clear daylight from a window."
+  },
+  {
+   "image": "cand/b1-handcuffs.jpg",
+   "section": "4-6",
+   "slot": 1,
+   "prompt": "Close view of a man's two hands lifting apart as a pair of steel handcuffs falls open and away from his wrists. A second person's hand, at the edge of the frame, holds the small key that has just unlocked them. The freed wrists and the open handcuffs in mid-fall are in sharp focus. A plain room with bright daylight from a window behind. No uniforms, badges or lettering."
+  },
+  {
+   "image": "cand/b1-stain.jpg",
+   "section": "4-6",
+   "slot": 1,
+   "prompt": "Two hands hold a white shirt under a stream of clear running water in a white basin. A dark, muddy stain on the cloth is washing away, and the part already rinsed is brilliantly clean and white. Clear water, bright even daylight. No labels or lettering."
+  },
+  {
+   "image": "cand/b2-dough.jpg",
+   "section": "7-10",
+   "slot": 1,
+   "prompt": "A kitchen worktop in bright morning light. A mother's flour-dusted hands knead a round of bread dough, and right beside them a small girl's hands knead a small piece of dough in exactly the same way, copying her. The girl, about five, standing on a stool, watches her mother's hands with deep concentration. The mother is seen only as hands, forearms and apron. A little flour hangs in the air."
+  },
+  {
+   "image": "cand/b2-jacket.jpg",
+   "section": "7-10",
+   "slot": 2,
+   "prompt": "A winter bus stop on a grey, frosty morning. A teenage boy wearing only a thin jumper is wrapping his own warm jacket around his small, shivering younger brother and zipping it up to his chin, and the little boy looks up at him. Both carry school bags. Flat grey daylight, their breath visible in the cold air. No signs or lettering."
+  },
+  {
+   "image": "cand/c1-walkaway.jpg",
+   "section": "11-15",
+   "slot": 1,
+   "prompt": "Two grown brothers who look alike stand in a driveway on an overcast day. The one nearer the camera, in sharp focus, has turned his back on the other and is walking away with a hard, cold face and his fists pushed into his jacket pockets. Behind him, slightly out of focus, his brother stands with one hand still held out to him, open, his face hurt."
+  },
+  {
+   "image": "cand/c2-vigil.jpg",
+   "section": "11-15",
+   "slot": 2,
+   "prompt": "A hospital room in quiet early-morning light. A man lies asleep in the bed, pale but peaceful, and beside the bed his brother, who looks much like him, has fallen asleep in a chair, bent forward with his head resting on the mattress, still holding his brother's hand in both of his. The joined hands are in sharp focus. No screens with numbers and no lettering."
+  },
+  {
+   "image": "cand/c2-reunion.jpg",
+   "section": "11-15",
+   "slot": 2,
+   "prompt": "An airport arrivals hall, softly blurred. Two grown brothers who look alike grip each other in a fierce, long-awaited embrace. The one facing the camera has his eyes shut tight and tears on his smiling face. A dropped travel bag lies at their feet. Bright, even daylight from high windows. No signs or lettering."
+  },
+  {
+   "image": "cand/d1-flood.jpg",
+   "section": "16-18",
+   "slot": 1,
+   "prompt": "A flooded residential street under a heavy grey sky. A man in ordinary soaked clothes wades waist-deep through brown floodwater toward the camera, carrying a frail elderly man on his back, the old man's arms around his neck. The carrier's face shows strain and determination. Rain is falling. Nobody else is in the frame. No signs or lettering."
+  },
+  {
+   "image": "cand/d2-sandwich.jpg",
+   "section": "16-18",
+   "slot": 2,
+   "prompt": "A city park bench at a cool, bright noon. A workman in a dusty work jacket has broken his sandwich in two and is holding out the bigger half to a thin, poorly dressed man sitting beside him, who looks at it in surprise. The workman's open lunch box rests on his knee. The offered half sandwich between their hands is in sharp focus."
+  },
+  {
+   "image": "cand/e1-morning.jpg",
+   "section": "19-24",
+   "slot": 1,
+   "prompt": "A bedroom at first light. A man in a T-shirt sits on the edge of his unmade bed with his elbows on his knees, his head just lifted from his hands and his tired face turned toward the window, as a broad band of warm morning sunlight comes in and falls across his face and chest, pushing the grey dimness of the room back. His expression is beginning to ease. Only sky and light are seen at the window."
+  },
+  {
+   "image": "cand/e1-prayer.jpg",
+   "section": "19-24",
+   "slot": 1,
+   "prompt": "A woman of about forty sits on a plain chair by a window with her eyes closed and her face lifted, her hands resting open and upturned in her lap, with a calm, confident, unafraid smile. Clear morning light from the window falls on her face and open hands. A simple, uncluttered room. No religious objects of any kind."
+  },
+  {
+   "image": "cand/e2-candles.jpg",
+   "section": "19-24",
+   "slot": 2,
+   "prompt": "Outdoors at dusk, a small circle of ordinary people of different ages stands close together, each holding a plain white candle. In the centre of the frame, in sharp focus, one person's lit candle is tilting to light the unlit candle of the child beside them, the new flame just catching. The faces around are warmly lit by candlelight and softly out of focus. Deep blue evening sky. No religious symbols."
+  }
  ]
 }
