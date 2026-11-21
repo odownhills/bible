@@ -1,5 +1,5 @@
 {
- "note": "Pilot chapter, 2026-11-20, made the way the automatic version will work: one principle and one present-day symbolic picture per scene, each made once wide (1920x1088) and once tall (1088x1920) from the same description. Each scene starts at the first word of its verse. Pictures: OpenAI gpt-image-2.5-sunburst, medium.",
+ "note": "Pilot chapter, 2026-11-20, made the way the automatic version will work: one principle and one present-day symbolic picture per scene, each made once wide (1920x1088) and once tall (1088x1920) from the same description. Each scene starts at the first word of its verse. Pictures are made by scripts/pictures.py from each scene's prompt; \"people\": false means the picture must hold no figure at all.",
  "scenes": [
   {
    "verse": 1,
@@ -63,7 +63,8 @@
    "tall": "tall/08-lighthouse.jpg",
    "principle": "Strength comes from his word remaining in you.",
    "shows": "A lighthouse stands firm in storm waves, its lamp still burning.",
-   "prompt": "A plain stone lighthouse stands firm on a rock at dusk while large storm waves break against its base and spray fills the air. Its lamp burns steadily at the top under dark clouds. No boats."
+   "prompt": "A plain stone lighthouse stands firm on a rock at dusk while large storm waves break against its base and spray fills the air. Its lamp burns steadily at the top under dark clouds. No boats.",
+   "people": false
   },
   {
    "verse": 15,
@@ -79,7 +80,8 @@
    "tall": "tall/10-rust.jpg",
    "principle": "The world and its wanting are passing away. Whoever does the will of God remains forever.",
    "shows": "The same kind of car, abandoned and rusting in a field.",
-   "prompt": "The rusted, abandoned shell of a once-expensive red sports car sits in an open field in soft daylight, its paint faded and peeling, wild grass and small flowers growing up through its frame. No badges or lettering on it."
+   "prompt": "The rusted, abandoned shell of a once-expensive red sports car sits in an open field in soft daylight, its paint faded and peeling, wild grass and small flowers growing up through its frame. No badges or lettering on it.",
+   "people": false
   },
   {
    "verse": 18,
@@ -87,7 +89,8 @@
    "tall": "tall/11-hourglass.jpg",
    "principle": "It is the last hour. The time left is short.",
    "shows": "An hourglass with its last sand running out.",
-   "prompt": "Close view of a plain glass hourglass on a wooden table, lit by low evening light from a window. Almost all of the sand has fallen, and only a last thin stream runs from the nearly empty top bulb."
+   "prompt": "Close view of a plain glass hourglass on a wooden table, lit by low evening light from a window. Almost all of the sand has fallen, and only a last thin stream runs from the nearly empty top bulb.",
+   "people": false
   },
   {
    "verse": 19,
@@ -95,7 +98,8 @@
    "tall": "tall/12-emptychair.jpg",
    "principle": "Those who walked away showed they never truly belonged. Belonging shows in remaining.",
    "shows": "One empty chair pushed back from a set table, the door left open to the night.",
-   "prompt": "A long dinner table set for a shared meal in a warm, lamp-lit room, with plates and glasses at every place. One chair is pushed back and empty, a napkin dropped on its seat, and behind it the door of the room stands open onto the dark night outside. The doorway is empty."
+   "prompt": "A long dinner table set for a shared meal in a warm, lamp-lit room, with plates and glasses at every place. One chair is pushed back and empty, a napkin dropped on its seat, and behind it the door of the room stands open onto the dark night outside. The doorway is empty.",
+   "people": false
   },
   {
    "verse": 20,
@@ -103,7 +107,8 @@
    "tall": "tall/13-plumb.jpg",
    "principle": "You have been given what you need to know the truth, and no lie comes from the truth.",
    "shows": "A plumb line hangs perfectly straight beside a wall that leans.",
-   "prompt": "Close view of a brass plumb bob hanging perfectly still and straight on a taut string in a workshop, in soft daylight. Behind it, slightly out of focus, a rough brick wall visibly leans out of true beside the straight string."
+   "prompt": "Close view of a brass plumb bob hanging perfectly still and straight on a taut string in a workshop, in soft daylight. Behind it, slightly out of focus, a rough brick wall visibly leans out of true beside the straight string.",
+   "people": false
   },
   {
    "verse": 22,
@@ -119,7 +124,8 @@
    "tall": "tall/15-vine.jpg",
    "principle": "Let what you heard from the beginning stay in you, and you stay in the Son and the Father. The promise is eternal life.",
    "shows": "A branch heavy with grapes, joined firmly to the old vine.",
-   "prompt": "Close view in a present-day vineyard in morning light: a healthy green branch heavy with ripe grapes, joined firmly to the thick old trunk of the vine, sunlight coming through the leaves. The place where the branch joins the vine is in sharp focus."
+   "prompt": "Close view in a present-day vineyard in morning light: a healthy green branch heavy with ripe grapes, joined firmly to the thick old trunk of the vine, sunlight coming through the leaves. The place where the branch joins the vine is in sharp focus.",
+   "people": false
   },
   {
    "verse": 26,
