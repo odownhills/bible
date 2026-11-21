@@ -10,7 +10,8 @@ When a chapter settles a new recurring term, add one line here in the same commi
 Since 2026-11-21 a bracket is written only for a real alternate, a place where the original can be
 read in two ways that say different things. Many lines below still list an `[alt: ...]` that is
 only a second English wording (for example "righteous" [alt: just], "stay" [alt: remain]): do not
-write those brackets in new chapters. Do not add "For Obay to decide" lists; the ones below are
+write those brackets in new chapters. Chapters published before 2026-11-21 keep their wording and
+brackets: Obay decided not to redo them. Do not add "For Obay to decide" lists; the ones below are
 closed. Close calls go in the chapter's decision log instead.
 
 ## Decided by Obay
@@ -20,7 +21,8 @@ closed. Close calls go in the chapter's decision log instead.
 - nishmat chayyim (Gen 2:7): "the breath of life". This is a different phrase from nephesh chayyah;
   keep the two distinct.
 - 2026-11-21: the rules for alternates and wording in TRANSLATION_RULES.md ("Alternate readings and
-  wording choices") are Obay's. His picks that day, which override any older line below:
+  wording choices") are Obay's. His picks that day, which override any older line below for every
+  chapter translated from then on (published chapters are not redone):
   - yada, of a man and his wife (Gen 4:1, 17, 25): "was intimate with", no bracket.
   - skenoo (John 1:14): "lived", no bracket.
   - thaumazein prosopa (Jude 16): "show favoritism to people", no bracket.
@@ -487,6 +489,6 @@ closed. Close calls go in the chapter's decision log instead.
 - For Obay to decide (each is easy to reverse): "Jude" and "James", or "Judas" and "Jacob" as the Greek has the names; "slave" for doulos in the greeting; "godless" or "ungodly"; "debauchery" for aselgeia; "Jesus" or "the Lord" as the main text at 1:5; "domain" at 1:6; "different flesh" or "other flesh" at 1:7; "sexual immorality"; "slander" or "blaspheme", and "glories" or "glorious ones", at 1:8; "Woe"; "love feasts"; "reefs" or "stains" at 1:12; "the Lord came" at 1:14, where many versions put a future; "myriads"; "expose" or "convict" at 1:15; "admiring faces" or its sense as the main text at 1:16; "natural people" at 1:19; "doubting" or "disputing" at 1:22; how much of the divided text of 1:22-23 should be noted; "looking forward to" for prosdechomai; "the holy ones" for hoi hagioi; "for all time" beside "forever".
 
 ## Settled on 2026-11-21 under the rules for alternates (the translator's calls; Obay can switch any of them)
-- amen amen at the head of a saying: "Truly, truly", no bracket. It is one meaning said two ways, and "Amen" at the head of an English sentence is not plain English. amen at the end of a prayer stays "Amen".
+- amen amen at the head of a saying stays "Amen, amen", as John 1 to 6 already have it, so that the refrain is the same all through the book. No bracket in new chapters: "Truly, truly" is the same meaning in other words.
 - hoi Ioudaioi: "the Jews" by default; "the Judeans" where the sentence is about the people of the region of Judea, set beside Galileans or Samaritans. No standing bracket: a bracket only at a verse where both are live and the sense changes.
-- Jude 5 stays "Jesus" [alt: the Lord, as other manuscripts read], and Genesis 1:1 stays "In the beginning God created" with its alternate; both are in the decision log.
+- Jude 5 ("Jesus" [alt: the Lord, as other manuscripts read]) and Genesis 1:1 stay as published.

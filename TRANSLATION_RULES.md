@@ -19,6 +19,8 @@ These are Obay's standing rules. Every chapter follows them exactly.
 ## Alternate readings and wording choices
 Decided by Obay on 2026-11-21. The main text is the translation. It is the only thing a listener hears, so it has to be the best reading on its own. The brackets are for Read mode.
 
+These rules apply to chapters translated from 2026-11-21 on. Chapters published before then keep their wording and their brackets as they are: Obay decided not to redo them. So an example of wording below may differ from what an earlier chapter says.
+
 ### Two different things
 - A real alternate is a place where the original itself can be read in two ways that say different things: the old copies differ, the grammar lets the sentence be put together two ways, or a word has two senses. It gets a bracket, `[alt: ...]`, and an entry in the decision log.
 - A wording choice is one meaning that English can put two ways: a familiar word or a plainer one ("baptize", "immerse"), an idiom word for word or what it means ("admiring faces", "showing favoritism"), two near-synonyms ("stay", "remain"). It gets no bracket. The translator picks the wording that fits the sentence best, and it does not have to be the same wording every time.
@@ -30,7 +32,7 @@ Only Scripture itself is evidence. Check in this order and stop when the answer 
 1. The sentences around it: what has just been said, what is said next, and how the people in the passage respond.
 2. How the same writer uses the same word or phrase elsewhere.
 3. What the rest of Scripture says about the same thing.
-4. Where the old copies differ: the wording of the earliest copies. Where the earliest copies themselves split, tests 1 to 3 decide, together with which wording better explains how the other could have arisen in copying.
+4. Where the old copies differ. In the Old Testament the main text is always the Masoretic Text, read by its Ketiv as set out above; a reading from another old copy or an ancient version can only be the alternate. In the New Testament the main text follows the earliest copies; where the earliest copies themselves split, tests 1 to 3 decide, together with which wording better explains how the other could have arisen in copying.
 
 - Never a reason: that a reading is familiar or unfamiliar; that a translation, a tradition, a church or scholars prefer it; that it fits a teaching better. Scholars and traditions change; Scripture does not. Printed editions of the Hebrew and Greek are used only as records of what the old copies say, never as judges of which reading is right.
 - Where the writer seems to mean both senses of a word, the main text takes the sense the speaker goes on to build on, the other sense is the alternate, and a short bracketed note says that the one word carries both.

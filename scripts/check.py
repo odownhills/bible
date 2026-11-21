@@ -14,6 +14,9 @@ SCRIPT = r"[\u0590-\u05ff\u0370-\u03ff\u1f00-\u1fff]"
 KINDS = ("copies differ", "grammar", "two senses", "both meant")
 CALLS = ("clear", "close", "ask")
 FIELDS = ("kind", "call", "why", "other", "review")
+# Chapters published before the decision log existed (2026-11-21). Obay decided not to redo them,
+# so they need no log: book slug -> last chapter published under the old rules.
+BEFORE_LOG = {"genesis": 5, "1-john": 5, "john": 6, "jude": 1}
 
 
 def check_log(slug, n, blocks, errs):
@@ -27,7 +30,7 @@ def check_log(slug, n, blocks, errs):
     rel = "decisions/%s/%03d.md" % (slug, n)
     log = os.path.join(ROOT, rel)
     if not os.path.exists(log):
-        if want:
+        if want and n > BEFORE_LOG.get(slug, 0):
             errs.append("%s is missing: it needs one entry for each of the %d [alt: ...] in the chapter"
                         % (rel, sum(want.values())))
         return
