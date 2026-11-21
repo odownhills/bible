@@ -87,9 +87,15 @@ body.lr #ch .alt,body.lr #ch .note{opacity:.55}
 .lr-bar .chip{min-height:40px;padding:.35rem .5rem;min-width:4.4rem;justify-content:center}
 .lr-msg{font-size:.78rem;color:var(--text-soft);text-align:center;margin:.3rem 0 0}
 .lr-msg[hidden]{display:none}
+sup.n.here{color:var(--bg);background:var(--accent);border-radius:4px;padding:.15em .35em;transition:all .6s}
+.toast{position:fixed;left:12px;right:12px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:30;max-width:30rem;margin:0 auto;background:var(--shade);border:1px solid var(--accent);border-radius:14px;padding:.75rem .9rem;font-family:var(--sans);font-size:.9rem;color:var(--text);box-shadow:0 6px 24px rgba(0,0,0,.45);display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .6rem}
+.toast p{margin:0;flex:1 1 100%}
+.toast a,.toast button{font:inherit;font-size:.85rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:.45rem .85rem;text-decoration:none;cursor:pointer;min-height:40px;display:inline-flex;align-items:center}
+.toast .x{margin-left:auto;border:0;color:var(--text-soft)}
+body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
 </style></head>
 <body><div class="wrap">
-<nav class="top"><a href="../">Books</a><a href="../listen/">Listen</a></nav>
+<nav class="top"><a href="../?home">Books</a><a href="../listen/">Listen</a></nav>
 <style>
 .player{background:var(--panel);border:1px solid var(--rule);border-radius:18px;padding:1.25rem 1.1rem 1.1rem;font-family:var(--sans);margin-top:.5rem}
 .np-label{color:var(--text-soft);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;text-align:center}
@@ -169,8 +175,9 @@ function paint(cur,dur){
 function savePos(force){
   if(mode!=='audio'||!list[i])return; var now=Date.now(); if(!force&&now-lastSave<4000)return; lastSave=now;
   if(audio.currentTime>3&&(!audio.duration||audio.currentTime<audio.duration-3)) pos[list[i].id]=Math.floor(audio.currentTime); else delete pos[list[i].id];
-  put('listenPos',pos);
+  put('listenPos',pos); spot();
 }
+function spot(){ var c=list[i]; if(c) put('lastSpot',{mode:'listen',id:c.id,url:c.url,label:c.book+' '+c.chapter,t:pos[c.id]||0,at:Date.now()}); }
 function meta(){
   var c=list[i]; if(!('mediaSession' in navigator))return;
   try{navigator.mediaSession.metadata=new MediaMetadata({title:c.book+' '+c.chapter,artist:'The Bible, Freshly Translated',album:c.book});}catch(e){}
@@ -195,7 +202,7 @@ function show(){
   var n=$('note');
   if(c.audio){n.hidden=true;$('sub').textContent='Chapter '+c.chapter+' of '+c.total;}
   else{n.hidden=false;n.textContent='No recording for this chapter yet, so your phone’s own voice reads it. Keep the screen on while it plays.';$('sub').textContent='Recording coming soon';}
-  rows(); meta(); put('listenAt',c.id);
+  rows(); meta(); put('listenAt',c.id); spot();
 }
 function stopAll(){ audio.pause(); if(synth)synth.cancel(); }
 function speakNext(){
@@ -221,7 +228,8 @@ function load(k,auto){
       audio.defaultPlaybackRate=rate(); audio.src=src; audio.playbackRate=rate();
       audio.addEventListener('loadedmetadata',function once(){ audio.removeEventListener('loadedmetadata',once);
         busy=false; seek.disabled=false; $('sub').textContent='Chapter '+c.chapter+' of '+c.total;
-        if(resume&&resume<audio.duration-5) audio.currentTime=resume; paint(audio.currentTime,audio.duration); posState();
+        if(resume&&resume<audio.duration-5){ audio.currentTime=resume; if(!want){ $('note').hidden=false; $('note').textContent='Back where you left off, at '+fmt(resume)+'. Press play to carry on.'; } }
+        paint(audio.currentTime,audio.duration); posState();
         if(list[i+1]&&list[i+1].audio) whole(list[i+1]); });
       audio.load(); if(want) audio.play().catch(function(){want=false;setIcon();});
     });
@@ -248,7 +256,7 @@ function ended(){
   if(stopAtEnd){ stopAtEnd=false; $('sleep').value='0'; want=false; setIcon(); rows(); return; }
   if(i+1<list.length) load(i+1,true); else { want=false; setIcon(); rows(); $('sub').textContent='You are all caught up'; }
 }
-function play(){ want=true; setIcon(); if(mode==='audio'){ if(busy)return; audio.playbackRate=rate(); audio.play().catch(function(){want=false;setIcon();}); } else speakNext(); }
+function play(){ want=true; setIcon(); if(mode==='audio'&&list[i]&&list[i].audio) $('note').hidden=true; if(mode==='audio'){ if(busy)return; audio.playbackRate=rate(); audio.play().catch(function(){want=false;setIcon();}); } else speakNext(); }
 function pause(){ want=false; setIcon(); if(mode==='audio'){ if(busy)return; audio.pause(); savePos(true); } else if(synth) synth.cancel(); }
 function toggle(){ want?pause():play(); }
 function seekBy(d){
