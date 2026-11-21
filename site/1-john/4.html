@@ -52,7 +52,10 @@ footer{margin-top:3rem;font-family:var(--sans);font-size:.75rem;color:var(--num)
 .seek::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--heading);margin-top:-6px;border:0}
 .seek::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--heading);border:0}
 .seek:disabled{opacity:.45}
-.times{display:flex;justify-content:space-between;font-size:.8rem;color:var(--text-soft);font-variant-numeric:tabular-nums;margin-top:.1rem}
+.times{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--text-soft);font-variant-numeric:tabular-nums;margin-top:.1rem}
+.alt-t{font:inherit;font-size:.78rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:0 .8rem;min-height:30px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.alt-t:active{background:var(--shade)}
+.alt-t:focus-visible{outline:2px solid var(--accent)}
 .tb{background:transparent;border:0;color:var(--text);padding:0;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;cursor:pointer;position:relative;-webkit-tap-highlight-color:transparent}
 .tb:active{background:var(--shade)}
 .tb:focus-visible{outline:2px solid var(--accent)}
@@ -69,10 +72,16 @@ footer{margin-top:3rem;font-family:var(--sans);font-size:.75rem;color:var(--num)
 select.chip{-webkit-appearance:none;appearance:none;text-align:center;cursor:pointer}
 .chip:focus-visible{outline:2px solid var(--accent)}
 body.lr{padding-bottom:10rem}
-body.lr #ch .w{color:#9383B7;border-radius:4px;cursor:pointer;transition:color .18s ease-out,background-color .18s ease-out;-webkit-tap-highlight-color:transparent}
-body.lr #ch .w.on{color:#fff}
-body.lr #ch .w.now{color:#fff;background:rgba(183,155,232,.3);box-shadow:0 0 0 3px rgba(183,155,232,.3)}
-body.lr #ch .aside,body.lr #ch sup.n:has(+ .silent){display:none}
+#ch{position:relative;isolation:isolate}
+body.lr #ch p{color:#A396C6}
+body.lr #ch .w{color:#A396C6;cursor:pointer;transition:color .4s ease;-webkit-tap-highlight-color:transparent}
+body.lr #ch .w.on{color:var(--text)}
+body.lr #ch .w.now{color:#fff}
+.lr-pill{position:absolute;left:0;top:0;z-index:-1;border-radius:7px;background:rgba(183,155,232,.22);pointer-events:none;opacity:0;transition:transform .26s cubic-bezier(.25,.8,.35,1),width .26s cubic-bezier(.25,.8,.35,1),opacity .3s ease}
+body:not(.lr) .lr-pill{display:none}
+body.lr #ch .alt,body.lr #ch .note{opacity:.5}
+body.lr.noalt #ch .aside,body.lr.noalt #ch sup.n:has(+ .silent){display:none}
+@media (prefers-reduced-motion:reduce){body.lr #ch .w,.lr-pill{transition:none}}
 .sub .btn{margin:0 .35rem .4rem 0}
 .lr-bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--panel);border-top:1px solid var(--rule);font-family:var(--sans);padding:.3rem 14px calc(.5rem + env(safe-area-inset-bottom,0px))}
 .lr-bar[hidden]{display:none}
@@ -113,4 +122,4 @@ body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
 </div>
 <div class="pn"><a class="prev" href="3.html">&larr; 1 John 3</a><a class="next" href="5.html">&rarr; 1 John 5</a></div>
 <footer>An original translation from the Hebrew and Greek.</footer>
-</div><script src="../read.js?v=5dd40074" defer></script></body></html>
+</div><script src="../read.js?v=92a6993d" defer></script></body></html>
