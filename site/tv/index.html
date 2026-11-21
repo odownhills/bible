@@ -15,7 +15,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 /* the pictures: two layers that fade into each other, each drifting slowly while it is up */
 .pic{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease;overflow:hidden}
 .pic.on{opacity:1}
-.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:20s linear both;will-change:transform}
+.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 12%;transform-origin:50% 30%;animation:20s linear both;will-change:transform}
 #stage.paused .pic img{animation-play-state:paused}
 @keyframes kb0{from{transform:scale(1.02) translate(-.8%,0)}to{transform:scale(1.1) translate(.8%,-.6%)}}
 @keyframes kb1{from{transform:scale(1.1) translate(.8%,-.4%)}to{transform:scale(1.02) translate(-.6%,0)}}
