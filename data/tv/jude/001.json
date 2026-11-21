@@ -1,5 +1,5 @@
 {
- "note": "Made by the steps in TV_PICTURES.md: the chapter is split into sections that each carry one deep meaning (\"sections\"), 10 picture ideas are written for each, the top two for each picture are made and the better is chosen by eye (2026-11-21). Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse. The important part of every picture sits in the upper two thirds, clear of the words.",
+ "note": "Made by the steps in TV_PICTURES.md: the chapter is split into sections that each carry one deep meaning (\"sections\"), 10 picture ideas are written for each, the top two for each picture are made and the better is chosen by eye (2026-11-21). Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper two thirds, clear of the words. Biblical people named in the chapter (Cain, Balaam, Korah, Enoch, Michael) are not portrayed and nothing violent is shown.",
  "method": "Second method, asked for by Obay on 2026-11-21 after the sentence-by-sentence pictures did not connect: (1) split the chapter into sections that each carry one deep meaning, written as one plain sentence; (2) write 10 different picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye. A section has one or two pictures. What he said went wrong before: he could not tell why some pictures were there, could not connect them to the meaning, and some were too abstract.",
  "sections": [
   {
@@ -147,311 +147,180 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
-   "image": "cand/a-letter.jpg",
+   "verse": 1,
    "section": "1-2",
-   "slot": 1,
-   "prompt": "At a kitchen table in warm morning light an old man reads a handwritten letter, holding the pages up in one hand with his other hand resting on his heart, his face soft with gladness. A torn-open envelope lies beside his cup. The pages are seen from behind so that no writing shows."
-  },
-  {
-   "image": "cand/a-blanket.jpg",
-   "section": "1-2",
-   "slot": 1,
+   "image": "01-blanket.jpg",
+   "tall": "tall/01-blanket.jpg",
+   "principle": "You are called, loved by God the Father and kept safe for Jesus Christ.",
+   "shows": "A father's hands tuck a blanket round a child asleep on the sofa.",
    "prompt": "In a living room in the evening a small child of about four lies fast asleep on a sofa. A father's two hands, coming in from the edge of the frame, gently tuck a soft blanket round the child's shoulders. Only the father's hands and forearms are seen. A lamp glows warmly beside the sofa. Peaceful and safe."
   },
   {
-   "image": "cand/b1-baton.jpg",
+   "verse": 3,
    "section": "3-4",
-   "slot": 1,
+   "image": "02-baton.jpg",
+   "tall": "tall/02-baton.jpg",
+   "principle": "Struggle for the faith that was handed over once for all.",
+   "shows": "A relay runner grips the baton that has just been passed to her and drives forward.",
    "prompt": "On a running track in bright daylight, a close view of a relay handover: one runner's outstretched hand has just passed the baton and a young woman runner grips it hard in her fist, her face set with fierce determination as she drives forward. Her face and the gripped baton are both sharp."
   },
   {
-   "image": "cand/b1-locket.jpg",
+   "verse": 4,
    "section": "3-4",
-   "slot": 1,
-   "prompt": "By a window in clear daylight a grandmother places an old gold family locket in her granddaughter's open palm and closes the girl's fingers firmly round it with both her own hands, looking her in the eyes with great seriousness and love. The girl, about twelve, looks back and nods."
-  },
-  {
-   "image": "cand/b2-fox.jpg",
-   "section": "3-4",
-   "slot": 2,
+   "image": "03-fox.jpg",
+   "tall": "tall/03-fox.jpg",
+   "principle": "Some have sneaked in unnoticed who turn God's grace into a licence to sin.",
+   "shows": "A fox slips under the fence into the hen yard while the farmer's back is turned.",
    "prompt": "In a farmyard in clear morning light a farmer scatters grain to a flock of hens, his back turned. Behind him, unnoticed, a red fox is slipping in under the wire fence, low to the ground, its eyes on the hens. The farmer and hens are calm and unaware. The fox is sharp and clearly seen."
   },
   {
-   "image": "cand/b2-backdoor.jpg",
-   "section": "3-4",
-   "slot": 2,
-   "prompt": "A warm family party in a bright dining room: a dozen relatives laugh and talk round a long table, all facing each other. At the back of the room a stranger in a dark jacket is slipping in quietly through the half-open back door, glancing round. Not one person at the table has noticed him."
-  },
-  {
-   "image": "cand/c1-guide.jpg",
+   "verse": 5,
    "section": "5-7",
-   "slot": 1,
-   "prompt": "On a wide snowfield in clear daylight a mountain guide leads a line of walkers roped together along a safe marked track, looking back with one arm raised in warning. Two walkers have unclipped from the rope and are walking away in the other direction, their backs turned, toward a field of dark open cracks in the ice in the distance."
-  },
-  {
-   "image": "cand/c1-hut.jpg",
-   "section": "5-7",
-   "slot": 1,
+   "image": "04-hut.jpg",
+   "tall": "tall/04-hut.jpg",
+   "principle": "Being rescued is not the end of it: those who were saved and then would not believe were lost.",
+   "shows": "Rescued hikers are welcomed into a warm mountain hut, and one turns and walks back out into the blizzard.",
    "prompt": "At the open door of a mountain rescue hut at dusk, in falling snow, exhausted hikers wrapped in blankets are being welcomed into the warm lit room by a rescue team with hot drinks. One rescued hiker, his blanket slipping from his shoulders, has turned his back on the open door and is walking away into the dark blizzard alone. A rescuer in the doorway reaches a hand out after him."
   },
   {
-   "image": "cand/c2-wreck.jpg",
+   "verse": 6,
    "section": "5-7",
-   "slot": 2,
-   "prompt": "In clear daylight the rusted wreck of an old ship lies broken on dark rocks at the foot of a white lighthouse. A small fishing boat is passing well clear of the rocks, and the two fishermen aboard look across at the wreck soberly, one pointing it out to the other."
-  },
-  {
-   "image": "cand/c2-post.jpg",
-   "section": "5-7",
-   "slot": 2,
+   "image": "05-post.jpg",
+   "tall": "tall/05-post.jpg",
+   "principle": "Those who left the place that was given to them came to ruin.",
+   "shows": "A watchman's post stands empty, the gate wide open, as he walks off toward the lights of town.",
    "prompt": "At night a watchman's post beside a wide-open gate stands empty: his chair with a lantern still burning on it, his cap left on the seat. The watchman himself, seen from behind, is walking away down the road toward the bright distant lights of a town. Beyond the open, unguarded gate, dark buildings stand unprotected."
   },
   {
-   "image": "cand/d1-captain.jpg",
+   "verse": 7,
+   "section": "5-7",
+   "image": "06-wreck.jpg",
+   "tall": "tall/06-wreck.jpg",
+   "principle": "What happened to them is set out as a warning for everyone who passes.",
+   "shows": "A fishing boat steers wide of an old wreck on the rocks below the lighthouse.",
+   "prompt": "In clear daylight the rusted wreck of an old ship lies broken on dark rocks at the foot of a white lighthouse. A small fishing boat is passing well clear of the rocks, and the two fishermen aboard look across at the wreck soberly, one pointing it out to the other."
+  },
+  {
+   "verse": 8,
    "section": "8-11",
-   "slot": 1,
+   "image": "07-captain.jpg",
+   "tall": "tall/07-captain.jpg",
+   "principle": "These people follow their own dreams and throw off every authority.",
+   "shows": "A young deckhand laughs and waves away the old captain who points at the storm ahead.",
    "prompt": "On the bridge of a ship in rough grey weather a grey-haired captain points urgently through the window at a huge black storm front ahead, his other hand on the chart. Beside him a young deckhand laughs and waves a hand at him dismissively, leaning back with a careless grin. Both faces are clear."
   },
   {
-   "image": "cand/d1-barrier.jpg",
+   "verse": 9,
    "section": "8-11",
-   "slot": 1,
-   "prompt": "On a country road in daylight a man is dragging a striped road barrier with flashing lamps out of his way and striding past it toward a bridge whose middle has plainly collapsed into the river. A road worker in a bright jacket holds up both hands to stop him; the man does not even look at him."
-  },
-  {
-   "image": "cand/d2-calm.jpg",
-   "section": "8-11",
-   "slot": 2,
-   "prompt": "On a dockside in daylight a small, furious man shouts up into the face of a very tall, strong dock worker, jabbing a finger at his chest. The big man answers nothing: his mouth is closed, his eyes are calm and steady, and his big hands hang open at his sides. His quiet strength is plain."
-  },
-  {
-   "image": "cand/d2-referee.jpg",
-   "section": "8-11",
-   "slot": 2,
+   "image": "08-referee.jpg",
+   "tall": "tall/08-referee.jpg",
+   "principle": "Even the archangel did not answer slander with slander but left the judging to the Lord, while these slander what they do not understand.",
+   "shows": "A referee stands calm and silent while a furious player shouts in his face.",
    "prompt": "On a football pitch in daylight a furious player shouts into the face of a referee from very close, arms flung wide. The referee stands perfectly calm and silent, mouth closed, hands behind his back, looking steadily back at him. Other players watch from behind, out of focus."
   },
   {
-   "image": "cand/d3-envelope.jpg",
+   "verse": 11,
    "section": "8-11",
-   "slot": 3,
-   "prompt": "In a dim underground car park, lit by one overhead lamp, a man in a good suit takes a thick envelope from another hand that reaches in from the edge of the frame. He is glancing nervously back over his shoulder as he slides it inside his jacket. His face is clearly lit."
-  },
-  {
-   "image": "cand/d3-bridge.jpg",
-   "section": "8-11",
-   "slot": 3,
+   "image": "09-bridge.jpg",
+   "tall": "tall/09-bridge.jpg",
+   "principle": "Envy, greed and rebellion are an old, well-trodden road, and it ends in ruin.",
+   "shows": "A path worn by many feet runs straight on to a broken bridge over a ravine.",
    "prompt": "A well-worn dirt path, covered with the footprints of many people all going the same way, runs straight ahead across a field to the edge of a deep ravine, where an old footbridge has broken and hangs down into the gap. No fence, no one in sight. Clear daylight.",
    "people": false
   },
   {
-   "image": "cand/e1-table.jpg",
+   "verse": 12,
    "section": "12-13",
-   "slot": 1,
+   "image": "10-table.jpg",
+   "tall": "tall/10-table.jpg",
+   "principle": "They look after only themselves.",
+   "shows": "At a shared meal one man has pulled every dish to himself, and the plates beside him are empty.",
    "prompt": "At a long outdoor table set for a shared meal in daylight, one well-fed man has pulled every dish and basket of food in front of himself and is eating greedily, his arm curled round the food. The plates of the people sitting on either side of him are completely empty, and they look at him in silence."
   },
   {
-   "image": "cand/e1-reef.jpg",
+   "verse": 12,
    "section": "12-13",
-   "slot": 1,
-   "prompt": "A calm, bright blue bay on a sunny day, seen from just above the water. In the foreground a dark jagged rock lies just beneath the surface, clearly visible through the clear water. A little way off a small boat full of laughing friends is heading straight toward it, none of them looking at the water."
-  },
-  {
-   "image": "cand/e2-cloud.jpg",
-   "section": "12-13",
-   "slot": 2,
+   "image": "11-cloud.jpg",
+   "tall": "tall/11-cloud.jpg",
+   "from": "waterless clouds",
+   "principle": "They are all promise and no gift: clouds with no rain, trees with no fruit.",
+   "shows": "A farmer and his son in a dry, cracked field watch a dark cloud blow past without a drop.",
    "prompt": "A farmer and his young son stand in a wide field of cracked, bone-dry earth and withered crops, both looking up with hope fading from their faces as a great dark rain cloud is carried past overhead by the wind. Not a drop is falling; beyond the cloud the sky is already clearing to hard blue."
   },
   {
-   "image": "cand/e2-tree.jpg",
+   "verse": 13,
    "section": "12-13",
-   "slot": 2,
-   "prompt": "An orchard in clear autumn daylight, every tree heavy with red apples. In the middle one tree is bare, grey and dead, without a single leaf or fruit, and it lies uprooted on its side with its dry roots in the air. A fruit picker carrying a full basket of apples walks past it."
-  },
-  {
-   "image": "cand/e3-waves.jpg",
-   "section": "12-13",
-   "slot": 3,
+   "image": "12-waves.jpg",
+   "tall": "tall/12-waves.jpg",
+   "principle": "Wild waves that throw up only their own shame.",
+   "shows": "Storm waves throw dirty foam and rubbish up the beach.",
    "prompt": "A wild sea under a dark stormy sky: huge brown-grey waves crash onto a beach and throw up thick dirty yellow foam, and a line of seaweed, driftwood and rubbish is left strewn along the sand. Daylight breaks through one gap in the clouds so the foam is clearly lit.",
    "people": false
   },
   {
-   "image": "cand/e3-star.jpg",
-   "section": "12-13",
-   "slot": 3,
-   "prompt": "A night sky over a dark, empty moor. On one side the steady stars shine calmly in their patterns. On the other side a single bright shooting star is streaking away from them, its trail already fading, into a region of sky that is utterly black and starless.",
-   "people": false
-  },
-  {
-   "image": "cand/f1-court.jpg",
+   "verse": 14,
    "section": "14-16",
-   "slot": 1,
+   "image": "13-court.jpg",
+   "tall": "tall/13-court.jpg",
+   "principle": "The Lord is coming to judge every godless deed and every hard word.",
+   "shows": "Everyone in a courtroom rises as the door behind the empty bench opens and light pours through.",
    "prompt": "Inside a plain modern courtroom, seen from the back: every person in the room has risen to their feet and stands in silence, all turned toward the front, where the judge's high chair is empty and the door behind it is swinging open with bright light pouring through. No one has come through the door yet. Some stand calmly, one man near the front looks down, afraid."
   },
   {
-   "image": "cand/f1-alley.jpg",
+   "verse": 16,
    "section": "14-16",
-   "slot": 1,
-   "prompt": "A narrow city alley at sunrise. The first strong beam of morning sunlight cuts down the length of the alley, lighting up the litter and the walls. A man standing in the alley has thrown an arm up over his eyes and is stepping back from the light into the last patch of shadow. The lit street beyond is bright and clean."
-  },
-  {
-   "image": "cand/f2-feast.jpg",
-   "section": "14-16",
-   "slot": 2,
+   "image": "14-feast.jpg",
+   "tall": "tall/14-feast.jpg",
+   "principle": "These are the grumblers, never content, who go wherever their own desires lead.",
+   "shows": "At a table loaded with good food one man scowls with his arms crossed while everyone else is glad.",
    "prompt": "A big family table loaded with a beautiful home-cooked feast in warm daylight. Everyone round the table is smiling, grateful, passing dishes. One man in the middle sits with his arms crossed and a sour scowl, his full plate pushed away from him, pointing at it with a complaint."
   },
   {
-   "image": "cand/f2-flatter.jpg",
-   "section": "14-16",
-   "slot": 2,
-   "prompt": "On a city pavement a rich man in an expensive coat steps out of a luxury car. Beside him another man bends low, laughing far too eagerly at something he said, holding an umbrella over him and reaching to carry his bag, his eyes fixed on the rich man's face. The rich man does not look at him."
-  },
-  {
-   "image": "cand/g-mockers.jpg",
+   "verse": 17,
    "section": "17-19",
-   "slot": 1,
+   "image": "15-mockers.jpg",
+   "tall": "tall/15-mockers.jpg",
+   "principle": "You were told beforehand that mockers would come, so do not be shaken.",
+   "shows": "Two men on a porch laugh at a neighbour boarding up his windows, while a storm builds behind them.",
    "prompt": "On a sunny street two men sit on a porch with drinks, laughing loudly and pointing across at their neighbour, who is calmly nailing boards over the windows of his house. Far behind them all, low on the horizon, a huge dark storm front is building. The laughing men have not looked behind them."
   },
   {
-   "image": "cand/g-split.jpg",
-   "section": "17-19",
-   "slot": 1,
-   "prompt": "At a picnic table in a park in daylight a group of eight friends has split in two: four have turned their backs and sit facing one way with hard faces, four the other way. Between the two halves one man leans in to whisper behind his hand into a listener's ear, with a small sly smile."
-  },
-  {
-   "image": "cand/h1-build.jpg",
+   "verse": 20,
    "section": "20-23",
-   "slot": 1,
+   "image": "16-build.jpg",
+   "tall": "tall/16-build.jpg",
+   "principle": "But you: build yourselves up on your most holy faith and keep yourselves in the love of God.",
+   "shows": "A family builds the wall of their house stone by stone on solid rock.",
    "prompt": "On a hillside in bright daylight a family, parents and two older children, is building the stone wall of a small house together, lifting and setting each stone carefully on the row below. The wall plainly stands on a broad foundation of solid bare rock. They work gladly, the father passing a stone to his daughter."
   },
   {
-   "image": "cand/h1-window.jpg",
+   "verse": 22,
    "section": "20-23",
-   "slot": 1,
-   "prompt": "At dusk an old woman sits knitting in a chair beside a window with a lit lamp on the sill, lifting her eyes to look out down the empty road with calm, sure hope. Behind her in the warm room a table is laid with an extra place ready. She is waiting for someone who is certainly coming."
-  },
-  {
-   "image": "cand/h2-fire.jpg",
-   "section": "20-23",
-   "slot": 2,
+   "image": "17-fire.jpg",
+   "tall": "tall/17-fire.jpg",
+   "principle": "Have mercy on those who doubt, and seize others out of the fire.",
+   "shows": "A firefighter hauls a dazed man out of a smoking doorway.",
    "prompt": "A firefighter in full kit, seen from the side, hauls a dazed man in ordinary clothes by both arms out through the doorway of a building pouring thick smoke, with an orange glow deep inside. The rescued man is on his feet, coughing, unhurt. Clear daylight outside lights both their faces."
   },
   {
-   "image": "cand/h2-nurse.jpg",
-   "section": "20-23",
-   "slot": 2,
-   "prompt": "In a clean, bright hospital isolation room a nurse wearing a mask, gloves and gown bends over a sick man in bed and gently wipes his forehead with a cloth, her eyes above the mask full of kindness. Her careful protective clothing and her tenderness are both plain."
-  },
-  {
-   "image": "cand/i1-wall.jpg",
+   "verse": 24,
    "section": "24-25",
-   "slot": 1,
+   "image": "18-wall.jpg",
+   "tall": "tall/18-wall.jpg",
+   "principle": "He is able to guard you from stumbling.",
+   "shows": "A toddler walks laughing along a garden wall, both hands held fast by her father's hands.",
    "prompt": "In a sunny garden a toddler of about two walks along the top of a low stone garden wall, laughing, both her small hands held up and firmly gripped by a father's two big hands reaching down from above. Only the father's hands and forearms are seen. She cannot fall."
   },
   {
-   "image": "cand/i1-ridge.jpg",
+   "verse": 25,
    "section": "24-25",
-   "slot": 1,
-   "prompt": "On a narrow snowy mountain ridge in clear morning light a mountain guide stands braced with the rope held firm in both gloved hands, while the climber roped to him steps surely along the narrowest part of the ridge, smiling, steep drops on either side. The taut rope between them is plainly seen."
-  },
-  {
-   "image": "cand/i2-stars.jpg",
-   "section": "24-25",
-   "slot": 2,
+   "image": "19-stars.jpg",
+   "tall": "tall/19-stars.jpg",
+   "principle": "To the only God be glory, greatness, might and authority, before all time, now and for all time.",
+   "shows": "A family stands small on a hill under a huge sky blazing with stars.",
    "prompt": "A family of four stands on a hilltop at night, seen small and from behind, looking up at an immense sky blazing with thousands of stars and the bright band of the Milky Way. A child points upward. The sky fills most of the picture and is full of light."
-  },
-  {
-   "image": "cand/i2-summit.jpg",
-   "section": "24-25",
-   "slot": 2,
-   "prompt": "Three climbers have just reached a mountain summit at sunrise and throw both arms up with shouts of joy, their faces lit gold. Below and all round them a sea of cloud glows gold and rose in the first sun, with far peaks standing out of it. The sky is vast and full of light."
   }
- ],
- "picks": {
-  "note": "Chosen by eye on 2026-11-21 from the trial pictures, before the chapter was translated. Scenes are written when the recording's timings exist; a pick marked 'if time' is used only if each picture can stay up about 8 seconds.",
-  "by_verse": [
-   [
-    1,
-    "a-blanket"
-   ],
-   [
-    3,
-    "b1-baton"
-   ],
-   [
-    4,
-    "b2-fox"
-   ],
-   [
-    5,
-    "c1-hut"
-   ],
-   [
-    6,
-    "c2-post"
-   ],
-   [
-    7,
-    "c2-wreck"
-   ],
-   [
-    8,
-    "d1-captain"
-   ],
-   [
-    9,
-    "d2-referee"
-   ],
-   [
-    11,
-    "d3-bridge"
-   ],
-   [
-    12,
-    "e1-table"
-   ],
-   [
-    12,
-    "e2-cloud (or e2-tree), if time"
-   ],
-   [
-    13,
-    "e3-waves"
-   ],
-   [
-    14,
-    "f1-court"
-   ],
-   [
-    16,
-    "f2-flatter"
-   ],
-   [
-    17,
-    "g-mockers"
-   ],
-   [
-    20,
-    "h1-build"
-   ],
-   [
-    21,
-    "h1-window, if time"
-   ],
-   [
-    23,
-    "h2-fire"
-   ],
-   [
-    24,
-    "i1-wall"
-   ],
-   [
-    25,
-    "i2-stars"
-   ]
-  ]
- }
+ ]
 }
