@@ -228,13 +228,26 @@ def page(title, body, depth, tail=""):
 """ % (esc(title), CSS, up or "./", up, body, tail)
 
 
-def tv_scenes(slug, n, verse_at):
+def phrase_at(text, phrase):
+    """How many spoken words into text the phrase starts, or None when it is not there."""
+    def bare(t):
+        return [w for w in (re.sub(r"\W", "", x).lower() for x in words(t)) if w]
+    have, want = bare(text), bare(phrase)
+    for i in range(len(have) - len(want) + 1 if want else 0):
+        if have[i:i + len(want)] == want:
+            return i
+    return None
+
+
+def tv_scenes(slug, n, verse_at, verse_text):
     """Write site/tv/<slug>/<n>.json for TV mode and return its site path, or None when the chapter has no pictures.
 
     A chapter's scene plan is data/tv/<slug>/<NNN>.json: {"scenes": [{"verse": 1, "image": "01-touch.jpg",
     "tall": "tall/01-touch.jpg", ...}]} ("tall" is optional: the same scene made for a phone held upright),
-    each scene starting at the first word of its verse (the first scene at the chapter's first word). Its pictures
-    are site/pictures/<slug>/<n>/<image>. TV mode is offered only when every picture of the plan is there."""
+    each scene starting at the first word of its verse (the first scene at the chapter's first word). A scene that
+    shows a later sentence of its verse names the words it starts on, "from": "because the darkness", and starts
+    there, so the picture arrives with the sentence it shows. Its pictures are site/pictures/<slug>/<n>/<image>.
+    TV mode is offered only when every picture of the plan is there."""
     plan = os.path.join(ROOT, "data", "tv", slug, "%03d.json" % n)
     if not os.path.exists(plan):
         return None
@@ -244,7 +257,14 @@ def tv_scenes(slug, n, verse_at):
         img = "pictures/%s/%d/%s" % (slug, n, s["image"])
         if s["verse"] not in start or not os.path.exists(os.path.join(OUT, img)):
             return None
-        scene = {"w": 0 if k == 0 else start[s["verse"]], "img": img}
+        at = start[s["verse"]]
+        if s.get("from"):
+            inside = phrase_at(verse_text.get(s["verse"], ""), s["from"])
+            if inside is None:   # the wording changed since the plan was written: fall back to the verse's start
+                print("TV plan %s %d: verse %d has no words %r, scene starts at the verse" % (slug, n, s["verse"], s["from"]))
+            else:
+                at += inside
+        scene = {"w": 0 if k == 0 else at, "img": img}
         tall = "pictures/%s/%d/%s" % (slug, n, s.get("tall") or "")
         if s.get("tall") and os.path.exists(os.path.join(OUT, tall)):
             scene["tall"] = tall   # the same scene made tall, for a phone held upright
@@ -325,6 +345,7 @@ def main():
         intro = "%s, chapter %d." % (b["name"], n)
         parts, speech = [], [intro]
         verse_at, spoken_words = [], len(words(intro))   # where each verse starts, counted in spoken words (for TV mode)
+        verse_text = {}
         if meta.get("numbering"):
             parts.append('<div class="numbering">%s</div>' % inline(meta["numbering"]))
         for kind, val in blocks:
@@ -340,6 +361,7 @@ def main():
                 for vn, t in val:
                     verse_at.append([vn, spoken_words])
                     speech.append(plain(t))
+                    verse_text[vn] = speech[-1]
                     spoken_words += len(words(speech[-1]))
         prev_ = chapters[idx - 1] if idx > 0 else None
         next_ = chapters[idx + 1] if idx + 1 < len(chapters) else None
@@ -374,7 +396,7 @@ def main():
             buttons = '<button class="btn" id="lr-start" type="button">&#9654; Listen + Read</button> '
         if sync_url:
             data += ' data-sync="../%s"' % sync_url
-        tv_url = tv_scenes(b["slug"], n, verse_at) if has_audio else None
+        tv_url = tv_scenes(b["slug"], n, verse_at, verse_text) if has_audio else None
         if tv_url:
             buttons += '<a class="btn ghost" href="../tv/?c=%s-%d">TV mode</a> ' % (b["slug"], n)
         if next_:
