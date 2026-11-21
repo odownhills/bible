@@ -1,0 +1,54 @@
+# TV mode pictures: how they are chosen
+
+TV mode shows still pictures behind a chapter's recording while the words light up. These are Obay's rules
+for choosing the pictures. They apply to every chapter. A chapter's plan is `data/tv/<slug>/<NNN>.json`;
+`scripts/pictures.py` makes the pictures and `scripts/build.py` puts them in the site.
+
+## What a picture is
+- A present-day or timeless picture of what the verses teach, one idea per picture. Not a historical scene:
+  no robes, ancient buildings, halos, crosses or other religious symbols.
+- God is never pictured. Biblical people, Jesus included, are not portrayed. An ordinary father, seen from
+  behind or only as hands and arms, may stand as a likeness of the Father; showing what the father does is
+  better than showing the father. John's own images of light and love are welcome.
+- No violence, no nakedness, no words or numbers in the picture.
+- Only wide pictures (for a TV or a video) are made for now. Tall phone pictures are switched off.
+
+## Steps for a chapter
+1. Split the chapter into sections that each carry one deep meaning, written as one plain sentence.
+2. Write 10 different picture ideas for each section.
+3. Judge the ideas with the test below, and make the top two for each picture as real pictures.
+4. Choose between the real pictures by eye, with the same test. A section gets one or two pictures; a
+   picture should stay up at least 8 seconds or so.
+5. Check the result against the chapters before and after it, and with the words laid over it.
+
+## The test, in this order
+1. **Does the picture itself show the meaning?** Name the one thing that has to be seen for the verse to
+   land ("feet landing in someone else's footprints", "a man who cannot see where he is going") and check
+   that it is plainly visible in the finished picture. Judge the picture, not the idea behind it: an idea
+   that reads well can come out as a picture that does not show it.
+2. **Is it understood at once** by someone hearing the words, with nothing to work out?
+3. **Is it the stronger picture to look at?** When two pictures show the meaning equally, the more striking
+   and beautiful one wins.
+
+A person or a face in the picture is not a goal in itself. Human moments often win because they are easy
+to understand, but a picture with no face (footprints in the sand, a rusting car) wins whenever it shows
+the meaning better. "Too abstract" means the watcher cannot tell why the picture is there; it does not mean
+"has no person in it".
+
+## Keeping and changing pictures
+- A picture already in a chapter stays unless there is a named reason to change it: it does not show the
+  meaning, it repeats a neighbour, or Obay asked. A new picture has to be clearly better, not just new.
+  A tie goes to the picture that is already there.
+- A layout problem is not a reason to change the idea. If the words cover the important part, remake the
+  same picture with the subject higher in the frame.
+- Do not repeat a picture used in the chapters beside this one, unless it is clearly the best picture for
+  the meaning. A good picture that repeats is better than a weak one that does not.
+
+## Words over the picture
+The words sit over the bottom of the picture (roughly the band from two thirds down to nine tenths down).
+The important part of every picture sits above that. `scripts/pictures.py` asks for this in every prompt;
+check it by eye on the finished picture.
+
+## Hard text
+Some verses resist a picture. In order: use the text's own image moved into today; else show what the idea
+does in a life today; else hold the previous picture a little longer.
