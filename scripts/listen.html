@@ -77,8 +77,9 @@ function paint(cur,dur){
 function savePos(force){
   if(mode!=='audio'||!list[i])return; var now=Date.now(); if(!force&&now-lastSave<4000)return; lastSave=now;
   if(audio.currentTime>3&&(!audio.duration||audio.currentTime<audio.duration-3)) pos[list[i].id]=Math.floor(audio.currentTime); else delete pos[list[i].id];
-  put('listenPos',pos);
+  put('listenPos',pos); spot();
 }
+function spot(){ var c=list[i]; if(c) put('lastSpot',{mode:'listen',id:c.id,url:c.url,label:c.book+' '+c.chapter,t:pos[c.id]||0,at:Date.now()}); }
 function meta(){
   var c=list[i]; if(!('mediaSession' in navigator))return;
   try{navigator.mediaSession.metadata=new MediaMetadata({title:c.book+' '+c.chapter,artist:'The Bible, Freshly Translated',album:c.book});}catch(e){}
@@ -103,7 +104,7 @@ function show(){
   var n=$('note');
   if(c.audio){n.hidden=true;$('sub').textContent='Chapter '+c.chapter+' of '+c.total;}
   else{n.hidden=false;n.textContent='No recording for this chapter yet, so your phone’s own voice reads it. Keep the screen on while it plays.';$('sub').textContent='Recording coming soon';}
-  rows(); meta(); put('listenAt',c.id);
+  rows(); meta(); put('listenAt',c.id); spot();
 }
 function stopAll(){ audio.pause(); if(synth)synth.cancel(); }
 function speakNext(){
@@ -129,7 +130,8 @@ function load(k,auto){
       audio.defaultPlaybackRate=rate(); audio.src=src; audio.playbackRate=rate();
       audio.addEventListener('loadedmetadata',function once(){ audio.removeEventListener('loadedmetadata',once);
         busy=false; seek.disabled=false; $('sub').textContent='Chapter '+c.chapter+' of '+c.total;
-        if(resume&&resume<audio.duration-5) audio.currentTime=resume; paint(audio.currentTime,audio.duration); posState();
+        if(resume&&resume<audio.duration-5){ audio.currentTime=resume; if(!want){ $('note').hidden=false; $('note').textContent='Back where you left off, at '+fmt(resume)+'. Press play to carry on.'; } }
+        paint(audio.currentTime,audio.duration); posState();
         if(list[i+1]&&list[i+1].audio) whole(list[i+1]); });
       audio.load(); if(want) audio.play().catch(function(){want=false;setIcon();});
     });
@@ -156,7 +158,7 @@ function ended(){
   if(stopAtEnd){ stopAtEnd=false; $('sleep').value='0'; want=false; setIcon(); rows(); return; }
   if(i+1<list.length) load(i+1,true); else { want=false; setIcon(); rows(); $('sub').textContent='You are all caught up'; }
 }
-function play(){ want=true; setIcon(); if(mode==='audio'){ if(busy)return; audio.playbackRate=rate(); audio.play().catch(function(){want=false;setIcon();}); } else speakNext(); }
+function play(){ want=true; setIcon(); if(mode==='audio'&&list[i]&&list[i].audio) $('note').hidden=true; if(mode==='audio'){ if(busy)return; audio.playbackRate=rate(); audio.play().catch(function(){want=false;setIcon();}); } else speakNext(); }
 function pause(){ want=false; setIcon(); if(mode==='audio'){ if(busy)return; audio.pause(); savePos(true); } else if(synth) synth.cancel(); }
 function toggle(){ want?pause():play(); }
 function seekBy(d){

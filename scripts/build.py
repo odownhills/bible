@@ -116,6 +116,12 @@ body.lr #ch .alt,body.lr #ch .note{opacity:.55}
 .lr-bar .chip{min-height:40px;padding:.35rem .5rem;min-width:4.4rem;justify-content:center}
 .lr-msg{font-size:.78rem;color:var(--text-soft);text-align:center;margin:.3rem 0 0}
 .lr-msg[hidden]{display:none}
+sup.n.here{color:var(--bg);background:var(--accent);border-radius:4px;padding:.15em .35em;transition:all .6s}
+.toast{position:fixed;left:12px;right:12px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:30;max-width:30rem;margin:0 auto;background:var(--shade);border:1px solid var(--accent);border-radius:14px;padding:.75rem .9rem;font-family:var(--sans);font-size:.9rem;color:var(--text);box-shadow:0 6px 24px rgba(0,0,0,.45);display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .6rem}
+.toast p{margin:0;flex:1 1 100%}
+.toast a,.toast button{font:inherit;font-size:.85rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:.45rem .85rem;text-decoration:none;cursor:pointer;min-height:40px;display:inline-flex;align-items:center}
+.toast .x{margin-left:auto;border:0;color:var(--text-soft)}
+body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
 """
 
 
@@ -221,7 +227,7 @@ def page(title, body, depth, tail=""):
 <title>%s</title>
 <style>%s</style></head>
 <body><div class="wrap">
-<nav class="top"><a href="%s">Books</a><a href="%slisten/">Listen</a></nav>
+<nav class="top"><a href="%s?home">Books</a><a href="%slisten/">Listen</a></nav>
 %s
 <footer>An original translation from the Hebrew and Greek.</footer>
 </div>%s</body></html>
@@ -276,32 +282,12 @@ def tv_scenes(slug, n, verse_at, verse_text):
 
 
 def durations():
-    """Length in seconds of each recording, cached in site/audio/durations.json."""
-    import subprocess
-    adir = os.path.join(OUT, "audio")
-    cache_path = os.path.join(adir, "durations.json")
-    cache = json.load(open(cache_path)) if os.path.exists(cache_path) else {}
-    fresh = {}
-    for base, _, files in os.walk(adir):
-        for f in files:
-            if not f.endswith(".mp3"):
-                continue
-            full = os.path.join(base, f)
-            rel = os.path.relpath(full, OUT).replace(os.sep, "/")
-            size = os.path.getsize(full)
-            old = cache.get(rel)
-            if old and old[0] == size:
-                fresh[rel] = old
-                continue
-            try:
-                out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
-                                      "-of", "csv=p=0", full], capture_output=True, text=True).stdout.strip()
-                fresh[rel] = [size, round(float(out))]
-            except (OSError, ValueError):
-                fresh[rel] = [size, None]
-    if fresh != cache and os.path.isdir(adir):
-        json.dump(fresh, open(cache_path, "w"), sort_keys=True)
-    return {k: v[1] for k, v in fresh.items()}
+    """Length in seconds of each recording in the R2 bucket, from data/audio.json (see scripts/media.py)."""
+    try:
+        listed = json.load(open(os.path.join(ROOT, "data", "audio.json")))
+    except (OSError, ValueError):
+        listed = {}
+    return {k: v[1] for k, v in listed.items()}
 
 
 def collect():
@@ -338,7 +324,7 @@ def main():
     def audio_of(c):
         """Site path of a chapter's recording, or None when it has none yet."""
         rel = "audio/%s/%d.mp3" % (c[0]["slug"], c[1])
-        return rel if os.path.exists(os.path.join(OUT, rel)) else None
+        return rel if rel in lengths else None
 
     for idx, (b, n, path) in enumerate(chapters):
         meta, blocks = parse(path)
@@ -374,7 +360,7 @@ def main():
             return '<a class="%s" href="%s">%s %s %d</a>' % (cls, href, label, esc(cb["name"]), cn)
 
         audio_url = "audio/%s/%d.mp3" % (b["slug"], n)
-        has_audio = os.path.exists(os.path.join(OUT, audio_url))
+        has_audio = audio_url in lengths
         spoken = " ".join(speech)
         html_body = "\n".join(parts)
         # Word timings for Listen + Read (written by scripts/align.py) count only if they were made
@@ -455,23 +441,31 @@ def main():
     latest = ""
     if chapters:
         lb, ln, _ = chapters[-1]
-        latest = ('<a class="continue" href="%s/%d.html"><small>Newest chapter</small><b>%s %d</b></a>'
-                  '<a class="continue" id="resume" href="#" hidden><small>Pick up where you left off</small><b></b></a>'
+        latest = ('<a class="continue" id="resume" href="#" hidden><small>Pick up where you left off</small><b></b></a>'
+                  '<a class="continue" href="%s/%d.html"><small>Newest chapter</small><b>%s %d</b></a>'
                   % (lb["slug"], ln, esc(lb["name"]), ln))
     resume_js = """<script>
-try{var r=JSON.parse(localStorage.getItem('lastRead')||'null');if(r){var a=document.getElementById('resume');a.href=r.url;a.querySelector('b').textContent=r.label;a.hidden=false;}}catch(e){}
+(function(){
+function get(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}}
+function fmt(t){t=Math.floor(t||0);var m=Math.floor(t/60),x=t%60;return m+':'+(x<10?'0':'')+x}
+var s=get('lastSpot'),r=get('lastRead'),a=document.getElementById('resume'),href,label,small;
+if(s&&s.url){
+  if(s.mode==='listen'){href='listen/';small='Keep listening';label=s.label+(s.t>3?' \u00b7 at '+fmt(s.t):'');}
+  else if(s.mode==='lr'){href=s.url+'#resume-lr';small='Keep listening and reading';label=s.label+(s.t>3?' \u00b7 at '+fmt(s.t):'');}
+  else{href=s.url;small='Keep reading';label=s.label+(s.v>1?', verse '+s.v:'');}
+}else if(r&&r.url){href=r.url;small='Pick up where you left off';label=r.label;}
+if(!href||!a)return;
+a.href=href;a.querySelector('small').textContent=small;a.querySelector('b').textContent=label;a.hidden=false;
+// Opening the site from outside (a bookmark, the home screen, a typed address) goes straight back
+// to the last spot. Coming here from another page of the site, or asking for ?home, stays here.
+var nav=performance.getEntriesByType?performance.getEntriesByType('navigation')[0]:null;
+var inside=document.referrer&&document.referrer.indexOf(location.origin)===0;
+if(s&&s.url&&(!nav||nav.type==='navigate')&&!inside&&!/[?&]home/.test(location.search)) location.replace(href);
+})();
 </script>"""
     body = '<h1>%s</h1><p class="sub">%d of 1,189 chapters translated. A new chapter arrives each night.</p>%s%s%s' % (
         SITE_TITLE, len(chapters), latest, "".join(groups), resume_js)
     open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(page(SITE_TITLE, body, 0))
-
-    # remember last chapter read (tiny script appended to chapter pages)
-    for b, n, _ in chapters:
-        p = os.path.join(OUT, b["slug"], "%d.html" % n)
-        s = open(p, encoding="utf-8").read()
-        s = s.replace("</body>", "<script>try{localStorage.setItem('lastRead',JSON.stringify({url:'%s/%d.html',label:'%s %d'}))}catch(e){}</script></body>"
-                      % (b["slug"], n, b["name"].replace("'", ""), n))
-        open(p, "w", encoding="utf-8").write(s)
 
     json.dump(manifest, open(os.path.join(OUT, "manifest.json"), "w", encoding="utf-8"), ensure_ascii=False)
     os.makedirs(os.path.join(OUT, "listen"), exist_ok=True)

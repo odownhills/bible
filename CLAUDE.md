@@ -36,7 +36,8 @@ Only Obay changes these. If the plan prints `DONE`, stop.
 Audio is recorded separately by the GitHub Action in `.github/workflows/audio.yml` after each push
 (it uses the repository secret `GEMINI_API_KEY`); the same Action then runs `scripts/align.py`, which
 times every word of each recording for the Listen + Read mode on chapter pages. Do not record audio
-or run the alignment in the run. That Action also
+or run the alignment in the run. Recordings are stored in the Cloudflare R2 bucket `bible-media`
+(`scripts/media.py`, listed in `data/audio.json`), never in git. That Action also
 pushes to main, so `git pull --rebase origin main` before each push.
 
 ## Limits

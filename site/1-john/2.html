@@ -87,9 +87,15 @@ body.lr #ch .alt,body.lr #ch .note{opacity:.55}
 .lr-bar .chip{min-height:40px;padding:.35rem .5rem;min-width:4.4rem;justify-content:center}
 .lr-msg{font-size:.78rem;color:var(--text-soft);text-align:center;margin:.3rem 0 0}
 .lr-msg[hidden]{display:none}
+sup.n.here{color:var(--bg);background:var(--accent);border-radius:4px;padding:.15em .35em;transition:all .6s}
+.toast{position:fixed;left:12px;right:12px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:30;max-width:30rem;margin:0 auto;background:var(--shade);border:1px solid var(--accent);border-radius:14px;padding:.75rem .9rem;font-family:var(--sans);font-size:.9rem;color:var(--text);box-shadow:0 6px 24px rgba(0,0,0,.45);display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .6rem}
+.toast p{margin:0;flex:1 1 100%}
+.toast a,.toast button{font:inherit;font-size:.85rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:.45rem .85rem;text-decoration:none;cursor:pointer;min-height:40px;display:inline-flex;align-items:center}
+.toast .x{margin-left:auto;border:0;color:var(--text-soft)}
+body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
 </style></head>
 <body><div class="wrap">
-<nav class="top"><a href="../">Books</a><a href="../listen/">Listen</a></nav>
+<nav class="top"><a href="../?home">Books</a><a href="../listen/">Listen</a></nav>
 <h1>1 John 2</h1>
 <p class="sub"><button class="btn" id="lr-start" type="button">&#9654; Listen + Read</button> <a class="btn ghost" href="../tv/?c=1-john-2">TV mode</a> <a class="btn ghost" href="../listen/?from=1-john-2">Listen only</a></p>
 <div id="ch" data-id="1-john-2" data-title="1 John 2" data-url="1-john/2.html" data-skip="4" data-audio="../audio/1-john/2.mp3" data-sync="../audio/1-john/2.json" data-next="../1-john/3.html" data-next-audio="../audio/1-john/3.mp3">
@@ -115,4 +121,4 @@ body.lr #ch .alt,body.lr #ch .note{opacity:.55}
 </div>
 <div class="pn"><a class="prev" href="1.html">&larr; 1 John 1</a><a class="next" href="3.html">&rarr; 1 John 3</a></div>
 <footer>An original translation from the Hebrew and Greek.</footer>
-</div><script src="../read.js?v=a1c4d8cc" defer></script><script>try{localStorage.setItem('lastRead',JSON.stringify({url:'1-john/2.html',label:'1 John 2'}))}catch(e){}</script></body></html>
+</div><script src="../read.js?v=5dd40074" defer></script></body></html>

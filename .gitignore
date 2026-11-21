@@ -1,1 +1,5 @@
 __pycache__/
+# Recordings live in Cloudflare R2 (scripts/media.py), never in git
+site/audio/**/*.mp3
+node_modules/
+.wrangler/
