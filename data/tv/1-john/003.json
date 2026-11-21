@@ -1,0 +1,170 @@
+{
+ "note": "Made the way 1 John 2 was redone on 2026-11-21: every idea has its own present-day symbolic picture, arriving with the sentence it shows, each made wide (1920x1088) and tall (1088x1920) from the same description. A scene starts at the first word of its verse, or at its \"from\" words inside the verse. For text that is hard to picture: the text's own image moved into today; else what the idea does in a life today; else keep the previous picture. Such scenes carry \"hard\": true and a \"hard_note\". After the ideas were written each one was checked again against 'is this the best possible picture for what these verses mean?'. Biblical people are not portrayed (verse 12 names Cain) and nothing violent is shown.",
+ "scenes": [
+  {
+   "verse": 1,
+   "image": "01-hand.jpg",
+   "tall": "tall/01-hand.jpg",
+   "principle": "We are called his children, and we are. That is the kind of love we have been given.",
+   "shows": "A very small child's hand wrapped around his father's finger as they walk.",
+   "prompt": "Close view from behind and low down of a very small child's hand wrapped tightly around one finger of his father's much larger hand as the two walk together along a garden path. Only the two joined hands, the child's small arm and a little of each of them are in frame, the hands in sharp focus. Soft, bright overcast morning light."
+  },
+  {
+   "verse": 2,
+   "image": "02-boots.jpg",
+   "tall": "tall/02-boots.jpg",
+   "principle": "We are children now. What we will be is not yet seen, but we will be like him.",
+   "shows": "A small boy stands in his father's big work boots.",
+   "prompt": "A small boy of about four in pyjamas stands in the hallway of a home with both feet inside his father's huge, worn leather work boots, which reach almost to his knees. He looks down at them with a delighted, serious face. A man's work jacket hangs on a hook above him. No adult is in the picture. Clear, even daylight from an open doorway to the side."
+  },
+  {
+   "verse": 3,
+   "image": "03-wash.jpg",
+   "tall": "tall/03-wash.jpg",
+   "principle": "Whoever holds this hope makes himself clean, to be like the one he hopes to see.",
+   "shows": "A young man washes his face with clear water in the morning.",
+   "prompt": "A young man in a plain white T-shirt bends over a simple white bathroom basin and lifts both cupped hands, full of clear running water, to wash his face. Drops of clear water catch the light. Seen from the side. Fresh, bright early-morning light from a window. No mirror writing, no bottles with labels."
+  },
+  {
+   "verse": 4,
+   "image": "04-redlight.jpg",
+   "tall": "tall/04-redlight.jpg",
+   "principle": "Sin is lawlessness: it runs straight through what the law says.",
+   "shows": "A car runs a red light at an empty crossing.",
+   "prompt": "An ordinary city crossroads at blue hour just after sunset, wet road. A traffic light glows clearly red in the foreground, in sharp focus, while a dark car speeds straight through the crossing beneath it, blurred by its speed, its tail lights streaking. No other cars. There are no road signs, no signboards and no lettering anywhere, and the driver cannot be seen.",
+   "people": false
+  },
+  {
+   "verse": 5,
+   "image": "05-burden.jpg",
+   "tall": "tall/05-burden.jpg",
+   "principle": "He came to take sins away, and in him there is none. Whoever stays in him is not ruled by sin.",
+   "shows": "Two hands lift a heavy, muddy pack off a worn-out hiker's back.",
+   "prompt": "On a steep mountain trail at midday under a high clear sky, an exhausted hiker in ordinary outdoor clothes stands bent forward with his hands on his knees. Behind him a second person, seen only as two strong arms and hands reaching in from the edge of the frame, is lifting a huge, heavy, mud-caked rucksack up and off the hiker's shoulders. The straps are just coming free and the hiker is beginning to straighten.",
+   "hard": true,
+   "hard_note": "'Take away sins' has no picture of its own today. This shows what it does: a load lifted off. Verse 6 has no honest picture, so this one stays up through it."
+  },
+  {
+   "verse": 7,
+   "image": "06-wallet.jpg",
+   "tall": "tall/06-wallet.jpg",
+   "principle": "Do not be fooled: the one who is right with God is the one who does what is right.",
+   "shows": "A man hands a dropped wallet back to its owner.",
+   "prompt": "A busy but softly blurred city pavement in plain afternoon daylight. A man in an ordinary jacket has caught up with a stranger and is holding out a brown leather wallet to her; the surprised woman, turning back, is just reaching to take it with a grateful look. The wallet between their hands is in sharp focus. The wallet is plain, with no lettering."
+  },
+  {
+   "verse": 8,
+   "image": "07-chain.jpg",
+   "tall": "tall/07-chain.jpg",
+   "principle": "Sin is the devil's work, and the Son of God came to undo it.",
+   "shows": "A heavy chain lies broken on the ground, its padlock open.",
+   "prompt": "A heavy, rusted iron chain lies on bare ground, snapped clean apart, its broken link in sharp focus, and beside it a large old padlock lying sprung open. Behind, out of focus, an iron gate stands wide open onto a sunlit field. Cool shade in the foreground, bright clear late-morning light beyond the gate.",
+   "people": false
+  },
+  {
+   "verse": 9,
+   "image": "08-acorn.jpg",
+   "tall": "tall/08-acorn.jpg",
+   "principle": "Whoever is born of God carries his nature inside, and what is inside decides what grows.",
+   "shows": "An acorn has split and a small oak shoot grows from it, a great oak behind.",
+   "prompt": "Extreme close view at ground level of an acorn lying on dark, damp soil, split open, with a small pale root going down and a young green shoot with two tiny oak leaves rising from it. Far behind, soft and out of focus, stands a great old oak tree. Gentle, even light under a bright overcast sky.",
+   "people": false
+  },
+  {
+   "verse": 10,
+   "image": "09-shoelace.jpg",
+   "tall": "tall/09-shoelace.jpg",
+   "principle": "God's children are known by this: they do what is right and they love their brother. It is the message from the beginning.",
+   "shows": "A boy kneels to tie his little brother's shoelace.",
+   "prompt": "On the front steps of an ordinary school on a clear weekday morning, a boy of about ten with a school bag on his back kneels on one knee and carefully ties the shoelace of his little brother of about five, who stands holding on to his big brother's shoulder for balance. Plain everyday clothes. Clean, even morning daylight."
+  },
+  {
+   "verse": 12,
+   "image": "10-envy.jpg",
+   "tall": "tall/10-envy.jpg",
+   "principle": "Hatred of a brother grows from resenting the good he does. The world resents it in the same way.",
+   "shows": "One brother is praised at the family table while the other stares down, jaw tight.",
+   "prompt": "A family dinner table at home in the evening under a warm ceiling lamp. On the right a young man smiles modestly while an older relative's hand, reaching in from the edge of the frame, rests proudly on his shoulder. On the left, in sharp focus, his brother, who looks much like him, sits apart with his arms folded, staring down at the table with a tight jaw and a dark, resentful look. Nobody else's face is visible.",
+   "hard_note": "The text names Cain. Biblical people are not portrayed and nothing violent is shown, so this shows the resentment the verse gives as the reason."
+  },
+  {
+   "verse": 14,
+   "image": "11-bridge.jpg",
+   "tall": "tall/11-bridge.jpg",
+   "principle": "Love for the brothers is how we know we have crossed over from death into life.",
+   "shows": "A footbridge leads from a burnt, grey wood into living green.",
+   "prompt": "A narrow wooden footbridge crosses a small ravine, seen from the side. On the left bank stands a burnt, dead forest of black, leafless trunks on grey ash. On the right bank the forest is alive, green and sunlit, with ferns and wildflowers. A walker with a small rucksack, seen from behind, is just stepping off the bridge onto the green side. Bright, clear midday light."
+  },
+  {
+   "verse": 15,
+   "image": "12-torn.jpg",
+   "tall": "tall/12-torn.jpg",
+   "principle": "To hate a brother is to do away with him in your heart, and no life remains in that.",
+   "shows": "An old photograph of two brothers, torn in two between them.",
+   "prompt": "An old, slightly faded colour photograph of two young brothers standing side by side lies on a dark wooden table, torn in two straight down the middle between the boys, the two halves lying a little apart with rough torn edges. The torn photograph is in sharp focus. Cool, grey window light from one side. No writing on the photograph. Apart from the two boys in the photograph there are no people in the frame."
+  },
+  {
+   "verse": 16,
+   "image": "13-rescue.jpg",
+   "tall": "tall/13-rescue.jpg",
+   "principle": "This is how we know love: he laid down his life for us. We ought to do the same for one another.",
+   "shows": "A firefighter comes out of thick smoke carrying a small child.",
+   "prompt": "A firefighter in full, plain dark protective gear and helmet walks out of thick grey smoke pouring from the doorway of a house, carrying a small child wrapped in a blanket safely in both arms. The firefighter's face is hidden by the mask. No flames are visible, only smoke and an orange glow far inside. Flat grey daylight outside. No lettering, numbers or badges on the gear."
+  },
+  {
+   "verse": 17,
+   "image": "14-passby.jpg",
+   "tall": "tall/14-passby.jpg",
+   "principle": "If you have plenty, see your brother in need and shut your heart to him, how can God's love be living in you?",
+   "shows": "A well-dressed man with full shopping bags walks past a man sitting in the cold, looking away.",
+   "prompt": "A city pavement on a cold, bright winter afternoon. A man in a worn coat sits on the ground against a wall with a blanket over his knees, looking up. A well-dressed man in a good wool coat, carrying several full, plain shopping bags, walks past him close by with his face turned firmly away. The seated man is in focus; the walker is caught mid-stride. The bags are plain with no logos or lettering."
+  },
+  {
+   "verse": 18,
+   "image": "15-coat.jpg",
+   "tall": "tall/15-coat.jpg",
+   "principle": "Love is not talk. It is something done.",
+   "shows": "Someone kneels and wraps a warm coat around the same man's shoulders.",
+   "prompt": "The same kind of cold, bright winter pavement. A man in a worn coat sits on the ground against a wall. A passer-by in a jumper has knelt down in front of him and is wrapping their own thick winter coat around the seated man's shoulders with both hands. The seated man looks up in surprise. The kneeling person is seen from behind and the side."
+  },
+  {
+   "verse": 19,
+   "image": "16-held.jpg",
+   "tall": "tall/16-held.jpg",
+   "principle": "When our own heart accuses us, we can rest before him, because God is greater than our heart and knows everything.",
+   "shows": "A child who has broken a vase is held close in his father's arms.",
+   "prompt": "A living-room floor in soft afternoon window light. In the foreground lie the pieces of a broken vase and some scattered flowers on wet floorboards. Just behind, a father kneeling on the floor, seen from behind, holds his small son close in both arms; the boy, in focus, presses his tear-streaked face into his father's shoulder with his eyes shut. The father's face is not visible.",
+   "hard": true,
+   "hard_note": "An accusing heart and its reassurance are inward things. This shows them in a home: the one who knows exactly what happened holds the child anyway."
+  },
+  {
+   "verse": 21,
+   "image": "17-cup.jpg",
+   "tall": "tall/17-cup.jpg",
+   "principle": "A clear heart comes to God boldly, asks, and receives.",
+   "shows": "A little girl holds her cup up high and it is being filled.",
+   "prompt": "A little girl of about four stands on tiptoe in a sunny kitchen, holding a plain empty cup up as high as she can with both hands and looking up with complete trust and a wide smile. From the top edge of the frame an adult's hand tips a clear glass jug, and a stream of clear water is pouring into her cup. Only the adult's hand and forearm are visible. Bright, clean mid-morning light."
+  },
+  {
+   "verse": 23,
+   "image": "18-table.jpg",
+   "tall": "tall/18-table.jpg",
+   "principle": "His one commandment has two sides: trust in his Son, and love one another.",
+   "shows": "A family and friends join hands around a dinner table to give thanks.",
+   "prompt": "Close view along an ordinary dinner table set with a simple home-cooked meal, in warm early-evening lamp light. People of different ages sit around it with heads bowed, holding one another's hands in an unbroken ring around the table. The joined hands resting on the tablecloth in the foreground, an old hand holding a child's hand, are in sharp focus, and the faces are soft and out of focus.",
+   "hard": true,
+   "hard_note": "'Believe the name of his Son' has no picture of its own. This shows the two sides of the command as one everyday act: thanks given together, hand in hand."
+  },
+  {
+   "verse": 24,
+   "image": "19-home.jpg",
+   "tall": "tall/19-home.jpg",
+   "principle": "Whoever keeps his commandments lives in him, and he in them. We know he lives in us by the Spirit he gave.",
+   "shows": "A small house at dusk with its windows glowing and smoke rising from the chimney.",
+   "prompt": "A small, plain house stands alone on a snowy hillside at deep blue dusk. Every window glows with warm golden light, and a thin line of smoke rises straight up from the chimney into the still, cold air. Fresh footprints in the snow lead up to the front door. You can tell at a glance that someone lives there. No people are visible.",
+   "people": false,
+   "hard": true,
+   "hard_note": "'Remains in him, and he in him' is the language of living in a home. This shows how you know a house is lived in: by the light and the warmth inside."
+  }
+ ]
+}
