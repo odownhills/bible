@@ -368,5 +368,90 @@
    "slot": 2,
    "prompt": "Three climbers have just reached a mountain summit at sunrise and throw both arms up with shouts of joy, their faces lit gold. Below and all round them a sea of cloud glows gold and rose in the first sun, with far peaks standing out of it. The sky is vast and full of light."
   }
- ]
+ ],
+ "picks": {
+  "note": "Chosen by eye on 2026-11-21 from the trial pictures, before the chapter was translated. Scenes are written when the recording's timings exist; a pick marked 'if time' is used only if each picture can stay up about 8 seconds.",
+  "by_verse": [
+   [
+    1,
+    "a-blanket"
+   ],
+   [
+    3,
+    "b1-baton"
+   ],
+   [
+    4,
+    "b2-fox"
+   ],
+   [
+    5,
+    "c1-hut"
+   ],
+   [
+    6,
+    "c2-post"
+   ],
+   [
+    7,
+    "c2-wreck"
+   ],
+   [
+    8,
+    "d1-captain"
+   ],
+   [
+    9,
+    "d2-referee"
+   ],
+   [
+    11,
+    "d3-bridge"
+   ],
+   [
+    12,
+    "e1-table"
+   ],
+   [
+    12,
+    "e2-cloud (or e2-tree), if time"
+   ],
+   [
+    13,
+    "e3-waves"
+   ],
+   [
+    14,
+    "f1-court"
+   ],
+   [
+    16,
+    "f2-flatter"
+   ],
+   [
+    17,
+    "g-mockers"
+   ],
+   [
+    20,
+    "h1-build"
+   ],
+   [
+    21,
+    "h1-window, if time"
+   ],
+   [
+    23,
+    "h2-fire"
+   ],
+   [
+    24,
+    "i1-wall"
+   ],
+   [
+    25,
+    "i2-stars"
+   ]
+  ]
+ }
 }
