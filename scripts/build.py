@@ -235,32 +235,12 @@ def page(title, body, depth, tail=""):
 
 
 def durations():
-    """Length in seconds of each recording, cached in site/audio/durations.json."""
-    import subprocess
-    adir = os.path.join(OUT, "audio")
-    cache_path = os.path.join(adir, "durations.json")
-    cache = json.load(open(cache_path)) if os.path.exists(cache_path) else {}
-    fresh = {}
-    for base, _, files in os.walk(adir):
-        for f in files:
-            if not f.endswith(".mp3"):
-                continue
-            full = os.path.join(base, f)
-            rel = os.path.relpath(full, OUT).replace(os.sep, "/")
-            size = os.path.getsize(full)
-            old = cache.get(rel)
-            if old and old[0] == size:
-                fresh[rel] = old
-                continue
-            try:
-                out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
-                                      "-of", "csv=p=0", full], capture_output=True, text=True).stdout.strip()
-                fresh[rel] = [size, round(float(out))]
-            except (OSError, ValueError):
-                fresh[rel] = [size, None]
-    if fresh != cache and os.path.isdir(adir):
-        json.dump(fresh, open(cache_path, "w"), sort_keys=True)
-    return {k: v[1] for k, v in fresh.items()}
+    """Length in seconds of each recording in the R2 bucket, from data/audio.json (see scripts/media.py)."""
+    try:
+        listed = json.load(open(os.path.join(ROOT, "data", "audio.json")))
+    except (OSError, ValueError):
+        listed = {}
+    return {k: v[1] for k, v in listed.items()}
 
 
 def collect():
@@ -297,7 +277,7 @@ def main():
     def audio_of(c):
         """Site path of a chapter's recording, or None when it has none yet."""
         rel = "audio/%s/%d.mp3" % (c[0]["slug"], c[1])
-        return rel if os.path.exists(os.path.join(OUT, rel)) else None
+        return rel if rel in lengths else None
 
     for idx, (b, n, path) in enumerate(chapters):
         meta, blocks = parse(path)
@@ -326,7 +306,7 @@ def main():
             return '<a class="%s" href="%s">%s %s %d</a>' % (cls, href, label, esc(cb["name"]), cn)
 
         audio_url = "audio/%s/%d.mp3" % (b["slug"], n)
-        has_audio = os.path.exists(os.path.join(OUT, audio_url))
+        has_audio = audio_url in lengths
         spoken = " ".join(speech)
         html_body = "\n".join(parts)
         # Word timings for Listen + Read (written by scripts/align.py) count only if they were made
