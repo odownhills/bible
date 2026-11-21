@@ -3,7 +3,7 @@
 This repository is Obay's original English translation of the Bible, published at
 https://bible.odownhills.workers.dev (Cloudflare deploys the `site/` folder on every push to main).
 Whole chapters are added every day. Books listed in `"first_books"` in `data/settings.json` come first
-(currently 1 John, then John); after them the run continues in canonical order from the first
+(currently Job, then John; 1 John is done); after them the run continues in canonical order from the first
 untranslated chapter, Genesis 1 to Revelation 22.
 Accuracy matters more than speed.
 
