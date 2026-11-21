@@ -1,0 +1,141 @@
+{
+ "note": "Pilot chapter, 2026-11-20, made the way the automatic version will work: one principle and one present-day symbolic picture per scene, each made once wide (1920x1088) and once tall (1088x1920) from the same description. Each scene starts at the first word of its verse. Pictures: OpenAI gpt-image-2.5-sunburst, medium.",
+ "scenes": [
+  {
+   "verse": 1,
+   "image": "01-lifted.jpg",
+   "tall": "tall/01-lifted.jpg",
+   "principle": "The aim is not to sin. When we do fall, we are not left alone: one who is righteous speaks for us.",
+   "shows": "A child who has fallen reaches up to a hand that helps.",
+   "prompt": "A sunlit path in an ordinary neighbourhood park. A small child of about three who has just fallen down sits on the ground, looking up with trust and reaching one hand toward a grown-up's hand that reaches down into the frame to help. Only the adult's forearm and hand are seen, in a plain denim jacket sleeve. The child is calm, not crying."
+  },
+  {
+   "verse": 3,
+   "image": "02-crossed.jpg",
+   "tall": "tall/02-crossed.jpg",
+   "principle": "Knowing him shows in doing what he says. The claim without the doing is a lie.",
+   "shows": "A man raises one hand in a promise and crosses his fingers behind his back.",
+   "prompt": "View from behind of a man in a plain shirt standing in a plain room in daylight. His right hand is raised beside his shoulder as if making a promise, while his left hand rests behind his back with its first two fingers crossed. The hand with crossed fingers behind his back is in sharp focus, natural and well-formed."
+  },
+  {
+   "verse": 5,
+   "image": "03-footsteps.jpg",
+   "tall": "tall/03-footsteps.jpg",
+   "principle": "Remaining in him means living the way he lived.",
+   "shows": "Bare feet step into footprints someone left ahead on the sand.",
+   "prompt": "A wide, smooth, wet beach in early morning light. A single line of clear footprints leads away across the sand toward the brightness. A person in rolled-up jeans, seen only from the knees down, places a bare foot carefully into one of the footprints, following them. Nobody else is on the beach and nobody is seen ahead."
+  },
+  {
+   "verse": 7,
+   "image": "04-curtain.jpg",
+   "tall": "tall/04-curtain.jpg",
+   "principle": "The darkness is passing away and the true light is already shining.",
+   "shows": "A hand draws back a curtain and morning floods a dark room.",
+   "prompt": "Inside a dark bedroom at dawn. A person in everyday clothes, seen from behind and partly in silhouette, pulls a heavy curtain aside with one hand, and bright morning sunlight pours through the window into the room, pushing the darkness back across the floor and the wall. Only an ordinary street and sky are outside the window."
+  },
+  {
+   "verse": 9,
+   "image": "05-brothers.jpg",
+   "tall": "tall/05-brothers.jpg",
+   "principle": "Loving your brother is what living in the light looks like.",
+   "shows": "Two grown brothers embrace on a porch in full daylight.",
+   "prompt": "Two grown brothers in their thirties, in plain everyday clothes, embrace warmly on the front porch of an ordinary house in bright daylight. One has his eyes closed in relief, and the other's hand rests firmly on his back. They are equals, two ordinary men of today; neither wears white and nobody else is there."
+  },
+  {
+   "verse": 11,
+   "image": "06-fog.jpg",
+   "tall": "tall/06-fog.jpg",
+   "principle": "Hatred blinds. The one who hates cannot see where he is going.",
+   "shows": "A man feels his way alone down an unlit road in night fog.",
+   "prompt": "Night on an empty, unlit country road in thick fog. A lone man in a dark jacket, seen from behind, walks away into the darkness with one hand stretched out in front of him, feeling his way. Faint cold moonlight outlines him so that he reads clearly. There are no lights ahead, only fog and dark, and nobody else."
+  },
+  {
+   "verse": 12,
+   "image": "07-generations.jpg",
+   "tall": "tall/07-generations.jpg",
+   "principle": "He writes to every stage of life: children who are forgiven, fathers who know him, the young who have overcome.",
+   "shows": "A grandfather, a father and a small boy sit together on the front steps.",
+   "prompt": "A grandfather, a father and a small boy of about five sit side by side on the front steps of an ordinary house in warm late-afternoon light, relaxed and smiling at one another, in plain everyday clothes. Three generations of one family, equal in the frame. Nobody stands apart, nobody wears white, and nobody else is there."
+  },
+  {
+   "verse": 14,
+   "image": "08-lighthouse.jpg",
+   "tall": "tall/08-lighthouse.jpg",
+   "principle": "Strength comes from his word remaining in you.",
+   "shows": "A lighthouse stands firm in storm waves, its lamp still burning.",
+   "prompt": "A plain stone lighthouse stands firm on a rock at dusk while large storm waves break against its base and spray fills the air. Its lamp burns steadily at the top under dark clouds. No boats."
+  },
+  {
+   "verse": 15,
+   "image": "09-showroom.jpg",
+   "tall": "tall/09-showroom.jpg",
+   "principle": "Craving what the world shows off, what the body wants, what the eye wants and pride in what we own, does not come from the Father.",
+   "shows": "A man stares through showroom glass at a gleaming sports car.",
+   "prompt": "Night on a city street. A man in everyday clothes stands close to a brightly lit showroom window, staring with longing at a gleaming red sports car inside, his own reflection faint in the glass. The car and the showroom carry no badges, logos or lettering. Nobody else is there."
+  },
+  {
+   "verse": 17,
+   "image": "10-rust.jpg",
+   "tall": "tall/10-rust.jpg",
+   "principle": "The world and its wanting are passing away. Whoever does the will of God remains forever.",
+   "shows": "The same kind of car, abandoned and rusting in a field.",
+   "prompt": "The rusted, abandoned shell of a once-expensive red sports car sits in an open field in soft daylight, its paint faded and peeling, wild grass and small flowers growing up through its frame. No badges or lettering on it."
+  },
+  {
+   "verse": 18,
+   "image": "11-hourglass.jpg",
+   "tall": "tall/11-hourglass.jpg",
+   "principle": "It is the last hour. The time left is short.",
+   "shows": "An hourglass with its last sand running out.",
+   "prompt": "Close view of a plain glass hourglass on a wooden table, lit by low evening light from a window. Almost all of the sand has fallen, and only a last thin stream runs from the nearly empty top bulb."
+  },
+  {
+   "verse": 19,
+   "image": "12-emptychair.jpg",
+   "tall": "tall/12-emptychair.jpg",
+   "principle": "Those who walked away showed they never truly belonged. Belonging shows in remaining.",
+   "shows": "One empty chair pushed back from a set table, the door left open to the night.",
+   "prompt": "A long dinner table set for a shared meal in a warm, lamp-lit room, with plates and glasses at every place. One chair is pushed back and empty, a napkin dropped on its seat, and behind it the door of the room stands open onto the dark night outside. The doorway is empty."
+  },
+  {
+   "verse": 20,
+   "image": "13-plumb.jpg",
+   "tall": "tall/13-plumb.jpg",
+   "principle": "You have been given what you need to know the truth, and no lie comes from the truth.",
+   "shows": "A plumb line hangs perfectly straight beside a wall that leans.",
+   "prompt": "Close view of a brass plumb bob hanging perfectly still and straight on a taut string in a workshop, in soft daylight. Behind it, slightly out of focus, a rough brick wall visibly leans out of true beside the straight string."
+  },
+  {
+   "verse": 22,
+   "image": "14-turned.jpg",
+   "tall": "tall/14-turned.jpg",
+   "principle": "To deny the Son is to be without the Father. To own the Son is to have the Father too.",
+   "shows": "A man walks away down a dim corridor, his back to a doorway full of daylight.",
+   "prompt": "A long dim corridor in an ordinary building. At the far end a doorway stands open, full of warm daylight; the doorway is empty and nobody stands in it. A man in everyday clothes walks away from it toward the camera into the shadow, his back to the light, his head down and his face in shade."
+  },
+  {
+   "verse": 24,
+   "image": "15-vine.jpg",
+   "tall": "tall/15-vine.jpg",
+   "principle": "Let what you heard from the beginning stay in you, and you stay in the Son and the Father. The promise is eternal life.",
+   "shows": "A branch heavy with grapes, joined firmly to the old vine.",
+   "prompt": "Close view in a present-day vineyard in morning light: a healthy green branch heavy with ripe grapes, joined firmly to the thick old trunk of the vine, sunlight coming through the leaves. The place where the branch joins the vine is in sharp focus."
+  },
+  {
+   "verse": 26,
+   "image": "16-compass.jpg",
+   "tall": "tall/16-compass.jpg",
+   "principle": "Others will try to lead you off course. What you received from him is true and keeps you in him.",
+   "shows": "A compass held steady in an open hand where a trail forks in the mist.",
+   "prompt": "A fork in a forest trail in morning mist, two paths leading off in different directions among the trees. In the foreground a person's open hand holds a simple brass compass steady, its needle in sharp focus. The compass face is plain, with no letters or numbers. Only the hand and forearm are seen, in an everyday jacket sleeve, and nobody is on the paths."
+  },
+  {
+   "verse": 28,
+   "image": "17-welcome.jpg",
+   "tall": "tall/17-welcome.jpg",
+   "principle": "Stay in him now, and his coming will be a welcome, not a shame.",
+   "shows": "A small boy runs to the front door with his arms wide open.",
+   "prompt": "Inside an ordinary home, seen from the open front door looking in: a small boy of about four runs down the hallway toward the camera with his arms flung wide and a huge joyful smile, late-afternoon sunlight from the doorway on his face. Nobody else is in the frame."
+  }
+ ]
+}
