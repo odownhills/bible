@@ -275,6 +275,8 @@ def tv_scenes(slug, n, verse_at, verse_text):
         if s.get("tall") and os.path.exists(os.path.join(OUT, tall)):
             scene["tall"] = tall   # the same scene made tall, for a phone held upright
         scenes.append(scene)
+    if not scenes:   # a plan that is still being worked on
+        return None
     rel = "tv/%s/%d.json" % (slug, n)
     os.makedirs(os.path.join(OUT, "tv", slug), exist_ok=True)
     json.dump({"verses": verse_at, "scenes": scenes}, open(os.path.join(OUT, rel), "w", encoding="utf-8"))

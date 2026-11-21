@@ -1,0 +1,225 @@
+{
+ "note": "Made by Obay's second method (see \"method\"): the chapter is split into sections that each carry one deep meaning, 10 picture ideas are written for each (\"sections\"), the top two for each picture are made and the better is chosen by eye. Each scene is made wide (1920x1088) and tall (1088x1920) from the same description and starts at the first word of its verse, or at its \"from\" words inside the verse. Pictures already used in the chapters beside this one are not repeated, and the important part of every picture sits in the upper two thirds, clear of the words.",
+ "method": "Second method, asked for by Obay on 2026-11-21 after the sentence-by-sentence pictures did not connect: (1) split the chapter into sections that each carry one deep meaning, written as one plain sentence; (2) write 10 different picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye. A section has one or two pictures. What he said went wrong before: he could not tell why some pictures were there, could not connect them to the meaning, and some were too abstract.",
+ "sections": [
+  {
+   "verses": "1-5",
+   "meaning": "Whoever believes is born from God, and to love the Father is to love his children. His commandments are not a heavy load, because faith overcomes the world.",
+   "ideas": [
+    "A man crouches, beaming, to greet his old friend's little daughter while her father looks on",
+    "A man carries his brother's small son on his shoulders, the boy's father laughing beside them",
+    "Grandparents meet a grandchild for the first time",
+    "A big sister gives her little brother a piggyback up the hill, both of them laughing",
+    "A young man carries his grandmother's shopping with her arm through his",
+    "A father carries his sleeping child up the stairs as if she weighed nothing",
+    "A blind runner and her guide, joined by a short tether, cross the finishing line together",
+    "A runner breaks the tape with his arms raised",
+    "A climber is pulled up onto the summit by a hand from above",
+    "A girl rides her bicycle alone for the first time"
+   ]
+  },
+  {
+   "verses": "6-8",
+   "meaning": "God's own witnesses agree about Jesus: the Spirit, the water and the blood all say the same thing.",
+   "ideas": [
+    "An old farmer, a young woman and a boy all point the same way for a traveller who asked",
+    "Three witnesses stand in a courtroom with their right hands raised",
+    "Three old friends tell the same story at a table, nodding",
+    "Three strands twisted into one rope",
+    "Three doctors agree over the same picture",
+    "Three hikers point to the same peak",
+    "Three singers hold one chord",
+    "Three signatures at the foot of a page",
+    "Three bells in one tower ring together",
+    "Three neighbours each bring the lost child's mother the same news"
+   ]
+  },
+  {
+   "verses": "9-12",
+   "meaning": "We take people at their word, and God's word is greater. This is what he says: he has given us eternal life, and this life is in his Son. Whoever has the Son has the life.",
+   "ideas": [
+    "Two farmers shake hands over a gate and look each other in the eye",
+    "A blind woman steps off the kerb on a friend's arm",
+    "A passenger sleeps on a night flight, trusting the pilot",
+    "A patient takes the medicine a doctor hands her",
+    "A hiker follows the trail marks through the forest",
+    "A swimmer far out in the sea grasps the life ring thrown to him",
+    "A parched hiker in the desert is handed water and drinks",
+    "A grandfather sets a seedling into a child's cupped hands",
+    "A patient wakes after an operation with a new heart",
+    "A diver breathes through the air line from the boat above"
+   ]
+  },
+  {
+   "verses": "13-15",
+   "meaning": "You can know that you have eternal life, and you can ask boldly: when we ask what he wills, he hears us.",
+   "ideas": [
+    "A father kneels to listen as his little girl whispers in his ear",
+    "A grandfather puts down his tools and bends to the grandson who holds up a broken toy",
+    "A daughter phones home and her mother answers at the first ring",
+    "A pupil raises her hand, sure the teacher will come",
+    "A doctor leans in close to hear an old patient",
+    "A boy tugs his father's sleeve in a crowd and the father turns at once",
+    "A small girl knocks on her father's study door and it opens",
+    "A baby cries in the night and the light goes on",
+    "A child asks for bread at the table and the loaf is passed",
+    "A climber calls down the rope and it tightens"
+   ]
+  },
+  {
+   "verses": "16-17",
+   "meaning": "When you see a brother going wrong, pray for him, and God will give him life.",
+   "ideas": [
+    "A man lifts his brother, slumped on the kerb outside a bar at night, to take him home",
+    "A sister sits with her arm round her brother, whose head is in his hands, her eyes closed for him",
+    "A brother goes out with a torch at night to find his brother",
+    "A friend sits up through the night beside a friend",
+    "A teacher pleads for a pupil at the head teacher's desk",
+    "A mother waits at the window for a son who has not come home",
+    "A friend visits a friend in prison and lays a hand on the glass",
+    "A man picks up the phone to call the brother everyone else has given up on",
+    "A father sets a place at the table for the son who left",
+    "A woman walks beside a friend the whole way to the clinic door"
+   ]
+  },
+  {
+   "verses": "18-21",
+   "meaning": "We know we belong to God and are kept safe by his Son. He has come and opened our eyes to know the true God: this is eternal life, so keep away from every false one.",
+   "ideas": [
+    "A crossing guard holds back the traffic with one arm while small children cross safely",
+    "A father shields his child under his coat in a hailstorm",
+    "A mother holds the umbrella over her child and takes the rain herself",
+    "A big brother walks his little sister past the rough boys with his arm round her",
+    "A lifeguard watches from his tower",
+    "A small girl puts on her first glasses and sees her mother's face clearly",
+    "Morning fog lifts and a hiker sees the real mountain for the first time",
+    "A baby hears his mother's voice for the first time through a hearing aid",
+    "A boy puts down the toy crown and runs to his real father",
+    "A woman sets aside a glittering trinket and takes her child's hand"
+   ]
+  }
+ ],
+ "scenes": [],
+ "candidates": [
+  {
+   "image": "cand/h1-friend.jpg",
+   "section": "1-5",
+   "slot": 1,
+   "prompt": "In a park in bright daylight two old friends have just met. One of them has crouched down, beaming, to greet his friend's little daughter of about four, who shyly holds a flower out to him; he takes it with delight. Her father stands just behind her with a hand on her shoulder, smiling proudly at them both."
+  },
+  {
+   "image": "cand/h1-shoulders.jpg",
+   "section": "1-5",
+   "slot": 1,
+   "prompt": "At a family picnic in bright daylight a man carries his brother's small son of about three high on his shoulders, holding his ankles, both of them laughing. The boy's father walks beside them, laughing too, with a hand on his brother's back. The two men plainly look like brothers."
+  },
+  {
+   "image": "cand/h2-piggyback.jpg",
+   "section": "1-5",
+   "slot": 2,
+   "prompt": "On a grassy hill path in bright afternoon light a girl of about eleven carries her little brother of about four on her back up the hill, piggyback. She is smiling and stepping lightly, not straining at all, and he laughs with his arms round her neck. The load is no burden to her."
+  },
+  {
+   "image": "cand/h2-grandmother.jpg",
+   "section": "1-5",
+   "slot": 2,
+   "prompt": "On a sunny pavement a young man of about twenty carries two full shopping bags in one hand, and his small old grandmother walks beside him with her arm through his other arm. He is bending his head to her, laughing at something she says, glad to be doing it."
+  },
+  {
+   "image": "cand/h3-tether.jpg",
+   "section": "1-5",
+   "slot": 3,
+   "prompt": "At the finishing line of a road race in bright daylight a blind woman runner in dark glasses and her guide, joined wrist to wrist by a short tether, cross the line together and break the tape, both with their free arms thrown up and faces full of joy. A cheering crowd is softly out of focus behind them."
+  },
+  {
+   "image": "cand/h3-tape.jpg",
+   "section": "1-5",
+   "slot": 3,
+   "prompt": "At the finishing line of a long road race in bright daylight a tired, overjoyed runner breaks the tape with both arms raised high and his head thrown back. A cheering crowd is softly out of focus behind him."
+  },
+  {
+   "image": "cand/i-pointing.jpg",
+   "section": "6-8",
+   "slot": 1,
+   "prompt": "At a country crossroads in bright daylight a traveller with a backpack has asked the way. Three very different people standing a little apart from one another, an old farmer, a young woman with a bicycle and a boy of about ten, all point with outstretched arms in exactly the same direction down the same road. The traveller looks where they all point, relieved."
+  },
+  {
+   "image": "cand/i-witnesses.jpg",
+   "section": "6-8",
+   "slot": 1,
+   "prompt": "In a bright, plain courtroom three very different witnesses, an old man, a young woman and a workman, stand side by side, each with the right hand raised in the same way, their faces calm and sure. Daylight from tall windows."
+  },
+  {
+   "image": "cand/j1-handshake.jpg",
+   "section": "9-12",
+   "slot": 1,
+   "prompt": "Two farmers shake hands firmly over a wooden field gate in clear morning light, looking each other straight in the eye with trust: a man's word given and taken. Green fields behind them."
+  },
+  {
+   "image": "cand/j1-kerb.jpg",
+   "section": "9-12",
+   "slot": 1,
+   "prompt": "On a busy city street in bright daylight a blind woman with a white cane steps confidently off the kerb, her hand resting on the arm of a friend who looks carefully both ways and tells her the road is clear. Her face is calm and trusting. Stopped traffic is softly out of focus."
+  },
+  {
+   "image": "cand/j2-lifering.jpg",
+   "section": "9-12",
+   "slot": 2,
+   "prompt": "Far out in a grey, heaving sea a swimmer holds a bright orange life ring tightly with both arms, his face full of relief. A taut rope runs from the ring up and out of the frame toward a rescuer's two hands hauling it in at the near top edge of the picture. Daylight breaking through cloud."
+  },
+  {
+   "image": "cand/j2-water.jpg",
+   "section": "9-12",
+   "slot": 2,
+   "prompt": "In a dry, stony desert under a hot clear sky an exhausted hiker with cracked lips sits on the ground and drinks deeply from a water bottle that another walker has just put into his hands; the helper crouches beside him, steadying the bottle. Water runs down the hiker's chin. Bright daylight."
+  },
+  {
+   "image": "cand/k-whisper.jpg",
+   "section": "13-15",
+   "slot": 1,
+   "prompt": "In a sunny living room a father has knelt right down to his little girl of about four, who cups her hands round her mouth and whispers her request into his ear. His head is tilted to her, his eyes soft and his whole attention on her. The father is seen from the side."
+  },
+  {
+   "image": "cand/k-toy.jpg",
+   "section": "13-15",
+   "slot": 1,
+   "prompt": "In a wood workshop in clear daylight a grandfather has put down his tools on the bench and bends right down, hands on his knees, to his small grandson of about five, who holds up a broken wooden toy boat to him with a trusting, hopeful face. The grandfather listens with a warm, attentive smile, already reaching for the toy."
+  },
+  {
+   "image": "cand/l-kerb.jpg",
+   "section": "16-17",
+   "slot": 1,
+   "prompt": "On a wet city street at night, outside the lit doorway of a bar, a man has crouched beside his brother, who sits slumped on the kerb with his head hanging, and has put an arm round his shoulders and taken his hand to lift him up and take him home. The helper's face is full of concern and love. Light from the street lamps and the doorway makes both faces clear."
+  },
+  {
+   "image": "cand/l-bench.jpg",
+   "section": "16-17",
+   "slot": 1,
+   "prompt": "On a park bench in soft evening light a man sits bent over with his head in his hands. Beside him his sister has put one arm round his shoulders and bowed her own head close to his, her eyes closed and her lips moving quietly, asking for him. Her other hand rests on his arm."
+  },
+  {
+   "image": "cand/m1-crossing.jpg",
+   "section": "18-21",
+   "slot": 1,
+   "prompt": "On a town street in clear morning light a crossing guard in a bright jacket stands firm in the middle of the road with one arm stretched out toward a big lorry and a line of cars, all stopped. Behind the guard's back a line of small schoolchildren with backpacks walks safely and happily across the crossing. The guard watches the traffic, not the children."
+  },
+  {
+   "image": "cand/m1-umbrella.jpg",
+   "section": "18-21",
+   "slot": 1,
+   "prompt": "In a heavy downpour on a city pavement a mother holds a big umbrella entirely over her small son of about five, who walks perfectly dry and happy beside her looking up at the rain, while she herself is half outside the umbrella with rain running off her hair and coat, smiling down at him."
+  },
+  {
+   "image": "cand/m2-glasses.jpg",
+   "section": "18-21",
+   "slot": 2,
+   "prompt": "In an optician's bright room a small girl of about three has just had her first pair of glasses put on. She stares up at her mother's face, seeing it clearly for the first time, with her mouth open in astonished joy and one small hand reaching to touch her mother's cheek. Her mother, leaning close, smiles with tears in her eyes."
+  },
+  {
+   "image": "cand/m2-fog.jpg",
+   "section": "18-21",
+   "slot": 2,
+   "prompt": "On a high ridge at sunrise a lone hiker stands looking out as thick morning fog pulls apart in front of her and a great snow-covered mountain peak stands suddenly clear and sharp in the first sunlight, far more real and huge than the shapes in the fog. She has lowered her map and gazes in wonder."
+  }
+ ]
+}
