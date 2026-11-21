@@ -374,3 +374,60 @@ When a chapter settles a new recurring term, add one line here in the same commi
 - 5:44: a participle is followed by a finite verb inside the question, and the English keeps the shift ("receiving ..., and you do not seek").
 - kategoreo "accuse"; pros ton patera (5:45) "to the Father". elpizo eis (perfect) "have hoped in". gramma "writing" (plural "writings"), keeping the echo with grapho "write".
 - For Obay to decide (each is easy to reverse): how 5:3b-4 is shown (verse 4 as an alt-only line with a `numbering:` note, or the words in the main text, or no note at all); "Bethzatha" or the familiar "Bethesda" as the main text at 5:2; whether "the festival" (5:1) and "the only one" (5:44) need their notes; "holds dear" or "loves" for phileo; "healthy" or "well" for hygies; "undoing the Sabbath" or "breaking the Sabbath" as the main text at 5:18; "Rise, take up your mat" or "Get up, pick up your mat"; "throw" or "put" at 5:7; "from himself" or "on his own"; "be surprised" for thaumazo at 5:20 and 5:28, where "be amazed" would be stronger; "make alive" or "give life"; "do judgment" or "carry out judgment"; "Son of Man" or "a son of man" at 5:27; "You search" or "Search" at 5:39; "exult" for agalliao; "multitude" for plethos; "cure" beside "heal".
+
+## Settled in John 6
+- Greek text, applying the 1 John 1 line: the other reading is noted at 6:69 (ho hagios tou theou "the Holy One of God", as in the earliest manuscripts; many read "the Christ, the Son of the living God"). Not noted, since the sense is intact: 6:11 (many add "to the disciples, and the disciples" before "to those who were reclining"), 6:14 ("the sign that he did", as in the editions; two of the earliest manuscripts read "the signs"), 6:22 (many add "that one into which his disciples had stepped" after "except one"), 6:23 (the doubtful letters of ploiaria "small boats" are not marked), 6:36 (the doubtful me "me" is kept), 6:39, 40 (the doubtful en is not marked), 6:42 (nyn "now"; many read oun), 6:47 (many add "in me" after "believes"), 6:51 (many add "which I will give" after "my flesh"), 6:52 (the doubtful autou "his" is kept), 6:55 (alethes "true", twice; many read alethos "truly"), 6:58 (many read "your fathers ate the manna"), 6:63 (many read "I speak" for "I have spoken"), 6:65 (many read "my Father"), 6:71 (Iskariotou, going with Simon; many read Iskarioten, going with Judas). Also not noted: 6:15, where one early manuscript reads "flees" for "withdrew", and 6:17, where two read "the darkness overtook them".
+- thalassa "sea": he thalassa tes Galilaias tes Tiberiados (6:1) "the Sea of Galilee, of Tiberias", the two genitives left side by side as in the Greek; on its own "the sea", lowercase. Tiberias (6:23) "Tiberias".
+- ochlos polys "a large crowd". anerchomai (6:3) "go up" (it shares its English with anabaino). kathemai "sit". eis to oros "onto the mountain".
+- theaomai with hoti (6:5) stays "gaze at", with the clause turned into its object ("gazing at a large crowd coming toward him").
+- A deliberative subjunctive (6:5, 28) "are we to". houtoi of people (6:5) "these".
+- artos "bread"; in the plural "loaves" (English has no plural of "bread"). krithinos "barley".
+- peirazo "put to the test", kept distinct from dokimazo "test".
+- denarion "denarius" (plural "denarii") and stadion (6:19; plural "stadia"): the unit is translated, not converted and not explained, like metretes. A genitive of price (6:7) "worth".
+- arkeo "be enough". brachy ti "a little". hekastos "each one". tosoutoi "so many".
+- lambano of what is given (6:7) stays "receive"; of picking something up or taking someone on board (6:11, 21) "take", the same English as laqach.
+- paidarion "little boy": a diminutive of pais "boy", as teknia "little children". hode "here" (it shares its English with enthade).
+- opsarion "fish" [alt: small fish], the alt given once in a chapter. It will share its English with ichthys, since 21:10 uses it of large fish.
+- anapipto "recline" (taking one's place for a meal) and anakeimai "be reclining" share their English, the first being the act and the second the state; "lie" and "lie down" stay for katakeimai, "sit" for kathemai.
+- hoi anthropoi (6:10, 14) "the people", as at 4:28; hoi andres (6:10) "the men", so that the change of word is visible. chortos "grass". ton arithmon "in number". hos with a number "about".
+- eucharisteo "give thanks". diadidomi "distribute"; its object ("them") is supplied. hoson "as much as".
+- empiplemi (passive; 6:12) "have one's fill"; chortazo (passive; 6:26) "be satisfied"; gemizo stays "fill" (6:13). Keep the three distinct.
+- perisseuo "be left over". klasma "broken piece". kophinos "basket". bibrosko (6:13) "eat": it supplies the perfect of phago and shares its English. In 6:13 the relative ha stands for the pieces, not the loaves, so the noun is repeated in English, as in 1 Jn 4:3.
+- apollymi: middle "perish" (6:12, of the pieces [alt: be lost]; 6:27, of food); active (6:39) "lose". One bracketed note, set at the end of the speech (6:40), says that the two are the same verb.
+- An aorist participle before its main verb is "having ..." (6:11, 25, 60) or "-ing" (6:5, 14, 15, 17), whichever reads plainly, as in John 4 and 5; the perfect participle at 6:19 is "having rowed".
+- harpazo "seize". anachoreo "withdraw". autos monos "he himself alone".
+- opsia egeneto "it became evening"; skotia egegonei (6:17) "darkness had come to be", keeping the noun "darkness". ginomai of arriving somewhere stays "come to be": engys tou ploiou ginomenon (6:19) "coming to be near the boat"; egeneto epi tes ges (6:21) "came to be at the land"; hode gegonas (6:25) "come to be here", in the simple past, since English cannot put a perfect after "when".
+- ploion "boat"; ploiarion "small boat". embaino eis "step into", as at 5:4. erchomai stays "come" of the crossing (6:17).
+- anemos "wind" (it shares its English with pneuma at 3:8). megas "great". diegeiro (passive) "be roused", kept distinct from tarasso "stir". elauno "row".
+- epi tes thalasses (6:19) "on the sea" [alt: by the sea]: the same phrase is "by the sea" at 21:1, and epi tes ges (6:21) is "at the land".
+- ego eimi with no predicate, said by someone whom the hearers have not recognized (6:20): "It is I" [alt: I am], with the same alt as at 4:26. ego eimi with a predicate (6:35, 41, 48, 51) "I am", the pronoun not marked, so that these sayings keep the form of that alt; elsewhere ego and kago stay "I myself" and "and I myself" (6:40, 44, 51, 54, 56, 57, 63, 70).
+- phobeomai "fear": ephobethesan "they feared"; me phobeisthe "do not fear".
+- 6:22-24: the sentence about the crowd begins, is interrupted by the boats from Tiberias (6:23), and begins again at 6:24; the English leaves the three as they stand, without parentheses. The past tenses after "saw" in 6:22 are "had been", "had not entered", "had gone away". syneiserchomai eis "enter with". monos "alone".
+- ho kyrios in the writer's own narrative (6:23) "the Lord". An aorist genitive absolute (6:23) "after ... had".
+- ergazomai with an accusative of the thing worked for (6:27) "work for"; ergazesthai ta erga (6:28) "work the works"; ti ergaze (6:30) "What do you work?", so that "work" runs unbroken through 6:27-30.
+- sphragizo with an accusative of the person (6:27) "set one's seal on". ho pater ... ho theos (6:27) "the Father, God".
+- touto estin to ergon / to thelema ... hina (6:29, 39, 40) "This is the work / the will ...: that ... should", with a colon, as at 1 Jn 3:23.
+- manna "manna". In the quotation at 6:31 the subject of "gave" is not named, and "He" is left as open as the Greek.
+- ou Mouses dedoken (6:32) "it is not Moses who has given": the negative belongs to the name. ton arton ek tou ouranou ton alethinon "the true bread from heaven".
+- 6:33 ho katabainon "the one that comes down" (the bread) [alt: the one who comes down]: the participle fits both, and the crowd's answer takes it of bread.
+- pantote "always". peinao "be hungry". ou me ... popote (6:35) "will certainly never"; ou me on its own stays "will certainly not" (6:35, 37). kai ... kai (6:36) "both ... and".
+- pan ho (6:37, 39) "everything that", neuter as in the Greek, picked up by "it" (6:39). The hanging pan ho of 6:39 is marked with a dash, as at 3:26; me apoleso ex autou "I should lose nothing of it". heko in the future (6:37) "will come". ekballo exo (6:37) "drive out", the listed rendering of ekballo: "out" already carries exo.
+- anistemi (transitive) "raise up", kept distinct from egeiro "raise" and standing beside anastasis "resurrection". he eschate hemera "the last day". In 6:39 anasteso stands under hina ("but should raise it up"); in 6:40 it is read as a future ("and I myself will raise him up"), as at 6:44, 54.
+- gongyzo "grumble"; meta allelon and pros allelous both "with one another". machomai (6:52) "fight", not softened.
+- helkyo (6:44) "draw": it shares its English with antleo "draw (water)", and fits every place the verb stands in John (12:32; 18:10; 21:6, 11).
+- didaktos "taught"; didaktoi theou "taught by God". manthano "learn". An aorist participle before a present verb (6:45) is put in the English perfect, as at 5:25. ho on para tou theou "the one who is from God".
+- hina tis (6:50) "so that anyone may". phagein ek "eat from" (6:26, 50, 51), like pinein ek (4:13).
+- ho artos ho zon "the living bread", like hydor zon. hyper with the genitive (6:51) "for". kai ... de (6:51) "and indeed", as in 1 Jn 1:3.
+- trogo (6:54-58) "feed on" [alt: chew], the alt given once in a chapter, kept distinct from phago "eat" (6:53). It is the word for chewing or munching, though in John it may be no more than the present tense of "eat".
+- posis "drink" (noun), beside brosis "food". kakeinos "that one also". A participle picked up by ekeinos (6:57) has a comma, as at 5:11.
+- synagoge "synagogue"; en synagoge without the article (6:59) "in a synagogue".
+- skleros "hard". autou akouein (6:60) "hear it" [alt: listen to it, or listen to him]: the standing alt of akouo with the genitive, and the pronoun can be the word or Jesus.
+- skandalizo "cause to stumble", like skandalon. to proteron "before". 6:62 breaks off after its "if" clause; the break is marked with a dash and the sentence is not completed.
+- to zoopoioun "the one that makes alive", as in 1 Jn 5:6. opheleo ouden "be of no benefit at all".
+- ex arches "from the beginning", the same English as ap' arches.
+- paradidomi "hand over" [alt: betray], the alt given once in a chapter; the future participle (6:64) "who would hand him over".
+- ek toutou (6:66) "From this", the listed rendering [alt: From this time]: it can give the cause or the time. aperchomai eis ta opiso "go back": "back" carries both the "away" and the "behind".
+- hoi dodeka "the twelve", lowercase. eklegomai "choose". diabolos without the article (6:70) "a devil".
+- kyrie from the crowd (6:34) "Sir" [alt: Lord]; from a disciple (6:68) "Lord". ho hagios tou theou "the Holy One of God", capitalized as at 1 Jn 2:20.
+- legein with an accusative of the person (6:71) "speak of". Ioudas "Judas"; Simon Iskariotes "Simon Iscariot". heis ek ton dodeka (6:71), set after its clause, stays at the end, after a dash.
+- For Obay to decide (each is easy to reverse): "feeds on" with "chews" as the alt, or plain "eats", for trogo in 6:54-58; "I am the bread of life" with the pronoun unmarked, beside "I myself am not the Christ" (1:20; 3:28); "It is I [alt: I am]" at 6:20; whether "[alt: by the sea]" should stand at 6:19; "draws" for helkyo at 6:44, a verb that elsewhere hauls a net and draws a sword; "hand over" or "betray" for paradidomi; denarii and stadia left unconverted; "little boy" for paidarion and "fish [alt: small fish]" for opsarion; "recline" rather than "sit down" at 6:10-11; "perish" or "be lost" at 6:12; "darkness had already come to be" at 6:17; "the one that comes down" or "the one who comes down" at 6:33; "fighting" or "quarreling" at 6:52; the unfinished question at 6:62; "From this" at 6:66; "the twelve" without a capital; whether the longer readings at 6:11 and 6:47 should be noted.
