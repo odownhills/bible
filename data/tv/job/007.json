@@ -99,137 +99,101 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
-   "image": "cand/a1-shade.jpg",
+   "verse": 1,
    "section": "1-3",
-   "slot": 1,
+   "image": "01-shade.jpg",
+   "tall": "tall/01-shade.jpg",
+   "principle": "Life is hard service: like a labourer who pants for the shade and hopes for his pay, Job has been handed months of emptiness.",
+   "shows": "A tired farmworker under a blazing midday sun stands among the crop rows and gazes toward the shade of one lone tree far off at the field's edge.",
    "prompt": "On a wide farm field under a blazing white midday sun, a tired farmworker in a sweat-soaked shirt and straw hat stands among long rows of low crops, straightening his aching back, and gazes longingly toward a single shady tree far off at the edge of the field. The heat shimmers over the dry ground. The man and the distant tree are both clearly visible in the upper part of the frame."
   },
   {
-   "image": "cand/a1-pay.jpg",
-   "section": "1-3",
-   "slot": 1,
-   "prompt": "At the end of a long hot working day, a line of tired, dusty labourers in work clothes waits outside a small wooden site hut for their pay, each worn out, one leaning on a shovel. The front man stands at the hut's open window. Flat late-afternoon light, dust in the air."
-  },
-  {
-   "image": "cand/b1-sheets.jpg",
+   "verse": 4,
    "section": "4-6",
-   "slot": 2,
+   "image": "02-sheets.jpg",
+   "tall": "tall/02-sheets.jpg",
+   "principle": "When I lie down I ask when I will rise; the night drags on and I toss until the morning twilight.",
+   "shows": "A bed after a sleepless night: sheets twisted and knotted, the pillow fallen to the floor, grey first light at the window.",
    "prompt": "A bed after a long sleepless night: the sheets and blanket are twisted, knotted and thrown about, the pillow crushed and half on the floor. Grey-blue first light of early morning comes in through a window behind the bed. The room is quiet and empty.",
    "people": false
   },
   {
-   "image": "cand/b1-awake.jpg",
+   "verse": 6,
    "section": "4-6",
-   "slot": 2,
-   "prompt": "In a dark bedroom at night, a tired middle-aged man lies on his back in bed with his eyes wide open, staring up at the ceiling, the sheets twisted round him. The window beside the bed is still black, with only the faintest pale grey line low in the sky. Dim cool light."
-  },
-  {
-   "image": "cand/b2-loom.jpg",
-   "section": "4-6",
-   "slot": 3,
+   "image": "03-loom.jpg",
+   "tall": "tall/03-loom.jpg",
+   "principle": "My days are swifter than a weaver's shuttle and run out without hope; my life is only wind.",
+   "shows": "A loom's wooden shuttle flies across the threads, blurred with speed, over a half-woven cloth.",
    "prompt": "A close view of a wooden hand loom in a sunlit workshop. A wooden shuttle is caught flying fast across the stretched threads, blurred with speed, and the last few turns of thread are running off its nearly empty bobbin. A half-woven cloth runs across the loom. Warm daylight from a window.",
    "people": false
   },
   {
-   "image": "cand/b2-spool.jpg",
-   "section": "4-6",
-   "slot": 3,
-   "prompt": "On a wooden workbench in daylight, a weaving left unfinished on a small loom, its last row stopping halfway across, a loose end of thread hanging down. Beside it lies a wooden spool that is completely bare, every thread used up.",
-   "people": false
-  },
-  {
-   "image": "cand/c1-cloud.jpg",
+   "verse": 9,
    "section": "7-10",
-   "slot": 4,
+   "image": "04-cloud.jpg",
+   "tall": "tall/04-cloud.jpg",
+   "principle": "A cloud thins away and is gone; so one who goes down to the grave does not come back to his house.",
+   "shows": "One small white cloud dissolving into a wide blue sky over a green hill.",
    "prompt": "A wide clear blue sky over a quiet green hill. High in the sky floats one small white cloud that is thinning away at its edges, already half dissolved into the blue, about to vanish completely. Bright clear midday light.",
    "people": false
   },
   {
-   "image": "cand/c1-chair.jpg",
-   "section": "7-10",
-   "slot": 4,
-   "prompt": "Inside a quiet family home in soft afternoon light, an empty well-worn armchair stands beside a window, a reading lamp switched off beside it. By the front door a man's coat and hat still hang on their hook. Dust floats in the light. The room feels like someone used to sit here and no longer comes home.",
-   "people": false
-  },
-  {
-   "image": "cand/d1-shout.jpg",
+   "verse": 11,
    "section": "11-16",
-   "slot": 5,
+   "image": "05-shout.jpg",
+   "tall": "tall/05-shout.jpg",
+   "principle": "I will not hold back my mouth; I will complain in the bitterness of my soul. Am I the sea, that you set a guard over me?",
+   "shows": "A man stands alone on a rocky shore before a raging storm sea, arms out and head back, crying out.",
    "prompt": "On a wild rocky shore under a dark storm sky, a man in plain clothes stands alone facing the raging sea, his head thrown back and his arms out, crying out into the wind. Huge grey waves break and spray behind him. Cold grey stormy light."
   },
   {
-   "image": "cand/d1-wall.jpg",
+   "verse": 13,
    "section": "11-16",
-   "slot": 5,
-   "prompt": "A massive stone sea wall stands firm against a raging grey storm sea. Huge waves crash against it and burst into spray, but the wall holds them back completely. Dark storm clouds above, cold grey light.",
-   "people": false
-  },
-  {
-   "image": "cand/d2-wake.jpg",
-   "section": "11-16",
-   "slot": 6,
+   "image": "06-wake.jpg",
+   "tall": "tall/06-wake.jpg",
+   "principle": "Even my bed brings no comfort: you terrify me with dreams and visions.",
+   "shows": "In a dark bedroom a man jolts awake from a nightmare, sitting bolt upright with his hand pressed to his chest.",
    "prompt": "In a dark bedroom at night a man has just jolted awake from a nightmare: he sits bolt upright in bed, eyes wide with fear, one hand pressed to his chest, the blanket thrown off. Cold blue moonlight from the window falls across him."
   },
   {
-   "image": "cand/d2-lamp.jpg",
+   "verse": 16,
    "section": "11-16",
-   "slot": 6,
-   "prompt": "Late at night in a small bedroom, a weary man sits up in bed against the headboard with the bedside lamp switched on, knees drawn up, too afraid to go back to sleep, staring into the dark corner of the room. Warm small pool of lamplight, everything else dark."
-  },
-  {
-   "image": "cand/d3-breath.jpg",
-   "section": "11-16",
-   "slot": 7,
-   "prompt": "A close view of a window pane on a cold morning: a small patch of misty breath on the glass is already fading away at its edges, about to disappear. Through the glass, a soft blurred winter garden in pale blue morning light.",
-   "people": false
-  },
-  {
-   "image": "cand/d3-smoke.jpg",
-   "section": "11-16",
-   "slot": 7,
+   "image": "07-smoke.jpg",
+   "tall": "tall/07-smoke.jpg",
+   "principle": "Leave me alone, for my days are a breath.",
+   "shows": "A thin thread of smoke curls up from a candle that has just been blown out.",
    "prompt": "A candle that has just been blown out stands on a plain wooden table, and a single thin thread of grey smoke rises from its wick, curling and thinning away into the air. Soft daylight from the side, quiet plain background.",
    "people": false
   },
   {
-   "image": "cand/e1-spot.jpg",
+   "verse": 17,
    "section": "17-19",
-   "slot": 8,
+   "image": "08-spot.jpg",
+   "tall": "tall/08-spot.jpg",
+   "principle": "What is a mortal, that you inspect him every morning and test him every moment, and will not look away from him?",
+   "shows": "A small lone man stands on a vast dark stage, caught in a single hard spotlight from above with nowhere to hide.",
    "prompt": "A vast dark empty stage in a huge dark theatre. In the middle stands one small ordinary man in plain clothes, alone, caught in a single hard white spotlight shining straight down on him, squinting and with nowhere to hide. Everything around him is darkness."
   },
   {
-   "image": "cand/e1-sky.jpg",
-   "section": "17-19",
-   "slot": 8,
-   "prompt": "A tiny lone man stands on a wide bare plain beneath an enormous towering sky full of great clouds, looking up. He is very small in the frame, the sky immense above him. Clear daylight."
-  },
-  {
-   "image": "cand/f1-target.jpg",
+   "verse": 20,
    "section": "20-21",
-   "slot": 9,
+   "image": "09-target.jpg",
+   "tall": "tall/09-target.jpg",
+   "principle": "Why have you set me as your target, so that I have become a burden to myself?",
+   "shows": "A lone archery target stands in an empty field under a grey sky, arrows stuck in it.",
    "prompt": "A single round archery target on a wooden stand stands alone in the middle of an empty grassy field under a flat overcast sky, several arrows stuck in it. Nothing else in the field.",
    "people": false
   },
   {
-   "image": "cand/f1-burden.jpg",
+   "verse": 21,
    "section": "20-21",
-   "slot": 9,
-   "prompt": "On a dusty road climbing a bare hill, a tired man is bent almost double under a huge heavy sack on his back, trudging slowly upward, his face toward the ground. Flat hazy daylight."
-  },
-  {
-   "image": "cand/f2-bed.jpg",
-   "section": "20-21",
-   "slot": 10,
+   "image": "10-bed.jpg",
+   "tall": "tall/10-bed.jpg",
+   "principle": "Why not take away my guilt? For soon I will lie down in the dust; you will look for me, and I will be no more.",
+   "shows": "Morning light falls into a small bedroom through a door just opened: the bed is neatly made and empty, worn slippers beside it.",
    "prompt": "A small plain bedroom in soft early morning light: a single bed is neatly made and empty, a pair of worn slippers side by side beside it, and the door stands open as if someone has come looking. Dust floats in the sunlight. The room is empty.",
-   "people": false
-  },
-  {
-   "image": "cand/f2-dust.jpg",
-   "section": "20-21",
-   "slot": 10,
-   "prompt": "A line of footprints crosses dry dusty ground and simply stops; beyond the last footprint there is nothing. A light wind is already blowing fine dust over the prints. Pale morning light, wide empty land beyond.",
    "people": false
   }
  ]
