@@ -584,3 +584,81 @@ Verses 124-152:
   own, with no heading or paragraph break before it.
 - kafara with a person as its object, beside thanks, "be ungrateful to" (2:152). The lost echo with "disbelieve"
   is noted once, at 2:152; no standing note.
+Verses 153-177:
+- as-sabirin "those who are patient" (2:153, 155, 177, 249), not "the patient", which a listener can hear as one
+  sick person. ma asbarahum (2:175) keeps the word, "how patient they are" (decision log, call: clear).
+- fi sabili llah "in the way of God" (2:154, 190, 195, 218, 244, 246, 261, 262, 273). ahya' "alive", beside amwat
+  "dead": what is not to be said of them is written as a full sentence, "They are dead."
+- bala "test" (2:155), like bala' and ibtala. ju' "hunger"; naqs "loss". mal, plural amwal, "wealth" (2:155, 177,
+  188, 247, 261, 262, 264, 265, 274, 279). anfus beside wealth and fruits "lives" (2:155).
+- asaba "strike", musiba "misfortune" (2:156, 264-266): one root in Arabic. inna li-llahi wa-inna ilayhi raji'un
+  "We belong to God, and to him we will return", worded as 2:46.
+- salawat, of God on people (2:157), "blessings". It is the plural of salat "prayer", and salla 'ala is to pray
+  over or for someone (9:84, 103). Said of God and his angels (33:43, 56) "pray" does not fit, since in English
+  it is always said to one who is higher, so there the word is "bless", "blessings". The lost echo is noted once,
+  at 2:157; no standing note. This shares the English that the Surah 1 line keeps for baraka: what barakat
+  should be where it stands beside mercy as salawat does here (11:73) is left to be settled there.
+- as-Safa wa-l-Marwa "Safa and Marwa" (2:158): names with no English form, written without "the".
+- sha'a'ir Allah "the symbols of God" (2:158; 5:2; 22:32, 36): things that mark what is his, two hills here and
+  the animals for offering at 22:36, so not "rites", which is mansak. al-mash'ar al-haram (2:198) is of the same
+  family and is left to be settled there.
+- hajj "the pilgrimage", hajja l-bayt "make the pilgrimage to the House" (2:158, 189, 196, 197). 'umra "the
+  visit" (2:196), i'tamara "visit it" (2:158): translated, not carried over.
+- junah "blame"; la junaha 'alayhi an "there is no blame on him if he" (2:158, 198, 229, 230, 233-236, 240, 282),
+  beside la ithma 'alayhi "there is no sin on him" (2:173, 182, 203).
+- tatawwa'a khayran "do good of his own accord" (2:158, 184).
+- shakir, of God, "thankful" (2:158; 4:147): the same word as people's giving thanks, and 4:147 sets the two side
+  by side.
+- al-la'inun "those who curse" (2:159). bayyana with no object (2:160) "make it clear". ajma'in "all of them"
+  (2:161). anzara "give time", yunzarun "be given time" (2:162; 3:88; 7:14-15); nazira (2:280) is of the same
+  family, and of nazara "wait for" (2:104).
+- la ilaha illa huwa "There is no god but him" (2:163, 255).
+- khalq "creation" (2:164). ikhtilaf al-layl wa-n-nahar "the alternation of night and day" (2:164; 3:190; 10:6;
+  23:80; 45:5). fulk "ships"; jara, of ships, "sail", of rivers "flow". The verbs that tell what God did with the
+  water are past in Arabic and English ("has sent down ..., giving life ... and scattering").
+- baththa "scatter" (2:164; 4:1; 31:10; 42:29; 45:4). dabba "animal" (2:164; 6:38; 11:6; 24:45), not "creature",
+  which would be heard with "creation". tasrif ar-riyah "the shifting of the winds" (2:164; 45:5). sahab "clouds",
+  sharing the English of ghamam (2:57, 210). sakhkhara "make serve", musakhkhar "made to serve" (2:164; 14:32-33;
+  16:12, 14; 22:36; 45:12-13).
+- ittakhadha min duni llahi andadan "take rivals for themselves apart from God" (2:165). ahabba "love", hubb
+  "love" (2:165, 177, 190, 195, 216, 222). ka-hubbi llah "as God is loved": the Arabic does not say who does the
+  loving, and the English leaves it as open. ashaddu hubban "stronger in love".
+- wa-law yara with nothing after it to complete it (2:165) "And if only ... could see", like law kanu ya'lamun "if
+  only they knew" (2:102). The other reading is in the decision log (call: clear). The scene of 2:165-167 is told
+  in the Arabic past and stands in the English present and future ("disown", "will say").
+- tabarra'a min "disown" (2:166, 167; 9:114; 28:63); bari' (6:19; 9:3) is of the same family. asbab "ties" (2:166):
+  the word is "ropes" (22:15, where one is stretched and cut; 38:10; 40:36-37), and "ties" keeps the picture of
+  something cut. karra: law anna lana karratan "If only we could go back" (2:167; 26:102; 39:58), beside raja'a
+  "return" and radda "send back". hasra, plural hasarat, "regret" (2:167; 3:156; 8:36; 19:39).
+- halal "permitted" (2:168; 5:88; 8:69; 16:114), ahalla "permit" (2:187, 275), la yahillu "it is not permitted"
+  (2:228-230): the word set against harrama "forbid". tayyib "good" (2:168, 267), like tayyibat "good things".
+- khutuwat ash-shaytan "Satan's footsteps" (2:168, 208; 6:142; 24:21). mubin "clear" (2:168, 208), of the family of
+  bayyana "make clear".
+- as-su' "evil" (2:169), like sayyi'a. al-fahsha' "indecency" (2:169, 268); fahisha (3:135; 4:15; 7:28) is of the
+  same family.
+- alfa "find" (2:170; 12:25; 37:69), sharing the English of wajada, which stands in the same sentence elsewhere
+  (5:104; 31:21). ma alfayna 'alayhi aba'ana "what we found our fathers on": the picture of standing on it stays,
+  as with 'ala hudan "on guidance". la ya'qiluna shay'an "understood nothing", as 'aqala with an object (2:75).
+- na'aqa bi "shout at" (2:171). du'a' "call", nida' "cry" (2:171); nada (3:193; 5:58) is of the same family. 2:171
+  keeps the Arabic's order, "the example of those who disbelieve is like that of one who shouts at ...", and
+  does not say which side of the picture they are, as the Arabic does not.
+- al-mayta "carrion" (2:173; 5:3; 6:145; 16:115): the word is "the dead one", an animal that died and was not
+  slaughtered. dam "blood". lahm al-khinzir "the flesh of pigs"; lahm "flesh" (2:173, 259). ma uhilla bihi
+  li-ghayri llah "what has been dedicated to other than God": the verb is to raise the voice over a thing.
+- bagha with nothing after it "transgress" (2:173; 6:145; 16:115; 42:27; 55:20), beside 'ada "overstep", of the
+  family of i'tada. baghy stays "resentment" where it is ill will at what another was given (2:90, 213). The
+  other sense is in the decision log (call: clear).
+- ghafur "forgiving" (2:173, 182, 192, 199, 218, 225, 226, 235), ghafurun rahim "forgiving, merciful"; maghfira
+  "forgiveness" (2:175, 221, 263, 268), of the family of ghafara "forgive".
+- akala fi batnihi "eat into his belly" (2:174; 4:10): the picture stays. batn, plural butun, "belly".
+- ba'id, of opposition, "far gone in" (2:176; 22:53; 41:52).
+- qibala "in the direction of" (2:177), of the family of qibla "direction", beside shatra "toward".
+- wa-lakinna l-birra man "but virtue is the one who" (2:177, 189): the Arabic sets the person where the thing was
+  expected, and the English does the same. 'ala hubbihi "though he loves it" (decision log, call: clear).
+- ata l-mal "give wealth" (2:177). ibn as-sabil "the traveler" (2:177, 215): an idiom, "son of the road",
+  translated by its meaning. as-sa'ilin "those who ask". fi r-riqab "to set slaves free" (2:177; 9:60): the Arabic
+  is "for necks", and the Quran says "freeing a neck" for freeing a slave (90:13; 4:92; 5:89; 58:3).
+- 'ahd at 2:177 stays "covenant", not "promise" as the line for 2:27 expected: the words are those of 2:100 and
+  16:91, and "promise" is wa'ada (2:268).
+- al-ba'sa' "hardship", ad-darra' "suffering" (2:177, 214); hina l-ba's "in time of battle" (2:177; 33:18).
+- sadaqa "be truthful" (2:177; 29:3; 33:23), of the family of sadiqin in "if you are telling the truth".
