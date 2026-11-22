@@ -73,13 +73,17 @@ function build(){
   });
   d.addEventListener('visibilitychange',function(){ if(d.hidden) savePos(true); else if(active&&want) awake(true); });
   window.addEventListener('pagehide',function(){ savePos(true); });
-  if('mediaSession' in navigator){
-    var set=function(a,f){try{navigator.mediaSession.setActionHandler(a,f)}catch(e){}};
-    set('play',function(){ if(active)play(); }); set('pause',function(){ if(active)pause(); });
-    set('seekbackward',function(){ if(active)jump(audio.currentTime-10); }); set('seekforward',function(){ if(active)jump(audio.currentTime+10); });
-    set('seekto',function(x){ if(active&&x&&isFinite(x.seekTime)) jump(x.seekTime); });
-    set('nexttrack',function(){ if(active&&ch&&ch.dataset.next) go(ch.dataset.next,want); });
-  }
+}
+function hooks(){
+  // The lock screen's buttons. Set again each time Listen + Read starts, because TV mode (scripts/tv.js)
+  // uses them while it is open and clears them when it closes.
+  if(!('mediaSession' in navigator))return;
+  var set=function(a,f){try{navigator.mediaSession.setActionHandler(a,f)}catch(e){}};
+  set('play',function(){ if(active)play(); }); set('pause',function(){ if(active)pause(); });
+  set('seekbackward',function(){ if(active)jump(audio.currentTime-10); }); set('seekforward',function(){ if(active)jump(audio.currentTime+10); });
+  set('seekto',function(x){ if(active&&x&&isFinite(x.seekTime)) jump(x.seekTime); });
+  set('previoustrack',null);
+  set('nexttrack',function(){ if(active&&ch&&ch.dataset.next) go(ch.dataset.next,want); });
 }
 
 function alts(){
@@ -185,7 +189,7 @@ function whole(url){
     .then(function(b){ return URL.createObjectURL(b); }).catch(function(){ delete blobs[url]; return url; });
 }
 function begin(auto,note){
-  build(); chapter();
+  build(); hooks(); chapter();
   if(!ch||!ch.dataset.audio){ if(active) { want=false; icon(); msg('This chapter has no recording yet. It will be added soon.'); } return; }
   var mine=++serial,id=ch.dataset.id,src=abs(ch.dataset.audio),sync=ch.dataset.sync?abs(ch.dataset.sync):null,skip=parseInt(ch.dataset.skip||'0',10);
   active=true; busy=true; ready=false; follow=true; want=!!auto; d.body.classList.add('lr'); bar.hidden=false; msg(''); icon(); alts();

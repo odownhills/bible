@@ -102,9 +102,12 @@ sup.n.here{color:var(--bg);background:var(--accent);border-radius:4px;padding:.1
 .toast a,.toast button{font:inherit;font-size:.85rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:.45rem .85rem;text-decoration:none;cursor:pointer;min-height:40px;display:inline-flex;align-items:center}
 .toast .x{margin-left:auto;border:0;color:var(--text-soft)}
 body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
+.top span{display:flex;gap:1.4rem}
+.btn.tv{background:var(--shade);color:var(--heading);border-color:var(--accent)}
+.btn.tv svg{width:1.15em;height:1.15em;vertical-align:-.2em;margin-right:.4em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 </style></head>
 <body><div class="wrap">
-<nav class="top"><a href="../?home">Books</a><a href="../listen/">Listen</a></nav>
+<nav class="top"><a href="../?home">Books</a><span><a href="../tv/">TV</a><a href="../listen/">Listen</a></span></nav>
 <h1>John 1</h1>
 <p class="sub"><button class="btn" id="lr-start" type="button">&#9654; Listen + Read</button> <a class="btn ghost" href="../listen/?from=john-1">Listen only</a></p>
 <div id="ch" data-id="john-1" data-title="John 1" data-url="john/1.html" data-skip="3" data-audio="../audio/john/1.mp3" data-sync="../audio/john/1.json" data-next="../john/2.html" data-next-audio="../audio/john/2.mp3">
@@ -131,4 +134,4 @@ body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
 </div>
 <div class="pn"><a class="prev" href="../job/20.html">&larr; Job 20</a><a class="next" href="2.html">&rarr; John 2</a></div>
 <footer>An original translation from the Hebrew and Greek.</footer>
-</div><script src="../read.js?v=92a6993d" defer></script></body></html>
+</div><script src="../read.js?v=d144e0c9" defer></script><script src="../tv.js?v=5b028133" defer></script></body></html>

@@ -1,0 +1,77 @@
+name: Publish TV mode pictures
+
+# TV mode pictures are made on the picture branch, where they are kept in git while they are chosen
+# (its own "Make TV mode pictures" workflow). This workflow brings each finished chapter to the live
+# site: the chosen pictures go to the Cloudflare R2 bucket (never into git on main), the chapter's
+# scene plan and the list of its pictures (data/pictures.json) are committed to main, and the site is
+# rebuilt, which gives the chapter its TV mode button. See scripts/tv_publish.py.
+on:
+  workflow_run:
+    workflows: ["Make TV mode pictures"]
+    types: [completed]
+  schedule:
+    - cron: "11,41 * * * *"   # twice an hour, in case a run above was missed
+  push:
+    branches: [main]
+    paths: ["scripts/tv_publish.py", ".github/workflows/tv.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tv-publish
+  cancel-in-progress: false
+
+env:
+  PICTURE_BRANCH: claude/project-thread-1ian6u
+
+jobs:
+  publish:
+    # a run of the picture workflow on some other branch has nothing for the live site
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.head_branch == 'claude/project-thread-1ian6u'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the R2 secrets
+        run: |
+          if [ -z "$R2_ACCESS_KEY_ID" ] || [ -z "$R2_SECRET_ACCESS_KEY" ] || [ -z "$R2_ENDPOINT" ]; then
+            echo "::error::Add the R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY and R2_ENDPOINT repository secrets (see scripts/media.py)."
+            exit 1
+          fi
+          command -v aws >/dev/null || python3 -m pip install --quiet --break-system-packages awscli
+      - name: Upload the finished chapters' pictures
+        id: upload
+        run: |
+          # the branch's list of files only; the pictures themselves are fetched when they are needed
+          git fetch --no-tags --depth=1 --filter=blob:none origin "$PICTURE_BRANCH"
+          python3 -m pip install --quiet --break-system-packages pillow || echo "No Pillow: the TV page will use full-size pictures as covers."
+          TV_PUBLISH_NOTE="$RUNNER_TEMP/note" python3 scripts/tv_publish.py
+          rm -rf "$RUNNER_TEMP/tv" && mkdir -p data/tv && cp -r data/tv "$RUNNER_TEMP/tv"
+          if [ -f data/pictures.json ]; then cp data/pictures.json "$RUNNER_TEMP/pictures.json"; fi
+      - name: Publish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Other runs push to the same branch (new chapters, audio). Build on its newest state, and if it
+          # moves again before the push, start over from there; the uploads above are not repeated.
+          for attempt in 1 2 3 4; do
+            git fetch --no-tags --depth=1 --no-filter origin "$GITHUB_REF_NAME"
+            git reset --quiet --hard FETCH_HEAD
+            mkdir -p data/tv && cp -r "$RUNNER_TEMP/tv/." data/tv/
+            if [ -f "$RUNNER_TEMP/pictures.json" ]; then cp "$RUNNER_TEMP/pictures.json" data/pictures.json; fi
+            python3 scripts/build.py
+            git add -A data/tv data/pictures.json site
+            if git ls-files site | grep -qE '^site/pictures/|\.mp3$'; then echo "::error::A picture or a recording is about to be committed to git."; exit 1; fi
+            if git diff --cached --quiet; then echo "Nothing new for the site."; exit 0; fi
+            git commit --quiet -F "$RUNNER_TEMP/note"
+            if git push origin "HEAD:$GITHUB_REF_NAME"; then exit 0; fi
+            sleep $((attempt * 7))
+          done
+          echo "::error::Could not push after 4 tries."
+          exit 1

@@ -1,0 +1,156 @@
+{
+ "note": "Made by the steps in TV_PICTURES.md: the chapter is split into sections that each carry one deep meaning (\"sections\"), 10 picture ideas are written for each, the top two for each picture are made and the better is chosen by eye (2026-11-22): 9 pictures chosen from 16 trial pictures. Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper two thirds, clear of the words. God is not pictured, Job is not portrayed as a biblical person but shown through ordinary people of today, and nothing violent is shown.",
+ "method": "Second method, asked for by Obay on 2026-11-21 (see TV_PICTURES.md): sections with one deep meaning each, 10 ideas per section, the top two for each picture slot made as real pictures (\"candidates\") and the better chosen by eye.",
+ "sections": [
+  {
+   "verses": "1-7",
+   "meaning": "Worn out with living, Job pours out his bitterness and demands to know why God is against him and searches him for guilt when God knows he is innocent.",
+   "ideas": [
+    "A worn-out man stands alone in an empty field under a dark storm sky, his face lifted, calling out a question to the clouds",
+    "Late at night a worn-out man sits alone at his kitchen table with his forehead heavy in his hand",
+    "A man lies awake staring at the ceiling, bitter and sleepless",
+    "An ordinary man sits at a bare table in an interrogation room under a hard lamp, his empty hands open, facing an empty chair",
+    "A man stands caught in the beam of a flashlight in a dark room, plainly with nothing to hide",
+    "A craftsman's carefully made chair lies thrown out on a rubbish heap in the rain",
+    "Sunshine falls on a crooked dealer's mansion while rain pours on an honest man's small house next door",
+    "An inspector with a magnifying glass goes over a spotless white shirt looking for a stain",
+    "A man stands alone in a vast, brightly lit empty hall with nowhere to hide",
+    "A man cups his hands round his mouth and shouts into an empty canyon, waiting for an answer"
+   ]
+  },
+  {
+   "verses": "8-12",
+   "meaning": "God shaped Job with his own hands like clay and gave him life and faithful love, yet now he seems to be destroying the very one he made.",
+   "ideas": [
+    "A potter's hands press a freshly shaped jar back down into a shapeless lump on the wheel",
+    "A finished clay jar on a workbench crumbles away into dry dust",
+    "A potter's hands carefully shape a tall jar on the wheel",
+    "Milk is poured into a cheesemaker's vat and the curds are forming",
+    "Hands knit a tiny baby's sweater",
+    "A newborn sleeps cradled in a parent's large, gentle hands",
+    "A father seen from behind watches over his newborn asleep in a crib at night",
+    "A sculptor takes a hammer to the statue he spent years carving",
+    "A watchmaker fits the tiniest parts of a watch together under a lamp",
+    "A man tears down the house he built with his own hands"
+   ]
+  },
+  {
+   "verses": "13-17",
+   "meaning": "Job feels that all along God hid a plan to watch him, to condemn him whether guilty or innocent, and to hunt him with attack after attack.",
+   "ideas": [
+    "A man sits on a bench at night in the rain under a single streetlight, his head hung so low he cannot lift it",
+    "A searchlight from above follows a man walking alone, head bowed, down an empty night street",
+    "A lion crouches low in tall grass, stalking, its eyes locked ahead",
+    "Row after row of great waves rolls in against a lone rock in a grey sea",
+    "Security cameras on every corner are all turned toward one man",
+    "A man stands between two doors that both open onto the same dark room",
+    "A deer stands frozen in a dark forest, sensing a hunter",
+    "A man tries to rise under a heavy weight pressing his head down",
+    "A wrapped gift is opened to show a cold, empty box",
+    "Storm after storm lines the horizon behind a small house"
+   ]
+  },
+  {
+   "verses": "18-22",
+   "meaning": "Job wishes he had never been born, and asks only for a little relief in his few days before he goes to the land of darkness from which no one returns.",
+   "ideas": [
+    "Before dawn a man sits on the edge of his bed in the dark, his face buried in his hands",
+    "A weary man sits on his back steps with a cup of coffee in the last small patch of evening light as the shadows close in",
+    "A straight empty road runs on into total black darkness",
+    "Footprints lead one way into a wall of dark fog, and none come back",
+    "The last grains run through an hourglass",
+    "A door at the end of a hallway opens onto pitch blackness",
+    "An old man looks at a faded photograph of himself as a baby",
+    "The last leaf hangs on a bare winter tree at dusk",
+    "A man lies awake curled on his side, his eyes open in the dark",
+    "A boat drifts out on a black sea toward a horizon with no light"
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "verse": 1,
+   "section": "1-7",
+   "image": "01-cry.jpg",
+   "tall": "tall/01-cry.jpg",
+   "principle": "My soul loathes my life; I will speak in the bitterness of my soul and say to God: let me know why you contend against me.",
+   "shows": "A worn-out man stands alone in a rain-soaked field under a heavy storm sky, his face and one open hand lifted to the clouds as he cries out his question.",
+   "prompt": "In a wide, empty, rain-soaked field under a vast, heavy, dark grey storm sky, a worn-out middle-aged man with short hair, clean-shaven, in a plain work shirt and trousers, stands alone, seen from the side. His face is lifted to the clouds and one open hand is raised toward them as he calls out a bitter question. The wind presses the long grass flat round him. Cold, flat grey light, no sun."
+  },
+  {
+   "verse": 3,
+   "section": "1-7",
+   "image": "02-room.jpg",
+   "tall": "tall/02-room.jpg",
+   "principle": "Do you see as a mortal sees, that you look for my guilt and seek out my sin, though you know that I am not wicked?",
+   "shows": "An ordinary man sits at a metal table in a bare interrogation room under one hard lamp, his empty hands open, looking up at the empty chair across from him.",
+   "prompt": "In a bare grey interrogation room, an ordinary middle-aged man with short hair, in a plain shirt, sits at a metal table under one hard white lamp hanging low over him. His empty hands lie open, palms up, on the table, and his tired, honest face looks up across the table at the empty chair opposite him, as if asking what more he can say. The rest of the room falls away into shadow."
+  },
+  {
+   "verse": 8,
+   "section": "8-12",
+   "image": "03-clay.jpg",
+   "tall": "tall/03-clay.jpg",
+   "principle": "Your hands shaped me and made me, and you have swallowed me up; you made me like clay, and you will return me to dust.",
+   "shows": "A potter's clay-covered hands press a freshly shaped jar back down into a lump on the turning wheel.",
+   "prompt": "Close view of a potter's wheel in a sunlit workshop. A potter's strong, clay-covered hands are pressing a tall, graceful, freshly shaped clay jar back down: its top half is already crumpled and folding in under his palms, collapsing into a shapeless lump of wet clay on the turning wheel. Shelves of finished pots stand softly blurred behind. Clear daylight from a side window."
+  },
+  {
+   "verse": 10,
+   "section": "8-12",
+   "image": "04-newborn.jpg",
+   "tall": "tall/04-newborn.jpg",
+   "principle": "You clothed me with skin and flesh, wove me with bones and sinews, granted me life and faithful love, and your care kept watch over my spirit.",
+   "shows": "A newborn sleeps cradled in a parent's large, gentle hands, the baby's tiny fingers curled round one of the parent's fingers.",
+   "prompt": "Close view in soft, warm morning light of a newborn baby wrapped in a plain white blanket, sleeping peacefully, cradled in a parent's two large, gentle hands and forearms. The baby's tiny fingers curl round one of the parent's fingers."
+  },
+  {
+   "verse": 13,
+   "section": "13-17",
+   "image": "05-searchlight.jpg",
+   "tall": "tall/05-searchlight.jpg",
+   "principle": "All along this was hidden in your heart: if I sin, you keep watch on me; and even if I am righteous, I cannot lift my head.",
+   "shows": "A man walks alone down an empty wet street at night, head bowed, pinned in the circle of a searchlight shining down on him from above.",
+   "prompt": "At night, a man in a plain dark jacket walks alone along an empty, wet city street with his head bowed and his shoulders hunched, while a bright searchlight beam from high above follows him and pins him in a hard circle of white light. Everything round him is dark."
+  },
+  {
+   "verse": 16,
+   "section": "13-17",
+   "image": "06-lion.jpg",
+   "tall": "tall/06-lion.jpg",
+   "principle": "You hunt me like a fierce lion, and renew your attacks against me, relay after relay.",
+   "shows": "A huge lion crouches low in tall golden grass, stalking, its eyes locked straight ahead.",
+   "prompt": "In tall golden grass on an open plain under a pale overcast sky, a huge male lion crouches low, stalking, its body tense and its eyes locked straight ahead. Nothing else is in sight.",
+   "people": false
+  },
+  {
+   "verse": 18,
+   "section": "18-22",
+   "image": "07-bed.jpg",
+   "tall": "tall/07-bed.jpg",
+   "principle": "Why did you bring me out of the womb? I would be as though I had not been.",
+   "shows": "Before dawn a man sits on the edge of his bed in a dark room, his face buried in his hands.",
+   "prompt": "In a dark bedroom before dawn, a man in plain clothes sits on the edge of his unmade bed with his elbows on his knees and his face buried in his hands. A faint grey light comes through the thin curtains. The room is still and bare."
+  },
+  {
+   "verse": 20,
+   "section": "18-22",
+   "image": "08-evening.jpg",
+   "tall": "tall/08-evening.jpg",
+   "principle": "Are my days not few? Withdraw from me, so that I may be cheerful a little.",
+   "shows": "A weary grey-haired man sits on his back steps with a cup of coffee, face turned to the last warm light of evening, as the shadows creep across the yard.",
+   "prompt": "At the end of a long day, a weary grey-haired man sits on the back steps of a small plain house with his eyes closed and a cup of coffee in both hands, his face turned to the last small patch of warm light, while long blue shadows creep across the yard toward him."
+  },
+  {
+   "verse": 21,
+   "section": "18-22",
+   "image": "09-road.jpg",
+   "tall": "tall/09-road.jpg",
+   "from": "to a land of darkness",
+   "principle": "Before I go, and do not return, to a land of darkness and the shadow of death.",
+   "shows": "A straight empty road runs across bare land and disappears into total black darkness ahead.",
+   "prompt": "A straight, empty road runs out across a flat, bare land and disappears into a total, starless black darkness ahead, where nothing at all can be seen. At the near end of the road the last dim grey light is fading. No buildings, no lights, no moon.",
+   "people": false
+  }
+ ]
+}
