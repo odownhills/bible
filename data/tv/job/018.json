@@ -202,6 +202,13 @@
    "section": "20-21",
    "slot": 8,
    "prompt": "A country road runs past a ruined, roofless house on a low hill under a grey sky. From the left, a man and a woman walking one way have stopped dead; from the right, an old man walking the other way has stopped too. All of them stand staring up at the ruin in dismay."
+  },
+  {
+   "image": "cand/b1-lantern2.jpg",
+   "section": "5-7",
+   "slot": 2,
+   "people": false,
+   "prompt": "A small camping tent pitched alone in an open field at deep blue dusk. Above its entrance, hanging from a pole, an old glass oil lantern has just been snuffed out: it is completely dark, with no flame and no glow at all, its glass smudged with soot, and a single thin thread of grey smoke curls up from the top of it into the sky. The tent below is dark too. The deep blue sky still gives enough light to see everything clearly; the lantern and the thread of smoke are high in the frame against the sky."
   }
  ]
 }
