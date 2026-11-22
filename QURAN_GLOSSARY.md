@@ -269,3 +269,75 @@ Verses 30-61:
 - ba'a bi "come away with" (2:61, 90; 3:112).
 - nabi "prophet" (2:61, 91, 136, 177, 213, 246). bi-ghayri l-haqq "without right" (2:61). 'asa "disobey"
   (2:61, 93). i'tada "overstep" (2:61, 65, 178, 190, 229, 231).
+Verses 62-82:
+- alladhina hadu "those who are Jews" (2:62; 4:46; 5:44; 62:6): a verb in Arabic, put in the present like
+  alladhina amanu. al-yahud (2:113, 120) and hud (2:111, 135, 140) are other words, "the Jews", "Jews".
+  an-nasara "the Christians" (2:62, 111, 113, 120, 135, 140). as-sabi'in "the Sabians" (2:62; 5:69; 22:17).
+- bi-llahi wa-l-yawmi l-akhir "in God and the Last Day" (2:62, 126, 177), with one "in"; "in God and in
+  the Last Day" where the Arabic repeats the word (2:8).
+- 'amila salihan "do what is righteous" (2:62; 5:69), beside 'amila s-salihat "do righteous deeds" (2:82).
+  ajr "reward"; lahum ajruhum 'inda rabbihim "they have their reward with their Lord" (2:62, 112, 262,
+  274, 277).
+- at-Tur "the Mount" (2:63, 93; 4:154; 19:52; 20:80; 52:1), with a capital: the name of that one mountain.
+  jabal is the plain word "mountain" (2:260; 7:143, 171). rafa'a "raise" (2:63, 93, 127).
+- akhadha bi-quwwa "take with strength" (2:63, 93; 7:145, 171; 19:12); quwwa "strength" (2:165).
+- A saying of God set down with no "we said" before it follows a colon (2:57, 63). Inside his own
+  speech la'allakum tattaqun is still "so that you may be mindful of God" (2:63).
+- tawalla "turn away" (2:64, 83, 137, 246). lawla "had it not been for" (2:64). rahma "mercy" (2:64, 105,
+  157).
+- wa-laqad makes the statement firm: with 'alima "you know well" (2:65); elsewhere "certainly" or the
+  plain statement, by the sentence (2:87, 92, 99, 102, 130).
+- as-sabt "the Sabbath"; i'tada fi s-sabt "overstep on the Sabbath" (2:65; 4:154; 7:163).
+- qirada "apes" (2:65; 5:60; 7:166). khasi' "driven away" (2:65; 7:166): the word for sending someone
+  off with contempt (23:108; 67:4).
+- nakal "deterrent" (2:66; 5:38): a punishment that holds others back. ma bayna yadayha wa-ma khalfaha
+  "what was before it and what was behind it" (2:66; so 2:255), as open as the Arabic, which can be
+  place or time; "it" is also left as open as the Arabic. maw'iza "lesson" (2:66, 275; 3:138); its verb
+  wa'aza (2:231, 232) is left to be settled where it comes.
+- baqara "cow" (2:67-71), al-baqar "cows" (2:70). huzuw "mockery", of the family of istahza'a "mock";
+  ittakhadha huzuwan "make a mockery of" (2:67, 231).
+- 'adha bi "take refuge in" (2:67). jahil "ignorant" (2:67, 273), leaving "fool" for safih.
+- bayyana "make clear" (2:68-70, 118, 159, 160, 187, 219, 221, 230, 242, 266).
+- farid "old", bikr "young", 'awan "of middle age" (2:68). lawn "color"; safra' "yellow"; faqi' "bright";
+  sarra "delight" (2:69). in sha'a llah "if God wills" (2:70).
+- dhalul "broken in"; athara l-ard "turn the earth" (2:71; 30:9); saqa "water"; harth "field" (2:71,
+  223), "crops" where that fits (2:205). musallama "sound"; shiya "mark" (2:71). ja'a bi "bring" (2:71).
+  ma kadu yaf'alun "they almost did not do it".
+- iddara'a fi "blame one another for" (2:72): each pushing the thing off onto another. The plain verb
+  dara'a is "ward off" (3:168; 24:8).
+- idribuhu bi-ba'diha "Strike him with part of it" (2:73): the Arabic names neither, and nothing is
+  supplied.
+- kadhalika "that is how" (2:73, 187, 219, 242, 266); "in the same way" where a likeness is drawn (2:113,
+  118). al-mawta "the dead" (2:73, 260). ara "show" (2:73, 128, 167, 260).
+- qasa "harden", qaswa "hardness" (2:74; 5:13; 6:43). tafajjara "gush out" (2:74), like infajara (2:60).
+  tashaqqaqa "split open"; kharaja "come out" (2:74). habata, of stones, "fall down" (2:74); of people
+  it stays "go down" (2:36, 38, 61).
+- khashya "fear" (2:74, 150). It shares the English of khawf: "dread" is taken by rahiba, and no other
+  plain word fits both fear of God and fear of people or of poverty (2:150; 4:77; 17:31).
+- ma llahu bi-ghafilin 'amma ta'malun "God is not unaware of what you do" (2:74, 85, 140, 144, 149). Not
+  "unmindful", which would be heard with "mindful of God".
+- tami'a "hope" (2:75; 5:84; 26:82). fariq "group" (2:75, 100, 101, 146), "some" (2:87). kalam Allah
+  "God's speech" (2:75; 9:6; 48:15), leaving "word" for kalima. harrafa "twist" (2:75; 4:46; 5:13, 41).
+  'aqala with an object "understand" (2:75).
+- khala ila "be alone with" (2:14, 76). haddatha "talk to ... about" (2:76), leaving "tell" for anba'a.
+  fataha 'ala "open to" (2:76; 6:44; 7:96): the image stays. hajja "argue with", "argue against" (2:76,
+  139, 258); 'inda rabbikum with it "before your Lord" (2:76; 3:73).
+- asarra "keep secret", a'lana "make public" (2:77, 274), beside katama "conceal", abda "disclose" and
+  akhfa "hide".
+- ummi, plural ummiyyun, "unlettered" (2:78). The word's other sense, one of the peoples who were given
+  no Book (3:20, 75; 62:2), is to be weighed where it changes the meaning (3:20; 7:157). No bracket at
+  2:78, where "who do not know the Book" says what is meant.
+- amaniyy "wishful thinking" (2:78, 111; 4:123; 57:14), of the family of tamanna "wish for" (2:94, 95).
+  Bracketed once, at 2:78 (decision log, call: clear).
+- zanna with no object "guess" (2:78; 45:24); with one it stays "think" (2:46).
+- wayl li "woe to" (2:79), as in the Bible translation. kataba "write" (2:79, 282); the echo of kataba
+  and al-kitab is noted once, at 2:79. min 'indi llah "from God" (2:79, 89, 101, 103).
+- kasaba "earn" (2:79, 81, 134, 141, 202, 225, 264, 267, 281, 286).
+- qalu, of a claim that is then answered: the Arabic past is kept, "they said" (2:80, 88, 111, 116, 135).
+- massa "touch" (2:80, 214, 236, 275). ayyam ma'duda "a limited number of days" (2:80, 184, 203; 3:24).
+- ittakhadha 'inda llahi 'ahdan "take a covenant with God" (2:80; 19:78, 87). akhlafa "go back on" (2:80;
+  3:9), leaving "break" for naqada. qala 'ala llah "say about God" (2:80, 169).
+- bala after a denial: "Not so." (2:81, 112); in answer to a question, "Yes" (2:260).
+- sayyi'a "evil" (2:81), "evil deed" where deeds are counted (2:271). ahatat bihi khati'atuhu "is
+  surrounded by his fault" (2:81). ashab al-janna "the companions of the Garden" (2:82), like ashab
+  an-nar.
