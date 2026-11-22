@@ -443,6 +443,15 @@
    "shows": "The earth seen from space, blue and white and beautiful, the sun rising on its rim.",
    "prompt": "The whole earth seen from space, a beautiful blue and white planet with green and brown lands and swirling white clouds, hanging in black space scattered with stars. On its curved edge the sun is rising in a brilliant burst of light. The planet sits in the upper part of the frame.",
    "people": false
+  },
+  {
+   "verse": 14,
+   "section": "14-19",
+   "image": "cand/07c-sunmoon.jpg",
+   "principle": "Lights in the sky to separate the day from the night and to mark set times, days and years.",
+   "shows": "At twilight over a wide plain, the sun setting on one side and the full moon rising on the other.",
+   "prompt": "A wide open plain at twilight under a huge clear sky. The horizon runs across the picture just below the middle. On the right, the sun is setting in a warm golden glow, sitting a little above the horizon, well up in the picture. High on the left a great full moon is rising in the deepening blue sky, with the first stars beginning to show near it. Both lights are plainly in the sky at once, high above the darkening land; the lowest part of the picture is dark grassland.",
+   "people": false
   }
  ]
 }
