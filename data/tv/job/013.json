@@ -83,146 +83,109 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
-   "image": "cand/a1-friends.jpg",
+   "verse": 1,
    "section": "1-5",
-   "slot": 1,
+   "image": "01-friends.jpg",
+   "tall": "tall/01-friends.jpg",
+   "principle": "Job knows as much as his friends, but he would rather speak to the Almighty himself and argue his case with God.",
+   "shows": "Three men all talk at a tired grey-haired man at his kitchen table at once, while he turns his face away from them and up toward the bright window and the open sky.",
    "prompt": "In a plain kitchen in daylight, three middle-aged men stand round a tired grey-haired man who sits at the table. All three are talking at him at once: one wags a finger, one counts points on his fingers, one leans over him with folded arms. The seated man is not listening to them: he has turned his face away from them and up toward a tall bright window, looking out at the open sky, as if he would rather speak to someone higher."
   },
   {
-   "image": "cand/a1-hill.jpg",
+   "verse": 4,
    "section": "1-5",
-   "slot": 1,
-   "prompt": "On a grassy hillside in clear daylight, a grey-haired man in plain clothes stands alone higher up the slope, his back turned to three men gathered lower down who are still talking and gesturing up at him. He is not listening to them: he looks up into the wide open sky above him, his face lifted, as if he would rather speak to someone higher."
+   "image": "02-bandage.jpg",
+   "tall": "tall/02-bandage.jpg",
+   "principle": "Their answers only smear lies over the wound; they are worthless healers, and their silence would be wiser.",
+   "shows": "A tiny sticking plaster stuck across a wide, deep crack in a concrete wall, which runs on past it on both sides.",
+   "prompt": "Close view of a thick grey concrete wall with a wide, deep crack running right across it. Stuck across the middle of the crack is one small, ordinary beige adhesive bandage, the kind put on a scratched finger, looking absurdly tiny against the deep crack, which carries on past it on both sides. Even daylight.",
+   "people": false
   },
   {
-   "image": "cand/a2-plaster.jpg",
-   "section": "1-5",
-   "slot": 2,
-   "prompt": "Close view of a plain interior wall split by a long, deep, jagged crack that runs right across it. A man's hand holding a plasterer's trowel is smoothing a neat patch of fresh white plaster over the middle of the crack, but the deep crack plainly carries on out of both ends of the fresh patch, as wide as ever. Even daylight from the side."
-  },
-  {
-   "image": "cand/a2-bandage.jpg",
-   "section": "1-5",
-   "slot": 2,
-   "people": false,
-   "prompt": "Close view of a thick grey concrete wall split by a wide, deep crack that runs right across it. Stuck across the middle of the crack is one small ordinary sticking plaster, the kind used for a scratched finger, absurdly tiny against the deep crack that runs on past it on both sides. Even daylight."
-  },
-  {
-   "image": "cand/b1-fingers.jpg",
+   "verse": 7,
    "section": "6-12",
-   "slot": 1,
+   "image": "03-fingers.jpg",
+   "tall": "tall/03-fingers.jpg",
+   "principle": "Is it for God that they speak deceit? God will search them out and is not fooled as a mortal is fooled.",
+   "shows": "A man speaks earnestly to an audience with his hand on his heart, while behind his back his other hand has its fingers crossed.",
    "prompt": "Seen from behind and a little to one side, a man in a suit stands in a plain hall speaking earnestly to a small seated audience, one hand pressed to his heart. His other hand is held behind his back at the small of his back, and its first two fingers are crossed, the sign of telling a lie. The crossed fingers are sharp and clear in the middle of the frame; the audience is soft in the background."
   },
   {
-   "image": "cand/b1-mask.jpg",
+   "verse": 12,
    "section": "6-12",
-   "slot": 1,
-   "prompt": "In a plain hall, a man in a suit stands speaking to a small seated audience. In one hand he holds a smiling white mask on a stick in front of his own face, so that the audience sees only the fixed smile. Seen from the side, so his real face behind the mask is visible to us: tense and unsmiling. Soft daylight."
+   "image": "04-clay.jpg",
+   "tall": "tall/04-clay.jpg",
+   "principle": "Their sayings are proverbs of ashes; their defences are defences of clay.",
+   "shows": "A garden wall of unfired clay bricks slumps and crumbles into mud in the rain, a wide breach fallen in its middle.",
+   "prompt": "In steady rain, a garden wall built of unfired clay bricks is slumping and crumbling into mud: a wide breach has opened in the middle where the bricks have melted and fallen in a heap, and brown water runs down the rest of the wall. Grey overcast light.",
+   "people": false
   },
   {
-   "image": "cand/b2-clay.jpg",
-   "section": "6-12",
-   "slot": 2,
-   "people": false,
-   "prompt": "In steady rain, a garden wall built of unfired clay bricks is slumping and crumbling into mud: a wide breach has opened in the middle where the bricks have melted and fallen in a heap, and brown water runs down the rest of the wall. Grey overcast light."
-  },
-  {
-   "image": "cand/b2-ash.jpg",
-   "section": "6-12",
-   "slot": 2,
-   "people": false,
-   "prompt": "In a cold stone fireplace lies a stack of burnt pages that has turned entirely to grey ash but still keeps the shape of the pages. A breath of air from the room is lifting the top sheets of ash and they are crumbling and drifting apart into flakes. Plain soft daylight from a window. The pages are blank grey ash with no writing visible."
-  },
-  {
-   "image": "cand/c1-aisle.jpg",
+   "verse": 14,
    "section": "13-19",
-   "slot": 1,
+   "image": "05-aisle.jpg",
+   "tall": "tall/05-aisle.jpg",
+   "principle": "Come what may, Job takes his life in his hand: he will argue his ways to God's face.",
+   "shows": "Seen from behind, a lone man walks up the aisle of a vast empty courtroom toward the high, empty judge's bench, a folder of papers in his hand.",
    "prompt": "Seen from behind, a lone man in plain everyday clothes walks up the centre aisle of a vast, empty, wood-panelled courtroom toward the judge's bench, which stands high and empty at the far end with an empty chair behind it. He holds a folder of papers at his side and his shoulders are squared. Tall windows let in clear light that falls on the empty bench. The rows of seats on either side are empty."
   },
   {
-   "image": "cand/c1-storm.jpg",
+   "verse": 17,
    "section": "13-19",
-   "slot": 1,
-   "prompt": "A man in a plain coat steps out of the shelter of a doorway straight into a fierce storm, rain driving sideways and his coat whipping in the wind. He walks forward into it with his head up and his face set, not turning back. Grey stormy daylight."
+   "image": "06-stand.jpg",
+   "tall": "tall/06-stand.jpg",
+   "principle": "He has set out his case, and he knows he will be found in the right.",
+   "shows": "In the empty courtroom the man stands upright at the table before the high empty bench, his papers laid out in order, calm and ready to be heard.",
+   "prompt": "In a vast, empty, wood-panelled courtroom with plain panelled walls, a man in plain everyday clothes stands alone at the table in front of the high empty judge's bench, his papers laid out in neat order on the table before him. He stands upright with his head high and calm, facing the empty bench, ready to be heard. Clear light from tall windows falls on him. No flags, no seals, no emblems or plaques anywhere in the room."
   },
   {
-   "image": "cand/c2-stand.jpg",
-   "section": "13-19",
-   "slot": 2,
-   "prompt": "In a vast, empty, wood-panelled courtroom, a man in plain everyday clothes stands alone at the table in front of the high empty judge's bench, his papers laid out in neat order on the table before him. He stands upright with his head high and calm, facing the empty bench, ready to be heard. Clear light from tall windows falls on him."
-  },
-  {
-   "image": "cand/c2-table.jpg",
-   "section": "13-19",
-   "slot": 2,
-   "prompt": "Late at night at a plain kitchen table under a single warm lamp, a grey-haired man sits upright and calm. In front of him he has laid out his papers in neat, ordered rows across the table, every sheet squared, and his hands rest flat on the table beside them. His face is quiet and sure. The pages show no readable writing."
-  },
-  {
-   "image": "cand/d1-chair.jpg",
+   "verse": 20,
    "section": "20-22",
-   "slot": 1,
+   "image": "07-chair.jpg",
+   "tall": "tall/07-chair.jpg",
+   "principle": "Take away the crushing hand and the terror, then call and Job will answer, or let him speak and be answered.",
+   "shows": "In a quiet bare room a man sits leaning forward with open hands, speaking to an empty chair that faces him, waiting for the reply.",
    "prompt": "In a quiet bare room with soft window light, a man sits on a plain wooden chair leaning forward, his hands open, speaking, his face earnest. Facing him, a few steps away, stands a second plain wooden chair, empty, turned toward him, as if waiting for the other side of the conversation."
   },
   {
-   "image": "cand/d1-call.jpg",
-   "section": "20-22",
-   "slot": 1,
-   "prompt": "On a grassy hilltop at evening, a man stands with his hands cupped round his mouth, calling out across a wide, empty valley toward the far hills. His body leans forward and his whole stance is waiting for an answer to come back. Soft clear evening light, not a sunset."
-  },
-  {
-   "image": "cand/e1-curtain.jpg",
+   "verse": 23,
    "section": "23-28",
-   "slot": 1,
+   "image": "08-curtain.jpg",
+   "tall": "tall/08-curtain.jpg",
+   "principle": "Let me know my sins: why do you hide your face and count me as your enemy?",
+   "shows": "At dusk a man stands outside a house, his hand raised toward a lit window whose curtain is drawn shut against him.",
    "prompt": "At dusk, a man stands alone in the garden of a house, looking up at a lit upstairs window. The curtain of that window has just been drawn shut, so only a thin line of light shows at its edge. His hand is half raised toward the window and his face asks why. The rest of the house is dark."
   },
   {
-   "image": "cand/e1-shut.jpg",
+   "verse": 25,
    "section": "23-28",
-   "slot": 1,
-   "prompt": "In evening light, a man stands at the front gate of a quiet house. Every window of the house has its curtains drawn shut, and the front door is closed. He stands looking up at the closed windows, his arms at his sides, a pleading question in his face."
+   "image": "09-leaf.jpg",
+   "tall": "tall/09-leaf.jpg",
+   "principle": "Will you terrorize a driven leaf and pursue dry stubble?",
+   "shows": "A single dry leaf, with loose bits of straw, is chased by the wind across a harvested field of dry stubble.",
+   "prompt": "Low close view across a harvested field of dry, pale stubble: one single dry brown leaf is being chased across the stubble by a gust of wind, lifted and tumbling, with a few loose bits of straw blowing after it. Pale, windy daylight.",
+   "people": false
   },
   {
-   "image": "cand/e2-leaf.jpg",
+   "verse": 27,
    "section": "23-28",
-   "slot": 2,
-   "people": false,
-   "prompt": "A single dry brown leaf is being driven along an empty country road by a strong wind, tumbling in the air just above the road. Beside the road lies a harvested field of dry pale stubble. A wide grey windy sky."
-  },
-  {
-   "image": "cand/e2-stubble.jpg",
-   "section": "23-28",
-   "slot": 2,
-   "people": false,
-   "prompt": "Low close view across a harvested field of dry, pale stubble: one single dry brown leaf is being chased across the stubble by a gust of wind, lifted and tumbling, with a few loose bits of straw blowing after it. Pale, windy daylight."
-  },
-  {
-   "image": "cand/e3-ankle.jpg",
-   "section": "23-28",
-   "slot": 3,
+   "image": "10-ankle.jpg",
+   "tall": "tall/10-ankle.jpg",
+   "principle": "His feet are put in the stocks, every path he takes is watched, and a line is drawn round the soles of his feet.",
+   "shows": "A man pulls up his trouser leg to show an electronic monitor strapped round his ankle, its small light glowing.",
    "prompt": "Close view of a man sitting on the edge of a bed, his trouser leg pulled up: strapped round his bare ankle is a black electronic ankle monitor with a small glowing light. The ankle and the monitor are in the middle of the frame, large and sharp, at eye level; the plain bedroom floor is below."
   },
   {
-   "image": "cand/e3-cameras.jpg",
+   "verse": 28,
    "section": "23-28",
-   "slot": 3,
-   "prompt": "A man walks alone along a path through an empty park. On tall poles on both sides of the path, several security cameras are all turned toward him, following him as he walks. He glances up at them. Flat grey daylight."
-  },
-  {
-   "image": "cand/e4-coat.jpg",
-   "section": "23-28",
-   "slot": 4,
-   "people": false,
-   "prompt": "An old wool coat hangs alone on a hook against a plain wall, worn thin and eaten through with many moth holes, its hem frayed. Soft side light shows the holes clearly. A single small moth rests on the shoulder."
-  },
-  {
-   "image": "cand/e4-jacket.jpg",
-   "section": "23-28",
-   "slot": 4,
-   "people": false,
-   "prompt": "An old wool jacket is laid over the back of a wooden chair beside a window. It has been eaten through with moth holes, and bright window light shines through the many holes. A single small moth rests on the collar."
+   "image": "11-jacket.jpg",
+   "tall": "tall/11-jacket.jpg",
+   "principle": "He wears away like something rotten, like a garment a moth has eaten.",
+   "shows": "An old wool jacket over the back of a chair by a window, eaten through with moth holes, the light shining through them, a moth resting on the collar.",
+   "prompt": "An old wool jacket is laid over the back of a wooden chair beside a window. It has been eaten through with moth holes, and bright window light shines through the many holes. A single small moth rests on the collar.",
+   "people": false
   }
  ]
 }
