@@ -115,112 +115,82 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
-   "image": "cand/a1-friend.jpg",
+   "verse": 1,
    "section": "1-4",
-   "slot": 1,
+   "image": "01-friend.jpg",
+   "tall": "tall/01-friend.jpg",
+   "principle": "Bildad answers Job: your words are only wind, and God never twists what is right.",
+   "shows": "Across a kitchen table an older friend leans in and lectures, finger raised, while a grieving grey-haired man hides his face in his hands; trees bend in the wind outside.",
    "prompt": "In a plain present-day kitchen in daylight, a grey-haired man in a plain shirt sits slumped at the table with his head in his hands, grieving. Across the table an older friend in a buttoned cardigan leans forward and lectures him sternly, one finger raised, mouth open mid-sentence. Through the window behind them the trees are bending in a strong wind."
   },
   {
-   "image": "cand/a1-scales.jpg",
-   "section": "1-4",
-   "slot": 1,
-   "prompt": "An old brass balance scale stands on a plain wooden table in clear, even daylight from a window. Its two pans hang perfectly level and still, exactly balanced. Behind it a plain pale wall.",
-   "people": false
-  },
-  {
-   "image": "cand/b1-plant.jpg",
+   "verse": 5,
    "section": "5-7",
-   "slot": 2,
-   "prompt": "At dawn, in a wide field that has been burned black, a grey-haired man in a plain shirt kneels and gently presses one small green seedling into the dark soil with both hands. The sky is clearing and soft light falls on the tiny green leaves, the only green thing in the field."
-  },
-  {
-   "image": "cand/b1-oak.jpg",
-   "section": "5-7",
-   "slot": 2,
+   "image": "02-oak.jpg",
+   "tall": "tall/02-oak.jpg",
+   "principle": "Seek God and be pure, and he will restore you: your beginning will be small, but your latter days very great.",
+   "shows": "A tiny oak seedling stands in fresh soil before the huge trunk and spreading crown of a great old oak.",
    "prompt": "Seen from low down at ground level, a tiny green oak seedling with just two fresh leaves rises from the soil in the middle of the frame, sharp and bright. Directly behind it, softly out of focus, stands the huge trunk and vast spreading crown of a great old oak tree in full summer leaf, filling the sky. Bright midday light.",
    "people": false
   },
   {
-   "image": "cand/c1-porch.jpg",
+   "verse": 8,
    "section": "8-10",
-   "slot": 3,
+   "image": "03-porch.jpg",
+   "tall": "tall/03-porch.jpg",
+   "principle": "Ask the generations before us; we are only of yesterday, and they will teach you from the heart.",
+   "shows": "On a farmhouse porch a very old man speaks with his hand on his heart while a young man leans in, listening.",
    "prompt": "On the wooden porch of an old farmhouse in warm afternoon light, a very old man with a deeply lined face and white hair sits in a chair speaking earnestly, one hand on his chest and the other open as he explains. Beside him a young man sits leaning forward, listening closely to every word."
   },
   {
-   "image": "cand/c1-field.jpg",
-   "section": "8-10",
-   "slot": 3,
-   "prompt": "At the edge of a wide field in soft afternoon light, a very old white-haired man stands beside a young man, one hand on the young man's shoulder and the other pointing out across the land as he explains something from long experience. The young man listens intently, watching where he points."
-  },
-  {
-   "image": "cand/d1-marsh.jpg",
+   "verse": 11,
    "section": "11-13",
-   "slot": 4,
-   "prompt": "A wide marsh that has dried out completely: the ground is cracked pale mud, and in it stands a thick stand of tall papyrus and reeds, still partly green but with their tops already brown and drooping, withering. Hot, hazy daylight. No water anywhere.",
-   "people": false
-  },
-  {
-   "image": "cand/d1-split.jpg",
-   "section": "11-13",
-   "slot": 4,
+   "image": "04-reeds.jpg",
+   "tall": "tall/04-reeds.jpg",
+   "principle": "Reeds cannot grow without water; so the hope of those who forget God withers.",
+   "shows": "Papyrus reeds stand tall and green where water still stands, and brown and bent where the marsh has dried to cracked mud.",
    "prompt": "A stand of tall papyrus reeds in a marsh. On the left side the reeds stand tall, lush and green in shining water. On the right side the water has dried up to cracked mud, and the reeds there, just as tall, have turned brown and dry and bent over. Clear daylight.",
    "people": false
   },
   {
-   "image": "cand/e1-web.jpg",
+   "verse": 14,
    "section": "14-15",
-   "slot": 5,
+   "image": "05-web.jpg",
+   "tall": "tall/05-web.jpg",
+   "principle": "His trust is a spider's web: what he leans on cannot hold him up.",
+   "shows": "A dew-covered spider's web strung between two dry stalks is torn wide open in the middle.",
    "prompt": "A close view of a large spider's web strung between two dry stalks, glistening with morning dew, but torn wide open in the middle, its broken threads hanging loose where something has fallen straight through it. Soft cool morning light, plain blurred background.",
    "people": false
   },
   {
-   "image": "cand/e1-door.jpg",
-   "section": "14-15",
-   "slot": 5,
-   "prompt": "The doorway of an old abandoned wooden house that is sagging and falling in, its roof caved and its walls leaning. Across the open doorway hangs a large spider's web, catching the light. Overcast daylight.",
-   "people": false
-  },
-  {
-   "image": "cand/f1-vine.jpg",
+   "verse": 16,
    "section": "16-19",
-   "slot": 6,
-   "prompt": "In bright morning sun, a lush, vigorous green vine full of fresh leaves and new shoots spreads across a garden and climbs over a low wall. At its base its thick roots wind round and grip a heap of grey stones. Everything about it looks strong and thriving.",
-   "people": false
-  },
-  {
-   "image": "cand/f1-wall.jpg",
-   "section": "16-19",
-   "slot": 6,
+   "image": "06-wall.jpg",
+   "tall": "tall/06-wall.jpg",
+   "principle": "He flourishes green in the sun, his roots wrapped round the stones.",
+   "shows": "A leafy tree grows out of an old dry-stone wall in bright sun, its roots twisted round the stones.",
    "prompt": "A young tree full of bright green leaves grows straight out of an old dry-stone wall in strong sunlight, its roots twisted round and between the grey stones, its branches spreading wide over the garden beyond.",
    "people": false
   },
   {
-   "image": "cand/g1-uprooted.jpg",
+   "verse": 18,
    "section": "16-19",
-   "slot": 7,
+   "image": "07-uprooted.jpg",
+   "tall": "tall/07-uprooted.jpg",
+   "principle": "Torn from his place, he is forgotten, and others sprout from the dust where he stood.",
+   "shows": "A torn-up vine lies wilting on a heap of stones beside the empty hole where it grew, new seedlings already sprouting round it.",
    "prompt": "A large leafy vine has been torn out of the ground by its roots and lies wilting across a heap of grey stones, beside the raw, empty hole where it grew. In the fresh soil all round the hole, many small new green seedlings are already sprouting. Plain overcast daylight.",
    "people": false
   },
   {
-   "image": "cand/g1-gap.jpg",
-   "section": "16-19",
-   "slot": 7,
-   "prompt": "A garden bed in soft daylight: in the middle is a bare patch of freshly turned earth and loose stones where a big plant once grew, with only a few torn roots left in it. All round the bare patch, other young plants are already growing in and filling the space.",
-   "people": false
-  },
-  {
-   "image": "cand/h1-laugh.jpg",
+   "verse": 20,
    "section": "20-22",
-   "slot": 8,
-   "prompt": "In a sunlit green meadow under a bright clear sky, a grey-haired man in a plain shirt throws his head back and laughs out loud with pure joy, his eyes creased and his mouth wide open, his whole face lit."
-  },
-  {
-   "image": "cand/h1-shout.jpg",
-   "section": "20-22",
-   "slot": 8,
+   "image": "08-shout.jpg",
+   "tall": "tall/08-shout.jpg",
+   "principle": "God will not reject the blameless; he will fill your mouth with laughter and your lips with shouts of joy.",
+   "shows": "On a green hilltop a grey-haired man raises both arms and shouts for joy, laughing.",
    "prompt": "On a green hilltop in bright clear morning light, a grey-haired man in a plain shirt raises both arms high and shouts for joy, his face full of laughter, green fields spreading out below him."
   }
  ]
