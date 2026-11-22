@@ -24,31 +24,13 @@ import json
 import os
 import re
 import shutil
-import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "translations")
-# Two sites are built from this repository by the same scripts: the Bible into site/ (the default)
-# and, with WORK=quran in the environment, the Quran into site-quran/ (see scripts/quran.py).
-WORK = os.environ.get("WORK") or "bible"
-OUT = os.path.join(ROOT, "site" if WORK == "bible" else "site-" + WORK)
-if WORK == "quran":
-    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-    import quran
-    BOOKS = quran.books(SRC)
-    SITE_TITLE, FOOTER = quran.SITE_TITLE, quran.FOOTER
-    HOME, UNIT, START = "Surahs", "part", "Beginning of the Quran"
-else:
-    BOOKS = json.load(open(os.path.join(ROOT, "data", "books.json")))
-    SITE_TITLE, FOOTER = "The Bible, Freshly Translated", "An original translation from the Hebrew and Greek."
-    HOME, UNIT, START = "Books", "chapter", "Beginning of the Bible"
+OUT = os.path.join(ROOT, "site")
+BOOKS = json.load(open(os.path.join(ROOT, "data", "books.json")))
 BY_SLUG = {b["slug"]: b for b in BOOKS}
-TV = WORK == "bible"   # TV mode (scripts/tv.js, the TV page, pictures) is part of the Bible site only
-
-
-def label(b, n):
-    """What a chapter is called on the site: "Job 19"; a part of the Quran: "Quran 2:62-82"."""
-    return b["labels"][n - 1] if "labels" in b else "%s %d" % (b["name"], n)
+SITE_TITLE = "The Bible, Freshly Translated"
 
 CSS = """
 :root{--bg:#171223;--panel:#1E1830;--shade:#241C3A;--text:#E8E2F2;--text-soft:#B3A7C9;--heading:#C9B8EC;--rule:#372C52;--accent:#B79BE8;--num:#7A6A9A;--alt-text:#C4B4E2;--note-bg:#201A32;
@@ -150,13 +132,6 @@ sup.n.here{color:var(--bg);background:var(--accent);border-radius:4px;padding:.1
 .toast .x{margin-left:auto;border:0;color:var(--text-soft)}
 body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
 """
-if TV:   # the TV link beside Listen, and a chapter's TV mode button
-    CSS += """.top span{display:flex;gap:1.4rem}
-.btn.tv{background:var(--shade);color:var(--heading);border-color:var(--accent)}
-.btn.tv svg{width:1.15em;height:1.15em;vertical-align:-.2em;margin-right:.4em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-"""
-if WORK == "quran":   # the line above a part's title that names its surah
-    CSS += ".eyebrow{font-family:var(--sans);color:var(--text-soft);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin:0}\n"
 
 
 def esc(s):
@@ -266,11 +241,8 @@ def parse(path):
     return meta, blocks
 
 
-def page(title, body, depth, tail="", css=""):
+def page(title, body, depth, tail=""):
     up = "../" * depth
-    links = '<a href="%slisten/">Listen</a>' % up
-    if TV:
-        links = '<span><a href="%stv/">TV</a>%s</span>' % (up, links)
     return """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -278,51 +250,11 @@ def page(title, body, depth, tail="", css=""):
 <title>%s</title>
 <style>%s</style></head>
 <body><div class="wrap">
-<nav class="top"><a href="%s?home">%s</a>%s</nav>
+<nav class="top"><a href="%s?home">Books</a><a href="%slisten/">Listen</a></nav>
 %s
-<footer>%s</footer>
+<footer>An original translation from the Hebrew and Greek.</footer>
 </div>%s</body></html>
-""" % (esc(title), CSS + css, up or "./", HOME, links, body, FOOTER, tail)
-
-
-TV_ICON = ('<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="12.5" rx="2"/>'
-           '<path d="M8 20.5h8M12 17v3.5"/></svg>')
-
-# Only on the TV page: the chapters that have pictures, as cards with the chapter's first picture.
-TV_CSS = """
-.wrap{max-width:68rem}
-.tvh{display:grid;grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));gap:1rem .9rem;font-family:var(--sans)}
-.tvh a{display:block;text-decoration:none;color:var(--text);border-radius:12px;-webkit-tap-highlight-color:transparent}
-.tvh a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
-.tvh i{display:block;position:relative;padding-top:56.25%;border-radius:10px;overflow:hidden;background:var(--panel);border:1px solid var(--rule);transition:border-color .2s ease,transform .2s ease}
-.tvh img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
-.tvh i:after{content:"";position:absolute;left:50%;top:50%;width:2.6rem;height:2.6rem;margin:-1.3rem 0 0 -1.3rem;border-radius:50%;background:rgba(23,18,35,.72) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M9 6.5v11l9-5.500z'/%3E%3C/svg%3E") center/60% no-repeat;opacity:0;transition:opacity .2s ease}
-.tvh a:hover i,.tvh a:focus-visible i{border-color:var(--accent);transform:translateY(-2px)}
-.tvh a:hover i:after,.tvh a:focus-visible i:after{opacity:1}
-.tvh b{display:block;font-weight:600;font-size:.95rem;margin:.5rem .1rem 0}
-.tvh small{display:block;color:var(--text-soft);font-size:.78rem;margin:.05rem .1rem 0;font-variant-numeric:tabular-nums}
-.tvnote{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);margin:2.5rem 0 0}
-@media (min-width:1500px){
-.wrap{max-width:92vw;padding-top:2rem}
-.top{font-size:1rem}
-h1{font-size:3rem}
-.sub{font-size:1.15rem}
-h3.group{font-size:1rem}
-.tvh{grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1.6rem 1.3rem}
-.tvh b{font-size:1.3rem}
-.tvh small,.tvnote{font-size:1rem}
-.continue{max-width:34rem}
-}
-"""
-
-
-def pictures_listed():
-    """The TV mode pictures kept in the R2 bucket, from data/pictures.json (written by scripts/tv_publish.py):
-    {"pictures/job/1/01-table.jpg": [bytes, id], ...}. Like the recordings, they are not in git."""
-    try:
-        return json.load(open(os.path.join(ROOT, "data", "pictures.json")))
-    except (OSError, ValueError):
-        return {}
+""" % (esc(title), CSS, up or "./", up, body, tail)
 
 
 def phrase_at(text, phrase):
@@ -336,57 +268,42 @@ def phrase_at(text, phrase):
     return None
 
 
-def tv_scenes(slug, n, verse_at, verse_text, listed):
-    """Write site/tv/<slug>/<n>.json for TV mode. Returns (its site path or None when the chapter has no
-    pictures yet, the site path of its small cover picture or None).
+def tv_scenes(slug, n, verse_at, verse_text):
+    """Write site/tv/<slug>/<n>.json for TV mode and return its site path, or None when the chapter has no pictures.
 
-    The file holds where each verse starts, counted in spoken words, and which picture starts at which word.
-    A chapter with no pictures yet still gets the file, with no scenes: TV mode then plays it with the words
-    alone, so watching can carry on through chapters whose pictures are still on the way.
-
-    A chapter's scene plan is data/tv/<slug>/<NNN>.json: {"scenes": [{"verse": 1, "image": "01-touch.jpg", ...}]},
+    A chapter's scene plan is data/tv/<slug>/<NNN>.json: {"scenes": [{"verse": 1, "image": "01-touch.jpg",
+    "tall": "tall/01-touch.jpg", ...}]} ("tall" is optional: the same scene made for a phone held upright),
     each scene starting at the first word of its verse (the first scene at the chapter's first word). A scene that
     shows a later sentence of its verse names the words it starts on, "from": "because the darkness", and starts
-    there, so the picture arrives with the sentence it shows. How the pictures are chosen: TV_PICTURES.md.
-    The pictures are pictures/<slug>/<n>/<image>, kept in the R2 bucket and listed in data/pictures.json (a
-    picture found in site/pictures/, where the picture branch keeps them while they are made, counts as well).
-    A chapter gets its pictures only when every picture of its plan is there."""
-    def there(img):
-        return img in listed or os.path.exists(os.path.join(OUT, img))
-
-    scenes = []
+    there, so the picture arrives with the sentence it shows. Its pictures are site/pictures/<slug>/<n>/<image>.
+    TV mode is offered only when every picture of the plan is there."""
     plan = os.path.join(ROOT, "data", "tv", slug, "%03d.json" % n)
-    if os.path.exists(plan):
-        start = dict(verse_at)
-        try:
-            planned = json.load(open(plan, encoding="utf-8")).get("scenes") or []
-        except ValueError:
-            planned = []
-        for k, s in enumerate(planned):
-            img = "pictures/%s/%d/%s" % (slug, n, s.get("image"))
-            verse = s.get("verse")
-            if verse not in start or not there(img):
-                scenes = []   # a plan that is still being worked on
-                break
-            at = start[verse]
-            if s.get("from"):
-                inside = phrase_at(verse_text.get(verse, ""), s["from"])
-                if inside is None:   # the wording changed since the plan was written: fall back to the verse's start
-                    print("TV plan %s %d: verse %d has no words %r, scene starts at the verse" % (slug, n, verse, s["from"]))
-                else:
-                    at += inside
-            scenes.append({"w": 0 if k == 0 else at, "img": img})
+    if not os.path.exists(plan):
+        return None
+    start = dict(verse_at)
+    scenes = []
+    for k, s in enumerate(json.load(open(plan, encoding="utf-8"))["scenes"]):
+        img = "pictures/%s/%d/%s" % (slug, n, s["image"])
+        if s["verse"] not in start or not os.path.exists(os.path.join(OUT, img)):
+            return None
+        at = start[s["verse"]]
+        if s.get("from"):
+            inside = phrase_at(verse_text.get(s["verse"], ""), s["from"])
+            if inside is None:   # the wording changed since the plan was written: fall back to the verse's start
+                print("TV plan %s %d: verse %d has no words %r, scene starts at the verse" % (slug, n, s["verse"], s["from"]))
+            else:
+                at += inside
+        scene = {"w": 0 if k == 0 else at, "img": img}
+        tall = "pictures/%s/%d/%s" % (slug, n, s.get("tall") or "")
+        if s.get("tall") and os.path.exists(os.path.join(OUT, tall)):
+            scene["tall"] = tall   # the same scene made tall, for a phone held upright
+        scenes.append(scene)
+    if not scenes:   # a plan that is still being worked on
+        return None
     rel = "tv/%s/%d.json" % (slug, n)
     os.makedirs(os.path.join(OUT, "tv", slug), exist_ok=True)
     json.dump({"verses": verse_at, "scenes": scenes}, open(os.path.join(OUT, rel), "w", encoding="utf-8"))
-    if not scenes:
-        return None, None
-    poster = "pictures/%s/%d/poster.jpg" % (slug, n)
-    return rel, poster if there(poster) else scenes[0]["img"]
-
-
-def clock(seconds):
-    return "%d:%02d" % (seconds // 60, seconds % 60)
+    return rel
 
 
 def durations():
@@ -426,16 +343,8 @@ def main():
     manifest = []
     lengths = durations()
     read_js = open(os.path.join(ROOT, "scripts", "read.js"), encoding="utf-8").read()
-    read_js = read_js.replace("The Bible, Freshly Translated", SITE_TITLE)
     open(os.path.join(OUT, "read.js"), "w", encoding="utf-8").write(read_js)
     read_tag = '<script src="../read.js?v=%s" defer></script>' % hashlib.sha1(read_js.encode("utf-8")).hexdigest()[:8]
-    tv_tag = ""
-    if TV:
-        tv_js = open(os.path.join(ROOT, "scripts", "tv.js"), encoding="utf-8").read()
-        open(os.path.join(OUT, "tv.js"), "w", encoding="utf-8").write(tv_js)
-        tv_tag = '<script src="../tv.js?v=%s" defer></script>' % hashlib.sha1(tv_js.encode("utf-8")).hexdigest()[:8]
-    listed = pictures_listed()
-    watch = []   # the chapters that have TV mode pictures, for the TV page
 
     def audio_of(c):
         """Site path of a chapter's recording, or None when it has none yet."""
@@ -444,7 +353,7 @@ def main():
 
     for idx, (b, n, path) in enumerate(chapters):
         meta, blocks = parse(path)
-        intro = b["intros"][n - 1] if "intros" in b else "%s, chapter %d." % (b["name"], n)
+        intro = "%s, chapter %d." % (b["name"], n)
         parts, speech = [], [intro]
         verse_at, spoken_words = [], len(words(intro))   # where each verse starts, counted in spoken words (for TV mode)
         verse_text = {}
@@ -468,12 +377,12 @@ def main():
         prev_ = chapters[idx - 1] if idx > 0 else None
         next_ = chapters[idx + 1] if idx + 1 < len(chapters) else None
 
-        def link(c, cls, arrow):
+        def link(c, cls, label):
             if not c:
-                return '<span class="%s">%s</span>' % (cls, START)
+                return '<span class="%s">Beginning of the Bible</span>' % cls
             cb, cn, _ = c
             href = ("%d.html" % cn) if cb is b else ("../%s/%d.html" % (cb["slug"], cn))
-            return '<a class="%s" href="%s">%s %s</a>' % (cls, href, arrow, esc(label(cb, cn)))
+            return '<a class="%s" href="%s">%s %s %d</a>' % (cls, href, label, esc(cb["name"]), cn)
 
         audio_url = "audio/%s/%d.mp3" % (b["slug"], n)
         has_audio = audio_url in lengths
@@ -490,38 +399,34 @@ def main():
                     sync_url = audio_url[:-4] + ".json"
             except (OSError, ValueError):
                 pass
-        data = ' data-id="%s-%d" data-title="%s" data-url="%s/%d.html" data-skip="%d"' % (
-            b["slug"], n, esc(label(b, n)), b["slug"], n, skip)
+        data = ' data-id="%s-%d" data-title="%s %d" data-url="%s/%d.html" data-skip="%d"' % (
+            b["slug"], n, esc(b["name"]), n, b["slug"], n, skip)
         buttons = ""
         if has_audio:
             data += ' data-audio="../%s"' % audio_url
             buttons = '<button class="btn" id="lr-start" type="button">&#9654; Listen + Read</button> '
         if sync_url:
             data += ' data-sync="../%s"' % sync_url
-        tv_url, poster = tv_scenes(b["slug"], n, verse_at, verse_text, listed) if TV and has_audio else (None, None)
+        tv_url = tv_scenes(b["slug"], n, verse_at, verse_text) if has_audio else None
         if tv_url:
-            # a plain link to the TV page; scripts/tv.js opens the player right here instead, full screen
-            buttons += '<a class="btn tv" href="../tv/?c=%s-%d" data-tv="%s-%d">%sTV mode</a> ' % (
-                b["slug"], n, b["slug"], n, TV_ICON)
-            watch.append((b, n, poster, lengths.get(audio_url)))
+            buttons += '<a class="btn ghost" href="../tv/?c=%s-%d">TV mode</a> ' % (b["slug"], n)
         if next_:
             data += ' data-next="../%s/%d.html"' % (next_[0]["slug"], next_[1])
             if audio_of(next_):
                 data += ' data-next-audio="../%s"' % audio_of(next_)
-        eyebrow = '<p class="eyebrow">%s</p>\n' % esc(b["eyebrow"]) if b.get("eyebrow") else ""
-        body = """%s<h1>%s</h1>
+        body = """<h1>%s %d</h1>
 <p class="sub">%s<a class="btn ghost" href="../listen/?from=%s-%d">%s</a></p>
 <div id="ch"%s>
 %s
 </div>
 <div class="pn">%s%s</div>""" % (
-            eyebrow, esc(label(b, n)), buttons, b["slug"], n, "Listen only" if has_audio else "&#9654; Listen from here",
+            esc(b["name"]), n, buttons, b["slug"], n, "Listen only" if has_audio else "&#9654; Listen from here",
             data, html_body,
             link(prev_, "prev", "&larr;"), link(next_, "next", "&rarr;") if next_ else
-            '<span class="next">Next %s coming soon</span>' % UNIT)
+            '<span class="next">Next chapter coming soon</span>')
         os.makedirs(os.path.join(OUT, b["slug"]), exist_ok=True)
         open(os.path.join(OUT, b["slug"], "%d.html" % n), "w", encoding="utf-8").write(
-            page(label(b, n), body, 1, read_tag + tv_tag))
+            page("%s %d" % (b["name"], n), body, 1, read_tag))
         os.makedirs(os.path.join(OUT, "text", b["slug"]), exist_ok=True)
         open(os.path.join(OUT, "text", b["slug"], "%d.txt" % n), "w", encoding="utf-8").write(spoken)
         manifest.append({
@@ -531,11 +436,8 @@ def main():
             "duration": lengths.get(audio_url) if has_audio else None,
             "text": "text/%s/%d.txt" % (b["slug"], n),
             "sync": sync_url,
+            "tv": tv_url,
         })
-        if TV:   # the chapter's scene file when it has pictures, and its cover for the TV page
-            manifest[-1].update(tv=tv_url, poster=poster)
-        if "labels" in b:   # a part of the Quran: its own name, and where it stands in its surah
-            manifest[-1].update(title=label(b, n), total=b["planned"], sub="Part %d of %d" % (n, b["planned"]))
 
     # book pages
     for b in BOOKS:
@@ -547,14 +449,12 @@ def main():
             for n in range(1, b["chapters"] + 1))
         body = '<h1>%s</h1><p class="sub">%d of %d chapters translated</p><div class="grid ch">%s</div>' % (
             esc(b["name"]), len(done), b["chapters"], cells)
-        if WORK == "quran":
-            body = quran.surah_page(b, esc)
         os.makedirs(os.path.join(OUT, b["slug"]), exist_ok=True)
         open(os.path.join(OUT, b["slug"], "index.html"), "w", encoding="utf-8").write(page(b["name"], body, 1))
 
     # home page
     groups = []
-    for heading, t in (("Old Testament", "OT"), ("New Testament", "NT")) if WORK == "bible" else ():
+    for label, t in (("Old Testament", "OT"), ("New Testament", "NT")):
         cells = []
         for b in (x for x in BOOKS if x["testament"] == t):
             k = sum(1 for n in range(1, b["chapters"] + 1) if (b["slug"], n) in have)
@@ -562,13 +462,13 @@ def main():
                 cells.append('<a href="%s/">%s<small>%d of %d</small></a>' % (b["slug"], esc(b["name"]), k, b["chapters"]))
             else:
                 cells.append('<span>%s<small>coming</small></span>' % esc(b["name"]))
-        groups.append('<h3 class="group">%s</h3><div class="grid">%s</div>' % (heading, "".join(cells)))
+        groups.append('<h3 class="group">%s</h3><div class="grid">%s</div>' % (label, "".join(cells)))
     latest = ""
     if chapters:
         lb, ln, _ = chapters[-1]
         latest = ('<a class="continue" id="resume" href="#" hidden><small>Pick up where you left off</small><b></b></a>'
-                  '<a class="continue" href="%s/%d.html"><small>Newest %s</small><b>%s</b></a>'
-                  % (lb["slug"], ln, UNIT, esc(label(lb, ln))))
+                  '<a class="continue" href="%s/%d.html"><small>Newest chapter</small><b>%s %d</b></a>'
+                  % (lb["slug"], ln, esc(lb["name"]), ln))
     resume_js = """<script>
 (function(){
 function get(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}}
@@ -576,7 +476,6 @@ function fmt(t){t=Math.floor(t||0);var m=Math.floor(t/60),x=t%60;return m+':'+(x
 var s=get('lastSpot'),r=get('lastRead'),a=document.getElementById('resume'),href,label,small;
 if(s&&s.url){
   if(s.mode==='listen'){href='listen/';small='Keep listening';label=s.label+(s.t>3?' \u00b7 at '+fmt(s.t):'');}
-  else if(s.mode==='tv'){href='tv/?c='+encodeURIComponent(s.id);small='Keep watching in TV mode';label=s.label+(s.t>3?' \u00b7 at '+fmt(s.t):'');}
   else if(s.mode==='lr'){href=s.url+'#resume-lr';small='Keep listening and reading';label=s.label+(s.t>3?' \u00b7 at '+fmt(s.t):'');}
   else{href=s.url;small='Keep reading';label=s.label+(s.v>1?', verse '+s.v:'');}
 }else if(r&&r.url){href=r.url;small='Pick up where you left off';label=r.label;}
@@ -589,45 +488,18 @@ var inside=document.referrer&&document.referrer.indexOf(location.origin)===0;
 if(s&&s.url&&(!nav||nav.type==='navigate')&&!inside&&!/[?&]home/.test(location.search)) location.replace(href);
 })();
 </script>"""
-    if not TV:
-        resume_js = "\n".join(line for line in resume_js.split("\n") if "s.mode==='tv'" not in line)
-    sub = "%d of 1,189 chapters translated. A new chapter arrives each night." % len(chapters)
-    if WORK == "quran":
-        sub, surahs = quran.home(BOOKS, esc)
-        groups.append(surahs)
-    body = '<h1>%s</h1><p class="sub">%s</p>%s%s%s' % (SITE_TITLE, sub, latest, "".join(groups), resume_js)
+    body = '<h1>%s</h1><p class="sub">%d of 1,189 chapters translated. A new chapter arrives each night.</p>%s%s%s' % (
+        SITE_TITLE, len(chapters), latest, "".join(groups), resume_js)
     open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(page(SITE_TITLE, body, 0))
 
     json.dump(manifest, open(os.path.join(OUT, "manifest.json"), "w", encoding="utf-8"), ensure_ascii=False)
     os.makedirs(os.path.join(OUT, "listen"), exist_ok=True)
     listen = open(os.path.join(ROOT, "scripts", "listen.html"), encoding="utf-8").read()
-    listen = listen.replace("The Bible, Freshly Translated", SITE_TITLE)
     open(os.path.join(OUT, "listen", "index.html"), "w", encoding="utf-8").write(
         page("Listen", listen, 1))
-
-    if TV:   # the TV page: every chapter that has pictures, book by book; scripts/tv.js plays them
-        groups, book = [], None
-        for b, n, poster, secs in watch:
-            if b is not book:
-                book = b
-                groups.append('</div><h3 class="group">%s</h3><div class="tvh">' % esc(b["name"]))
-            groups.append('<a href="?c=%s-%d" data-tv="%s-%d"><i><img src="../%s" alt="" loading="lazy"></i><b>%s</b>%s</a>' % (
-                b["slug"], n, b["slug"], n, esc(poster), esc(label(b, n)),
-                "<small>%s</small>" % clock(secs) if secs else ""))
-        body = ('<h1>TV mode</h1><p class="sub">Pictures for each part of a chapter, with the words lighting up as they '
-                'are read. Best on a TV, or on a phone turned sideways.</p>'
-                '<a class="continue" id="tv-resume" href="#" hidden><small>Keep watching</small><b></b></a>')
-        if watch:
-            body += "".join(groups)[len("</div>"):] + "</div>"
-            body += ('<p class="tvnote">%d chapter%s %s pictures so far. More are added as they are made; until then a '
-                     'chapter plays with its words alone.</p>' % (len(watch), "" if len(watch) == 1 else "s",
-                                                                 "has" if len(watch) == 1 else "have"))
-        else:
-            body += '<p class="tvnote">The first pictures are on the way.</p>'
-        os.makedirs(os.path.join(OUT, "tv"), exist_ok=True)
-        open(os.path.join(OUT, "tv", "index.html"), "w", encoding="utf-8").write(
-            page("TV mode", body, 1, tv_tag, TV_CSS))
-    print("Built %d %ss into %s/" % (len(chapters), UNIT, os.path.basename(OUT)))
+    os.makedirs(os.path.join(OUT, "tv"), exist_ok=True)
+    shutil.copyfile(os.path.join(ROOT, "scripts", "tv.html"), os.path.join(OUT, "tv", "index.html"))
+    print("Built %d chapters into site/" % len(chapters))
 
 
 if __name__ == "__main__":
