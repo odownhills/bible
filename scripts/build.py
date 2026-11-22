@@ -43,6 +43,7 @@ a{color:var(--accent)}
 .top{display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:var(--sans);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;padding-bottom:.75rem;border-bottom:1px solid var(--rule);margin-bottom:1.5rem}
 .top a{text-decoration:none;color:var(--text-soft)}
 .top a:hover{color:var(--accent)}
+.top span{display:flex;gap:1.4rem}
 h1{font-family:var(--serif);color:var(--heading);font-weight:normal;font-size:2rem;line-height:1.25;margin:.5rem 0 .25rem}
 .sub{font-family:var(--sans);color:var(--text-soft);font-size:.85rem;margin:0 0 1.75rem}
 h2.sec{font-family:var(--sans);color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:600;line-height:1.4;border-bottom:1px solid var(--rule);padding-bottom:.4rem;margin:2.25rem 0 1rem}
@@ -59,6 +60,8 @@ sup.n{font-family:var(--sans);font-size:.6em;color:var(--num);user-select:none;-
 .pn span{color:var(--num)}
 .btn{display:inline-block;font-family:var(--sans);font-size:.85rem;line-height:1.4;color:var(--bg);background:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:.5rem 1rem;text-decoration:none;cursor:pointer}
 .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.btn.tv{background:var(--shade);color:var(--heading);border-color:var(--accent)}
+.btn.tv svg{width:1.15em;height:1.15em;vertical-align:-.2em;margin-right:.4em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(9.5rem,1fr));gap:.6rem;font-family:var(--sans);font-size:.95rem}
 .grid.ch{grid-template-columns:repeat(auto-fill,minmax(3.4rem,1fr))}
 .grid a,.grid span{display:block;padding:.7rem .8rem;border-radius:10px;border:1px solid var(--rule);background:var(--panel);text-decoration:none;line-height:1.3}
@@ -241,7 +244,7 @@ def parse(path):
     return meta, blocks
 
 
-def page(title, body, depth, tail=""):
+def page(title, body, depth, tail="", css=""):
     up = "../" * depth
     return """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -250,11 +253,115 @@ def page(title, body, depth, tail=""):
 <title>%s</title>
 <style>%s</style></head>
 <body><div class="wrap">
-<nav class="top"><a href="%s?home">Books</a><a href="%slisten/">Listen</a></nav>
+<nav class="top"><a href="%s?home">Books</a><span><a href="%stv/">TV</a><a href="%slisten/">Listen</a></span></nav>
 %s
 <footer>An original translation from the Hebrew and Greek.</footer>
 </div>%s</body></html>
-""" % (esc(title), CSS, up or "./", up, body, tail)
+""" % (esc(title), CSS + css, up or "./", up, up, body, tail)
+
+
+TV_ICON = ('<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="12.5" rx="2"/>'
+           '<path d="M8 20.5h8M12 17v3.5"/></svg>')
+
+# Only on the TV page: the chapters that have pictures, as cards with the chapter's first picture.
+TV_CSS = """
+.wrap{max-width:68rem}
+.tvh{display:grid;grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));gap:1rem .9rem;font-family:var(--sans)}
+.tvh a{display:block;text-decoration:none;color:var(--text);border-radius:12px;-webkit-tap-highlight-color:transparent}
+.tvh a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.tvh i{display:block;position:relative;padding-top:56.25%;border-radius:10px;overflow:hidden;background:var(--panel);border:1px solid var(--rule);transition:border-color .2s ease,transform .2s ease}
+.tvh img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.tvh i:after{content:"";position:absolute;left:50%;top:50%;width:2.6rem;height:2.6rem;margin:-1.3rem 0 0 -1.3rem;border-radius:50%;background:rgba(23,18,35,.72) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M9 6.5v11l9-5.500z'/%3E%3C/svg%3E") center/60% no-repeat;opacity:0;transition:opacity .2s ease}
+.tvh a:hover i,.tvh a:focus-visible i{border-color:var(--accent);transform:translateY(-2px)}
+.tvh a:hover i:after,.tvh a:focus-visible i:after{opacity:1}
+.tvh b{display:block;font-weight:600;font-size:.95rem;margin:.5rem .1rem 0}
+.tvh small{display:block;color:var(--text-soft);font-size:.78rem;margin:.05rem .1rem 0;font-variant-numeric:tabular-nums}
+.tvnote{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);margin:2.5rem 0 0}
+@media (min-width:1500px){
+.wrap{max-width:92vw;padding-top:2rem}
+.top{font-size:1rem}
+h1{font-size:3rem}
+.sub{font-size:1.15rem}
+h3.group{font-size:1rem}
+.tvh{grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1.6rem 1.3rem}
+.tvh b{font-size:1.3rem}
+.tvh small,.tvnote{font-size:1rem}
+.continue{max-width:34rem}
+}
+"""
+
+
+def pictures_listed():
+    """The TV mode pictures kept in the R2 bucket, from data/pictures.json (written by scripts/tv_publish.py):
+    {"pictures/job/1/01-table.jpg": [bytes, id], ...}. Like the recordings, they are not in git."""
+    try:
+        return json.load(open(os.path.join(ROOT, "data", "pictures.json")))
+    except (OSError, ValueError):
+        return {}
+
+
+def phrase_at(text, phrase):
+    """How many spoken words into text the phrase starts, or None when it is not there."""
+    def bare(t):
+        return [w for w in (re.sub(r"\W", "", x).lower() for x in words(t)) if w]
+    have, want = bare(text), bare(phrase)
+    for i in range(len(have) - len(want) + 1 if want else 0):
+        if have[i:i + len(want)] == want:
+            return i
+    return None
+
+
+def tv_scenes(slug, n, verse_at, verse_text, listed):
+    """Write site/tv/<slug>/<n>.json for TV mode. Returns (its site path or None when the chapter has no
+    pictures yet, the site path of its small cover picture or None).
+
+    The file holds where each verse starts, counted in spoken words, and which picture starts at which word.
+    A chapter with no pictures yet still gets the file, with no scenes: TV mode then plays it with the words
+    alone, so watching can carry on through chapters whose pictures are still on the way.
+
+    A chapter's scene plan is data/tv/<slug>/<NNN>.json: {"scenes": [{"verse": 1, "image": "01-touch.jpg", ...}]},
+    each scene starting at the first word of its verse (the first scene at the chapter's first word). A scene that
+    shows a later sentence of its verse names the words it starts on, "from": "because the darkness", and starts
+    there, so the picture arrives with the sentence it shows. How the pictures are chosen: TV_PICTURES.md.
+    The pictures are pictures/<slug>/<n>/<image>, kept in the R2 bucket and listed in data/pictures.json (a
+    picture found in site/pictures/, where the picture branch keeps them while they are made, counts as well).
+    A chapter gets its pictures only when every picture of its plan is there."""
+    def there(img):
+        return img in listed or os.path.exists(os.path.join(OUT, img))
+
+    scenes = []
+    plan = os.path.join(ROOT, "data", "tv", slug, "%03d.json" % n)
+    if os.path.exists(plan):
+        start = dict(verse_at)
+        try:
+            planned = json.load(open(plan, encoding="utf-8")).get("scenes") or []
+        except ValueError:
+            planned = []
+        for k, s in enumerate(planned):
+            img = "pictures/%s/%d/%s" % (slug, n, s.get("image"))
+            verse = s.get("verse")
+            if verse not in start or not there(img):
+                scenes = []   # a plan that is still being worked on
+                break
+            at = start[verse]
+            if s.get("from"):
+                inside = phrase_at(verse_text.get(verse, ""), s["from"])
+                if inside is None:   # the wording changed since the plan was written: fall back to the verse's start
+                    print("TV plan %s %d: verse %d has no words %r, scene starts at the verse" % (slug, n, verse, s["from"]))
+                else:
+                    at += inside
+            scenes.append({"w": 0 if k == 0 else at, "img": img})
+    rel = "tv/%s/%d.json" % (slug, n)
+    os.makedirs(os.path.join(OUT, "tv", slug), exist_ok=True)
+    json.dump({"verses": verse_at, "scenes": scenes}, open(os.path.join(OUT, rel), "w", encoding="utf-8"))
+    if not scenes:
+        return None, None
+    poster = "pictures/%s/%d/poster.jpg" % (slug, n)
+    return rel, poster if there(poster) else scenes[0]["img"]
+
+
+def clock(seconds):
+    return "%d:%02d" % (seconds // 60, seconds % 60)
 
 
 def durations():
@@ -285,7 +392,7 @@ def main():
     if os.path.isdir(OUT):
         # keep audio; rebuild everything else
         for name in os.listdir(OUT):
-            if name == "audio":
+            if name in ("audio", "pictures"):
                 continue
             full = os.path.join(OUT, name)
             shutil.rmtree(full) if os.path.isdir(full) else os.remove(full)
@@ -296,6 +403,11 @@ def main():
     read_js = open(os.path.join(ROOT, "scripts", "read.js"), encoding="utf-8").read()
     open(os.path.join(OUT, "read.js"), "w", encoding="utf-8").write(read_js)
     read_tag = '<script src="../read.js?v=%s" defer></script>' % hashlib.sha1(read_js.encode("utf-8")).hexdigest()[:8]
+    tv_js = open(os.path.join(ROOT, "scripts", "tv.js"), encoding="utf-8").read()
+    open(os.path.join(OUT, "tv.js"), "w", encoding="utf-8").write(tv_js)
+    tv_tag = '<script src="../tv.js?v=%s" defer></script>' % hashlib.sha1(tv_js.encode("utf-8")).hexdigest()[:8]
+    listed = pictures_listed()
+    watch = []   # the chapters that have TV mode pictures, for the TV page
 
     def audio_of(c):
         """Site path of a chapter's recording, or None when it has none yet."""
@@ -306,6 +418,8 @@ def main():
         meta, blocks = parse(path)
         intro = "%s, chapter %d." % (b["name"], n)
         parts, speech = [], [intro]
+        verse_at, spoken_words = [], len(words(intro))   # where each verse starts, counted in spoken words (for TV mode)
+        verse_text = {}
         if meta.get("numbering"):
             parts.append('<div class="numbering">%s</div>' % inline(meta["numbering"]))
         for kind, val in blocks:
@@ -314,10 +428,15 @@ def main():
             elif kind == "t":
                 parts.append('<p class="title">%s</p>' % inline(val, True))
                 speech.append(plain(val))
+                spoken_words += len(words(speech[-1]))
             else:
                 parts.append('<p class="v">%s</p>' % " ".join(
                     '<sup class="n" id="v%d">%d</sup>%s' % (vn, vn, inline(t, True)) for vn, t in val))
-                speech.extend(plain(t) for _, t in val)
+                for vn, t in val:
+                    verse_at.append([vn, spoken_words])
+                    speech.append(plain(t))
+                    verse_text[vn] = speech[-1]
+                    spoken_words += len(words(speech[-1]))
         prev_ = chapters[idx - 1] if idx > 0 else None
         next_ = chapters[idx + 1] if idx + 1 < len(chapters) else None
 
@@ -351,6 +470,12 @@ def main():
             buttons = '<button class="btn" id="lr-start" type="button">&#9654; Listen + Read</button> '
         if sync_url:
             data += ' data-sync="../%s"' % sync_url
+        tv_url, poster = tv_scenes(b["slug"], n, verse_at, verse_text, listed) if has_audio else (None, None)
+        if tv_url:
+            # a plain link to the TV page; scripts/tv.js opens the player right here instead, full screen
+            buttons += '<a class="btn tv" href="../tv/?c=%s-%d" data-tv="%s-%d">%sTV mode</a> ' % (
+                b["slug"], n, b["slug"], n, TV_ICON)
+            watch.append((b, n, poster, lengths.get(audio_url)))
         if next_:
             data += ' data-next="../%s/%d.html"' % (next_[0]["slug"], next_[1])
             if audio_of(next_):
@@ -367,7 +492,7 @@ def main():
             '<span class="next">Next chapter coming soon</span>')
         os.makedirs(os.path.join(OUT, b["slug"]), exist_ok=True)
         open(os.path.join(OUT, b["slug"], "%d.html" % n), "w", encoding="utf-8").write(
-            page("%s %d" % (b["name"], n), body, 1, read_tag))
+            page("%s %d" % (b["name"], n), body, 1, read_tag + tv_tag))
         os.makedirs(os.path.join(OUT, "text", b["slug"]), exist_ok=True)
         open(os.path.join(OUT, "text", b["slug"], "%d.txt" % n), "w", encoding="utf-8").write(spoken)
         manifest.append({
@@ -377,6 +502,8 @@ def main():
             "duration": lengths.get(audio_url) if has_audio else None,
             "text": "text/%s/%d.txt" % (b["slug"], n),
             "sync": sync_url,
+            "tv": tv_url,
+            "poster": poster,
         })
 
     # book pages
@@ -416,6 +543,7 @@ function fmt(t){t=Math.floor(t||0);var m=Math.floor(t/60),x=t%60;return m+':'+(x
 var s=get('lastSpot'),r=get('lastRead'),a=document.getElementById('resume'),href,label,small;
 if(s&&s.url){
   if(s.mode==='listen'){href='listen/';small='Keep listening';label=s.label+(s.t>3?' \u00b7 at '+fmt(s.t):'');}
+  else if(s.mode==='tv'){href='tv/?c='+encodeURIComponent(s.id);small='Keep watching in TV mode';label=s.label+(s.t>3?' \u00b7 at '+fmt(s.t):'');}
   else if(s.mode==='lr'){href=s.url+'#resume-lr';small='Keep listening and reading';label=s.label+(s.t>3?' \u00b7 at '+fmt(s.t):'');}
   else{href=s.url;small='Keep reading';label=s.label+(s.v>1?', verse '+s.v:'');}
 }else if(r&&r.url){href=r.url;small='Pick up where you left off';label=r.label;}
@@ -437,6 +565,29 @@ if(s&&s.url&&(!nav||nav.type==='navigate')&&!inside&&!/[?&]home/.test(location.s
     listen = open(os.path.join(ROOT, "scripts", "listen.html"), encoding="utf-8").read()
     open(os.path.join(OUT, "listen", "index.html"), "w", encoding="utf-8").write(
         page("Listen", listen, 1))
+
+    # TV page: every chapter that has pictures, book by book; scripts/tv.js plays them
+    groups, book = [], None
+    for b, n, poster, secs in watch:
+        if b is not book:
+            book = b
+            groups.append('</div><h3 class="group">%s</h3><div class="tvh">' % esc(b["name"]))
+        groups.append('<a href="?c=%s-%d" data-tv="%s-%d"><i><img src="../%s" alt="" loading="lazy"></i><b>%s %d</b>%s</a>' % (
+            b["slug"], n, b["slug"], n, esc(poster), esc(b["name"]), n,
+            "<small>%s</small>" % clock(secs) if secs else ""))
+    body = ('<h1>TV mode</h1><p class="sub">Pictures for each part of a chapter, with the words lighting up as they '
+            'are read. Best on a TV, or on a phone turned sideways.</p>'
+            '<a class="continue" id="tv-resume" href="#" hidden><small>Keep watching</small><b></b></a>')
+    if watch:
+        body += "".join(groups)[len("</div>"):] + "</div>"
+        body += ('<p class="tvnote">%d chapter%s %s pictures so far. More are added as they are made; until then a '
+                 'chapter plays with its words alone.</p>' % (len(watch), "" if len(watch) == 1 else "s",
+                                                             "has" if len(watch) == 1 else "have"))
+    else:
+        body += '<p class="tvnote">The first pictures are on the way.</p>'
+    os.makedirs(os.path.join(OUT, "tv"), exist_ok=True)
+    open(os.path.join(OUT, "tv", "index.html"), "w", encoding="utf-8").write(
+        page("TV mode", body, 1, tv_tag, TV_CSS))
     print("Built %d chapters into site/" % len(chapters))
 
 
