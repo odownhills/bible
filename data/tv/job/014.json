@@ -223,6 +223,19 @@
    "section": "18-22",
    "slot": 2,
    "prompt": "An old man, seen from behind, walks away alone down a long straight empty country road into the evening mist, small and growing faint, his shoulders bowed. The road and fields fade into the grey."
+  },
+  {
+   "image": "cand/b1-mud2.jpg",
+   "section": "3-6",
+   "slot": 1,
+   "people": false,
+   "prompt": "A close view at eye level of a jug of muddy brown water being poured into a clean clear drinking glass that stands on a high wooden shelf by a bright window, and the water filling the glass is just as muddy and brown as what is in the jug. The glass and the pouring stream are in the upper middle of the picture; below them is only the plain wood of the shelf front in soft shadow. Bright window light."
+  },
+  {
+   "image": "cand/e2-call2.jpg",
+   "section": "13-17",
+   "slot": 2,
+   "prompt": "At dusk a father, seen from behind, stands in the lit doorway of a farmhouse with both hands cupped round his mouth, plainly calling out loud across the fields. Far off across the field his grown son has turned toward the house and lifted his arm high in answer, and is starting back toward home. Warm light from the doorway. The father's head and cupped hands and the distant son are in the upper half of the picture."
   }
  ]
 }
