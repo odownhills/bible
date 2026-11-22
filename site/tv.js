@@ -9,6 +9,12 @@
    picture starts at which word (scripts/build.py). A chapter whose pictures are not made yet plays with
    its words alone on a quiet background.
 
+   The Quran site uses it too (scripts/build.py), for its English parts and for the Arabic surahs
+   (scripts/quran_ar.py): those are listed in manifest-ar.json (ids "ar-<surah>"), their recordings play
+   straight from the server instead of being downloaded whole first (they can be hours long), and their
+   words are shown right to left in the Quran font, a verse or a phrase at a time, each verse closed with
+   its number.
+
    Written in plain old JavaScript on purpose, so that the browsers built into TVs can run it. */
 (function(){
 'use strict';
@@ -95,6 +101,9 @@ var CSS=
 '#tv.tv-nowords .tv-cap{display:none}'+
 '#tv.tv-noimg .tv-cap{bottom:auto;top:43%;text-shadow:none}'+
 '#tv.tv-noimg.tv-ui .tv-cap{-webkit-transform:translateX(-50%);transform:translateX(-50%)}'+
+'#tv.tv-rtl .tv-cap{direction:rtl;font-family:"Quran Text","Noto Naskh Arabic","Geeza Pro",serif;font-size:2.4rem;font-size:clamp(1.6rem,4.4vw,4.4rem);line-height:1.75;width:88vw;width:min(90vw,26em)}'+
+'#tv.tv-rtl .tv-cap .tv-end{color:#B79BE8;margin:0 .15em;white-space:nowrap}'+
+'#tv.tv-rtl.tv-noimg.tv-ui .tv-cap{opacity:.22}'+
 
 /* controls: they come up on a tap, a key or a move of the mouse, and leave again while it plays */
 '.tv-ctl{opacity:0;visibility:hidden;transition:opacity .25s ease,visibility 0s linear .25s}'+
@@ -173,6 +182,7 @@ var CSS=
   '#tv .tv-cap,#tv.tv-ui .tv-cap{bottom:auto;top:58vh;height:calc(42vh - 7.5rem);display:flex;align-items:center;justify-content:center;width:88vw;font-size:1.6rem;font-size:clamp(1.35rem,6.4vw,2.3rem);-webkit-transform:translateX(-50%);transform:translateX(-50%)}'+
   '#tv .tv-cap>span{display:block}'+
   '#tv.tv-noimg .tv-cap{top:34vh;height:auto}'+
+  '#tv.tv-rtl .tv-cap,#tv.tv-rtl.tv-ui .tv-cap{font-size:1.8rem;font-size:clamp(1.6rem,7.4vw,2.8rem)}'+
   '#tv .tv-mid{top:29vh}'+
   '#tv.tv-noimg .tv-mid{top:auto;bottom:8.5rem;-webkit-transform:translateX(-50%);transform:translateX(-50%)}'+
   '#tv .tv-bar{flex-direction:column;align-items:stretch;padding-top:1rem;background:linear-gradient(to top,#000 60%,rgba(0,0,0,0))}'+
@@ -182,7 +192,7 @@ var CSS=
 
 var stage=null,audio,cap,capIn,seek,layers,el={};
 var S={open:false,serial:0,ready:false,ui:false,top:0,scene:-1,card:-1,word:-1,verse:-2,words:[],seps:[],T:[],cards:[],scenes:[],verses:[],saved:0};
-var manifestP=null,cache={},order=[],wake=null,raf=0,idleT=0,toastT=0,nudgeT=0,cw=null,lastType='mouse',tapAt=0,tapZone=0,mx=-1,my=-1;
+var manifests={},cache={},order=[],wake=null,raf=0,idleT=0,toastT=0,nudgeT=0,cw=null,lastType='mouse',tapAt=0,tapZone=0,mx=-1,my=-1;
 
 function get(k,v){try{var x=localStorage.getItem(k);return x==null?v:JSON.parse(x)}catch(e){return v}}
 function put(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
@@ -191,14 +201,15 @@ function rate(){var r=parseFloat(get('tvRate',1));return RATES.indexOf(r)<0?1:r}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')}
 function noop(){}
 function json(u){return fetch(u).then(function(r){if(!r.ok)throw new Error('load');return r.json()})}
-function name(c){return c.book+' '+c.chapter}
+function name(c){return c.title||c.book+' '+c.chapter}
 function home(){return !!d.getElementById('tv-resume')}   // the TV page itself, not a chapter page
 function coarse(){return !!(win.matchMedia&&win.matchMedia('(pointer:coarse)').matches)}
 
 /* ---- what a chapter needs: fetched once, the next chapter ahead of time ---- */
-function manifest(){
-  if(!manifestP){ manifestP=json(ROOT+'manifest.json'); manifestP.catch(function(){ manifestP=null; }); }
-  return manifestP;
+function manifest(id){
+  var f=/^ar-/.test(id||'')?'manifest-ar.json':'manifest.json';   // the Quran's Arabic surahs have their own list
+  if(!manifests[f]){ manifests[f]=json(ROOT+f); manifests[f].catch(function(){ delete manifests[f]; }); }
+  return manifests[f];
 }
 function bundle(c){
   if(cache[c.id])return cache[c.id];
@@ -208,13 +219,13 @@ function bundle(c){
     json(ROOT+'tv/'+c.slug+'/'+c.chapter+'.json').catch(function(){return {verses:[],scenes:[]}}),
     fetch(ROOT+c.text).then(function(r){if(!r.ok)throw new Error('load');return r.text()}),
     c.sync?json(ROOT+c.sync).catch(function(){return null}):null,
-    fetch(ROOT+c.audio).then(function(r){if(!r.ok)throw new Error('load');return r.blob()}).then(function(b){return URL.createObjectURL(b)})
+    c.stream?ROOT+c.audio:fetch(ROOT+c.audio).then(function(r){if(!r.ok)throw new Error('load');return r.blob()}).then(function(b){return URL.createObjectURL(b)})
   ]).then(function(g){return {tv:g[0],text:g[1],sync:g[2],src:g[3]}});
   cache[c.id]=p; order.push(c.id);
   p.catch(function(){ if(cache[c.id]===p){ delete cache[c.id]; order.splice(order.indexOf(c.id),1); } });
   while(order.length>3){
     var old=order[0]; if(S.me&&old===S.me.id){ if(order.length<2)break; order.push(order.shift()); continue; }
-    order.shift(); (function(q){ if(q) q.then(function(b){ URL.revokeObjectURL(b.src); },noop); })(cache[old]); delete cache[old];
+    order.shift(); (function(q){ if(q) q.then(function(b){ if(b.src.indexOf('blob:')===0) URL.revokeObjectURL(b.src); },noop); })(cache[old]); delete cache[old];
   }
   return p;
 }
@@ -378,7 +389,7 @@ function load(id,o){
   try{ audio.pause(); }catch(e){}
   S.scene=S.card=S.word=-1; S.verse=-2; cap.classList.add('tv-out'); cover(null); toast(null); spin(true);
   stage.classList.add('tv-paused'); ui(false); stage.classList.remove('tv-idle');
-  manifest().then(function(m){
+  manifest(id).then(function(m){
     var i=-1,k; for(k=0;k<m.length;k++) if(m[k].id===id){ i=k; break; }
     S.me=i<0?null:m[i]; S.prev=S.next=null;
     if(!S.me) throw new Error('unknown');
@@ -396,7 +407,9 @@ function setup(b,o,mine){
   S.words=[]; S.seps=[]; WORD.lastIndex=0;
   while((m=WORD.exec(text))){ S.seps.push(text.slice(last,m.index)); S.words.push(m[0]); last=m.index+m[0].length; }
   S.scenes=(b.tv.scenes||[]).map(function(s){ return {w:s.w,img:ROOT+s.img}; }); S.verses=b.tv.verses||[];
-  stage.classList.toggle('tv-noimg',!S.scenes.length);
+  S.rtl=c.lang==='ar'; S.ends={};
+  if(S.rtl) S.verses.forEach(function(v,k){ S.ends[(S.verses[k+1]?S.verses[k+1][1]:S.words.length)-1]=v[0]; });   // the last word of each verse
+  stage.classList.toggle('tv-noimg',!S.scenes.length); stage.classList.toggle('tv-rtl',S.rtl);
   if(!S.scenes.length){ layers[0].classList.remove('tv-on'); layers[1].classList.remove('tv-on'); }
   function go(){
     audio.removeEventListener('loadedmetadata',go); if(mine!==S.serial)return;
@@ -427,6 +440,16 @@ function makeCards(){
   var words=S.words,seps=S.seps,starts={},cards=[],from=0,len=0,k;
   S.scenes.forEach(function(s){ starts[s.w]=1; }); S.verses.forEach(function(v){ if(!starts[v[1]]) starts[v[1]]=2; });
   function cut(to){ if(to>from){ cards.push({a:from,b:to}); from=to; len=0; } }
+  if(S.rtl){
+    // Arabic: a new card at every verse; a long verse is cut after a pause mark, or else after about a line
+    for(k=0;k<words.length;k++){
+      if(starts[k]) cut(k);
+      len+=words[k].length+1;
+      if((len>=46&&/[\u06d6-\u06dc]$/.test(words[k]))||len>=110) cut(k+1);
+    }
+    cut(words.length);
+    S.cards=cards; return;
+  }
   for(k=0;k<words.length;k++){
     if(starts[k]===1) cut(k);
     else if(starts[k]===2&&len>=34) cut(k);
@@ -441,6 +464,7 @@ function makeCards(){
     if(c.b-c.a<3&&starts[c.a]!==1&&textOf(p.a,c.b).length<=96){ p.b=c.b; cards.splice(k,1); } }
   S.cards=cards;
 }
+function arabicNumber(n){ return String(n).replace(/[0-9]/g,function(x){ return '\u0660\u0661\u0662\u0663\u0664\u0665\u0666\u0667\u0668\u0669'.charAt(+x); }); }
 function textOf(a,b){ var s='',k; for(k=a;k<b;k++) s+=(k>a?S.seps[k]:'')+S.words[k]; return s; }
 
 /* ---- drawing ---- */
@@ -463,7 +487,10 @@ function card(i){
   if(i===S.card)return; S.card=i; S.word=-1;
   if(i<0){ cap.classList.add('tv-out'); return; }
   var c=S.cards[i],h='',k;
-  for(k=c.a;k<c.b;k++) h+=(k>c.a?esc(S.seps[k]):'')+'<span class="tv-w">'+esc(S.words[k])+'</span>';
+  for(k=c.a;k<c.b;k++){
+    h+=(k>c.a?esc(S.seps[k]):'')+'<span class="tv-w">'+esc(S.words[k])+'</span>';
+    if(S.rtl&&S.ends[k]) h+=' <span class="tv-end">\u06dd'+arabicNumber(S.ends[k])+'</span>';   // the verse's end, with its number
+  }
   if(c.b<S.words.length&&/[—–]/.test(S.seps[c.b])) h+='—';
   capIn.innerHTML=h; cap.classList.remove('tv-out');
 }
@@ -480,7 +507,7 @@ function mark(){
   if(cards[ci+1]&&T[cards[ci+1].a]-t<0.18) ci++;
   if(!cards.length)return;
   card(ci);
-  if(w!==S.word){ var sp=capIn.childNodes,a=cards[ci].a,n=0; for(k=0;k<sp.length;k++) if(sp[k].nodeType===1){ sp[k].className=a+n<=w?'tv-w tv-on':'tv-w'; n++; } S.word=w; }
+  if(w!==S.word){ var sp=capIn.querySelectorAll('.tv-w'),a=cards[ci].a; for(k=0;k<sp.length;k++) sp[k].className=a+k<=w?'tv-w tv-on':'tv-w'; S.word=w; }
   var v=find(S.verses,w<0?0:w,1);
   if(v!==S.verse){ S.verse=v; el.tag.innerHTML=esc(name(S.me))+(v>=0?'<span>verse '+S.verses[v][0]+'</span>':''); }
 }

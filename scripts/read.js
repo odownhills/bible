@@ -2,7 +2,10 @@
    brighten as the voice reaches them, a soft marker glides from word to word, and the page stays
    still while the voice reads down it, gliding up now and then to keep the words in view.
    Alternate readings and notes (not read aloud) are shown dimmed; "Hide alt" hides them.
-   Word start times come from audio/<book>/<n>.json (made by scripts/align.py). */
+   Word start times come from audio/<book>/<n>.json (made by scripts/align.py).
+   A page marked data-stream (the Quran's Arabic surahs, whose recordings can be hours long) plays its
+   recording straight from the server instead of downloading it whole first, and its Listen + Read button
+   starts at the verse at the top of the screen. */
 (function(){
 'use strict';
 var d=document,ch=null,words=[],T=null,cur=-1,active=false,want=false,busy=false,ready=false,dragging=false;
@@ -188,7 +191,14 @@ function whole(url){
   return blobs[url]=fetch(url).then(function(r){ if(!r.ok)throw 0; return r.blob(); })
     .then(function(b){ return URL.createObjectURL(b); }).catch(function(){ delete blobs[url]; return url; });
 }
-function begin(auto,note){
+function stream(){ return !!(ch&&ch.dataset.stream); }
+function firstWordOf(v){
+  // the first word after verse v's marker, by a binary search through the words in page order
+  var a=$('v'+v),lo=0,hi=words.length-1,k=-1; if(!a)return -1;
+  while(lo<=hi){ var mid=(lo+hi)>>1; if(a.compareDocumentPosition(words[mid])&4){ k=mid; hi=mid-1; } else lo=mid+1; }
+  return k;
+}
+function begin(auto,note,fromVerse){
   build(); hooks(); chapter();
   if(!ch||!ch.dataset.audio){ if(active) { want=false; icon(); msg('This chapter has no recording yet. It will be added soon.'); } return; }
   var mine=++serial,id=ch.dataset.id,src=abs(ch.dataset.audio),sync=ch.dataset.sync?abs(ch.dataset.sync):null,skip=parseInt(ch.dataset.skip||'0',10);
@@ -196,7 +206,7 @@ function begin(auto,note){
   $('lr-seek').disabled=true; audio.pause(); paint(); put('listenAt',id);
   spot({mode:'lr',t:get('listenPos',{})[id]||0});
   var timing=sync?fetch(sync).then(function(r){ return r.ok?r.json():null; }).catch(function(){ return null; }):Promise.resolve(null);
-  Promise.all([whole(src),timing]).then(function(got){
+  Promise.all([stream()?src:whole(src),timing]).then(function(got){
     if(mine!==serial)return;
     var j=got[1];
     audio.defaultPlaybackRate=rate(); audio.src=got[0]; audio.playbackRate=rate();
@@ -204,14 +214,15 @@ function begin(auto,note){
       if(mine!==serial)return;
       T=(j&&j.t&&j.t.length-skip===words.length)?j.t.slice(skip).map(function(x){return x/100}):estimate(audio.duration);
       var resume=get('listenPos',{})[id]||0;
+      if(fromVerse>1){ var fw=firstWordOf(fromVerse); if(fw>=0&&isFinite(T[fw])) resume=Math.max(0.01,T[fw]-0.4); }
       if(resume&&resume<audio.duration-5) audio.currentTime=resume;
       busy=false; ready=true; $('lr-seek').disabled=false; paint(); mark(); posState(); scrollToWord(true);
       if(note&&!want) msg(resume?'Back where you left off, at '+fmt(resume)+'. Press play to carry on.':'Press play to start.');
-      if(ch.dataset.nextAudio) whole(abs(ch.dataset.nextAudio));
+      if(ch.dataset.nextAudio&&!stream()) whole(abs(ch.dataset.nextAudio));
     });
     audio.load();
     if(want) audio.play().catch(function(){ want=false; icon(); });
-    if('mediaSession' in navigator){ try{navigator.mediaSession.metadata=new MediaMetadata({title:ch.dataset.title,artist:'The Bible, Freshly Translated',album:'Listen + Read'});}catch(e){} }
+    if('mediaSession' in navigator){ try{navigator.mediaSession.metadata=new MediaMetadata({title:ch.dataset.title,artist:ch.dataset.artist||'The Bible, Freshly Translated',album:'Listen + Read'});}catch(e){} }
   });
 }
 function play(){ want=true; icon(); if(busy)return; msg(''); audio.playbackRate=rate(); audio.play().catch(function(){ want=false; icon(); }); }
@@ -247,7 +258,7 @@ function go(rel,auto){
 
 d.addEventListener('click',function(e){
   var t=e.target; if(!t.closest)return;
-  if(t.closest('#lr-start')){ e.preventDefault(); if(active){ follow=true; scrollToWord(true); if(!want)play(); } else begin(true); return; }
+  if(t.closest('#lr-start')){ e.preventDefault(); if(active){ follow=true; scrollToWord(true); if(!want)play(); } else begin(true,false,$('ch')&&$('ch').dataset.stream?verseAtTop($('ch')):0); return; }
   if(!active)return;
   var w=t.closest('#ch .w');
   if(w&&T&&ready){ jump(T[w._k]-LEAD+0.01); if(!want)play(); return; }

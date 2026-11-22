@@ -146,6 +146,7 @@ function load(k,auto){
 }
 var blobs={},order=[];
 function whole(c){
+  if(c.stream)return Promise.resolve('../'+c.audio);   // a long recording (the Quran in Arabic): played straight from the server
   if(blobs[c.id])return blobs[c.id];
   var pr=fetch('../'+c.audio).then(function(r){ if(!r.ok)throw 0; return r.blob(); })
     .then(function(b){ return URL.createObjectURL(b); })

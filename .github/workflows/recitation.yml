@@ -1,0 +1,60 @@
+name: Record Arabic recitation
+
+# The Quran site's Arabic pages (scripts/quran_ar.py) play a human reciter's recitation of each surah.
+# scripts/recite.py fetches the reciter's recording of each verse from everyayah.com, joins them into one
+# recording per surah with the time of every word, uploads it to the Cloudflare R2 bucket (scripts/media.py)
+# and lists it in data/audio.json; then the word times and the rebuilt site-quran/ are pushed to main.
+# It runs until all 114 surahs are recorded (a run takes as many as fit in about 40 minutes); after that
+# each run finds nothing to do. No text is changed and nothing is translated.
+on:
+  push:
+    branches: [main]
+    paths: ["scripts/recite.py", ".github/workflows/recitation.yml"]
+  schedule:
+    - cron: "47 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      max:
+        description: "How many surahs to record in this run"
+        default: "114"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: recitation
+  cancel-in-progress: false
+
+jobs:
+  recite:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Check the R2 secrets
+        run: |
+          if [ -z "$R2_ACCESS_KEY_ID" ] || [ -z "$R2_SECRET_ACCESS_KEY" ] || [ -z "$R2_ENDPOINT" ]; then
+            echo "::error::Add the R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY and R2_ENDPOINT repository secrets (see scripts/media.py)."
+            exit 1
+          fi
+          command -v aws >/dev/null || python3 -m pip install --quiet --break-system-packages awscli
+      - name: Record
+        id: record
+        run: |
+          command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          python3 scripts/recite.py --max "${MAX_SURAHS:-114}" --minutes 40
+        env:
+          MAX_SURAHS: ${{ inputs.max }}
+      - name: Publish
+        if: always() && steps.record.outcome != 'skipped'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python3 scripts/recite.py publish

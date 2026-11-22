@@ -102,13 +102,35 @@ sup.n.here{color:var(--bg);background:var(--accent);border-radius:4px;padding:.1
 .toast a,.toast button{font:inherit;font-size:.85rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:.45rem .85rem;text-decoration:none;cursor:pointer;min-height:40px;display:inline-flex;align-items:center}
 .toast .x{margin-left:auto;border:0;color:var(--text-soft)}
 body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
+.top span{display:flex;gap:1.4rem}
+.btn.tv{background:var(--shade);color:var(--heading);border-color:var(--accent)}
+.btn.tv svg{width:1.15em;height:1.15em;vertical-align:-.2em;margin-right:.4em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .eyebrow{font-family:var(--sans);color:var(--text-soft);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin:0}
+
+@font-face{font-family:"Quran Text";src:url(/fonts/scheherazade-new-arabic.woff2) format("woff2");font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+FB50-FDFF,U+FE70-FEFF}
+.top{position:sticky;top:0;z-index:15;background:var(--bg);padding-top:.7rem;margin-top:-.7rem}
+#ch sup.n{scroll-margin-top:4.5rem}
+.top .lang{display:inline-flex;align-items:stretch;gap:0;border:1px solid var(--rule);border-radius:999px;overflow:hidden;letter-spacing:.04em}
+.top .lang a,.top .lang b{display:flex;align-items:center;padding:.1rem .6rem;font-weight:normal;min-height:28px}
+.top .lang b{background:var(--shade);color:var(--heading)}
+.top .lang [lang=ar]{font-family:"Quran Text",var(--sans);font-size:1.15rem;line-height:1;letter-spacing:0;text-transform:none;padding-bottom:.25rem}
+#ch.ar{font-family:"Quran Text","Noto Naskh Arabic","Geeza Pro","Arabic Typesetting",serif;font-size:1.7rem;line-height:2.25;text-align:justify;word-spacing:.06em}
+#ch.ar p.v{margin:0 0 1.3rem}
+#ch.ar p.bas{text-align:center;color:var(--heading);margin:0 0 1.3rem}
+body.lr #ch.ar p.bas{color:#A396C6}
+#ch.ar sup.n{display:inline-block;width:0;height:1em;margin:0;padding:0;overflow:hidden}
+#ch.ar .end{color:var(--accent);margin:0 .12em;user-select:none;-webkit-user-select:none;white-space:nowrap}
+h1.arh{font-family:"Quran Text",var(--serif);font-size:2.6rem;line-height:1.6;margin:.2rem 0 .1rem}
+.top>span{align-items:center}
+.grid .arn{display:block;font-family:"Quran Text",var(--serif);font-weight:normal;font-size:1.5rem;line-height:1.55;color:var(--heading)}
+.lang-note{font-family:var(--sans);font-size:.85rem;color:var(--text-soft)}
+.tvnote{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);margin:2.5rem 0 0}
 </style></head>
 <body><div class="wrap">
-<nav class="top"><a href="../?home">Surahs</a><a href="../listen/">Listen</a></nav>
+<nav class="top"><a href="../?home">Surahs</a><span><a href="../tv/">TV</a><a href="../listen/">Listen</a><span class="lang" role="group" aria-label="Language"><b>English</b><a href="../ar/1.html" data-lang="ar" lang="ar">عربي</a></span></span></nav>
 <p class="eyebrow">Surah 1 · The Opening</p>
 <h1>Quran 1</h1>
-<p class="sub"><button class="btn" id="lr-start" type="button">&#9654; Listen + Read</button> <a class="btn ghost" href="../listen/?from=quran-1-1">Listen only</a></p>
+<p class="sub"><button class="btn" id="lr-start" type="button">&#9654; Listen + Read</button> <a class="btn tv" href="../tv/?c=quran-1-1" data-tv="quran-1-1"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="12.5" rx="2"/><path d="M8 20.5h8M12 17v3.5"/></svg>TV mode</a> <a class="btn ghost" href="../listen/?from=quran-1-1">Listen only</a></p>
 <div id="ch" data-id="quran-1-1" data-title="Quran 1" data-url="quran-1/1.html" data-skip="3" data-audio="../audio/quran-1/1.mp3" data-sync="../audio/quran-1/1.json" data-next="../quran-2/1.html" data-next-audio="../audio/quran-2/1.mp3">
 <h2 class="sec">Praise belongs to God</h2>
 <p class="v"><sup class="n" id="v1">1</sup><span class="w">In</span> <span class="w">the</span> <span class="w">name</span> <span class="w">of</span> <span class="w">God,</span> <span class="w">the</span> <span class="w">Most</span> <span class="w">Merciful,</span> <span class="w">the</span> <span class="w">Merciful.</span></p>
@@ -118,4 +140,4 @@ body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
 </div>
 <div class="pn"><span class="prev">Beginning of the Quran</span><a class="next" href="../quran-2/1.html">&rarr; Quran 2:1-29</a></div>
 <footer>An original translation from the Arabic.</footer>
-</div><script src="../read.js?v=aa63d6ba" defer></script></body></html>
+</div><script src="../read.js?v=cb1444f7" defer></script><script src="../tv.js?v=ef12b491" defer></script><script src="../lang.js?v=912bf9ce" defer></script></body></html>
