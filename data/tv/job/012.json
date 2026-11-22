@@ -115,138 +115,119 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
-   "image": "cand/a1-lecture.jpg",
+   "verse": 1,
    "section": "1-3",
-   "slot": 1,
-   "prompt": "In a plain kitchen of today, a grey-haired man in a simple shirt sits upright at the table with his arms folded. Three friends stand and lean over him from the other side of the table, each with a finger raised, lecturing him all at once. He looks straight back at them, calm and unimpressed, not small and not bowed. Soft daylight from a window."
-  },
-  {
-   "image": "cand/a1-stand.jpg",
-   "section": "1-3",
-   "slot": 1,
+   "image": "01-stand.jpg",
+   "tall": "tall/01-stand.jpg",
+   "principle": "Job is not beneath the friends who lecture him; what they tell him, everyone knows.",
+   "shows": "A grey-haired man has risen from his chair to stand eye to eye with the younger friend lecturing him, unbowed.",
    "prompt": "In a plain living room of today, a grey-haired man in a simple shirt has risen from his chair and stands eye to eye with a younger friend who has been lecturing him with a raised finger. The two are exactly level, face to face, and the grey-haired man looks back steadily, unbowed. Two other friends sit watching on a sofa. Soft daylight."
   },
   {
-   "image": "cand/b1-slip.jpg",
+   "verse": 4,
    "section": "4-6",
-   "slot": 2,
+   "image": "02-slip.jpg",
+   "tall": "tall/02-slip.jpg",
+   "principle": "The righteous man has become a laughingstock; the untroubled have contempt for the one whose foot slips.",
+   "shows": "A grey-haired man has slipped to his knees on a wet pavement while comfortable people in a warm cafe point and laugh.",
    "prompt": "On a rainy city pavement of today, a grey-haired man in a plain worn coat has slipped and fallen to one knee in a puddle, one hand on the wet ground. Just behind him, through the big bright window of a warm cafe, comfortable well-dressed people sitting dry with their coffee point at him and laugh. Grey daylight, the cafe glowing warm."
   },
   {
-   "image": "cand/b1-friends.jpg",
+   "verse": 6,
    "section": "4-6",
-   "slot": 2,
-   "prompt": "In a park in daylight, a grey-haired man in plain clothes sits alone on a bench, his head a little bowed. A few steps away three men who were his friends stand together laughing at him, one of them pointing at him and another covering a grin with his hand. The space between them is plain to see."
-  },
-  {
-   "image": "cand/b2-hammock.jpg",
-   "section": "4-6",
-   "slot": 3,
+   "image": "03-hammock.jpg",
+   "tall": "tall/03-hammock.jpg",
+   "principle": "The tents of destroyers are at ease, and those who provoke God are secure.",
+   "shows": "A burglar sleeps peacefully in a hammock in a sunny yard, surrounded by bags of stolen goods.",
    "prompt": "A burglar in a dark hooded top sleeps peacefully in a hammock strung between two trees in a sunny, quiet back yard, his hands folded on his chest, completely at ease. On the grass round the hammock lie open bags spilling stolen things: jewellery, watches, handbags, a laptop, a television. Bright calm afternoon light."
   },
   {
-   "image": "cand/b2-villa.jpg",
-   "section": "4-6",
-   "slot": 3,
-   "prompt": "Behind high white walls topped with security cameras, a heavy-set man in sunglasses lounges at his ease on a sunbed beside the pool of a lavish villa, a glass in his hand. On the little table beside him sits an open briefcase stacked with banknotes. Everything is calm, bright and secure."
-  },
-  {
-   "image": "cand/c1-birds.jpg",
+   "verse": 7,
    "section": "7-10",
-   "slot": 4,
+   "image": "04-birds.jpg",
+   "tall": "tall/04-birds.jpg",
+   "principle": "Ask the beasts and the birds of the sky, and they will teach you.",
+   "shows": "A grandfather and his grandson lie on a seaside hill watching a vast flock of birds sweep across the sky.",
    "prompt": "On a grassy hillside by the sea in clear morning light, a grandfather and his young grandson lie on their backs side by side, looking up. Across the wide sky above them a vast flock of birds sweeps and turns together in a great flowing shape. The two are still, watching as if listening."
   },
   {
-   "image": "cand/c1-deer.jpg",
+   "verse": 9,
    "section": "7-10",
-   "slot": 4,
-   "prompt": "In a misty meadow at the edge of a forest in soft morning light, a young girl crouches quite still, face to face with a deer only an arm's length away. The deer lowers its head toward her and the two look at each other as if she were asking it something and it were answering."
-  },
-  {
-   "image": "cand/c2-breath.jpg",
-   "section": "7-10",
-   "slot": 5,
-   "prompt": "On a frosty farm at early morning, a man in a work jacket stands beside his horse, his hand resting on its neck. Both breathe out at the same moment, and the breath of the man and the breath of the horse rise together as two small white clouds in the cold air, lit by clear pale light."
-  },
-  {
-   "image": "cand/c2-lamb.jpg",
-   "section": "7-10",
-   "slot": 5,
+   "image": "05-lamb.jpg",
+   "tall": "tall/05-lamb.jpg",
+   "principle": "In his hand is the life of every living thing and the spirit of all human flesh.",
+   "shows": "A small child and a newborn lamb asleep side by side in the straw.",
    "prompt": "In a warm barn in soft morning light, a small child and a newborn lamb lie asleep side by side in clean golden straw, breathing gently, the child's hand resting on the lamb's woolly side. Peaceful and safe."
   },
   {
-   "image": "cand/d1-taste.jpg",
+   "verse": 11,
    "section": "11-13",
-   "slot": 6,
-   "prompt": "In a homely kitchen of today, an old grandmother with a deeply lined, wise face stands at the stove and tastes the soup from a wooden spoon, her eyes half closed, judging it with care and long experience. Steam rises from the pot. Warm daylight from a window."
-  },
-  {
-   "image": "cand/d1-listen.jpg",
-   "section": "11-13",
-   "slot": 6,
+   "image": "06-listen.jpg",
+   "tall": "tall/06-listen.jpg",
+   "principle": "The ear tests words as the palate tastes food; among the aged is wisdom.",
+   "shows": "An old man with a lined face listens to a young man, chin in hand, weighing every word.",
    "prompt": "In a quiet room of today, an old man with a deeply lined face and white hair sits listening closely to a young man who is talking to him. The old man's chin rests on his hand and his eyes are narrowed, weighing every word before he accepts it. Soft daylight."
   },
   {
-   "image": "cand/e1-drylake.jpg",
+   "verse": 14,
    "section": "14-16",
-   "slot": 7,
-   "people": false,
-   "prompt": "A small wooden rowing boat lies stranded on the cracked, dried-out bed of a lake whose water has completely vanished. A long wooden jetty stands high and dry above the cracked mud, and the old waterline shows as a pale band on the hills all round. Hard white daylight."
+   "image": "07-drylake.jpg",
+   "tall": "tall/07-drylake.jpg",
+   "principle": "He holds back the waters, and they dry up.",
+   "shows": "A rowing boat stranded on the cracked bed of a lake that has dried up, its jetty high and dry.",
+   "prompt": "A small wooden rowing boat lies stranded on the cracked, dried-out bed of a lake whose water has completely vanished. A long wooden jetty stands high and dry above the cracked mud, and the old waterline shows as a pale band on the hills all round. Hard white daylight.",
+   "people": false
   },
   {
-   "image": "cand/e1-flood.jpg",
+   "verse": 15,
+   "from": "and he sends them out",
    "section": "14-16",
-   "slot": 7,
-   "people": false,
-   "prompt": "A great brown river in flood has burst its banks and is pouring across farmland. Fences, a road and the tops of hedges are under the rushing water, and a small farm building stands knee-deep in the torrent. Heavy grey sky, wide view."
+   "image": "08-flood.jpg",
+   "tall": "tall/08-flood.jpg",
+   "principle": "He sends the waters out, and they overturn the earth.",
+   "shows": "A brown river in flood pours across farmland, fences and a road under water.",
+   "prompt": "A great brown river in flood has burst its banks and is pouring across farmland. Fences, a road and the tops of hedges are under the rushing water, and a small farm building stands knee-deep in the torrent. Heavy grey sky, wide view.",
+   "people": false
   },
   {
-   "image": "cand/e1-ruin.jpg",
-   "section": "14-16",
-   "slot": 7,
-   "people": false,
-   "prompt": "A farmhouse that was torn down long ago stands roofless in a field, only broken walls left, with weeds and young trees growing up through the empty rooms. It has plainly never been rebuilt. Clear daylight."
-  },
-  {
-   "image": "cand/f1-box.jpg",
+   "verse": 17,
    "section": "17-21",
-   "slot": 8,
+   "image": "09-box.jpg",
+   "tall": "tall/09-box.jpg",
+   "principle": "He leads counselors away stripped.",
+   "shows": "A man in an expensive suit carries a cardboard box of his things out of a glass office tower, head down.",
    "prompt": "A man in an expensive dark suit walks out through the glass doors of a tall gleaming office tower carrying a cardboard box of his belongings: a desk lamp, framed photos, a plant. His head is down and his tie is loosened. Daylight on the glass."
   },
   {
-   "image": "cand/f1-statue.jpg",
+   "verse": 19,
    "section": "17-21",
-   "slot": 8,
-   "people": false,
-   "prompt": "In a city square, a large bronze statue of a statesman in a suit has been toppled from its tall stone pedestal and lies on its side in the long uncut grass. The empty pedestal stands above it. Pigeons perch on the fallen statue. Overcast daylight."
+   "image": "10-statue.jpg",
+   "tall": "tall/10-statue.jpg",
+   "principle": "He overthrows the long-established and pours out contempt on nobles.",
+   "shows": "A bronze statue of a statesman lies toppled in the long grass below its empty pedestal, pigeons on it.",
+   "prompt": "In a city square, a large bronze statue of a statesman in a suit has been toppled from its tall stone pedestal and lies on its side in the long uncut grass. The empty pedestal stands above it. Pigeons perch on the fallen statue. Overcast daylight.",
+   "people": false
   },
   {
-   "image": "cand/g1-canyon.jpg",
+   "verse": 22,
    "section": "22-25",
-   "slot": 9,
-   "people": false,
-   "prompt": "Looking down into a deep, narrow canyon that has been in darkness, a shaft of bright sunlight now strikes straight down to the very bottom, lighting up the hidden floor, a stream and the rocks that lay in shadow. The rest of the canyon walls are still dark."
+   "image": "11-canyon.jpg",
+   "tall": "tall/11-canyon.jpg",
+   "principle": "He uncovers deep things out of darkness and brings the shadow of death out to the light.",
+   "shows": "A shaft of sunlight strikes down to the floor of a deep, dark canyon.",
+   "prompt": "Looking down into a deep, narrow canyon that has been in darkness, a shaft of bright sunlight now strikes straight down to the very bottom, lighting up the hidden floor, a stream and the rocks that lay in shadow. The rest of the canyon walls are still dark.",
+   "people": false
   },
   {
-   "image": "cand/g1-cave.jpg",
+   "verse": 24,
    "section": "22-25",
-   "slot": 9,
-   "prompt": "Deep underground, a caver in a helmet stands at the edge of a vast hidden cavern, and the strong beam of the lamp lights up great stone pillars, still pools and crystal walls that have lain in total darkness. Most of the cavern is still dark around the beam."
-  },
-  {
-   "image": "cand/g2-desert.jpg",
-   "section": "22-25",
-   "slot": 10,
+   "image": "12-desert.jpg",
+   "tall": "tall/12-desert.jpg",
+   "principle": "He takes away the sense of the chiefs and makes them wander in a waste with no way.",
+   "shows": "A man in a business suit stands lost in a trackless desert, his wandering footprints behind him.",
    "prompt": "In a vast empty sand desert with no road, no track and no landmark in any direction, a man in a dark business suit and tie wanders alone, turning to look about him, lost. His wandering footprints trail behind him in a curve. Hazy, featureless sky."
-  },
-  {
-   "image": "cand/g2-fog.jpg",
-   "section": "22-25",
-   "slot": 10,
-   "prompt": "At dusk on an empty road, three men in dark business suits grope forward through thick grey fog with their hands stretched out in front of them, unable to see, one of them stumbling. The fog swallows everything beyond them."
   }
  ]
 }
