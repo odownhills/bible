@@ -139,7 +139,7 @@
    "image": "cand/01a-street.jpg",
    "principle": "Nicodemus, a ruler and teacher, comes to him at night.",
    "shows": "A grey-haired man in a dark coat walks alone down a quiet night street toward the one lit doorway.",
-   "prompt": "A quiet residential street late at night under a deep blue sky, lit by a few street lamps. A grey-haired man in a dark wool coat walks alone along the pavement toward a small house whose doorway glows with warm yellow lamplight, the only light still on in the whole street. He is seen from a little behind and to the side, walking with purpose toward that door. The man and the lit doorway are in the upper part of the picture."
+   "prompt": "Late on a calm, peaceful evening, a respected grey-haired gentleman in a long dark wool coat walks up the front path of a small friendly house toward its open front door, which glows with warm yellow lamplight where he is expected. The rest of the quiet street lies in soft deep-blue evening shade under a few street lamps. He is seen from a little behind and to the side. The man and the glowing doorway are in the upper part of the picture."
   },
   {
    "verse": 1,
@@ -147,7 +147,7 @@
    "image": "cand/01b-stair.jpg",
    "principle": "Nicodemus, a ruler and teacher, comes to him at night.",
    "shows": "Late at night a grey-haired man in a dark coat climbs an outside stair toward a lit doorway at the top.",
-   "prompt": "Late at night in a quiet modern town, a grey-haired man in a dark wool coat climbs an outside staircase up the side of a plain house toward a doorway at the top that glows with warm lamplight, the only light on. Everything else lies in deep blue night shadow. He is seen from below and behind, one hand on the rail, climbing toward the light. The lit doorway and the man are in the upper part of the picture."
+   "prompt": "Late on a calm, peaceful evening in a quiet modern town, a respected grey-haired gentleman in a long dark wool coat walks up a short flight of outdoor steps toward a welcoming open doorway glowing with warm lamplight at the top. Everything else lies in soft deep-blue evening shade. He is seen from below and behind, one hand on the rail. The glowing doorway and the man are in the upper part of the picture."
   },
   {
    "verse": 3,
@@ -203,8 +203,8 @@
    "section": "9-15",
    "image": "cand/05a-heli.jpg",
    "principle": "No one has gone up into heaven except the one who came down from heaven; he must be lifted up, so that everyone who believes may have eternal life.",
-   "shows": "A climber stranded on a cliff ledge reaches up as a rescuer is lowered to him on a line from a helicopter above.",
-   "prompt": "High on a sheer mountain cliff, a climber stranded on a narrow rock ledge reaches both arms straight up as a rescuer in a red suit is lowered toward him on a cable from a helicopter hovering above in a bright blue sky, the rescuer reaching down to him. Clear daylight, a deep green valley far below. The climber, the rescuer and the helicopter are all in the upper part of the picture."
+   "shows": "A climber on a mountain ledge raises his arms as a rescuer is lowered to him on a line from a helicopter above.",
+   "prompt": "A mountain rescue on a bright clear day: high on a rocky mountainside, a climber standing on a wide rock ledge raises both arms gladly toward a rescuer in a red suit who is being lowered toward him on a cable from a helicopter hovering above in the blue sky, the rescuer reaching down to him. A green valley lies far below. The climber, the rescuer and the helicopter are all in the upper part of the picture."
   },
   {
    "verse": 13,
@@ -212,7 +212,7 @@
    "image": "cand/05b-well.jpg",
    "principle": "No one has gone up into heaven except the one who came down from heaven; he must be lifted up, so that everyone who believes may have eternal life.",
    "shows": "At the bottom of a deep well a man looks up at the bright opening as a rope comes down to him.",
-   "prompt": "Inside a deep, narrow stone well, looking up from near the bottom: a man stands with his face turned up toward the bright round opening of daylight far above, where a rope is being let down toward him, already within reach of his raised hand. Light falls from the opening onto his upturned face. The bright opening, the rope and his face are in the upper part of the picture."
+   "prompt": "Looking up from inside a deep, dry, round stone well on a sunny day: a man stands at the bottom with his face turned up toward the bright circle of daylight far above, smiling, as a rope is let down toward him from the opening and comes within reach of his raised hand. Sunlight falls from the opening onto his upturned face. The bright opening, the rope and his face are in the upper part of the picture."
   },
   {
    "verse": 16,
