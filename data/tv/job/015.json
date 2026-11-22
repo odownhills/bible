@@ -1,5 +1,5 @@
 {
- "note": "Made by the steps in TV_PICTURES.md: the chapter is split into sections that each carry one deep meaning (\"sections\"), 10 picture ideas are written for each, the top two for each picture are made and the better is chosen by eye (2026-11-22). Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper two thirds, clear of the words. This chapter is Eliphaz's second speech: the pictures show what his words say, without taking sides. God is not pictured, Job and Eliphaz are not portrayed as biblical people, and nothing violent is shown.",
+ "note": "Made by the steps in TV_PICTURES.md: the chapter is split into sections that each carry one deep meaning (\"sections\"), 10 picture ideas are written for each, the top two for each picture are made and the better is chosen by eye (2026-11-22): 14 pictures chosen from 28 trial pictures (one trial idea was not made by the image service and one picture was remade higher in the frame). Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper two thirds, clear of the words. This chapter is Eliphaz's second speech: the pictures show what his words say, without taking sides. God is not pictured, Job and Eliphaz are not portrayed as biblical people, and nothing violent is shown.",
  "method": "Second method, asked for by Obay on 2026-11-21 after the sentence-by-sentence pictures did not connect: (1) split the chapter into sections that each carry one deep meaning, written as one plain sentence; (2) write 10 different picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye. A section has one or two pictures. What he said went wrong before: he could not tell why some pictures were there, could not connect them to the meaning, and some were too abstract.",
  "sections": [
   {
@@ -115,183 +115,134 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
-   "image": "cand/a1-gale.jpg",
+   "verse": 1,
    "section": "1-6",
-   "slot": 1,
+   "image": "01-gale.jpg",
+   "tall": "tall/01-gale.jpg",
+   "principle": "Windy words that do no good: talk that is only wind.",
+   "shows": "A man speaks forcefully on a bare hilltop in a hot gale, his pages of notes torn from his hand and blowing away, with no one to hear.",
    "prompt": "On a bare, dusty hilltop under a hard white midday sky, a middle-aged man in a plain shirt stands speaking forcefully with one arm thrown out, as if making a great speech. A hot, dry gale is blowing: it whips his hair and shirt and tears the pages of his notes out of his other hand, and the loose white pages fly away across the empty brown land. There is no one anywhere to hear him."
   },
   {
-   "image": "cand/a1-windsock.jpg",
+   "verse": 5,
    "section": "1-6",
-   "slot": 1,
-   "prompt": "A bright orange windsock on a tall pole stands over a bare, sun-baked dry plain. A hot, dusty wind blows it out stiff and full, so that it looks swollen and solid, yet you can see it is only cloth with air in it. Dust streams across the empty land. Harsh white midday light.",
-   "people": false
-  },
-  {
-   "image": "cand/a2-mirror.jpg",
-   "section": "1-6",
-   "slot": 2,
+   "image": "02-mirror.jpg",
+   "tall": "tall/02-mirror.jpg",
+   "principle": "Your own mouth condemns you, and not I; your own lips testify against you.",
+   "shows": "A man stands before his bathroom mirror, and his own reflection points an accusing finger back at him.",
    "prompt": "In a plain bathroom in cool morning light, a middle-aged man in a white shirt stands still before the mirror over the sink, his hands at his sides, looking at himself. In the mirror his own reflection is not copying him: the reflection is raising one hand and pointing an accusing finger straight back at him, with a stern face. The mirror is at eye level in the upper part of the frame."
   },
   {
-   "image": "cand/a2-recorder.jpg",
-   "section": "1-6",
-   "slot": 2,
-   "prompt": "In a wood-panelled courtroom in daylight, a lawyer in a dark suit holds up a small black voice recorder toward the court, playing it. Facing him, in the witness box, a middle-aged man in a suit has put a hand over his eyes, because what is being played is his own voice. The judge's bench is behind, high up and out of focus."
-  },
-  {
-   "image": "cand/b1-door.jpg",
+   "verse": 7,
    "section": "7-13",
-   "slot": 3,
+   "image": "03-door.jpg",
+   "tall": "tall/03-door.jpg",
+   "principle": "Were you there before the hills? Do you listen in on the council of God and take its wisdom for yourself?",
+   "shows": "A man presses his ear to a tall closed double door, bright light shining out through the crack.",
    "prompt": "In a dim, quiet corridor, a middle-aged man in shirtsleeves leans in and presses his ear against a tall, closed wooden double door, listening hard, his eyes sideways. Bright warm light shines out through the narrow crack between the two doors and under them, falling across his face and the floor. The doors are tall and grand; the man is small beside them."
   },
   {
-   "image": "cand/b1-keyhole.jpg",
+   "verse": 9,
    "section": "7-13",
-   "slot": 3,
-   "prompt": "A close view of a man in his fifties bending to peer through the keyhole of a huge old wooden door. A thin, bright beam of light streams out of the keyhole and falls across his eye and cheek, the rest of the hallway in shadow. His face shows that he thinks he has found out a great secret."
-  },
-  {
-   "image": "cand/b2-elders.jpg",
-   "section": "7-13",
-   "slot": 4,
+   "image": "04-elders.jpg",
+   "tall": "tall/04-elders.jpg",
+   "principle": "What do you know that we do not? The gray-haired and the aged are on our side.",
+   "shows": "One man stands arguing before a row of white-haired old men and women who sit calmly and look back at him unconvinced.",
    "prompt": "In a plain, sunlit room with white walls, a middle-aged man stands on one side with his hand raised, arguing his case. Facing him, seated calmly in a row of wooden chairs, are six very old men and women with white hair and deeply lined faces, their hands folded, looking back at him with patient, unconvinced eyes. Soft daylight from tall windows."
   },
   {
-   "image": "cand/b2-faces.jpg",
+   "verse": 11,
    "section": "7-13",
-   "slot": 4,
-   "prompt": "Five very old men and women with white hair and deeply lined, weathered faces sit side by side on a long wooden bench against a pale wall, looking straight ahead, calm and steady, as people who have lived a very long time and seen a great deal. Soft, even, overcast daylight."
-  },
-  {
-   "image": "cand/b3-shoulder.jpg",
-   "section": "7-13",
-   "slot": 5,
-   "prompt": "On the steps of a house on a grey afternoon, a grieving middle-aged man sits hunched. An older friend kneeling beside him has gently put a hand on his shoulder, but the man is jerking his shoulder away and turning his head aside, his eyes blazing with anger and his jaw set. The friend's face is kind and hurt."
-  },
-  {
-   "image": "cand/b3-mug.jpg",
-   "section": "7-13",
-   "slot": 5,
+   "image": "05-mug.jpg",
+   "tall": "tall/05-mug.jpg",
+   "principle": "Are God's comforts and a gentle word too little for you? Your eyes flash and you turn your spirit against God.",
+   "shows": "A kind older woman holds out a steaming mug of tea; the man at the table pushes it away with his hand, eyes flashing with anger.",
    "prompt": "In a warm kitchen in the evening, a kind older woman holds out a steaming mug of tea with both hands to a middle-aged man sitting at the table. The man refuses it: he has turned his face sharply away from her, his eyes flashing with anger, one hand raised to push it off. The lamp light is soft and warm."
   },
   {
-   "image": "cand/c1-shirt.jpg",
+   "verse": 14,
    "section": "14-16",
-   "slot": 6,
+   "image": "06-shirt.jpg",
+   "tall": "tall/06-shirt.jpg",
+   "principle": "No mortal is pure before God, when even the heavens are not pure in his eyes.",
+   "shows": "A white shirt held up to a bright window: the strong light shows stains all through what looked clean.",
    "prompt": "A close view of two hands holding up a white shirt in front of a big, bright window. In ordinary light the shirt would look clean, but the strong light shining through it shows faint grey stains and marks all through the cloth. The window light is bright clear daylight; the room around is in soft shadow."
   },
   {
-   "image": "cand/c1-drink.jpg",
-   "section": "14-16",
-   "slot": 6,
-   "prompt": "At a polished dining table in a fine house, a well-dressed man in a suit tips back a tall clear glass and gulps down murky, muddy brown water eagerly, as if it were fresh spring water. On the table beside him stands a glass jug full of the same dirty brown water. Cool, clear daylight from a window."
-  },
-  {
-   "image": "cand/d1-land.jpg",
+   "verse": 17,
    "section": "17-19",
-   "slot": 7,
-   "prompt": "At the edge of a wide stretch of family farmland under a bright, clear midmorning sky, an old white-haired grandfather stands with his grown son and his teenage grandson. The old man is pointing out across the fields and telling them something, and they listen. Their own green fields and one farmhouse stretch to the horizon, with no other house in sight."
-  },
-  {
-   "image": "cand/d1-notebook.jpg",
-   "section": "17-19",
-   "slot": 7,
+   "image": "07-notebook.jpg",
+   "tall": "tall/07-notebook.jpg",
+   "principle": "What the wise have handed down from their fathers and not hidden.",
+   "shows": "Old wrinkled hands pass a worn handwritten notebook into a young man's open hands.",
    "prompt": "A close view across an old wooden kitchen table: a very old man's wrinkled hands carefully pass a worn, handwritten leather notebook, its pages soft with age, into the open hands of a young man. Soft overcast window light. The notebook has no writing visible on its cover."
   },
   {
-   "image": "cand/e1-awake.jpg",
+   "verse": 20,
    "section": "20-24",
-   "slot": 8,
-   "prompt": "In a large, luxurious bedroom at night, lit only by cold blue moonlight from a tall window, a wealthy middle-aged man lies in a huge bed with silk sheets, wide awake. His eyes are wide open with fear and his head is lifted a little from the pillow, listening to a sound in the silent house. The room is grand and peaceful; he is not."
-  },
-  {
-   "image": "cand/e1-screens.jpg",
-   "section": "20-24",
-   "slot": 8,
+   "image": "08-screens.jpg",
+   "tall": "tall/08-screens.jpg",
+   "principle": "The wicked man has no peace: sounds of dread are in his ears even in a time of peace.",
+   "shows": "Late at night a man in a dressing gown stares in fear at a wall of security screens that show only calm, empty grounds.",
    "prompt": "Late at night in a dark study of a mansion, a middle-aged man in a silk dressing gown stands tense and alone before a wall of glowing security camera screens. Every screen shows the same calm, empty grounds, gardens and gates at night, yet he stares at them with fear. The screens' blue glow lights his face."
   },
   {
-   "image": "cand/e2-street.jpg",
+   "verse": 23,
    "section": "20-24",
-   "slot": 9,
-   "prompt": "At dusk, a man in an expensive but crumpled and dirty overcoat walks slowly down an empty city street of closed and shuttered shops, looking from side to side for somewhere to find bread, his hands empty. Behind him, at the end of the street, a vast black storm cloud is rolling in and swallowing the last light."
-  },
-  {
-   "image": "cand/e2-fridge.jpg",
-   "section": "20-24",
-   "slot": 9,
+   "image": "09-fridge.jpg",
+   "tall": "tall/09-fridge.jpg",
+   "principle": "He wanders for bread, 'Where is it?', and knows a day of darkness is ready at his hand.",
+   "shows": "In the dark kitchen of a grand house a man in a suit stands at a wide-open refrigerator that is completely empty.",
    "prompt": "In the dark kitchen of a grand house at night, a man in an expensive but rumpled suit stands before a huge open refrigerator that is completely empty, its cold white light falling on his hungry, frightened face. Outside the tall window behind him the sky is black."
   },
   {
-   "image": "cand/f1-fist.jpg",
+   "verse": 25,
    "section": "25-29",
-   "slot": 10,
+   "image": "10-fist.jpg",
+   "tall": "tall/10-fist.jpg",
+   "principle": "He has stretched out his hand against God and acts the mighty man against the Almighty.",
+   "shows": "On a rocky height under a towering storm sky a man shakes his clenched fist up at the heavens.",
    "prompt": "On a high rocky outcrop under a dark, churning storm sky, a big, strong man in a heavy coat stands with his feet planted wide, his head thrown back, shaking his clenched fist up at the sky in defiance. Wind tears at his coat. The storm clouds tower above him, huge, and he is small against them."
   },
   {
-   "image": "cand/f1-ram.jpg",
+   "verse": 27,
    "section": "25-29",
-   "slot": 10,
-   "prompt": "A big ram with heavy curled horns charges head down, neck stiff, straight at the foot of a gigantic sheer mountain cliff that rises up out of sight. Dust flies from its hooves. The cliff towers above it, vast and unmoved, in clear afternoon light.",
-   "people": false
-  },
-  {
-   "image": "cand/f2-armchair.jpg",
-   "section": "25-29",
-   "slot": 11,
+   "image": "11-armchair.jpg",
+   "tall": "tall/11-armchair.jpg",
+   "principle": "Fat and self-satisfied, he lives in houses ready to become heaps, and his wealth will not last.",
+   "shows": "A heavy, well-fed man eats contentedly in a gilded armchair while the grand room cracks and falls apart round him.",
    "prompt": "In a once-grand room with gilded mouldings, a very heavy, well-fed man in a fine suit lounges in a gilded armchair, eating contentedly from a heaped plate, his face round and full. All around him the room is falling apart: deep cracks run up the walls, plaster is falling, and a hole has opened in the ceiling. He does not notice. Grey daylight through the hole."
   },
   {
-   "image": "cand/f2-town.jpg",
-   "section": "25-29",
-   "slot": 11,
-   "prompt": "Seen from a little above in flat grey light, a small abandoned town of stone houses lies in ruin: the houses are roofless, their walls collapsing into heaps of stone, weeds growing through. In the middle of it stands one large, freshly painted mansion with lit windows, the only house still whole, already with a crack running down its front wall.",
-   "people": false
-  },
-  {
-   "image": "cand/g1-shoot.jpg",
+   "verse": 30,
    "section": "30-35",
-   "slot": 12,
-   "prompt": "A close view of a young grapevine shoot against a dark background: its tender new leaves and curling tips have been shrivelled, browned and blackened by a passing flame, and a thin wisp of smoke still rises from it. Just behind it, out of focus, a little fire is dying out on the dry ground.",
-   "people": false
-  },
-  {
-   "image": "cand/g1-sapling.jpg",
-   "section": "30-35",
-   "slot": 12,
+   "image": "12-sapling.jpg",
+   "tall": "tall/12-sapling.jpg",
+   "principle": "A flame will dry up his shoots; emptiness is all he gets in exchange.",
+   "shows": "A young tree on a burnt hillside, its leaves dried brown by a passing fire, a line of flame still on the hill behind.",
    "prompt": "On a dark, smoky hillside under a heavy grey sky, a single young tree stands alone. Its new shoots and leaves, which should be green, have all been dried brown and curled by a passing fire, and grey ash covers the ground round its trunk. A last line of embers glows far off on the hill.",
    "people": false
   },
   {
-   "image": "cand/g2-grapes.jpg",
+   "verse": 32,
    "section": "30-35",
-   "slot": 13,
-   "prompt": "Under an old grapevine on a sunny midday, the dry ground is scattered with many small, hard, green unripe grapes that have fallen off before their time, and the bunches still hanging above are few and stunted. Clear bright light, the vine leaves above in the upper part of the frame.",
+   "image": "13-grapes.jpg",
+   "tall": "tall/13-grapes.jpg",
+   "principle": "Before his time it is paid in full: like a vine he drops his grapes unripe.",
+   "shows": "Small hard green grapes lie fallen on the dry ground under a vine, dropped before they could ripen.",
+   "prompt": "A low view close to the ground under an old grapevine at bright midday. In the centre of the frame, raised up on a low bank of dry, cracked earth at eye level, lie dozens of small, hard, green unripe grapes that have fallen off before their time, sharp and clear. Just above them hang a few stunted, half-empty bunches on the twisted vine. The fallen green grapes are the subject and sit in the middle of the picture, well above the bottom third.",
    "people": false
   },
   {
-   "image": "cand/g2-olive.jpg",
+   "verse": 34,
    "section": "30-35",
-   "slot": 13,
-   "prompt": "An old olive tree in bright, soft spring light is shedding all its tiny white blossoms. They drift down through the air like snow and lie thick on the ground beneath, and the branches above are left bare of any flower or fruit.",
-   "people": false
-  },
-  {
-   "image": "cand/g3-tent.jpg",
-   "section": "30-35",
-   "slot": 14,
+   "image": "14-tent.jpg",
+   "tall": "tall/14-tent.jpg",
+   "principle": "The company of the godless is barren, and fire devours the tents of bribery.",
+   "shows": "The burned-out frame of a once-lavish party tent stands on barren, cracked ground, its fine cloth charred.",
    "prompt": "On a barren, cracked, grey field on an overcast morning, the blackened frame of a large, once-lavish party tent stands burned out: its canvas is gone, the metal poles scorched, scraps of gold fabric charred, and a little smoke still rising. Nothing grows anywhere on the field.",
-   "people": false
-  },
-  {
-   "image": "cand/g3-envelope.jpg",
-   "section": "30-35",
-   "slot": 14,
-   "prompt": "On a polished dark wooden desk, a thick brown envelope stuffed with plain banknotes, their faces not visible, is on fire: its edges curl, glow and turn to black ash as the flames eat into the money. Dim room, the fire the brightest thing in the frame.",
    "people": false
   }
  ]
