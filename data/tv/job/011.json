@@ -83,108 +83,81 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
-   "image": "cand/a1-steps.jpg",
+   "verse": 1,
    "section": "1-6",
-   "slot": 1,
+   "image": "01-steps.jpg",
+   "tall": "tall/01-steps.jpg",
+   "principle": "A man full of words does not become right by talking: Zophar answers Job.",
+   "shows": "A well-dressed friend stands over a weary grey-haired man slumped on the steps of his storm-wrecked house and jabs a finger at him as he lectures.",
    "prompt": "On the front steps of a storm-damaged farmhouse in grey daylight, a weary grey-haired man in a plain dusty shirt sits slumped with his elbows on his knees and his eyes down. Standing over him on the path, a well-dressed friend of about the same age leans forward and jabs a pointing finger at him as he lectures, his face stern and certain. Both men are in the upper part of the frame."
   },
   {
-   "image": "cand/a1-table.jpg",
+   "verse": 5,
    "section": "1-6",
-   "slot": 1,
-   "prompt": "At a plain wooden kitchen table in soft daylight, a weary grey-haired man in a worn shirt sits pleading his case with both open hands raised. Across the table a well-dressed friend of about the same age holds up one flat hand to stop him and leans in to answer, his face stern and certain."
+   "image": "02-iceberg.jpg",
+   "tall": "tall/02-iceberg.jpg",
+   "principle": "If only God would speak: the secrets of wisdom are far greater than what Job can see.",
+   "shows": "An iceberg seen at the waterline: a small white tip above the surface and a huge hidden mass below it.",
+   "prompt": "A split view at the waterline of calm, clear polar sea under a bright pale sky. The waterline runs across the upper part of the frame. Above it a small white tip of an iceberg shows. Below the surface, filling the middle of the frame, the hidden part of the same iceberg is enormous, many times larger, glowing blue-white as it goes down into deep clear blue water.",
+   "people": false
   },
   {
-   "image": "cand/a2-iceberg.jpg",
-   "section": "1-6",
-   "slot": 2,
-   "people": false,
-   "prompt": "A split view at the waterline of calm, clear polar sea under a bright pale sky. The waterline runs across the upper part of the frame. Above it a small white tip of an iceberg shows. Below the surface, filling the middle of the frame, the hidden part of the same iceberg is enormous, many times larger, glowing blue-white as it goes down into deep clear blue water."
-  },
-  {
-   "image": "cand/a2-mountain.jpg",
-   "section": "1-6",
-   "slot": 2,
-   "prompt": "A hiker in a plain jacket, seen from behind, stands on a trail looking up at the rounded green hill in front of him. Behind that hill, through a wide break in the clouds, a far greater snow-covered mountain towers many times higher, filling the sky, much bigger than anything he is looking at. Bright clear daylight."
-  },
-  {
-   "image": "cand/b1-tape.jpg",
+   "verse": 7,
    "section": "7-12",
-   "slot": 1,
+   "image": "03-tape.jpg",
+   "tall": "tall/03-tape.jpg",
+   "principle": "No one can search out the limit of the Almighty: its measure is longer than the earth and broader than the sea.",
+   "shows": "A small boy kneels at the edge of an endless sea holding out the end of a tape measure toward it.",
    "prompt": "On a wide empty beach in bright daylight, a small boy kneels on the dry sand at the water's edge holding out the end of a yellow tape measure toward the sea, which stretches away flat, calm and endless to the horizon under a huge open sky. The rest of the tape is still coiled in its case on the sand beside him. The boy and the horizon are in the upper part of the frame."
   },
   {
-   "image": "cand/b1-stars.jpg",
+   "verse": 11,
    "section": "7-12",
-   "slot": 1,
-   "prompt": "At night on a high rocky shore, a man in a plain hooded rain jacket, seen small from behind, stands looking out over a vast dark ocean under an immense sky packed with stars and the bright band of the Milky Way. The sky and the sea are so huge that he is tiny beneath them."
+   "image": "04-hollow.jpg",
+   "tall": "tall/04-hollow.jpg",
+   "principle": "God knows empty men; a hollow man is as far from sense as a wild donkey's colt is from being born a man.",
+   "shows": "A huge old tree with a full green crown whose split trunk shows it is completely hollow inside.",
+   "prompt": "In a sunny open field stands a huge old tree with a full, green, healthy-looking crown. But its thick trunk has split open down one side, and through the split you can see that the trunk is completely hollow inside, an empty dark shell with nothing in it. The split trunk is in the middle of the frame, plainly visible.",
+   "people": false
   },
   {
-   "image": "cand/b2-tree.jpg",
-   "section": "7-12",
-   "slot": 2,
-   "people": false,
-   "prompt": "In a sunny open field stands a huge old tree with a full, green, healthy-looking crown. But its thick trunk has split open down one side, and through the split you can see that the trunk is completely hollow inside, an empty dark shell with nothing in it. The split trunk is in the middle of the frame, plainly visible."
-  },
-  {
-   "image": "cand/b2-donkey.jpg",
-   "section": "7-12",
-   "slot": 2,
-   "people": false,
-   "prompt": "In a dry, rocky desert valley in clear daylight, a young wild donkey foal, shaggy and grey-brown, stands with its legs planted and its long ears up, staring straight ahead, stubborn and untamed. Behind it the wild empty land stretches away to bare hills."
-  },
-  {
-   "image": "cand/c1-stone.jpg",
+   "verse": 13,
    "section": "13-15",
-   "slot": 1,
-   "prompt": "A grey-haired man in a plain shirt stands in the yard of his simple home in clear morning light. His arm is held out in front of him and his hand has just opened, letting a heavy rough stone drop away from it toward the ground; his palm is now turned up and empty. His face is lifted and calm. The open hand and the falling stone are at the height of his chest, in the middle of the frame."
-  },
-  {
-   "image": "cand/c1-face.jpg",
-   "section": "13-15",
-   "slot": 1,
+   "image": "05-face.jpg",
+   "tall": "tall/05-face.jpg",
+   "principle": "Set your heart right and spread out your palms to him, and you will lift your face without blemish, solid and unafraid.",
+   "shows": "A grey-haired man stands upright in an open field in clear morning light, face lifted to the sky and open hands spread, steady and unafraid.",
    "prompt": "A grey-haired man in a plain shirt stands upright in an open green field in clear, bright morning light, the sun high. His head is lifted and his face is raised calmly to the sky, his open hands spread at his sides with the palms turned forward. He stands steady, solid and unafraid. Fresh grass round him and a wide clear sky."
   },
   {
-   "image": "cand/d1-stream.jpg",
+   "verse": 16,
    "section": "16-19",
-   "slot": 1,
-   "people": false,
-   "prompt": "A clear stream runs fast and sparkling down a green valley and away into the distance under a brilliant high noon sun in a deep blue sky. Far off on the horizon the last dark storm clouds are moving away. The grass and trees are washed clean and shining with light."
-  },
-  {
-   "image": "cand/d1-bank.jpg",
-   "section": "16-19",
-   "slot": 1,
+   "image": "06-river.jpg",
+   "tall": "tall/06-river.jpg",
+   "principle": "You will forget misery and remember it like water that has passed away; life will rise brighter than noon.",
+   "shows": "A grey-haired man sits at ease on a sunlit riverbank at midday, watching the river flow away round the bend.",
    "prompt": "A grey-haired man sits relaxed on a grassy riverbank at bright midday, watching a clear river flow past him and away round a bend into the distance. His face is peaceful and lit by the high noon sun, the sky clear blue above him."
   },
   {
-   "image": "cand/d2-hammock.jpg",
+   "verse": 18,
    "section": "16-19",
-   "slot": 2,
-   "prompt": "On the porch of a freshly mended farmhouse in warm afternoon light, a grey-haired man lies sound asleep in a hammock, one arm behind his head, completely at ease. The front door stands open behind him, and beyond the porch rail green fields with grazing sheep lie peaceful in the sun."
-  },
-  {
-   "image": "cand/d2-meadow.jpg",
-   "section": "16-19",
-   "slot": 2,
+   "image": "07-meadow.jpg",
+   "tall": "tall/07-meadow.jpg",
+   "principle": "You will trust because there is hope, and lie down in safety with no one to make you tremble.",
+   "shows": "A grey-haired farmer lies asleep under a shade tree with his hat over his eyes, his sheep lying at rest round him.",
    "prompt": "In a quiet green meadow under a big shade tree, a grey-haired farmer lies asleep on the grass with his hat tipped over his eyes, perfectly at ease, while his sheep lie resting round him in the sunshine. Soft afternoon light, a clear sky."
   },
   {
-   "image": "cand/e1-ember.jpg",
+   "verse": 20,
    "section": "20",
-   "slot": 1,
-   "people": false,
-   "prompt": "Close up in the dark, a burnt-out campfire of cold grey ashes and charred sticks. One last small ember still glows faintly in the middle, and a single thin thread of smoke rises from it, curling up and vanishing into the black air. The ember and the thread of smoke are in the upper part of the frame."
-  },
-  {
-   "image": "cand/e1-gate.jpg",
-   "section": "20",
-   "slot": 1,
+   "image": "08-gate.jpg",
+   "tall": "tall/08-gate.jpg",
+   "principle": "But the eyes of the wicked will fail; their refuge is lost and their hope is their last breath.",
+   "shows": "At night in pouring rain, a man grips the bars of a locked iron gate and peers into dark grounds; there is no shelter anywhere.",
    "prompt": "At night in pouring rain, a man in a soaked dark coat stands outside a tall locked iron gate, gripping its bars with both hands and peering through them into dark grounds where no window is lit. There is no shelter anywhere round him. The man and the gate fill the upper part of the frame."
   }
- ]
+ ],
+ "chosen": "Chosen by eye from the 16 trial pictures on 2026-11-22: the friend on the steps (clearer than the kitchen table, which also repeats Job 12's kitchen), the iceberg, the boy measuring the sea (it holds through verse 10), the hollow tree from verse 11 (the wild donkey would have been up 12 seconds before the words name it), the man with his face lifted (the falling stone sat in the words' band), the man by the river, the farmer asleep among his sheep (Job 12 has a hammock), and the man at the locked gate."
 }
