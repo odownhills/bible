@@ -16,7 +16,8 @@
     "A sunrise swallowed by a wall of black cloud before it can light the fields",
     "An old man sits on the edge of a bed in a dark room, head bowed, a baby photograph in his hand",
     "A hospital nursery window at night with every light switched off"
-   ]
+   ],
+   "chosen": "a1-tear chosen over a1-photo; a2-eclipse chosen over a2-cloud (trial pictures compared by eye, 2026-11-22)."
   },
   {
    "verses": "6-10",
@@ -32,7 +33,8 @@
     "A front door standing open on a dark night, wind blowing leaves into the house",
     "A man sitting up through the night beside a lamp that has gone out",
     "A patch of night sky where the stars are going out one by one"
-   ]
+   ],
+   "chosen": "b1-street chosen over b1-fair; b2-window chosen over b2-horizon (trial pictures compared by eye, 2026-11-22)."
   },
   {
    "verses": "11-16",
@@ -48,7 +50,8 @@
     "A grand old house half swallowed by ivy and trees",
     "A tired old man asleep in an armchair at last, a blanket over him",
     "An empty bassinet in a quiet room"
-   ]
+   ],
+   "chosen": "c1-hall chosen over c1-tombs (trial pictures compared by eye, 2026-11-22)."
   },
   {
    "verses": "17-19",
@@ -64,7 +67,8 @@
     "Polished dress shoes and worn work boots side by side at a door",
     "A heavy pack dropped on the ground at the end of a long trail",
     "A foreman's whistle hanging silent on a nail in an empty yard"
-   ]
+   ],
+   "chosen": "d1-graves chosen over d1-shackles (trial pictures compared by eye, 2026-11-22)."
   },
   {
    "verses": "20-23",
@@ -80,7 +84,8 @@
     "A man holding a map on a road that has been washed away",
     "A caged songbird in a sunny window",
     "A man at the bottom of a deep well looking up at the bright circle of sky"
-   ]
+   ],
+   "chosen": "e1-hedge chosen over e1-sun (trial pictures compared by eye, 2026-11-22)."
   },
   {
    "verses": "24-26",
@@ -96,115 +101,86 @@
     "Hands gripping grey hair",
     "A stale loaf on a table and a man weeping",
     "A house shaken by storm wind at night with one light on"
-   ]
+   ],
+   "chosen": "f1-bread chosen over f1-awake (trial pictures compared by eye, 2026-11-22)."
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
-   "image": "cand/a1-photo.jpg",
+   "verse": 1,
    "section": "1-5",
-   "slot": 1,
-   "prompt": "At a plain wooden table in a dim, quiet room, a grey-haired man in a plain shirt, his face drawn with grief, is laying a small framed photograph face down on the table with one hand. The frame is still tilted up toward us, so the photograph in it can be seen: a newborn baby wrapped in a white hospital blanket. Grey daylight from a window falls on his face and on the frame."
-  },
-  {
-   "image": "cand/a1-tear.jpg",
-   "section": "1-5",
-   "slot": 1,
+   "image": "01-tear.jpg",
+   "tall": "tall/01-tear.jpg",
+   "principle": "Job curses the day he was born.",
+   "shows": "A grey-haired man, his face twisted with grief, tears in two an old photograph of a newborn baby.",
    "prompt": "In a dim, quiet room, a grey-haired man in a plain shirt holds up an old faded photograph of a newborn baby wrapped in a white blanket, and is tearing it slowly in two with both hands, his face twisted with grief. Grey daylight from a window falls on his face and on the photograph."
   },
   {
-   "image": "cand/a2-eclipse.jpg",
+   "verse": 4,
    "section": "1-5",
-   "slot": 2,
+   "image": "02-eclipse.jpg",
+   "tall": "tall/02-eclipse.jpg",
+   "principle": "That day, let it be darkness; let no daylight shine on it.",
+   "shows": "A total eclipse turns midday to night over a wide farm valley.",
    "prompt": "A total eclipse of the sun at midday: high in the sky the sun is a black disc ringed with thin white fire, and the whole wide valley of farms and fields below has fallen into a deep, eerie twilight, as if the day had been turned into night. Only a faint pale glow lies along the far horizon.",
    "people": false
   },
   {
-   "image": "cand/a2-cloud.jpg",
-   "section": "1-5",
-   "slot": 2,
-   "prompt": "At midday over a wide valley of farms and fields, a huge, low, black cloud has settled over the whole land and swallowed the sun, so that the day has gone dark. Only a thin last edge of daylight shows far off at the horizon, and the fields lie in deep shadow under the cloud.",
-   "people": false
-  },
-  {
-   "image": "cand/b1-fair.jpg",
+   "verse": 6,
    "section": "6-10",
-   "slot": 3,
-   "prompt": "A small-town fairground at night, completely deserted. The big wheel, the carousel and the rows of stalls stand dark and still, with every light switched off and not a single bulb lit. A few streamers lie on the empty ground. Faint moonlight shows their shapes against a deep blue night sky.",
-   "people": false
-  },
-  {
-   "image": "cand/b1-street.jpg",
-   "section": "6-10",
-   "slot": 3,
+   "image": "03-street.jpg",
+   "tall": "tall/03-street.jpg",
+   "principle": "Let that night not rejoice among the days of the year; let no cry of joy come into it.",
+   "shows": "A street of houses at night, every one glowing with festive lights except one house in the middle that stands completely dark.",
    "prompt": "A quiet street of houses at night. Every house along the street glows warmly, with lit windows and strings of festive lights, as if each were holding a celebration, except one house in the middle, which stands completely dark, with not a single light in any window.",
    "people": false
   },
   {
-   "image": "cand/b2-window.jpg",
+   "verse": 9,
    "section": "6-10",
-   "slot": 4,
+   "image": "04-window.jpg",
+   "tall": "tall/04-window.jpg",
+   "principle": "Let it hope for light, and there be none; let it not see the dawn.",
+   "shows": "Before dawn a grey-haired man stands at a window staring out at a black, starless sky with no light on the horizon.",
    "prompt": "Inside a dark room before dawn, a grey-haired man in a plain shirt stands at a tall window with one hand on the frame, seen from slightly behind and to the side, staring out at a black night sky with not a single star in it. Far out over the dark fields the horizon shows no glow of dawn at all. Only a faint cold light falls on his face and his hand."
   },
   {
-   "image": "cand/b2-horizon.jpg",
-   "section": "6-10",
-   "slot": 4,
-   "prompt": "A wide, empty landscape of dark fields and low hills in the last hour of night, under a sky without a single star. Low over the far horizon, where the dawn should be breaking, there is no light at all, only black cloud. The faintest cold grey shows the outline of the hills.",
-   "people": false
-  },
-  {
-   "image": "cand/c1-hall.jpg",
+   "verse": 13,
    "section": "11-16",
-   "slot": 5,
+   "image": "05-hall.jpg",
+   "tall": "tall/05-hall.jpg",
+   "principle": "He would be lying quiet and at rest with the kings and princes of the earth, whose palaces and gold are ruins now.",
+   "shows": "The silent great hall of an abandoned mansion: gilded chairs, a broken chandelier and tarnished silver under dust, light through broken windows.",
    "prompt": "The great hall of a grand old mansion, long abandoned and utterly silent. Gilded chairs and a long banquet table stand under thick dust, a huge crystal chandelier hangs broken and crooked from the ceiling, gold-framed mirrors hang askew on the walls, and tarnished silver dishes and candlesticks stand on the table. Soft shafts of daylight fall through tall broken windows with ivy growing in.",
    "people": false
   },
   {
-   "image": "cand/c1-tombs.jpg",
-   "section": "11-16",
-   "slot": 5,
-   "prompt": "A row of grand old stone family tombs, each like a small stately house with carved pillars and heavy bronze doors, stands in a quiet old cemetery under tall trees. Moss and ivy grow over them and fallen leaves lie on their steps. Soft, still afternoon light; everything is peaceful and silent.",
-   "people": false
-  },
-  {
-   "image": "cand/d1-shackles.jpg",
+   "verse": 17,
    "section": "17-19",
-   "slot": 6,
-   "prompt": "Inside an old stone room, a pair of heavy iron shackles joined by a chain hangs open and empty from an iron hook on the wall, right beside a heavy wooden door that stands wide open onto bright, quiet daylight and green fields. Dust floats in the light. Everything is still.",
-   "people": false
-  },
-  {
-   "image": "cand/d1-graves.jpg",
-   "section": "17-19",
-   "slot": 6,
+   "image": "06-graves.jpg",
+   "tall": "tall/06-graves.jpg",
+   "principle": "There the troubled rest, the prisoner and the slave go free, and small and great lie together.",
+   "shows": "In a quiet graveyard under one great tree, a grand marble monument stands side by side with a small plain wooden marker.",
    "prompt": "In a quiet country graveyard under one great spreading tree, a tall, grand, polished marble monument stands right beside a small plain wooden grave marker, the two side by side in the same soft grass, sharing the same shade. Peaceful late-afternoon light; a few wildflowers in the grass.",
    "people": false
   },
   {
-   "image": "cand/e1-hedge.jpg",
+   "verse": 20,
    "section": "20-23",
-   "slot": 7,
+   "image": "07-hedge.jpg",
+   "tall": "tall/07-hedge.jpg",
+   "principle": "Why is life given to the man in misery, whose way is hidden, whom God has hedged in?",
+   "shows": "Seen from a little above, a grey-haired man stands alone in bright daylight, walled in on every side by a tall hedge with no way out.",
    "prompt": "Seen from a little above, a grey-haired man in a plain shirt stands alone on a small patch of grass that is walled in on every side by a tall, thick, dark green hedge far higher than his head, with no gap, gate or path out anywhere. He stands facing the hedge with his empty hands hanging at his sides. Bright daylight falls on him from above."
   },
   {
-   "image": "cand/e1-sun.jpg",
-   "section": "20-23",
-   "slot": 7,
-   "prompt": "A grey-haired man in a plain shirt sits slumped in a chair in the dark corner of a bare room, his eyes shut and his face turned away, while a broad beam of bright morning sunlight pours in through a window and floods across the floor right up to his feet."
-  },
-  {
-   "image": "cand/f1-bread.jpg",
+   "verse": 24,
    "section": "24-26",
-   "slot": 8,
+   "image": "08-bread.jpg",
+   "tall": "tall/08-bread.jpg",
+   "principle": "His sighing comes before his bread; what he dreaded has come; no ease, no quiet, no rest.",
+   "shows": "At a kitchen table in grey morning light a grey-haired man sits with his face buried in his hands, his bread and water untouched.",
    "prompt": "At a plain kitchen table in grey morning light, a grey-haired man in a plain shirt sits with his face buried in his hands. In front of him a plate with a piece of bread and a glass of water stand untouched."
-  },
-  {
-   "image": "cand/f1-awake.jpg",
-   "section": "24-26",
-   "slot": 8,
-   "prompt": "At night in a dim bedroom, lit faintly by a streetlight through the curtains, a grey-haired man lies on his back in a tangle of twisted sheets, wide awake, staring up at the ceiling, worn out and unable to rest."
   }
  ]
 }
