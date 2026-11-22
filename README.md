@@ -3,6 +3,7 @@
 An original plain-English translation from the Hebrew and Greek, one chapter a night.
 
 - `translations/` chapter sources (see `TRANSLATION_RULES.md` for rules and format)
+- `decisions/` the reasons for every bracketed alternate reading, one file per chapter, for Obay's reviews
 - `site/` the generated website (Cloudflare Pages output folder, no build command)
 - `scripts/build.py` regenerates `site/`; `scripts/check.py` validates a chapter;
   `scripts/next.py` names the next chapter; `scripts/tts.py` records audio with Gemini

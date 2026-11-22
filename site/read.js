@@ -1,10 +1,14 @@
 /* Listen + Read mode for chapter pages: plays the chapter's recording while the words on the page
-   turn from purple to white as the voice reaches them, and the page scrolls to keep up.
+   brighten as the voice reaches them, a soft marker glides from word to word, and the page stays
+   still while the voice reads down it, gliding up now and then to keep the words in view.
+   Alternate readings and notes (not read aloud) are shown dimmed; "Hide alt" hides them.
    Word start times come from audio/<book>/<n>.json (made by scripts/align.py). */
 (function(){
 'use strict';
 var d=document,ch=null,words=[],T=null,cur=-1,active=false,want=false,busy=false,ready=false,dragging=false;
 var follow=true,followT=0,raf=0,lastSave=0,wake=null,blobs={},bar=null,audio=null,serial=0;
+var pill=null,pillTop=null,glideRaf=0,gliding=false;
+var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 var PLAY='<path class="solid" d="M8 5.200v13.600a.6.6 0 0 0 .900.500l11-6.800a.6.6 0 0 0 0-1L8.900 4.700a.6.6 0 0 0-.900.500z"/>';
 var PAUSE='<path class="solid" d="M7 5h3.500v14H7zM13.500 5H17v14h-3.500z"/>';
 var LEAD=0.06;   // light a word up a moment early so the eye is never behind the voice
@@ -18,7 +22,7 @@ function rate(){return parseFloat($('lr-rate').value)||1.25}
 function chapter(){
   ch=$('ch'); words=ch?Array.prototype.slice.call(ch.querySelectorAll('.w')):[];
   for(var k=0;k<words.length;k++) words[k]._k=k;
-  cur=-1; T=null;
+  cur=-1; T=null; pill=null; pillTop=null;
 }
 
 function build(){
@@ -26,7 +30,7 @@ function build(){
   bar=d.createElement('div'); bar.className='lr-bar'; bar.id='lr-bar'; bar.hidden=true;
   bar.innerHTML='<div class="lr-in">'+
     '<input class="seek" id="lr-seek" type="range" min="0" max="100" step="0.1" value="0" aria-label="Position in chapter" disabled>'+
-    '<div class="times"><span id="lr-cur">0:00</span><span id="lr-rem">0:00</span></div>'+
+    '<div class="times"><span id="lr-cur">0:00</span><button class="alt-t" id="lr-alt" type="button" hidden>Hide alt</button><span id="lr-rem">0:00</span></div>'+
     '<div class="lr-row">'+
       '<select class="chip" id="lr-rate" aria-label="Speed">'+
         '<option value="1">1&times;</option><option value="1.1">1.1&times;</option><option value="1.25">1.25&times;</option>'+
@@ -58,6 +62,8 @@ function build(){
   $('lr-back').onclick=function(){ jump(audio.currentTime-10); };
   $('lr-fwd').onclick=function(){ jump(audio.currentTime+10); };
   $('lr-close').onclick=close;
+  $('lr-alt').onclick=function(){ put('lrAlts',!get('lrAlts',true)); alts(); pillTop=null; marker(); scrollToWord(true); };
+  window.addEventListener('resize',function(){ if(active){ pillTop=null; marker(); } });
   $('lr-rate').onchange=function(){ put('readRate',$('lr-rate').value); audio.defaultPlaybackRate=rate(); audio.playbackRate=rate(); paint(); };
 
   // A finger on the text pauses the auto-scroll; it picks up again a few seconds after the last touch.
@@ -76,6 +82,12 @@ function build(){
   }
 }
 
+function alts(){
+  // Alternate readings are shown unless the reader chose to hide them; the choice is remembered.
+  var show=get('lrAlts',true),b=$('lr-alt');
+  d.body.classList.toggle('noalt',!show);
+  if(b){ b.textContent=show?'Hide alt':'Show alt'; b.setAttribute('aria-pressed',String(!show)); b.hidden=!(ch&&ch.querySelector('.aside')); }
+}
 function msg(t){ var m=$('lr-msg'); m.hidden=!t; m.textContent=t||''; }
 function icon(){ $('lr-ico').innerHTML=want?PAUSE:PLAY; $('lr-play').setAttribute('aria-label',want?'Pause':'Play'); }
 function awake(on){
@@ -122,16 +134,46 @@ function mark(){
   else { for(j=k+1;j<=cur;j++) words[j].classList.remove('on'); }
   cur=k;
   if(k>=0) words[k].classList.add('now');
+  marker();
   if(follow) scrollToWord(false);
 }
+function marker(){
+  // One soft marker slides from word to word (instead of a box popping on and off each word);
+  // on a new line it moves there at once, since the eye jumps to the next line anyway.
+  if(!ch)return;
+  if(!pill||!ch.contains(pill)){ pill=d.createElement('span'); pill.className='lr-pill'; pill.setAttribute('aria-hidden','true'); ch.appendChild(pill); pillTop=null; }
+  var w=cur>=0?words[cur]:null,r=w&&(w.getClientRects()[0]);
+  if(!r){ pill.style.opacity='0'; pillTop=null; return; }
+  var o=ch.getBoundingClientRect(),x=r.left-o.left-4,y=r.top-o.top-2,jump=pillTop===null||Math.abs(y-pillTop)>4;
+  if(jump) pill.style.transition='none';
+  pill.style.transform='translate('+x.toFixed(1)+'px,'+y.toFixed(1)+'px)';
+  pill.style.width=(r.width+8).toFixed(1)+'px'; pill.style.height=(r.height+4).toFixed(1)+'px'; pill.style.opacity='1';
+  if(jump){ void pill.offsetWidth; pill.style.transition=''; }
+  pillTop=y;
+}
 function scrollToWord(always){
+  // The page holds still while the voice reads down it. Once the word being read passes 60% of
+  // the visible area (or is off screen), the page glides up slowly to bring it back near the top.
   if(!active)return;
   var w=words[Math.max(cur,0)]; if(!w)return;
-  var r=w.getBoundingClientRect(),room=window.innerHeight-(bar?bar.offsetHeight:0),target=room*0.36,delta=r.top-target;
-  if(Math.abs(delta)>(always?4:22)) window.scrollBy({top:delta,behavior:'smooth'});
+  var r=w.getBoundingClientRect(),room=window.innerHeight-(bar?bar.offsetHeight:0),target=room*0.3;
+  if(always){ if(Math.abs(r.top-target)>4) glideBy(r.top-target,450); return; }
+  if(gliding)return;
+  if(r.top>room*0.6||r.top<room*0.06) glideBy(r.top-target,900);
+}
+function glideBy(delta,ms){
+  cancelAnimationFrame(glideRaf); gliding=false;
+  if(still){ window.scrollBy(0,delta); return; }
+  var from=window.scrollY,start=null; gliding=true;
+  glideRaf=requestAnimationFrame(function step(now){
+    if(start===null) start=now;
+    var p=Math.min(1,(now-start)/ms),e=p<0.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;   // ease in and out
+    window.scrollTo(0,from+delta*e);
+    if(p<1&&active&&follow) glideRaf=requestAnimationFrame(step); else gliding=false;
+  });
 }
 function loop(){ if(raf)return; raf=requestAnimationFrame(function step(){ raf=0; if(!active||audio.paused)return; mark(); raf=requestAnimationFrame(step); }); }
-function clearWords(){ for(var k=0;k<words.length;k++) words[k].classList.remove('on','now'); cur=-1; }
+function clearWords(){ for(var k=0;k<words.length;k++) words[k].classList.remove('on','now'); cur=-1; if(pill) pill.style.opacity='0'; pillTop=null; }
 
 /* ---- playback ---- */
 function whole(url){
@@ -146,7 +188,7 @@ function begin(auto,note){
   build(); chapter();
   if(!ch||!ch.dataset.audio){ if(active) { want=false; icon(); msg('This chapter has no recording yet. It will be added soon.'); } return; }
   var mine=++serial,id=ch.dataset.id,src=abs(ch.dataset.audio),sync=ch.dataset.sync?abs(ch.dataset.sync):null,skip=parseInt(ch.dataset.skip||'0',10);
-  active=true; busy=true; ready=false; follow=true; want=!!auto; d.body.classList.add('lr'); bar.hidden=false; msg(''); icon();
+  active=true; busy=true; ready=false; follow=true; want=!!auto; d.body.classList.add('lr'); bar.hidden=false; msg(''); icon(); alts();
   $('lr-seek').disabled=true; audio.pause(); paint(); put('listenAt',id);
   spot({mode:'lr',t:get('listenPos',{})[id]||0});
   var timing=sync?fetch(sync).then(function(r){ return r.ok?r.json():null; }).catch(function(){ return null; }):Promise.resolve(null);

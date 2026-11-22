@@ -81,7 +81,10 @@ footer{margin-top:3rem;font-family:var(--sans);font-size:.75rem;color:var(--num)
 .seek::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--heading);margin-top:-6px;border:0}
 .seek::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--heading);border:0}
 .seek:disabled{opacity:.45}
-.times{display:flex;justify-content:space-between;font-size:.8rem;color:var(--text-soft);font-variant-numeric:tabular-nums;margin-top:.1rem}
+.times{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--text-soft);font-variant-numeric:tabular-nums;margin-top:.1rem}
+.alt-t{font:inherit;font-size:.78rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:0 .8rem;min-height:30px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.alt-t:active{background:var(--shade)}
+.alt-t:focus-visible{outline:2px solid var(--accent)}
 .tb{background:transparent;border:0;color:var(--text);padding:0;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;cursor:pointer;position:relative;-webkit-tap-highlight-color:transparent}
 .tb:active{background:var(--shade)}
 .tb:focus-visible{outline:2px solid var(--accent)}
@@ -98,10 +101,16 @@ footer{margin-top:3rem;font-family:var(--sans);font-size:.75rem;color:var(--num)
 select.chip{-webkit-appearance:none;appearance:none;text-align:center;cursor:pointer}
 .chip:focus-visible{outline:2px solid var(--accent)}
 body.lr{padding-bottom:10rem}
-body.lr #ch .w{color:#9383B7;border-radius:4px;cursor:pointer;transition:color .18s ease-out,background-color .18s ease-out;-webkit-tap-highlight-color:transparent}
-body.lr #ch .w.on{color:#fff}
-body.lr #ch .w.now{color:#fff;background:rgba(183,155,232,.3);box-shadow:0 0 0 3px rgba(183,155,232,.3)}
-body.lr #ch .alt,body.lr #ch .note{opacity:.55}
+#ch{position:relative;isolation:isolate}
+body.lr #ch p{color:#A396C6}
+body.lr #ch .w{color:#A396C6;cursor:pointer;transition:color .4s ease;-webkit-tap-highlight-color:transparent}
+body.lr #ch .w.on{color:var(--text)}
+body.lr #ch .w.now{color:#fff}
+.lr-pill{position:absolute;left:0;top:0;z-index:-1;border-radius:7px;background:rgba(183,155,232,.22);pointer-events:none;opacity:0;transition:transform .26s cubic-bezier(.25,.8,.35,1),width .26s cubic-bezier(.25,.8,.35,1),opacity .3s ease}
+body:not(.lr) .lr-pill{display:none}
+body.lr #ch .alt,body.lr #ch .note{opacity:.5}
+body.lr.noalt #ch .aside,body.lr.noalt #ch sup.n:has(+ .silent){display:none}
+@media (prefers-reduced-motion:reduce){body.lr #ch .w,.lr-pill{transition:none}}
 .sub .btn{margin:0 .35rem .4rem 0}
 .lr-bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--panel);border-top:1px solid var(--rule);font-family:var(--sans);padding:.3rem 14px calc(.5rem + env(safe-area-inset-bottom,0px))}
 .lr-bar[hidden]{display:none}
@@ -156,17 +165,31 @@ def spans(text):
 
 def inline(text, spoken=False):
     """Escape text and turn [alt: ...] / [...] into styled spans. With spoken=True the words
-    outside brackets (the ones read aloud) are wrapped for highlighting."""
+    outside brackets (the ones read aloud) are wrapped for highlighting.
+
+    Each bracket is wrapped in <span class="aside"> together with the space before it, so that
+    Listen + Read can hide alternates and notes (they are not read aloud) without leaving a space
+    before the punctuation that follows; a bracket with no read-aloud words before it takes the
+    space after it instead. When nothing in the text is read aloud (a verse that is only an
+    alternate reading), its asides are also marked "silent" so its verse number can be hidden."""
     out, i = [], 0
     put = spans if spoken else esc
+    cls = "aside silent" if spoken and not plain(text) else "aside"
     for m in re.finditer(r"\[([^\[\]]+)\]", text):
-        out.append(put(text[i:m.start()]))
+        before = text[i:m.start()]
+        kept = before.rstrip()
+        out.append(put(kept))
         body = m.group(1).strip()
         if body.lower().startswith("alt:"):
-            out.append('<span class="alt">[alt: %s]</span>' % esc(body[4:].strip()))
+            mark = '<span class="alt">[alt: %s]</span>' % esc(body[4:].strip())
         else:
-            out.append('<span class="note">[%s]</span>' % esc(body))
+            mark = '<span class="note">[%s]</span>' % esc(body)
         i = m.end()
+        gap, after = before[len(kept):], ""
+        if not plain(text[:m.start()]):
+            after = re.match(r"\s*", text[i:]).group()
+            i += len(after)
+        out.append('<span class="%s">%s%s%s</span>' % (cls, esc(gap), mark, esc(after)))
     out.append(put(text[i:]))
     return "".join(out)
 
