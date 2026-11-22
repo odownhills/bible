@@ -6,6 +6,8 @@ Whole chapters are added every day. Books listed in `"first_books"` in `data/set
 (currently Job, then John; 1 John is done); after them the run continues in canonical order from the first
 untranslated chapter, Genesis 1 to Revelation 22.
 Accuracy matters more than speed.
+(The Quran is a separate translation and site built from this repository: see "Quran" at the end.
+Bible runs leave it alone.)
 
 ## How much to translate
 `python3 scripts/next.py` prints this run's plan: one line per chapter (`<slug> <n> <Book> <estimated words>`),
@@ -57,3 +59,45 @@ pushes to main, so `git pull --rebase origin main` before each push.
   change a `review:` line that Obay has set in a decision log.
 - If usage limits or errors stop the run partway, that is fine: the next night continues from
   the first untranslated chapter.
+
+# Quran
+
+This repository also holds Obay's translation of the Quran, published as its own site at
+https://quran.odownhills.workers.dev (a second Cloudflare Worker, `quran/wrangler.jsonc`, which deploys
+the `site-quran/` folder on every push to main). The two sites do not link to each other. A Bible run
+never touches the Quran, and nothing above applies to it: a Quran run follows this section.
+There is no schedule for it yet. Quran parts are translated when Obay asks.
+
+A short surah is one part. A long surah is published in parts of about a thousand English words,
+planned in `data/quran.json`. `python3 scripts/quran.py` prints the next part
+(`quran-<surah> <NNN> verses <first>-<last> about <n> words`), or `DONE`, or `PLAN surah <n>` when the
+next surah has no parts planned. Plan it first then: read its Arabic in `sources/quran/<NNN>.txt`, cut
+where the subject changes and never inside a sentence, 500 to 1,500 English words a part, and add
+`"name"` (the surah's name in English) and `"parts"` for it to `data/quran.json`.
+
+## Steps, repeated for each part, in order
+1. Translate the part following `QURAN_RULES.md` and the settled renderings in `QURAN_GLOSSARY.md`
+   exactly, into `translations/quran-<surah>/<NNN>.md`, with its decision log
+   `decisions/quran-<surah>/<NNN>.md`. As for the Bible, the translation is done by Fable 5.2 at
+   extra-high effort: delegate it with the Agent tool using `model: "fable"` and `effort: "xhigh"`,
+   one agent per part, one part at a time. Tell the agent to read QURAN_RULES.md, QURAN_GLOSSARY.md,
+   the previous part's file and the Arabic of its verses in `sources/quran/`, translate verse by
+   verse from the Arabic without adapting any existing English translation, write both files, run the
+   check, reread the result against the Arabic and correct anything added, dropped or softened, and
+   append any newly settled recurring term to QURAN_GLOSSARY.md. Reasons in the log point to the
+   Quran itself, never to scholars, commentaries, translations or tradition.
+2. `python3 scripts/check.py translations/quran-<surah>/<NNN>.md` must print OK. If it fails, send
+   the failures back to the same agent (up to 3 rounds). Never publish a failing file.
+3. `WORK=quran python3 scripts/build.py`
+4. Commit on `main` with message `Add Quran <surah>:<first>-<last>` (`Add Quran <surah>` when the part
+   is the whole surah), `git pull --rebase origin main`, and push, before starting the next part.
+
+End the summary with the new parts' `call: ask` entries, as for the Bible. Audio is recorded by the
+same GitHub Action (Bible chapters first, then the Quran's parts), and pictures are made afterward
+by other threads; neither ever changes the text.
+
+## Limits
+- A Quran run changes only new part files, their decision logs, the rebuilt `site-quran/`, lines
+  appended to `QURAN_GLOSSARY.md`, and `data/quran.json` when a surah is planned.
+- Never edit `sources/quran/`, an earlier part, a line under "Decided by Obay", or a `review:` line
+  that Obay has set.

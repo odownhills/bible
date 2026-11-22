@@ -174,7 +174,7 @@ def speak(text, key, state):
 
 def note(name, default):
     """A small JSON file kept beside the recordings (site/audio/<name>)."""
-    path = os.path.join(ROOT, "site", "audio", name)
+    path = os.path.join(media.SITE, "audio", name)
     try:
         return json.load(open(path)), path
     except (OSError, ValueError):
@@ -203,7 +203,7 @@ def main():
         raise SystemExit("Recordings are stored in Cloudflare R2: set R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY "
                          "and R2_ENDPOINT (see scripts/media.py).")
     limit = int(sys.argv[sys.argv.index("--max") + 1]) if "--max" in sys.argv else 2
-    manifest = json.load(open(os.path.join(ROOT, "site", "manifest.json"), encoding="utf-8"))
+    manifest = json.load(open(os.path.join(media.SITE, "manifest.json"), encoding="utf-8"))
     redo, redo_path = note("redo.json", [])
     rejected, rejected_path = note("rejected.json", {})
     todo = [c for c in manifest if (not c.get("audio") or c["id"] in redo) and rejected.get(c["id"], 0) < 3][:limit]
@@ -211,8 +211,8 @@ def main():
     check = False                                       # loaded when the first recording is ready
     for c in todo:
         slug = c["id"].rsplit("-", 1)[0]
-        out = os.path.join(ROOT, "site", "audio", slug, "%d.mp3" % c["chapter"])
-        text = open(os.path.join(ROOT, "site", c["text"]), encoding="utf-8").read()
+        out = os.path.join(media.SITE, "audio", slug, "%d.mp3" % c["chapter"])
+        text = open(os.path.join(media.SITE, c["text"]), encoding="utf-8").read()
         try:
             # A chapter whose last take failed the check is read in shorter pieces: the voice loses
             # its place less often in short passages (long lists of names and ages trip it up).

@@ -173,6 +173,8 @@ function put(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
 var pos=get('listenPos',{}),done=get('listenDone',{});
 function fmt(s){if(!isFinite(s)||s<0)s=0;s=Math.floor(s);var h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return (h?h+':'+(m<10?'0':''):'')+m+':'+(x<10?'0':'')+x}
 function rate(){return parseFloat($('rate').value)||1}
+function name(c){return c.title||c.book+' '+c.chapter}
+function place(c){return c.sub||'Chapter '+c.chapter+' of '+c.total}
 function setIcon(){ $('ico').innerHTML=want?PAUSE:PLAY; $('play').setAttribute('aria-label',want?'Pause':'Play'); }
 function paint(cur,dur){
   seek.max=dur||100; if(!dragging) seek.value=cur;
@@ -186,10 +188,10 @@ function savePos(force){
   if(audio.currentTime>3&&(!audio.duration||audio.currentTime<audio.duration-3)) pos[list[i].id]=Math.floor(audio.currentTime); else delete pos[list[i].id];
   put('listenPos',pos); spot();
 }
-function spot(){ var c=list[i]; if(c) put('lastSpot',{mode:'listen',id:c.id,url:c.url,label:c.book+' '+c.chapter,t:pos[c.id]||0,at:Date.now()}); }
+function spot(){ var c=list[i]; if(c) put('lastSpot',{mode:'listen',id:c.id,url:c.url,label:name(c),t:pos[c.id]||0,at:Date.now()}); }
 function meta(){
   var c=list[i]; if(!('mediaSession' in navigator))return;
-  try{navigator.mediaSession.metadata=new MediaMetadata({title:c.book+' '+c.chapter,artist:'The Bible, Freshly Translated',album:c.book});}catch(e){}
+  try{navigator.mediaSession.metadata=new MediaMetadata({title:name(c),artist:'The Bible, Freshly Translated',album:c.book});}catch(e){}
 }
 function posState(){
   if(!('mediaSession' in navigator)||!navigator.mediaSession.setPositionState||mode!=='audio'||!isFinite(audio.duration))return;
@@ -199,17 +201,17 @@ function rows(){
   var c=list[i],slug=$('book').value,h='';
   list.forEach(function(x,k){ if(x.slug!==slug)return;
     var p=pos[x.id]&&x.duration?Math.min(100,pos[x.id]/x.duration*100):0;
-    h+='<li><button data-k="'+k+'" class="'+(k===i?'cur':(done[x.id]?'done':''))+'"><span class="ix">'+x.chapter+'</span><span class="nm">'+x.book+' '+x.chapter+
+    h+='<li><button data-k="'+k+'" class="'+(k===i?'cur':(done[x.id]?'done':''))+'"><span class="ix">'+x.chapter+'</span><span class="nm">'+name(x)+
        (p&&k!==i?'<span class="bar"><i style="width:'+p+'%"></i></span>':'')+'</span><span class="du">'+(x.audio?(x.duration?fmt(x.duration):''):'phone voice')+'</span></button></li>';
   });
   $('rows').innerHTML=h;
 }
 function show(){
-  var c=list[i]; $('title').textContent=c.book+' '+c.chapter; $('read').href='../'+c.url+(c.audio?'#listen-read':''); $('read').textContent=c.audio?'Listen + Read':'Read along';
+  var c=list[i]; $('title').textContent=name(c); $('read').href='../'+c.url+(c.audio?'#listen-read':''); $('read').textContent=c.audio?'Listen + Read':'Read along';
   $('prev').disabled=false; $('next').disabled=i>=list.length-1;
   if($('book').value!==c.slug) $('book').value=c.slug;
   var n=$('note');
-  if(c.audio){n.hidden=true;$('sub').textContent='Chapter '+c.chapter+' of '+c.total;}
+  if(c.audio){n.hidden=true;$('sub').textContent=place(c);}
   else{n.hidden=false;n.textContent='No recording for this chapter yet, so your phone’s own voice reads it. Keep the screen on while it plays.';$('sub').textContent='Recording coming soon';}
   rows(); meta(); put('listenAt',c.id); spot();
 }
@@ -236,7 +238,7 @@ function load(k,auto){
       if(list[i]!==c)return;
       audio.defaultPlaybackRate=rate(); audio.src=src; audio.playbackRate=rate();
       audio.addEventListener('loadedmetadata',function once(){ audio.removeEventListener('loadedmetadata',once);
-        busy=false; seek.disabled=false; $('sub').textContent='Chapter '+c.chapter+' of '+c.total;
+        busy=false; seek.disabled=false; $('sub').textContent=place(c);
         if(resume&&resume<audio.duration-5){ audio.currentTime=resume; if(!want){ $('note').hidden=false; $('note').textContent='Back where you left off, at '+fmt(resume)+'. Press play to carry on.'; } }
         paint(audio.currentTime,audio.duration); posState();
         if(list[i+1]&&list[i+1].audio) whole(list[i+1]); });

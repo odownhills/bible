@@ -21,7 +21,10 @@ import subprocess
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = os.path.join(ROOT, "site")
+# WORK=quran in the environment works on the Quran site (site-quran/) instead: see scripts/build.py.
+# Both sites share the bucket and data/audio.json; their recordings have different paths.
+WORK = os.environ.get("WORK") or "bible"
+SITE = os.path.join(ROOT, "site" if WORK == "bible" else "site-" + WORK)
 INDEX = os.path.join(ROOT, "data", "audio.json")
 BUCKET = os.environ.get("R2_BUCKET") or "bible-media"
 

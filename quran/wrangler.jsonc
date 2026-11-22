@@ -1,0 +1,18 @@
+// Cloudflare deploys this second Worker (named "quran", served at quran.odownhills.workers.dev) on
+// every push to main. Its build setting "Root directory" is this folder, quran/.
+// It is the Quran's own site: static files come from site-quran/ (built by
+// `WORK=quran python3 scripts/build.py`); recordings and pictures come from the same R2 bucket as the
+// Bible's, under their own paths (audio/quran-<surah>/<part>.mp3). The Worker code is shared.
+{
+  "name": "quran",
+  "main": "../worker/index.js",
+  "compatibility_date": "2025-10-01",
+  "assets": {
+    "directory": "../site-quran",
+    "binding": "ASSETS",
+    "run_worker_first": ["/audio/*", "/pictures/*"]
+  },
+  "r2_buckets": [
+    { "binding": "MEDIA", "bucket_name": "bible-media" }
+  ]
+}
