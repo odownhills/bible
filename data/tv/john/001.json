@@ -178,6 +178,11 @@
    "slot": 4
   },
   {
+   "image": "cand/04c-shut.jpg",
+   "prompt": "In the evening rain, a grown son with a small suitcase stands alone on the doorstep of his family's house, home after many years, facing a front door that is firmly shut. Through the big lit window beside the door the family sits at dinner, warm and bright, and nobody looks up at him.",
+   "slot": 4
+  },
+  {
    "image": "cand/05a-adopted.jpg",
    "prompt": "Seen from behind, on a sunny afternoon, a small girl from another country with a little suitcase walks up the garden path to her new family's house, holding her new father's hand on one side and her new mother's hand on the other. The front door stands open, and two older brothers wait on the step, waving.",
    "slot": 5
@@ -240,13 +245,13 @@
   },
   {
    "image": "cand/11a-lamb.jpg",
-   "prompt": "A single young white lamb walks along a dirt path straight toward the viewer across a green hillside, calm and unafraid, in clear morning light. The lamb is the only animal in sight.",
+   "prompt": "A young white lamb walks along a dirt path across a green hillside toward the camera, calm and gentle, in clear morning light. It is the only animal in sight.",
    "people": false,
    "slot": 11
   },
   {
    "image": "cand/11b-hilltop.jpg",
-   "prompt": "A single young white lamb stands alone on a bare grassy hilltop against a vast bright open sky, looking straight at the viewer, still and gentle.",
+   "prompt": "A young white lamb stands alone on a grassy hilltop under a wide bright sky, facing the camera, still and gentle.",
    "people": false,
    "slot": 11
   },
@@ -299,7 +304,7 @@
   },
   {
    "image": "cand/16b-leaves.jpg",
-   "prompt": "Seen through the broad leaves of an old fig tree, a man in plain clothes sits alone beneath it with his eyes closed in prayer, a few ripe figs hanging above him. Dappled light.",
+   "prompt": "Seen through the large lobed leaves of an old fig tree, a man in plain clothes sits alone in its shade with his eyes closed, quiet and thoughtful, a few green figs hanging on the branches above him. Dappled daylight.",
    "slot": 16
   },
   {
