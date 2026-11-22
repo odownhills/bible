@@ -16,3 +16,13 @@ An original plain-English translation from the Hebrew and Greek, one chapter a n
   recorded chapter plays in TV mode with its words alone. The pictures are made and chosen on the picture
   branch (`TV_PICTURES.md` has the rules); `.github/workflows/tv.yml` runs `scripts/tv_publish.py`, which
   brings each finished chapter here: pictures to the bucket, plan and picture list to main
+
+## The Quran
+
+The same scripts build a second, separate site for an original translation of the Quran from the
+Arabic (`WORK=quran python3 scripts/build.py` builds it into `site-quran/`; see `scripts/quran.py`).
+
+- `QURAN_RULES.md`, `QURAN_GLOSSARY.md` rules and settled wordings
+- `sources/quran/` the Arabic text it is translated from
+- `translations/quran-<surah>/`, `decisions/quran-<surah>/` the parts and the reasons for their bracketed alternates
+- `quran/wrangler.jsonc` the Cloudflare Worker that serves `site-quran/`

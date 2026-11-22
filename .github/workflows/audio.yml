@@ -4,6 +4,8 @@ name: Record chapter audio
 # recording word for word against the chapter (a mismatch is thrown away and retried), works out when
 # each word is spoken (for Listen + Read mode). Recordings go to the Cloudflare R2 bucket (see
 # scripts/media.py); only the small files (word timings, data/audio.json) are committed.
+# The same steps then run for the Quran site (WORK=quran, built into site-quran/): Bible chapters
+# are recorded first, and the Quran's parts with whatever is left of Gemini's daily limit.
 on:
   push:
     branches: [main]
@@ -52,25 +54,32 @@ jobs:
           if [ -z "$GEMINI_API_KEY" ]; then echo "No GEMINI_API_KEY secret yet; nothing to do."; exit 0; fi
           command -v ffmpeg >/dev/null || sudo apt-get install -y -qq ffmpeg
           python3 -m pip install --quiet --break-system-packages sherpa-onnx numpy || echo "Could not install the listener; recordings will not be checked."
-          python3 scripts/build.py
-          python3 scripts/tts.py --max "${MAX_CHAPTERS:-10}" --strict
-          python3 scripts/build.py
+          for work in bible quran; do
+            export WORK=$work
+            python3 scripts/build.py
+            python3 scripts/tts.py --max "${MAX_CHAPTERS:-10}" --strict
+            python3 scripts/build.py
+          done
       - name: Time the words for Listen + Read
         if: always() && steps.r2.outcome == 'success'
         run: |
-          python3 scripts/build.py
-          if [ "$(python3 scripts/align.py --pending)" = "0" ]; then echo "Word timings are up to date."; exit 0; fi
-          command -v ffmpeg >/dev/null || sudo apt-get install -y -qq ffmpeg
-          python3 -m pip install --quiet --break-system-packages sherpa-onnx numpy
-          python3 scripts/align.py
+          for work in bible quran; do
+            export WORK=$work
+            python3 scripts/build.py
+            if [ "$(python3 scripts/align.py --pending)" = "0" ]; then echo "Word timings are up to date ($work)."; continue; fi
+            command -v ffmpeg >/dev/null || sudo apt-get install -y -qq ffmpeg
+            python3 -m pip install --quiet --break-system-packages sherpa-onnx numpy
+            python3 scripts/align.py
+          done
       - name: Publish
         if: always() && steps.r2.outcome == 'success'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           python3 scripts/build.py
-          git add -A site data/audio.json
-          if git ls-files site | grep -q '\.mp3$'; then echo "::error::A recording is about to be committed to git."; exit 1; fi
+          WORK=quran python3 scripts/build.py
+          git add -A site site-quran data/audio.json
+          if git ls-files site site-quran | grep -q '\.mp3$'; then echo "::error::A recording is about to be committed to git."; exit 1; fi
           if git diff --cached --quiet; then echo "No new audio."; exit 0; fi
           git commit -m "Add chapter audio"
           git pull --rebase origin main

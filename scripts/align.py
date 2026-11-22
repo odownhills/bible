@@ -35,7 +35,7 @@ from build import checksum, words as display_words  # noqa: E402  (the same word
 import media  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = os.path.join(ROOT, "site")
+SITE = media.SITE   # site/, or site-quran/ with WORK=quran
 MODEL = "sherpa-onnx-zipformer-en-2023-06-26"
 MODEL_URL = "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/%s.tar.bz2" % MODEL
 MODEL_DIR = os.environ.get("ALIGN_MODEL_DIR", os.path.expanduser("~/.cache/bible-align"))

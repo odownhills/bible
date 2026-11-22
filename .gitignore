@@ -3,3 +3,4 @@ __pycache__/
 site/audio/**/*.mp3
 node_modules/
 .wrangler/
+site-quran/audio/**/*.mp3
