@@ -92,12 +92,6 @@
    "prompt": "In a plain kitchen in daylight, three middle-aged men stand round a tired grey-haired man who sits at the table. All three are talking at him at once: one wags a finger, one counts points on his fingers, one leans over him with folded arms. The seated man is not listening to them: he has turned his face away from them and up toward a tall bright window, looking out at the open sky, as if he would rather speak to someone higher."
   },
   {
-   "image": "cand/a1-hill.jpg",
-   "section": "1-5",
-   "slot": 1,
-   "prompt": "On a grassy hillside in clear daylight, a grey-haired man in plain clothes stands alone higher up the slope, his back turned to three men gathered lower down who are still talking and gesturing up at him. He is not listening to them: he looks up into the wide open sky above him, his face lifted, as if he would rather speak to someone higher."
-  },
-  {
    "image": "cand/a2-plaster.jpg",
    "section": "1-5",
    "slot": 2,
@@ -108,7 +102,7 @@
    "section": "1-5",
    "slot": 2,
    "people": false,
-   "prompt": "Close view of a thick grey concrete wall split by a wide, deep crack that runs right across it. Stuck across the middle of the crack is one small ordinary sticking plaster, the kind used for a scratched finger, absurdly tiny against the deep crack that runs on past it on both sides. Even daylight."
+   "prompt": "Close view of a thick grey concrete wall with a wide, deep crack running right across it. Stuck across the middle of the crack is one small, ordinary beige adhesive bandage, the kind put on a scratched finger, looking absurdly tiny against the deep crack, which carries on past it on both sides. Even daylight."
   },
   {
    "image": "cand/b1-fingers.jpg",
@@ -153,6 +147,12 @@
    "section": "13-19",
    "slot": 2,
    "prompt": "In a vast, empty, wood-panelled courtroom, a man in plain everyday clothes stands alone at the table in front of the high empty judge's bench, his papers laid out in neat order on the table before him. He stands upright with his head high and calm, facing the empty bench, ready to be heard. Clear light from tall windows falls on him."
+  },
+  {
+   "image": "cand/c2-stand2.jpg",
+   "section": "13-19",
+   "slot": 2,
+   "prompt": "In a vast, empty, wood-panelled courtroom with plain panelled walls, a man in plain everyday clothes stands alone at the table in front of the high empty judge's bench, his papers laid out in neat order on the table before him. He stands upright with his head high and calm, facing the empty bench, ready to be heard. Clear light from tall windows falls on him. No flags, no seals, no emblems or plaques anywhere in the room."
   },
   {
    "image": "cand/c2-table.jpg",
