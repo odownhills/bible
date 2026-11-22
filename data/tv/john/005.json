@@ -328,6 +328,13 @@
    "slot": 15,
    "verse": 45,
    "prompt": "A man in a plain coat walks along a path across a wide open moor on a cloudy day, holding up an old brass compass he clearly treasures. The compass needle points straight back behind him, toward a bright town on a hill in the distance that he is walking away from. The important part is in the upper two thirds of the picture."
+  },
+  {
+   "image": "cand/a3-walk.jpg",
+   "section": "1-9",
+   "slot": 3,
+   "verse": 8,
+   "prompt": "Beside a plain outdoor pool in a quiet concrete courtyard, where many sick and disabled people sit and lie on old mats and in wheelchairs, a gaunt middle-aged man in old worn clothes has just got up from the ground where he lay for years. He walks away on his own two feet, carrying his old rolled-up bedroll blanket under one arm, his face full of astonished joy, while the sick people round the pool stare after him with their mouths open, one of them pointing. Soft morning light. The man and the staring people are in the upper two thirds of the picture."
   }
  ]
 }
