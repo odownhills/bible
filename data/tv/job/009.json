@@ -115,156 +115,115 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
-   "image": "cand/a1-court.jpg",
+   "verse": 1,
    "section": "1-4",
-   "slot": 1,
-   "prompt": "A vast, silent, modern courtroom of pale wood and stone, seen from the back of the room. Far ahead, a judge's bench rises enormously high, like a cliff of polished wood towering up toward the ceiling, its top lost in bright white light from tall windows; no one can be seen at the bench. At its foot, at a small plain table, one ordinary man in a shirt and trousers stands looking up at it, tiny against it, holding a single sheet of paper. Cool daylight."
-  },
-  {
-   "image": "cand/a1-cliff.jpg",
-   "section": "1-4",
-   "slot": 1,
+   "image": "01-cliff.jpg",
+   "tall": "tall/01-cliff.jpg",
+   "principle": "How can a mortal be in the right with God? No one who sets himself against him comes out whole.",
+   "shows": "A lone man leans his whole weight against a sheer granite cliff that rises out of sight into the clouds, as if to push it back.",
    "prompt": "A lone man in plain everyday clothes stands at the foot of an immense sheer granite cliff that rises straight up out of sight into the clouds. He has both palms pressed flat against the rock, leaning his whole weight into it as if to push it back, and he is tiny against it. Overcast daylight."
   },
   {
-   "image": "cand/b1-mountain.jpg",
+   "verse": 5,
    "section": "5-10",
-   "slot": 2,
-   "prompt": "A great mountain range in clear afternoon daylight. In the middle of it one whole mountain is breaking apart and sliding: its peak is tilting over, enormous slabs of rock and clouds of dust are pouring down its sides, and the valley floor in front of it is split open by a long fresh crack. No buildings, no roads.",
-   "people": false
-  },
-  {
-   "image": "cand/b1-overturned.jpg",
-   "section": "5-10",
-   "slot": 2,
+   "image": "02-mountains.jpg",
+   "tall": "tall/02-mountains.jpg",
+   "principle": "He moves mountains and overturns them, and shakes the earth from its place.",
+   "shows": "A row of great mountain peaks lies overturned on their sides like toppled stones, dust still rising where they stood.",
    "prompt": "A vast mountain range seen from far off under a clear blue sky. A whole row of its great rocky peaks has been overturned and lies tipped over on their sides like toppled stones, their roots in the air, with dust still rising from the earth where they stood. No buildings, no roads.",
    "people": false
   },
   {
-   "image": "cand/b2-stars.jpg",
+   "verse": 8,
    "section": "5-10",
-   "slot": 3,
+   "image": "03-stars.jpg",
+   "tall": "tall/03-stars.jpg",
+   "principle": "He alone stretches out the heavens, treads on the sea and made the stars: wonders beyond number.",
+   "shows": "A man stands small on a night seashore under a sky blazing with countless stars, the Milky Way arching overhead, as great waves break.",
    "prompt": "On a rocky seashore at night a man in an ordinary jacket stands very small at the water's edge, looking up at an immense sky blazing with countless stars, the Milky Way arching overhead from one horizon to the other, the bright constellations standing out clearly. In front of him huge waves rise and break white in the starlight."
   },
   {
-   "image": "cand/b2-sea.jpg",
-   "section": "5-10",
-   "slot": 3,
-   "prompt": "Night over a wild open sea. Huge waves rise and crest in long ranks under an immense sky blazing with countless stars, the Milky Way arching overhead from one horizon to the other and the bright constellations standing out clearly. No land, no boats.",
-   "people": false
-  },
-  {
-   "image": "cand/c1-wheat.jpg",
+   "verse": 11,
    "section": "11-13",
-   "slot": 4,
-   "prompt": "A man in a plain shirt stands in the middle of a wide golden wheat field in bright daylight. A great invisible gust of wind is sweeping across the field, flattening the wheat in a long rushing wave that passes right beside him, his hair and shirt blown hard. He has turned his head, looking round for what passed him, and sees nothing. The sky above is clear and empty."
-  },
-  {
-   "image": "cand/c1-hat.jpg",
-   "section": "11-13",
-   "slot": 4,
+   "image": "04-wind.jpg",
+   "tall": "tall/04-wind.jpg",
+   "principle": "He passes by unseen and snatches away, and no one can turn him back.",
+   "shows": "On a windy hilltop a sudden gust tears a man's hat and papers from his hands and whirls them away into an empty sky.",
    "prompt": "On an open grassy hilltop on a bright, windy day, a man turns as a sudden gust tears his hat and a sheaf of papers out of his hands and whirls them high up and away into an empty blue sky. He reaches after them with one arm, but they are already far beyond him. The grass all round is flattened by the wind."
   },
   {
-   "image": "cand/d1-call.jpg",
+   "verse": 14,
    "section": "14-20",
-   "slot": 5,
+   "image": "05-call.jpg",
+   "tall": "tall/05-call.jpg",
+   "principle": "Even in the right, Job could only plead, and would not believe he was being heard.",
+   "shows": "At night on a hilltop a man calls out with his hands cupped round his mouth into the vast silent dark.",
    "prompt": "At night on a bare hilltop above a wide dark valley, a man stands with his hands cupped round his mouth, calling out with all his strength into the vast silent darkness. Nothing answers. A few far stars, a thin moon, and the faint lights of a sleeping town far below."
   },
   {
-   "image": "cand/d1-plead.jpg",
+   "verse": 17,
    "section": "14-20",
-   "slot": 5,
-   "prompt": "In an enormous, dim, empty hall of bare stone, a man in plain clothes kneels alone on the floor with his hands clasped together, his face lifted, pleading up toward a single high window of pale light far above him. He is small, and the hall is silent and empty."
-  },
-  {
-   "image": "cand/d2-storm.jpg",
-   "section": "14-20",
-   "slot": 6,
+   "image": "06-storm.jpg",
+   "tall": "tall/06-storm.jpg",
+   "principle": "He strikes me with a storm and does not let me get my breath back.",
+   "shows": "A man struggles along a road in a violent storm, bent into the wind and rain, gasping for breath.",
    "prompt": "A man struggles along an open country road in a violent storm, bent almost double into the wind, rain lashing him sideways, his clothes soaked through, one arm raised against the blast, his mouth open gasping for breath. Dark churning clouds fill the sky, and the fields on both sides are streaming with water."
   },
   {
-   "image": "cand/d2-waves.jpg",
-   "section": "14-20",
-   "slot": 6,
-   "prompt": "A grown man stands waist-deep in rough grey sea close to the shore, and a wave breaks over his shoulders while the next wave is already rising right behind it and another behind that. His face is turned up, mouth open, gasping for breath between them. Overcast sky."
-  },
-  {
-   "image": "cand/e1-flood.jpg",
+   "verse": 21,
    "section": "21-24",
-   "slot": 7,
+   "image": "07-flood.jpg",
+   "tall": "tall/07-flood.jpg",
+   "principle": "It is all one: he makes an end of the blameless and the wicked alike.",
+   "shows": "A flood has sunk two neighbouring houses alike, one neat with flower boxes, the other neglected and boarded up.",
    "prompt": "Seen from a little above, a flood of brown water has risen over a street, and two houses side by side are both sunk up to their windows. One is neat and freshly painted, with a tended garden and flowers in its window boxes; the other is neglected, its windows boarded up and its yard full of junk. The flood has taken both alike. Grey sky.",
    "people": false
   },
   {
-   "image": "cand/e1-hail.jpg",
+   "verse": 24,
    "section": "21-24",
-   "slot": 7,
-   "prompt": "Two neighbouring back gardens side by side, divided by a low fence. One was beautifully tended, with neat rows of vegetables and flowers; the other is a tangle of weeds and old junk. A violent hailstorm has just flattened both alike, and white hailstones lie thick over everything in both gardens. Grey sky clearing.",
-   "people": false
-  },
-  {
-   "image": "cand/e2-judges.jpg",
-   "section": "21-24",
-   "slot": 8,
+   "image": "08-judges.jpg",
+   "tall": "tall/08-judges.jpg",
+   "principle": "The earth is given into the hand of the wicked, and the faces of its judges are covered.",
+   "shows": "Three judges at the bench sit with their hands over their eyes while a smug man in an expensive suit walks free.",
    "prompt": "In a present-day courtroom, three judges in plain black judicial gowns sit at the high bench, and each of them holds a hand pressed over their eyes. In front of the bench a smug, well-fed man in an expensive suit strolls away free, smiling, a leather briefcase in his hand."
   },
   {
-   "image": "cand/e2-globe.jpg",
-   "section": "21-24",
-   "slot": 8,
-   "prompt": "In a glass office at the very top of a skyscraper high above a city, a smug, well-fed man in an expensive suit leans back in a leather chair, holding a globe of the earth in one hand and turning it like a toy, smiling to himself."
-  },
-  {
-   "image": "cand/f1-runner.jpg",
+   "verse": 25,
    "section": "25-31",
-   "slot": 9,
+   "image": "09-runner.jpg",
+   "tall": "tall/09-runner.jpg",
+   "principle": "My days are swifter than a runner; they flee and see no good.",
+   "shows": "A sprinter streaks past on an empty country road, a blur of speed.",
    "prompt": "On an empty road through open country at midday, a sprinter races past at full speed, caught as a streaking blur of motion from left to right, his feet barely touching the road. Everything else, the road, the fields and the sky, is sharp and still."
   },
   {
-   "image": "cand/f1-eagle.jpg",
+   "verse": 27,
    "section": "25-31",
-   "slot": 9,
-   "prompt": "A great eagle in a steep dive at full speed, wings swept back and talons forward, swooping down over a wide lake, the water and shore below streaked with the blur of its speed. Bright daylight.",
-   "people": false
-  },
-  {
-   "image": "cand/f2-mirror.jpg",
-   "section": "25-31",
-   "slot": 10,
+   "image": "10-mirror.jpg",
+   "tall": "tall/10-mirror.jpg",
+   "principle": "If I say I will put off my sad face and be cheerful, I still dread all my pains.",
+   "shows": "A tired man at a bathroom mirror forces a smile, but his eyes are red and full of pain.",
    "prompt": "A tired middle-aged man stands at a bathroom mirror in the morning, trying to force a cheerful smile at his reflection. In the mirror his mouth is smiling, but his eyes are red and full of pain, and the smile does not reach them. Soft window light."
   },
   {
-   "image": "cand/f2-mask.jpg",
+   "verse": 30,
    "section": "25-31",
-   "slot": 10,
-   "prompt": "A man holds a bright, broadly smiling paper mask up in front of his face with one hand. Around its edges you can see his own face, drawn, grey and sad. Plain room, soft daylight."
-  },
-  {
-   "image": "cand/f3-mud.jpg",
-   "section": "25-31",
-   "slot": 11,
+   "image": "11-mud.jpg",
+   "tall": "tall/11-mud.jpg",
+   "principle": "Though I washed myself with snow, you would plunge me into the pit.",
+   "shows": "A man in a clean white shirt stands chest-deep in a pit of black mud in the snow, still holding a bar of soap.",
    "prompt": "A man in a spotless, freshly washed white shirt stands chest-deep in a deep pit of thick black mud, still holding a bar of white soap in one hand, looking down at the mud already smeared over his clean shirt. Clean white snow lies on the ground all round the rim of the pit. Bright winter daylight."
   },
   {
-   "image": "cand/f3-snow.jpg",
-   "section": "25-31",
-   "slot": 11,
-   "prompt": "A man kneels in clean white snow, scrubbing his raw red hands with handfuls of snow and a bar of soap. Right beside him a deep pit of black mud lies open in the snow, its edge crumbling toward him. Bright winter daylight."
-  },
-  {
-   "image": "cand/g1-chair.jpg",
+   "verse": 32,
    "section": "32-35",
-   "slot": 12,
-   "prompt": "A long plain wooden table in a bare room. On the near side sits one ordinary man alone, small and tense, his hands folded on the table. The far side of the table is flooded with overwhelming white light, so bright that nothing there can be seen. At the head of the table, halfway between the two sides, stands one empty chair where a go-between should sit."
-  },
-  {
-   "image": "cand/g1-bridge.jpg",
-   "section": "32-35",
-   "slot": 12,
+   "image": "12-bridge.jpg",
+   "tall": "tall/12-bridge.jpg",
+   "principle": "He is not a man like me, and there is no one between us to lay his hand on us both.",
+   "shows": "A man stands at the edge of a canyon where the bridge across has fallen away, its broken ends hanging on both sides.",
    "prompt": "A man in plain clothes stands at the edge of a deep rocky canyon where a bridge once crossed: only its broken ends remain, hanging from both cliffs, with nothing between them. The far side of the canyon is bathed in bright light. Clear daylight."
   }
  ]
