@@ -1,0 +1,11 @@
+// Cloudflare deploys this third Worker (named "study", served at study.odownhills.workers.dev) on
+// every push to main. Its build setting "Root directory" is this folder, study/.
+// It is the study site: an analysis of each Bible chapter (ANALYSIS_RULES.md), built into site-study/
+// by `python3 scripts/study.py`. Plain pages only: no recordings, no pictures and no Worker code.
+{
+  "name": "study",
+  "compatibility_date": "2025-10-01",
+  "assets": {
+    "directory": "../site-study"
+  }
+}

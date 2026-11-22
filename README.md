@@ -26,3 +26,12 @@ Arabic (`WORK=quran python3 scripts/build.py` builds it into `site-quran/`; see 
 - `sources/quran/` the Arabic text it is translated from
 - `translations/quran-<surah>/`, `decisions/quran-<surah>/` the parts and the reasons for their bracketed alternates
 - `quran/wrangler.jsonc` the Cloudflare Worker that serves `site-quran/`
+
+## The study site
+
+A third site: an analysis of each published Bible chapter, section by section, with the related Scripture
+(`python3 scripts/study.py` builds it into `site-study/`).
+
+- `ANALYSIS_RULES.md` the rules for an analysis
+- `analysis/<book-slug>/<NNN>.md` one analysis per chapter, beside `translations/<book-slug>/<NNN>.md`
+- `study/wrangler.jsonc` the Cloudflare Worker that serves `site-study/`
