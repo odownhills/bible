@@ -1,5 +1,5 @@
 {
- "note": "Made by the steps in TV_PICTURES.md: the chapter is split into sections that each carry one deep meaning (\"sections\"), 10 picture ideas are written for each, the top two for each picture are made and the better is chosen by eye (2026-11-22). Wide pictures only (1920x1088). Each scene starts at the first word of its verse. The important part of every picture sits in the upper two thirds, clear of the words. God is not pictured, Bildad and Job are not portrayed, and nothing violent is shown. This is Bildad's speech on the fate of the wicked, so the pictures show what he describes.",
+ "note": "Made by the steps in TV_PICTURES.md: the chapter is split into sections that each carry one deep meaning (\"sections\"), 10 picture ideas are written for each, the top two for each picture are made and the better is chosen by eye (2026-11-22; 8 pictures chosen from 17 trial pictures, the snuffed-out lantern remade once because the first came out still lit). Wide pictures only (1920x1088). Each scene starts at the first word of its verse. The important part of every picture sits in the upper two thirds, clear of the words. God is not pictured, Bildad and Job are not portrayed, and nothing violent is shown. This is Bildad's speech on the fate of the wicked, so the pictures show what he describes.",
  "method": "Second method, asked for by Obay on 2026-11-21: (1) split the chapter into sections that each carry one deep meaning, written as one plain sentence; (2) write 10 different picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
  "sections": [
   {
@@ -16,6 +16,10 @@
     "A man stamps his foot on the ground while the hills behind him stand unchanged",
     "A river flows round a big rock that does not shift",
     "A man sits with his hands over his ears while a friend lectures him"
+   ],
+   "trial pictures": [
+    "a1-boulder",
+    "a1-table"
    ]
   },
   {
@@ -32,6 +36,11 @@
     "A street of lit houses where one house alone has gone dark",
     "A lighthouse whose lamp has gone out",
     "A man trips over the rope he has just laid himself"
+   ],
+   "trial pictures": [
+    "b1-lantern",
+    "b1-fire",
+    "b1-lantern2"
    ]
   },
   {
@@ -48,6 +57,10 @@
     "A hiker crossing a meadow where the grass hides a tangle of old fencing wire",
     "A spider's web across a garden path glinting with dew",
     "A man's shoelace caught in a grating on a city pavement"
+   ],
+   "trial pictures": [
+    "c1-loop",
+    "c1-net"
    ]
   },
   {
@@ -64,6 +77,12 @@
     "A deer runs through a burning forest",
     "A strong oak hollowed out by rot from the inside",
     "A man stumbles at the edge of a crumbling cliff path"
+   ],
+   "trial pictures": [
+    "d1-road",
+    "d1-alley",
+    "d2-corridor",
+    "d2-photo"
    ]
   },
   {
@@ -80,6 +99,12 @@
     "A family tree drawn on a wall, all but one branch erased",
     "A door shutting on a lit room, leaving the hall dark",
     "Footprints in snow filling in until they are gone"
+   ],
+   "trial pictures": [
+    "e1-house",
+    "e1-roots",
+    "e2-stone",
+    "e2-swing"
    ]
   },
   {
@@ -96,119 +121,88 @@
     "A house on a hill crumbling under storm clouds",
     "A road sign pointing to a ghost town",
     "A ruin seen at both sunrise and sunset"
+   ],
+   "trial pictures": [
+    "f1-stare",
+    "f1-both"
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
-   "image": "cand/a1-boulder.jpg",
+   "verse": 1,
    "section": "1-4",
-   "slot": 1,
+   "image": "01-boulder.jpg",
+   "tall": "tall/01-boulder.jpg",
+   "principle": "Is the earth to be abandoned for your sake, a rock to be moved from its place? Angry words will not change how the world works.",
+   "shows": "A man red-faced with effort strains with all his weight against a huge boulder on a hillside, and it does not move.",
    "prompt": "On a bare hillside under a wide clear sky, a huge grey boulder the size of a small house sits firmly in the ground. A man in plain work clothes leans his whole body against it, straining and red-faced with anger, his shoulder and both hands pushed against the stone, his boots digging into the dirt. The boulder has not moved at all."
   },
   {
-   "image": "cand/a1-table.jpg",
-   "section": "1-4",
-   "slot": 1,
-   "prompt": "Two grey-haired men sit across a plain wooden kitchen table in afternoon light. One leans forward talking hotly, both hands raised. The other has heard enough: he sits back with his arms folded, his jaw set and his eyes narrowed, plainly impatient for the talking to stop."
-  },
-  {
-   "image": "cand/b1-lantern.jpg",
+   "verse": 5,
    "section": "5-7",
-   "slot": 2,
-   "prompt": "A small camping tent pitched alone in an open field at deep blue dusk. Above its entrance, hanging from a pole, an old glass oil lantern has just gone out: a thin thread of grey smoke rises from its chimney and the wick has only a last faint red glow. The tent below is dark. The deep blue sky still gives enough light to see everything clearly.",
+   "image": "02-lantern.jpg",
+   "tall": "tall/02-lantern.jpg",
+   "principle": "The light of the wicked is snuffed out: the light goes dark in his tent and his lamp above him is put out.",
+   "shows": "Above a lone tent at dusk an oil lantern has just been snuffed out, a thread of smoke rising from it.",
+   "prompt": "A small camping tent pitched alone in an open field at deep blue dusk. Above its entrance, hanging from a pole, an old glass oil lantern has just been snuffed out: it is completely dark, with no flame and no glow at all, its glass smudged with soot, and a single thin thread of grey smoke curls up from the top of it into the sky. The tent below is dark too. The deep blue sky still gives enough light to see everything clearly; the lantern and the thread of smoke are high in the frame against the sky.",
    "people": false
   },
   {
-   "image": "cand/b1-fire.jpg",
-   "section": "5-7",
-   "slot": 2,
-   "prompt": "A small camping tent stands alone in an open field at deep blue dusk. In front of it a campfire has burned out: only a few dying embers and a long curl of grey smoke are left, and the tent behind it is dark. The deep blue sky still gives enough light to see everything clearly.",
-   "people": false
-  },
-  {
-   "image": "cand/c1-loop.jpg",
+   "verse": 8,
    "section": "8-10",
-   "slot": 3,
+   "image": "03-snare.jpg",
+   "tall": "tall/03-snare.jpg",
+   "principle": "His own feet take him into the net; the rope for him is hidden on the pathway.",
+   "shows": "A man's boot is about to step down into a rope snare hidden in the leaves of a woodland path.",
    "prompt": "Seen close to the ground on a woodland path covered in fallen autumn leaves, a man's leather boot is just about to step down. Right where it will land, a loop of rope lies hidden among the leaves, its end running off to a bent young tree beside the path. Only the boot and the lower part of the leg are in the frame, in the middle of the picture, with the rope loop just in front of it. Soft daylight through the trees."
   },
   {
-   "image": "cand/c1-net.jpg",
-   "section": "8-10",
-   "slot": 3,
-   "prompt": "A man in ordinary outdoor clothes walks unaware along a woodland path in daylight, looking ahead, not down. Just in front of his next step a wide rope net lies spread across the whole path, half hidden under a thin scatter of fallen leaves, its ropes running up into the branches above."
-  },
-  {
-   "image": "cand/d1-road.jpg",
+   "verse": 11,
    "section": "11-14",
-   "slot": 4,
-   "prompt": "At night on a lonely road through a dark forest, a man in ordinary clothes runs in fear, glancing back over his shoulder. In the light of a single streetlamp behind him, long black shadows of the trees stretch toward him from every side. Nobody and nothing else is there."
-  },
-  {
-   "image": "cand/d1-alley.jpg",
-   "section": "11-14",
-   "slot": 4,
+   "image": "04-alley.jpg",
+   "tall": "tall/04-alley.jpg",
+   "principle": "On every side terrors terrify him and drive him on at his heels.",
+   "shows": "A man hurries down a narrow alley at night, looking back in fear, huge shadows looming on the walls on both sides.",
    "prompt": "At night a man hurries through a narrow city alley, glancing back over his shoulder in fear. A single lamp throws huge looming shadows across the brick walls on every side of him. Nobody and nothing else is there."
   },
   {
-   "image": "cand/d2-corridor.jpg",
+   "verse": 13,
    "section": "11-14",
-   "slot": 5,
+   "image": "05-corridor.jpg",
+   "tall": "tall/05-corridor.jpg",
+   "principle": "Disease eats his body, and he is marched to the king of terrors.",
+   "shows": "A frail old man in a hospital gown walks slowly down a long dim corridor toward a doorway of darkness.",
    "prompt": "Seen from behind, a frail, thin grey-haired man in a hospital gown walks slowly away down a long, dim hospital corridor, one hand on the rail along the wall. At the far end of the corridor is a single open doorway with nothing but darkness beyond it."
   },
   {
-   "image": "cand/d2-photo.jpg",
-   "section": "11-14",
-   "slot": 5,
-   "prompt": "A gaunt, frail grey-haired man sits on the edge of a hospital bed, his thin arms resting on his knees, his head bowed. On the bedside table beside him stands a framed photograph of himself as a strong, broad-shouldered young man. Soft grey window light."
-  },
-  {
-   "image": "cand/e1-house.jpg",
+   "verse": 15,
    "section": "15-19",
-   "slot": 6,
+   "image": "06-tree.jpg",
+   "tall": "tall/06-tree.jpg",
+   "principle": "His home is left desolate; his roots dry up below and his branches wither above.",
+   "shows": "Beside an abandoned house on a parched plain, a dead tree stands with withered branches and dry roots laid bare.",
    "prompt": "On a parched plain beside an abandoned, empty farmhouse, a large dead tree stands with its bare grey branches withered against a pale sky. The ground round it has dried and cracked, and the dry dead roots are laid bare where the earth has washed away. A pale yellowish dust lies over the yard and the porch. Hazy midday light.",
    "people": false
   },
   {
-   "image": "cand/e1-roots.jpg",
+   "verse": 17,
    "section": "15-19",
-   "slot": 6,
-   "prompt": "A large dead tree stands alone on a parched hillside: its bare grey branches are withered against a pale sky, and its dry dead roots are laid bare where the cracked earth has washed away from them. Hazy midday light.",
-   "people": false
-  },
-  {
-   "image": "cand/e2-stone.jpg",
-   "section": "15-19",
-   "slot": 7,
+   "image": "07-stone.jpg",
+   "tall": "tall/07-stone.jpg",
+   "principle": "His memory perishes from the earth and he has no name; no one of his is left.",
+   "shows": "A weathered old headstone in long grass, worn so smooth that no name is left on it.",
    "prompt": "In the long grass of an old country graveyard, one weathered headstone stands tilted, worn completely smooth by the years: whatever was once carved on it is gone, and moss and lichen cover it. A few other old stones stand far behind, out of focus. Soft overcast light.",
    "people": false
   },
   {
-   "image": "cand/e2-swing.jpg",
-   "section": "15-19",
-   "slot": 7,
-   "prompt": "The overgrown yard of an abandoned house at dusk. An old child's swing hangs perfectly still from a rusted frame, its seat empty, weeds grown up round it. The house behind has dark, broken windows; no one has lived here for years.",
-   "people": false
-  },
-  {
-   "image": "cand/f1-stare.jpg",
+   "verse": 20,
    "section": "20-21",
-   "slot": 8,
+   "image": "08-ruin.jpg",
+   "tall": "tall/08-ruin.jpg",
+   "principle": "Those in the west and in the east are appalled at his end: this is the place of one who does not know God.",
+   "shows": "Passers-by on a country road stop and stare in shock at a burnt-out ruin of a house on a hill.",
    "prompt": "On a country road under a grey sky, a few passers-by have stopped and stand staring in shock at a ruined, empty house on a low hill: a woman with her hand over her mouth, an old man, a young man with a backpack. The house is a burnt-out, roofless shell with dead trees round it. The people are seen from the side, small against the scene."
-  },
-  {
-   "image": "cand/f1-both.jpg",
-   "section": "20-21",
-   "slot": 8,
-   "prompt": "A country road runs past a ruined, roofless house on a low hill under a grey sky. From the left, a man and a woman walking one way have stopped dead; from the right, an old man walking the other way has stopped too. All of them stand staring up at the ruin in dismay."
-  },
-  {
-   "image": "cand/b1-lantern2.jpg",
-   "section": "5-7",
-   "slot": 2,
-   "people": false,
-   "prompt": "A small camping tent pitched alone in an open field at deep blue dusk. Above its entrance, hanging from a pole, an old glass oil lantern has just been snuffed out: it is completely dark, with no flame and no glow at all, its glass smudged with soot, and a single thin thread of grey smoke curls up from the top of it into the sky. The tent below is dark too. The deep blue sky still gives enough light to see everything clearly; the lantern and the thread of smoke are high in the frame against the sky."
   }
  ]
 }
