@@ -1,5 +1,5 @@
 {
- "note": "Made by the steps in TV_PICTURES.md: the chapter is split into sections that each carry one deep meaning (\"sections\"), 10 picture ideas are written for each, the top two for each picture are made and the better is chosen by eye (2026-11-22). Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper two thirds, clear of the words. God, Sheol and death are not pictured as figures, Job and his friends are not portrayed as biblical people but shown through ordinary people of today, and nothing violent is shown (the spitting of verse 6 is shown as public scorn).",
+ "note": "Made by the steps in TV_PICTURES.md: the chapter is split into sections that each carry one deep meaning (\"sections\"), 10 picture ideas are written for each, the top two for each picture are made and the better is chosen by eye (2026-11-22). Job 17: seven pictures chosen by eye from 13 trial pictures (a fourteenth, the bed in a cellar, could not be made); the steps down to the barred gate, made for verse 16's \"bars of Sheol\", proved the truest picture for verses 13 and 14, so it stands there and the lantern carries verses 15 and 16. Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper two thirds, clear of the words. God, Sheol and death are not pictured as figures, Job and his friends are not portrayed as biblical people but shown through ordinary people of today, and nothing violent is shown (the spitting of verse 6 is shown as public scorn).",
  "method": "Second method, asked for by Obay on 2026-11-21 after the sentence-by-sentence pictures did not connect: (1) split the chapter into sections that each carry one deep meaning, written as one plain sentence; (2) write 10 different picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye. A section has one or two pictures. What he said went wrong before: he could not tell why some pictures were there, could not connect them to the meaning, and some were too abstract.",
  "sections": [
   {
@@ -115,5 +115,70 @@
    ]
   }
  ],
- "scenes": []
+ "scenes": [
+  {
+   "verse": 1,
+   "section": "1-2",
+   "image": "01-graves.jpg",
+   "tall": "tall/01-graves.jpg",
+   "principle": "My spirit is ruined, my days are snuffed out, and the graves are mine.",
+   "shows": "At dusk a gaunt grey-haired man sits slumped and spent on a bench among weathered headstones.",
+   "prompt": "At grey dusk in a quiet old cemetery, a gaunt grey-haired man in a plain coat sits alone, slumped on a wooden bench among rows of weathered, moss-covered headstones, his head bowed and his hands hanging loose between his knees, utterly spent. The headstones are plain and worn smooth, with nothing carved on them."
+  },
+  {
+   "verse": 3,
+   "section": "3-5",
+   "image": "02-hand.jpg",
+   "tall": "tall/02-hand.jpg",
+   "principle": "Who will clasp my hand in pledge? Be my guarantor yourself.",
+   "shows": "A worn grey-haired man holds out his open hand to three men in suits, and all three keep their arms folded.",
+   "prompt": "In a plain living room, a worn grey-haired man in an old cardigan stands holding out his open right hand for a handshake, his face pleading. Facing him stand three well-dressed men with their arms folded tightly, leaning back, not one of them reaching to take his hand. His outstretched empty hand is in the middle of the frame, clear and sharp."
+  },
+  {
+   "verse": 6,
+   "section": "6-7",
+   "image": "03-street.jpg",
+   "tall": "tall/03-street.jpg",
+   "principle": "He has made me a byword among the peoples, and my limbs are like a shadow.",
+   "shows": "A gaunt, hollow-eyed man walks down a town street while neighbours in doorways and windows point and laugh behind their hands.",
+   "prompt": "On a narrow present-day town street in daylight, a gaunt, hollow-eyed man in a worn coat walks alone with his head down, thin and frail as a shadow. On both sides neighbours stand in doorways and at windows, whispering behind their hands, smirking and pointing at him as he passes."
+  },
+  {
+   "verse": 8,
+   "section": "8-9",
+   "image": "04-path.jpg",
+   "tall": "tall/04-path.jpg",
+   "principle": "The righteous man holds to his way, and the one with clean hands grows firmer.",
+   "shows": "In driving rain a man walks steadily on up a straight mountain path, not turning aside.",
+   "prompt": "In driving rain on a bare mountainside, a man in a plain rain jacket walks steadily up a narrow, straight path, head lowered into the weather, keeping to the path without turning aside. The path runs on ahead of him up the slope into the grey storm light."
+  },
+  {
+   "verse": 10,
+   "section": "10-12",
+   "image": "05-night.jpg",
+   "tall": "tall/05-night.jpg",
+   "principle": "No wise man among you: you turn night into day and say light is near in the face of darkness.",
+   "shows": "At night on a stone wall a grieving man hides his face in his hand while his smiling friend points eagerly at the pitch-black horizon.",
+   "prompt": "At night in a dark field, a grieving man sits slumped on a low stone wall. Beside him a cheerful friend in a jacket smiles broadly and points eagerly at the pitch-black horizon, where there is no sign of light at all; the whole sky is black. Only a faint glow from a distant house window lets us see the two of them."
+  },
+  {
+   "verse": 13,
+   "section": "13-14",
+   "image": "06-gate.jpg",
+   "tall": "tall/06-gate.jpg",
+   "principle": "If I hope for Sheol as my house and spread my bed in the darkness.",
+   "shows": "Worn stone steps thick with dust lead down to an iron-barred gate standing open on darkness.",
+   "prompt": "Worn stone steps lead down into darkness, ending at an old iron-barred gate standing open at the bottom, with only blackness beyond it. Fine grey dust lies thick on the steps. Dim grey light falls from above.",
+   "people": false
+  },
+  {
+   "verse": 15,
+   "section": "15-16",
+   "image": "07-lantern.jpg",
+   "tall": "tall/07-lantern.jpg",
+   "principle": "Where then is my hope, and who will catch sight of it? It goes down to the dust.",
+   "shows": "At night an old man holds up a lantern on a vast, dark, empty plain of dust and stones.",
+   "prompt": "At night on a vast, dark, empty plain, an old man in a plain coat stands holding a lantern up high, peering out into the blackness, searching for something he cannot find. The small circle of lantern light shows only bare dust and stones around his feet; beyond it is darkness all the way to the horizon."
+  }
+ ]
 }
