@@ -1,5 +1,5 @@
 {
- "note": "Made by the steps in TV_PICTURES.md: the chapter is split into sections that each carry one deep meaning (\"sections\"), 10 picture ideas are written for each, the top two for each picture are made and the better is chosen by eye (2026-11-22). Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper two thirds, clear of the words. This chapter is Eliphaz speaking; the pictures show what his words say, through ordinary people and things of today. God is not pictured, Eliphaz and Job are not portrayed, and nothing violent is shown.",
+ "note": "Made by the steps in TV_PICTURES.md: the chapter is split into sections that each carry one deep meaning (\"sections\"), 10 picture ideas are written for each, the top two for each picture are made and the better is chosen by eye (2026-11-22). Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper two thirds, clear of the words. This chapter is Eliphaz speaking; the pictures show what his words say, through ordinary people and things of today. God is not pictured, Eliphaz and Job are not portrayed, and nothing violent is shown. 13 pictures chosen by eye from 24 trial pictures (2026-11-22); each section's \"trials\" says why.",
  "method": "Second method, asked for by Obay on 2026-11-21 after the sentence-by-sentence pictures did not connect: (1) split the chapter into sections that each carry one deep meaning, written as one plain sentence; (2) write 10 different picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye. A section has one or two pictures. What he said went wrong before: he could not tell why some pictures were there, could not connect them to the meaning, and some were too abstract.",
  "sections": [
   {
@@ -16,6 +16,12 @@
     "A man sits on the floor against a wall, his phone silent beside him",
     "An empty bus stop at night where a man calls after a bus that has already gone",
     "A man rings a bell at a locked gate before a dark house"
+   ],
+   "trials": [
+    {
+     "chose": "a1-canyon",
+     "why": "beat a1-doors: the man knocking at one door did not show that no one answers; the empty canyon shows it at once"
+    }
    ]
   },
   {
@@ -32,6 +38,16 @@
     "A tall tree blown over in a storm across a rich man's fence",
     "A grand gate rusted shut with thorns grown through it",
     "A mansion's empty swimming pool full of dead leaves"
+   ],
+   "trials": [
+    {
+     "chose": "b1-tree",
+     "why": "kept with b1-orchard: the uprooted tree shows 'taking root, and suddenly', the orchard shows verse 5"
+    },
+    {
+     "chose": "b1-orchard",
+     "why": "kept with b1-tree (verse 5 is about 7 seconds, just enough for its own picture)"
+    }
    ]
   },
   {
@@ -48,6 +64,12 @@
     "A father holds his newborn by a fireside as sparks rise",
     "A chimney sending sparks into a winter night sky",
     "Sparks rising from a burning brush pile in a cleared field"
+   ],
+   "trials": [
+    {
+     "chose": "c1-sparks",
+     "why": "beat c1-campfire: the same idea, but the sparks flying upward are far plainer and more striking"
+    }
    ]
   },
   {
@@ -64,6 +86,16 @@
     "Green shoots spring up from cracked earth after rain",
     "A man sitting low in the dust is lifted to his feet by a friend as rain begins",
     "A rainbow over a soaked green valley"
+   ],
+   "trials": [
+    {
+     "chose": "d1-truck",
+     "why": "beat d1-hill: the man on the bench looked like he was talking to someone; the truck is plainly prayer"
+    },
+    {
+     "chose": "d2-rain",
+     "why": "beat d2-plain: both show the rain, only the couple shows the lowly lifted up"
+    }
    ]
   },
   {
@@ -80,6 +112,16 @@
     "A poor widow holds the keys to her little house, safe on her doorstep",
     "A loud man in a fine suit falls silent as a worker is handed his unpaid wages",
     "A small boat sheltered in a harbour while a great ship passes"
+   ],
+   "trials": [
+    {
+     "chose": "e1-noon",
+     "why": "beat e1-net: the man in the net came out comic, like a hammock"
+    },
+    {
+     "chose": "e2-arm",
+     "why": "beat e2-shoot: the shoot in concrete says 'hope' but not rescue from the strong, which is most of these verses"
+    }
    ]
   },
   {
@@ -96,6 +138,12 @@
     "A blacksmith hammers hot iron into shape",
     "A coach corrects a runner's stance",
     "A mother cleans and bandages a cut on her daughter's hand"
+   ],
+   "trials": [
+    {
+     "chose": "f1-bandage",
+     "why": "beat f1-prune: the pruned vine needed working out; the bandage is understood at once"
+    }
    ]
   },
   {
@@ -112,6 +160,16 @@
     "A man feeds a deer from his hand at the forest's edge",
     "A clean ploughed field with its stones piled neatly into a wall, deer grazing at the edge",
     "A fox asleep in the sun beside a farm dog"
+   ],
+   "trials": [
+    {
+     "chose": "g1-cottage",
+     "why": "beat g1-sleep: both show it, but the man in bed at night would be the third bedroom-at-night picture in a row (Job 4 and 6 have them), and the cottage shows many troubles at once"
+    },
+    {
+     "chose": "h1-wall",
+     "why": "beat h1-wolf: it shows the laughing, the field and the animals together"
+    }
    ]
   },
   {
@@ -128,160 +186,139 @@
     "An old but vigorous man walks home from his field carrying a sheaf on his shoulder",
     "A full grain barn at harvest",
     "An old man's strong hands hold a ripe sheaf of wheat"
+   ],
+   "trials": [
+    {
+     "chose": "i1-porch",
+     "why": "beat i1-beds: both show it, but the beds picture is another bedroom at night, and the meadow ties to 'like the plants of the earth'"
+    },
+    {
+     "chose": "j1-sheaf",
+     "why": "beat j1-stacks: only this one shows 'full vigor' and the stack going up"
+    }
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
-   "image": "cand/a1-canyon.jpg",
+   "verse": 1,
    "section": "1-2",
-   "slot": 1,
+   "image": "01-canyon.jpg",
+   "tall": "tall/01-canyon.jpg",
+   "principle": "Call out if you like: is there anyone who will answer you?",
+   "shows": "A lone man stands at the rim of a vast, empty canyon, hands cupped round his mouth, calling out with no one anywhere to answer.",
    "prompt": "A lone man in a plain jacket stands at the rim of a vast, empty canyon under a wide pale overcast sky, his hands cupped round his mouth, calling out across the emptiness. Seen from the side, he is small against the enormous space. The far cliffs are bare rock; there is no one anywhere, no house, no road, nothing that could answer him."
   },
   {
-   "image": "cand/a1-doors.jpg",
-   "section": "1-2",
-   "slot": 1,
-   "prompt": "On a long, empty street of closed front doors at dusk, a weary man in a plain coat stands knocking at one door, and behind him the doors he has already knocked at stay shut and dark. No window is lit and no one comes. The street stretches away empty behind him."
-  },
-  {
-   "image": "cand/b1-tree.jpg",
+   "verse": 3,
    "section": "3-5",
-   "slot": 2,
+   "image": "02-tree.jpg",
+   "tall": "tall/02-tree.jpg",
+   "principle": "The fool seemed to have taken root, and suddenly his home was cursed.",
+   "shows": "A tall tree beside a showy new house lies toppled, its whole mass of shallow roots torn up out of the lawn.",
    "prompt": "Beside a large, showy new house with big windows, a tall tree that had grown up fast lies toppled across the lawn, its whole mass of shallow roots torn up out of the ground with earth still clinging to them, standing up higher than a man. The house stands silent and empty, its windows dark, under a heavy grey afternoon sky.",
    "people": false
   },
   {
-   "image": "cand/b1-orchard.jpg",
+   "verse": 5,
    "section": "3-5",
-   "slot": 2,
+   "image": "03-orchard.jpg",
+   "tall": "tall/03-orchard.jpg",
+   "principle": "The hungry eat his harvest, taking it even from among the thorns.",
+   "shows": "Hungry strangers with sacks reach through thorny brambles to pick the fruit in the orchard of a deserted, overgrown grand house.",
    "prompt": "A grand house stands deserted, its windows dark and its once-fine garden overgrown with tall thorny brambles. In the orchard in front of it, hungry strangers in worn, patched clothes reach in through the thorns to pick the last of the fruit from its trees and fill their sacks. Cool grey morning light."
   },
   {
-   "image": "cand/c1-campfire.jpg",
+   "verse": 6,
    "section": "6-7",
-   "slot": 3,
-   "prompt": "At night in a dark, bare field, a man sits alone on a log beside a small campfire, his face lit orange, looking up at a long stream of bright sparks that rise from the fire and fly upward into the black sky. The rising sparks are the brightest thing in the picture, climbing high above him into the upper part of the frame."
-  },
-  {
-   "image": "cand/c1-sparks.jpg",
-   "section": "6-7",
-   "slot": 3,
+   "image": "04-sparks.jpg",
+   "tall": "tall/04-sparks.jpg",
+   "principle": "Trouble does not sprout from the ground; people are born to trouble as surely as sparks fly upward.",
+   "shows": "From a log fire on bare dark ground, a tall column of sparks streams up into the night sky.",
    "prompt": "A crackling log fire burns at night on bare, dark, dry earth where nothing grows. A tall column of bright orange sparks streams straight up from the flames and rises high into the dark night sky, hundreds of sparks climbing and fading as they go, filling the upper part of the frame.",
    "people": false
   },
   {
-   "image": "cand/d1-truck.jpg",
+   "verse": 8,
    "section": "8-11",
-   "slot": 4,
+   "image": "05-truck.jpg",
+   "tall": "tall/05-truck.jpg",
+   "principle": "I would seek God and lay my cause before him.",
+   "shows": "Before sunrise a man in work clothes sits in his parked pickup, hands folded on the wheel, head bowed in prayer, a folder of papers beside him.",
    "prompt": "In the blue light just before sunrise, a man in work clothes sits alone in the driver's seat of his old parked pickup truck, seen through the open side window. His hands are folded on top of the steering wheel, his head is bowed and his eyes are closed in prayer. A worn folder of papers lies on the seat beside him."
   },
   {
-   "image": "cand/d1-hill.jpg",
+   "verse": 10,
    "section": "8-11",
-   "slot": 4,
-   "prompt": "On a quiet grassy hilltop in clear early-morning light, a middle-aged man in a plain jacket sits on a weathered wooden bench holding a closed, worn notebook in his hands, his face lifted toward the wide sky as he speaks earnestly, as if laying out his case. Rolling green hills fall away behind him."
-  },
-  {
-   "image": "cand/d2-rain.jpg",
-   "section": "8-11",
-   "slot": 5,
+   "image": "06-rain.jpg",
+   "tall": "tall/06-rain.jpg",
+   "principle": "He gives rain on the earth to set the lowly on high.",
+   "shows": "A poor farmer and his wife stand in their cracked, parched field, arms open and faces lifted, laughing as the first heavy rain pours down.",
    "prompt": "A poor farmer and his wife in worn clothes stand in their parched, cracked field under a dark grey sky as the first heavy rain pours down on them. Their faces are lifted to the rain and they are laughing with relief, soaked through. Rain streaks the air all round them and the dry earth is darkening as it drinks."
   },
   {
-   "image": "cand/d2-plain.jpg",
-   "section": "8-11",
-   "slot": 5,
-   "prompt": "Heavy rain sweeps across a vast, dry, cracked farmland from towering storm clouds, falling in grey curtains over the fields as far as the eye can see, with a shaft of sunlight breaking through one gap in the clouds onto the wet earth.",
-   "people": false
-  },
-  {
-   "image": "cand/e1-noon.jpg",
+   "verse": 12,
    "section": "12-16",
-   "slot": 6,
+   "image": "07-noon.jpg",
+   "tall": "tall/07-noon.jpg",
+   "principle": "He brings the schemes of the clever to nothing: at noon they grope as if in the night.",
+   "shows": "On a sunny city sidewalk at midday, a man in an expensive suit gropes forward with arms out and unseeing eyes while everyone else walks easily.",
    "prompt": "At bright midday on a busy city sidewalk full of sunshine, a man in an expensive dark suit gropes his way forward with both arms stretched out in front of him and his eyes wide and unseeing, like a man feeling his way through a pitch-dark room, while the people round him walk easily in the bright sunlight. The sun is high overhead and the shadows are short."
   },
   {
-   "image": "cand/e1-net.jpg",
+   "verse": 15,
    "section": "12-16",
-   "slot": 6,
-   "prompt": "On a sunny woodland path in clear daylight, a sly-looking man in a sharp suit hangs caught fast in a big rope net, the very net he had hidden across the path to catch others; it has sprung shut round him and holds him tangled and helpless above the path, his briefcase dangling."
-  },
-  {
-   "image": "cand/e2-arm.jpg",
-   "section": "12-16",
-   "slot": 7,
+   "image": "08-arm.jpg",
+   "tall": "tall/08-arm.jpg",
+   "principle": "He saves the needy from the hand of the strong, so the poor have hope.",
+   "shows": "A frail old man sits against a wall as a big man in an expensive coat looms over him, and another man's arm holds the big man back; the old man looks up with hope.",
    "prompt": "On a city street in afternoon light, a frail old man in a worn, patched coat shrinks back against a brick wall as a big, sneering man in an expensive coat looms over him. A strong arm reaches in between them from the side of the frame and holds the big man back, shielding the old man, who looks up with sudden hope."
   },
   {
-   "image": "cand/e2-shoot.jpg",
-   "section": "12-16",
-   "slot": 7,
-   "prompt": "Close view of a huge, heavy slab of grey concrete in soft afternoon light. Through one crack in it a single bright green shoot has pushed its way up and opened its first fresh leaves toward the sun.",
-   "people": false
-  },
-  {
-   "image": "cand/f1-bandage.jpg",
+   "verse": 17,
    "section": "17-18",
-   "slot": 8,
+   "image": "09-bandage.jpg",
+   "tall": "tall/09-bandage.jpg",
+   "principle": "Happy is the one God corrects: he wounds, and his hands heal.",
+   "shows": "A father, seen from behind, winds a bandage round his small son's scraped knee; the boy, cheeks still wet, is smiling.",
    "prompt": "In a bright, sunny kitchen, a small boy sits on the counter with his cheeks still wet from crying, starting to smile. His father kneels in front of him, seen from behind and mostly as strong, careful hands and forearms, gently winding a white bandage round the boy's scraped knee. Warm daylight from the window."
   },
   {
-   "image": "cand/f1-prune.jpg",
-   "section": "17-18",
-   "slot": 8,
-   "prompt": "Close view in a sunny vineyard: a vinedresser's weathered hands tie a freshly pruned grapevine back to its wooden stake with soft twine. The clean pruning cuts are plain to see, and fresh green leaves and small new bunches of grapes are already growing from the vine."
-  },
-  {
-   "image": "cand/g1-sleep.jpg",
+   "verse": 19,
    "section": "19-23",
-   "slot": 9,
-   "prompt": "At night a man sleeps peacefully in his bed, his face calm and untroubled, in a warm, safe bedroom lit by one small lamp. Just beyond the big window above the bed a fierce storm rages: lightning splits the sky, wind bends the trees, and rain lashes against the glass. The window and the storm fill the upper part of the frame."
-  },
-  {
-   "image": "cand/g1-cottage.jpg",
-   "section": "19-23",
-   "slot": 9,
+   "image": "10-cottage.jpg",
+   "tall": "tall/10-cottage.jpg",
+   "principle": "In six troubles he will rescue you, and in seven no evil will touch you.",
+   "shows": "A small stone cottage stands untouched on a green hill under clear sky while lightning, hail and rain rage all round it.",
    "prompt": "A small stone cottage with warm light in its windows stands whole and untouched on a green hill, while all round it on every side dark storms rage: lightning to the left, a curtain of hail to the right, wind bending the far trees, rain sweeping the distant hills. Over the cottage itself the sky is clear and calm.",
    "people": false
   },
   {
-   "image": "cand/h1-wall.jpg",
+   "verse": 22,
    "section": "19-23",
-   "slot": 10,
+   "image": "11-wall.jpg",
+   "tall": "tall/11-wall.jpg",
+   "principle": "You will laugh at disaster, and the stones and wild animals of the field will be at peace with you.",
+   "shows": "A grey-haired farmer sits laughing on the stone wall of his ploughed field while a deer grazes and a fox sits calmly beside him.",
    "prompt": "In soft morning light at the edge of a clean, well-tilled field bordered by a low stone wall, a grey-haired farmer sits at ease on the wall, laughing out loud. A wild deer grazes calmly a few steps from him and a red fox sits in the grass nearby, neither of them afraid of him."
   },
   {
-   "image": "cand/h1-wolf.jpg",
-   "section": "19-23",
-   "slot": 10,
-   "prompt": "In a wide green meadow in gentle morning light, a man walks calmly and unafraid along a path, and a large grey wolf lies peacefully in the grass a few steps from him, watching him with no threat at all, its head resting on its paws."
-  },
-  {
-   "image": "cand/i1-porch.jpg",
+   "verse": 24,
    "section": "24-27",
-   "slot": 11,
+   "image": "12-porch.jpg",
+   "tall": "tall/12-porch.jpg",
+   "principle": "Your home will be at peace and your descendants as many as the plants of the earth.",
+   "shows": "An old couple sit on the porch of their peaceful farmhouse at evening, watching many children and grandchildren run through a meadow of wildflowers.",
    "prompt": "At evening an old man and his wife sit side by side on the porch of their peaceful farmhouse, its windows glowing warm, looking out with contentment over a meadow thick with wildflowers where many of their children and grandchildren are playing and running together. Everything is calm and in good order."
   },
   {
-   "image": "cand/i1-beds.jpg",
+   "verse": 26,
    "section": "24-27",
-   "slot": 11,
-   "prompt": "At night an old man stands in an open doorway holding a small lamp, looking in with quiet contentment on a large room where many of his grandchildren lie asleep in rows of little beds, every one of them safe and in its place. Soft warm lamplight."
-  },
-  {
-   "image": "cand/j1-sheaf.jpg",
-   "section": "24-27",
-   "slot": 12,
+   "image": "13-sheaf.jpg",
+   "tall": "tall/13-sheaf.jpg",
+   "principle": "You will come to the grave in full vigor, as a stack of grain goes up in its season.",
+   "shows": "At the end of harvest a strong grey-haired farmer lifts the last golden sheaf onto a tall stack of sheaves.",
    "prompt": "At the end of harvest in warm late-afternoon light, a grey-haired but strong and vigorous farmer lifts the last golden sheaf of wheat up onto a tall, full stack of sheaves in a harvested field, his arms strong and his face content. The tall stack rises high in the upper part of the frame."
-  },
-  {
-   "image": "cand/j1-stacks.jpg",
-   "section": "24-27",
-   "slot": 12,
-   "prompt": "A harvested wheat field in warm late-afternoon light, with tall golden stacks of sheaves standing in rows across the stubble, all gathered in at just the right time, under a wide clear sky.",
-   "people": false
   }
  ]
 }
