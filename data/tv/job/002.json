@@ -1,5 +1,5 @@
 {
- "note": "Made by the steps in TV_PICTURES.md: the chapter is split into sections that each carry one deep meaning (\"sections\"), 10 picture ideas are written for each, the top two for each picture are made and the better is chosen by eye (2026-11-22). Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper two thirds, clear of the words. God, the adversary and the heavenly court are not pictured, Job, his wife and his friends are not portrayed as biblical people but shown through ordinary people of today, and nothing violent or gruesome is shown (his sores are shown as bandages).",
+ "note": "Made by the steps in TV_PICTURES.md: the chapter is split into sections that each carry one deep meaning (\"sections\"), 10 picture ideas are written for each, the top two for each picture are made and the better is chosen by eye (2026-11-22). Seven pictures chosen by eye from 13 trial pictures (a1-oak, b1-overboard, c1-bed, d1-hands, e1-weep, f1-day were not used). Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper two thirds, clear of the words. God, the adversary and the heavenly court are not pictured, Job, his wife and his friends are not portrayed as biblical people but shown through ordinary people of today, and nothing violent or gruesome is shown (his sores are shown as bandages).",
  "method": "Second method, asked for by Obay on 2026-11-21 after the sentence-by-sentence pictures did not connect: (1) split the chapter into sections that each carry one deep meaning, written as one plain sentence; (2) write 10 different picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye. A section has one or two pictures.",
  "sections": [
   {
@@ -67,86 +67,69 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
-   "image": "cand/a1-oak.jpg",
+   "verse": 1,
    "section": "1-6",
-   "slot": 1,
-   "people": false,
-   "prompt": "After a great storm, a wide open field on a hill where every tree has been blown down and lies uprooted and broken on the ground. In the middle one tall oak still stands perfectly straight and upright: most of its leaves and many of its branches have been torn away and it is bare and battered, but it is firmly rooted and unbowed. The grey storm clouds are breaking up and clear daylight falls on the oak."
-  },
-  {
-   "image": "cand/a1-man.jpg",
-   "section": "1-6",
-   "slot": 1,
+   "image": "01-standing.jpg",
+   "tall": "tall/01-standing.jpg",
+   "principle": "He is still holding fast to his blamelessness after everything was taken from him.",
+   "shows": "A grey-haired man stands straight and calm in front of his storm-wrecked farmhouse, its roof torn away.",
    "prompt": "In the yard of a storm-wrecked farm, a grey-haired man in a plain work shirt stands straight and upright in front of his ruined farmhouse, its roof torn away, with broken fences and scattered boards behind him. His face is calm and steady and his hands hang at his sides. Overcast morning light as the storm clouds move away."
   },
   {
-   "image": "cand/b1-xray.jpg",
+   "verse": 4,
    "section": "1-6",
-   "slot": 2,
+   "image": "02-xray.jpg",
+   "tall": "tall/02-xray.jpg",
+   "principle": "Now the test reaches his own body: touch his bone and his flesh.",
+   "shows": "A doctor holds an X-ray of a man's ribs and spine up to a light box while the grey-haired patient looks on gravely.",
    "prompt": "In a plain clinic room, a doctor in a white coat holds an X-ray picture of a man's ribs and spine up against a bright light box on the wall. A grey-haired man sits on the edge of the exam table in a plain shirt, looking at the X-ray with a grave, quiet face. Cool daylight from a window. The X-ray has no writing or marks on it."
   },
   {
-   "image": "cand/b1-overboard.jpg",
-   "section": "1-6",
-   "slot": 2,
-   "prompt": "On a small fishing boat riding low in a heavy grey sea, a grey-haired man is throwing his things over the side to keep the boat afloat: a suitcase is flying from his hands, and a television, a chair and boxes of belongings already float in the waves behind the boat. Stormy daylight, spray in the air."
-  },
-  {
-   "image": "cand/c1-ashes.jpg",
+   "verse": 7,
    "section": "7-8",
-   "slot": 3,
+   "image": "03-ashes.jpg",
+   "tall": "tall/03-ashes.jpg",
+   "principle": "Struck with sores from head to foot, he sits among the ashes with a piece of broken pottery.",
+   "shows": "A grey-haired man with bandaged arms sits alone in the ashes of his burned-down house, a broken piece of a clay pot in his hand.",
    "prompt": "A grey-haired man sits alone on the ground in a wide heap of grey ash where his house has burned down, a few blackened beams standing behind him. His arms, hands and neck are wrapped in clean white bandages. Resting in his open hand is a broken piece of a plain clay pot. His head is bowed and his shoulders are slumped in weariness. Dull overcast light, a few wisps of ash drifting in the air."
   },
   {
-   "image": "cand/c1-bed.jpg",
-   "section": "7-8",
-   "slot": 3,
-   "prompt": "In a bare hospital room, a grey-haired man sits alone on the edge of a hospital bed. His arms and hands, his neck and his bare feet are all wrapped in white bandages. His head is bowed and his shoulders slumped. Pale light from a window falls on him."
-  },
-  {
-   "image": "cand/d1-couple.jpg",
+   "verse": 9,
    "section": "9-10",
-   "slot": 4,
+   "image": "04-wife.jpg",
+   "tall": "tall/04-wife.jpg",
+   "principle": "His wife tells him to curse God and die; he answers that we accept the bad from God as well as the good, and does not sin with his lips.",
+   "shows": "In the ashes his wife kneels beside him in tears, gripping his arm and pleading, while he looks back at her steadily and gently.",
    "prompt": "On the grey ash-covered ground of a burned-out home, a grey-haired man with bandaged arms sits quietly. His wife kneels close beside him in tears, gripping his arm and pleading with him, her face full of grief and despair. He turns to her and looks back at her steadily and gently, calm. Overcast daylight."
   },
   {
-   "image": "cand/d1-hands.jpg",
-   "section": "9-10",
-   "slot": 4,
-   "prompt": "A close view of an old man's two weathered hands held out open, palms up, side by side. In one hand lies a ripe, glowing peach; in the other lies a sharp, thorny bramble twig. Both hands are held out in exactly the same way, receiving both. Soft daylight and a plain, softly blurred background."
-  },
-  {
-   "image": "cand/e1-road.jpg",
+   "verse": 11,
    "section": "11-13",
-   "slot": 5,
-   "prompt": "Three middle-aged men in plain coats walk up a long dirt road toward a distant figure who sits hunched alone on a grey heap of ash beside a burned-out house. The nearest of the three has stopped with his hand over his mouth in shock, and another is starting to weep. We see them from slightly behind, at the side of the road, with the lone figure small in the distance ahead of them. Grey afternoon light."
-  },
-  {
-   "image": "cand/e1-weep.jpg",
-   "section": "11-13",
-   "slot": 5,
-   "prompt": "Three middle-aged men in plain coats have stopped on a country road, staring ahead in grief at someone out of sight: one weeps with his face in his hands, one has his hand over his mouth, and one has let his travel bag drop into the dust. Grey daylight."
-  },
-  {
-   "image": "cand/e1-meet.jpg",
-   "section": "11-13",
-   "slot": 5,
+   "image": "05-meet.jpg",
+   "tall": "tall/05-meet.jpg",
+   "principle": "His three friends meet together by arrangement to come to grieve with him and comfort him.",
+   "shows": "Three men with travel bags meet at a country bus stop and embrace with grave, sorrowful faces.",
    "prompt": "At a small country bus stop, three middle-aged men with travel bags, each just arrived from his own town, meet and embrace one another with grave, sorrowful faces. Plain daylight, an empty road stretching away behind them."
   },
   {
-   "image": "cand/f1-night.jpg",
+   "verse": 12,
    "section": "11-13",
-   "slot": 6,
-   "prompt": "At night under a sky full of stars, four men sit silently on the bare ground in a small circle beside a grey heap of ash, with a single lantern on the ground between them. One of them, with bandaged arms, sits hunched; the other three sit close around him with their heads bowed, saying nothing. Seen from a low angle at their eye level. Quiet, still, deep blue night light."
+   "image": "06-road.jpg",
+   "tall": "tall/06-road.jpg",
+   "principle": "From far off they do not recognize him, and they weep aloud.",
+   "shows": "Three men on a dirt road stop and weep as they see a lone figure hunched on a heap of ash far ahead.",
+   "prompt": "Three middle-aged men in plain coats walk up a long dirt road toward a distant figure who sits hunched alone on a grey heap of ash beside a burned-out house. The nearest of the three has stopped with his hand over his mouth in shock, and another is starting to weep. We see them from slightly behind, at the side of the road, with the lone figure small in the distance ahead of them. Grey afternoon light."
   },
   {
-   "image": "cand/f1-day.jpg",
+   "verse": 13,
    "section": "11-13",
-   "slot": 6,
-   "prompt": "Four men sit side by side on the bare ground beside a burned-out house in pale grey morning light, completely silent. The one in the middle, with bandaged arms, sits hunched; the others sit close against him with their heads bowed, their coats dusty. Seen from a low angle at their eye level."
+   "image": "07-night.jpg",
+   "tall": "tall/07-night.jpg",
+   "principle": "They sit with him on the ground seven days and seven nights without a word, for his pain is very great.",
+   "shows": "Under a starry night sky four men sit silently on the bare ground round a single lantern, one of them with bandaged arms.",
+   "prompt": "At night under a sky full of stars, four men sit silently on the bare ground in a small circle beside a grey heap of ash, with a single lantern on the ground between them. One of them, with bandaged arms, sits hunched; the other three sit close around him with their heads bowed, saying nothing. Seen from a low angle at their eye level. Quiet, still, deep blue night light."
   }
  ]
 }
