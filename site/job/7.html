@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#171223">
+<title>Job 7</title>
+<style>
+:root{--bg:#171223;--panel:#1E1830;--shade:#241C3A;--text:#E8E2F2;--text-soft:#B3A7C9;--heading:#C9B8EC;--rule:#372C52;--accent:#B79BE8;--num:#7A6A9A;--alt-text:#C4B4E2;--note-bg:#201A32;
+--sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--serif:Georgia,"Times New Roman",Times,serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--serif);font-size:19px;line-height:1.75}
+a{color:var(--accent)}
+.wrap{max-width:42rem;margin:0 auto;padding:1.25rem 16px 4rem}
+.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:var(--sans);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;padding-bottom:.75rem;border-bottom:1px solid var(--rule);margin-bottom:1.5rem}
+.top a{text-decoration:none;color:var(--text-soft)}
+.top a:hover{color:var(--accent)}
+h1{font-family:var(--serif);color:var(--heading);font-weight:normal;font-size:2rem;line-height:1.25;margin:.5rem 0 .25rem}
+.sub{font-family:var(--sans);color:var(--text-soft);font-size:.85rem;margin:0 0 1.75rem}
+h2.sec{font-family:var(--sans);color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:600;line-height:1.4;border-bottom:1px solid var(--rule);padding-bottom:.4rem;margin:2.25rem 0 1rem}
+h3.group{font-family:var(--sans);color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:600;border-bottom:1px solid var(--rule);padding-bottom:.4rem;margin:2rem 0 1rem}
+p.v{margin:0 0 1.1rem}
+p.title{font-style:italic;color:var(--text-soft);margin:0 0 1rem}
+sup.n{font-family:var(--sans);font-size:.6em;color:var(--num);user-select:none;-webkit-user-select:none;margin:0 .2em 0 .1em;vertical-align:super;line-height:0}
+.alt{font-style:italic;font-size:.88em;color:var(--alt-text)}
+.note{font-style:italic;font-size:.85em;color:var(--text-soft);background:var(--note-bg);border-radius:4px;padding:0 .3em}
+.numbering{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:.6rem .8rem;margin:0 0 1.5rem}
+.pn{display:flex;justify-content:space-between;gap:.75rem;margin-top:3rem;font-family:var(--sans);font-size:.9rem}
+.pn a,.pn span{flex:1;display:block;padding:.85rem 1rem;border:1px solid var(--rule);border-radius:10px;background:var(--panel);text-decoration:none}
+.pn .next{text-align:right}
+.pn span{color:var(--num)}
+.btn{display:inline-block;font-family:var(--sans);font-size:.85rem;line-height:1.4;color:var(--bg);background:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:.5rem 1rem;text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(9.5rem,1fr));gap:.6rem;font-family:var(--sans);font-size:.95rem}
+.grid.ch{grid-template-columns:repeat(auto-fill,minmax(3.4rem,1fr))}
+.grid a,.grid span{display:block;padding:.7rem .8rem;border-radius:10px;border:1px solid var(--rule);background:var(--panel);text-decoration:none;line-height:1.3}
+.grid.ch a,.grid.ch span{text-align:center;padding:.7rem 0}
+.grid a{color:var(--text)}
+.grid a:hover{border-color:var(--accent)}
+.grid span{color:var(--num);background:transparent}
+.grid small{display:block;color:var(--text-soft);font-size:.75rem;margin-top:.2rem}
+.grid span small{color:var(--num)}
+.continue{display:block;margin:0 0 1.5rem;padding:1rem 1.1rem;border-radius:12px;background:var(--shade);border:1px solid var(--rule);text-decoration:none;font-family:var(--sans)}
+.continue b{display:block;color:var(--heading);font-family:var(--serif);font-weight:normal;font-size:1.2rem}
+.continue small{color:var(--text-soft)}
+.continue[hidden]{display:none}
+footer{margin-top:3rem;font-family:var(--sans);font-size:.75rem;color:var(--num);text-align:center}
+.seek{display:block;width:100%;margin:0;height:28px;background:transparent;-webkit-appearance:none;appearance:none;cursor:pointer;touch-action:none}
+.seek:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
+.seek::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:linear-gradient(to right,var(--accent) var(--p,0%),var(--rule) var(--p,0%))}
+.seek::-moz-range-track{height:6px;border-radius:3px;background:var(--rule)}
+.seek::-moz-range-progress{height:6px;border-radius:3px;background:var(--accent)}
+.seek::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--heading);margin-top:-6px;border:0}
+.seek::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--heading);border:0}
+.seek:disabled{opacity:.45}
+.times{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--text-soft);font-variant-numeric:tabular-nums;margin-top:.1rem}
+.alt-t{font:inherit;font-size:.78rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:0 .8rem;min-height:30px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.alt-t:active{background:var(--shade)}
+.alt-t:focus-visible{outline:2px solid var(--accent)}
+.tb{background:transparent;border:0;color:var(--text);padding:0;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;cursor:pointer;position:relative;-webkit-tap-highlight-color:transparent}
+.tb:active{background:var(--shade)}
+.tb:focus-visible{outline:2px solid var(--accent)}
+.tb:disabled{color:var(--num);cursor:default}
+.tb svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tb .solid{fill:currentColor;stroke:none}
+.tb.skip svg{width:36px;height:36px}
+.tb.skip span{position:absolute;font-size:.62rem;font-weight:700;top:50%;left:50%;transform:translate(-50%,-38%);font-variant-numeric:tabular-nums}
+.tb.main{width:72px;height:72px;background:var(--accent);color:var(--bg)}
+.tb.main:active{background:var(--heading)}
+.tb.main svg{width:34px;height:34px}
+.chips{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center}
+.chip{font:inherit;font-size:.82rem;color:var(--text);background:var(--shade);border:1px solid var(--rule);border-radius:999px;padding:.5rem .85rem;text-decoration:none;min-height:40px;display:inline-flex;align-items:center;gap:.35rem}
+select.chip{-webkit-appearance:none;appearance:none;text-align:center;cursor:pointer}
+.chip:focus-visible{outline:2px solid var(--accent)}
+body.lr{padding-bottom:10rem}
+#ch{position:relative;isolation:isolate}
+body.lr #ch p{color:#A396C6}
+body.lr #ch .w{color:#A396C6;cursor:pointer;transition:color .4s ease;-webkit-tap-highlight-color:transparent}
+body.lr #ch .w.on{color:var(--text)}
+body.lr #ch .w.now{color:#fff}
+.lr-pill{position:absolute;left:0;top:0;z-index:-1;border-radius:7px;background:rgba(183,155,232,.22);pointer-events:none;opacity:0;transition:transform .26s cubic-bezier(.25,.8,.35,1),width .26s cubic-bezier(.25,.8,.35,1),opacity .3s ease}
+body:not(.lr) .lr-pill{display:none}
+body.lr #ch .alt,body.lr #ch .note{opacity:.5}
+body.lr.noalt #ch .aside,body.lr.noalt #ch sup.n:has(+ .silent){display:none}
+@media (prefers-reduced-motion:reduce){body.lr #ch .w,.lr-pill{transition:none}}
+.sub .btn{margin:0 .35rem .4rem 0}
+.lr-bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--panel);border-top:1px solid var(--rule);font-family:var(--sans);padding:.3rem 14px calc(.5rem + env(safe-area-inset-bottom,0px))}
+.lr-bar[hidden]{display:none}
+.lr-in{max-width:42rem;margin:0 auto}
+.lr-row{display:flex;align-items:center;justify-content:space-between;gap:.25rem;margin-top:.2rem}
+.lr-mid{display:flex;align-items:center;gap:.7rem}
+.lr-bar .tb{width:46px;height:46px}
+.lr-bar .tb.main{width:56px;height:56px}
+.lr-bar .tb.main svg{width:28px;height:28px}
+.lr-bar .tb.skip svg{width:32px;height:32px}
+.lr-bar .tb.x svg{width:22px;height:22px}
+.lr-bar .chip{min-height:40px;padding:.35rem .5rem;min-width:4.4rem;justify-content:center}
+.lr-msg{font-size:.78rem;color:var(--text-soft);text-align:center;margin:.3rem 0 0}
+.lr-msg[hidden]{display:none}
+sup.n.here{color:var(--bg);background:var(--accent);border-radius:4px;padding:.15em .35em;transition:all .6s}
+.toast{position:fixed;left:12px;right:12px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:30;max-width:30rem;margin:0 auto;background:var(--shade);border:1px solid var(--accent);border-radius:14px;padding:.75rem .9rem;font-family:var(--sans);font-size:.9rem;color:var(--text);box-shadow:0 6px 24px rgba(0,0,0,.45);display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .6rem}
+.toast p{margin:0;flex:1 1 100%}
+.toast a,.toast button{font:inherit;font-size:.85rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:.45rem .85rem;text-decoration:none;cursor:pointer;min-height:40px;display:inline-flex;align-items:center}
+.toast .x{margin-left:auto;border:0;color:var(--text-soft)}
+body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../?home">Books</a><a href="../listen/">Listen</a></nav>
+<h1>Job 7</h1>
+<p class="sub"><a class="btn ghost" href="../listen/?from=job-7">&#9654; Listen from here</a></p>
+<div id="ch" data-id="job-7" data-title="Job 7" data-url="job/7.html" data-skip="3" data-next="../john/1.html" data-next-audio="../audio/john/1.mp3">
+<h2 class="sec">Months of emptiness</h2>
+<p class="v"><sup class="n" id="v1">1</sup><span class="w">&quot;Is</span> <span class="w">there</span> <span class="w">not</span> <span class="w">a</span> <span class="w">soldier&#x27;s</span> <span class="w">service</span> <span class="w">for</span> <span class="w">a</span> <span class="w">mortal</span> <span class="w">on</span> <span class="w">earth,</span> <span class="w">and</span> <span class="w">are</span> <span class="w">his</span> <span class="w">days</span> <span class="w">not</span> <span class="w">like</span> <span class="w">the</span> <span class="w">days</span> <span class="w">of</span> <span class="w">a</span> <span class="w">hired</span> <span class="w">worker?</span> <sup class="n" id="v2">2</sup><span class="w">Like</span> <span class="w">a</span> <span class="w">slave</span> <span class="w">who</span> <span class="w">pants</span> <span class="w">for</span> <span class="w">the</span> <span class="w">shadow,</span> <span class="w">and</span> <span class="w">like</span> <span class="w">a</span> <span class="w">hired</span> <span class="w">worker</span> <span class="w">who</span> <span class="w">hopes</span> <span class="w">for</span> <span class="w">his</span> <span class="w">pay,</span> <sup class="n" id="v3">3</sup><span class="w">so</span> <span class="w">I</span> <span class="w">have</span> <span class="w">been</span> <span class="w">made</span> <span class="w">to</span> <span class="w">inherit</span> <span class="w">months</span> <span class="w">of</span> <span class="w">emptiness,</span> <span class="w">and</span> <span class="w">nights</span> <span class="w">of</span> <span class="w">misery</span> <span class="w">have</span> <span class="w">been</span> <span class="w">appointed</span> <span class="w">for</span> <span class="w">me.</span></p>
+<p class="v"><sup class="n" id="v4">4</sup><span class="w">&quot;When</span> <span class="w">I</span> <span class="w">lie</span> <span class="w">down,</span> <span class="w">I</span> <span class="w">say,</span> <span class="w">&#x27;When</span> <span class="w">will</span> <span class="w">I</span> <span class="w">rise?&#x27;</span> <span class="w">But</span> <span class="w">the</span> <span class="w">evening</span> <span class="w">stretches</span> <span class="w">on,</span> <span class="w">and</span> <span class="w">I</span> <span class="w">have</span> <span class="w">my</span> <span class="w">fill</span> <span class="w">of</span> <span class="w">tossing</span> <span class="w">until</span> <span class="w">the</span> <span class="w">morning</span> <span class="w">twilight.</span> <sup class="n" id="v5">5</sup><span class="w">My</span> <span class="w">flesh</span> <span class="w">is</span> <span class="w">clothed</span> <span class="w">with</span> <span class="w">maggots</span> <span class="w">and</span> <span class="w">clods</span> <span class="w">of</span> <span class="w">dust;</span> <span class="w">my</span> <span class="w">skin</span> <span class="w">breaks</span> <span class="w">out</span> <span class="w">and</span> <span class="w">runs</span><span class="aside"> <span class="alt">[alt: and is loathsome]</span></span>. <sup class="n" id="v6">6</sup><span class="w">My</span> <span class="w">days</span> <span class="w">are</span> <span class="w">swifter</span> <span class="w">than</span> <span class="w">a</span> <span class="w">weaver&#x27;s</span> <span class="w">shuttle,</span> <span class="w">and</span> <span class="w">they</span> <span class="w">come</span> <span class="w">to</span> <span class="w">an</span> <span class="w">end</span> <span class="w">without</span> <span class="w">hope</span><span class="aside"> <span class="alt">[alt: for lack of thread]</span></span>.<span class="aside"> <span class="note">[In Hebrew one word means both &quot;hope&quot; and &quot;thread.&quot;]</span></span></p>
+<h2 class="sec">My life is wind</h2>
+<p class="v"><sup class="n" id="v7">7</sup><span class="w">&quot;Remember</span> <span class="w">that</span> <span class="w">my</span> <span class="w">life</span> <span class="w">is</span> <span class="w">wind;</span> <span class="w">my</span> <span class="w">eye</span> <span class="w">will</span> <span class="w">not</span> <span class="w">see</span> <span class="w">good</span> <span class="w">again.</span> <sup class="n" id="v8">8</sup><span class="w">The</span> <span class="w">eye</span> <span class="w">of</span> <span class="w">one</span> <span class="w">who</span> <span class="w">sees</span> <span class="w">me</span> <span class="w">will</span> <span class="w">not</span> <span class="w">catch</span> <span class="w">sight</span> <span class="w">of</span> <span class="w">me;</span> <span class="w">your</span> <span class="w">eyes</span> <span class="w">will</span> <span class="w">be</span> <span class="w">on</span> <span class="w">me,</span> <span class="w">and</span> <span class="w">I</span> <span class="w">will</span> <span class="w">be</span> <span class="w">no</span> <span class="w">more.</span></p>
+<p class="v"><sup class="n" id="v9">9</sup><span class="w">&quot;A</span> <span class="w">cloud</span> <span class="w">comes</span> <span class="w">to</span> <span class="w">an</span> <span class="w">end</span> <span class="w">and</span> <span class="w">is</span> <span class="w">gone;</span> <span class="w">so</span> <span class="w">one</span> <span class="w">who</span> <span class="w">goes</span> <span class="w">down</span> <span class="w">to</span> <span class="w">Sheol</span> <span class="w">does</span> <span class="w">not</span> <span class="w">come</span> <span class="w">up.</span> <sup class="n" id="v10">10</sup><span class="w">He</span> <span class="w">no</span> <span class="w">longer</span> <span class="w">returns</span> <span class="w">to</span> <span class="w">his</span> <span class="w">house,</span> <span class="w">and</span> <span class="w">his</span> <span class="w">place</span> <span class="w">no</span> <span class="w">longer</span> <span class="w">recognizes</span> <span class="w">him.</span></p>
+<h2 class="sec">Am I the sea?</h2>
+<p class="v"><sup class="n" id="v11">11</sup><span class="w">&quot;I,</span> <span class="w">for</span> <span class="w">my</span> <span class="w">part,</span> <span class="w">will</span> <span class="w">not</span> <span class="w">restrain</span> <span class="w">my</span> <span class="w">mouth;</span> <span class="w">I</span> <span class="w">will</span> <span class="w">speak</span> <span class="w">in</span> <span class="w">the</span> <span class="w">distress</span> <span class="w">of</span> <span class="w">my</span> <span class="w">spirit;</span> <span class="w">I</span> <span class="w">will</span> <span class="w">complain</span> <span class="w">in</span> <span class="w">the</span> <span class="w">bitterness</span> <span class="w">of</span> <span class="w">my</span> <span class="w">soul.</span> <sup class="n" id="v12">12</sup><span class="w">Am</span> <span class="w">I</span> <span class="w">the</span> <span class="w">sea,</span> <span class="w">or</span> <span class="w">a</span> <span class="w">sea</span> <span class="w">monster,</span> <span class="w">that</span> <span class="w">you</span> <span class="w">set</span> <span class="w">a</span> <span class="w">guard</span> <span class="w">over</span> <span class="w">me?</span></p>
+<p class="v"><sup class="n" id="v13">13</sup><span class="w">&quot;When</span> <span class="w">I</span> <span class="w">say,</span> <span class="w">&#x27;My</span> <span class="w">couch</span> <span class="w">will</span> <span class="w">comfort</span> <span class="w">me;</span> <span class="w">my</span> <span class="w">bed</span> <span class="w">will</span> <span class="w">help</span> <span class="w">carry</span> <span class="w">my</span> <span class="w">complaint,&#x27;</span> <sup class="n" id="v14">14</sup><span class="w">then</span> <span class="w">you</span> <span class="w">frighten</span> <span class="w">me</span> <span class="w">with</span> <span class="w">dreams</span> <span class="w">and</span> <span class="w">terrify</span> <span class="w">me</span> <span class="w">with</span> <span class="w">visions,</span> <sup class="n" id="v15">15</sup><span class="w">and</span> <span class="w">my</span> <span class="w">soul</span> <span class="w">chooses</span> <span class="w">strangling,</span> <span class="w">death</span> <span class="w">rather</span> <span class="w">than</span> <span class="w">my</span> <span class="w">bones.</span> <sup class="n" id="v16">16</sup><span class="w">I</span> <span class="w">reject</span> <span class="w">my</span> <span class="w">life;</span> <span class="w">I</span> <span class="w">will</span> <span class="w">not</span> <span class="w">live</span> <span class="w">forever.</span> <span class="w">Leave</span> <span class="w">me</span> <span class="w">alone,</span> <span class="w">for</span> <span class="w">my</span> <span class="w">days</span> <span class="w">are</span> <span class="w">a</span> <span class="w">breath.</span></p>
+<h2 class="sec">What is a mortal?</h2>
+<p class="v"><sup class="n" id="v17">17</sup><span class="w">&quot;What</span> <span class="w">is</span> <span class="w">a</span> <span class="w">mortal,</span> <span class="w">that</span> <span class="w">you</span> <span class="w">make</span> <span class="w">so</span> <span class="w">much</span> <span class="w">of</span> <span class="w">him,</span> <span class="w">and</span> <span class="w">that</span> <span class="w">you</span> <span class="w">consider</span> <span class="w">him,</span> <sup class="n" id="v18">18</sup><span class="w">and</span> <span class="w">inspect</span> <span class="w">him</span> <span class="w">every</span> <span class="w">morning,</span> <span class="w">and</span> <span class="w">test</span> <span class="w">him</span> <span class="w">every</span> <span class="w">moment?</span> <sup class="n" id="v19">19</sup><span class="w">How</span> <span class="w">long</span> <span class="w">will</span> <span class="w">you</span> <span class="w">not</span> <span class="w">look</span> <span class="w">away</span> <span class="w">from</span> <span class="w">me,</span> <span class="w">or</span> <span class="w">let</span> <span class="w">go</span> <span class="w">of</span> <span class="w">me</span> <span class="w">long</span> <span class="w">enough</span> <span class="w">for</span> <span class="w">me</span> <span class="w">to</span> <span class="w">swallow</span> <span class="w">my</span> <span class="w">spit?</span></p>
+<p class="v"><sup class="n" id="v20">20</sup><span class="w">&quot;If</span> <span class="w">I</span> <span class="w">have</span> <span class="w">sinned,</span> <span class="w">what</span> <span class="w">do</span> <span class="w">I</span> <span class="w">do</span> <span class="w">to</span> <span class="w">you</span><span class="aside"> <span class="alt">[alt: I have sinned; what am I to do for you]</span></span>, <span class="w">watcher</span> <span class="w">of</span> <span class="w">humankind?</span> <span class="w">Why</span> <span class="w">have</span> <span class="w">you</span> <span class="w">set</span> <span class="w">me</span> <span class="w">as</span> <span class="w">your</span> <span class="w">target,</span> <span class="w">so</span> <span class="w">that</span> <span class="w">I</span> <span class="w">have</span> <span class="w">become</span> <span class="w">a</span> <span class="w">burden</span> <span class="w">to</span> <span class="w">myself</span><span class="aside"> <span class="alt">[alt: a burden to you, as the old Greek version and a few Hebrew copies read]</span></span>? <sup class="n" id="v21">21</sup><span class="w">And</span> <span class="w">why</span> <span class="w">do</span> <span class="w">you</span> <span class="w">not</span> <span class="w">carry</span> <span class="w">away</span> <span class="w">my</span> <span class="w">rebellion</span> <span class="w">and</span> <span class="w">take</span> <span class="w">away</span> <span class="w">my</span> <span class="w">guilt?</span> <span class="w">For</span> <span class="w">I</span> <span class="w">will</span> <span class="w">now</span> <span class="w">lie</span> <span class="w">down</span> <span class="w">in</span> <span class="w">the</span> <span class="w">dust;</span> <span class="w">you</span> <span class="w">will</span> <span class="w">search</span> <span class="w">for</span> <span class="w">me,</span> <span class="w">and</span> <span class="w">I</span> <span class="w">will</span> <span class="w">be</span> <span class="w">no</span> <span class="w">more.&quot;</span></p>
+</div>
+<div class="pn"><a class="prev" href="6.html">&larr; Job 6</a><a class="next" href="../john/1.html">&rarr; John 1</a></div>
+<footer>An original translation from the Hebrew and Greek.</footer>
+</div><script src="../read.js?v=92a6993d" defer></script></body></html>
