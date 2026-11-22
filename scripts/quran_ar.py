@@ -209,7 +209,7 @@ def build(out, x):
         switch = pill("ar", "../quran-%d/" % n if b else "../?home", "",
                       ' data-surah="%d" data-upto="%d"' % (n, b["ranges"][-1][1] if b else 0))
         jumps = sections(n, verses, x["sections"].get(n, []))
-        bar = quran_site.section_bar(jumps)
+        bar = quran_site.section_bar(jumps, bool(rel))
         name = english_name(n)
         eyebrow = "Surah %d%s" % (n, " · " + name if name else "")
         about = "%d verses" % s["verses"] + (" · recited by %s" % RECITER if rel else "")

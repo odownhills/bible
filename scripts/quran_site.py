@@ -27,14 +27,18 @@ import re
 WORD = re.compile(r"[^\s—–]*\w[^\s—–]*")   # one spoken word: the same rule as scripts/build.py
 
 CSS = """
-.secbar{position:sticky;top:var(--navh,3.3rem);z-index:14;background:var(--bg);margin:0 0 1.25rem;padding:.1rem 0 .55rem}
+.secbar{position:sticky;top:var(--navh,3.3rem);z-index:14;background:var(--bg);margin:0 0 1.25rem;padding:.1rem 0 .55rem;display:flex;gap:.5rem}
 .secbar:after{content:"";position:absolute;left:0;right:0;top:100%;height:.8rem;background:linear-gradient(var(--bg),rgba(23,18,35,0));pointer-events:none}
-.sec-now{width:100%;display:flex;align-items:center;gap:.6rem;font:inherit;font-family:var(--sans);font-size:.88rem;line-height:1.3;color:var(--text);background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:.55rem .75rem;cursor:pointer;text-align:left;-webkit-tap-highlight-color:transparent}
+.sec-now{flex:1;min-width:0;display:flex;align-items:center;gap:.6rem;font:inherit;font-family:var(--sans);font-size:.88rem;line-height:1.3;color:var(--text);background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:.55rem .75rem;cursor:pointer;text-align:left;-webkit-tap-highlight-color:transparent}
 .sec-now:focus-visible{outline:2px solid var(--accent)}
 .sec-now .sec-l{flex:none;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:.68rem}
 .sec-now b{flex:1;min-width:0;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sec-now i{flex:none;font-style:normal;color:var(--text-soft);font-size:.8rem;transition:transform .2s ease}
 .sec-now[aria-expanded=true] i{transform:rotate(180deg)}
+.sec-play{flex:none;width:2.9rem;display:flex;align-items:center;justify-content:center;background:var(--accent);color:var(--bg);border:0;border-radius:10px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.sec-play svg{width:1.1rem;height:1.1rem;fill:currentColor}
+.sec-play:focus-visible{outline:2px solid var(--heading);outline-offset:2px}
+body.lr .sec-play{display:none}
 .sec-list{position:absolute;z-index:1;left:0;right:0;top:calc(100% - .3rem);max-height:66vh;overflow:auto;-webkit-overflow-scrolling:touch;background:var(--panel);border:1px solid var(--rule);border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.55);padding:.3rem;font-family:var(--sans)}
 .sec-list[hidden]{display:none}
 .sec-list a{display:flex;align-items:baseline;justify-content:space-between;gap:.9rem;padding:.7rem .7rem;border-radius:8px;text-decoration:none;color:var(--text);font-size:.92rem;line-height:1.35}
@@ -70,10 +74,11 @@ def fingerprint(text, skip, size):
     return "%s:%s" % (checksum(" ".join(part_words(text, skip))), size)
 
 
-def section_bar(items):
+def section_bar(items, play=False):
     """The bar that jumps between a surah's sections. items: [(target id, name, first verse, last verse, group)];
     group is a heading shown above an item that starts a new group (or None). A surah with fewer than three
-    sections (a short one) has no bar."""
+    sections (a short one) has no bar. play: the page has a recording, so the bar also has a button that starts
+    Listen + Read from the verse at the top of the screen (scripts/read.js), with no need to scroll back up."""
     if len(items) < 3:
         return ""
     rows = []
@@ -85,8 +90,12 @@ def section_bar(items):
             target, target, html_escape(name), "<small>%s</small>" % span if span else ""))
     return ('<div class="secbar" id="secbar"><button type="button" class="sec-now" id="sec-now" aria-expanded="false" '
             'aria-controls="sec-list"><span class="sec-l">Sections</span><b id="sec-name">%s</b><i aria-hidden="true">&#9662;</i>'
-            '</button><nav class="sec-list" id="sec-list" aria-label="Sections" hidden>%s</nav></div>'
-            % (html_escape(items[0][1]), "".join(rows)))
+            '</button>%s<nav class="sec-list" id="sec-list" aria-label="Sections" hidden>%s</nav></div>'
+            % (html_escape(items[0][1]), PLAY if play else "", "".join(rows)))
+
+
+PLAY = ('<button type="button" class="sec-play lr-here" aria-label="Listen + Read from here" title="Listen + Read from here">'
+        '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.2v13.6a.6.6 0 0 0 .9.5l11-6.8a.6.6 0 0 0 0-1L8.9 4.7a.6.6 0 0 0-.9.5z"/></svg></button>')
 
 
 def html_escape(s):
@@ -165,7 +174,7 @@ def build(out, x):
         last_v = parts[-1]["range"][1]
         secs = english_sections([(p["meta"], p["blocks"]) for p in parts], last_v)
         sections_by_surah[n] = [(name, a, z) for _, name, a, z in secs]
-        bar = section_bar([(sid, name, a, z, None) for sid, name, a, z in secs])
+        bar = section_bar([(sid, name, a, z, None) for sid, name, a, z in secs], has_audio)
 
         nxt = books[idx + 1] if idx + 1 < len(books) else None
         prv = books[idx - 1] if idx > 0 else None

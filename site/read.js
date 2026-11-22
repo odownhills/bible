@@ -264,7 +264,8 @@ function go(rel,auto){
 
 d.addEventListener('click',function(e){
   var t=e.target; if(!t.closest)return;
-  if(t.closest('#lr-start')){ e.preventDefault(); if(active){ follow=true; scrollToWord(true); if(!want)play(); } else begin(true,false,$('ch')&&$('ch').dataset.stream?verseAtTop($('ch')):0); return; }
+  // the Listen + Read button; on the Quran site also the one in the bar of sections, which stays on screen
+  if(t.closest('#lr-start,.lr-here')){ e.preventDefault(); if(active){ follow=true; scrollToWord(true); if(!want)play(); } else begin(true,false,$('ch')&&$('ch').dataset.stream?verseAtTop($('ch')):0); return; }
   if(!active)return;
   var w=t.closest('#ch .w');
   if(w&&T&&ready){ jump(T[w._k]-LEAD+0.01); if(!want)play(); return; }

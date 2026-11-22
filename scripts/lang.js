@@ -79,10 +79,14 @@ function navh(){   // the section bar sits right under the top bar (a pixel unde
 }
 function target(a){ return d.getElementById(a.getAttribute('data-at')); }
 function current(){
-  // the last section whose start has reached the line just under the bars; the first one until then
+  // the last section whose start has reached the line just under the bars, the first one until then;
+  // during Listen + Read, the section of the word being read
   if(!find())return;
-  var line=cover()+Math.min(window.innerHeight*0.25,140),k=0,i,el;
-  for(i=0;i<links.length;i++){ el=target(links[i]); if(el&&el.getBoundingClientRect().top<=line) k=i; else if(el) break; }
+  var line=cover()+Math.min(window.innerHeight*0.25,140),k=0,i,el,now=d.body.classList.contains('lr')&&d.querySelector('#ch .w.now');
+  for(i=0;i<links.length;i++){
+    el=target(links[i]); if(!el)continue;
+    if(now?(el.compareDocumentPosition(now)&4):el.getBoundingClientRect().top<=line) k=i; else break;
+  }
   if(k!==here){
     if(here>=0){ links[here].classList.remove('on'); links[here].removeAttribute('aria-current'); }
     here=k; links[k].classList.add('on'); links[k].setAttribute('aria-current','true');
@@ -111,7 +115,9 @@ d.addEventListener('click',function(e){
   try{ history.replaceState(history.state,'','#'+el.id); }catch(x){}
 });
 d.addEventListener('keydown',function(e){ if(e.key==='Escape'&&find()&&!list.hidden){ open(false); btn.focus(); } });
-window.addEventListener('scroll',function(){ if(!raf) raf=requestAnimationFrame(function(){ raf=0; current(); }); },{passive:true});
+function soon(){ if(!raf) raf=requestAnimationFrame(function(){ raf=0; current(); }); }
+window.addEventListener('scroll',soon,{passive:true});
+d.addEventListener('timeupdate',soon,true);   // the recording's progress (media events reach the document only on the way down)
 window.addEventListener('resize',function(){ navh(); current(); });
 navh(); current();
 })();
