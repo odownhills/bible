@@ -161,7 +161,7 @@
    "tall": "tall/07-tables.jpg",
    "principle": "He drove them all out, poured out the coins and overturned the tables: do not make my Father's house a house of trade.",
    "shows": "An overturned money table and scattered coins in an emptied hall, as the sheep, cattle and doves stream out through the open doors.",
-   "prompt": "In a plain, bright, high-ceilinged hall with tall clear windows, a money changer's folding table lies overturned on its side in the middle of the floor, and coins are spilled and scattered across the stone floor, glinting in a shaft of daylight. Through the wide-open double doors at the far end, sheep and cattle are running out into the sunlight, and white doves are flying out above them. No religious symbols of any kind. The table and the open doors are in the upper two thirds of the picture.",
+   "prompt": "Inside a plain, bright, modern hall of prayer with rows of simple wooden pews and tall clear windows, a money changer's folding table lies overturned in the aisle between the pews, and coins are spilled and scattered across the floor, glinting in a shaft of daylight. At the far end the wide double doors stand open, and sheep and cattle are running out through them into the sunlight, with white doves flying out above them. No crosses or religious symbols of any kind. The table, the pews and the open doors are in the upper two thirds of the picture.",
    "people": false
   },
   {
@@ -239,6 +239,12 @@
    "image": "cand/06-home.jpg",
    "shows": "A father's family home has been turned into a crowded shop full of stalls and cash.",
    "prompt": "A warm family living room in an old house, with a father's worn armchair, family photographs on the walls and a fireplace, has been turned into a crowded noisy shop: market stalls piled with goods, blank price tags hanging everywhere, a cash register on the dining table, stacked cages of white doves on the sofa, and sellers haggling with customers. The crowded room fills the upper two thirds of the picture."
+  },
+  {
+   "verse": 14,
+   "image": "cand/06-chapel.jpg",
+   "shows": "A plain hall of prayer with rows of wooden pews is crammed like a market with pens of sheep and cattle, cages of doves and tables of money.",
+   "prompt": "Inside a plain, bright, modern hall of prayer with rows of simple wooden pews and tall clear windows, the aisles and the spaces between the pews have been crammed like a noisy livestock market: pens of sheep, a few cattle tied to the pews, stacked wire cages of white doves, and men behind folding tables heaped with banknotes and coins set up across the front, haggling with customers. No crosses or religious symbols of any kind. The pews and the market fill the upper two thirds of the picture."
   },
   {
    "verse": 15,
