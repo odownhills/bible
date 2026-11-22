@@ -99,143 +99,107 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
-   "image": "cand/a1-megaphones.jpg",
+   "verse": 1,
    "section": "1-6",
-   "slot": 1,
-   "prompt": "In a bare room with pale walls in plain daylight, a worn grey-haired man in a plain shirt sits on a wooden chair, hunched, pressing both hands over his ears, eyes shut tight in pain. All round him, very close, a ring of big old loudspeaker megaphones on metal stands are aimed straight at his head from every side. The man and the megaphones are in the upper middle of the picture; below is only the bare wooden floor."
-  },
-  {
-   "image": "cand/a1-ears.jpg",
-   "section": "1-6",
-   "slot": 1,
+   "image": "01-words.jpg",
+   "tall": "tall/01-words.jpg",
+   "principle": "How long will you torment me and crush me with words? Ten times you have put me to shame.",
+   "shows": "A worn grey-haired man on a low stool covers his ears and shuts his eyes while three men lean over him, all talking at him at once.",
    "prompt": "In a bare dusty yard on a grey afternoon, a worn grey-haired man in a plain shirt sits on a low wooden stool, pressing both hands over his ears, eyes shut, worn out. Three men in everyday clothes stand close over him, all leaning down and talking at him at once, one jabbing a finger, one counting points off on his fingers. Their heads and the man's face are in the upper part of the picture."
   },
   {
-   "image": "cand/a2-net.jpg",
+   "verse": 6,
    "section": "1-6",
-   "slot": 2,
+   "image": "02-net.jpg",
+   "tall": "tall/02-net.jpg",
+   "principle": "Know that God has wronged me and closed his net around me; I cry out and am not answered.",
+   "shows": "A man caught under a great net pegged down all round him in an open field, gripping the mesh and calling out, with no one in sight.",
    "prompt": "In an open grassy field under a wide pale sky, a man in plain everyday clothes stands caught under a great rope net that has been thrown over him from above; its edges are pegged down into the ground all round him. He has his hands up gripping the mesh and his face lifted, calling out for help, and there is no one anywhere in sight. The man and the net are in the upper two thirds of the picture."
   },
   {
-   "image": "cand/a2-deer.jpg",
-   "section": "1-6",
-   "slot": 2,
-   "prompt": "In a quiet forest clearing in soft daylight, a young deer stands still under a wide hunting net that has fallen over it from above; the net's edges are pinned to the ground all round it and the mesh lies over its back and head. It looks out through the mesh, unable to get free. No hunter is anywhere in sight.",
-   "people": false
-  },
-  {
-   "image": "cand/b1-wall.jpg",
+   "verse": 8,
    "section": "7-12",
-   "slot": 1,
+   "image": "03-wall.jpg",
+   "tall": "tall/03-wall.jpg",
+   "principle": "He has walled up my path so that I cannot pass, and set darkness on my way.",
+   "shows": "Seen from behind, a man stands on a country road at dusk before a brick wall built straight across it, no way past.",
    "prompt": "Seen from behind, a man in a plain jacket stands on a narrow country road at dusk. Right in front of him a tall new brick wall has been built straight across the road from one side to the other, higher than his head, with thick hedges and rock on both sides, so there is no way past. The light is fading and darkness is coming on over the road ahead. The man and the wall are in the upper two thirds of the picture; below is only the empty road surface."
   },
   {
-   "image": "cand/b1-tunnel.jpg",
+   "verse": 10,
    "section": "7-12",
-   "slot": 1,
-   "prompt": "Seen from behind, a man in a plain jacket stands at the far end of a long, dim stone tunnel, facing a solid wall of new bricks that blocks it completely from floor to roof. His hand rests flat against the bricks. Behind him the faint light from the tunnel's entrance is fading into darkness. The man and the brick wall are in the upper two thirds of the picture."
-  },
-  {
-   "image": "cand/b2-tree.jpg",
-   "section": "7-12",
-   "slot": 2,
+   "image": "04-tree.jpg",
+   "tall": "tall/04-tree.jpg",
+   "principle": "He breaks me down on every side and pulls up my hope like a tree.",
+   "shows": "A great old tree torn out of the ground on a hillside, its whole root ball ripped up into the air.",
    "prompt": "A great old oak tree lies torn out of the ground on a bare hillside after a storm. Its whole huge root ball has been ripped up out of the earth and stands up on end in the air, roots dangling with soil, beside the deep raw hole where it grew. Its trunk and branches lie flat across the grass. Grey sky with breaking clouds.",
    "people": false
   },
   {
-   "image": "cand/b2-tent.jpg",
-   "section": "7-12",
-   "slot": 2,
-   "prompt": "Seen from a hilltop at deep blue dusk, one small lone tent stands in the middle of a wide bare valley, a faint lamp glowing inside it. On every hillside all round it, in a complete closed ring, hundreds of camp fires and lit tents of a great camp have been set up, hemming it in on every side.",
-   "people": false
-  },
-  {
-   "image": "cand/c1-table.jpg",
+   "verse": 13,
    "section": "13-19",
-   "slot": 1,
-   "prompt": "In a warm, lamplit family dining room in the evening, a long table is full of a family of every age eating and talking happily. A worn grey-haired man in a plain cardigan stands just inside the doorway of the room, looking at them, his hand on the door frame. None of them looks up at him; they look past him as if he were a stranger. The table and the man are in the upper two thirds of the picture."
-  },
-  {
-   "image": "cand/c1-door.jpg",
-   "section": "13-19",
-   "slot": 1,
+   "image": "05-door.jpg",
+   "tall": "tall/05-door.jpg",
+   "principle": "My own household count me as a stranger; I have become a foreigner in their eyes.",
+   "shows": "An old man stands at the door of a family house; the woman who opens it a little looks at him coldly, as at a stranger.",
    "prompt": "At the front door of a family house on a grey afternoon, a worn grey-haired man in a plain coat stands on the step. The door has been opened only a little by a younger woman of the household, who looks at him blankly and coldly, as at a stranger, holding the door half shut against him. Behind her the warm hallway of the house he once lived in. Both faces are in the upper part of the picture."
   },
   {
-   "image": "cand/c2-yard.jpg",
+   "verse": 17,
    "section": "13-19",
-   "slot": 2,
+   "image": "06-circle.jpg",
+   "tall": "tall/06-circle.jpg",
+   "principle": "My wife, my brothers, even children, and all my inner circle have turned against me.",
+   "shows": "At a back-yard gathering a close circle of people talk with their backs turned to one grey-haired man standing alone with his plate.",
    "prompt": "In a sunny back yard at a summer gathering, a close circle of men and women laugh and talk together with their backs turned to one grey-haired man, who stands alone at the edge of the lawn holding a paper plate, looking at them. Not one of them turns toward him. Everyone is in the upper two thirds of the picture; below is only lawn."
   },
   {
-   "image": "cand/c2-bed.jpg",
-   "section": "13-19",
-   "slot": 2,
-   "prompt": "In a dim bedroom at night, lit by a little light from the hall, an older married couple lie in a wide bed with their backs to each other. The wife has turned away to the very edge of her side, her face toward the wall, and a wide cold gap of empty sheet lies between them. The grey-haired husband lies awake looking at her back. The heads and pillows are in the upper half of the picture."
-  },
-  {
-   "image": "cand/d1-plead.jpg",
+   "verse": 20,
    "section": "20-22",
-   "slot": 1,
+   "image": "07-plead.jpg",
+   "tall": "tall/07-plead.jpg",
+   "principle": "I am skin and bone. Have pity on me, my friends, for the hand of God has touched me.",
+   "shows": "A gaunt man, thin to skin and bone, sits on the ground holding out his hands to three friends who stand over him with arms folded.",
    "prompt": "On bare dusty ground outside a house on a grey day, a gaunt man worn thin to skin and bone, in a loose plain shirt hanging off his shoulders, sits looking up and holding out both open hands, begging for pity. Three friends in everyday clothes stand over him with their arms folded, unmoved, looking down at him. Their faces and his are in the upper two thirds of the picture."
   },
   {
-   "image": "cand/d1-hand.jpg",
-   "section": "20-22",
-   "slot": 1,
-   "prompt": "A close view of a very thin old hand and wrist, the skin stretched tight over the bones, held out open and palm up, pleading. Beyond it, slightly out of focus, three men stand side by side with their arms folded, unmoved. Soft grey daylight. The hand and the three men are in the upper two thirds of the picture."
-  },
-  {
-   "image": "cand/e1-chisel.jpg",
+   "verse": 23,
    "section": "23-27",
-   "slot": 1,
+   "image": "08-chisel.jpg",
+   "tall": "tall/08-chisel.jpg",
+   "principle": "If only my words were cut into the rock forever with an iron pen and lead!",
+   "shows": "A stonemason's hands drive a chisel into granite while molten lead is poured into the cut grooves.",
    "prompt": "A close view of a stonemason's strong hands driving a steel chisel with a hammer into the smooth face of a huge grey granite boulder, chips of stone flying. Along the rock run deep cut grooves, and a thin stream of bright molten lead is being poured from a small iron ladle into them, filling them. The grooves are plain straight lines seen at a low angle, not letters or marks that can be read. Clear daylight. The hands and chisel are in the upper middle of the picture."
   },
   {
-   "image": "cand/e1-book.jpg",
+   "verse": 25,
    "section": "23-27",
-   "slot": 1,
-   "prompt": "By the light of a lamp at a plain wooden desk at night, a worn grey-haired man's hand writes carefully with a fountain pen in a thick, heavy bound book lying open. The writing is far too small and soft in focus to read. His other hand holds the page flat. The hand, pen and book are in the upper middle of the picture."
-  },
-  {
-   "image": "cand/f1-dawn.jpg",
-   "section": "23-27",
-   "slot": 2,
+   "image": "09-dawn.jpg",
+   "tall": "tall/09-dawn.jpg",
+   "principle": "I know that my redeemer lives, and at the last he will rise on the dust.",
+   "shows": "A worn man sitting in the dust among ruins lifts his head with sure hope toward the dawn breaking on the horizon.",
    "prompt": "A worn, thin man in a plain shirt sits on dry dusty ground among grey ashes and broken things, at the very first light of morning. He has lifted his head and looks out with calm, sure hope toward the horizon, where bright golden dawn light is breaking and rising over the dust. The man and the dawn are in the upper two thirds of the picture."
   },
   {
-   "image": "cand/f1-dust.jpg",
+   "verse": 26,
    "section": "23-27",
-   "slot": 2,
-   "prompt": "A wide, flat plain of dry grey dust and ash stretches away under a dark sky at the very end of night. At the horizon the first bright light of dawn is rising, and long golden rays are spreading out over the dust toward the viewer.",
-   "people": false
+   "image": "10-eyes.jpg",
+   "tall": "tall/10-eyes.jpg",
+   "principle": "From my flesh I will gaze on God; my own eyes will see him, and not a stranger.",
+   "shows": "A close view of an old man's weathered face, his eyes wet and wide open, gazing upward in longing and certainty.",
+   "prompt": "A close portrait of an old, gaunt man's weathered face, lit by a soft bright light from above. His eyes are wide open and wet with tears, gazing upward with deep longing and complete certainty, as if he is about to see what he has waited for all his life. His eyes are in the upper half of the picture.",
+   "from": "from my flesh I will gaze"
   },
   {
-   "image": "cand/f2-eyes.jpg",
-   "section": "23-27",
-   "slot": 3,
-   "prompt": "A close portrait of an old, gaunt man's weathered face, lit by a soft bright light from above. His eyes are wide open and wet with tears, gazing upward with deep longing and complete certainty, as if he is about to see what he has waited for all his life. His eyes are in the upper half of the picture."
-  },
-  {
-   "image": "cand/f2-window.jpg",
-   "section": "23-27",
-   "slot": 3,
-   "prompt": "A frail, gaunt old man lies propped up in a plain bed in a simple room, his body worn out. He has turned his face toward a tall window where bright, clear morning light is pouring in, and his face is lit with longing and sure hope, eyes wide open. The man's face and the window are in the upper two thirds of the picture."
-  },
-  {
-   "image": "cand/g1-finger.jpg",
+   "verse": 28,
    "section": "28-29",
-   "slot": 1,
-   "prompt": "A close view of a man's hand pointing an accusing finger forward, while its other three fingers are curled back, pointing at the man's own chest. His shirt and shoulder are behind it, slightly out of focus. Plain daylight. The hand is in the upper middle of the picture."
-  },
-  {
-   "image": "cand/g1-storm.jpg",
-   "section": "28-29",
-   "slot": 1,
-   "prompt": "On an open hillside, three men in everyday clothes stand pointing accusingly at a worn man who sits on the ground before them. Behind the three men, unseen by them, a huge dark storm front is rolling in over the hills toward them, black clouds low and heavy. The men and the storm are in the upper two thirds of the picture."
+   "image": "11-storm.jpg",
+   "tall": "tall/11-storm.jpg",
+   "principle": "If you hound me and say the fault is in me, be afraid of the sword yourselves: there is a judgment.",
+   "shows": "Three men point accusingly at a man sitting on the ground, while a huge black storm bears down on them from right behind, unseen by them.",
+   "prompt": "On an open grassy hilltop, three men in everyday clothes stand together on the left side of the picture, pointing accusingly at a worn man who sits alone on the ground on the right side. Right behind the three men, towering over them and unseen by them, a huge black storm front fills the left half of the sky, with heavy black clouds and a curtain of rain bearing down on them. Over the seated man on the right the sky is still clear and pale with soft light. The men and the storm are in the upper two thirds of the picture; below is only grass."
   }
  ]
 }
