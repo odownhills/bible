@@ -341,3 +341,85 @@ Verses 62-82:
 - sayyi'a "evil" (2:81), "evil deed" where deeds are counted (2:271). ahatat bihi khati'atuhu "is
   surrounded by his fault" (2:81). ashab al-janna "the companions of the Garden" (2:82), like ashab
   an-nar.
+Verses 83-103:
+- The terms of a pledge, which the Arabic states as a plain "you do not ..." (2:83, 84): "You shall ...",
+  "You shall not ...".
+- ihsan "doing good"; bi-l-walidayni ihsanan "do good to parents" (2:83; 4:36; 17:23). dhu l-qurba
+  "relatives" (2:83, 177); yatama "orphans" (2:83, 177, 215, 220); miskin, plural masakin, "the destitute"
+  (2:83, 177, 184, 215), of the family of maskana (2:61). faqir (2:271, 273) is another word.
+- a'rada "turn aside" (2:83; 3:23; 8:23; 9:76), beside tawalla "turn away".
+- dima'akum, anfusakum, said to a people of what they do to their own (2:84, 85): "your own blood", "your
+  own". It is the same Arabic as "yourselves" at 2:54. dar, plural diyar, "home" (2:84, 85, 94, 243, 246);
+  akhraja min diyar "drive out of ... homes" (2:84, 85, 246).
+- aqarra "affirm" (2:84; 3:81); shahida "bear witness" (2:84). thumma antum ha'ula'i "Then here you are"
+  (2:85; so 3:66).
+- tazahara 'ala "back one another against" (2:85; 66:4): the Arabic is from the word for the back. ithm
+  "sin" (2:85, 173, 181, 182, 188, 203, 206, 219); 'udwan "aggression" (2:85, 193), of the family of i'tada
+  "overstep". asir, plural usara, "captive"; fada "ransom" (2:85). muharram "forbidden", harrama "forbid"
+  (2:85, 173, 275).
+- jaza' "repayment" (2:85, 191). khizy "disgrace" (2:85, 114), beside dhilla "humiliation" (2:61) and muhin
+  "degrading" (2:90).
+- al-hayat ad-dunya "the life of this world" (2:85, 86, 204, 212); ad-dunya alone "this world" (2:114, 130,
+  200, 201, 217, 220).
+- yawm al-qiyama "the Day of Resurrection" (2:85, 113, 174, 212), with capitals as a name of the Day. radda
+  ila "send back to" (2:85), leaving "return" for raja'a. shadid "severe", ashadd al-'adhab "the most
+  severe punishment" (2:85, 165). khaffafa "lighten" (2:86, 162).
+- qaffa bi "make follow after" (2:87; 5:46; 57:27). rasul, plural rusul, "messenger" (2:87, 98, 101, 108,
+  129, 143). 'Isa ibn Maryam "Jesus son of Mary" (2:87, 253). al-bayyinat "the clear proofs" (2:87, 92, 159,
+  185, 209, 213, 253); ayat bayyinat "clear signs" (2:99).
+- ayyada "strengthen"; ruh al-qudus "the Holy Spirit" (2:87, 253; 5:110; 16:102), with capitals as a name.
+  al-qudus is of the family of qaddasa "declare holy" (2:30).
+- hawiya "desire" (2:87), ahwa' "desires" (2:120, 145). a-fa-kullama, a-wa-kullama "So is it that
+  whenever", "And is it that whenever" (2:87, 100).
+- ghulf, of hearts, "wrapped" (2:88; 4:155), beside ghishawa "covering" (2:7).
+- bal "Rather," (2:88, 100, 116, 135, 154, 170), beside bala "Not so." (2:81).
+- la'ana "curse", la'na "curse" (2:88, 89, 159, 161). qalilan ma yu'minun "it is little that they believe"
+  (2:88; 69:41).
+- istaftaha 'ala "ask for victory over" (2:89); the verb stands alone at 8:19 and 14:15. 'arafa
+  "recognize" (2:89, 146, 273), keeping "know" for 'alima.
+- bi'sa "miserable" (2:90, 93, 102, 126, 206): bi'sama "Miserable is what ...".
+- ishtara and shara with anfusahum "sell themselves for" (2:90, 102); shara "sell" (2:102, 207; 12:20).
+  ishtara with a thing bought stays "buy" (2:16, 86, 102).
+- baghy "resentment" (2:90, 213); hasad (2:109) is another word. min fadlihi "from his bounty"; man yasha'u
+  min 'ibadihi "whomever he wills among his servants" (2:90); 'abd, plural 'ibad, "servant" (2:23, 90, 186,
+  207).
+- ghadab 'ala ghadab "anger upon anger" (2:90). 'adhab muhin "a degrading punishment" (2:90; 3:178; 4:14).
+- ma wara'ahu "what is beyond it" (2:91). The Arabic "you kill" beside "before" is an English past, "why
+  did you kill" (2:91); at 2:87, where nothing fixes the time, it stays "you kill".
+- sami'a "hear" (2:75, 93, 181, 285); sami'na wa-'asayna "We hear and we disobey" (2:93; 4:46), beside
+  sami'na wa-ata'na (2:285).
+- ushribu fi qulubihimu l-'ijl "they were made to drink the calf into their hearts" (2:93): the image stays.
+- iman "belief" (2:93, 108, 109, 143), of the family of amana "believe".
+- ad-dar al-akhira "the home of the hereafter" (2:94; 28:83; 29:64). khalisa "yours alone" (2:94; so 6:139;
+  7:32). min duni n-nas "apart from other people" (2:94; 62:6).
+- tamanna "wish for" (2:94, 95; 62:6-7). lan ... abadan "never" (2:95). ma qaddamat aydihim "what their
+  hands have sent ahead" (2:95; 62:7), like qaddama li-nafsihi (2:110, 223): the image stays.
+- 'alim bi "has knowledge of" (2:95, 246). basir bi-ma ya'malun "sees what they do" (2:96, 110, 233, 237,
+  265).
+- haris 'ala "eager for", ahras "most eager" (2:96; 9:128; 12:103; 16:37).
+- ashraka "give God partners"; alladhina ashraku, al-mushrikun "those who give God partners" (2:96, 105,
+  135, 221); sharik "partner" (6:163). Where the Arabic verb stands with no object, "God" is the small
+  word English needs.
+- wadda "would love" (2:96, 105, 109, 266), leaving "wish for" for tamanna. 'ammara "give a long life"
+  (2:96; 35:11, 37). zahzaha "move away" (2:96; 3:185).
+- 'aduww li "an enemy to" (2:97, 98, 168, 208). Jibril "Gabriel", Mikal "Michael" (2:97, 98). bi-idhni
+  llah "by God's permission" (2:97, 102, 249, 251). ma bayna yadayhi, of what was sent down, "what was
+  before it" (2:97; 3:3; 5:48).
+- 'ahada 'ahdan "make a covenant" (2:100, 177). nabadha "throw away", nabadha wara'a zuhurihim "throw
+  behind their backs" (2:100, 101; 3:187), beside naqada "break" and akhlafa "go back on".
+- alladhina utu l-kitab "those who were given the Book" (2:101, 144, 145); kitab Allah "the Book of God"
+  (2:101; 3:23).
+- Sulayman "Solomon"; Babil "Babylon"; Harut and Marut (2:102), names with no English form. tala 'ala
+  mulk "recite against the kingdom of" (decision log 2:102, call: close). sihr "magic" (2:102; 10:81;
+  20:69). ma unzila 'ala l-malakayn "what was sent down to the two angels" (decision log 2:102, call: ask).
+- The verbs of 2:102 that tell what the two do and what is learned from them have no mark of past time in
+  Arabic, and stay in the English present ("do not teach", "learn"); "recited" is past because it hangs
+  on "they followed".
+- fitna "trial" (2:102; 21:35; 74:31), beside bala' "test". What it should be at 2:191, 193 and 217 is left
+  to be settled there.
+- ta'allama "learn" (2:102), of the family of 'allama "teach". farraqa bayna "separate ... from" (2:102),
+  "make a distinction between" (2:136, 285). al-mar' "a man" (2:102). darra "harm", nafa'a "benefit" (2:102,
+  164).
+- khalaq "share" (2:102, 200); nasib (2:202) is another word. law kanu ya'lamun "if only they knew" (2:102,
+  103).
+- mathuba "recompense" (2:103; 5:60), like thawab (3:145, 195), beside ajr "reward" and jaza' "repayment".
