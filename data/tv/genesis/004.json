@@ -1,0 +1,140 @@
+{
+ "note": "Trial plan for Genesis 4: two candidate pictures for each slot, chosen by eye.",
+ "scenes": [],
+ "candidates": [
+  {
+   "image": "cand/01a-mother.jpg",
+   "prompt": "In a sunlit bedroom at morning, a young mother sits up in bed holding her newborn son wrapped in a white blanket, gazing down at him with a radiant, tearful smile of joy and wonder. Soft daylight from the window falls on the two of them."
+  },
+  {
+   "image": "cand/01b-window.jpg",
+   "prompt": "A young mother stands by a bright window at morning holding her newborn son close against her cheek, her eyes closed and her face full of quiet joy and thankfulness."
+  },
+  {
+   "image": "cand/02a-wall.jpg",
+   "prompt": "Two grown brothers in their twenties on a farm at morning, a low stone wall between them. On the left one leads a flock of white sheep across a green hillside with a wooden shepherd's crook; on the right the other turns dark brown earth with a hoe in a freshly plowed field. Both are seen clearly at work."
+  },
+  {
+   "image": "cand/02b-fork.jpg",
+   "prompt": "Seen from behind, two young brothers walk out together from a farmhouse at dawn to where the path forks: one, with a wooden shepherd's crook over his shoulder, turns toward a hillside pasture full of sheep; the other, carrying a hoe, turns toward a plowed field of dark earth."
+  },
+  {
+   "image": "cand/03a-lamb.jpg",
+   "prompt": "A young shepherd in work clothes walks up a grassy slope in clear morning light carrying in his arms the finest newborn lamb of his flock, pure white and healthy, holding it close with great care. The rest of the flock grazes on the hillside below him."
+  },
+  {
+   "image": "cand/03b-gifts.jpg",
+   "prompt": "Outdoors on a rough wooden table at morning, two gifts are set side by side: on the left a basket of vegetables from the field; on the right a young shepherd gently sets down his finest firstborn lamb, pure white, on a clean folded blanket. His hands and the lamb are the clearest part of the picture."
+  },
+  {
+   "image": "cand/04a-field.jpg",
+   "prompt": "A young farmer in dusty work clothes stands beside a basket of vegetables at the edge of a field at evening, his head lowered and his face fallen, jaw clenched in bitter anger, fists tight at his sides. Far behind him, soft and out of focus, a young shepherd stands holding a white lamb."
+  },
+  {
+   "image": "cand/04b-crate.jpg",
+   "prompt": "A young man in work clothes sits alone on an upturned wooden crate in a farm shed at dusk, elbows on his knees, staring at the floor with a dark, sullen, angry face. A basket of vegetables sits untouched beside him."
+  },
+  {
+   "image": "cand/05a-panther.jpg",
+   "prompt": "At dusk a black panther crouches low on the front step of an ordinary country house, body flattened and tense as if ready to spring, its eyes fixed on the closed wooden front door. Warm light glows in the windows beside the door.",
+   "people": false
+  },
+  {
+   "image": "cand/05b-chain.jpg",
+   "prompt": "On the doorstep of a farmhouse at dusk a young man stands upright and holds a heavy chain firmly in his fist. At the end of the chain a big black wolf crouches low on the threshold, its eyes fixed hungrily on him. He is calm and in control."
+  },
+  {
+   "image": "cand/06a-crook.jpg",
+   "prompt": "An empty grassy field at dusk under a heavy grey sky. A wooden shepherd's crook lies dropped in the tall grass in the middle of the field, and a few sheep wander untended in the distance.",
+   "people": false
+  },
+  {
+   "image": "cand/06b-gate.jpg",
+   "prompt": "At nightfall a flock of sheep stands waiting at the closed wooden gate of a pasture, looking out along the empty path that leads away across the dark field. No shepherd has come for them.",
+   "people": false
+  },
+  {
+   "image": "cand/07a-poppies.jpg",
+   "prompt": "A wide bare field of dark brown earth under an overcast sky. In the middle of it one small patch of bright red poppies grows out of the bare ground, the only colour anywhere in the scene.",
+   "people": false
+  },
+  {
+   "image": "cand/07b-crack.jpg",
+   "prompt": "Close to the ground, a deep crack has split open in dry brown earth like an open mouth, and bright red poppies rise out of the crack. Grey overcast light.",
+   "people": false
+  },
+  {
+   "image": "cand/08a-kneel.jpg",
+   "prompt": "A young farmer kneels in a dry, cracked field under a hard pale sky, holding a withered brown plant up in his hand and looking at it in dismay. Rows of dead, dried-up crops stretch away behind him."
+  },
+  {
+   "image": "cand/08b-dust.jpg",
+   "prompt": "A farmer's open hand lets dry grey dust run through his fingers above a barren cracked field where nothing has grown. Pale harsh daylight."
+  },
+  {
+   "image": "cand/09a-road.jpg",
+   "prompt": "A young man in a hooded jacket walks alone at night along the edge of an endless empty highway through barren land, glancing back over his shoulder with fear on his face. Far behind him a pair of headlights is coming."
+  },
+  {
+   "image": "cand/09b-underpass.jpg",
+   "prompt": "Under a concrete overpass at night a young man huddles against the wall with his hood up, half hiding his face with his hand, alone and afraid, looking out into the dark."
+  },
+  {
+   "image": "cand/10a-dog.jpg",
+   "prompt": "In wild open country at night a weary young man sleeps on the ground beside a small campfire, wrapped in his coat. Beside him a large shepherd dog lies wide awake on guard, head up and ears raised, watching the darkness for him."
+  },
+  {
+   "image": "cand/10b-wolves.jpg",
+   "prompt": "In a dark pine forest at night a weary young man sleeps beside a small campfire. At the edge of the firelight two wolves stand watching, but they keep their distance and do not come near him."
+  },
+  {
+   "image": "cand/11a-shoulders.jpg",
+   "prompt": "A young father stands on a hill at morning with his small son on his shoulders; the father points down at a new town being built below them: fresh houses, scaffolding, tall cranes and new streets being laid. No church or steeple."
+  },
+  {
+   "image": "cand/11b-handprint.jpg",
+   "prompt": "A father guides his small son's hand as the boy presses his handprint into the wet concrete of a new building's cornerstone. Behind them the frames and cranes of a new town are rising in morning light. No church or steeple."
+  },
+  {
+   "image": "cand/12a-camp.jpg",
+   "prompt": "On a wide grassy plain at evening, a camp of round felt tents with herds of cattle and horses grazing around them. By a small fire in front of the tents a young man plays a wooden flute and a young woman plucks a small wooden harp."
+  },
+  {
+   "image": "cand/12b-herdsman.jpg",
+   "prompt": "A herdsman sits on a grassy rise at evening playing a wooden flute, looking out over his round felt tents and his herds of cattle grazing on the wide plain below."
+  },
+  {
+   "image": "cand/13a-anvil.jpg",
+   "prompt": "In a dim workshop a blacksmith in a leather apron hammers a glowing orange axe head on an anvil, bright sparks flying. Finished tools hang on the wall behind him."
+  },
+  {
+   "image": "cand/13b-pour.jpg",
+   "prompt": "In a dark foundry a metalworker in a leather apron and gloves pours glowing molten bronze from a crucible into a mould, the orange light bright on his face and arms."
+  },
+  {
+   "image": "cand/14a-fist.jpg",
+   "prompt": "In a dim kitchen at night a hard-faced man sits at the table with his bandaged, bruised hand clenched into a fist on the tabletop, leaning forward and boasting. Two women stand back by the doorway watching him uneasily."
+  },
+  {
+   "image": "cand/14b-wildfire.jpg",
+   "prompt": "At night a wildfire races over dark hills in a long wall of flame, grown huge, while in the foreground a single dropped burning match still smoulders on the ground.",
+   "people": false
+  },
+  {
+   "image": "cand/15a-cradle.jpg",
+   "prompt": "In a quiet nursery at morning a father and mother stand together over a cradle, gazing at their newborn son with tender, tearful joy. On the shelf beside them stand a framed photograph of an older boy and a small wooden toy lamb."
+  },
+  {
+   "image": "cand/15b-pray.jpg",
+   "prompt": "In a quiet nursery at morning a father and mother kneel beside the cradle of their newborn son with their hands folded and eyes closed in prayer. On the shelf above them stands a framed photograph of an older boy."
+  },
+  {
+   "image": "cand/16a-bedside.jpg",
+   "prompt": "At evening a young father kneels beside his small son at the boy's bedside, both with their hands folded and their eyes closed in prayer, a warm lamp glowing."
+  },
+  {
+   "image": "cand/16b-hill.jpg",
+   "prompt": "At sunrise on a grassy hilltop a small gathering of ordinary families stand together, faces lifted and hands raised to the sky, calling out in prayer."
+  }
+ ]
+}
