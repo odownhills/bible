@@ -18,9 +18,15 @@ or without them: without a recording it is text only.
 
 Every page of the Quran site has an English | Arabic switch at the top (scripts/lang.js), which lands on
 the same verse in the other language and remembers the choice in the browser.
+
+A long surah has a bar of sections to jump between, named as in the English translation (its headings,
+scripts/quran_site.py) for the verses translated so far; past those, a section runs from one quarter-hizb
+mark (RUB) to the next and is named by its verses.
 """
 import json
 import os
+
+import quran_site
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SURAHS = json.load(open(os.path.join(ROOT, "data", "quran.json"), encoding="utf-8"))
@@ -109,9 +115,24 @@ def nav(here_en):
             % here_en)
 
 
+def sections(n, verses, named):
+    """The section bar's items for surah n: [(target id, name, first verse, last verse, group heading or None)].
+    named: the English sections [(name, first verse, last verse)], which cover the verses translated so far."""
+    items = [("v%d" % a, name, a, z, None) for name, a, z in named]
+    upto = named[-1][2] if named else 0
+    total = verses[-1][0]
+    starts = [upto + 1] + [v for v, ws in verses if v > upto + 1 and ws[0].startswith(RUB)] if upto < total else []
+    for k, a in enumerate(starts):
+        z = starts[k + 1] - 1 if k + 1 < len(starts) else total
+        items.append(("v%d" % a, "Verses %d–%d" % (a, z) if z > a else "Verse %d" % a, a, z,
+                      "Not translated yet" if named and k == 0 else None))
+    return items
+
+
 def build(out, x):
     """Write the Arabic pages. x holds what scripts/build.py shares: page(), esc(), words(), checksum(),
-    lengths (recording seconds by path), english (the English "books"), read_tag, tv_tag, TV_ICON."""
+    lengths (recording seconds by path), english (the English "books"), read_tag, tv_tag, TV_ICON, and
+    sections (the English section names of each surah, from scripts/quran_site.py)."""
     esc, words = x["esc"], x["words"]
     english = {b["surah"]: b for b in x["english"]}
     os.makedirs(os.path.join(out, "ar"), exist_ok=True)
@@ -184,10 +205,11 @@ def build(out, x):
             if audio(nxt):
                 data += ' data-next-audio="../%s"' % audio(nxt)
         b = english.get(n)
-        parts_attr = ' data-surah="%d"' % n
-        if b:
-            parts_attr += ' data-parts="%s"' % ",".join("%d-%d" % (a, z) for a, z in b["ranges"])
-        switch = pill("ar", "../quran-%d/1.html" % n if b else "../?home", "", parts_attr)
+        # the switch to English: the surah's page, as far as the translation has reached
+        switch = pill("ar", "../quran-%d/" % n if b else "../?home", "",
+                      ' data-surah="%d" data-upto="%d"' % (n, b["ranges"][-1][1] if b else 0))
+        jumps = sections(n, verses, x["sections"].get(n, []))
+        bar = quran_site.section_bar(jumps)
         name = english_name(n)
         eyebrow = "Surah %d%s" % (n, " · " + name if name else "")
         about = "%d verses" % s["verses"] + (" · recited by %s" % RECITER if rel else "")
@@ -198,16 +220,18 @@ def build(out, x):
         body = """<p class="eyebrow">%s</p>
 <h1 class="arh" lang="ar" dir="rtl">سورة %s</h1>
 <p class="sub">%s%s</p>
-<div id="ch" class="ar" lang="ar" dir="rtl"%s>
+%s<div id="ch" class="ar" lang="ar" dir="rtl"%s>
 %s
 </div>
 <div class="pn">%s%s</div>""" % (esc(eyebrow), esc(NAMES[n]), buttons,
                                  ('<br>' if buttons else '') + '<span class="lang-note">%s</span>' % esc(about),
-                                 data, body_text, prev_link, next_link)
+                                 bar, data, body_text, prev_link, next_link)
         open(os.path.join(out, "ar", "%d.html" % n), "w", encoding="utf-8").write(
             x["page"](title(n), body, 1, x["read_tag"] + x["tv_tag"], footer=FOOTER, nav=nav(switch)))
         open(os.path.join(out, "text", SLUG, "%d.txt" % n), "w", encoding="utf-8").write(spoken)
-        json.dump({"verses": verse_at, "scenes": []}, open(os.path.join(out, "tv", SLUG, "%d.json" % n), "w"))
+        start = dict(verse_at)
+        json.dump({"verses": verse_at, "scenes": [], "sections": [[start[a], name] for _, name, a, _, _ in jumps] if bar else []},
+                  open(os.path.join(out, "tv", SLUG, "%d.json" % n), "w"), ensure_ascii=False)
         if rel:
             manifest.append({
                 "id": "%s-%d" % (SLUG, n), "book": "Surahs", "slug": SLUG, "chapter": n, "total": len(SURAHS),

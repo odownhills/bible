@@ -21,6 +21,12 @@ function put(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
 function fmt(s){if(!isFinite(s)||s<0)s=0;s=Math.floor(s);var m=Math.floor(s/60),x=s%60;return m+':'+(x<10?'0':'')+x}
 function abs(rel){return new URL(rel,location.href).href}
 function rate(){return parseFloat($('lr-rate').value)||1.25}
+function cover(){   // the height of the bars that stay at the top of the screen (the Quran site's), else 0
+  var h=0,t=d.querySelector('.top'),s=$('secbar');
+  if(t&&getComputedStyle(t).position==='sticky') h+=t.offsetHeight;
+  if(s) h+=s.offsetHeight;
+  return h;
+}
 
 function chapter(){
   ch=$('ch'); words=ch?Array.prototype.slice.call(ch.querySelectorAll('.w')):[];
@@ -32,7 +38,7 @@ function build(){
   if(bar)return;
   bar=d.createElement('div'); bar.className='lr-bar'; bar.id='lr-bar'; bar.hidden=true;
   bar.innerHTML='<div class="lr-in">'+
-    '<input class="seek" id="lr-seek" type="range" min="0" max="100" step="0.1" value="0" aria-label="Position in chapter" disabled>'+
+    '<input class="seek" id="lr-seek" type="range" min="0" max="100" step="0.1" value="0" aria-label="Position" disabled>'+
     '<div class="times"><span id="lr-cur">0:00</span><button class="alt-t" id="lr-alt" type="button" hidden>Hide alt</button><span id="lr-rem">0:00</span></div>'+
     '<div class="lr-row">'+
       '<select class="chip" id="lr-rate" aria-label="Speed">'+
@@ -163,10 +169,10 @@ function scrollToWord(always){
   // the visible area (or is off screen), the page glides up slowly to bring it back near the top.
   if(!active)return;
   var w=words[Math.max(cur,0)]; if(!w)return;
-  var r=w.getBoundingClientRect(),room=window.innerHeight-(bar?bar.offsetHeight:0),target=room*0.3;
+  var r=w.getBoundingClientRect(),room=window.innerHeight-(bar?bar.offsetHeight:0),top=cover(),target=Math.max(room*0.3,top+24);
   if(always){ if(Math.abs(r.top-target)>4) glideBy(r.top-target,450); return; }
   if(gliding)return;
-  if(r.top>room*0.6||r.top<room*0.06) glideBy(r.top-target,900);
+  if(r.top>room*0.6||r.top<Math.max(room*0.06,top)) glideBy(r.top-target,900);
 }
 function glideBy(delta,ms){
   cancelAnimationFrame(glideRaf); gliding=false;
@@ -200,7 +206,7 @@ function firstWordOf(v){
 }
 function begin(auto,note,fromVerse){
   build(); hooks(); chapter();
-  if(!ch||!ch.dataset.audio){ if(active) { want=false; icon(); msg('This chapter has no recording yet. It will be added soon.'); } return; }
+  if(!ch||!ch.dataset.audio){ if(active) { want=false; icon(); msg('This has no recording yet.'); } return; }
   var mine=++serial,id=ch.dataset.id,src=abs(ch.dataset.audio),sync=ch.dataset.sync?abs(ch.dataset.sync):null,skip=parseInt(ch.dataset.skip||'0',10);
   active=true; busy=true; ready=false; follow=true; want=!!auto; d.body.classList.add('lr'); bar.hidden=false; msg(''); icon(); alts();
   $('lr-seek').disabled=true; audio.pause(); paint(); put('listenAt',id);
@@ -241,7 +247,7 @@ function ended(){
   var done=get('listenDone',{}),pos=get('listenPos',{}); done[ch.dataset.id]=1; delete pos[ch.dataset.id]; put('listenDone',done); put('listenPos',pos);
   if(ch.dataset.next&&ch.dataset.nextAudio){ go(ch.dataset.next,true); return; }
   want=false; icon(); awake(false);
-  msg(ch.dataset.next?'The next chapter has no recording yet. It will be added soon.':'You are all caught up. More chapters arrive every day.');
+  msg(ch.dataset.next?'The next surah has no recording yet.':'You are all caught up.');
 }
 function go(rel,auto){
   // Move to another chapter without leaving the page, so the voice can carry straight on.
@@ -279,8 +285,14 @@ function spot(o){
 }
 var moved=false,placeT=0;
 function verseAtTop(c){
-  var vs=c.querySelectorAll('sup.n'),line=90,v=1;
-  for(var k=0;k<vs.length;k++){ if(vs[k].getBoundingClientRect().top<=line) v=parseInt(vs[k].id.slice(1),10)||v; else break; }
+  // the last verse that starts above a line near the top; on the Quran site, under the bars that stay at the
+  // top of the screen, where a section heading counts as its first verse
+  var top=cover(),vs=c.querySelectorAll(top?'sup.n,h2.sec':'sup.n'),line=Math.max(90,top+24),v=1;
+  for(var k=0;k<vs.length;k++){
+    if(vs[k].getBoundingClientRect().top>line) break;
+    var e=vs[k].tagName==='SUP'?vs[k]:vs[k+1];
+    if(e&&e.tagName==='SUP') v=parseInt(e.id.slice(1),10)||v;
+  }
   return v;
 }
 function savePlace(){
@@ -291,7 +303,7 @@ function savePlace(){
   if(end){
     // Finished the chapter: next time, start the next one from the top.
     var nx=d.querySelector('.pn a.next');
-    if(nx&&c.dataset.next){ var u=c.dataset.next.replace(/^\.\.\//,''); put('lastSpot',{mode:'read',id:u.replace('/','-').replace('.html',''),url:u,label:nx.textContent.replace(/^[^A-Za-z0-9]+/,''),v:1,at:Date.now()}); }
+    if(nx&&c.dataset.next){ var u=c.dataset.next.replace(/^\.\.\//,''); put('lastSpot',{mode:'read',id:c.dataset.nextId||u.replace('/','-').replace('.html',''),url:u,label:nx.textContent.replace(/^[^A-Za-z0-9]+/,'').replace(/\s*\u2192$/,''),v:1,at:Date.now()}); }
     else spot({mode:'read',v:v});
   }else{
     if(v>1) pos[id]=v;
@@ -319,11 +331,11 @@ function restore(){
   var v=get('readPos',{})[c.dataset.id],s=v&&$('v'+v);
   if(!s){ spot({mode:'read',v:1}); return; }
   if('scrollRestoration' in history) history.scrollRestoration='manual';
-  var to=function(){ if(!moved) window.scrollTo(0,s.getBoundingClientRect().top+window.scrollY-64); };
+  var to=function(){ if(!moved) window.scrollTo(0,s.getBoundingClientRect().top+window.scrollY-Math.max(64,cover()+16)); };
   s.classList.add('here'); setTimeout(function(){ s.classList.remove('here'); },6000);
   to(); window.addEventListener('load',to); setTimeout(to,400);
   spot({mode:'read',v:v});
-  toast('Back where you left off, at verse '+v+'.',[['Start of chapter',function(){ moved=true; window.scrollTo({top:0,behavior:'smooth'}); }],['All books','../?home']]);
+  toast('Back where you left off, at verse '+v+'.',[['Start of surah',function(){ moved=true; window.scrollTo({top:0,behavior:'smooth'}); }],['All surahs','../?home']]);
 }
 ['touchstart','wheel','keydown','mousedown'].forEach(function(ev){ window.addEventListener(ev,function(){ moved=true; },{passive:true}); });
 window.addEventListener('scroll',function(){ if(active)return; clearTimeout(placeT); placeT=setTimeout(savePlace,350); },{passive:true});

@@ -315,7 +315,7 @@ if('mediaSession' in navigator){
 fetch('../manifest.json').then(function(r){return r.json()}).then(function(m){
   list=m; if(!list.length){ $('title').textContent='Nothing yet'; return; }
   var seen={},opts=''; list.forEach(function(c){ if(!seen[c.slug]){ seen[c.slug]=1; opts+='<option value="'+c.slug+'">'+c.book+'</option>'; } });
-  $('book').innerHTML=opts;
+  $('book').innerHTML=opts; $('book').hidden=Object.keys(seen).length<2;   // one list only (the Quran's surahs): no picker
   var r=get('listenRate',null); if(r) $('rate').value=r;
   var from=new URLSearchParams(location.search).get('from')||get('listenAt',null),k=0;
   list.forEach(function(c,n){ if(c.id===from) k=n; });
