@@ -1,0 +1,194 @@
+{
+ "note": "Made by the steps in TV_PICTURES.md: the chapter is split into sections that each carry one deep meaning (\"sections\"), 10 picture ideas are written for each, the top two for each picture are made and the better is chosen by eye (2026-11-21). Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse. The important part of every picture sits in the upper two thirds, clear of the words.",
+ "method": "Second method, asked for by Obay on 2026-11-21 after the sentence-by-sentence pictures did not connect: (1) split the chapter into sections that each carry one deep meaning, written as one plain sentence; (2) write 10 different picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye. A section has one or two pictures. What he said went wrong before: he could not tell why some pictures were there, could not connect them to the meaning, and some were too abstract.",
+ "sections": [
+  {
+   "verses": "1-5",
+   "meaning": "Whoever believes is born from God, and to love the Father is to love his children. His commandments are not a heavy load, because faith overcomes the world.",
+   "ideas": [
+    "A man crouches, beaming, to greet his old friend's little daughter while her father looks on",
+    "A man carries his brother's small son on his shoulders, the boy's father laughing beside them",
+    "Grandparents meet a grandchild for the first time",
+    "A big sister gives her little brother a piggyback up the hill, both of them laughing",
+    "A young man carries his grandmother's shopping with her arm through his",
+    "A father carries his sleeping child up the stairs as if she weighed nothing",
+    "A blind runner and her guide, joined by a short tether, cross the finishing line together",
+    "A runner breaks the tape with his arms raised",
+    "A climber is pulled up onto the summit by a hand from above",
+    "A girl rides her bicycle alone for the first time"
+   ]
+  },
+  {
+   "verses": "6-8",
+   "meaning": "God's own witnesses agree about Jesus: the Spirit, the water and the blood all say the same thing.",
+   "ideas": [
+    "An old farmer, a young woman and a boy all point the same way for a traveller who asked",
+    "Three witnesses stand in a courtroom with their right hands raised",
+    "Three old friends tell the same story at a table, nodding",
+    "Three strands twisted into one rope",
+    "Three doctors agree over the same picture",
+    "Three hikers point to the same peak",
+    "Three singers hold one chord",
+    "Three signatures at the foot of a page",
+    "Three bells in one tower ring together",
+    "Three neighbours each bring the lost child's mother the same news"
+   ]
+  },
+  {
+   "verses": "9-12",
+   "meaning": "We take people at their word, and God's word is greater. This is what he says: he has given us eternal life, and this life is in his Son. Whoever has the Son has the life.",
+   "ideas": [
+    "Two farmers shake hands over a gate and look each other in the eye",
+    "A blind woman steps off the kerb on a friend's arm",
+    "A passenger sleeps on a night flight, trusting the pilot",
+    "A patient takes the medicine a doctor hands her",
+    "A hiker follows the trail marks through the forest",
+    "A swimmer far out in the sea grasps the life ring thrown to him",
+    "A parched hiker in the desert is handed water and drinks",
+    "A grandfather sets a seedling into a child's cupped hands",
+    "A patient wakes after an operation with a new heart",
+    "A diver breathes through the air line from the boat above"
+   ]
+  },
+  {
+   "verses": "13-15",
+   "meaning": "You can know that you have eternal life, and you can ask boldly: when we ask what he wills, he hears us.",
+   "ideas": [
+    "A father kneels to listen as his little girl whispers in his ear",
+    "A grandfather puts down his tools and bends to the grandson who holds up a broken toy",
+    "A daughter phones home and her mother answers at the first ring",
+    "A pupil raises her hand, sure the teacher will come",
+    "A doctor leans in close to hear an old patient",
+    "A boy tugs his father's sleeve in a crowd and the father turns at once",
+    "A small girl knocks on her father's study door and it opens",
+    "A baby cries in the night and the light goes on",
+    "A child asks for bread at the table and the loaf is passed",
+    "A climber calls down the rope and it tightens"
+   ]
+  },
+  {
+   "verses": "16-17",
+   "meaning": "When you see a brother going wrong, pray for him, and God will give him life.",
+   "ideas": [
+    "A man lifts his brother, slumped on the kerb outside a bar at night, to take him home",
+    "A sister sits with her arm round her brother, whose head is in his hands, her eyes closed for him",
+    "A brother goes out with a torch at night to find his brother",
+    "A friend sits up through the night beside a friend",
+    "A teacher pleads for a pupil at the head teacher's desk",
+    "A mother waits at the window for a son who has not come home",
+    "A friend visits a friend in prison and lays a hand on the glass",
+    "A man picks up the phone to call the brother everyone else has given up on",
+    "A father sets a place at the table for the son who left",
+    "A woman walks beside a friend the whole way to the clinic door"
+   ]
+  },
+  {
+   "verses": "18-21",
+   "meaning": "We know we belong to God and are kept safe by his Son. He has come and opened our eyes to know the true God: this is eternal life, so keep away from every false one.",
+   "ideas": [
+    "A crossing guard holds back the traffic with one arm while small children cross safely",
+    "A father shields his child under his coat in a hailstorm",
+    "A mother holds the umbrella over her child and takes the rain herself",
+    "A big brother walks his little sister past the rough boys with his arm round her",
+    "A lifeguard watches from his tower",
+    "A small girl puts on her first glasses and sees her mother's face clearly",
+    "Morning fog lifts and a hiker sees the real mountain for the first time",
+    "A baby hears his mother's voice for the first time through a hearing aid",
+    "A boy puts down the toy crown and runs to his real father",
+    "A woman sets aside a glittering trinket and takes her child's hand"
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "verse": 1,
+   "section": "1-5",
+   "image": "01-friend.jpg",
+   "tall": "tall/01-friend.jpg",
+   "principle": "Whoever loves the Father loves the Father's child.",
+   "shows": "A man crouches, beaming, to take a flower from his friend's little daughter while her father stands behind her.",
+   "prompt": "In a park in bright daylight two old friends have just met. One of them has crouched down, beaming, to greet his friend's little daughter of about four, who shyly holds a flower out to him; he takes it with delight. Her father stands just behind her with a hand on her shoulder, smiling proudly at them both."
+  },
+  {
+   "verse": 3,
+   "section": "1-5",
+   "image": "02-piggyback.jpg",
+   "tall": "tall/02-piggyback.jpg",
+   "principle": "To love God is to keep his commandments, and they are not a heavy load.",
+   "shows": "A girl carries her little brother up the hill on her back, stepping lightly, both of them laughing.",
+   "prompt": "On a grassy hill path in bright afternoon light a girl of about eleven carries her little brother of about four on her back up the hill, piggyback. She is smiling and stepping lightly, not straining at all, and he laughs with his arms round her neck. The load is no burden to her."
+  },
+  {
+   "verse": 4,
+   "section": "1-5",
+   "image": "03-tether.jpg",
+   "tall": "tall/03-tether.jpg",
+   "principle": "This is the victory that has conquered the world: our faith.",
+   "shows": "A blind runner and her guide, joined at the wrist, cross the finishing line together with their arms raised.",
+   "prompt": "At the finishing line of a road race in bright daylight a blind woman runner in dark glasses and her guide, joined wrist to wrist by a short tether, cross the line together and break the tape, both with their free arms thrown up and faces full of joy. A cheering crowd is softly out of focus behind them."
+  },
+  {
+   "verse": 6,
+   "section": "6-8",
+   "image": "04-witnesses.jpg",
+   "tall": "tall/04-witnesses.jpg",
+   "principle": "God's own witnesses, the Spirit, the water and the blood, all say the same thing about Jesus.",
+   "shows": "Three very different witnesses stand side by side with their right hands raised in the same way.",
+   "prompt": "In a bright, plain courtroom three very different witnesses, an old man, a young woman and a workman, stand side by side, each with the right hand raised in the same way, their faces calm and sure. Daylight from tall windows."
+  },
+  {
+   "verse": 9,
+   "section": "9-12",
+   "image": "05-handshake.jpg",
+   "tall": "tall/05-handshake.jpg",
+   "principle": "We take people at their word, and God's word is greater.",
+   "shows": "Two farmers shake hands over a gate and look each other in the eye.",
+   "prompt": "Two farmers shake hands firmly over a wooden field gate in clear morning light, looking each other straight in the eye with trust: a man's word given and taken. Green fields behind them."
+  },
+  {
+   "verse": 11,
+   "section": "9-12",
+   "image": "06-water.jpg",
+   "tall": "tall/06-water.jpg",
+   "principle": "God gave us eternal life, and this life is in his Son. Whoever has the Son has the life.",
+   "shows": "A parched hiker in the desert drinks from the water another walker has put into his hands.",
+   "prompt": "In a dry, stony desert under a hot clear sky an exhausted hiker with cracked lips sits on the ground and drinks deeply from a water bottle that another walker has just put into his hands; the helper crouches beside him, steadying the bottle. Water runs down the hiker's chin. Bright daylight."
+  },
+  {
+   "verse": 13,
+   "section": "13-15",
+   "image": "07-toy.jpg",
+   "tall": "tall/07-toy.jpg",
+   "principle": "We can ask boldly, because he hears us.",
+   "shows": "A grandfather puts down his tools and bends to the grandson who holds up a broken toy boat.",
+   "prompt": "In a wood workshop in clear daylight a grandfather has put down his tools on the bench and bends right down, hands on his knees, to his small grandson of about five, who holds up a broken wooden toy boat to him with a trusting, hopeful face. The grandfather listens with a warm, attentive smile, already reaching for the toy."
+  },
+  {
+   "verse": 16,
+   "section": "16-17",
+   "image": "08-kerb.jpg",
+   "tall": "tall/08-kerb.jpg",
+   "principle": "When you see a brother going wrong, ask for him, and God will give him life.",
+   "shows": "A man crouches beside his brother, slumped on the kerb outside a bar at night, and holds his hand.",
+   "prompt": "On a wet city street at night, outside the lit doorway of a bar, a man has crouched beside his brother, who sits slumped on the kerb with his head hanging, and has put an arm round his shoulders and taken his hand to lift him up and take him home. The helper's face is full of concern and love. Light from the street lamps and the doorway makes both faces clear."
+  },
+  {
+   "verse": 18,
+   "section": "18-21",
+   "image": "09-crossing.jpg",
+   "tall": "tall/09-crossing.jpg",
+   "principle": "Whoever is born from God is kept safe, and the evil one cannot touch him.",
+   "shows": "A crossing guard holds back a lorry with one arm while small children cross safely behind.",
+   "prompt": "On a town street in clear morning light a crossing guard in a bright jacket stands firm in the middle of the road with one arm stretched out toward a big lorry and a line of cars, all stopped. Behind the guard's back a line of small schoolchildren with backpacks walks safely and happily across the crossing. The guard watches the traffic, not the children."
+  },
+  {
+   "verse": 20,
+   "section": "18-21",
+   "image": "10-glasses.jpg",
+   "tall": "tall/10-glasses.jpg",
+   "principle": "The Son of God has come and opened our eyes to know the true God. Keep away from every false one.",
+   "shows": "A small girl in her first glasses sees her mother's face clearly and reaches to touch it.",
+   "prompt": "In an optician's bright room a small girl of about three has just had her first pair of glasses put on. She stares up at her mother's face, seeing it clearly for the first time, with her mouth open in astonished joy and one small hand reaching to touch her mother's cheek. Her mother, leaning close, smiles with tears in her eyes."
+  }
+ ]
+}
