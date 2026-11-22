@@ -12,7 +12,7 @@ on:
   schedule:
     - cron: "11,41 * * * *"   # twice an hour, in case a run above was missed
   push:
-    branches: [main, claude/project-thread-s5ou53]
+    branches: [main]
     paths: ["scripts/tv_publish.py", ".github/workflows/tv.yml"]
   workflow_dispatch:
 
