@@ -17,7 +17,9 @@ Run it after scripts/align.py, with the site built (the GitHub Action .github/wo
 
     WORK=quran python3 scripts/build.py && WORK=quran python3 scripts/quran_join.py
 """
+import array
 import json
+import math
 import os
 import subprocess
 import sys
@@ -52,12 +54,40 @@ def joined_parts(listed):
     return {s: [p for p in run if p] for s, run in out.items() if any(run)}
 
 
-def cut_at(t, skip):
-    """Where a part's recording starts once its opening line is left out, in seconds."""
+def cut_at(src, t, skip):
+    """Where a part's recording starts once its opening line is left out, in seconds: shortly before the
+    voice starts again after the pause that follows that line. The pause is found in the sound itself (the
+    word timings can put a word's start a little early), as the longest quiet stretch between the start of
+    the opening line's last word and just after the first word's timed start."""
     if not skip:
         return 0.0
     first, before = t[skip] / 100.0, t[skip - 1] / 100.0
-    return max(0.0, min(first - 0.05, max(before + 0.35, first - 0.3)))
+    guess = max(0.0, min(first - 0.05, max(before + 0.35, first - 0.3)))
+    hi = first + 1.0
+    pcm = subprocess.run(["ffmpeg", "-v", "error", "-t", "%.3f" % hi, "-i", src, "-ac", "1", "-ar", str(RATE),
+                          "-f", "s16le", "-"], capture_output=True, check=True).stdout
+    samples = array.array("h")
+    samples.frombytes(pcm[:len(pcm) // 2 * 2])
+    step = RATE // 100   # 10 ms
+    loud = []
+    for i in range(0, len(samples) - step + 1, step):
+        seg = samples[i:i + step]
+        loud.append(20 * math.log10(max(1.0, math.sqrt(sum(x * x for x in seg) / step))))
+    a, z = int(before * 100), min(len(loud), int(hi * 100))
+    if z - a < 20:
+        return guess
+    quiet = min(50.0, max(loud[a:z]) - 25)
+    best, run = (0, 0), None
+    for k in range(a, z):
+        if loud[k] < quiet:
+            run = k if run is None else run
+            if k + 1 - run > best[1] - best[0]:
+                best = (run, k + 1)
+        else:
+            run = None
+    if best[1] - best[0] < 15:   # no clear pause (under 0.15 s): go by the word timings alone
+        return guess
+    return max(best[0] / 100.0, best[1] / 100.0 - 0.15)
 
 
 def join(surah, parts, work):
@@ -66,7 +96,7 @@ def join(surah, parts, work):
     with open(raw, "wb") as out:
         for part, rel, t, skip, _ in parts:
             src = media.local(rel)
-            start = cut_at(t, skip)
+            start = cut_at(src, t, skip)
             pcm = subprocess.run(["ffmpeg", "-v", "error", "-ss", "%.3f" % start, "-i", src, "-ac", "1", "-ar", str(RATE),
                                   "-f", "s16le", "-"], capture_output=True, check=True).stdout
             out.write(pcm)
