@@ -67,119 +67,90 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
-   "image": "cand/a1-trail.jpg",
+   "verse": 1,
    "section": "1-7",
-   "slot": 1,
-   "prompt": "On a steep rocky mountain trail in clear morning light, a younger hiker's knees have buckled and he is sinking down, and a strong grey-haired man in a plain shirt grips both his forearms firmly and holds him up on his feet. The grey-haired man is steady and calm. Mountains and blue sky behind them."
-  },
-  {
-   "image": "cand/a1-steps.jpg",
-   "section": "1-7",
-   "slot": 1,
+   "image": "01-lift.jpg",
+   "tall": "tall/01-lift.jpg",
+   "principle": "You have strengthened weak hands and made buckling knees firm.",
+   "shows": "On old stone steps a strong grey-haired man pulls a stumbling young man up onto his feet by both hands.",
    "prompt": "On wide old stone steps in a quiet town square in bright daylight, a strong grey-haired man in a plain shirt firmly pulls a stumbling young man up onto his feet by both hands. The young man's knees are bent and unsteady; the older man is solid and calm. Trees and houses behind them."
   },
   {
-   "image": "cand/a2-steps.jpg",
+   "verse": 5,
    "section": "1-7",
-   "slot": 2,
+   "image": "02-slumped.jpg",
+   "tall": "tall/02-slumped.jpg",
+   "principle": "But now trouble has come to you, and you are the one who gives way.",
+   "shows": "The grey-haired man sits slumped on the same stone steps with his head in his hands while an older friend leans over him, talking.",
    "prompt": "On wide old stone steps in a quiet town square in grey overcast daylight, a grey-haired man in a plain shirt sits slumped on a step with his head in his hands, worn out and shaken. A well-dressed older friend stands beside him and leans down toward him, one hand raised as he talks to him. Trees and houses behind them."
   },
   {
-   "image": "cand/a2-kitchen.jpg",
-   "section": "1-7",
-   "slot": 2,
-   "prompt": "Alone at a plain kitchen table late at night, under a single hanging lamp, a grey-haired man in a plain shirt sits with his elbows on the table and his head in his hands, worn out and shaken. The rest of the kitchen is dim and still."
-  },
-  {
-   "image": "cand/b1-thorns.jpg",
+   "verse": 8,
    "section": "8-11",
-   "slot": 1,
+   "image": "03-thorns.jpg",
+   "tall": "tall/03-thorns.jpg",
+   "principle": "Those who plow harm and sow misery harvest it.",
+   "shows": "A farmer stands in his own field that has grown nothing but thistles and thorns, an armful of them in his arms, while the fields beyond are golden with wheat.",
    "prompt": "At harvest time under a pale hazy sky, a farmer stands in the middle of his own plowed field, but the whole field has grown up into nothing but thistles, thorns and briars. He holds an armful of thorny thistles he has just cut, and looks down at them. The neighbouring fields beyond the fence are golden with wheat."
   },
   {
-   "image": "cand/b1-hands.jpg",
+   "verse": 10,
    "section": "8-11",
-   "slot": 1,
-   "prompt": "A close view of a man's scratched, work-worn hands gathering a harvest of spiky thorny thistles into a woven basket, in a field full of thistles and briars under soft afternoon light. The basket is already full of thorns."
-  },
-  {
-   "image": "cand/b2-lion.jpg",
-   "section": "8-11",
-   "slot": 2,
+   "image": "04-lion.jpg",
+   "tall": "tall/04-lion.jpg",
+   "principle": "Even the fierce lion perishes for lack of prey, and its cubs are scattered.",
+   "shows": "An old lion lies spent in the dry grass of an empty plain while three cubs wander off far apart.",
    "prompt": "On a dry African plain under a hot white sky, an old gaunt lion with a thin ragged mane lies alone in the dry grass, too weak to hunt, his ribs showing. Far off across the plain, three lion cubs are wandering away from him in different directions, each on its own. No other animals and no prey anywhere.",
    "people": false
   },
   {
-   "image": "cand/b2-waterhole.jpg",
-   "section": "8-11",
-   "slot": 2,
-   "prompt": "An old lion with a thin ragged mane lies with his head on his paws beside a dried-up, cracked water hole on a bare plain, in harsh flat midday light, too weak to rise. The land around is empty: no prey, no other animals.",
-   "people": false
-  },
-  {
-   "image": "cand/c1-awake.jpg",
+   "verse": 12,
    "section": "12-16",
-   "slot": 1,
+   "image": "05-awake.jpg",
+   "tall": "tall/05-awake.jpg",
+   "principle": "A word came by stealth in the night, and dread came over him.",
+   "shows": "A man lies rigid in bed in the dark, eyes wide open, listening, a line of moonlight across his face.",
    "prompt": "Late at night in a dark bedroom, a middle-aged man lies rigid on his back in bed with the sheet pulled up to his chest, his eyes wide open, listening. A thin line of blue moonlight from the window falls across his face. The room is deep in shadow and very still."
   },
   {
-   "image": "cand/c1-edge.jpg",
+   "verse": 15,
    "section": "12-16",
-   "slot": 1,
-   "prompt": "Late at night in a dark bedroom lit only by blue moonlight from a window, a middle-aged man sits on the edge of his bed gripping the mattress with both hands, staring wide-eyed into the dark corner of the room, frozen and trembling."
-  },
-  {
-   "image": "cand/c2-curtain.jpg",
-   "section": "12-16",
-   "slot": 2,
+   "image": "06-wind.jpg",
+   "tall": "tall/06-wind.jpg",
+   "principle": "Something passed before his face and the hair of his flesh bristled.",
+   "shows": "A man sits bolt upright in bed in fear as the curtains billow into the dark room and the candle flame is blown flat.",
    "prompt": "Late at night in a dark bedroom, a middle-aged man sits bolt upright in bed, wide-eyed with fear, clutching the sheet. A sudden breath of wind sweeps through the room: the long pale curtains billow far into the room and the flame of a candle on the bedside table is blown flat sideways. Cold blue moonlight. Nothing else is in the room."
   },
   {
-   "image": "cand/c2-arm.jpg",
-   "section": "12-16",
-   "slot": 2,
-   "prompt": "A close view, at night, of a man's bare forearm resting on a bed sheet in cold blue moonlight, every fine hair on it standing on end with goosebumps. Behind it, out of focus, a pale curtain is stirring in a breath of wind in the dark room."
-  },
-  {
-   "image": "cand/d1-stars.jpg",
+   "verse": 17,
    "section": "17-21",
-   "slot": 1,
-   "prompt": "A lone man stands on a bare hilltop at night, small and dark against an immense sky blazing with countless stars and the band of the Milky Way. He is tiny in the frame, standing still with his head bowed. The sky fills almost the whole picture."
-  },
-  {
-   "image": "cand/d1-shirt.jpg",
-   "section": "17-21",
-   "slot": 1,
+   "image": "07-shirt.jpg",
+   "tall": "tall/07-shirt.jpg",
+   "principle": "Can a man be clean before his maker?",
+   "shows": "A man holds a freshly washed white shirt up to the blazing sun, and in that light stains show through it.",
    "prompt": "Outdoors at blazing midday, a man holds up a freshly washed white shirt at arm's length toward the brilliant sun to look at it. In that intense light, faint grey stains that cannot be seen otherwise show through the white cloth. A washing line and a clear blue sky behind."
   },
   {
-   "image": "cand/d2-clay.jpg",
+   "verse": 19,
    "section": "17-21",
-   "slot": 2,
+   "image": "08-clay.jpg",
+   "tall": "tall/08-clay.jpg",
+   "principle": "People live in houses of clay with their foundation in the dust, crushed sooner than a moth.",
+   "shows": "A small house of sun-dried clay on bare dusty ground, its walls cracked and crumbling, a moth resting on it.",
    "prompt": "A small, simple house built of sun-dried clay stands alone on bare, dusty ground under harsh light. Its walls are cracked from top to bottom and crumbling, and pieces of dry clay have fallen into the dust at its foot. A pale moth rests on its wall.",
    "people": false
   },
   {
-   "image": "cand/d2-moth.jpg",
+   "verse": 20,
    "section": "17-21",
-   "slot": 2,
-   "prompt": "A close view of an old man's open, wrinkled palm held out in soft window light, with a small pale moth resting on it, its fragile wings spread. The background is soft and plain."
-  },
-  {
-   "image": "cand/d3-tent.jpg",
-   "section": "17-21",
-   "slot": 3,
+   "image": "09-tent.jpg",
+   "tall": "tall/09-tent.jpg",
+   "principle": "From morning to evening they are gone; their tent cord is pulled up and they die.",
+   "shows": "At dusk on an empty plain an old canvas tent sags and collapses, its cord loose and its stake pulled up out of the ground.",
    "prompt": "At dusk on a wide, empty plain under a deep blue evening sky, a small old canvas tent is sagging and folding in on itself: its main cord has come loose and its stake lies pulled up out of the ground beside it, and the tent is collapsing. Soft evening light.",
    "people": false
-  },
-  {
-   "image": "cand/d3-pot.jpg",
-   "section": "17-21",
-   "slot": 3,
-   "prompt": "On a busy city pavement in the evening, a plain clay pot lies shattered in pieces on the ground, while a crowd of people hurries past on every side without looking down at it. The crowd is softly blurred with motion; the broken pot is sharp."
   }
  ]
 }
