@@ -1,0 +1,190 @@
+{
+ "note": "Made by the steps in TV_PICTURES.md: the chapter is split into sections that each carry one deep meaning (\"sections\"), 10 picture ideas are written for each, the top two for each picture are made and the better is chosen by eye (2026-11-22). Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper two thirds, clear of the words. God is not pictured; Job and Zophar are not portrayed as biblical people but shown through ordinary people of today, and nothing violent is shown. The pictures show what Zophar says, as the chapter says it.",
+ "method": "Second method, asked for by Obay on 2026-11-21 after the sentence-by-sentence pictures did not connect: (1) split the chapter into sections that each carry one deep meaning, written as one plain sentence; (2) write 10 different picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye. A section has one or two pictures. What he said went wrong before: he could not tell why some pictures were there, could not connect them to the meaning, and some were too abstract.",
+ "sections": [
+  {
+   "verses": "1-6",
+   "meaning": "Zophar tells Job that a flood of words does not make a man right, and that if God spoke he would show Job wisdom far deeper than he sees, and that God has even let part of his guilt go.",
+   "ideas": [
+    "On the steps of his storm-wrecked house a weary grey-haired man sits slumped while a friend standing over him jabs a finger as he lectures",
+    "At a kitchen table a weary man pleads his case with open hands while the friend across holds up a flat hand to stop him and answers",
+    "A man at a lectern talks on and on beside a towering stack of papers",
+    "A man with a megaphone shouts at a man sitting quietly on a bench",
+    "A man pleased with himself admires his spotless white shirt in a mirror",
+    "An iceberg: the small white tip above the water and the huge hidden mass below it",
+    "A hiker looks up at a hill, not seeing the far greater mountain towering behind it in the clouds",
+    "A folded paper opens out to twice the size it looked",
+    "An old ledger of debts with many lines struck through by a pen",
+    "A creditor tears up part of a long bill in front of a worried man"
+   ]
+  },
+  {
+   "verses": "7-12",
+   "meaning": "God cannot be searched out to his limit: higher than the sky, deeper than the grave, longer than the earth and wider than the sea; no one can turn him back, and he sees straight through empty people.",
+   "ideas": [
+    "A small boy at the water's edge holds out the end of a tape measure toward an endless sea",
+    "A lone man seen from behind on a high shore at night, dwarfed by a vast ocean under the Milky Way",
+    "A diver's line paid out into dark deep water that never reaches bottom",
+    "A telescope on a hilltop pointed into a sky full of stars",
+    "A plumb line dropped over the edge of a bottomless canyon",
+    "A road running straight to the horizon with no end",
+    "A huge old tree with a full green crown whose split trunk shows it is completely hollow inside",
+    "A wild donkey foal standing stubborn and untamed in a rocky desert",
+    "An airport scanner screen showing a suitcase is empty inside",
+    "A storm front sweeping across a plain that nothing can turn back"
+   ]
+  },
+  {
+   "verses": "13-15",
+   "meaning": "If you set your heart right, open your hands to God and put wrong far from your home, you will lift your face without shame and stand firm and unafraid.",
+   "ideas": [
+    "A man opens his hand and lets a heavy rough stone fall away, his palm turning up and empty",
+    "A grey-haired man stands upright in a field in clear morning light, face lifted, hands open, steady and unafraid",
+    "A man kneels in a quiet room with his palms spread open and lifted",
+    "A man carries a box of things that are not his out of his house and leaves them at the gate",
+    "A man hands a found wallet back to its owner",
+    "A man stands on solid rock in the wind, chin up, not afraid",
+    "A man throws open his window to the morning with open arms",
+    "A man unclenches a fist into an open hand",
+    "A man sweeps his doorstep clean in the morning",
+    "A man who had been looking at the ground lifts his head and meets the eyes of his neighbors"
+   ]
+  },
+  {
+   "verses": "16-19",
+   "meaning": "Then trouble will be forgotten like water that has flowed away, life will rise brighter than noon, and you will rest in safety and hope with no one to make you afraid.",
+   "ideas": [
+    "A clear stream running away down a washed green valley under a brilliant noon sun as the last storm clouds leave",
+    "A grey-haired man sits at ease on a sunlit riverbank watching the river flow away round the bend",
+    "Floodwater draining off a field as the sun breaks out",
+    "Dawn breaking over a dark valley",
+    "Puddles drying on a sunlit road after a storm",
+    "A man opens the curtains and floods a dark room with bright light",
+    "A grey-haired man asleep in a hammock on the porch of his mended farmhouse, door open, sheep grazing beyond",
+    "A farmer asleep under a shade tree in a meadow, hat over his eyes, his sheep resting round him",
+    "Neighbors coming up the path to a farmhouse with gifts",
+    "A sheepdog lying at ease beside a sleeping flock"
+   ]
+  },
+  {
+   "verses": "20",
+   "meaning": "But the wicked look in vain: their shelter is gone and their only hope is their last breath.",
+   "ideas": [
+    "The last ember of a dead campfire glows among cold ashes, one thin thread of smoke rising and vanishing",
+    "At night in pouring rain a man grips the bars of a locked gate, peering into dark grounds with no light, no shelter anywhere",
+    "A man's breath fogging in cold air at a closed dark door",
+    "A man straining through binoculars at an empty dark road at night",
+    "A wilted flower in a dry pot",
+    "A bus shelter with its roof torn off in a storm",
+    "Breath on a cold window fading away",
+    "A man searching a dark horizon with a dying flashlight",
+    "A guttering candle going out",
+    "A dry well with a bucket coming up empty"
+   ]
+  }
+ ],
+ "scenes": [],
+ "candidates": [
+  {
+   "image": "cand/a1-steps.jpg",
+   "section": "1-6",
+   "slot": 1,
+   "prompt": "On the front steps of a storm-damaged farmhouse in grey daylight, a weary grey-haired man in a plain dusty shirt sits slumped with his elbows on his knees and his eyes down. Standing over him on the path, a well-dressed friend of about the same age leans forward and jabs a pointing finger at him as he lectures, his face stern and certain. Both men are in the upper part of the frame."
+  },
+  {
+   "image": "cand/a1-table.jpg",
+   "section": "1-6",
+   "slot": 1,
+   "prompt": "At a plain wooden kitchen table in soft daylight, a weary grey-haired man in a worn shirt sits pleading his case with both open hands raised. Across the table a well-dressed friend of about the same age holds up one flat hand to stop him and leans in to answer, his face stern and certain."
+  },
+  {
+   "image": "cand/a2-iceberg.jpg",
+   "section": "1-6",
+   "slot": 2,
+   "people": false,
+   "prompt": "A split view at the waterline of calm, clear polar sea under a bright pale sky. The waterline runs across the upper part of the frame. Above it a small white tip of an iceberg shows. Below the surface, filling the middle of the frame, the hidden part of the same iceberg is enormous, many times larger, glowing blue-white as it goes down into deep clear blue water."
+  },
+  {
+   "image": "cand/a2-mountain.jpg",
+   "section": "1-6",
+   "slot": 2,
+   "prompt": "A hiker in a plain jacket, seen from behind, stands on a trail looking up at the rounded green hill in front of him. Behind that hill, through a wide break in the clouds, a far greater snow-covered mountain towers many times higher, filling the sky, much bigger than anything he is looking at. Bright clear daylight."
+  },
+  {
+   "image": "cand/b1-tape.jpg",
+   "section": "7-12",
+   "slot": 1,
+   "prompt": "On a wide empty beach in bright daylight, a small boy kneels on the dry sand at the water's edge holding out the end of a yellow tape measure toward the sea, which stretches away flat, calm and endless to the horizon under a huge open sky. The rest of the tape is still coiled in its case on the sand beside him. The boy and the horizon are in the upper part of the frame."
+  },
+  {
+   "image": "cand/b1-stars.jpg",
+   "section": "7-12",
+   "slot": 1,
+   "prompt": "At night on a high rocky shore, a man in a plain hooded rain jacket, seen small from behind, stands looking out over a vast dark ocean under an immense sky packed with stars and the bright band of the Milky Way. The sky and the sea are so huge that he is tiny beneath them."
+  },
+  {
+   "image": "cand/b2-tree.jpg",
+   "section": "7-12",
+   "slot": 2,
+   "people": false,
+   "prompt": "In a sunny open field stands a huge old tree with a full, green, healthy-looking crown. But its thick trunk has split open down one side, and through the split you can see that the trunk is completely hollow inside, an empty dark shell with nothing in it. The split trunk is in the middle of the frame, plainly visible."
+  },
+  {
+   "image": "cand/b2-donkey.jpg",
+   "section": "7-12",
+   "slot": 2,
+   "people": false,
+   "prompt": "In a dry, rocky desert valley in clear daylight, a young wild donkey foal, shaggy and grey-brown, stands with its legs planted and its long ears up, staring straight ahead, stubborn and untamed. Behind it the wild empty land stretches away to bare hills."
+  },
+  {
+   "image": "cand/c1-stone.jpg",
+   "section": "13-15",
+   "slot": 1,
+   "prompt": "A grey-haired man in a plain shirt stands in the yard of his simple home in clear morning light. His arm is held out in front of him and his hand has just opened, letting a heavy rough stone drop away from it toward the ground; his palm is now turned up and empty. His face is lifted and calm. The open hand and the falling stone are at the height of his chest, in the middle of the frame."
+  },
+  {
+   "image": "cand/c1-face.jpg",
+   "section": "13-15",
+   "slot": 1,
+   "prompt": "A grey-haired man in a plain shirt stands upright in an open green field in clear, bright morning light, the sun high. His head is lifted and his face is raised calmly to the sky, his open hands spread at his sides with the palms turned forward. He stands steady, solid and unafraid. Fresh grass round him and a wide clear sky."
+  },
+  {
+   "image": "cand/d1-stream.jpg",
+   "section": "16-19",
+   "slot": 1,
+   "people": false,
+   "prompt": "A clear stream runs fast and sparkling down a green valley and away into the distance under a brilliant high noon sun in a deep blue sky. Far off on the horizon the last dark storm clouds are moving away. The grass and trees are washed clean and shining with light."
+  },
+  {
+   "image": "cand/d1-bank.jpg",
+   "section": "16-19",
+   "slot": 1,
+   "prompt": "A grey-haired man sits relaxed on a grassy riverbank at bright midday, watching a clear river flow past him and away round a bend into the distance. His face is peaceful and lit by the high noon sun, the sky clear blue above him."
+  },
+  {
+   "image": "cand/d2-hammock.jpg",
+   "section": "16-19",
+   "slot": 2,
+   "prompt": "On the porch of a freshly mended farmhouse in warm afternoon light, a grey-haired man lies sound asleep in a hammock, one arm behind his head, completely at ease. The front door stands open behind him, and beyond the porch rail green fields with grazing sheep lie peaceful in the sun."
+  },
+  {
+   "image": "cand/d2-meadow.jpg",
+   "section": "16-19",
+   "slot": 2,
+   "prompt": "In a quiet green meadow under a big shade tree, a grey-haired farmer lies asleep on the grass with his hat tipped over his eyes, perfectly at ease, while his sheep lie resting round him in the sunshine. Soft afternoon light, a clear sky."
+  },
+  {
+   "image": "cand/e1-ember.jpg",
+   "section": "20",
+   "slot": 1,
+   "people": false,
+   "prompt": "Close up in the dark, a burnt-out campfire of cold grey ashes and charred sticks. One last small ember still glows faintly in the middle, and a single thin thread of smoke rises from it, curling up and vanishing into the black air. The ember and the thread of smoke are in the upper part of the frame."
+  },
+  {
+   "image": "cand/e1-gate.jpg",
+   "section": "20",
+   "slot": 1,
+   "prompt": "At night in pouring rain, a man in a soaked dark coat stands outside a tall locked iron gate, gripping its bars with both hands and peering through them into dark grounds where no window is lit. There is no shelter anywhere round him. The man and the gate fill the upper part of the frame."
+  }
+ ]
+}
