@@ -166,3 +166,106 @@ Verses 1-29:
   of 2:16.
 - ahya "give life"; amata "cause to die" (2:28, 258); amwat "dead".
 - istawa ila "turn to" (2:29; 41:11); sawwa "form" (2:29; 18:37).
+Verses 30-61:
+- wa-idh "And when" (2:30, 34, 49-51, 53-55, 58, 60, 61): the Arabic sets a moment of the past before
+  the hearer and names no verb for it. No "remember" is supplied; the Quran writes it where it wants
+  it (2:40, 47; 7:69, 74; 14:6). Where the Arabic goes straight on to what happened next, that becomes
+  the main clause ("And when we said to the angels ..., they bowed down"); where it does not, the
+  "when" stands on its own as it does in the Arabic (2:49, 50, 53).
+- khalifa "successor" (2:30; 38:26), plural "successors" (6:165; 7:69; 10:14); istakhlafa "make
+  successors" (24:55). Bracketed once, at 2:30 (decision log, call: clear).
+- ja'ala "make" (2:22); ja'ala fi "place on" (2:30). safaka d-dima' "shed blood" (2:30, 84).
+- sabbaha "glorify", sabbaha bi-hamdi "glorify with praise" (2:30); subhanaka "Glory to you!" (2:32),
+  subhanahu "Glory to him!" (2:116). qaddasa li "declare holy" (2:30), of the family of al-quddus
+  "the Holy" (59:23; 62:1).
+- al-mala'ika "the angels". Iblis "Iblis" (2:34): a name with no English form. ash-shaytan stays
+  "Satan" (2:36).
+- 'allama "teach", 'ilm "knowledge" (2:31, 32). 'arada 'ala "present to" (2:31). anba'a "tell" (2:31,
+  33), leaving "say" for qala.
+- al-'alim "the Knowing", al-hakim "the Wise" (2:32, 129): a title of God formed like ar-rahim takes
+  "the" and a capital, with no "All-". Lowercase when it is said of him plainly ("knowing, wise").
+  innaka anta, innahu huwa before such a title: "You are the ...", "He is the ..." (2:32, 37, 54).
+- abda "disclose" (2:33, 271, 284); katama "conceal" (2:33, 42, 72, 140, 146, 159, 174, 283). akhfa
+  (2:271, 284) is another word ("hide").
+- sajada "bow down" (2:34, 58); raka'a "bow" (2:43, 125). aba "refuse"; istakbara "be arrogant" (2:34,
+  87).
+- sakana "live in" (2:35); raghadan "freely" (2:35, 58); qariba "go near" (2:35, 187, 222).
+- zalama "wrong", "do wrong"; zalama nafsahu "wrong oneself"; zalim "wrongdoer"; alladhina zalamu
+  "those who did wrong" (2:35, 51, 54, 57, 59, 92, 95, 124).
+- azalla "make slip" (2:36), zalla "slip" (2:209). akhraja "bring out" (2:22, 36, 61).
+- habata "go down" (2:36, 38, 61). ba'dukum li-ba'din 'aduww "enemies to one another" (2:36; 7:24).
+  mustaqarr "a place to settle"; mata' "enjoyment" (2:36), matta'a "let enjoy" (2:126); ila hin "for
+  a time".
+- taba 'ala, of God, "relent toward" (2:37, 54, 128, 160, 187); at-tawwab "the Ever-Relenting" (2:37,
+  54, 128, 160). taba, of people, "repent", taba ila "repent to" (2:54, 160, 222, 279). It is one
+  Arabic word, to turn back (9:118 has both). The lost echo is noted once, at 2:54; no standing note.
+- kalima "word" (2:37, 124). imma with the stressed verb "if" (2:38; 7:35; 20:123). tabi'a and
+  ittaba'a "follow" (2:38, 120, 143).
+- la khawfun 'alayhim wa-la hum yahzanun "there is no fear for them, nor will they grieve" (2:38, 62,
+  112, 262, 274, 277): to fear "over" someone is to fear for him (28:7). khawf "fear"; hazina
+  "grieve".
+- aya "sign" (2:39, 41, 61, 73, 99). ashab an-nar "the companions of the Fire" (2:39, 81, 217, 257,
+  275).
+- ya bani Isra'il "Children of Israel," (2:40, 47, 122), with no "O". dhakara "remember" (2:40, 47, 63,
+  152). awfa bi "keep" a covenant or a promise (2:40, 177).
+- rahiba "dread" (2:40; 16:51; 59:13): wa-iyyaya fa-rhabun "it is me you should dread", and
+  wa-iyyaya fa-ttaqun "it is me you should be mindful of" (2:41).
+- musaddiqan li-ma ma'akum "confirming what is with you" (2:41, 89, 91, 97, 101).
+- ishtara bi-X thamanan qalilan "sell X for a small price" (2:41, 79, 174): the same verb as "buy A in
+  exchange for B" (2:16), where the thing taken is a price.
+- labasa A bi-B "mix A with B" (2:42; 3:71; 6:82). al-batil "falsehood" (2:42, 188).
+- az-zakat "the alms"; ata z-zakat "give the alms" (2:43, 83, 110, 177, 277). sadaqa is another word.
+- amara bi "command" (2:44, 67, 93, 169, 268). al-birr "virtue" (2:44, 177, 189), leaving "righteous"
+  for salih and "good" for khayr. tala "recite" (2:44, 102, 113, 121, 129, 151, 252).
+- 'aqala "use reason" (2:44, 73, 76, 164, 170, 171, 242); a-fa-la ta'qilun "Will you not use your
+  reason?"
+- sabr "patience" (2:45, 153, 250); sabara 'ala "put up with" (2:61). ista'ana bi "ask for help
+  through" (2:45, 153). kabira "hard" (2:45, 143). khashi' "humble" (2:45).
+- zanna "think" (2:46, 78, 230, 249): not "be certain", which is ayqana (2:4); 45:32 sets the two
+  apart. laqiya "meet" (2:14, 46, 223, 249).
+- faddala 'ala "set above" (2:47, 122, 253); fadl "bounty" (2:64, 90, 105). al-'alamin without "Lord
+  of": "all peoples" (2:47, 122, 251).
+- nafs "soul" (2:48, 123, 281, 286), "oneself" (2:9, 44, 54, 57). jaza 'an "pay on behalf of" (2:48,
+  123; 31:33). shafa'a "intercession" (2:48, 123, 254). 'adl here "compensation" (2:48, 123).
+- nasara "aid" (2:48, 86, 123, 250, 286), nasr "aid" (2:214), so that it is not the "help" of ista'ana.
+- najja and anja "save" (2:49, 50): one English for both forms. al Fir'awn "Pharaoh's people" (2:49,
+  50). sama su'a l-'adhab "inflict a terrible punishment on" (2:49; 7:141; 14:6). dhabbaha "slaughter"
+  (2:49), like dhabaha (2:67, 71). istahya "let live" (2:49), another word than the one at 2:26.
+- bala' "test" (2:49), ibtala "test" (2:124, 249). fitna (2:102, 191) is another word.
+- faraqa "part" (2:50); al-bahr "the sea"; aghraqa "drown"; wa-antum tanzurun "while you looked on"
+  (2:50, 55).
+- wa'ada "appoint" a time for someone (2:51; 7:142); wa'ada "promise" (2:268).
+- ittakhadha l-'ijl "take the calf for oneself" (2:51, 54, 92): the verb is "take for oneself", and
+  the Arabic does not say what the calf was taken as. With two objects "take ... as" (2:67, 125, 231).
+  min ba'dihi "after he had gone" (2:51, 92).
+- 'afa 'an "pardon" (2:52, 109, 187, 286), leaving "forgive" for ghafara (2:58, 284). shakara "give
+  thanks" (2:52, 56, 152, 172, 185).
+- la'allakum in a story of the past: "so that you might ..." (2:52, 53, 56).
+- al-furqan "the Criterion" where it names what was given or sent down (2:53; 3:4; 21:48; 25:1),
+  "criterion" otherwise (2:185; 8:29). Bracketed once, at 2:53 (decision log, call: clear).
+- al-bari' "Maker" (2:54; 59:24), leaving "create" for khalaqa. qatala "kill" (2:54, 61, 72, 85, 87, 91,
+  154, 191); qatala "fight" (2:190). uqtulu anfusakum "kill yourselves" (2:54; 4:66; decision log
+  2:54, call: ask). 'inda "with" (2:62), "in the sight of" (2:54, 217).
+- amana li "believe" someone (2:55, 75), amana bi "believe in". jahratan "in plain sight" (2:55;
+  4:153; 6:47). akhadha "take" (2:48, 55, 63).
+- ba'atha "raise up" (2:56, 129, 213, 246, 259).
+- al-ghamam "clouds" (2:57, 210). al-mann wa-s-salwa "manna and quails" (2:57; 7:160; 20:80).
+  tayyibat, of food, "good things" (2:57, 172).
+- qarya "town" (2:58, 259); misr "city" (2:61; decision log, call: clear). bab "gate".
+- hitta (2:58; 7:161): the word they are told to say means a load taken off. It is translated,
+  "Unburden us", and not carried over as a sound.
+- ghafara "forgive" (2:58, 284, 286). khati'a "fault" (2:58, 81); akhta'a "make a mistake" (2:286).
+  ahsana "do good", al-muhsinin "those who do good" (2:58, 195, 236). zada with no second object "give
+  more to" (2:58).
+- baddala "put in place of", "change" (2:59, 181, 211). rijz "plague" (2:59; 7:134, 162).
+- istasqa "ask for water"; daraba "strike" (2:60, 73); 'asa "staff"; hajar "rock" (2:60), "stone" (2:24,
+  74); infajara "gush out" (2:60, 74); 'ayn "spring" (2:60).
+- 'atha "act wickedly" (2:60; 7:74; 11:85): la ta'thaw fi l-ardi mufsidin "do not act wickedly on the
+  earth, causing corruption".
+- da'a "call", "call on" (2:23, 61, 68, 186). anbata "grow" (2:61, 261). istabdala A bi-B "take A in
+  exchange for B" (2:61): as with ishtara, B is what is given up. adna "lower" (2:61).
+- duribat 'alayhim "was stamped on them" (2:61; 3:112). dhilla "humiliation"; maskana "destitution"
+  (2:61), of the family of miskin (2:83, 177, 184).
+- ba'a bi "come away with" (2:61, 90; 3:112).
+- nabi "prophet" (2:61, 91, 136, 177, 213, 246). bi-ghayri l-haqq "without right" (2:61). 'asa "disobey"
+  (2:61, 93). i'tada "overstep" (2:61, 65, 178, 190, 229, 231).
