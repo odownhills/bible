@@ -293,6 +293,13 @@
    "slot": 14,
    "prompt": "On a polished dark wooden desk, a thick brown envelope stuffed with plain banknotes, their faces not visible, is on fire: its edges curl, glow and turn to black ash as the flames eat into the money. Dim room, the fire the brightest thing in the frame.",
    "people": false
+  },
+  {
+   "image": "cand/g2-grapes2.jpg",
+   "section": "30-35",
+   "slot": 13,
+   "people": false,
+   "prompt": "A low view close to the ground under an old grapevine at bright midday. In the centre of the frame, raised up on a low bank of dry, cracked earth at eye level, lie dozens of small, hard, green unripe grapes that have fallen off before their time, sharp and clear. Just above them hang a few stunted, half-empty bunches on the twisted vine. The fallen green grapes are the subject and sit in the middle of the picture, well above the bottom third."
   }
  ]
 }
