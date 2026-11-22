@@ -662,3 +662,90 @@ Verses 153-177:
   16:91, and "promise" is wa'ada (2:268).
 - al-ba'sa' "hardship", ad-darra' "suffering" (2:177, 214); hina l-ba's "in time of battle" (2:177; 33:18).
 - sadaqa "be truthful" (2:177; 29:3; 33:23), of the family of sadiqin in "if you are telling the truth".
+Verses 178-203:
+- kutiba 'ala "is prescribed for" (2:178, 180, 183, 216, 246): the Arabic is "written upon". kataba li "write for"
+  (2:187). The lost echo is noted once, at 2:187; no standing note.
+- qisas "retaliation" (2:178, 179, 194; 5:45): a return in kind, as the verse itself spells out. fi l-qatla "for those
+  who are killed"; wa-l-hurumatu qisas "for sacred things there is retaliation" (2:194), as 5:45 says of wounds.
+- al-hurr "the free"; al-'abd beside it "the slave" (2:178, 221). 'abd of God's servants stays "servant". al-untha
+  "the female".
+- 'ufiya lahu shay' "is pardoned something" (2:178): 'afa here is giving up a claim, as at 2:237, and keeps "pardon".
+- ittiba' "a following up" (2:178), of the family of ittaba'a "follow"; ada' "payment", adda "pay", "hand back"
+  (2:283; 3:75). The Arabic names neither the one who follows up nor the one who pays, and nothing is supplied.
+- ma'ruf "what is right"; bi-l-ma'ruf "as is right" (2:178, 180, 228, 229, 231-236, 240, 241; 4:19; 65:2). The Arabic
+  is "what is recognized", of the family of 'arafa "recognize": what everyone knows to be right. Not "fair", which
+  should be left for qist where it stands beside 'adl (4:3; 49:9). qawl ma'ruf (2:235, 263) may need its own
+  wording. Its opposite is munkar (3:104), left to be settled there.
+- bi-ihsan "in a good way" (2:178, 229), of the family of ahsana "do good". takhfif "a lightening" (2:178), of
+  khaffafa "lighten".
+- ulu l-albab "those who have understanding"; ya uli l-albab "you who have understanding" (2:179, 197, 269; 3:7,
+  190). The word is the core of a thing. ulu n-nuha (20:54) and ulu l-absar (3:13) are other words.
+- khayr, of what a man leaves behind, "goods" (2:180): the same word as "good".
+- wasiyya "bequest", awsa "make a bequest", musin "one making a bequest" (2:180, 182, 240; 4:11, 12; 5:106). It is of
+  the family of wassa "charge with" (2:132); where God is the one who does it (4:11) "charge" will fit.
+- al-aqrabun "nearest relatives" (2:180, 215; 4:7, 33), beside dhu l-qurba "relatives"; qarib "near" (2:186, 214).
+- haqqan 'ala "a duty on" (2:180, 236, 241).
+- janaf "partiality" (2:182); mutajanif "leaning toward" (5:3) is of the same family.
+- siyam "fasting", "the fast", "a fast" (2:183, 187, 196); sama "fast" (2:184, 185), with the month as its object
+  "fast it". safar "journey" (2:184, 185, 283). 'idda "number" (2:184, 185).
+- 2:184 opens with words that still belong to the sentence of 2:183 and stand in English as their own short
+  sentence, "For a limited number of days." The rulings that the Arabic states with no verb are left without one
+  in English: "then a number of other days", "then whatever offering comes easily", "then a ransom of ...".
+- ataqa "can bear" (2:184), of the family of taqa (2:249, 286). The Arabic says "those who can bear it" and does
+  not say what "it" is or how hard it is for them, and the English says no more.
+- fidya "ransom" (2:184, 196), like fada (2:85) and iftada (2:229). ta'am "food" (2:61, 184, 259).
+- shahr "month"; Ramadan "Ramadan"; al-qur'an "the Quran" (2:185). shahida with the month as its object "witness".
+- yusr "ease", 'usr "difficulty" (2:185; 65:7; 94:5-6); istaysara "come easily" (2:196), tayassara (73:20).
+- akmala "make full" (2:185; 5:3, where it stands beside atamma "complete"); kamil "in full", "full" (2:196, 233).
+- kabbara "declare great" (2:185; 22:37), like qaddasa "declare holy". 'ala ma hadakum "for having guided you".
+- ajaba and istajaba "answer" (2:186; 3:195; 8:24): one English for both forms. da'wa "call", ad-da'i "the one who
+  calls", like da'a "call on".
+- rashada "take the right course" (2:186); rushd "the right course" (2:256; 7:146), beside hada "guide".
+- rafath "intimacy", ar-rafath ila "be intimate with" (2:187, 197). bashara "lie with" (2:187): the Arabic is skin
+  against skin. nisa'ukum "your wives" where a man's own women are meant (2:187, 223, 226); "women" otherwise.
+- libas "garment" (2:187; 7:26). ikhtana nafsahu "betray himself" (2:187; 4:107), of khana "betray". al-ana "now".
+- ibtagha "seek" (2:187, 198, 207, 265, 272). al-khayt "thread"; al-fajr "the dawn" (2:187).
+- hudud Allah "God's limits" (2:187, 229, 230; 4:13; 65:1); tilka hududu llah "Those are God's limits".
+- akala amwal "eat up wealth" (2:188; 4:2, 10, 29): the picture of eating stays, as at 2:174. adla bi ... ila "put
+  before" (2:188): the words can be wealth handed to the judges or a case brought to them, and "put before" leaves
+  both. al-hukkam "the judges", of hakama "judge". fariq, of wealth, "a part" (2:188).
+- ahilla "new moons" (2:189). miqat, plural mawaqit, "appointed time" (2:189; 7:142, 143), like wa'ada "appoint".
+- ata l-buyut "come to houses"; min zuhuriha "from the back"; bab, of a house, "door" (2:189), of a town "gate" (2:58).
+- thaqifa "come upon" (2:191; 3:112; 4:91; 8:57), beside wajada and alfa "find".
+- fitna, of what is done to people to turn them from their religion, "persecution" (2:191, 193, 217; 8:39; 10:83;
+  16:110; 29:10; 85:10). It is the same word as "trial" (2:102). 2:217 says what it is here: "they will not stop
+  fighting you until they turn you back from your religion". ashaddu mina l-qatl "more severe than killing" (2:191),
+  beside akbaru mina l-qatl (2:217).
+- intaha "stop" (2:192, 193, 275). The other reading at 2:191, "kill" for "fight", is in the decision log (call:
+  clear).
+- ad-din li-llah "the religion belongs to God" (2:193; 8:39).
+- ash-shahr al-haram "the sacred month" (2:194, 217), lowercase. al-hurumat "sacred things" (2:194; 22:30), of the
+  family of haram "sacred".
+- i'tada 'ala "overstep against" (2:194): the Arabic uses one verb for what is done to them and for what they do
+  in return, and the English keeps it. bi-mithli ma, of an act, "in the same way" (2:194; 16:126).
+- alqa bi-yadihi ila "throw himself into ... with his own hands" (2:195). tahluka "destruction", of ahlaka "destroy"
+  (2:205).
+- uhsira "be held back" (2:196, 273). halaqa "shave" (2:196; 48:27).
+- hady "offering" (2:196; 5:2, 95, 97; 48:25): what is brought to the House. nusuk "sacrifice" (2:196), of the family
+  of mansak "rite". mahill "place" (2:196; 22:33; 48:25), as open as the Arabic.
+- adha, of the body, "ailment" (2:196); what it should be elsewhere (2:222, 262-264) is left to be settled there.
+- sadaqa "charity" (2:196, 263, 264, 271, 276), beside az-zakat "the alms".
+- amina "be safe" (2:196, 239), of the family of amn "safety". tamatta'a bi "enjoy" (2:196), of mata' "enjoyment".
+- ahl "family" (2:196), "people" of a place or a Book (2:105, 126, 217). hadir "present at" (2:196), of hadara.
+- 'iqab "retribution"; shadid al-'iqab "severe in retribution" (2:196, 211; 5:2; 8:13), beside shadid al-'adhab
+  "severe in punishment" (2:165). 'aqaba (16:126; 22:60) is of the same family.
+- ma'lum "known" (2:197). farada, of the pilgrimage, "undertake" (2:197); of a marriage portion (2:236, 237) it is
+  left to be settled there.
+- jidal "dispute", jadala "dispute" (2:197; 4:109; 22:3), beside hajja "argue with". fi l-hajj "in the pilgrimage"
+  (2:196, 197). The other reading at 2:197 is in the decision log (call: clear).
+- tazawwada "take supplies", zad "supply" (2:197), leaving "provision" for rizq.
+- afada "pour out" (2:198, 199): the Arabic is the word for water pouring (5:83; 7:50). 'Arafat "Arafat".
+- al-mash'ar al-haram "the Sacred Landmark" (2:198), with capitals as the name of that one place. The word is a
+  place that marks, of the family of sha'a'ir "symbols" (2:158).
+- wa-in ... la- "indeed" (2:143, 198). min qablihi "before that" (2:198).
+- istaghfara "ask for forgiveness" (2:199). qada, of rites, "finish" (2:200), beside qada amran "decide a matter".
+  dhikr "remembrance" (2:200).
+- wa-ma lahu after man yaqulu (2:200): "they have", since the Arabic goes on in the plural (2:202).
+- waqa "guard" (2:201), as the line for ittaqa says. nasib "portion" (2:202), beside khalaq "share".
+- sari' al-hisab "swift in reckoning" (2:202; 3:19, 199; 5:4; 13:41; 14:51; 24:39; 40:17); hisab "reckoning".
+- ta'ajjala "hurry away", ta'akhkhara "delay" (2:203). hashara "gather" (2:203).
