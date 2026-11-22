@@ -112,6 +112,12 @@ other threads; neither ever changes the text.
 Pace (Obay, 2026-11-22): about 15,000 English words of the Quran a week, with the Bible at about
 30,000. Surah 1 and all of Surah 2 (about 12,000 words) are to be done straight through.
 
+The Quran site also shows the Arabic alone (Obay, 2026-11-22): every surah's Arabic text from
+`sources/quran/` with a human reciter's voice, Listen + Read and TV mode, and an English | Arabic switch
+on every page. `WORK=quran python3 scripts/build.py` builds those pages too (`scripts/quran_ar.py`), and
+the recitation is fetched by its own GitHub Action (`.github/workflows/recitation.yml`, `scripts/recite.py`).
+A Quran run needs to do nothing for them.
+
 ## Limits
 - A Quran run changes only new part files, their decision logs, the rebuilt `site-quran/`, lines
   appended to `QURAN_GLOSSARY.md`, and `data/quran.json` when a surah is planned.
