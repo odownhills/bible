@@ -1,0 +1,45 @@
+name: Make TV mode pictures
+
+# Makes the pictures that scene plans (data/tv/) ask for and that are not in site/pictures/ yet,
+# then commits them to the branch that was pushed, so the chapter gets its TV mode button.
+on:
+  push:
+    paths: ["data/tv/**", "scripts/pictures.py", ".github/workflows/pictures.yml"]
+  workflow_dispatch:
+    inputs:
+      max_usd:
+        description: "Most to spend in this run, in dollars"
+        default: "1.00"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pictures-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  pictures:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Make the missing pictures
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PICTURES_MAX_USD: ${{ inputs.max_usd || '1.00' }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then echo "No OPENAI_API_KEY secret yet; nothing to do."; exit 0; fi
+          python3 scripts/pictures.py
+      - name: Publish
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          command -v ffprobe >/dev/null || sudo apt-get install -y -qq ffmpeg
+          python3 scripts/build.py
+          git add -A site
+          if git diff --cached --quiet; then echo "No new pictures."; exit 0; fi
+          git commit -m "Add TV mode pictures"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
