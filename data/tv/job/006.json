@@ -83,119 +83,89 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
-   "image": "cand/a1-scale.jpg",
+   "verse": 1,
    "section": "1-7",
-   "slot": 1,
+   "image": "01-scale.jpg",
+   "tall": "tall/01-scale.jpg",
+   "principle": "If Job's anguish were weighed, it would be heavier than the sand of the seas.",
+   "shows": "A grey-haired man sits bowed on one pan of a giant balance scale on a beach; his side has sunk to the sand while the pan heaped with sand is lifted high.",
    "prompt": "On a wide empty beach under a clear sky stands a giant old iron balance scale, taller than a house. On one of its two pans sits a grey-haired man in a plain shirt, bent over with his head in his hands, and his side of the scale has sunk all the way down to the sand. The other pan, piled high with a great mountain of beach sand, is lifted high in the air. The sea stretches away behind."
   },
   {
-   "image": "cand/a1-stone.jpg",
+   "verse": 5,
    "section": "1-7",
-   "slot": 1,
-   "prompt": "On a wide beach stands a large old brass balance scale. In one pan lies a single heavy, dark, rough stone, and that pan has sunk right down. The other pan holds a great heaped mountain of pale beach sand spilling over its rim, and yet it is lifted high in the air, outweighed. The sea and an endless shore of sand stretch away behind under soft overcast light.",
-   "people": false
-  },
-  {
-   "image": "cand/a2-donkey.jpg",
-   "section": "1-7",
-   "slot": 2,
+   "image": "02-donkey.jpg",
+   "tall": "tall/02-donkey.jpg",
+   "principle": "No animal cries out while it has its food: his cry comes from real lack, and what he is given sickens him.",
+   "shows": "In a bare, sun-baked field a donkey brays with its head thrown back beside an empty feed trough.",
    "prompt": "In a bare, dusty, sun-baked field with no grass at all, a grey donkey stands with its head thrown back and its mouth wide open, braying loudly. Beside it stands an empty wooden feed trough, completely bare. Dry cracked earth stretches away to a pale horizon under a hazy sky.",
    "people": false
   },
   {
-   "image": "cand/a2-tray.jpg",
-   "section": "1-7",
-   "slot": 2,
-   "prompt": "In a plain bedroom, a sick grey-haired man sits propped up in bed and turns his face away in disgust from a tray on his lap holding a plate of pale, bland food: plain boiled egg whites and a slice of dry white bread. One hand pushes the tray away. Pale grey daylight from a window."
-  },
-  {
-   "image": "cand/b1-bed.jpg",
+   "verse": 8,
    "section": "8-13",
-   "slot": 1,
+   "image": "03-plea.jpg",
+   "tall": "tall/03-plea.jpg",
+   "principle": "Crushed past bearing, he pleads with God to let loose his hand and end his life.",
+   "shows": "At night in a dark room a grey-haired man sits on the edge of his bed, face lifted and hands open in a plea.",
    "prompt": "In a dark, bare room at night lit only by one small bedside lamp, a grey-haired man in a plain shirt sits on the edge of his bed, bent forward with exhaustion, his face lifted upward and both hands held open in front of him in a desperate plea. The rest of the room is in deep shadow."
   },
   {
-   "image": "cand/b1-mattress.jpg",
+   "verse": 11,
    "section": "8-13",
-   "slot": 1,
-   "prompt": "In a dim, bare room at night, an exhausted grey-haired man lies on his back on a bare mattress, staring upward with tired, pleading eyes, one open hand lifted weakly toward the ceiling. A faint cold light from a window falls across him. The room is otherwise empty."
-  },
-  {
-   "image": "cand/b2-statue.jpg",
-   "section": "8-13",
-   "slot": 2,
-   "prompt": "In a quiet city park, a large bronze statue of a strong, upright man stands tall and unbending on a high stone plinth. On a park bench at the foot of the plinth, a weary grey-haired man in a plain shirt sits slumped forward, utterly spent, his arms hanging and his head low. Soft afternoon light."
-  },
-  {
-   "image": "cand/b2-boulder.jpg",
-   "section": "8-13",
-   "slot": 2,
+   "image": "04-boulder.jpg",
+   "tall": "tall/04-boulder.jpg",
+   "principle": "He has no strength left to wait: his strength is not the strength of stones.",
+   "shows": "An exhausted grey-haired man leans his head and whole sagging body against a huge granite boulder.",
    "prompt": "On a bare hillside, a huge grey granite boulder stands solid and unmoved. Against its side an exhausted grey-haired man in a plain shirt leans with his whole body sagging, his head resting on the rock, barely able to stand. Overcast daylight."
   },
   {
-   "image": "cand/c1-torrent.jpg",
+   "verse": 14,
    "section": "14-21",
-   "slot": 1,
+   "image": "05-torrent.jpg",
+   "tall": "tall/05-torrent.jpg",
+   "principle": "His friends are like a mountain torrent: full and dark with ice and snow in winter, when no one needs it.",
+   "shows": "A mountain stream in early spring roars full, dark with broken ice, snow heaped on its banks.",
    "prompt": "A mountain stream in early spring, roaring full and fast between rocky banks, its water dark and churning with broken slabs of ice, deep snow still heaped along both banks and on the boulders. Bare trees and a grey winter sky above.",
    "people": false
   },
   {
-   "image": "cand/c1-dry.jpg",
+   "verse": 19,
    "section": "14-21",
-   "slot": 1,
-   "prompt": "A wide stream bed in the hills in the blazing heat of high summer, completely bone-dry: a winding channel of bleached white stones and cracked mud where water once ran, flood debris caught high in the dry bushes along the banks. Heat haze shimmers over it under a hard bright sky.",
-   "people": false
-  },
-  {
-   "image": "cand/c2-hikers.jpg",
-   "section": "14-21",
-   "slot": 2,
+   "image": "06-hikers.jpg",
+   "tall": "tall/06-hikers.jpg",
+   "principle": "Thirsty travelers who hoped in that stream come to it and find it dry, and are put to shame: so his friends failed him.",
+   "shows": "Tired hikers in hot desert hills reach a stream bed and find it bone-dry; the leader holds up an empty water bottle.",
    "prompt": "In hot, dry desert hills under a blazing sky, a small line of tired, sunburnt hikers carrying backpacks has just reached the edge of a wide stream bed, and they stop in dismay: the channel is completely dry, nothing but bleached white stones and cracked mud. The one in front holds up an empty water bottle, and the others' faces fall."
   },
   {
-   "image": "cand/c2-friends.jpg",
-   "section": "14-21",
-   "slot": 2,
-   "prompt": "In front of a house burnt to a blackened shell, a grey-haired man in a plain shirt sits alone on the ground in the ashes. Far back at the edge of the yard, near the road, three of his friends in everyday clothes stand together and hang back, hands over their mouths, afraid to come any nearer. Grey overcast light."
-  },
-  {
-   "image": "cand/d1-envelope.jpg",
+   "verse": 22,
    "section": "22-27",
-   "slot": 1,
+   "image": "07-envelope.jpg",
+   "tall": "tall/07-envelope.jpg",
+   "principle": "He never asked them for money or rescue, only for their faithfulness.",
+   "shows": "A weary grey-haired man pushes back an envelope of money his friend holds out, and takes his friend's hand instead.",
    "prompt": "In a plain living room, a well-dressed man holds out a thick envelope of money to his weary grey-haired friend. The grey-haired man gently pushes the envelope back with one hand, shaking his head, and with his other hand takes hold of his friend's hand instead. Soft daylight from a window."
   },
   {
-   "image": "cand/d1-wallet.jpg",
+   "verse": 24,
    "section": "22-27",
-   "slot": 1,
-   "prompt": "A close view at a plain wooden table: a man in a smart jacket has opened his wallet full of banknotes, and a grey-haired man's weathered hand rests gently on top of it, closing it and pushing it back across the table. The grey-haired man's face, above, looks at his friend and shakes his head. Soft window light."
-  },
-  {
-   "image": "cand/d2-lecture.jpg",
-   "section": "22-27",
-   "slot": 2,
+   "image": "08-lecture.jpg",
+   "tall": "tall/08-lecture.jpg",
+   "principle": "Teach me and I will be silent: show me my real wrong instead of lecturing a despairing man.",
+   "shows": "At a kitchen table a man leans across lecturing with a pointing finger while a weary grey-haired man sits silent, his hand over his mouth.",
    "prompt": "At a plain kitchen table, a man in a neat shirt leans across the table lecturing, jabbing his pointing finger at the weary grey-haired man opposite him. The grey-haired man sits silent and listening, one hand pressed over his mouth, his eyes tired and searching. Plain daylight from a window."
   },
   {
-   "image": "cand/d2-papers.jpg",
-   "section": "22-27",
-   "slot": 2,
-   "prompt": "On a wide, empty, windswept field under a grey sky, a strong gust of wind has torn loose a stack of blank white sheets of paper, and dozens of them fly and scatter away across the field and into the sky, out of reach. In the middle distance a grey-haired man in a plain shirt stands with one empty hand still reaching after them."
-  },
-  {
-   "image": "cand/e1-face.jpg",
+   "verse": 28,
    "section": "28-30",
-   "slot": 1,
+   "image": "09-face.jpg",
+   "tall": "tall/09-face.jpg",
+   "principle": "Look me in the face: I will not lie to you; turn back and judge fairly.",
+   "shows": "A weathered grey-haired man looks straight out of the picture with steady, honest eyes.",
    "prompt": "A close portrait of a weathered grey-haired man in a plain shirt, worn by grief, looking straight out of the picture into the viewer's eyes, steady, open and honest, nothing hidden in his face. Soft, clear daylight on his face, a plain softly blurred room behind him."
-  },
-  {
-   "image": "cand/e1-turn.jpg",
-   "section": "28-30",
-   "slot": 1,
-   "prompt": "On a long, straight country road through open fields, a man in everyday clothes who had been walking away has stopped and turned back, looking over his shoulder at his weary grey-haired friend sitting alone on a stone by the roadside behind him. Clear, cool daylight."
   }
  ]
 }
