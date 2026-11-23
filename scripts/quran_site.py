@@ -18,6 +18,11 @@ record and time the parts from it.
 
 The section names are the translation's own headings (the "## " lines of the part files). The Arabic pages
 (scripts/quran_ar.py) use the same names for the verses that are translated.
+
+TV mode pictures are planned part by part, like the Bible's chapters (TV_PICTURES.md): data/tv/quran-<n>/<NNN>.json
+for part NNN, its pictures at pictures/quran-<n>/<part>/<image> (made on the picture branch, published to the R2
+bucket by scripts/tv_publish.py). picture_runs() joins a surah's finished parts into one list; the English and the
+Arabic TV mode both show it, the Arabic at the start of each verse.
 """
 import hashlib
 import json
@@ -25,6 +30,7 @@ import os
 import re
 
 WORD = re.compile(r"[^\s—–]*\w[^\s—–]*")   # one spoken word: the same rule as scripts/build.py
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 CSS = """
 .secbar{position:sticky;top:var(--navh,3.3rem);z-index:14;background:var(--bg);margin:0 0 1.25rem;padding:.1rem 0 .55rem;display:flex;gap:.5rem}
@@ -103,6 +109,69 @@ def html_escape(s):
     return html.escape(s, quote=True)
 
 
+def picture_runs(n, ranges, there):
+    """A surah's TV mode pictures: [(verse, "from" words or None, picture's site path or None)] in order.
+
+    ranges: the verses of each translated part [(first, last), ...]; there(path): the picture is published.
+    Each part whose plan (data/tv/quran-<n>/<NNN>.json) lists scenes that all have their pictures adds its
+    scenes, the first one starting at the part's first verse. A part whose pictures are not all there yet adds
+    (its first verse, None, None): TV mode shows its quiet background there instead of holding the picture
+    before. [] when no part has its pictures yet."""
+    runs, pictured = [], False
+    for k, (a, z) in enumerate(ranges, 1):
+        mine = []
+        try:
+            planned = json.load(open(os.path.join(ROOT, "data", "tv", "quran-%d" % n, "%03d.json" % k),
+                                     encoding="utf-8")).get("scenes") or []
+        except (OSError, ValueError):
+            planned = []
+        for s in planned:
+            img = "pictures/quran-%d/%d/%s" % (n, k, s.get("image"))
+            v = s.get("verse")
+            if not isinstance(v, int) or not a <= v <= z or not there(img):
+                mine = []   # a plan that is still being worked on
+                break
+            mine.append((v, s.get("from"), img))
+        if mine:
+            mine[0] = (a, None, mine[0][2])
+            runs += mine
+            pictured = True
+        else:
+            runs.append((a, None, None))
+    return runs if pictured else []
+
+
+def scenes_at(runs, verse_at, offset=None):
+    """The scenes for scripts/tv.js, [{"w": first word, "img": site path or None}], from picture_runs() and
+    where each recorded verse starts ([[verse, word], ...]). offset(verse, words) -> words into the verse where a
+    scene's "from" words start, or None: without it (the Arabic) a scene starts at its verse, and a verse starts
+    at most one picture. A verse that is not recorded is skipped; the picture that covers it carries on into the
+    recorded verses after it. The first scene starts at the first word."""
+    start = dict(verse_at)
+    recorded = [v for v, _ in verse_at]
+    out = []
+    for i, (v, frm, img) in enumerate(runs):
+        later = [r[0] for r in runs[i + 1:] if r[0] > v] if offset is None else []
+        if offset is None and i + 1 < len(runs) and runs[i + 1][0] == v:
+            continue   # the verse's last picture wins
+        upto = later[0] if later else float("inf")
+        if offset is None:
+            inside = [r for r in recorded if v <= r < upto]
+            if not inside:
+                continue
+            at = start[inside[0]]
+        else:
+            if v not in start:
+                continue
+            at = start[v] + ((offset(v, frm) or 0) if frm else 0)
+        if out and out[-1]["img"] == img:
+            continue
+        out.append({"w": at, "img": img})
+    if out:
+        out[0]["w"] = 0
+    return out if any(s["img"] for s in out) else []
+
+
 def english_sections(parts, verses_total):
     """[(heading id, name, first verse, last verse)] from a surah's parsed parts [(meta, blocks)], in order."""
     out, k, pending = [], 0, None
@@ -123,7 +192,8 @@ def english_sections(parts, verses_total):
 
 def build(out, x):
     """Write the English surah pages. x: what scripts/build.py shares (page, esc, inline, plain, words, checksum,
-    clock, lengths, listed, books, parts, read_tag, tv_tag, TV_ICON, pill, footer). Returns
+    clock, lengths, listed, books, parts, read_tag, tv_tag, TV_ICON, pill, footer, there (a TV picture is
+    published), phrase_at). Returns
     ({surah: [(name, first verse, last verse)]} for the Arabic pages, the manifest-en.json entries)."""
     esc, inline = x["esc"], x["inline"]
     books, parts_of = x["books"], x["parts"]
@@ -143,7 +213,7 @@ def build(out, x):
             timing = None
 
         # the whole surah: the words of the joined parts are lit up as they are read; later parts are text only
-        html_parts, spoken, verse_at, section_at, k_sec = [], [], [], [], 0
+        html_parts, spoken, verse_at, section_at, k_sec, verse_text = [], [], [], [], 0, {}
         for k, p in enumerate(parts):
             live = k < joined
             for kind, val in p["blocks"]:
@@ -163,6 +233,7 @@ def build(out, x):
                         for vn, t in val:
                             verse_at.append([vn, len(words(" ".join(spoken)))])
                             spoken.append(x["plain"](t))
+                            verse_text[vn] = spoken[-1]
         text = " ".join(spoken)
         body_text = "\n".join(html_parts)
         sync = None
@@ -223,7 +294,15 @@ def build(out, x):
         for sub in ("text", "tv"):
             os.makedirs(os.path.join(out, sub, "en"), exist_ok=True)
         open(os.path.join(out, "text", "en", "%d.txt" % n), "w", encoding="utf-8").write(text)
-        json.dump({"verses": verse_at, "scenes": [], "sections": section_at if bar else []},
+        # TV mode's pictures, part by part, for the parts that are recorded
+        scenes = scenes_at(picture_runs(n, [p["range"] for p in parts], x["there"]), verse_at,
+                           lambda v, frm: x["phrase_at"](verse_text.get(v, ""), frm))
+        poster = None
+        if scenes:
+            first = next(s["img"] for s in scenes if s["img"])
+            poster = first.rsplit("/", 1)[0] + "/poster.jpg"
+            poster = poster if x["there"](poster) else first
+        json.dump({"verses": verse_at, "scenes": scenes, "sections": section_at if bar else []},
                   open(os.path.join(out, "tv", "en", "%d.json" % n), "w", encoding="utf-8"), ensure_ascii=False)
         if has_audio:
             v_last = verse_at[-1][0] if verse_at else last_v
@@ -233,6 +312,8 @@ def build(out, x):
                 "title": title(b), "sub": ("%d verses" % total) if v_last == total else "Verses 1-%d of %d" % (v_last, total),
                 "stream": True,
             })
+            if poster:   # the cover the phone's lock screen shows while TV mode plays
+                manifest[-1]["poster"] = poster
     json.dump(manifest, open(os.path.join(out, "manifest-en.json"), "w", encoding="utf-8"), ensure_ascii=False)
     return sections_by_surah, manifest
 

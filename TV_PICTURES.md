@@ -52,3 +52,19 @@ check it by eye on the finished picture.
 ## Hard text
 Some verses resist a picture. In order: use the text's own image moved into today; else show what the idea
 does in a life today; else hold the previous picture a little longer.
+
+## The Quran
+The Quran site's TV mode uses the same steps, test and rules, with these additions (Obay, 2026-11-22: "avoid
+prophet muhammed, but any other pictures you can decide if it has meaning then include it").
+- The Prophet Muhammad is never shown in any way: no face, figure, silhouette, hands or stand-in, and no one
+  standing for the "you" a verse speaks to.
+- God is never pictured. Other prophets and people the Quran names are shown the way the Bible's people are:
+  through the text's own images (the rock and its springs, the cow, the birds on the hills) or through people
+  of today, not as portraits.
+- No religious symbols of any tradition: no mosque, minaret, dome, crescent, prayer rug pattern, Arabic
+  writing or copy of the Quran. Prayer is shown as an ordinary person of today kneeling or bowing in a plain
+  place.
+- A surah is pictured part by part, in the order of its parts: the plan for part NNN is
+  `data/tv/quran-<surah>/<NNN>.json`, its pictures `pictures/quran-<surah>/<part>/`. Its first scene starts at
+  the part's first verse. The site shows a surah's pictured parts as one; a part without pictures yet plays
+  over the quiet background. The Arabic TV mode shows the same pictures, each from the start of its verse.

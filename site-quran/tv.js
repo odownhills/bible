@@ -407,10 +407,11 @@ function setup(b,o,mine){
   var text=b.text,m,last=0,c=S.me;
   S.words=[]; S.seps=[]; WORD.lastIndex=0;
   while((m=WORD.exec(text))){ S.seps.push(text.slice(last,m.index)); S.words.push(m[0]); last=m.index+m[0].length; }
-  S.scenes=(b.tv.scenes||[]).map(function(s){ return {w:s.w,img:ROOT+s.img}; }); S.verses=b.tv.verses||[];
+  // a scene with no picture (a surah whose later parts are not pictured yet) shows the quiet background there
+  S.scenes=(b.tv.scenes||[]).map(function(s){ return {w:s.w,img:s.img?ROOT+s.img:''}; }); S.verses=b.tv.verses||[];
   S.rtl=c.lang==='ar'; S.ends={};
   if(S.rtl) S.verses.forEach(function(v,k){ S.ends[(S.verses[k+1]?S.verses[k+1][1]:S.words.length)-1]=v[0]; });   // the last word of each verse
-  stage.classList.toggle('tv-noimg',!S.scenes.length); stage.classList.toggle('tv-rtl',S.rtl);
+  stage.classList.toggle('tv-noimg',!S.scenes.length||!S.scenes[0].img); stage.classList.toggle('tv-rtl',S.rtl);
   if(!S.scenes.length){ layers[0].classList.remove('tv-on'); layers[1].classList.remove('tv-on'); }
   function go(){
     audio.removeEventListener('loadedmetadata',go); if(mine!==S.serial)return;
@@ -429,7 +430,7 @@ function setup(b,o,mine){
       if(back) toast('Carrying on from '+fmt(pos)+'.','Start from the beginning',function(){ jump(0); });
     }else cover('start',pos);
     // have the next chapter ready, so it follows without a gap
-    setTimeout(function(){ if(mine===S.serial&&S.next) bundle(S.next).then(function(n){ if(n.tv.scenes&&n.tv.scenes[0]) (new Image()).src=ROOT+n.tv.scenes[0].img; },noop); },5000);
+    setTimeout(function(){ if(mine===S.serial&&S.next) bundle(S.next).then(function(n){ if(n.tv.scenes&&n.tv.scenes[0]&&n.tv.scenes[0].img) (new Image()).src=ROOT+n.tv.scenes[0].img; },noop); },5000);
   }
   audio.addEventListener('loadedmetadata',go);
   audio.src=b.src; audio.defaultPlaybackRate=rate(); audio.playbackRate=rate(); audio.load();
@@ -472,12 +473,14 @@ function textOf(a,b){ var s='',k; for(k=a;k<b;k++) s+=(k>a?S.seps[k]:'')+S.words
 
 /* ---- drawing ---- */
 function find(arr,t,key){ var lo=0,hi=arr.length-1,k=-1; while(lo<=hi){ var mid=(lo+hi)>>1,v=key==null?arr[mid]:arr[mid][key]; if(v<=t){k=mid;lo=mid+1}else hi=mid-1 } return k; }
-function preload(i){ var s=S.scenes[i]; if(s&&!s.pre){ s.pre=new Image(); s.pre.src=s.img; } }
+function preload(i){ var s=S.scenes[i]; if(s&&s.img&&!s.pre){ s.pre=new Image(); s.pre.src=s.img; } }
 function show(i){
   if(i===S.scene||!S.scenes[i])return; S.scene=i; preload(i+1);
   var s=S.scenes[i],lay=layers[S.top^1],img=lay.firstChild,end=S.scenes[i+1]?S.scenes[i+1].at:audio.duration,mine=S.serial;
+  if(!s.img){ stage.classList.add('tv-noimg'); layers[0].classList.remove('tv-on'); layers[1].classList.remove('tv-on'); return; }
   function up(){
     if(S.scene!==i||mine!==S.serial)return;
+    stage.classList.remove('tv-noimg');
     img.style.animationName='none'; void img.offsetWidth;
     img.style.animationDuration=Math.max(8,(end-s.at)/audio.playbackRate+3)+'s'; img.style.animationName='tvkb'+(i%4);
     lay.classList.add('tv-on'); layers[S.top].classList.remove('tv-on'); S.top^=1;
