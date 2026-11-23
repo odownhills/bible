@@ -485,6 +485,29 @@ def collect():
     return chapters
 
 
+def newest(chapters):
+    """The chapter the runs added last, for the home page's "Newest chapter". The runs do not follow the canon:
+    they take the books of "first_books" (data/settings.json) first, in that order, and then the rest of the
+    canon, always the first chapter still missing (scripts/next.py). So the newest chapter is the one just
+    before the first missing chapter in that order, passing over a book at the front that has not been
+    started yet (Obay, 2026-11-23: Deuteronomy next, while Job stands at chapter 21)."""
+    try:
+        first = json.load(open(os.path.join(ROOT, "data", "settings.json"))).get("first_books") or []
+    except (OSError, ValueError):
+        first = []
+    have = {(b["slug"], n) for b, n, _ in chapters}
+    found = None
+    for b in sorted(BOOKS, key=lambda b: first.index(b["slug"]) if b["slug"] in first else len(first)):
+        for n in range(1, b["chapters"] + 1):
+            if (b["slug"], n) in have:
+                found = (b, n)
+            elif found:
+                return found
+            else:
+                break
+    return found or chapters[-1][:2]
+
+
 def main():
     chapters = collect()
     if os.path.isdir(OUT):
@@ -675,14 +698,14 @@ def main():
         groups.append('<h3 class="group">%s</h3><div class="grid">%s</div>' % (heading, "".join(cells)))
     latest = ""
     if chapters:
-        lb, ln, _ = chapters[-1]
-        href, newest = "%s/%d.html" % (lb["slug"], ln), "Newest %s" % UNIT
+        lb, ln = newest(chapters) if WORK == "bible" else chapters[-1][:2]
+        href, what = "%s/%d.html" % (lb["slug"], ln), "Newest %s" % UNIT
         if WORK == "quran":   # the newest verses, on their surah's page
             a, z = lb["ranges"][ln - 1]
-            href, newest = "%s/%s" % (lb["slug"], "#v%d" % a if a > 1 else ""), "Newest verses"
+            href, what = "%s/%s" % (lb["slug"], "#v%d" % a if a > 1 else ""), "Newest verses"
         latest = ('<a class="continue" id="resume" href="#" hidden><small>Pick up where you left off</small><b></b></a>'
                   '<a class="continue" href="%s"><small>%s</small><b>%s</b></a>'
-                  % (href, newest, esc(label(lb, ln))))
+                  % (href, what, esc(label(lb, ln))))
     resume_js = """<script>
 (function(){
 function get(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}}
