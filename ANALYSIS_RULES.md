@@ -3,7 +3,8 @@
 The study site gives each chapter of the translation a short analysis, section by section: what the
 passage means, and the other places in Scripture that light it up. These rules began as Obay's
 "Universal Biblical Analysis Prompt" (2026-11-22) and are meant to be improved over time. Lines marked
-(pick) are the translator's recommendations, in force until Obay decides otherwise.
+(pick) are the translator's recommendations, in force until Obay decides otherwise. Lines marked
+(Obay, date) are his decisions.
 
 The analysis never changes the translation. It is written after a chapter is published, from the
 chapter as published, and an analysis run never edits a file under `translations/` or `decisions/`.
@@ -29,6 +30,9 @@ so that points are not repeated and threads are picked up. Work slowly. Depth ma
 ## Evidence
 - Only Scripture is evidence for what a passage means: the chapter itself, the original words, the
   rest of the book, and the rest of Scripture. This is the same rule as for the translation. (pick)
+- Work from the original language (Obay, 2026-11-22): the meaning is argued from the Hebrew, Aramaic
+  or Greek directly, never from the English. The translation gives the page its sections and the
+  wording quoted to the reader. It is not the evidence.
 - Never a reason: what scholars, commentaries, translations, churches or traditions say. Do not name
   them. Do not summarize a denomination's view.
 - Outside history (dates, places, customs, who ruled) may appear only as plain background, only when
@@ -44,7 +48,7 @@ so that points are not repeated and threads are picked up. Work slowly. Depth ma
 ## Related Scripture
 - A related passage is whole verses, given by its address: `### John 1:10-13`.
 - If that chapter is already published in this translation, write no quote. The site shows the
-  published wording (its main text) and links to it. (pick)
+  published wording (its main text) and links to it. (Obay, 2026-11-22)
 - If it is not published yet, translate the verses fresh from the Hebrew or Greek, by
   `TRANSLATION_RULES.md` and the settled wordings in `GLOSSARY.md`, main text only, with no brackets.
   Translate from the original, never from an English version. When that chapter is published later,

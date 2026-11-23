@@ -144,10 +144,16 @@ The analysis never changes the translation. It is written from the chapter as pu
 ## Steps, repeated for each chapter, in order
 1. Follow `ANALYSIS_RULES.md` exactly (it lists what to read first) and write
    `analysis/<slug>/<NNN>.md`. Only a published chapter can be analyzed.
-   The analysis, with its fresh translations of related passages, must be written by Fable 5.2 at
-   extra-high effort (Obay's explicit requirement). A thread that was started as Fable 5.2 at extra-high
-   effort does it itself. Any other run delegates the whole of this step with the Agent tool using
-   `model: "fable"` and `effort: "xhigh"`, one agent per chapter.
+   The analysis is written by Opus 5.5 at extra-high effort (Obay, 2026-11-22: the analysis matters as
+   much as the translation, and Opus 5.5 at extra-high effort is the model he accepted for it; the
+   1 John 3 test was written by Fable 5.2). A thread that was started as Opus 5.5 at extra-high effort
+   does it itself. Any other run delegates the whole of this step with the Agent tool using
+   `model: "opus"` and `effort: "xhigh"`, one agent per chapter.
+   The writer argues from the Hebrew, Aramaic or Greek directly, not from the English. A related
+   passage from a chapter that is already published is never translated again: the site pulls the
+   published wording. Only a passage that is not published yet is translated fresh, by the same writer.
+   That is the one case where Opus translates: Bible and Quran chapters are still translated only by
+   Fable 5.2 at extra-high effort.
 2. `python3 scripts/study.py check analysis/<slug>/<NNN>.md` must print OK. If it fails, fix the
    failures (up to 3 rounds). Never publish a failing file. Then reread the analysis against the chapter
    and against every passage it quotes or names, and take out anything the text does not say.
