@@ -15,6 +15,10 @@
    seek bar marks where each section of the surah starts, and the Arabic words are shown right to left in
    the Quran font, a verse or a phrase at a time, each verse closed with its number.
 
+   Verse numbers (Obay, 2026-11-22: "the video doesn't show the verse numbers"): in English each verse's first
+   word has its number before it, as on the page; the Arabic closes each verse with its number. Without
+   pictures, the verse being read is also named under the title.
+
    Written in plain old JavaScript on purpose, so that the browsers built into TVs can run it. */
 (function(){
 'use strict';
@@ -79,6 +83,7 @@ var CSS=
 '#tv.tv-paused .tv-plain i{animation-play-state:paused}'+
 '.tv-plain div{position:absolute;left:0;right:0;top:15%;text-align:center;padding:0 6vw}'+
 '.tv-plain b{display:block;font-family:Georgia,"Times New Roman",Times,serif;font-weight:normal;color:#C9B8EC;opacity:.9;font-size:2.4rem;font-size:clamp(1.6rem,4.6vw,4.2rem);line-height:1.15}'+
+'.tv-plain em{display:block;min-height:1.3em;margin-top:.45em;font-style:normal;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:.9rem;font-size:clamp(.8rem,1.5vw,1.35rem);letter-spacing:.16em;text-transform:uppercase;color:#B79BE8}'+
 '.tv-plain small{display:block;margin-top:.7em;font-size:.72rem;font-size:clamp(.66rem,1.05vw,.95rem);letter-spacing:.16em;text-transform:uppercase;color:#B3A7C9;opacity:.75}'+
 '#tv.tv-noimg .tv-plain{opacity:1}'+
 '#tv.tv-noimg .tv-scrim,#tv.tv-noimg .tv-tag{opacity:0}'+
@@ -97,6 +102,7 @@ var CSS=
 '.tv-cap.tv-out{opacity:0}'+
 '.tv-cap .tv-w{transition:color .12s linear}'+
 '.tv-cap .tv-w.tv-on{color:#fff}'+
+'.tv-cap .tv-n{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:.58em;font-weight:600;color:#B79BE8;vertical-align:.7em;line-height:0;margin:0 .22em 0 .05em}'+
 '#tv.tv-ui .tv-cap{-webkit-transform:translate(-50%,-1.9rem);transform:translate(-50%,-1.9rem)}'+
 '#tv.tv-nowords .tv-cap{display:none}'+
 '#tv.tv-noimg .tv-cap{bottom:auto;top:43%;text-shadow:none}'+
@@ -240,7 +246,7 @@ function build(){
   function b(id,label,inner,cls){ return '<button type="button" id="tv-'+id+'" aria-label="'+label+'" title="'+label+'"'+(cls?' class="'+cls+'"':'')+'>'+inner+'</button>'; }
   stage.innerHTML=
     '<div class="tv-pic"><img alt=""></div><div class="tv-pic"><img alt=""></div>'+
-    '<div class="tv-plain"><i></i><i></i><div><b id="tv-ptitle"></b><small>Pictures for this chapter are on the way</small></div></div>'+
+    '<div class="tv-plain"><i></i><i></i><div><b id="tv-ptitle"></b><em id="tv-pverse"></em><small>Pictures for this chapter are on the way</small></div></div>'+
     '<div class="tv-scrim"></div>'+
     '<div class="tv-tag" id="tv-tag"></div>'+
     '<div class="tv-cap tv-out" id="tv-cap" aria-live="off"><span></span></div>'+
@@ -272,7 +278,7 @@ function build(){
     '<div class="tv-toast" id="tv-toast" role="status"><span></span><button type="button" hidden></button></div>';
   d.body.appendChild(stage);
   audio=d.createElement('audio'); audio.preload='auto'; stage.appendChild(audio);
-  ['tag','cap','seek','ticks','cur','rem','play','back','fwd','prev','next','rate','words','full','close','cover','kick','title','msg','go','go-t','again','all','leave','spin','toast','nl','nr','ptitle']
+  ['tag','cap','seek','ticks','cur','rem','play','back','fwd','prev','next','rate','words','full','close','cover','kick','title','msg','go','go-t','again','all','leave','spin','toast','nl','nr','ptitle','pverse']
     .forEach(function(k){ el[k]=d.getElementById('tv-'+k); });
   cap=el.cap; capIn=cap.firstChild; seek=el.seek; layers=stage.querySelectorAll('.tv-pic');
 
@@ -397,7 +403,7 @@ function load(id,o){
     // the chapter before and the next one that have a recording, with or without pictures
     for(k=i-1;k>=0;k--) if(m[k].audio){ S.prev=m[k]; break; }
     for(k=i+1;k<m.length;k++) if(m[k].audio){ S.next=m[k]; break; }
-    el.tag.innerHTML=esc(name(S.me)); el.ptitle.textContent=name(S.me); icons();
+    el.tag.innerHTML=esc(name(S.me)); el.ptitle.textContent=name(S.me); el.pverse.textContent=''; icons();
     if(!S.me.audio) throw new Error('noaudio');
     return bundle(S.me);
   }).then(function(b){ if(mine===S.serial) setup(b,o,mine); })
@@ -409,7 +415,8 @@ function setup(b,o,mine){
   while((m=WORD.exec(text))){ S.seps.push(text.slice(last,m.index)); S.words.push(m[0]); last=m.index+m[0].length; }
   // a scene with no picture (a surah whose later parts are not pictured yet) shows the quiet background there
   S.scenes=(b.tv.scenes||[]).map(function(s){ return {w:s.w,img:s.img?ROOT+s.img:''}; }); S.verses=b.tv.verses||[];
-  S.rtl=c.lang==='ar'; S.ends={};
+  S.rtl=c.lang==='ar'; S.ends={}; S.starts={};
+  if(!S.rtl) S.verses.forEach(function(v){ if(v[0]>0) S.starts[v[1]]=v[0]; });   // the first word of each verse
   if(S.rtl) S.verses.forEach(function(v,k){ S.ends[(S.verses[k+1]?S.verses[k+1][1]:S.words.length)-1]=v[0]; });   // the last word of each verse
   stage.classList.toggle('tv-noimg',!S.scenes.length||!S.scenes[0].img); stage.classList.toggle('tv-rtl',S.rtl);
   if(!S.scenes.length){ layers[0].classList.remove('tv-on'); layers[1].classList.remove('tv-on'); }
@@ -494,7 +501,7 @@ function card(i){
   if(i<0){ cap.classList.add('tv-out'); return; }
   var c=S.cards[i],h='',k;
   for(k=c.a;k<c.b;k++){
-    h+=(k>c.a?esc(S.seps[k]):'')+'<span class="tv-w">'+esc(S.words[k])+'</span>';
+    h+=(k>c.a?esc(S.seps[k]):'')+(S.starts[k]?'<span class="tv-n">'+S.starts[k]+'</span>':'')+'<span class="tv-w">'+esc(S.words[k])+'</span>';
     if(S.rtl&&S.ends[k]) h+=' <span class="tv-end">\u06dd'+arabicNumber(S.ends[k])+'</span>';   // the verse's end, with its number
   }
   if(c.b<S.words.length&&/[—–]/.test(S.seps[c.b])) h+='—';
@@ -515,7 +522,7 @@ function mark(){
   card(ci);
   if(w!==S.word){ var sp=capIn.querySelectorAll('.tv-w'),a=cards[ci].a; for(k=0;k<sp.length;k++) sp[k].className=a+k<=w?'tv-w tv-on':'tv-w'; S.word=w; }
   var v=find(S.verses,w<0?0:w,1);
-  if(v!==S.verse){ S.verse=v; el.tag.innerHTML=esc(name(S.me))+(v>=0?'<span>verse '+S.verses[v][0]+'</span>':''); }
+  if(v!==S.verse){ S.verse=v; el.tag.innerHTML=esc(name(S.me))+(v>=0?'<span>verse '+S.verses[v][0]+'</span>':''); el.pverse.textContent=v>=0&&S.verses[v][0]>0?'verse '+S.verses[v][0]:''; }
 }
 function paint(){
   var dur=isFinite(audio.duration)?audio.duration:0,t=S.drag?parseFloat(seek.value):(audio.currentTime||0);

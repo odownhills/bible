@@ -230,6 +230,8 @@ def build(out, x):
         name = english_name(n)
         eyebrow = "Surah %d%s" % (n, " · " + name if name else "")
         about = "%d verses" % s["verses"] + (" · verses %d–%d read aloud so far" % (max(1, first), last) if partial else "")
+        if not rel:   # Obay looked for Listen + Read on a page with no recording yet (2026-11-22)
+            about += " · not read aloud yet. Listen + Read and TV mode appear here once the voice reaches this surah."
         prev_link = '<a class="prev" href="%d.html">&larr; %s</a>' % (n - 1, esc(title(n - 1))) if n > 1 else \
             '<span class="prev">Beginning of the Quran</span>'
         next_link = '<a class="next" href="%d.html">%s &rarr;</a>' % (nxt, esc(title(nxt))) if nxt else \
