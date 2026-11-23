@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#171223">
+<title>1 John 2: what it means</title>
+<style>
+:root{--bg:#171223;--panel:#1E1830;--shade:#241C3A;--text:#E8E2F2;--text-soft:#B3A7C9;--heading:#C9B8EC;--rule:#372C52;--accent:#B79BE8;--num:#7A6A9A;--alt-text:#C4B4E2;--note-bg:#201A32;
+--sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--serif:Georgia,"Times New Roman",Times,serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--serif);font-size:19px;line-height:1.75}
+a{color:var(--accent)}
+.wrap{max-width:42rem;margin:0 auto;padding:1.25rem 16px 4rem}
+.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:var(--sans);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;padding-bottom:.75rem;border-bottom:1px solid var(--rule);margin-bottom:1.5rem}
+.top a{text-decoration:none;color:var(--text-soft)}
+.top a:hover{color:var(--accent)}
+h1{font-family:var(--serif);color:var(--heading);font-weight:normal;font-size:2rem;line-height:1.25;margin:.5rem 0 .25rem}
+.sub{font-family:var(--sans);color:var(--text-soft);font-size:.85rem;margin:0 0 1.75rem}
+h2.sec{font-family:var(--sans);color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:600;line-height:1.4;border-bottom:1px solid var(--rule);padding-bottom:.4rem;margin:2.25rem 0 1rem}
+h3.group{font-family:var(--sans);color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:600;border-bottom:1px solid var(--rule);padding-bottom:.4rem;margin:2rem 0 1rem}
+p.v{margin:0 0 1.1rem}
+p.title{font-style:italic;color:var(--text-soft);margin:0 0 1rem}
+sup.n{font-family:var(--sans);font-size:.6em;color:var(--num);user-select:none;-webkit-user-select:none;margin:0 .2em 0 .1em;vertical-align:super;line-height:0}
+.alt{font-style:italic;font-size:.88em;color:var(--alt-text)}
+.note{font-style:italic;font-size:.85em;color:var(--text-soft);background:var(--note-bg);border-radius:4px;padding:0 .3em}
+.numbering{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:.6rem .8rem;margin:0 0 1.5rem}
+.pn{display:flex;justify-content:space-between;gap:.75rem;margin-top:3rem;font-family:var(--sans);font-size:.9rem}
+.pn a,.pn span{flex:1;display:block;padding:.85rem 1rem;border:1px solid var(--rule);border-radius:10px;background:var(--panel);text-decoration:none}
+.pn .next{text-align:right}
+.pn span{color:var(--num)}
+.btn{display:inline-block;font-family:var(--sans);font-size:.85rem;line-height:1.4;color:var(--bg);background:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:.5rem 1rem;text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(9.5rem,1fr));gap:.6rem;font-family:var(--sans);font-size:.95rem}
+.grid.ch{grid-template-columns:repeat(auto-fill,minmax(3.4rem,1fr))}
+.grid a,.grid span{display:block;padding:.7rem .8rem;border-radius:10px;border:1px solid var(--rule);background:var(--panel);text-decoration:none;line-height:1.3}
+.grid.ch a,.grid.ch span{text-align:center;padding:.7rem 0}
+.grid a{color:var(--text)}
+.grid a:hover{border-color:var(--accent)}
+.grid span{color:var(--num);background:transparent}
+.grid small{display:block;color:var(--text-soft);font-size:.75rem;margin-top:.2rem}
+.grid span small{color:var(--num)}
+.continue{display:block;margin:0 0 1.5rem;padding:1rem 1.1rem;border-radius:12px;background:var(--shade);border:1px solid var(--rule);text-decoration:none;font-family:var(--sans)}
+.continue b{display:block;color:var(--heading);font-family:var(--serif);font-weight:normal;font-size:1.2rem}
+.continue small{color:var(--text-soft)}
+.continue[hidden]{display:none}
+footer{margin-top:3rem;font-family:var(--sans);font-size:.75rem;color:var(--num);text-align:center}
+.seek{display:block;width:100%;margin:0;height:28px;background:transparent;-webkit-appearance:none;appearance:none;cursor:pointer;touch-action:none}
+.seek:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
+.seek::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:linear-gradient(to right,var(--accent) var(--p,0%),var(--rule) var(--p,0%))}
+.seek::-moz-range-track{height:6px;border-radius:3px;background:var(--rule)}
+.seek::-moz-range-progress{height:6px;border-radius:3px;background:var(--accent)}
+.seek::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--heading);margin-top:-6px;border:0}
+.seek::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--heading);border:0}
+.seek:disabled{opacity:.45}
+.times{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--text-soft);font-variant-numeric:tabular-nums;margin-top:.1rem}
+.alt-t{font:inherit;font-size:.78rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:0 .8rem;min-height:30px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.alt-t:active{background:var(--shade)}
+.alt-t:focus-visible{outline:2px solid var(--accent)}
+.tb{background:transparent;border:0;color:var(--text);padding:0;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;cursor:pointer;position:relative;-webkit-tap-highlight-color:transparent}
+.tb:active{background:var(--shade)}
+.tb:focus-visible{outline:2px solid var(--accent)}
+.tb:disabled{color:var(--num);cursor:default}
+.tb svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tb .solid{fill:currentColor;stroke:none}
+.tb.skip svg{width:36px;height:36px}
+.tb.skip span{position:absolute;font-size:.62rem;font-weight:700;top:50%;left:50%;transform:translate(-50%,-38%);font-variant-numeric:tabular-nums}
+.tb.main{width:72px;height:72px;background:var(--accent);color:var(--bg)}
+.tb.main:active{background:var(--heading)}
+.tb.main svg{width:34px;height:34px}
+.chips{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center}
+.chip{font:inherit;font-size:.82rem;color:var(--text);background:var(--shade);border:1px solid var(--rule);border-radius:999px;padding:.5rem .85rem;text-decoration:none;min-height:40px;display:inline-flex;align-items:center;gap:.35rem}
+select.chip{-webkit-appearance:none;appearance:none;text-align:center;cursor:pointer}
+.chip:focus-visible{outline:2px solid var(--accent)}
+body.lr{padding-bottom:10rem}
+#ch{position:relative;isolation:isolate}
+body.lr #ch p{color:#A396C6}
+body.lr #ch .w{color:#A396C6;cursor:pointer;transition:color .4s ease;-webkit-tap-highlight-color:transparent}
+body.lr #ch .w.on{color:var(--text)}
+body.lr #ch .w.now{color:#fff}
+.lr-pill{position:absolute;left:0;top:0;z-index:-1;border-radius:7px;background:rgba(183,155,232,.22);pointer-events:none;opacity:0;transition:transform .26s cubic-bezier(.25,.8,.35,1),width .26s cubic-bezier(.25,.8,.35,1),opacity .3s ease}
+body:not(.lr) .lr-pill{display:none}
+body.lr #ch .alt,body.lr #ch .note{opacity:.5}
+body.lr.noalt #ch .aside,body.lr.noalt #ch sup.n:has(+ .silent){display:none}
+@media (prefers-reduced-motion:reduce){body.lr #ch .w,.lr-pill{transition:none}}
+.sub .btn{margin:0 .35rem .4rem 0}
+.lr-bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--panel);border-top:1px solid var(--rule);font-family:var(--sans);padding:.3rem 14px calc(.5rem + env(safe-area-inset-bottom,0px))}
+.lr-bar[hidden]{display:none}
+.lr-in{max-width:42rem;margin:0 auto}
+.lr-row{display:flex;align-items:center;justify-content:space-between;gap:.25rem;margin-top:.2rem}
+.lr-mid{display:flex;align-items:center;gap:.7rem}
+.lr-bar .tb{width:46px;height:46px}
+.lr-bar .tb.main{width:56px;height:56px}
+.lr-bar .tb.main svg{width:28px;height:28px}
+.lr-bar .tb.skip svg{width:32px;height:32px}
+.lr-bar .tb.x svg{width:22px;height:22px}
+.lr-bar .chip{min-height:40px;padding:.35rem .5rem;min-width:4.4rem;justify-content:center}
+.lr-msg{font-size:.78rem;color:var(--text-soft);text-align:center;margin:.3rem 0 0}
+.lr-msg[hidden]{display:none}
+sup.n.here{color:var(--bg);background:var(--accent);border-radius:4px;padding:.15em .35em;transition:all .6s}
+.toast{position:fixed;left:12px;right:12px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:30;max-width:30rem;margin:0 auto;background:var(--shade);border:1px solid var(--accent);border-radius:14px;padding:.75rem .9rem;font-family:var(--sans);font-size:.9rem;color:var(--text);box-shadow:0 6px 24px rgba(0,0,0,.45);display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .6rem}
+.toast p{margin:0;flex:1 1 100%}
+.toast a,.toast button{font:inherit;font-size:.85rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:.45rem .85rem;text-decoration:none;cursor:pointer;min-height:40px;display:inline-flex;align-items:center}
+.toast .x{margin-left:auto;border:0;color:var(--text-soft)}
+#ch sup.n{scroll-margin-top:1.5rem}
+#ch .w.hit{background:rgba(183,155,232,.3);border-radius:3px;transition:background 1.5s ease}
+.top .find{display:inline-flex;align-items:center;padding:.15rem 0}
+@media (max-width:400px){.top{gap:.5rem;font-size:.74rem;letter-spacing:.03em}.top span{gap:.8rem!important}.top .lang a,.top .lang b{padding:.1rem .45rem!important}}
+@media (max-width:340px){.top span{gap:.5rem!important}.top .lang a,.top .lang b{padding:.1rem .35rem!important}.top .find svg{width:1.05rem;height:1.05rem}}
+.top .find svg{width:1.2rem;height:1.2rem;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
+body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
+.top span{display:flex;gap:1.4rem}
+.btn.tv{background:var(--shade);color:var(--heading);border-color:var(--accent)}
+.btn.tv svg{width:1.15em;height:1.15em;vertical-align:-.2em;margin-right:.4em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.top a.out{color:var(--accent)}
+p.open{color:var(--text-soft);margin:0 0 .5rem}
+h2.sec{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+h2.sec a{color:var(--text-soft);font-weight:400;letter-spacing:.06em;text-decoration:none;white-space:nowrap}
+h2.sec a:hover{color:var(--accent)}
+h3.rel{font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--num);margin:1.6rem 0 .6rem}
+.rs{background:var(--panel);border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:8px;padding:.8rem 1rem .9rem;margin:0 0 .9rem}
+.rs .ref{font-family:var(--sans);font-size:.8rem;letter-spacing:.04em;color:var(--accent);margin:0 0 .35rem}
+.rs .ref a{text-decoration:none}
+.rs .ref a:hover{text-decoration:underline}
+.rs blockquote{margin:0 0 .7rem;color:var(--text)}
+.rs .why{margin:0;font-size:.92em;line-height:1.65;color:var(--text-soft)}
+.rs .why+.why{margin-top:.6rem}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../">Books</a><span><a class="out" href="https://bible.odownhills.workers.dev/">The translation</a><a class="find" href="../search/" aria-label="Search" title="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a></span></nav>
+<h1>1 John 2</h1>
+<p class="sub">What the chapter means, section by section. <a class="btn ghost" href="https://bible.odownhills.workers.dev/1-john/2.html">Read the chapter</a></p>
+<p class="open">Chapter 1 spoke as &quot;we.&quot; Here the writer says &quot;I&quot; for the first time and calls the readers &quot;my little children.&quot; Eleven of the letter&#x27;s thirteen mentions of its own writing fall in this chapter. It tests claims by what is done, warns about the world and those who left, and ends at being &quot;born from him.&quot;</p>
+<h2 class="sec" id="s1"><span>An advocate with the Father</span><a href="https://bible.odownhills.workers.dev/1-john/2.html#v1">verses 1-2</a></h2>
+<p class="v">The aim is spoken to &quot;you&quot;: &quot;so that you may not sin.&quot; The provision includes the writer: &quot;we have an advocate.&quot; Beside &quot;if anyone sins&quot; the letter later sets &quot;everyone who remains in him does not sin&quot; (3:6) and &quot;he cannot sin&quot; (3:9).</p>
+<p class="v">The Greek word for &quot;atonement&quot; is found in the New Testament only here and at 4:10. Read as &quot;atonement,&quot; it speaks of sins made up for; as &quot;appeasement,&quot; of anger turned away.</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref"><a href="https://bible.odownhills.workers.dev/job/16.html#v19">Job 16:19-21</a></p><blockquote><sup class="n">19</sup>Even now, look, my witness is in the heavens, and the one who testifies for me is on high. <sup class="n">20</sup>My friends scoff at me; to God my eye sheds tears, <sup class="n">21</sup>that he would argue for a man with God, as a human being does for his friend.</blockquote><p class="why">Job says his witness is &quot;in the heavens&quot; and weeps to God &quot;that he would argue for a man with God.&quot; Verse 1: &quot;we have an advocate with the Father.&quot;</p></div>
+<div class="rs"><p class="ref">John 14:16</p><blockquote>And I myself will make a request of the Father, and he will give you another advocate, so that he may be with you forever.</blockquote><p class="why">&quot;Advocate&quot; is found in the New Testament only in John 14-16, where it is the spirit (John 14:26), and in verse 1, where it is Jesus Christ.</p></div>
+<h2 class="sec" id="s2"><span>Keeping his commandments</span><a href="https://bible.odownhills.workers.dev/1-john/2.html#v3">verses 3-6</a></h2>
+<p class="v">Verses 4 and 5 are a pair: in the one who does not keep, &quot;the truth is not in this person&quot;; in the one who keeps, &quot;truly in this person the love of God has been made complete.&quot; &quot;The love of God&quot; can mean his love or love for him.</p>
+<p class="v">&quot;Ought&quot; comes three times in the letter, each tied to something already done: &quot;just as that one walked&quot; (verse 6), &quot;that one laid down his life&quot; (3:16), &quot;God loved us&quot; (4:11).</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref">Jeremiah 22:16</p><blockquote>He judged the cause of the afflicted and the needy; then it was well. Is that not what it is to know me? declares Yahweh.</blockquote><p class="why">Yahweh calls judging the cause of the afflicted what it is &quot;to know me.&quot; Verse 3 finds knowing him in keeping &quot;his commandments.&quot;</p></div>
+<h2 class="sec" id="s3"><span>The old commandment and the new</span><a href="https://bible.odownhills.workers.dev/1-john/2.html#v7">verses 7-11</a></h2>
+<p class="v">Verse 7 calls the commandment old, one they &quot;had from the beginning.&quot; Verse 8 calls it new and gives a time: &quot;the darkness is passing away and the true light is already shining.&quot; Neither verse names it. The next three turn on a brother loved or hated, and 3:11 names what was heard from the beginning: &quot;that we should love one another.&quot;</p>
+<p class="v">In verse 11 the darkness is where he is, then where he walks, then what acts: it &quot;has blinded his eyes.&quot; Read &quot;in him&quot; (verse 10), the one who loves holds no cause of stumbling; read &quot;in it,&quot; the light holds none.</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref">Proverbs 4:18-19</p><blockquote><sup class="n">18</sup>But the path of the righteous is like the shining light, which grows brighter and brighter until the full day. <sup class="n">19</sup>The way of the wicked is like deep darkness; they do not know what they stumble over.</blockquote><p class="why">Light growing to full day, and darkness where they &quot;do not know what they stumble over&quot;: verses 8-11 have both.</p></div>
+<div class="rs"><p class="ref">John 12:35</p><blockquote>So Jesus said to them, &quot;The light is among you a little while longer. Walk while you have the light, so that darkness does not overcome you. And the one who walks in the darkness does not know where he is going.&quot;</blockquote><p class="why">Verse 11 too &quot;walks in the darkness,&quot; and in Greek &quot;does not know where he is going&quot; is the same in both, word for word.</p></div>
+<h2 class="sec" id="s4"><span>To children, fathers and young men</span><a href="https://bible.odownhills.workers.dev/1-john/2.html#v12">verses 12-14</a></h2>
+<p class="v">Two rounds of three: children, fathers, young men. The fathers hear the same reason both times, word for word in Greek. The young men&#x27;s second reason grows: they &quot;are strong,&quot; and &quot;the word of God remains&quot; in them. Read &quot;because,&quot; these are why he writes; read &quot;that,&quot; what he writes. Elsewhere all the readers are &quot;little children&quot; (verses 1, 28) and &quot;young children&quot; (verse 18); the text does not say whether these groups are ages.</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref">Psalms 25:11</p><blockquote>For the sake of your name, Yahweh, forgive my guilt, for it is great.</blockquote><p class="why">The psalm asks forgiveness &quot;for the sake of your name&quot;; its only other reason is that the guilt &quot;is great.&quot; Verse 12: &quot;on account of his name.&quot;</p></div>
+<div class="rs"><p class="ref">John 16:33</p><blockquote>I have spoken these things to you so that in me you may have peace. In the world you have trouble; but take courage: I myself have conquered the world.</blockquote><p class="why">Jesus says &quot;I myself have conquered&quot;; verses 13-14 tell the young men &quot;you have conquered,&quot; the same verb in the same tense.</p></div>
+<h2 class="sec" id="s5"><span>Do not love the world</span><a href="https://bible.odownhills.workers.dev/1-john/2.html#v15">verses 15-17</a></h2>
+<p class="v">Verse 15 is the letter&#x27;s first command; before it, verses 12-14 say only what is already true of the readers. &quot;World&quot; comes six times in three verses. It first came in verse 2, as how far the atonement reaches. It &quot;is passing away,&quot; the verb used of the darkness in verse 8. Read &quot;of possessions,&quot; verse 16 speaks of pride in what one owns (as at 3:17); read &quot;of life,&quot; of pride in how one lives.</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref">Isaiah 40:8</p><blockquote>The grass withers, the flower fades, but the word of our God will stand forever.</blockquote><p class="why">Isaiah sets what fades against &quot;the word of our God&quot;; verse 17, the passing world against &quot;the one who does the will of God,&quot; who &quot;remains forever.&quot;</p></div>
+<div class="rs"><p class="ref"><a href="https://bible.odownhills.workers.dev/john/3.html#v16">John 3:16</a></p><blockquote>&quot;For God loved the world in this way, that he gave the only Son, so that everyone who believes in him might not perish but have eternal life.&quot;</blockquote><p class="why">God &quot;loved the world.&quot; Verse 15 says, &quot;Do not love the world.&quot; The Greek verb and noun are the same.</p></div>
+<h2 class="sec" id="s6"><span>The last hour</span><a href="https://bible.odownhills.workers.dev/1-john/2.html#v18">verses 18-27</a></h2>
+<p class="v">&quot;From us&quot; comes four times in verse 19, and their going out was &quot;so that they might be revealed.&quot; Read &quot;none of them are from us,&quot; this speaks of those who left; read &quot;not all are from us,&quot; of the group: not everyone in it was from it.</p>
+<p class="v">In this section the first &quot;remain&quot; is about those who did not: &quot;they would have remained with us.&quot; From verse 19 to verse 28 it comes seven times. Read &quot;all of you know&quot; (verse 20), no one is left out; read &quot;you know all things,&quot; compare &quot;concerning all things&quot; (verse 27). In verse 4 &quot;a liar&quot; does not keep the commandments; in verse 22 &quot;the liar&quot; denies &quot;that Jesus is the Christ.&quot;</p>
+<p class="v">The writer, teaching by letter, says they &quot;have no need for anyone to teach&quot; them (verse 27); in verse 21 he writes &quot;because you know it.&quot; &quot;Remain in him&quot; (verse 27) can also be read as a statement.</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref">Jeremiah 31:34</p><blockquote>And no longer will they teach, each one his neighbor and each one his brother, saying, &quot;Know Yahweh,&quot; for they will all know me, from the least of them to the greatest of them, declares Yahweh. For I will forgive their guilt, and their sin I will remember no more.</blockquote><p class="why">No one will need to say &quot;Know Yahweh,&quot; because all will know him. Verse 27: &quot;no need for anyone to teach you&quot;; verse 20: &quot;all of you know.&quot;</p></div>
+<div class="rs"><p class="ref"><a href="https://bible.odownhills.workers.dev/john/6.html#v66">John 6:66-69</a></p><blockquote><sup class="n">66</sup>From this many of his disciples went back and were no longer walking with him. <sup class="n">67</sup>So Jesus said to the twelve, &quot;You yourselves do not also want to go, do you?&quot; <sup class="n">68</sup>Simon Peter answered him, &quot;Lord, to whom will we go away? You have words of eternal life, <sup class="n">69</sup>and we ourselves have believed and have come to know that you are the Holy One of God.&quot;</blockquote><p class="why">Many &quot;went back.&quot; Peter says Jesus has &quot;words of eternal life&quot; and that they &quot;have come to know&quot; he is &quot;the Holy One of God.&quot; Verses 19-25 also have leaving, &quot;the Holy One,&quot; knowing and &quot;the eternal life.&quot;</p></div>
+<h2 class="sec" id="s7"><span>Remain in him</span><a href="https://bible.odownhills.workers.dev/1-john/2.html#v28">verses 28-29</a></h2>
+<p class="v">Verse 28 repeats &quot;remain in him&quot; from verse 27. The command is to &quot;you&quot;; the boldness and the shame are &quot;we,&quot; the writer with them. The chapter began with &quot;the righteous one&quot; (verse 1) and ends with &quot;he is righteous.&quot; Verses 28 and 29 do not name &quot;him&quot;: the one who is coming, the one people are born from.</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref"><a href="https://bible.odownhills.workers.dev/john/3.html#v8">John 3:8</a></p><blockquote>&quot;The wind blows where it wants, and you hear its sound, but you do not know where it comes from and where it goes; it is this way with everyone who has been born from the spirit.&quot;</blockquote><p class="why">The wind is heard, though no one knows where it comes from: &quot;it is this way with everyone who has been born from the spirit.&quot; In verse 29 too the birth is known by what is done.</p></div>
+<div class="pn"><a class="prev" href="1.html">&larr; 1 John 1</a><a class="next" href="3.html">&rarr; 1 John 3</a></div>
+<footer>A close reading of each chapter of The Bible, Freshly Translated, with Scripture explaining Scripture.</footer>
+</div></body></html>
