@@ -78,6 +78,21 @@ def done(b):
     return b["ranges"][-1][1] == b["total_verses"]
 
 
+def coming(have):
+    """The last box of a list of surahs (the home page's, the Watch page's): the surahs not in it yet."""
+    have = set(have)
+    rest = [s["n"] for s in SURAHS if s["n"] not in have]
+    if not rest:
+        return ""
+    if len(rest) == 1:
+        name = "Surah %d" % rest[0]
+    elif rest == list(range(rest[0], rest[-1] + 1)):
+        name = "Surahs %d to %d" % (rest[0], rest[-1])
+    else:
+        name = "%d more surahs" % len(rest)
+    return "<span>%s<small>coming</small></span>" % name
+
+
 def home(bks, esc):
     """The list of surahs on the home page, and the line under the site's title."""
     cells = []
@@ -88,11 +103,7 @@ def home(bks, esc):
             note = "verses 1-%d of %d" % (b["ranges"][-1][1], b["total_verses"])
         cells.append('<a href="%s/">%s<small>%s</small></a>' % (
             b["slug"], esc(b["name"]), esc(" · ".join(x for x in (b["title"], note) if x))))
-    started = {b["surah"] for b in bks}
-    rest = [s["n"] for s in SURAHS if s["n"] not in started]
-    if rest:
-        cells.append("<span>%s<small>coming</small></span>" % (
-            "Surah %d" % rest[0] if len(rest) == 1 else "Surahs %d to %d" % (rest[0], rest[-1])))
+    cells.append(coming(b["surah"] for b in bks))
     verses = sum(z - a + 1 for b in bks for a, z in b["ranges"])
     sub = "%s of %s verses translated, in %d of 114 surahs." % (
         format(verses, ","), format(VERSES, ","), len(bks))

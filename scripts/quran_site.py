@@ -255,7 +255,7 @@ def build(out, x):
         if has_audio:
             data += ' data-audio="../%s" data-sync="../%s"' % (rel, sync)
             buttons = ('<button class="btn" id="lr-start" type="button">&#9654; Listen + Read</button> '
-                       '<a class="btn tv" href="../tv/?c=en-%d" data-tv="en-%d">%sTV mode</a> '
+                       '<a class="btn tv" href="../watch/?c=en-%d" data-tv="en-%d">%sWatch</a> '
                        '<a class="btn ghost" href="../listen/?from=en-%d">Listen only</a>' % (n, n, x["TV_ICON"], n))
         if nxt:
             data += ' data-next="../%s/" data-next-id="en-%d"' % (nxt["slug"], nxt["surah"])

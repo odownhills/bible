@@ -10,10 +10,13 @@ An original plain-English translation from the Hebrew and Greek, one chapter a n
 - Recordings and TV mode pictures live in the Cloudflare R2 bucket `bible-media`, not in git;
   `worker/index.js` serves them at the same addresses (`/audio/<slug>/<n>.mp3`, `/pictures/<slug>/<n>/...`),
   see `scripts/media.py`
-- TV mode (`scripts/tv.js`, the TV page `site/tv/`): a chapter's recording, full screen, with a picture for each
-  part of it and the words lighting up as they are read. A chapter has pictures when its scene plan
-  `data/tv/<slug>/<NNN>.json` is here and all of its pictures are listed in `data/pictures.json`; any other
-  recorded chapter plays in TV mode with its words alone. The pictures are made and chosen on the picture
+- Watch (called "TV mode" until 2026-11-23; code, data and pictures keep the name `tv`): `scripts/tv.js` plays a
+  chapter's recording full screen, with a picture for each part of it and the words lighting up as they are read.
+  Every recorded chapter has a Watch button. The Watch pages browse like the reading pages: `site/watch/` lists the
+  books, `site/watch/<slug>/` a book's chapters (the Quran's `site-quran/watch/` and `ar/watch.html` list its
+  surahs); the old addresses `site/tv/` and `ar/tv.html` send readers on to them. A chapter has pictures when its
+  scene plan `data/tv/<slug>/<NNN>.json` is here and all of its pictures are listed in `data/pictures.json`; any
+  other recorded chapter plays with its words alone. The pictures are made and chosen on the picture
   branch (`TV_PICTURES.md` has the rules); `.github/workflows/tv.yml` runs `scripts/tv_publish.py`, which
   brings each finished chapter here: pictures to the bucket, plan and picture list to main
 

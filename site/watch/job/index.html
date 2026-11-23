@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#171223">
+<title>Watch Job</title>
+<style>
+:root{--bg:#171223;--panel:#1E1830;--shade:#241C3A;--text:#E8E2F2;--text-soft:#B3A7C9;--heading:#C9B8EC;--rule:#372C52;--accent:#B79BE8;--num:#7A6A9A;--alt-text:#C4B4E2;--note-bg:#201A32;
+--sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--serif:Georgia,"Times New Roman",Times,serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--serif);font-size:19px;line-height:1.75}
+a{color:var(--accent)}
+.wrap{max-width:42rem;margin:0 auto;padding:1.25rem 16px 4rem}
+.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:var(--sans);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;padding-bottom:.75rem;border-bottom:1px solid var(--rule);margin-bottom:1.5rem}
+.top a{text-decoration:none;color:var(--text-soft)}
+.top a:hover{color:var(--accent)}
+h1{font-family:var(--serif);color:var(--heading);font-weight:normal;font-size:2rem;line-height:1.25;margin:.5rem 0 .25rem}
+.sub{font-family:var(--sans);color:var(--text-soft);font-size:.85rem;margin:0 0 1.75rem}
+h2.sec{font-family:var(--sans);color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:600;line-height:1.4;border-bottom:1px solid var(--rule);padding-bottom:.4rem;margin:2.25rem 0 1rem}
+h3.group{font-family:var(--sans);color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:600;border-bottom:1px solid var(--rule);padding-bottom:.4rem;margin:2rem 0 1rem}
+p.v{margin:0 0 1.1rem}
+p.title{font-style:italic;color:var(--text-soft);margin:0 0 1rem}
+sup.n{font-family:var(--sans);font-size:.6em;color:var(--num);user-select:none;-webkit-user-select:none;margin:0 .2em 0 .1em;vertical-align:super;line-height:0}
+.alt{font-style:italic;font-size:.88em;color:var(--alt-text)}
+.note{font-style:italic;font-size:.85em;color:var(--text-soft);background:var(--note-bg);border-radius:4px;padding:0 .3em}
+.numbering{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:.6rem .8rem;margin:0 0 1.5rem}
+.pn{display:flex;justify-content:space-between;gap:.75rem;margin-top:3rem;font-family:var(--sans);font-size:.9rem}
+.pn a,.pn span{flex:1;display:block;padding:.85rem 1rem;border:1px solid var(--rule);border-radius:10px;background:var(--panel);text-decoration:none}
+.pn .next{text-align:right}
+.pn span{color:var(--num)}
+.btn{display:inline-block;font-family:var(--sans);font-size:.85rem;line-height:1.4;color:var(--bg);background:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:.5rem 1rem;text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(9.5rem,1fr));gap:.6rem;font-family:var(--sans);font-size:.95rem}
+.grid.ch{grid-template-columns:repeat(auto-fill,minmax(3.4rem,1fr))}
+.grid a,.grid span{display:block;padding:.7rem .8rem;border-radius:10px;border:1px solid var(--rule);background:var(--panel);text-decoration:none;line-height:1.3}
+.grid.ch a,.grid.ch span{text-align:center;padding:.7rem 0}
+.grid a{color:var(--text)}
+.grid a:hover{border-color:var(--accent)}
+.grid span{color:var(--num);background:transparent}
+.grid small{display:block;color:var(--text-soft);font-size:.75rem;margin-top:.2rem}
+.grid span small{color:var(--num)}
+.continue{display:block;margin:0 0 1.5rem;padding:1rem 1.1rem;border-radius:12px;background:var(--shade);border:1px solid var(--rule);text-decoration:none;font-family:var(--sans)}
+.continue b{display:block;color:var(--heading);font-family:var(--serif);font-weight:normal;font-size:1.2rem}
+.continue small{color:var(--text-soft)}
+.continue[hidden]{display:none}
+footer{margin-top:3rem;font-family:var(--sans);font-size:.75rem;color:var(--num);text-align:center}
+.seek{display:block;width:100%;margin:0;height:28px;background:transparent;-webkit-appearance:none;appearance:none;cursor:pointer;touch-action:none}
+.seek:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
+.seek::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:linear-gradient(to right,var(--accent) var(--p,0%),var(--rule) var(--p,0%))}
+.seek::-moz-range-track{height:6px;border-radius:3px;background:var(--rule)}
+.seek::-moz-range-progress{height:6px;border-radius:3px;background:var(--accent)}
+.seek::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--heading);margin-top:-6px;border:0}
+.seek::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--heading);border:0}
+.seek:disabled{opacity:.45}
+.times{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--text-soft);font-variant-numeric:tabular-nums;margin-top:.1rem}
+.alt-t{font:inherit;font-size:.78rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:0 .8rem;min-height:30px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.alt-t:active{background:var(--shade)}
+.alt-t:focus-visible{outline:2px solid var(--accent)}
+.tb{background:transparent;border:0;color:var(--text);padding:0;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;cursor:pointer;position:relative;-webkit-tap-highlight-color:transparent}
+.tb:active{background:var(--shade)}
+.tb:focus-visible{outline:2px solid var(--accent)}
+.tb:disabled{color:var(--num);cursor:default}
+.tb svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tb .solid{fill:currentColor;stroke:none}
+.tb.skip svg{width:36px;height:36px}
+.tb.skip span{position:absolute;font-size:.62rem;font-weight:700;top:50%;left:50%;transform:translate(-50%,-38%);font-variant-numeric:tabular-nums}
+.tb.main{width:72px;height:72px;background:var(--accent);color:var(--bg)}
+.tb.main:active{background:var(--heading)}
+.tb.main svg{width:34px;height:34px}
+.chips{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center}
+.chip{font:inherit;font-size:.82rem;color:var(--text);background:var(--shade);border:1px solid var(--rule);border-radius:999px;padding:.5rem .85rem;text-decoration:none;min-height:40px;display:inline-flex;align-items:center;gap:.35rem}
+select.chip{-webkit-appearance:none;appearance:none;text-align:center;cursor:pointer}
+.chip:focus-visible{outline:2px solid var(--accent)}
+body.lr{padding-bottom:10rem}
+#ch{position:relative;isolation:isolate}
+body.lr #ch p{color:#A396C6}
+body.lr #ch .w{color:#A396C6;cursor:pointer;transition:color .4s ease;-webkit-tap-highlight-color:transparent}
+body.lr #ch .w.on{color:var(--text)}
+body.lr #ch .w.now{color:#fff}
+.lr-pill{position:absolute;left:0;top:0;z-index:-1;border-radius:7px;background:rgba(183,155,232,.22);pointer-events:none;opacity:0;transition:transform .26s cubic-bezier(.25,.8,.35,1),width .26s cubic-bezier(.25,.8,.35,1),opacity .3s ease}
+body:not(.lr) .lr-pill{display:none}
+body.lr #ch .alt,body.lr #ch .note{opacity:.5}
+body.lr.noalt #ch .aside,body.lr.noalt #ch sup.n:has(+ .silent){display:none}
+@media (prefers-reduced-motion:reduce){body.lr #ch .w,.lr-pill{transition:none}}
+.sub .btn{margin:0 .35rem .4rem 0}
+.lr-bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--panel);border-top:1px solid var(--rule);font-family:var(--sans);padding:.3rem 14px calc(.5rem + env(safe-area-inset-bottom,0px))}
+.lr-bar[hidden]{display:none}
+.lr-in{max-width:42rem;margin:0 auto}
+.lr-row{display:flex;align-items:center;justify-content:space-between;gap:.25rem;margin-top:.2rem}
+.lr-mid{display:flex;align-items:center;gap:.7rem}
+.lr-bar .tb{width:46px;height:46px}
+.lr-bar .tb.main{width:56px;height:56px}
+.lr-bar .tb.main svg{width:28px;height:28px}
+.lr-bar .tb.skip svg{width:32px;height:32px}
+.lr-bar .tb.x svg{width:22px;height:22px}
+.lr-bar .chip{min-height:40px;padding:.35rem .5rem;min-width:4.4rem;justify-content:center}
+.lr-msg{font-size:.78rem;color:var(--text-soft);text-align:center;margin:.3rem 0 0}
+.lr-msg[hidden]{display:none}
+sup.n.here{color:var(--bg);background:var(--accent);border-radius:4px;padding:.15em .35em;transition:all .6s}
+.toast{position:fixed;left:12px;right:12px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:30;max-width:30rem;margin:0 auto;background:var(--shade);border:1px solid var(--accent);border-radius:14px;padding:.75rem .9rem;font-family:var(--sans);font-size:.9rem;color:var(--text);box-shadow:0 6px 24px rgba(0,0,0,.45);display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .6rem}
+.toast p{margin:0;flex:1 1 100%}
+.toast a,.toast button{font:inherit;font-size:.85rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:.45rem .85rem;text-decoration:none;cursor:pointer;min-height:40px;display:inline-flex;align-items:center}
+.toast .x{margin-left:auto;border:0;color:var(--text-soft)}
+#ch sup.n{scroll-margin-top:1.5rem}
+#ch .w.hit{background:rgba(183,155,232,.3);border-radius:3px;transition:background 1.5s ease}
+.top .find{display:inline-flex;align-items:center;padding:.15rem 0}
+@media (max-width:400px){.top{gap:.5rem;font-size:.74rem;letter-spacing:.03em}.top span{gap:.8rem!important}.top .lang a,.top .lang b{padding:.1rem .45rem!important}}
+@media (max-width:340px){.top span{gap:.5rem!important}.top .lang a,.top .lang b{padding:.1rem .35rem!important}.top .find svg{width:1.05rem;height:1.05rem}}
+.top .find svg{width:1.2rem;height:1.2rem;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
+body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
+.top span{display:flex;gap:1.4rem}
+.btn.tv{background:var(--shade);color:var(--heading);border-color:var(--accent)}
+.btn.tv svg{width:1.15em;height:1.15em;vertical-align:-.2em;margin-right:.4em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.wrap{max-width:68rem}
+.tvh i.np{background:#241C3A;background:radial-gradient(120% 95% at 50% 0%,#2C2247 0%,#171223 58%,#0E0A18 100%)}
+.tvh i.np em{position:absolute;left:0;top:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:normal;font-size:2.2rem;color:var(--heading);opacity:.85}
+.eyebrow{font-family:var(--sans);color:var(--text-soft);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin:0}
+.tvh{display:grid;grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));gap:1rem .9rem;font-family:var(--sans)}
+.tvh a{display:block;text-decoration:none;color:var(--text);border-radius:12px;-webkit-tap-highlight-color:transparent}
+.tvh a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.tvh i{display:block;position:relative;padding-top:56.25%;border-radius:10px;overflow:hidden;background:var(--panel);border:1px solid var(--rule);transition:border-color .2s ease,transform .2s ease}
+.tvh img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.tvh i:after{content:"";position:absolute;left:50%;top:50%;width:2.6rem;height:2.6rem;margin:-1.3rem 0 0 -1.3rem;border-radius:50%;background:rgba(23,18,35,.72) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M9 6.5v11l9-5.500z'/%3E%3C/svg%3E") center/60% no-repeat;opacity:0;transition:opacity .2s ease}
+.tvh a:hover i,.tvh a:focus-visible i{border-color:var(--accent);transform:translateY(-2px)}
+.tvh a:hover i:after,.tvh a:focus-visible i:after{opacity:1}
+.tvh b{display:block;font-weight:600;font-size:.95rem;margin:.5rem .1rem 0}
+.tvh small{display:block;color:var(--text-soft);font-size:.78rem;margin:.05rem .1rem 0;font-variant-numeric:tabular-nums}
+.tvnote{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);margin:2.5rem 0 0}
+@media (min-width:1500px){
+.wrap{max-width:92vw;padding-top:2rem}
+.top{font-size:1rem}
+h1{font-size:3rem}
+.sub{font-size:1.15rem}
+h3.group{font-size:1rem}
+.tvh{grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1.6rem 1.3rem}
+.tvh b{font-size:1.3rem}
+.tvh i.np em{font-size:3.4rem}
+.tvh small,.tvnote,.eyebrow{font-size:1rem}
+.continue{max-width:34rem}
+}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../../?home">Books</a><span><a href="../../watch/">Watch</a><a href="../../listen/">Listen</a><a class="find" href="../../search/" aria-label="Search" title="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a></span></nav>
+<p class="eyebrow">Watch</p><h1>Job</h1><p class="sub">20 of 42 chapters ready to watch. <a class="btn ghost" href="../../job/">Read Job</a></p><div class="tvh" id="tv-list"><a href="../?c=job-1" data-tv="job-1"><i><img src="../../pictures/job/1/poster.jpg" alt="" loading="lazy"></i><b>Chapter 1</b><small>3:34</small></a><a href="../?c=job-2" data-tv="job-2"><i><img src="../../pictures/job/2/poster.jpg" alt="" loading="lazy"></i><b>Chapter 2</b><small>1:58</small></a><a href="../?c=job-3" data-tv="job-3"><i><img src="../../pictures/job/3/poster.jpg" alt="" loading="lazy"></i><b>Chapter 3</b><small>2:37</small></a><a href="../?c=job-4" data-tv="job-4"><i><img src="../../pictures/job/4/poster.jpg" alt="" loading="lazy"></i><b>Chapter 4</b><small>2:02</small></a><a href="../?c=job-5" data-tv="job-5"><i><img src="../../pictures/job/5/poster.jpg" alt="" loading="lazy"></i><b>Chapter 5</b><small>2:36</small></a><a href="../?c=job-6" data-tv="job-6"><i><img src="../../pictures/job/6/poster.jpg" alt="" loading="lazy"></i><b>Chapter 6</b><small>2:39</small></a><a href="../?c=job-7" data-tv="job-7"><i><img src="../../pictures/job/7/poster.jpg" alt="" loading="lazy"></i><b>Chapter 7</b><small>2:11</small></a><a href="../?c=job-8" data-tv="job-8"><i><img src="../../pictures/job/8/poster.jpg" alt="" loading="lazy"></i><b>Chapter 8</b><small>1:56</small></a><a href="../?c=job-9" data-tv="job-9"><i><img src="../../pictures/job/9/poster.jpg" alt="" loading="lazy"></i><b>Chapter 9</b><small>3:10</small></a><a href="../?c=job-10" data-tv="job-10"><i><img src="../../pictures/job/10/poster.jpg" alt="" loading="lazy"></i><b>Chapter 10</b><small>2:11</small></a><a href="../?c=job-11" data-tv="job-11"><i><img src="../../pictures/job/11/poster.jpg" alt="" loading="lazy"></i><b>Chapter 11</b><small>1:54</small></a><a href="../?c=job-12" data-tv="job-12"><i><img src="../../pictures/job/12/poster.jpg" alt="" loading="lazy"></i><b>Chapter 12</b><small>2:31</small></a><a href="../?c=job-13" data-tv="job-13"><i><img src="../../pictures/job/13/poster.jpg" alt="" loading="lazy"></i><b>Chapter 13</b><small>2:14</small></a><a href="../?c=job-14" data-tv="job-14"><i><img src="../../pictures/job/14/poster.jpg" alt="" loading="lazy"></i><b>Chapter 14</b><small>2:07</small></a><a href="../?c=job-15" data-tv="job-15"><i><img src="../../pictures/job/15/poster.jpg" alt="" loading="lazy"></i><b>Chapter 15</b><small>3:16</small></a><a href="../?c=job-16" data-tv="job-16"><i><img src="../../pictures/job/16/poster.jpg" alt="" loading="lazy"></i><b>Chapter 16</b><small>2:03</small></a><a href="../?c=job-17" data-tv="job-17"><i><img src="../../pictures/job/17/poster.jpg" alt="" loading="lazy"></i><b>Chapter 17</b><small>1:32</small></a><a href="../?c=job-18" data-tv="job-18"><i><img src="../../pictures/job/18/poster.jpg" alt="" loading="lazy"></i><b>Chapter 18</b><small>1:53</small></a><a href="../?c=job-19" data-tv="job-19"><i><img src="../../pictures/job/19/poster.jpg" alt="" loading="lazy"></i><b>Chapter 19</b><small>2:41</small></a><a href="../?c=job-20" data-tv="job-20"><i><img src="../../pictures/job/20/poster.jpg" alt="" loading="lazy"></i><b>Chapter 20</b><small>2:41</small></a></div><p class="tvnote">More chapters of Job arrive as they are translated and read aloud.</p>
+<footer>An original translation from the Hebrew and Greek.</footer>
+</div><script src="../../tv.js?v=1f4f05eb" defer></script></body></html>

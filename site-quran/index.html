@@ -157,9 +157,12 @@ body.lr .sec-play{display:none}
 #ch.ar sup.n{scroll-margin-top:5.6rem}
 p.more{font-family:var(--sans);font-size:.9rem;color:var(--text-soft);background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:.8rem 1rem;margin:2rem 0 0}
 .tvnote{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);margin:2.5rem 0 0}
+.top span{gap:1rem}
+@media (max-width:400px){.top{letter-spacing:.02em}.top span{gap:.55rem!important}}
+@media (max-width:340px){.top{gap:.35rem;font-size:.7rem;letter-spacing:0}.top span{gap:.4rem!important}.top .lang a,.top .lang b{padding:.1rem .3rem!important}}
 </style></head>
 <body><div class="wrap">
-<nav class="top"><a href="./?home">Surahs</a><span><a href="tv/">TV</a><a href="listen/">Listen</a><a class="find" href="search/" aria-label="Search" title="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a><span class="lang" role="group" aria-label="Language"><b>English</b><a href="ar/" data-lang="ar" lang="ar">عربي</a></span></span></nav>
+<nav class="top"><a href="./?home">Surahs</a><span><a href="watch/">Watch</a><a href="listen/">Listen</a><a class="find" href="search/" aria-label="Search" title="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a><span class="lang" role="group" aria-label="Language"><b>English</b><a href="ar/" data-lang="ar" lang="ar">عربي</a></span></span></nav>
 <h1>The Quran, Freshly Translated</h1><p class="sub">293 of 6,236 verses translated, in 2 of 114 surahs.</p><a class="continue" id="resume" href="#" hidden><small>Pick up where you left off</small><b></b></a><a class="continue" href="quran-2/#v261"><small>Newest verses</small><b>Quran 2:261-286</b></a><h3 class="group">Surahs</h3><div class="grid"><a href="quran-1/">Surah 1<small>The Opening · 7 verses</small></a><a href="quran-2/">Surah 2<small>The Cow · 286 verses</small></a><span>Surahs 3 to 114<small>coming</small></span></div><script>
 (function(){
 function get(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}}
@@ -167,7 +170,7 @@ function fmt(t){t=Math.floor(t||0);var m=Math.floor(t/60),x=t%60;return m+':'+(x
 var s=get('lastSpot'),r=get('lastRead'),a=document.getElementById('resume'),href,label,small;
 if(s&&s.url){
   if(s.mode==='listen'){href='listen/';small='Keep listening';label=s.label+(s.t>3?' · at '+fmt(s.t):'');}
-  else if(s.mode==='tv'){href='tv/?c='+encodeURIComponent(s.id);small='Keep watching in TV mode';label=s.label+(s.t>3?' · at '+fmt(s.t):'');}
+  else if(s.mode==='tv'){href='watch/'+(/^(en|ar)-/.test(s.id)?'':s.id.replace(/-\d+$/,'')+'/')+'?c='+encodeURIComponent(s.id);small='Keep watching';label=s.label+(s.t>3?' · at '+fmt(s.t):'');}
   else if(s.mode==='lr'){href=s.url+'#resume-lr';small='Keep listening and reading';label=s.label+(s.t>3?' · at '+fmt(s.t):'');}
   else{href=s.url;small='Keep reading';label=s.label+(s.v>1?', verse '+s.v:'');}
 }else if(r&&r.url){href=r.url;small='Pick up where you left off';label=r.label;}
