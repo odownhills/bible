@@ -59,7 +59,9 @@ VOICE = "Sulafat"
 # Said before each chunk. This model takes it as an instruction and does not read it aloud (tried
 # 2026-11-22); a take where it is read aloud fails the check, since those words are not in the text.
 STYLE = "Read this aloud in a plain, natural speaking voice, not chanted: "
-CHUNK = 5000          # characters of Arabic (with its vowel marks) per request: about 7 minutes of speech
+# Characters of Arabic (with its vowel marks) per request. The voice reads about 16 a second, so 8,000 is
+# about 8 minutes of speech: fewer requests a day out of a small free allowance (first takes were 5,000).
+CHUNK = 8000
 START = (2, 75)       # Obay: start at Surah 2 verse 75
 # Requests at once. The free tier lets only about 3 requests start each minute (a request over that is
 # answered "too many" and tried again a little later), and each takes a few minutes, so a few run together.
