@@ -35,3 +35,13 @@ A third site: an analysis of each published Bible chapter, section by section, w
 - `ANALYSIS_RULES.md` the rules for an analysis
 - `analysis/<book-slug>/<NNN>.md` one analysis per chapter, beside `translations/<book-slug>/<NNN>.md`
 - `study/wrangler.jsonc` the Cloudflare Worker that serves `site-study/`
+
+## Search
+
+Every page of the three sites has a search button (the magnifier in the top bar), which opens `/search/`.
+One search covers all three sites: verses of the Bible, verses of the Quran (English, and the Arabic of
+every surah when the search is typed in Arabic) and sections of the study notes, each linked to its place.
+It runs in the reader's browser with no server and no cost per search (`scripts/search.js`). Each site's
+build writes its own index into `site/search/`, `site-quran/search/` or `site-study/search/`
+(`scripts/search.py` describes the files), so new chapters are searchable as soon as they are published.
+The `_headers` file in each site folder lets the other two sites read that index.
