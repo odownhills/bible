@@ -125,10 +125,17 @@ tradition"): Gemini's Sulafat, read by its own GitHub Action (`.github/workflows
 Surah 1 and 2:1-74 come next (Obay, 2026-11-22), then the rest in order. Until a surah is read, its
 Arabic page is text only. A Quran run needs to do nothing for them.
 
+The Arabic is shown in modern spelling by default (Obay, 2026-11-23: "default will be new arabic"), in an
+everyday font (Noto Naskh Arabic) with plain verse numbers: the Tanzil Project's text in
+`sources/quran-modern/`, the same verses and words as `sources/quran/`. A Modern | Traditional switch on the
+Arabic pages keeps the traditional Uthmani script one tap away (`ar/<n>-uthmani.html`). The recordings are
+read and timed from the traditional text; the modern pages light up their own words with the same times
+(`scripts/quran_ar.py`). Translation still works from `sources/quran/`, as QURAN_RULES.md says.
+
 ## Limits
 - A Quran run changes only new part files, their decision logs, the rebuilt `site-quran/`, lines
   appended to `QURAN_GLOSSARY.md`, and `data/quran.json` when a surah is planned.
-- Never edit `sources/quran/`, an earlier part, a line under "Decided by Obay", or a `review:` line
+- Never edit `sources/quran/` or `sources/quran-modern/`, an earlier part, a line under "Decided by Obay", or a `review:` line
   that Obay has set.
 
 # Study site

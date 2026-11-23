@@ -114,22 +114,32 @@ body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
 .eyebrow{font-family:var(--sans);color:var(--text-soft);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin:0}
 
 @font-face{font-family:"Quran Text";src:url(/fonts/scheherazade-new-arabic.woff2) format("woff2");font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+FB50-FDFF,U+FE70-FEFF}
+@font-face{font-family:"Arabic Text";src:url(/fonts/noto-naskh-arabic-400.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+FB50-FDFF,U+FE70-FEFF}
+@font-face{font-family:"Arabic Text";src:url(/fonts/noto-naskh-arabic-700.woff2) format("woff2");font-weight:700;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+FB50-FDFF,U+FE70-FEFF}
 .top{position:sticky;top:0;z-index:15;background:var(--bg);padding-top:.7rem;margin-top:-.7rem}
 #ch sup.n{scroll-margin-top:4.5rem}
 .top .lang{display:inline-flex;align-items:stretch;gap:0;border:1px solid var(--rule);border-radius:999px;overflow:hidden;letter-spacing:.04em}
 .top .lang a,.top .lang b{display:flex;align-items:center;padding:.1rem .6rem;font-weight:normal;min-height:28px}
 .top .lang b{background:var(--shade);color:var(--heading)}
-.top .lang [lang=ar]{font-family:"Quran Text",var(--sans);font-size:1.15rem;line-height:1;letter-spacing:0;text-transform:none;padding-bottom:.25rem}
-#ch.ar{font-family:"Quran Text","Noto Naskh Arabic","Geeza Pro","Arabic Typesetting",serif;font-size:1.7rem;line-height:2.25;text-align:justify;word-spacing:.06em}
+.top .lang [lang=ar]{font-family:"Arabic Text",var(--sans);font-size:1.05rem;line-height:1;letter-spacing:0;text-transform:none;padding-bottom:.15rem}
+#ch.ar{font-family:"Arabic Text","Noto Naskh Arabic","Geeza Pro","Arabic Typesetting",serif;font-size:1.5rem;line-height:2.2;text-align:justify}
+#ch.ar.uth{font-family:"Quran Text","Noto Naskh Arabic","Geeza Pro","Arabic Typesetting",serif;font-size:1.7rem;line-height:2.25;word-spacing:.06em}
 #ch.ar p.v{margin:0 0 1.3rem}
 #ch.ar p.bas{text-align:center;color:var(--heading);margin:0 0 1.3rem}
 body.lr #ch.ar p.bas{color:#A396C6}
 #ch.ar sup.n{display:inline-block;width:0;height:1em;margin:0;padding:0;overflow:hidden}
-#ch.ar .end{color:var(--accent);margin:0 .12em;user-select:none;-webkit-user-select:none;white-space:nowrap}
-h1.arh{font-family:"Quran Text",var(--serif);font-size:2.6rem;line-height:1.6;margin:.2rem 0 .1rem}
+#ch.ar .end{display:inline-block;min-width:1.75em;padding:0 .3em;margin:0 .2em;font-size:.62em;line-height:1.7;text-align:center;vertical-align:.18em;color:var(--accent);border:1px solid var(--rule);border-radius:999px;user-select:none;-webkit-user-select:none;white-space:nowrap}
+#ch.ar.uth .end{display:inline;min-width:0;padding:0;margin:0 .12em;font-size:1em;line-height:inherit;vertical-align:baseline;border:0;border-radius:0}
+h1.arh{font-family:"Arabic Text",var(--serif);font-weight:700;font-size:2.3rem;line-height:1.7;margin:.2rem 0 .1rem}
+h1.arh.uth{font-family:"Quran Text",var(--serif);font-weight:normal;font-size:2.6rem;line-height:1.6}
 .top>span{align-items:center}
-.grid .arn{display:block;font-family:"Quran Text",var(--serif);font-weight:normal;font-size:1.5rem;line-height:1.55;color:var(--heading)}
+.grid .arn{display:block;font-family:"Arabic Text",var(--serif);font-weight:normal;font-size:1.35rem;line-height:1.7;color:var(--heading)}
 .lang-note{font-family:var(--sans);font-size:.85rem;color:var(--text-soft)}
+.spell{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin:.35rem 0 .9rem;font-family:var(--sans);font-size:.82rem;color:var(--text-soft)}
+.spell span{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden}
+.spell a,.spell b{display:flex;align-items:center;min-height:34px;padding:0 .85rem;font-weight:normal;color:var(--accent);text-decoration:none;-webkit-tap-highlight-color:transparent}
+.spell b,.spell a.on{background:var(--shade);color:var(--heading)}
+.spell a:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 
 .secbar{position:sticky;top:var(--navh,3.3rem);z-index:14;background:var(--bg);margin:0 0 1.25rem;padding:.1rem 0 .55rem;display:flex;gap:.5rem}
 .secbar:after{content:"";position:absolute;left:0;right:0;top:100%;height:.8rem;background:linear-gradient(var(--bg),rgba(23,18,35,0));pointer-events:none}
@@ -163,13 +173,13 @@ p.more{font-family:var(--sans);font-size:.9rem;color:var(--text-soft);background
 </style></head>
 <body><div class="wrap">
 <nav class="top"><a href="./">Surahs</a><span><a href="watch.html">Watch</a><a href="listen.html">Listen</a><a class="find" href="../search/" aria-label="Search" title="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a><span class="lang" role="group" aria-label="Language"><a href="../?home" data-lang="en" data-surah="95" data-upto="0">English</a><b lang="ar">عربي</b></span></span></nav>
-<p class="eyebrow">Surah 95</p>
+<script>try{if(JSON.parse(localStorage.getItem('arScript')||'null')==='uthmani')location.replace('95-uthmani.html'+location.search+location.hash)}catch(e){}</script><p class="eyebrow">Surah 95</p>
 <h1 class="arh" lang="ar" dir="rtl">سورة التين</h1>
-<p class="sub"><span class="lang-note">8 verses · not read aloud yet. Listen + Read and Watch appear here once the voice reaches this surah.</span></p>
-<div id="ch" class="ar" lang="ar" dir="rtl" data-id="ar-95" data-title="Surah 95 · التين" data-url="ar/95.html" data-skip="0" data-lang="ar" data-stream="1" data-artist="Sulafat" data-next="../ar/96.html">
-<p class="bas"><span class="w">بِسۡمِ</span> <span class="w">ٱللَّهِ</span> <span class="w">ٱلرَّحۡمَٰنِ</span> <span class="w">ٱلرَّحِيمِ</span></p>
-<p class="v"><sup class="n" id="v1"></sup><span class="w">وَٱلتِّينِ</span> <span class="w">وَٱلزَّيۡتُونِ</span> <span class="end">۝١</span> <sup class="n" id="v2"></sup><span class="w">وَطُورِ</span> <span class="w">سِينِينَ</span> <span class="end">۝٢</span> <sup class="n" id="v3"></sup><span class="w">وَهَٰذَا</span> <span class="w">ٱلۡبَلَدِ</span> <span class="w">ٱلۡأَمِينِ</span> <span class="end">۝٣</span> <sup class="n" id="v4"></sup><span class="w">لَقَدۡ</span> <span class="w">خَلَقۡنَا</span> <span class="w">ٱلۡإِنسَٰنَ</span> <span class="w">فِيٓ</span> <span class="w">أَحۡسَنِ</span> <span class="w">تَقۡوِيمࣲ</span> <span class="end">۝٤</span> <sup class="n" id="v5"></sup><span class="w">ثُمَّ</span> <span class="w">رَدَدۡنَٰهُ</span> <span class="w">أَسۡفَلَ</span> <span class="w">سَٰفِلِينَ</span> <span class="end">۝٥</span> <sup class="n" id="v6"></sup><span class="w">إِلَّا</span> <span class="w">ٱلَّذِينَ</span> <span class="w">ءَامَنُواْ</span> <span class="w">وَعَمِلُواْ</span> <span class="w">ٱلصَّـٰلِحَٰتِ</span> <span class="w">فَلَهُمۡ</span> <span class="w">أَجۡرٌ</span> <span class="w">غَيۡرُ</span> <span class="w">مَمۡنُونࣲ</span> <span class="end">۝٦</span> <sup class="n" id="v7"></sup><span class="w">فَمَا</span> <span class="w">يُكَذِّبُكَ</span> <span class="w">بَعۡدُ</span> <span class="w">بِٱلدِّينِ</span> <span class="end">۝٧</span> <sup class="n" id="v8"></sup><span class="w">أَلَيۡسَ</span> <span class="w">ٱللَّهُ</span> <span class="w">بِأَحۡكَمِ</span> <span class="w">ٱلۡحَٰكِمِينَ</span> <span class="end">۝٨</span></p>
+<div class="spell">Spelling <span role="group" aria-label="Spelling"><b>Modern</b><a href="95-uthmani.html" data-script="uthmani">Traditional</a></span></div><p class="sub"><span class="lang-note">8 verses · not read aloud yet. Listen + Read and Watch appear here once the voice reaches this surah.</span></p>
+<div id="ch" class="ar" lang="ar" dir="rtl" data-id="ar-95" data-title="Surah 95 · التين" data-url="ar/95.html" data-skip="0" data-lang="ar" data-stream="1" data-artist="Sulafat" data-script="modern" data-next="../ar/96.html">
+<p class="bas"><span class="w">بِسْمِ</span> <span class="w">اللَّهِ</span> <span class="w">الرَّحْمَٰنِ</span> <span class="w">الرَّحِيمِ</span></p>
+<p class="v"><sup class="n" id="v1"></sup><span class="w">وَالتِّينِ</span> <span class="w">وَالزَّيْتُونِ</span> <span class="end">١</span> <sup class="n" id="v2"></sup><span class="w">وَطُورِ</span> <span class="w">سِينِينَ</span> <span class="end">٢</span> <sup class="n" id="v3"></sup><span class="w">وَهَٰذَا</span> <span class="w">الْبَلَدِ</span> <span class="w">الْأَمِينِ</span> <span class="end">٣</span> <sup class="n" id="v4"></sup><span class="w">لَقَدْ</span> <span class="w">خَلَقْنَا</span> <span class="w">الْإِنْسَانَ</span> <span class="w">فِي</span> <span class="w">أَحْسَنِ</span> <span class="w">تَقْوِيمٍ</span> <span class="end">٤</span> <sup class="n" id="v5"></sup><span class="w">ثُمَّ</span> <span class="w">رَدَدْنَاهُ</span> <span class="w">أَسْفَلَ</span> <span class="w">سَافِلِينَ</span> <span class="end">٥</span> <sup class="n" id="v6"></sup><span class="w">إِلَّا</span> <span class="w">الَّذِينَ</span> <span class="w">آمَنُوا</span> <span class="w">وَعَمِلُوا</span> <span class="w">الصَّالِحَاتِ</span> <span class="w">فَلَهُمْ</span> <span class="w">أَجْرٌ</span> <span class="w">غَيْرُ</span> <span class="w">مَمْنُونٍ</span> <span class="end">٦</span> <sup class="n" id="v7"></sup><span class="w">فَمَا</span> <span class="w">يُكَذِّبُكَ</span> <span class="w">بَعْدُ</span> <span class="w">بِالدِّينِ</span> <span class="end">٧</span> <sup class="n" id="v8"></sup><span class="w">أَلَيْسَ</span> <span class="w">اللَّهُ</span> <span class="w">بِأَحْكَمِ</span> <span class="w">الْحَاكِمِينَ</span> <span class="end">٨</span></p>
 </div>
 <div class="pn"><a class="prev" href="94.html">&larr; Surah 94 · الشرح</a><a class="next" href="96.html">Surah 96 · العلق &rarr;</a></div>
-<footer>The Arabic text of the Quran as written (the Hafs reading, from quranenc.com, CC BY-SA 4.0), with no translation. Read aloud, where a recording is ready, by a computer voice (Gemini's Sulafat, the English pages' voice).</footer>
-</div><script src="../read.js?v=e97bdd23" defer></script><script src="../tv.js?v=6d0e5262" defer></script><script src="../lang.js?v=8804b8e0" defer></script></body></html>
+<footer>The Arabic text of the Quran (the Hafs reading), with no translation: in modern spelling from the Tanzil Project (<a href="https://tanzil.net">tanzil.net</a>), and in the traditional Uthmani script from quranenc.com (CC BY-SA 4.0). Read aloud, where a recording is ready, by a computer voice (Gemini's Sulafat, the English pages' voice).</footer>
+</div><script src="../read.js?v=e97bdd23" defer></script><script src="../tv.js?v=1bed2bc9" defer></script><script src="../lang.js?v=49bb63b3" defer></script></body></html>

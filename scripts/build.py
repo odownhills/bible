@@ -806,6 +806,7 @@ if(s&&s.url&&(!nav||nav.type==='navigate')&&!inside&&!/[?&]home/.test(location.s
     # the search page and this site's search index (scripts/search.py); the Quran's also covers its Arabic
     search.build(WORK, OUT, {
         "chapters": chapters, "parse": parse, "books": BOOKS, "shown": quran_ar.shown if WORK == "quran" else None,
+        "slots": quran_ar.slots if WORK == "quran" else None,
         "page": lambda body, css: page("Search", body, 1, "", css,
                                        lang=quran_ar.pill("en", "", "../ar/") if WORK == "quran" else "")})
     print("Built %d %ss into %s/" % (len(chapters), UNIT, os.path.basename(OUT)))
