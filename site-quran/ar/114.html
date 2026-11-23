@@ -124,17 +124,43 @@ h1.arh{font-family:"Quran Text",var(--serif);font-size:2.6rem;line-height:1.6;ma
 .top>span{align-items:center}
 .grid .arn{display:block;font-family:"Quran Text",var(--serif);font-weight:normal;font-size:1.5rem;line-height:1.55;color:var(--heading)}
 .lang-note{font-family:var(--sans);font-size:.85rem;color:var(--text-soft)}
+
+.secbar{position:sticky;top:var(--navh,3.3rem);z-index:14;background:var(--bg);margin:0 0 1.25rem;padding:.1rem 0 .55rem;display:flex;gap:.5rem}
+.secbar:after{content:"";position:absolute;left:0;right:0;top:100%;height:.8rem;background:linear-gradient(var(--bg),rgba(23,18,35,0));pointer-events:none}
+.sec-now{flex:1;min-width:0;display:flex;align-items:center;gap:.6rem;font:inherit;font-family:var(--sans);font-size:.88rem;line-height:1.3;color:var(--text);background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:.55rem .75rem;cursor:pointer;text-align:left;-webkit-tap-highlight-color:transparent}
+.sec-now:focus-visible{outline:2px solid var(--accent)}
+.sec-now .sec-l{flex:none;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:.68rem}
+.sec-now b{flex:1;min-width:0;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sec-now i{flex:none;font-style:normal;color:var(--text-soft);font-size:.8rem;transition:transform .2s ease}
+.sec-now[aria-expanded=true] i{transform:rotate(180deg)}
+.sec-play{flex:none;width:2.9rem;display:flex;align-items:center;justify-content:center;background:var(--accent);color:var(--bg);border:0;border-radius:10px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.sec-play svg{width:1.1rem;height:1.1rem;fill:currentColor}
+.sec-play:focus-visible{outline:2px solid var(--heading);outline-offset:2px}
+body.lr .sec-play{display:none}
+.sec-list{position:absolute;z-index:1;left:0;right:0;top:calc(100% - .3rem);max-height:66vh;overflow:auto;-webkit-overflow-scrolling:touch;background:var(--panel);border:1px solid var(--rule);border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.55);padding:.3rem;font-family:var(--sans)}
+.sec-list[hidden]{display:none}
+.sec-list a{display:flex;align-items:baseline;justify-content:space-between;gap:.9rem;padding:.7rem .7rem;border-radius:8px;text-decoration:none;color:var(--text);font-size:.92rem;line-height:1.35}
+.sec-list a:hover,.sec-list a:focus-visible{background:var(--shade);outline:none}
+.sec-list a.on{background:var(--shade);color:var(--heading)}
+.sec-list a.on:before{content:"";display:inline-block;width:.4rem;height:.4rem;border-radius:50%;background:var(--accent);margin:0 .5rem .1rem -.1rem;flex:none;align-self:center}
+.sec-list a b{flex:1;font-weight:normal}
+.sec-list small{flex:none;color:var(--text-soft);font-size:.78rem;font-variant-numeric:tabular-nums}
+.sec-list .sec-g{display:block;padding:.6rem .7rem .2rem;color:var(--accent);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase}
+.secbar~#ch sup.n,.secbar~#ch h2.sec{scroll-margin-top:7.4rem}
+.secbar~#ch.ar sup.n{scroll-margin-top:8.4rem}
+#ch.ar sup.n{scroll-margin-top:5.6rem}
+p.more{font-family:var(--sans);font-size:.9rem;color:var(--text-soft);background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:.8rem 1rem;margin:2rem 0 0}
 .tvnote{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);margin:2.5rem 0 0}
 </style></head>
 <body><div class="wrap">
-<nav class="top"><a href="./">Surahs</a><span><a href="tv.html">TV</a><a href="listen.html">Listen</a><span class="lang" role="group" aria-label="Language"><a href="../?home" data-lang="en" data-surah="114">English</a><b lang="ar">عربي</b></span></span></nav>
+<nav class="top"><a href="./">Surahs</a><span><a href="tv.html">TV</a><a href="listen.html">Listen</a><span class="lang" role="group" aria-label="Language"><a href="../?home" data-lang="en" data-surah="114" data-upto="0">English</a><b lang="ar">عربي</b></span></span></nav>
 <p class="eyebrow">Surah 114</p>
 <h1 class="arh" lang="ar" dir="rtl">سورة الناس</h1>
-<p class="sub"><span class="lang-note">6 verses</span></p>
-<div id="ch" class="ar" lang="ar" dir="rtl" data-id="ar-114" data-title="Surah 114 · الناس" data-url="ar/114.html" data-skip="0" data-lang="ar" data-stream="1" data-artist="Mahmoud Khalil al-Husary">
+<p class="sub"><button class="btn" id="lr-start" type="button">&#9654; Listen + Read</button> <a class="btn tv" href="tv.html?c=ar-114" data-tv="ar-114"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="12.5" rx="2"/><path d="M8 20.5h8M12 17v3.5"/></svg>TV mode</a> <a class="btn ghost" href="listen.html?from=ar-114">Listen only</a><br><span class="lang-note">6 verses · recited by Mahmoud Khalil al-Husary</span></p>
+<div id="ch" class="ar" lang="ar" dir="rtl" data-id="ar-114" data-title="Surah 114 · الناس" data-url="ar/114.html" data-skip="0" data-lang="ar" data-stream="1" data-artist="Mahmoud Khalil al-Husary" data-audio="../audio/ar/114.mp3" data-sync="../audio/ar/114.json">
 <p class="bas"><span class="w">بِسۡمِ</span> <span class="w">ٱللَّهِ</span> <span class="w">ٱلرَّحۡمَٰنِ</span> <span class="w">ٱلرَّحِيمِ</span></p>
 <p class="v"><sup class="n" id="v1"></sup><span class="w">قُلۡ</span> <span class="w">أَعُوذُ</span> <span class="w">بِرَبِّ</span> <span class="w">ٱلنَّاسِ</span> <span class="end">۝١</span> <sup class="n" id="v2"></sup><span class="w">مَلِكِ</span> <span class="w">ٱلنَّاسِ</span> <span class="end">۝٢</span> <sup class="n" id="v3"></sup><span class="w">إِلَٰهِ</span> <span class="w">ٱلنَّاسِ</span> <span class="end">۝٣</span> <sup class="n" id="v4"></sup><span class="w">مِن</span> <span class="w">شَرِّ</span> <span class="w">ٱلۡوَسۡوَاسِ</span> <span class="w">ٱلۡخَنَّاسِ</span> <span class="end">۝٤</span> <sup class="n" id="v5"></sup><span class="w">ٱلَّذِي</span> <span class="w">يُوَسۡوِسُ</span> <span class="w">فِي</span> <span class="w">صُدُورِ</span> <span class="w">ٱلنَّاسِ</span> <span class="end">۝٥</span> <sup class="n" id="v6"></sup><span class="w">مِنَ</span> <span class="w">ٱلۡجِنَّةِ</span> <span class="w">وَٱلنَّاسِ</span> <span class="end">۝٦</span></p>
 </div>
 <div class="pn"><a class="prev" href="113.html">&larr; Surah 113 · الفلق</a><span class="next">End of the Quran</span></div>
 <footer>The Arabic text of the Quran as written (the Hafs reading, from quranenc.com, CC BY-SA 4.0), with no translation. Recitation by Mahmoud Khalil al-Husary, from everyayah.com.</footer>
-</div><script src="../read.js?v=cb1444f7" defer></script><script src="../tv.js?v=ef12b491" defer></script><script src="../lang.js?v=912bf9ce" defer></script></body></html>
+</div><script src="../read.js?v=0f5ece5b" defer></script><script src="../tv.js?v=0be899c6" defer></script><script src="../lang.js?v=8804b8e0" defer></script></body></html>

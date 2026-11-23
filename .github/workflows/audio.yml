@@ -5,11 +5,12 @@ name: Record chapter audio
 # each word is spoken (for Listen + Read mode). Recordings go to the Cloudflare R2 bucket (see
 # scripts/media.py); only the small files (word timings, data/audio.json) are committed.
 # The same steps then run for the Quran site (WORK=quran, built into site-quran/): Bible chapters
-# are recorded first, and the Quran's parts with whatever is left of Gemini's daily limit.
+# are recorded first, and the Quran's parts with whatever is left of Gemini's daily limit. The site shows
+# each surah as one page, so each surah's recorded parts are then joined into one recording.
 on:
   push:
     branches: [main]
-    paths: ["translations/**", "scripts/media.py"]
+    paths: ["translations/**", "scripts/media.py", "scripts/quran_join.py"]
   schedule:
     - cron: "17 8 * * *"    # 12:17 AM Pacific, just after Gemini's free daily limit resets
     - cron: "23 14 * * *"   # daily catch-up, 6:23 AM Pacific
@@ -71,6 +72,13 @@ jobs:
             python3 -m pip install --quiet --break-system-packages sherpa-onnx numpy
             python3 scripts/align.py
           done
+      - name: Join each surah's parts into one recording (Quran)
+        if: always() && steps.r2.outcome == 'success'
+        run: |
+          export WORK=quran
+          python3 scripts/build.py
+          command -v ffmpeg >/dev/null || sudo apt-get install -y -qq ffmpeg
+          python3 scripts/quran_join.py
       - name: Publish
         if: always() && steps.r2.outcome == 'success'
         run: |

@@ -9,11 +9,11 @@
    picture starts at which word (scripts/build.py). A chapter whose pictures are not made yet plays with
    its words alone on a quiet background.
 
-   The Quran site uses it too (scripts/build.py), for its English parts and for the Arabic surahs
-   (scripts/quran_ar.py): those are listed in manifest-ar.json (ids "ar-<surah>"), their recordings play
-   straight from the server instead of being downloaded whole first (they can be hours long), and their
-   words are shown right to left in the Quran font, a verse or a phrase at a time, each verse closed with
-   its number.
+   The Quran site uses it too, for whole surahs in English (scripts/quran_site.py, manifest-en.json, ids
+   "en-<surah>") and in Arabic (scripts/quran_ar.py, manifest-ar.json, ids "ar-<surah>"). Their recordings
+   play straight from the server instead of being downloaded whole first (they can be hours long), the
+   seek bar marks where each section of the surah starts, and the Arabic words are shown right to left in
+   the Quran font, a verse or a phrase at a time, each verse closed with its number.
 
    Written in plain old JavaScript on purpose, so that the browsers built into TVs can run it. */
 (function(){
@@ -207,7 +207,8 @@ function coarse(){return !!(win.matchMedia&&win.matchMedia('(pointer:coarse)').m
 
 /* ---- what a chapter needs: fetched once, the next chapter ahead of time ---- */
 function manifest(id){
-  var f=/^ar-/.test(id||'')?'manifest-ar.json':'manifest.json';   // the Quran's Arabic surahs have their own list
+  // the Quran's whole surahs have their own lists, in Arabic and in English
+  var f=/^ar-/.test(id||'')?'manifest-ar.json':/^en-/.test(id||'')?'manifest-en.json':'manifest.json';
   if(!manifests[f]){ manifests[f]=json(ROOT+f); manifests[f].catch(function(){ delete manifests[f]; }); }
   return manifests[f];
 }
@@ -416,7 +417,9 @@ function setup(b,o,mine){
     var dur=audio.duration,sync=b.sync;
     S.T=(sync&&sync.t&&sync.t.length===S.words.length)?sync.t.map(function(x){return x/100}):spread(dur);
     makeCards(); S.scenes.forEach(function(s){ s.at=s.w>0?Math.max(0,S.T[s.w]-0.35):0; });
-    var h='',k; for(k=1;k<S.scenes.length;k++) h+='<i style="left:'+(S.scenes[k].at/dur*100).toFixed(2)+'%"></i>'; el.ticks.innerHTML=h;
+    var h='',k,at=S.scenes.map(function(s){ return s.at; });
+    if(!at.length&&b.tv.sections) at=b.tv.sections.map(function(s){ return S.T[s[0]]; });   // no pictures: where each section starts
+    for(k=1;k<at.length;k++) if(isFinite(at[k])) h+='<i style="left:'+(at[k]/dur*100).toFixed(2)+'%"></i>'; el.ticks.innerHTML=h;
     var pos=o.t!=null?o.t:(o.auto?0:(get('listenPos',{})[c.id]||0)),back=false;
     if(pos>5&&pos<dur-8){ audio.currentTime=pos; back=o.t==null; } else pos=0;
     S.ready=true; S.ended=false; seek.max=Math.floor(dur); spin(false); icons(); paint(); mark(); posState();
@@ -666,7 +669,10 @@ function close(){
   if(ch&&c){
     // back in the text at the verse the voice had reached
     if(ch.getAttribute('data-id')!==c.id){ location.href=ROOT+c.url+(v>1&&!done?'#v'+v:''); return; }
-    var s=!done&&v>1&&d.getElementById('v'+v); if(s) win.scrollTo(0,s.getBoundingClientRect().top+win.pageYOffset-64);
+    var s=!done&&v>1&&d.getElementById('v'+v),top=0,t=d.querySelector('.top'),sb=d.getElementById('secbar');
+    if(t&&getComputedStyle(t).position==='sticky') top+=t.offsetHeight;   // the Quran site's bars that stay at the top
+    if(sb) top+=sb.offsetHeight;
+    if(s) win.scrollTo(0,s.getBoundingClientRect().top+win.pageYOffset-Math.max(64,top+16));
   }
   if(home()){ resume(); if(/[?&]c=/.test(location.search)){ try{ history.replaceState(null,'',location.pathname); }catch(e){} } }
   if(S.opener&&S.opener.focus&&d.body.contains(S.opener)){ try{ S.opener.focus({preventScroll:true}); }catch(e){} }

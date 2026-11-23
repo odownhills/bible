@@ -36,6 +36,7 @@ if WORK == "quran":
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import quran
     import quran_ar
+    import quran_site
     BOOKS = quran.books(SRC)
     SITE_TITLE, FOOTER = quran.SITE_TITLE, quran.FOOTER
     HOME, UNIT, START = "Surahs", "part", "Beginning of the Quran"
@@ -45,7 +46,7 @@ else:
     HOME, UNIT, START = "Books", "chapter", "Beginning of the Bible"
 BY_SLUG = {b["slug"]: b for b in BOOKS}
 # TV mode (scripts/tv.js and the TV page). The Bible's chapters get TV mode once their pictures are made; the
-# Quran has no pictures, so every part with a recording plays in TV mode with its words over a quiet background.
+# Quran has no pictures, so every surah with a recording plays in TV mode with its words over a quiet background.
 TV = WORK in ("bible", "quran")
 PICTURES = WORK == "bible"
 # The study site (scripts/study.py) analyzes Bible chapters. Once its address is set in data/settings.json
@@ -169,7 +170,7 @@ if TV:   # the TV link beside Listen, and a chapter's TV mode button
 """
 if WORK == "quran":   # the line above a part's title that names its surah; the Arabic pages and the language switch
     CSS += ".eyebrow{font-family:var(--sans);color:var(--text-soft);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin:0}\n"
-    CSS += quran_ar.CSS + ".tvnote{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);margin:2.5rem 0 0}\n"
+    CSS += quran_ar.CSS + quran_site.CSS + ".tvnote{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);margin:2.5rem 0 0}\n"
 
 
 def esc(s):
@@ -411,13 +412,17 @@ def clock(seconds):
     return "%d:%02d" % (seconds // 60, seconds % 60)
 
 
-def durations():
-    """Length in seconds of each recording in the R2 bucket, from data/audio.json (see scripts/media.py)."""
+def audio_listed():
+    """The recordings in the R2 bucket, from data/audio.json (see scripts/media.py): {path: [bytes, seconds]}."""
     try:
-        listed = json.load(open(os.path.join(ROOT, "data", "audio.json")))
+        return json.load(open(os.path.join(ROOT, "data", "audio.json")))
     except (OSError, ValueError):
-        listed = {}
-    return {k: v[1] for k, v in listed.items()}
+        return {}
+
+
+def durations():
+    """Length in seconds of each recording in the R2 bucket."""
+    return {k: v[1] for k, v in audio_listed().items()}
 
 
 def collect():
@@ -449,6 +454,13 @@ def main():
     lengths = durations()
     read_js = open(os.path.join(ROOT, "scripts", "read.js"), encoding="utf-8").read()
     read_js = read_js.replace("The Bible, Freshly Translated", SITE_TITLE)
+    if WORK == "quran":   # Listen + Read plays whole surahs
+        for a, z in (("This chapter has no recording yet. It will be added soon.", "This has no recording yet."),
+                     ("The next chapter has no recording yet. It will be added soon.", "The next surah has no recording yet."),
+                     ("You are all caught up. More chapters arrive every day.", "You are all caught up."),
+                     ("Position in chapter", "Position"), ("'Start of chapter'", "'Start of surah'"),
+                     ("'All books'", "'All surahs'")):
+            read_js = read_js.replace(a, z)
     open(os.path.join(OUT, "read.js"), "w", encoding="utf-8").write(read_js)
     read_tag = '<script src="../read.js?v=%s" defer></script>' % hashlib.sha1(read_js.encode("utf-8")).hexdigest()[:8]
     tv_tag = ""
@@ -475,6 +487,7 @@ def main():
         LANG_TAG = '<script src="%%slang.js?v=%s" defer></script>' % hashlib.sha1(lang_js.encode("utf-8")).hexdigest()[:8]
     listed = pictures_listed() if PICTURES else {}
     watch = []   # the chapters that have TV mode pictures, for the TV page
+    surah_parts = {}   # the Quran: each surah's parts in order, for its one page (scripts/quran_site.py)
 
     def audio_of(c):
         """Site path of a chapter's recording, or None when it has none yet."""
@@ -537,9 +550,7 @@ def main():
             buttons = '<button class="btn" id="lr-start" type="button">&#9654; Listen + Read</button> '
         if sync_url:
             data += ' data-sync="../%s"' % sync_url
-        tv_url, poster = tv_scenes(b["slug"], n, verse_at, verse_text, listed) if TV and has_audio else (None, None)
-        if WORK == "quran" and has_audio:   # words only, with no pictures
-            tv_url = "tv/%s/%d.json" % (b["slug"], n)
+        tv_url, poster = tv_scenes(b["slug"], n, verse_at, verse_text, listed) if PICTURES and has_audio else (None, None)
         if tv_url:
             # a plain link to the TV page; scripts/tv.js opens the player right here instead, full screen
             buttons += '<a class="btn tv" href="../tv/?c=%s-%d" data-tv="%s-%d">%sTV mode</a> ' % (
@@ -564,9 +575,13 @@ def main():
             link(prev_, "prev", "&larr;"), link(next_, "next", "&rarr;") if next_ else
             '<span class="next">Next %s coming soon</span>' % UNIT)
         os.makedirs(os.path.join(OUT, b["slug"]), exist_ok=True)
-        lang = quran_ar.pill("en", "", "../ar/%d.html" % b["surah"]) if WORK == "quran" else ""
-        open(os.path.join(OUT, b["slug"], "%d.html" % n), "w", encoding="utf-8").write(
-            page(label(b, n), body, 1, read_tag + tv_tag, lang=lang))
+        if WORK == "quran":   # a part has no page of its own: its surah's page shows it (scripts/quran_site.py)
+            surah_parts.setdefault(b["slug"], []).append({
+                "meta": meta, "blocks": blocks, "spoken": spoken, "skip": skip, "audio": audio_url if has_audio else None,
+                "range": b["ranges"][n - 1]})
+        else:
+            open(os.path.join(OUT, b["slug"], "%d.html" % n), "w", encoding="utf-8").write(
+                page(label(b, n), body, 1, read_tag + tv_tag))
         os.makedirs(os.path.join(OUT, "text", b["slug"]), exist_ok=True)
         open(os.path.join(OUT, "text", b["slug"], "%d.txt" % n), "w", encoding="utf-8").write(spoken)
         manifest.append({
@@ -579,11 +594,12 @@ def main():
         })
         if TV:   # the chapter's scene file when it has pictures, and its cover for the TV page
             manifest[-1].update(tv=tv_url, poster=poster)
-        if "labels" in b:   # a part of the Quran: its own name, and where it stands in its surah
-            manifest[-1].update(title=label(b, n), total=b["planned"], sub="Part %d of %d" % (n, b["planned"]))
+        if "labels" in b:   # a part of the Quran: its own name, where it stands in its surah, and how many words
+            # its recording opens with ("Quran, surah 2, verses 30 to 61."), which scripts/quran_join.py leaves out
+            manifest[-1].update(title=label(b, n), total=b["planned"], sub="Part %d of %d" % (n, b["planned"]), skip=skip)
 
-    # book pages
-    for b in BOOKS:
+    # book pages (the Quran's surah pages are written by scripts/quran_site.py)
+    for b in BOOKS if WORK == "bible" else ():
         done = [n for n in range(1, b["chapters"] + 1) if (b["slug"], n) in have]
         if not done:
             continue
@@ -592,12 +608,8 @@ def main():
             for n in range(1, b["chapters"] + 1))
         body = '<h1>%s</h1><p class="sub">%d of %d chapters translated</p><div class="grid ch">%s</div>' % (
             esc(b["name"]), len(done), b["chapters"], cells)
-        lang = ""
-        if WORK == "quran":
-            body = quran.surah_page(b, esc)
-            lang = quran_ar.pill("en", "", "../ar/%d.html" % b["surah"])
         os.makedirs(os.path.join(OUT, b["slug"]), exist_ok=True)
-        open(os.path.join(OUT, b["slug"], "index.html"), "w", encoding="utf-8").write(page(b["name"], body, 1, lang=lang))
+        open(os.path.join(OUT, b["slug"], "index.html"), "w", encoding="utf-8").write(page(b["name"], body, 1))
 
     # home page
     groups = []
@@ -613,9 +625,13 @@ def main():
     latest = ""
     if chapters:
         lb, ln, _ = chapters[-1]
+        href, newest = "%s/%d.html" % (lb["slug"], ln), "Newest %s" % UNIT
+        if WORK == "quran":   # the newest verses, on their surah's page
+            a, z = lb["ranges"][ln - 1]
+            href, newest = "%s/%s" % (lb["slug"], "#v%d" % a if a > 1 else ""), "Newest verses"
         latest = ('<a class="continue" id="resume" href="#" hidden><small>Pick up where you left off</small><b></b></a>'
-                  '<a class="continue" href="%s/%d.html"><small>Newest %s</small><b>%s</b></a>'
-                  % (lb["slug"], ln, UNIT, esc(label(lb, ln))))
+                  '<a class="continue" href="%s"><small>%s</small><b>%s</b></a>'
+                  % (href, newest, esc(label(lb, ln))))
     resume_js = """<script>
 (function(){
 function get(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}}
@@ -650,13 +666,18 @@ if(s&&s.url&&(!nav||nav.type==='navigate')&&!inside&&!/[?&]home/.test(location.s
     os.makedirs(os.path.join(OUT, "listen"), exist_ok=True)
     listen = open(os.path.join(ROOT, "scripts", "listen.html"), encoding="utf-8").read()
     listen = listen.replace("The Bible, Freshly Translated", SITE_TITLE)
+    if WORK == "quran":   # whole surahs, not their parts
+        listen = listen.replace("'../manifest.json'", "'../manifest-en.json'").replace("<h2>Chapters</h2>", "<h2>Surahs</h2>")
     open(os.path.join(OUT, "listen", "index.html"), "w", encoding="utf-8").write(
         page("Listen", listen, 1, lang=quran_ar.pill("en", "", "../ar/listen.html") if WORK == "quran" else ""))
 
-    if WORK == "quran":   # the TV page: every part with a recording, as a list; and then the Arabic pages
+    if WORK == "quran":   # each surah's one page; the TV page: every surah with a recording; and then the Arabic pages
+        sections, surahs = quran_site.build(OUT, {
+            "page": page, "esc": esc, "inline": inline, "plain": plain, "lengths": lengths, "books": BOOKS,
+            "parts": surah_parts, "listed": audio_listed(), "read_tag": read_tag, "tv_tag": tv_tag, "TV_ICON": TV_ICON,
+            "pill": quran_ar.pill})
         cells = "".join('<a href="?c=%s" data-tv="%s">%s<small>%s</small></a>' % (
-            c["id"], c["id"], esc(c["title"]), clock(c["duration"]) if c["duration"] else "")
-            for c in manifest if c["audio"])
+            c["id"], c["id"], esc(c["title"]), clock(c["duration"]) if c["duration"] else "") for c in surahs)
         body = ('<h1>TV mode</h1><p class="sub">The words light up as they are read, over a calm background. '
                 'Best on a TV, or on a phone turned sideways.</p>'
                 '<a class="continue" id="tv-resume" href="#" hidden><small>Keep watching</small><b></b></a>'
@@ -666,7 +687,7 @@ if(s&&s.url&&(!nav||nav.type==='navigate')&&!inside&&!/[?&]home/.test(location.s
             page("TV mode", body, 1, tv_tag, lang=quran_ar.pill("en", "", "../ar/tv.html")))
         n_ar = quran_ar.build(OUT, {"page": page, "esc": esc, "words": words, "checksum": checksum, "clock": clock,
                                     "lengths": lengths, "english": BOOKS, "read_tag": read_tag, "tv_tag": tv_tag,
-                                    "TV_ICON": TV_ICON})
+                                    "TV_ICON": TV_ICON, "sections": sections})
         print("Built the Arabic pages of 114 surahs (%d with a recitation)" % n_ar)
     elif TV:   # the TV page: every chapter that has pictures, book by book; scripts/tv.js plays them
         groups, book = [], None
