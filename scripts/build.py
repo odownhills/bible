@@ -47,10 +47,11 @@ else:
     SITE_TITLE, FOOTER = "The Bible, Freshly Translated", "An original translation from the Hebrew and Greek."
     HOME, UNIT, START = "Books", "chapter", "Beginning of the Bible"
 BY_SLUG = {b["slug"]: b for b in BOOKS}
-# TV mode (scripts/tv.js and the TV page). The Bible's chapters get TV mode once their pictures are made; the
-# Quran has no pictures, so every surah with a recording plays in TV mode with its words over a quiet background.
+# TV mode (scripts/tv.js and the TV page). The Bible's chapters get TV mode once their pictures are made. Every
+# surah of the Quran with a recording plays in TV mode, with the pictures of the parts that have them and its words
+# over a quiet background elsewhere (scripts/quran_site.py).
 TV = WORK in ("bible", "quran")
-PICTURES = WORK == "bible"
+PICTURES = WORK == "bible"   # the Bible's per-chapter TV files; the Quran's are written per surah
 # The study site (scripts/study.py) analyzes Bible chapters. Once its address is set in data/settings.json
 # ("study_url"), a chapter that has an analysis (analysis/<slug>/<NNN>.md) gets a "Meaning" link to it.
 STUDY_URL = ""
@@ -680,14 +681,18 @@ if(s&&s.url&&(!nav||nav.type==='navigate')&&!inside&&!/[?&]home/.test(location.s
         page("Listen", listen, 1, lang=quran_ar.pill("en", "", "../ar/listen.html") if WORK == "quran" else ""))
 
     if WORK == "quran":   # each surah's one page; the TV page: every surah with a recording; and then the Arabic pages
+        pics = pictures_listed()
+
+        def there(img):   # a TV picture in the R2 bucket, or one in site-quran/pictures/ to try the site locally
+            return img in pics or os.path.exists(os.path.join(OUT, img))
         sections, surahs = quran_site.build(OUT, {
             "page": page, "esc": esc, "inline": inline, "plain": plain, "lengths": lengths, "books": BOOKS,
             "parts": surah_parts, "listed": audio_listed(), "read_tag": read_tag, "tv_tag": tv_tag, "TV_ICON": TV_ICON,
-            "pill": quran_ar.pill})
+            "pill": quran_ar.pill, "there": there, "phrase_at": phrase_at})
         cells = "".join('<a href="?c=%s" data-tv="%s">%s<small>%s</small></a>' % (
             c["id"], c["id"], esc(c["title"]), clock(c["duration"]) if c["duration"] else "") for c in surahs)
-        body = ('<h1>TV mode</h1><p class="sub">The words light up as they are read, over a calm background. '
-                'Best on a TV, or on a phone turned sideways.</p>'
+        body = ('<h1>TV mode</h1><p class="sub">The words light up as they are read, over pictures of what they say '
+                '(a calm background where the pictures are still to come). Best on a TV, or on a phone turned sideways.</p>'
                 '<a class="continue" id="tv-resume" href="#" hidden><small>Keep watching</small><b></b></a>'
                 + ('<div class="grid">%s</div>' % cells if cells else '<p class="tvnote">The first recordings are on the way.</p>'))
         os.makedirs(os.path.join(OUT, "tv"), exist_ok=True)
@@ -695,7 +700,7 @@ if(s&&s.url&&(!nav||nav.type==='navigate')&&!inside&&!/[?&]home/.test(location.s
             page("TV mode", body, 1, tv_tag, lang=quran_ar.pill("en", "", "../ar/tv.html")))
         n_ar = quran_ar.build(OUT, {"page": page, "esc": esc, "words": words, "checksum": checksum, "clock": clock,
                                     "lengths": lengths, "english": BOOKS, "read_tag": read_tag, "tv_tag": tv_tag,
-                                    "TV_ICON": TV_ICON, "sections": sections})
+                                    "TV_ICON": TV_ICON, "sections": sections, "there": there})
         print("Built the Arabic pages of 114 surahs (%d read aloud)" % n_ar)
     elif TV:   # the TV page: every chapter that has pictures, book by book; scripts/tv.js plays them
         groups, book = [], None

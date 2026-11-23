@@ -980,3 +980,99 @@ Verses 243-260:
 - a-wa-lam tu'min "Do you not believe?" (2:260). itma'anna "be at rest" (2:260; 13:28; 89:27). tayr "birds".
 - sara ila "draw to" (2:260; decision log, call: close). juz' "part" (2:260; 15:44; 43:15). ya'tinaka sa'yan "they
   will come to you in haste" (2:260).
+Verses 261-286:
+- habba "grain"; sunbula, plural sanabil, "ear" (2:261; 12:43, 47). The verbs that tell what happened in an
+  example are past in Arabic and stay past ("grew", "struck it and left it bare", 2:261, 264, 265); inside the
+  question of 2:266 they stand in the English present, as at 2:210.
+- mann "reminders of it" (2:262, 264): holding what was given over the one who received it (49:17; 74:6). The
+  word for manna (2:57) is spelled the same and is another thing. adha, of what is done to a person by words,
+  "hurt" (2:262-264), as the line for 2:222 planned. atba'a A B "follow A with B" (2:262).
+- qawl ma'ruf as the subject of a sentence "saying what is right" (2:263), as after "say" at 2:235. maghfira there
+  is left as open as the Arabic about whose forgiveness it is.
+- ghaniyy "rich" (2:263, 267; 3:181; 35:15; 47:38), aghniya' "rich" (2:273), set against faqr "poverty" and fuqara'
+  "the poor" (2:268, 271, 273). With 'an after it (3:97; 29:6) "has no need of" will fit. hamid "praiseworthy"
+  (2:267), of the family of hamd "praise".
+- abtala "make worthless" (2:264; 47:33), of the family of al-batil "falsehood"; habita stays "come to nothing".
+  ri'a'a n-nas "to be seen by people" (2:264; 4:38; 8:47): the word is from "see".
+- safwan "smooth rock"; turab here "soil", and "dust" where that fits (3:59); wabil "downpour"; tall "light rain";
+  sald "bare" (2:264, 265). qadara 'ala "have power over" (2:264), as qadir is "has power over".
+- tathbitan min anfusihim (2:265): decision log, call: close. rabwa "high ground" (2:265; 23:50). ukul "produce"
+  (2:265; 13:35; 14:25; 18:33), beside thamarat "fruits"; ata ukulaha "give its produce". di'fayn "twice over", of
+  the family of da'afa "multiply".
+- nakhil "date palms", a'nab "grapevines" (2:266). min kulli th-thamarat "fruits of every kind", as at 2:164.
+  al-kibar "old age". dhurriyya of the young ones a man has with him or leaves behind "children" (2:266; 4:9),
+  sharing the English of walad; of those who come after him it stays "descendants" (2:124, 128). da'if "weak"
+  (2:266, 282). i'sar "whirlwind"; ihtaraqa "burn".
+- tayammama "aim for" (2:267); what it should be with clean earth as its object (4:43; 5:6) is left to be settled
+  there. khabith "bad", set against tayyib "good" (2:267; 3:179; 4:2; 5:100), sharing the English of sharr (2:216).
+  aghmada fi "shut the eyes to": the image stays.
+- wa'ada stays "promise" where the thing promised is poverty (2:268): the verse sets the two promises side by side.
+- nadhara "make a vow", nadhr "vow" (2:270; 3:35; 19:26). ma li-z-zalimina min ansar "the wrongdoers have no one to
+  aid them" (2:270; 3:192; 5:72).
+- ni'imma hiya "it is a fine thing" (2:271). ni'ma is the word set against bi'sa "miserable" and may need
+  "excellent" elsewhere (3:136; 8:40). as-sadaqat "charity": the Arabic plural is the English word, which has none.
+- kaffara 'an "remove from" (2:271; 3:195; 5:12; 8:29). It is of the family of kafara, at root "cover". The verb
+  at 2:271 is "he removes" in the Hafs reading; the reading "we remove" says the same, so nothing is noted. What
+  kaffara should be (5:89, 95) is left to be settled there.
+- laysa 'alayka "is not on you" (2:272), as 'ala is "on" of what someone owes (2:233). waffa "pay in full" (2:272,
+  281; 3:25, 161, 185), of the family of awfa "keep" and tuwuffiya "be taken in death".
+- 2:273 begins "For the poor" with no verb. "It is" is the small word English needs, and "it" is the good that is
+  spent (2:272). daraba fi l-ard "travel in the land" (2:273; 3:156; 4:101; 73:20): an idiom, translated by its
+  meaning. ta'affuf "restraint" (2:273); ista'affa (4:6; 24:33) is of the same family. sima "mark" (2:273; 7:46;
+  48:29). ilhafan "insistently": the English leaves it as open as the Arabic whether they ask gently or not at all.
+- sirran wa-'alaniyatan "in secret and in public" (2:274; 13:22; 14:31), as asarra is "keep secret" and a'lana "make
+  public".
+- ar-riba "interest" (2:275-279; 3:130; 4:161; 30:39): what a debt grows by, over the sum lent, which 2:279 calls
+  "your capital". The word is translated, not carried over. Bracketed once, at 2:275 (decision log, call: clear);
+  no standing bracket. It is from raba "grow" (22:5; 30:39), and arba is "make grow" (2:276), sharing the English
+  of anbata; the lost echo is noted once, at 2:276. akala r-riba "eat up interest", as with wealth (2:188).
+- takhabbata "beat down" (2:275). al-mass "touch", as massa is "touch". The verse does not say when they stand in
+  this way, and the English does not either.
+- maw'iza where it is words that come to a person "counsel" (2:275; 10:57; 16:125), as wa'aza is "counsel"; it
+  stays "lesson" where a thing that happened is the warning (2:66). ma salafa "what is past" (2:275; 4:22; 5:95;
+  8:38). amruhu ila llah "his matter rests with God". 'ada "go back" (2:275; 8:38; 17:8), sharing the English of
+  karra (2:167).
+- mahaqa "wipe out" (2:276; 3:141). kaffar "persistent disbeliever" (2:276; 50:24): the strong form of kafir.
+  Like its verb it can also be "ungrateful" (14:34); that echo was noted at 2:152. athim "sinful" (2:276, 283), of
+  ithm "sin".
+- wadhara, of a claim, "give up" (2:278); of those a person leaves at death it stays "leave behind" (2:234, 240).
+- adhina bi "take notice of" (2:279). Another reading makes it "give notice of"; either way the war is made known
+  to those who do not stop, so it is not bracketed. harb "war" (2:279; 5:64; 8:57; 47:4).
+- ru'us amwalikum "your capital" (2:279): an idiom, "the heads of your wealth", translated by its meaning.
+- 'usra "difficulty", maysara "ease" (2:280), of 'usr and yusr (2:185). nazira "time is to be given", as anzara is
+  "give time" (2:162). tasaddaqa "give charity" (2:280; 4:92; 5:45; 12:88).
+- tadayana bi-dayn "contract a debt with one another" (2:282); dayn "debt" (4:11, 12). ajal musamma "a named term"
+  (2:282; 6:2; 11:3; 39:42). katib "scribe" (2:282, 283): the Arabic is "one who writes", of kataba "write".
+- 'adl "justice", bi-l-'adl "justly" (2:282; 4:58; 16:90); it stays "compensation" at 2:48 and 2:123. aqsat "fairer"
+  (2:282; 33:5), of qist, as the line for ma'ruf planned.
+- amalla "dictate" (2:282). alladhi 'alayhi l-haqq "the one who owes": al-haqq here is what is due. bakhasa
+  "lessen" (2:282; 7:85; 11:85).
+- waliyy of a person who acts for one who cannot act for himself "the one who acts for him" (2:282; 17:33). It
+  stays "ally" everywhere else.
+- istashhada and ashhada with no object "call witnesses" (2:282; 65:2), as ashhada is "call to witness" (2:204).
+  rajul "man", imra'a "woman". dalla, of a witness, "err" (2:282; 20:52), of the family of dalala "error".
+  dhakkara "remind", of tadhakkara "remember".
+- sa'ima "grow weary" (2:282; 41:38, 49), beside ada "tire". saghir "small"; kabir, of a debt, "large". ila ajalihi
+  "with its term".
+- aqwam "straighter" (2:282; 17:9; 73:6), of the family of mustaqim "straight". adna "nearer" (2:282; 4:3; 5:108;
+  33:59); it is "lower" at 2:61. irtaba "doubt" (2:282; 5:106; 24:50), of rayb "doubt".
+- tijara hadira "trade on the spot" (2:282); adara "pass around". tabaya'a "sell to one another", of bay' "selling".
+- la yudarra katibun wa-la shahid (2:282): decision log, call: close. Here the two ways of reading the form give
+  two different commands, so there is a bracket, as there was not at 2:233.
+- rihan "security" (2:283); rahin, rahina "held as security" (52:21; 74:38). Not "pledge", which is mithaq. maqbuda
+  "taken in hand", of qabada (2:245).
+- amina with a person as its object "trust", u'tumina "be trusted", amana "what he was trusted with" (2:283; 3:75;
+  4:58; 12:11, 64), of the family of amn "safety".
+- hasaba "reckon with" (2:284; 65:8; 84:8), of hisab "reckoning". 'adhdhaba "punish" (2:284), of 'adhab.
+- kutub "Books" (2:285; 4:136), with a capital like al-kitab. 2:285 follows the pause that the written text marks
+  after "the believers". The words "We make no distinction between any of his messengers" have no "they say"
+  before them and follow a colon, as at 2:57 and 2:63. wa-qalu here "And they say", in step with "believes".
+  ghufranaka "Your forgiveness", with no verb, as in the Arabic. ata'a "obey".
+- kasaba and iktasaba (2:286) "earn": one English for both forms. 'alayha "against it".
+- hamala 'ala "load on", hammala "load with" (2:286): one root in Arabic. isr "weight" (2:286; 7:157): a heavy
+  thing that binds. "Burden" is kallafa, which stands in the same verse. At 3:81 isr is the binding covenant
+  itself, left to be settled there.
+- ma la taqata lana bihi "what we have no strength to bear" (2:286), as the line for 2:249 planned.
+- mawla "ally" (2:286; 3:150; 8:40; 22:78; 47:11), sharing the English of waliyy, of whose family it is: the one a
+  person belongs with and is aided by, as the prayer goes straight on, "so aid us". Of the owner of a slave
+  (16:76) "master" will fit.

@@ -4,7 +4,8 @@ name: Publish TV mode pictures
 # (its own "Make TV mode pictures" workflow). This workflow brings each finished chapter to the live
 # site: the chosen pictures go to the Cloudflare R2 bucket (never into git on main), the chapter's
 # scene plan and the list of its pictures (data/pictures.json) are committed to main, and the site is
-# rebuilt, which gives the chapter its TV mode button. See scripts/tv_publish.py.
+# rebuilt, which gives the chapter its TV mode button. See scripts/tv_publish.py. The Quran's parts come
+# the same way (data/tv/quran-<surah>/), and the Quran site is rebuilt too.
 on:
   workflow_run:
     workflows: ["Make TV mode pictures"]
@@ -66,8 +67,9 @@ jobs:
             mkdir -p data/tv && cp -r "$RUNNER_TEMP/tv/." data/tv/
             if [ -f "$RUNNER_TEMP/pictures.json" ]; then cp "$RUNNER_TEMP/pictures.json" data/pictures.json; fi
             python3 scripts/build.py
-            git add -A data/tv data/pictures.json site
-            if git ls-files site | grep -qE '^site/pictures/|\.mp3$'; then echo "::error::A picture or a recording is about to be committed to git."; exit 1; fi
+            WORK=quran python3 scripts/build.py
+            git add -A data/tv data/pictures.json site site-quran
+            if git ls-files site site-quran | grep -qE '^site(-quran)?/pictures/|\.mp3$'; then echo "::error::A picture or a recording is about to be committed to git."; exit 1; fi
             if git diff --cached --quiet; then echo "Nothing new for the site."; exit 0; fi
             git commit --quiet -F "$RUNNER_TEMP/note"
             if git push origin "HEAD:$GITHUB_REF_NAME"; then exit 0; fi
