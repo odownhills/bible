@@ -135,8 +135,9 @@ def sections(n, verses, named):
 
 def build(out, x):
     """Write the Arabic pages. x holds what scripts/build.py shares: page(), esc(), words(), checksum(),
-    lengths (recording seconds by path), english (the English "books"), read_tag, tv_tag, TV_ICON, and
-    sections (the English section names of each surah, from scripts/quran_site.py)."""
+    lengths (recording seconds by path), english (the English "books"), read_tag, tv_tag, TV_ICON,
+    sections (the English section names of each surah, from scripts/quran_site.py), and there (a TV picture
+    is published: TV mode shows the English parts' pictures over the Arabic too)."""
     esc, words = x["esc"], x["words"]
     english = {b["surah"]: b for b in x["english"]}
     os.makedirs(os.path.join(out, "ar"), exist_ok=True)
@@ -248,7 +249,9 @@ def build(out, x):
             x["page"](title(n), body, 1, x["read_tag"] + x["tv_tag"], footer=FOOTER, nav=nav(switch)))
         open(os.path.join(out, "text", SLUG, "%d.txt" % n), "w", encoding="utf-8").write(spoken)
         start = dict(verse_at)
-        json.dump({"verses": verse_at, "scenes": [], "sections": [[start[a], name] for _, name, a, _, _ in jumps if a in start] if bar else []},
+        b_en = english.get(n)   # the English parts' TV pictures, each from the start of its verse
+        scenes = quran_site.scenes_at(quran_site.picture_runs(n, b_en["ranges"], x["there"]), verse_at) if b_en else []
+        json.dump({"verses": verse_at, "scenes": scenes, "sections": [[start[a], name] for _, name, a, _, _ in jumps if a in start] if bar else []},
                   open(os.path.join(out, "tv", SLUG, "%d.json" % n), "w"), ensure_ascii=False)
         if rel:
             manifest.append({
@@ -302,7 +305,7 @@ a.href=href;a.querySelector('small').textContent=small;a.querySelector('b').text
     tv_cells = "".join('<a href="?c=%s" data-tv="%s"><b class="arn" lang="ar">%s</b>Surah %d<small>%s</small></a>' % (
         c["id"], c["id"], esc(NAMES[c["chapter"]]), c["chapter"], x["clock"](c["duration"]) if c["duration"] else "")
         for c in manifest)
-    body = ('<h1>TV mode</h1><p class="sub">The Arabic words light up as they are read aloud, over a calm background. '
+    body = ('<h1>TV mode</h1><p class="sub">The Arabic words light up as they are read aloud, over pictures of what they say (a calm background where the pictures are still to come). '
             'Best on a TV, or on a phone turned sideways.</p>'
             '<a class="continue" id="tv-resume" href="#" hidden><small>Keep watching</small><b></b></a>'
             + ('<div class="grid">%s</div>' % tv_cells if manifest else
