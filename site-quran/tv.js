@@ -92,11 +92,14 @@ var CSS=
 /* the words, lighting up as they are spoken */
 '.tv-cap{position:absolute;left:50%;bottom:9vh;bottom:max(9vh,calc(env(safe-area-inset-bottom) + 3.4rem));width:88vw;width:min(88vw,34em);'+
   '-webkit-transform:translateX(-50%);transform:translateX(-50%);font-family:Georgia,"Times New Roman",Times,serif;font-size:2rem;font-size:clamp(1.25rem,3.3vw,3.3rem);line-height:1.32;'+
-  'text-align:center;text-wrap:balance;color:rgba(232,226,242,.58);text-shadow:0 2px 3px rgba(0,0,0,.9),0 0 22px rgba(0,0,0,.75);'+
+  'text-align:center;text-wrap:balance;color:rgba(232,226,242,.72);text-shadow:0 2px 3px rgba(0,0,0,.9),0 0 22px rgba(0,0,0,.75);'+
   'transition:opacity .22s ease,transform .3s ease,-webkit-transform .3s ease;pointer-events:none}'+
 '.tv-cap.tv-out{opacity:0}'+
 '.tv-cap .tv-w{transition:color .12s linear}'+
 '.tv-cap .tv-w.tv-on{color:#fff}'+
+/* over a picture the words sit on a soft dark box, so they stay easy to read on bright pictures */
+'.tv-cap>span{display:inline-block;max-width:100%;padding:.16em .6em .26em;border-radius:.42em;background:rgba(10,7,20,.62)}'+
+'#tv.tv-noimg .tv-cap>span{background:none}'+
 '#tv.tv-ui .tv-cap{-webkit-transform:translate(-50%,-1.9rem);transform:translate(-50%,-1.9rem)}'+
 '#tv.tv-nowords .tv-cap{display:none}'+
 '#tv.tv-noimg .tv-cap{bottom:auto;top:43%;text-shadow:none}'+
@@ -180,7 +183,7 @@ var CSS=
   '#tv .tv-pic{bottom:auto;height:58vh}'+
   '#tv .tv-scrim{background:linear-gradient(to bottom,rgba(0,0,0,.42) 0,rgba(0,0,0,0) 12%,rgba(0,0,0,0) 40%,#000 58%,#000 100%)}'+
   '#tv .tv-cap,#tv.tv-ui .tv-cap{bottom:auto;top:58vh;height:calc(42vh - 7.5rem);display:flex;align-items:center;justify-content:center;width:88vw;font-size:1.6rem;font-size:clamp(1.35rem,6.4vw,2.3rem);-webkit-transform:translateX(-50%);transform:translateX(-50%)}'+
-  '#tv .tv-cap>span{display:block}'+
+  '#tv .tv-cap>span{display:block;background:none}'+
   '#tv.tv-noimg .tv-cap{top:34vh;height:auto}'+
   '#tv.tv-rtl .tv-cap,#tv.tv-rtl.tv-ui .tv-cap{font-size:1.8rem;font-size:clamp(1.6rem,7.4vw,2.8rem)}'+
   '#tv .tv-mid{top:29vh}'+
