@@ -34,8 +34,11 @@ function fetchOnce(url,kind,fresh){
   return cache.get(url);
 }
 function loadMeta(s){
-  if(!s.metaP) s.metaP=fetchOnce(s.root+'search/meta.json','json',true).then(function(m){ s.meta=m; s.failed=false; return m; },
-    function(){ s.failed=true; s.metaP=null; return null; });
+  // a site that answers with another site's index (a Worker serving the wrong folder) counts as not reachable
+  if(!s.metaP) s.metaP=fetchOnce(s.root+'search/meta.json','json',true).then(function(m){
+      if(!m||m.site!==s.id) throw new Error('not this site');
+      s.meta=m; s.failed=false; return m; })
+    .catch(function(){ s.failed=true; s.metaP=null; return null; });
   return s.metaP;
 }
 
@@ -319,7 +322,7 @@ function render(){
   var line=total?plural(total,'result','results')+'.':'Nothing found.';
   if(loose) line='No one place has all of these words, so these have any of them. '+line;
   if(extra.length) line+=' Also matching: <em>'+esc(extra.slice(0,12).join(', '))+(extra.length>12?', \u2026':'')+'</em>';
-  if(failed.length) line+=' <br>'+esc(failed.join(' and '))+' could not be reached just now.';
+  if(failed.length) line+=' <br>'+esc(failed.map(function(n){ return n==='Study'?'The study notes':'The '+n; }).join(' and '))+' could not be reached just now.';
   setStat(line);
   list.forEach(function(r){
     if(!r.hits.length||(state.scope!=='all'&&state.scope!==r.site.id))return;

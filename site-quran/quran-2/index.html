@@ -101,6 +101,12 @@ sup.n.here{color:var(--bg);background:var(--accent);border-radius:4px;padding:.1
 .toast p{margin:0;flex:1 1 100%}
 .toast a,.toast button{font:inherit;font-size:.85rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:.45rem .85rem;text-decoration:none;cursor:pointer;min-height:40px;display:inline-flex;align-items:center}
 .toast .x{margin-left:auto;border:0;color:var(--text-soft)}
+#ch sup.n{scroll-margin-top:1.5rem}
+#ch .w.hit{background:rgba(183,155,232,.3);border-radius:3px;transition:background 1.5s ease}
+.top .find{display:inline-flex;align-items:center;padding:.15rem 0}
+@media (max-width:400px){.top{gap:.5rem;font-size:.74rem;letter-spacing:.03em}.top span{gap:.8rem!important}.top .lang a,.top .lang b{padding:.1rem .45rem!important}}
+@media (max-width:340px){.top span{gap:.5rem!important}.top .lang a,.top .lang b{padding:.1rem .35rem!important}.top .find svg{width:1.05rem;height:1.05rem}}
+.top .find svg{width:1.2rem;height:1.2rem;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
 body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
 .top span{display:flex;gap:1.4rem}
 .btn.tv{background:var(--shade);color:var(--heading);border-color:var(--accent)}
@@ -153,7 +159,7 @@ p.more{font-family:var(--sans);font-size:.9rem;color:var(--text-soft);background
 .tvnote{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);margin:2.5rem 0 0}
 </style></head>
 <body><div class="wrap">
-<nav class="top"><a href="../?home">Surahs</a><span><a href="../tv/">TV</a><a href="../listen/">Listen</a><span class="lang" role="group" aria-label="Language"><b>English</b><a href="../ar/2.html" data-lang="ar" lang="ar" data-upto="260">عربي</a></span></span></nav>
+<nav class="top"><a href="../?home">Surahs</a><span><a href="../tv/">TV</a><a href="../listen/">Listen</a><a class="find" href="../search/" aria-label="Search" title="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a><span class="lang" role="group" aria-label="Language"><b>English</b><a href="../ar/2.html" data-lang="ar" lang="ar" data-upto="260">عربي</a></span></span></nav>
 <p class="eyebrow">Surah 2</p>
 <h1>The Cow</h1>
 <p class="sub"><button class="btn" id="lr-start" type="button">&#9654; Listen + Read</button> <a class="btn tv" href="../tv/?c=en-2" data-tv="en-2"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="12.5" rx="2"/><path d="M8 20.5h8M12 17v3.5"/></svg>TV mode</a> <a class="btn ghost" href="../listen/?from=en-2">Listen only</a><br><span class="lang-note">verses 1&ndash;260 of 286 translated so far</span></p>
@@ -392,4 +398,4 @@ p.more{font-family:var(--sans);font-size:.9rem;color:var(--text-soft);background
 <p class="more">Verses 261&ndash;286 are not translated yet. <a href="../ar/2.html#v261">Read them in Arabic</a></p>
 <div class="pn"><a class="prev" href="../quran-1/">&larr; Surah 1 · The Opening</a><span class="next">Next surah coming soon</span></div>
 <footer>An original translation from the Arabic.</footer>
-</div><script src="../read.js?v=0f5ece5b" defer></script><script src="../tv.js?v=0be899c6" defer></script><script src="../lang.js?v=8804b8e0" defer></script></body></html>
+</div><script src="../read.js?v=9197ae88" defer></script><script src="../tv.js?v=0be899c6" defer></script><script src="../lang.js?v=8804b8e0" defer></script></body></html>

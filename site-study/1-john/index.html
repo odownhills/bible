@@ -101,6 +101,12 @@ sup.n.here{color:var(--bg);background:var(--accent);border-radius:4px;padding:.1
 .toast p{margin:0;flex:1 1 100%}
 .toast a,.toast button{font:inherit;font-size:.85rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:.45rem .85rem;text-decoration:none;cursor:pointer;min-height:40px;display:inline-flex;align-items:center}
 .toast .x{margin-left:auto;border:0;color:var(--text-soft)}
+#ch sup.n{scroll-margin-top:1.5rem}
+#ch .w.hit{background:rgba(183,155,232,.3);border-radius:3px;transition:background 1.5s ease}
+.top .find{display:inline-flex;align-items:center;padding:.15rem 0}
+@media (max-width:400px){.top{gap:.5rem;font-size:.74rem;letter-spacing:.03em}.top span{gap:.8rem!important}.top .lang a,.top .lang b{padding:.1rem .45rem!important}}
+@media (max-width:340px){.top span{gap:.5rem!important}.top .lang a,.top .lang b{padding:.1rem .35rem!important}.top .find svg{width:1.05rem;height:1.05rem}}
+.top .find svg{width:1.2rem;height:1.2rem;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
 body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
 .top span{display:flex;gap:1.4rem}
 .btn.tv{background:var(--shade);color:var(--heading);border-color:var(--accent)}
@@ -121,7 +127,7 @@ h3.rel{font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.1
 .rs .why+.why{margin-top:.6rem}
 </style></head>
 <body><div class="wrap">
-<nav class="top"><a href="../">Books</a><a class="out" href="https://bible.odownhills.workers.dev/">The translation</a></nav>
+<nav class="top"><a href="../">Books</a><span><a class="out" href="https://bible.odownhills.workers.dev/">The translation</a><a class="find" href="../search/" aria-label="Search" title="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a></span></nav>
 <h1>1 John</h1><p class="sub">1 of 5 chapters</p><div class="grid ch"><span>1</span><span>2</span><a href="3.html">3</a><span>4</span><span>5</span></div>
 <footer>A close reading of each chapter of The Bible, Freshly Translated, with Scripture explaining Scripture.</footer>
 </div></body></html>

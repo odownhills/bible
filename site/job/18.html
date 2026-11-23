@@ -101,13 +101,19 @@ sup.n.here{color:var(--bg);background:var(--accent);border-radius:4px;padding:.1
 .toast p{margin:0;flex:1 1 100%}
 .toast a,.toast button{font:inherit;font-size:.85rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:.45rem .85rem;text-decoration:none;cursor:pointer;min-height:40px;display:inline-flex;align-items:center}
 .toast .x{margin-left:auto;border:0;color:var(--text-soft)}
+#ch sup.n{scroll-margin-top:1.5rem}
+#ch .w.hit{background:rgba(183,155,232,.3);border-radius:3px;transition:background 1.5s ease}
+.top .find{display:inline-flex;align-items:center;padding:.15rem 0}
+@media (max-width:400px){.top{gap:.5rem;font-size:.74rem;letter-spacing:.03em}.top span{gap:.8rem!important}.top .lang a,.top .lang b{padding:.1rem .45rem!important}}
+@media (max-width:340px){.top span{gap:.5rem!important}.top .lang a,.top .lang b{padding:.1rem .35rem!important}.top .find svg{width:1.05rem;height:1.05rem}}
+.top .find svg{width:1.2rem;height:1.2rem;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
 body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
 .top span{display:flex;gap:1.4rem}
 .btn.tv{background:var(--shade);color:var(--heading);border-color:var(--accent)}
 .btn.tv svg{width:1.15em;height:1.15em;vertical-align:-.2em;margin-right:.4em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 </style></head>
 <body><div class="wrap">
-<nav class="top"><a href="../?home">Books</a><span><a href="../tv/">TV</a><a href="../listen/">Listen</a></span></nav>
+<nav class="top"><a href="../?home">Books</a><span><a href="../tv/">TV</a><a href="../listen/">Listen</a><a class="find" href="../search/" aria-label="Search" title="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a></span></nav>
 <h1>Job 18</h1>
 <p class="sub"><button class="btn" id="lr-start" type="button">&#9654; Listen + Read</button> <a class="btn tv" href="../tv/?c=job-18" data-tv="job-18"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="12.5" rx="2"/><path d="M8 20.5h8M12 17v3.5"/></svg>TV mode</a> <a class="btn ghost" href="../listen/?from=job-18">Listen only</a></p>
 <div id="ch" data-id="job-18" data-title="Job 18" data-url="job/18.html" data-skip="3" data-audio="../audio/job/18.mp3" data-sync="../audio/job/18.json" data-next="../job/19.html" data-next-audio="../audio/job/19.mp3">
@@ -126,4 +132,4 @@ body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
 </div>
 <div class="pn"><a class="prev" href="17.html">&larr; Job 17</a><a class="next" href="19.html">&rarr; Job 19</a></div>
 <footer>An original translation from the Hebrew and Greek.</footer>
-</div><script src="../read.js?v=2db16c2a" defer></script><script src="../tv.js?v=84640e49" defer></script></body></html>
+</div><script src="../read.js?v=52f000ed" defer></script><script src="../tv.js?v=84640e49" defer></script></body></html>
