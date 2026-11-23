@@ -18,6 +18,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 os.environ["WORK"] = "bible"   # build.py also builds the Quran's site; the study site is about the Bible
 import build
+import search
 from build import ROOT, SRC, BOOKS, BY_SLUG, esc, plain
 
 SRC_A = os.path.join(ROOT, "analysis")
@@ -288,7 +289,7 @@ def check(path):
     return 0
 
 
-def page(title, body, depth):
+def page(title, body, depth, css=""):
     up = "../" * depth
     return """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -297,11 +298,11 @@ def page(title, body, depth):
 <title>%s</title>
 <style>%s</style></head>
 <body><div class="wrap">
-<nav class="top"><a href="%s">Books</a><a class="out" href="%s/">The translation</a></nav>
+<nav class="top"><a href="%s">Books</a><span><a class="out" href="%s/">The translation</a>%s</span></nav>
 %s
 <footer>%s</footer>
 </div></body></html>
-""" % (esc(title), CSS, up or "./", BIBLE_URL, body, esc(FOOTER))
+""" % (esc(title), CSS + css, up or "./", BIBLE_URL, search.nav_link(up), body, esc(FOOTER))
 
 
 def span(a, z):
@@ -402,6 +403,9 @@ def main():
            "%d chapter%s so far." % (len(chapters), "" if len(chapters) == 1 else "s"))
     body = '<h1>%s</h1><p class="sub">%s</p>%s%s' % (SITE_TITLE, sub, latest, "".join(groups))
     open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(page(SITE_TITLE, body, 0))
+    # the search page and the study notes' search index (scripts/search.py)
+    search.build("study", OUT, {"chapters": chapters, "parse": parse_analysis, "books": BOOKS,
+                                "page": lambda body, css: page("Search", body, 1, css)})
     print("Built %d chapter%s into %s/" % (len(chapters), "" if len(chapters) == 1 else "s", os.path.basename(OUT)))
 
 

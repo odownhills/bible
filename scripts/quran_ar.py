@@ -29,6 +29,7 @@ import json
 import os
 
 import quran_site
+import search
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SURAHS = json.load(open(os.path.join(ROOT, "data", "quran.json"), encoding="utf-8"))
@@ -114,9 +115,9 @@ def pill(here, en_href, ar_href, attrs=""):
 
 
 def nav(here_en):
-    """The top bar of an Arabic page: Surahs, TV, Listen, and the switch."""
-    return ('<a href="./">Surahs</a><span><a href="tv.html">TV</a><a href="listen.html">Listen</a>%s</span>'
-            % here_en)
+    """The top bar of an Arabic page: Surahs, TV, Listen, Search, and the switch."""
+    return ('<a href="./">Surahs</a><span><a href="tv.html">TV</a><a href="listen.html">Listen</a>%s%s</span>'
+            % (search.nav_link("../"), here_en))
 
 
 def sections(n, verses, named):

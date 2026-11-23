@@ -26,6 +26,9 @@ import re
 import shutil
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import search   # the search page and index of each site (scripts/search.py)
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "translations")
 # Two sites are built from this repository by the same scripts: the Bible into site/ (the default)
@@ -33,7 +36,6 @@ SRC = os.path.join(ROOT, "translations")
 WORK = os.environ.get("WORK") or "bible"
 OUT = os.path.join(ROOT, "site" if WORK == "bible" else "site-" + WORK)
 if WORK == "quran":
-    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import quran
     import quran_ar
     import quran_site
@@ -161,6 +163,12 @@ sup.n.here{color:var(--bg);background:var(--accent);border-radius:4px;padding:.1
 .toast p{margin:0;flex:1 1 100%}
 .toast a,.toast button{font:inherit;font-size:.85rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:.45rem .85rem;text-decoration:none;cursor:pointer;min-height:40px;display:inline-flex;align-items:center}
 .toast .x{margin-left:auto;border:0;color:var(--text-soft)}
+#ch sup.n{scroll-margin-top:1.5rem}
+#ch .w.hit{background:rgba(183,155,232,.3);border-radius:3px;transition:background 1.5s ease}
+.top .find{display:inline-flex;align-items:center;padding:.15rem 0}
+@media (max-width:400px){.top{gap:.5rem;font-size:.74rem;letter-spacing:.03em}.top span{gap:.8rem!important}.top .lang a,.top .lang b{padding:.1rem .45rem!important}}
+@media (max-width:340px){.top span{gap:.5rem!important}.top .lang a,.top .lang b{padding:.1rem .35rem!important}.top .find svg{width:1.05rem;height:1.05rem}}
+.top .find svg{width:1.2rem;height:1.2rem;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
 body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
 """
 if TV:   # the TV link beside Listen, and a chapter's TV mode button
@@ -287,7 +295,7 @@ def page(title, body, depth, tail="", css="", lang="", nav=None, footer=None):
     """A whole page. lang: the Quran site's English | Arabic switch for this page (quran_ar.pill()).
     nav, footer: the top bar's contents and the footer line in place of the usual ones (the Arabic pages have their own)."""
     up = "../" * depth
-    links = '<a href="%slisten/">Listen</a>' % up
+    links = '<a href="%slisten/">Listen</a>%s' % (up, search.nav_link(up))
     if TV:
         links = '<span><a href="%stv/">TV</a>%s%s</span>' % (up, links, lang)
     if nav is None:
@@ -711,6 +719,11 @@ if(s&&s.url&&(!nav||nav.type==='navigate')&&!inside&&!/[?&]home/.test(location.s
         os.makedirs(os.path.join(OUT, "tv"), exist_ok=True)
         open(os.path.join(OUT, "tv", "index.html"), "w", encoding="utf-8").write(
             page("TV mode", body, 1, tv_tag, TV_CSS))
+    # the search page and this site's search index (scripts/search.py); the Quran's also covers its Arabic
+    search.build(WORK, OUT, {
+        "chapters": chapters, "parse": parse, "books": BOOKS, "shown": quran_ar.shown if WORK == "quran" else None,
+        "page": lambda body, css: page("Search", body, 1, "", css,
+                                       lang=quran_ar.pill("en", "", "../ar/") if WORK == "quran" else "")})
     print("Built %d %ss into %s/" % (len(chapters), UNIT, os.path.basename(OUT)))
 
 

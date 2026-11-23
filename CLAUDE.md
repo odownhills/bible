@@ -64,7 +64,7 @@ pushes to main, so `git pull --rebase origin main` before each push.
 
 This repository also holds Obay's translation of the Quran, published as its own site at
 https://quran.odownhills.workers.dev (a second Cloudflare Worker, `quran/wrangler.jsonc`, which deploys
-the `site-quran/` folder on every push to main). The two sites do not link to each other. A Bible run
+the `site-quran/` folder on every push to main). The two sites do not link to each other, except through search (see "Search" at the end). A Bible run
 never touches the Quran, and nothing above applies to it: a Quran run follows this section.
 There is no schedule for it yet. Quran parts are translated when Obay asks (so far: Surahs 1 and 2).
 
@@ -157,3 +157,11 @@ The analysis never changes the translation. It is written from the chapter as pu
 - An analysis run changes only new files under `analysis/` and the rebuilt `site-study/` and `site/`.
   It never edits a translation, a decision log, a glossary or an earlier analysis unless Obay asks.
 - `ANALYSIS_RULES.md` is Obay's prompt for this work and is improved over time: change it only when he asks.
+
+# Search
+
+Every build also writes its own site's search index (`scripts/search.py`): `python3 scripts/build.py` into
+`site/search/`, `WORK=quran python3 scripts/build.py` into `site-quran/search/`, and `python3 scripts/study.py`
+into `site-study/search/`. Each site's search page (`/search/`) searches all three sites. A run does nothing extra
+for it: the index is part of the rebuilt site folder it already commits. Never edit those files by hand; if a
+rebase conflicts in them, take main's and rebuild.
