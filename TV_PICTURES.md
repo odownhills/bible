@@ -45,9 +45,17 @@ the meaning better. "Too abstract" means the watcher cannot tell why the picture
   the meaning. A good picture that repeats is better than a weak one that does not.
 
 ## Words over the picture
-The words sit over the bottom of the picture (roughly the band from two thirds down to nine tenths down).
-The important part of every picture sits above that. `scripts/pictures.py` asks for this in every prompt;
-check it by eye on the finished picture.
+The words sit on a see-through dark box at the bottom middle of the picture (Obay, 2026-11-23: "make sure it
+doesn't overlay over an important part of the picture"). The box is fitted to the words, so it is only as
+wide as the longest line, usually the middle half of the screen. On a TV it covers roughly the band from
+three quarters down to nine tenths down. On a phone held sideways the picture is cropped at the bottom, so
+the box reaches higher in the picture: roughly from 60% down to 80% down, across the middle half.
+
+So the important part of every picture sits in the upper 60% of the frame, or out at the left or right side
+if it is lower. The bottom middle is plain foreground of the same scene. `scripts/pictures.py` asks for the
+subject in the upper part of the frame in every prompt (it never mentions words or a box, which makes the
+image model paint a dark bar); check it by eye on the finished picture, with a line at 60% down and the
+middle half marked.
 
 ## Hard text
 Some verses resist a picture. In order: use the text's own image moved into today; else show what the idea
