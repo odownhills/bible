@@ -97,10 +97,16 @@ var CSS=
 '.tv-cap.tv-out{opacity:0}'+
 '.tv-cap .tv-w{transition:color .12s linear}'+
 '.tv-cap .tv-w.tv-on{color:#fff}'+
-/* over a picture the words sit on a soft dark box, so they stay easy to read on bright pictures */
-'.tv-cap>span{display:inline-block;max-width:100%;padding:.16em .6em .26em;border-radius:.42em;background:rgba(10,7,20,.74)}'+
-'#tv.tv-noimg .tv-cap>span{background:none}'+
+/* over a picture the words sit on a soft dark box, so they stay easy to read on bright pictures;
+   the box is fitted to the lines of words (fit()), so it hides as little of the picture as it can */
+'.tv-cap>span{position:relative}'+
+'.tv-box{position:absolute;left:0;top:0;width:0;height:0;border-radius:.42em;background:rgba(10,7,20,.74)}'+
+'#tv.tv-noimg .tv-box{display:none}'+
 '#tv.tv-ui .tv-cap{-webkit-transform:translate(-50%,-1.9rem);transform:translate(-50%,-1.9rem)}'+
+/* a phone held sideways: the words sit lower, over the plain foreground, and rise above the controls when they show */
+'@media (orientation:landscape) and (max-height:500px){'+
+  '.tv-cap{bottom:6vh;bottom:max(6vh,calc(env(safe-area-inset-bottom) + 1.3rem))}'+
+  '#tv.tv-ui .tv-cap{-webkit-transform:translate(-50%,-4rem);transform:translate(-50%,-4rem)}}'+
 '#tv.tv-nowords .tv-cap{display:none}'+
 '#tv.tv-noimg .tv-cap{bottom:auto;top:43%;text-shadow:none}'+
 '#tv.tv-noimg.tv-ui .tv-cap{-webkit-transform:translateX(-50%);transform:translateX(-50%)}'+
@@ -183,7 +189,7 @@ var CSS=
   '#tv .tv-pic{bottom:auto;height:58vh}'+
   '#tv .tv-scrim{background:linear-gradient(to bottom,rgba(0,0,0,.42) 0,rgba(0,0,0,0) 12%,rgba(0,0,0,0) 40%,#000 58%,#000 100%)}'+
   '#tv .tv-cap,#tv.tv-ui .tv-cap{bottom:auto;top:58vh;height:calc(42vh - 7.5rem);display:flex;align-items:center;justify-content:center;width:88vw;font-size:1.6rem;font-size:clamp(1.35rem,6.4vw,2.3rem);-webkit-transform:translateX(-50%);transform:translateX(-50%)}'+
-  '#tv .tv-cap>span{display:block;background:none}'+
+  '#tv .tv-box{display:none}'+
   '#tv.tv-noimg .tv-cap{top:34vh;height:auto}'+
   '#tv.tv-rtl .tv-cap,#tv.tv-rtl.tv-ui .tv-cap{font-size:1.8rem;font-size:clamp(1.6rem,7.4vw,2.8rem)}'+
   '#tv .tv-mid{top:29vh}'+
@@ -193,7 +199,7 @@ var CSS=
 '}'+
 '@media (prefers-reduced-motion:reduce){.tv-pic img,.tv-plain i{-webkit-animation:none!important;animation:none!important}.tv-pic{transition-duration:.4s}}';
 
-var stage=null,audio,cap,capIn,seek,layers,el={};
+var stage=null,audio,cap,capIn,capBox,seek,layers,el={};
 var S={open:false,serial:0,ready:false,ui:false,top:0,scene:-1,card:-1,word:-1,verse:-2,words:[],seps:[],T:[],cards:[],scenes:[],verses:[],saved:0};
 var manifests={},cache={},order=[],wake=null,raf=0,idleT=0,toastT=0,nudgeT=0,cw=null,lastType='mouse',tapAt=0,tapZone=0,mx=-1,my=-1;
 
@@ -246,7 +252,7 @@ function build(){
     '<div class="tv-plain"><i></i><i></i><div><b id="tv-ptitle"></b><small></small></div></div>'+
     '<div class="tv-scrim"></div>'+
     '<div class="tv-tag" id="tv-tag"></div>'+
-    '<div class="tv-cap tv-out" id="tv-cap" aria-live="off"><span></span></div>'+
+    '<div class="tv-cap tv-out" id="tv-cap" aria-live="off"><i class="tv-box"></i><span></span></div>'+
     '<div class="tv-nudge tv-l" id="tv-nl">&minus;10 s</div><div class="tv-nudge tv-r" id="tv-nr">+10 s</div>'+
     '<div class="tv-ctl tv-mid">'+
       b('back','Back 10 seconds',svg(I.back)+'<span>10</span>')+
@@ -277,7 +283,7 @@ function build(){
   audio=d.createElement('audio'); audio.preload='auto'; stage.appendChild(audio);
   ['tag','cap','seek','ticks','cur','rem','play','back','fwd','prev','next','rate','words','full','close','cover','kick','title','msg','go','go-t','again','all','leave','spin','toast','nl','nr','ptitle']
     .forEach(function(k){ el[k]=d.getElementById('tv-'+k); });
-  cap=el.cap; capIn=cap.firstChild; seek=el.seek; layers=stage.querySelectorAll('.tv-pic');
+  cap=el.cap; capBox=cap.firstChild; capIn=cap.lastChild; seek=el.seek; layers=stage.querySelectorAll('.tv-pic');
 
   audio.addEventListener('play',function(){ if(!S.ready)return; stage.classList.remove('tv-paused'); icons(); loop(); awake(true); poke(); });
   audio.addEventListener('pause',function(){ if(!S.ready)return; stage.classList.add('tv-paused'); icons(); awake(false); if(!audio.ended){ savePos(true); poke(); } });
@@ -332,6 +338,8 @@ function build(){
   ['fullscreenchange','webkitfullscreenchange'].forEach(function(ev){ d.addEventListener(ev,fsChange); });
   d.addEventListener('visibilitychange',function(){ if(!S.open)return; if(d.hidden) savePos(true); else if(!audio.paused) awake(true); });
   win.addEventListener('pagehide',function(){ if(S.open) savePos(true); });
+  win.addEventListener('resize',function(){ if(S.open) fit(); });
+  if(d.fonts&&d.fonts.addEventListener) d.fonts.addEventListener('loadingdone',function(){ if(S.open) fit(); });   // e.g. the Arabic font arriving after the first words
 }
 function focusStage(){ try{ stage.focus({preventScroll:true}); }catch(e){ stage.focus(); } }
 function icons(){
@@ -501,7 +509,16 @@ function card(i){
     if(S.rtl&&S.ends[k]) h+=' <span class="tv-end">\u06dd'+arabicNumber(S.ends[k])+'</span>';   // the verse's end, with its number
   }
   if(c.b<S.words.length&&/[—–]/.test(S.seps[c.b])) h+='—';
-  capIn.innerHTML=h; cap.classList.remove('tv-out');
+  capIn.innerHTML=h; cap.classList.remove('tv-out'); fit();
+}
+function fit(){
+  // the dark box hugs the lines of words: as wide as the longest line, as tall as the lines, and no bigger
+  if(!capBox)return;
+  var r=d.createRange(),rs,c=cap.getBoundingClientRect(),l=1e9,t=1e9,rt=-1e9,b=-1e9,k,f=parseFloat(win.getComputedStyle(cap).fontSize)||16;
+  r.selectNodeContents(capIn); rs=r.getClientRects();
+  for(k=0;k<rs.length;k++){ if(!rs[k].width)continue; l=Math.min(l,rs[k].left); rt=Math.max(rt,rs[k].right); t=Math.min(t,rs[k].top); b=Math.max(b,rs[k].bottom); }
+  var bs=capBox.style; if(rt<l){ bs.width=bs.height='0'; return; }
+  bs.left=(l-c.left-.6*f)+'px'; bs.top=(t-c.top-.22*f)+'px'; bs.width=(rt-l+1.2*f)+'px'; bs.height=(b-t+.52*f)+'px';
 }
 function mark(){
   if(!S.ready)return;
