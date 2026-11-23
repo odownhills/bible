@@ -33,11 +33,11 @@ import quran_site
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SURAHS = json.load(open(os.path.join(ROOT, "data", "quran.json"), encoding="utf-8"))
 NAMES = {s["n"]: s["name"] for s in json.load(open(os.path.join(ROOT, "data", "quran_arabic.json"), encoding="utf-8"))}
-# Who reads the recordings, as named on the pages ("" until the plain voice's recordings are made)
-VOICE = ""
+# Who reads the recordings, as named on the pages (scripts/arabic_voice.py)
+VOICE = "a computer voice (Gemini's Sulafat, the English pages' voice)"
 SLUG = "ar"
 FOOTER = ('The Arabic text of the Quran as written (the Hafs reading, from quranenc.com, CC BY-SA 4.0), with no '
-          'translation.' + (' Read aloud by %s.' % VOICE if VOICE else ''))
+          'translation.' + (' Read aloud, where a recording is ready, by %s.' % VOICE if VOICE else ''))
 NOT_YET = "The Arabic is not read aloud yet: a plain reading voice is on the way."
 
 # sources/quran/ writes the open (staggered) tanween with three older code points that only the
@@ -156,45 +156,57 @@ def build(out, x):
     for s in SURAHS:
         n = s["n"]
         opening, verses = surah(n)
-        spoken = spoken_words(n)
-        count = len(words(spoken))
+        lines = ([(0, opening)] if opening else []) + list(verses)
         rel = audio(n)
         secs = x["lengths"].get(rel) if rel else None
+
+        # The recording and its word times (scripts/arabic_voice.py), which count only when made for exactly
+        # these words. While a surah is only partly read, they cover a run of its verses ("range", the
+        # opening line being verse 0), and only those verses' words light up.
+        sync, first, last = None, lines[0][0], lines[-1][0]
+        if rel:
+            try:
+                timing = json.load(open(os.path.join(out, rel[:-4] + ".json"), encoding="utf-8"))
+                a, b = timing.get("range") or [first, last]
+                said = " ".join(w for v, ws in lines if a <= v <= b for w in ws)
+                n_said = len(words(said))
+                if timing.get("sum") == x["checksum"](said) and timing.get("words") == n_said == len(timing.get("t") or []):
+                    sync, first, last = rel[:-4] + ".json", a, b
+            except (OSError, ValueError):
+                pass
+            if not sync:
+                rel = secs = None   # no word times for these words: text only
+        spoken = " ".join(w for v, ws in lines if first <= v <= last for w in ws)
+        count = len(words(spoken))
+        partial = bool(sync) and (first, last) != (lines[0][0], lines[-1][0])
 
         # the text: the opening line apart, then the verses, a new paragraph at each quarter-hizb mark
         parts, para, verse_at, at = [], [], [], 0
 
-        def wrap(ws):
-            return " ".join('<span class="w">%s</span>' % esc(w) for w in ws)
+        def wrap(v, ws):
+            if first <= v <= last:
+                return " ".join('<span class="w">%s</span>' % esc(w) for w in ws)
+            return " ".join(esc(w) for w in ws)
         if opening:
-            parts.append('<p class="bas">%s</p>' % wrap(opening))
-            at += len(opening)
+            parts.append('<p class="bas">%s</p>' % wrap(0, opening))
+            at += len(opening) if first == 0 else 0
         for v, ws in verses:
             if para and ws[0].startswith(RUB):
                 parts.append('<p class="v">%s</p>' % " ".join(para))
                 para = []
-            verse_at.append([v, at])
-            at += len(ws)
-            para.append('<sup class="n" id="v%d"></sup>%s <span class="end">%s%s</span>' % (v, wrap(ws), END, number(v)))
+            if first <= v <= last:
+                verse_at.append([v, at])
+                at += len(ws)
+            para.append('<sup class="n" id="v%d"></sup>%s <span class="end">%s%s</span>' % (v, wrap(v, ws), END, number(v)))
         if para:
             parts.append('<p class="v">%s</p>' % " ".join(para))
         body_text = "\n".join(parts)
         if body_text.count('<span class="w">') != count:
             raise SystemExit("Arabic surah %d: %d words on the page, %d read aloud" % (n, body_text.count('<span class="w">'), count))
 
-        # word timings count only when made for exactly these words
-        sync = None
-        if rel:
-            try:
-                timing = json.load(open(os.path.join(out, rel[:-4] + ".json"), encoding="utf-8"))
-                if timing.get("sum") == x["checksum"](spoken) and timing.get("words") == count and len(timing.get("t") or []) == count:
-                    sync = rel[:-4] + ".json"
-            except (OSError, ValueError):
-                pass
-
         nxt = n + 1 if n < len(SURAHS) else None
         data = (' data-id="%s-%d" data-title="%s" data-url="ar/%d.html" data-skip="0" data-lang="ar" data-stream="1"'
-                ' data-artist="%s"' % (SLUG, n, esc(title(n)), n, esc(VOICE or "The Quran in Arabic")))
+                ' data-artist="Sulafat"' % (SLUG, n, esc(title(n)), n))
         buttons = ""
         if rel:
             data += ' data-audio="../%s"' % rel
@@ -216,7 +228,7 @@ def build(out, x):
         bar = quran_site.section_bar(jumps, bool(rel))
         name = english_name(n)
         eyebrow = "Surah %d%s" % (n, " · " + name if name else "")
-        about = "%d verses" % s["verses"] + (" · read aloud by %s" % VOICE if rel and VOICE else "")
+        about = "%d verses" % s["verses"] + (" · verses %d–%d read aloud so far" % (max(1, first), last) if partial else "")
         prev_link = '<a class="prev" href="%d.html">&larr; %s</a>' % (n - 1, esc(title(n - 1))) if n > 1 else \
             '<span class="prev">Beginning of the Quran</span>'
         next_link = '<a class="next" href="%d.html">%s &rarr;</a>' % (nxt, esc(title(nxt))) if nxt else \
@@ -234,13 +246,14 @@ def build(out, x):
             x["page"](title(n), body, 1, x["read_tag"] + x["tv_tag"], footer=FOOTER, nav=nav(switch)))
         open(os.path.join(out, "text", SLUG, "%d.txt" % n), "w", encoding="utf-8").write(spoken)
         start = dict(verse_at)
-        json.dump({"verses": verse_at, "scenes": [], "sections": [[start[a], name] for _, name, a, _, _ in jumps] if bar else []},
+        json.dump({"verses": verse_at, "scenes": [], "sections": [[start[a], name] for _, name, a, _, _ in jumps if a in start] if bar else []},
                   open(os.path.join(out, "tv", SLUG, "%d.json" % n), "w"), ensure_ascii=False)
         if rel:
             manifest.append({
                 "id": "%s-%d" % (SLUG, n), "book": "Surahs", "slug": SLUG, "chapter": n, "total": len(SURAHS),
                 "url": "ar/%d.html" % n, "audio": rel, "duration": secs, "text": "text/%s/%d.txt" % (SLUG, n),
-                "sync": sync, "title": title(n), "sub": "%d verses" % s["verses"],
+                "sync": sync, "title": title(n), "sub": ("verses %d–%d of %d read aloud so far" % (max(1, first), last, s["verses"]) if partial
+                        else "%d verses" % s["verses"]),
                 "lang": "ar", "stream": True,
             })
         cells.append('<a href="%d.html"><b class="arn" lang="ar">%s</b>Surah %d<small>%d verses%s</small></a>' % (
@@ -251,7 +264,7 @@ def build(out, x):
     # the Arabic home page
     have = len(manifest)
     sub = "The Arabic text of all 114 surahs, as written, with no translation. " + (
-        "Read aloud in a plain voice%s." % ("" if have == len(SURAHS) else " (%d of 114 surahs so far, more are on the way)" % have)
+        "Read aloud in a plain speaking voice%s." % ("" if have == len(SURAHS) else " (%d of 114 surahs so far, more are on the way)" % have)
         if have else NOT_YET)
     resume = """<a class="continue" id="resume" href="#" hidden><small>Pick up where you left off</small><b></b></a>
 <script>
@@ -277,7 +290,7 @@ a.href=href;a.querySelector('small').textContent=small;a.querySelector('b').text
     # Listen: the same player as the English site, over the Arabic recordings
     listen = open(os.path.join(ROOT, "scripts", "listen.html"), encoding="utf-8").read()
     listen = (listen.replace("'../manifest.json'", "'../manifest-ar.json'").replace("<h2>Chapters</h2>", "<h2>Surahs</h2>")
-              .replace("The Bible, Freshly Translated", VOICE or "The Quran in Arabic"))
+              .replace("The Bible, Freshly Translated", "The Quran in Arabic"))
     if not manifest:
         listen = '<h1>Listen</h1><p class="sub">%s</p>' % esc(NOT_YET)
     open(os.path.join(out, "ar", "listen.html"), "w", encoding="utf-8").write(
