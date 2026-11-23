@@ -14,7 +14,11 @@ For each finished chapter that is new or has changed, this script
   - lists its pictures in data/pictures.json: {"pictures/job/1/01-table.jpg": [bytes, id], ...}
     (id is the picture's git blob id on the picture branch, so a picture that was made again is noticed).
 scripts/build.py then gives the chapter its TV mode button. Trial pictures and tall (phone) pictures stay
-on the picture branch. Nothing is ever taken down: a chapter whose plan is being reworked keeps the
+on the picture branch.
+
+The Quran's pictures come the same way: a part of a surah is a "chapter" (data/tv/quran-2/001.json for Surah 2's
+first part, pictures/quran-2/1/...), and `WORK=quran python3 scripts/build.py` shows them over the whole surah
+(scripts/quran_site.py). The Quran site's Worker serves the same bucket. Nothing is ever taken down: a chapter whose plan is being reworked keeps the
 pictures it has until the new set is complete.
 
     python3 scripts/tv_publish.py                # from FETCH_HEAD (.github/workflows/tv.yml fetches the branch first)
@@ -32,10 +36,23 @@ import sys
 import tempfile
 
 import media
+import quran
 
 ROOT = media.ROOT
 INDEX = os.path.join(ROOT, "data", "pictures.json")
 BOOKS = {b["slug"]: b for b in json.load(open(os.path.join(ROOT, "data", "books.json")))}
+BOOKS.update({b["slug"]: b for b in quran.books(os.path.join(ROOT, "translations"))})   # quran-<surah>, parts as chapters
+
+
+def label(slug, n):
+    """ "Job 19", or a part of the Quran: "Quran 2:1-29"."""
+    b = BOOKS[slug]
+    return b["labels"][n - 1] if "labels" in b and n <= len(b["labels"]) else "%s %d" % (b["name"], n)
+
+
+def site_of(slug):
+    """Where --local puts a chapter's pictures: the Quran's in site-quran/."""
+    return os.path.join(ROOT, "site-quran") if slug.startswith("quran-") else media.SITE
 SERVED = re.compile(r"^[a-z0-9\-/]+\.(jpg|jpeg|png|webp)$")   # the picture names worker/index.js serves
 TYPES = {"jpg": "image/jpeg", "jpeg": "image/jpeg", "png": "image/png", "webp": "image/webp"}
 POSTER = "poster.jpg"
@@ -146,7 +163,7 @@ def main():
                     continue
                 data = git("cat-file", "blob", sha)
                 if local:
-                    out = os.path.join(media.SITE, key)
+                    out = os.path.join(site_of(slug), key)
                     if not os.path.exists(out) or open(out, "rb").read() != data:
                         os.makedirs(os.path.dirname(out), exist_ok=True)
                         open(out, "wb").write(data)
@@ -160,9 +177,9 @@ def main():
             # the cover follows the first picture
             first_sha = want[first][1]
             if local:
-                out = os.path.join(media.SITE, cover)
+                out = os.path.join(site_of(slug), cover)
                 if not os.path.exists(out):
-                    changed |= poster(os.path.join(media.SITE, first), out)
+                    changed |= poster(os.path.join(site_of(slug), first), out)
             elif (index.get(cover) or [None, None])[1] != first_sha:
                 src, out = os.path.join(tmp, "first"), os.path.join(tmp, "poster.jpg")
                 open(src, "wb").write(git("cat-file", "blob", first_sha))
@@ -182,8 +199,8 @@ def main():
                 open(dest, "wb").write(raw)
                 changed = True
             if changed:
-                published.append("%s %d" % (BOOKS[slug]["name"], n))
-                print("Published %s %d (%d pictures)" % (BOOKS[slug]["name"], n, len(want)), flush=True)
+                published.append(label(slug, n))
+                print("Published %s (%d pictures)" % (label(slug, n), len(want)), flush=True)
                 if not local:
                     save_index(index)   # after each chapter, so a run that stops partway keeps what it uploaded
     if not published:
