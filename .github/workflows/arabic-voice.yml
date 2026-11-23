@@ -1,8 +1,8 @@
 name: Read the Arabic aloud
 
 # The Quran site's Arabic pages are read aloud in a plain speaking voice, never chanted (Obay, 2026-11-22):
-# Gemini's Sulafat, on a model with its own free daily limit (scripts/arabic_voice.py), starting at Surah 2
-# verse 75. Each run reads chunks of the text until that limit or its time runs out, checks every take word
+# Gemini's Sulafat, on a model with its own free daily limit (scripts/arabic_voice.py). It started at Surah 2
+# verse 75; Surah 1 and 2:1-74 come next, then the rest in order. Each run reads chunks of the text until that limit or its time runs out, checks every take word
 # for word, joins each surah's chunks into its recording (Cloudflare R2, scripts/media.py) and pushes the
 # word times and the rebuilt site-quran/ to main. It runs every few hours until all 114 surahs are read;
 # after that each run finds nothing to do. No text is changed and nothing is translated.

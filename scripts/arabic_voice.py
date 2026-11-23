@@ -63,6 +63,8 @@ STYLE = "Read this aloud in a plain, natural speaking voice, not chanted: "
 # about 8 minutes of speech: fewer requests a day out of a small free allowance (first takes were 5,000).
 CHUNK = 8000
 START = (2, 75)       # Obay: start at Surah 2 verse 75
+# Obay, 2026-11-22 evening, once 2:75 onward had begun: go back and read Surah 1 and 2:1-74 next. So the verses
+# before START are read first, then the rest in order from START.
 # Requests at once. The free tier lets only about 3 requests start each minute (a request over that is
 # answered "too many" and tried again a little later), and each takes a few minutes, so a few run together.
 PARALLEL = int(os.environ.get("ARABIC_PARALLEL") or 5)
@@ -129,16 +131,19 @@ def plan(have=None):
             cur.append([n, ls[0][0], ls[-1][0]])
             room += size(ls)
             continue
-        if cur:
+        pieces = [[[n, p[0][0], p[-1][0]]] for reg in regions for p in split(reg)]
+        if cur and regions[0][0][0] == whole[0][0] and room + size(regions[0][:len(split(regions[0])[0])]) <= CHUNK:
+            # the short surahs before it fit in one request with its opening piece (Surah 1 with 2:0-40)
+            pieces[0] = cur + pieces[0]
+        elif cur:
             chunks.append(cur)
-            cur, room = [], 0
-        for reg in regions:
-            chunks += [[[n, p[0][0], p[-1][0]]] for p in split(reg)]
+        cur, room = [], 0
+        chunks += pieces
     if cur:
         chunks.append(cur)
     out = [{"id": "%d-%d" % (c[0][0], c[0][1]), "segments": c} for c in chunks]
-    return [c for c in out if tuple(c["segments"][0][:2]) >= START] + \
-        [c for c in out if tuple(c["segments"][0][:2]) < START]
+    return [c for c in out if tuple(c["segments"][0][:2]) < START] + \
+        [c for c in out if tuple(c["segments"][0][:2]) >= START]
 
 
 def chunk_lines(chunk):
@@ -645,7 +650,7 @@ if __name__ == "__main__":
     if args[:1] == ["publish"]:
         publish(args[args.index("--branch") + 1] if "--branch" in args else "main")
     elif args[:1] == ["plan"]:
-        for c in plan():
+        for c in plan(done()):   # what is still to read, in order
             print(c["id"], " ".join("%d:%d-%d" % tuple(s) for s in c["segments"]), size(
                 [(v, ws) for _, v, ws in chunk_lines(c)]))
     else:
