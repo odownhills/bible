@@ -346,4 +346,20 @@ window.addEventListener('pagehide',function(){ if(!active&&moved) savePlace(); }
 var h=location.hash,hasAudio=$('ch')&&$('ch').dataset.audio;
 if((h==='#listen-read'||h==='#resume-lr')&&hasAudio){ history.replaceState(null,'',location.pathname+location.search); begin(h==='#listen-read',h==='#resume-lr'); }
 else if(!h) restore();
+else if(/^#v\d+$/.test(h)) found(h.slice(1));
+/* Arriving from a search (search/): the verse in the address is lit for a moment, with the words that were
+   searched for (?hl=love loved) marked in it. */
+function found(id){
+  var sv=$(id); if(!sv)return;
+  sv.classList.add('here'); setTimeout(function(){ sv.classList.remove('here'); },6000);
+  var hl=new URLSearchParams(location.search).get('hl'); if(!hl)return;
+  var want=new Set(hl.toLowerCase().split(/\s+/)),lit=[];
+  function norm(t){ return t.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[\u2019\u02bc]/g,"'").replace(/[^a-z0-9']/g,'').replace(/'s$/,'').replace(/'/g,''); }
+  for(var n=sv.nextSibling;n&&!(n.nodeType===1&&n.matches('sup.n'));n=n.nextSibling){
+    if(n.nodeType!==1)continue;
+    var ws=n.matches('.w')?[n]:[].slice.call(n.querySelectorAll('.w'));
+    ws.forEach(function(w){ if(want.has(norm(w.textContent))){ w.classList.add('hit'); lit.push(w); } });
+  }
+  setTimeout(function(){ lit.forEach(function(w){ w.classList.remove('hit'); }); },12000);
+}
 })();

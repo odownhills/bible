@@ -7,9 +7,12 @@ name: Read the Arabic aloud
 # word times and the rebuilt site-quran/ to main. It runs every few hours until all 114 surahs are read;
 # after that each run finds nothing to do. No text is changed and nothing is translated.
 on:
+  # Every push to main starts a run too: GitHub drops scheduled runs when it is busy (the schedule below
+  # started no run at all from 6 PM on 2026-11-22 to 5 AM the next day, Pacific), and pushes come many times
+  # a day. A run that finds the free limit used up stops in a couple of minutes. The Action's own pushes
+  # start nothing (GitHub's rule for its own token), so runs do not set each other off.
   push:
     branches: [main]
-    paths: ["scripts/arabic_voice.py", ".github/workflows/arabic-voice.yml"]
   schedule:
     - cron: "41 */3 * * *"
   workflow_dispatch:
