@@ -204,10 +204,16 @@ function loadArabic(s){
   },function(e){ arData=null; throw e; });
   return arData;
 }
+/* The spelling the Arabic is shown in: modern (the default), or the traditional Uthmani script when the reader
+   chose it on the Quran site's Arabic pages (arScript, scripts/lang.js). Either way the n-th word is the same. */
+function arUthmani(s){
+  if(!s.meta.arm) return true;
+  try{ return JSON.parse(localStorage.getItem('arScript')||'null')==='uthmani'; }catch(e){ return false; }
+}
 /* The Arabic of one verse as the pages show it (the verse's place in ar.txt picks its file). */
 function arShown(s,i){
   var n=s.meta.arc||300;
-  return fetchOnce(s.root+'search/ar/'+Math.floor(i/n)+'.txt?h='+(s.meta.ar||s.meta.h),'text').then(function(t){
+  return fetchOnce(s.root+'search/'+(arUthmani(s)?'ar':'arm')+'/'+Math.floor(i/n)+'.txt?h='+(s.meta.ar||s.meta.h),'text').then(function(t){
     return t.split('\n')[i%n]||'';
   });
 }
@@ -391,7 +397,7 @@ function moreArabic(R,box,sec){
       var shown=h.shown.split(' ').map(function(w,i){ return h.marked.has(i)?'<mark>'+esc(w)+'</mark>':esc(w); }).join(' ');
       var bk=s.meta.b[r.s];
       a.innerHTML='<span class="ref">Quran '+r.s+':'+r.v+(bk?' <small>\u00b7 '+esc(bk[0])+'</small>':'')+'</span>'+
-        '<p class="ar" lang="ar" dir="rtl">'+shown+'</p>'+(h.en?'<p class="en">'+markVerse(h.en[1],new Set())+'</p>':'');
+        '<p class="ar'+(arUthmani(s)?' uth':'')+'" lang="ar" dir="rtl">'+shown+'</p>'+(h.en?'<p class="en">'+markVerse(h.en[1],new Set())+'</p>':'');
       box.appendChild(a);
     });
     var left=R.hits.length-box.childElementCount;

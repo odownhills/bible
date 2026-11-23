@@ -6,6 +6,11 @@
    in this browser (quranLang): opening the site's address from outside with no place to go back to then
    opens the Arabic pages.
 
+   The Modern | Traditional switch of the Arabic pages: the Arabic in modern spelling (the default) or in the
+   traditional Uthmani script. It lands on the same verse in the other spelling (during Listen + Read, at the
+   same moment of the recording) and is remembered in this browser (arScript); a modern page sends a reader
+   who chose the traditional script on to it (scripts/quran_ar.py). TV mode shows the chosen spelling too.
+
    The bar of sections on a long surah's page: it names the section on screen, and its list jumps to any
    other. During Listen + Read a jump also moves the voice there. */
 (function(){
@@ -63,6 +68,25 @@ d.addEventListener('click',function(e){
 // The English home page, opened from outside with nowhere to go back to: open the Arabic pages if they were chosen last.
 if(d.getElementById('resume')&&!/\/ar\//.test(location.pathname)&&get('quranLang','en')==='ar'&&!get('lastSpot',null)
    &&!/[?&]home/.test(location.search)&&!(d.referrer&&d.referrer.indexOf(location.origin)===0)) location.replace('ar/');
+
+/* ---- the spelling of the Arabic ---- */
+function choice(){   // the switch on the Arabic home and TV pages shows the reader's choice
+  var c=get('arScript','modern');
+  [].forEach.call(d.querySelectorAll('.spell[data-choice] a'),function(a){
+    var on=a.getAttribute('data-script')===c; a.classList.toggle('on',on);
+    if(on) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current');
+  });
+}
+d.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[data-script]'); if(!a||e.button||e.metaKey||e.ctrlKey||e.shiftKey)return;
+  var href=a.getAttribute('href'); e.preventDefault();
+  put('arScript',a.getAttribute('data-script'));
+  if(href==='#'){ choice(); return; }
+  // Listen + Read carries on in the other spelling, paused at the same moment (scripts/read.js keeps the place)
+  if(d.body.classList.contains('lr')){ location.href=href+'#resume-lr'; return; }
+  var v=verseHere(); location.href=href+(v>1?'#v'+v:'');
+});
+choice();
 
 /* ---- the sections ---- */
 // Looked up afresh whenever the page's text changes (Listen + Read can move on to the next surah in place).
