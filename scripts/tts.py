@@ -213,6 +213,27 @@ def main():
         slug = c["id"].rsplit("-", 1)[0]
         out = os.path.join(media.SITE, "audio", slug, "%d.mp3" % c["chapter"])
         text = open(os.path.join(media.SITE, c["text"]), encoding="utf-8").read()
+        rel = "audio/%s/%d.mp3" % (slug, c["chapter"])
+        if not c.get("audio") and c["id"] not in redo and media.size(rel):
+            # A take that an earlier run recorded and uploaded, but whose listing never reached main (its
+            # push failed, as on 2026-11-23 for Quran 2 parts 4-10): list it once the listener has
+            # checked it again, instead of spending a request of the daily limit on it.
+            found = out + ".found.mp3"
+            media.get(rel, found)
+            if check is False:
+                check = checker()
+            wrong = check(found, text) if check else []
+            if not wrong:
+                shutil.move(found, out)
+                idx = media.index()
+                idx[rel] = [os.path.getsize(out), media.seconds(out)]
+                media.save_index(idx)
+                print("Found %s %d already recorded in R2 but not listed; listed it -> %s"
+                      % (c["book"], c["chapter"], os.path.relpath(out, ROOT)), flush=True)
+                continue
+            os.remove(found)
+            print("An unlisted recording of %s %d in R2 does not match the text; recording it again."
+                  % (c["book"], c["chapter"]), flush=True)
         try:
             # A chapter whose last take failed the check is read in shorter pieces: the voice loses
             # its place less often in short passages (long lists of names and ages trip it up).
