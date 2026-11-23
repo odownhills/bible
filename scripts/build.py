@@ -688,7 +688,7 @@ if(s&&s.url&&(!nav||nav.type==='navigate')&&!inside&&!/[?&]home/.test(location.s
         n_ar = quran_ar.build(OUT, {"page": page, "esc": esc, "words": words, "checksum": checksum, "clock": clock,
                                     "lengths": lengths, "english": BOOKS, "read_tag": read_tag, "tv_tag": tv_tag,
                                     "TV_ICON": TV_ICON, "sections": sections})
-        print("Built the Arabic pages of 114 surahs (%d with a recitation)" % n_ar)
+        print("Built the Arabic pages of 114 surahs (%d read aloud)" % n_ar)
     elif TV:   # the TV page: every chapter that has pictures, book by book; scripts/tv.js plays them
         groups, book = [], None
         for b, n, poster, secs in watch:
