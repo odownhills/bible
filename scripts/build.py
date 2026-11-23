@@ -489,8 +489,10 @@ def newest(chapters):
     """The chapter the runs added last, for the home page's "Newest chapter". The runs do not follow the canon:
     they take the books of "first_books" (data/settings.json) first, in that order, and then the rest of the
     canon, always the first chapter still missing (scripts/next.py). So the newest chapter is the one just
-    before the first missing chapter in that order, passing over a book at the front that has not been
-    started yet (Obay, 2026-11-23: Deuteronomy next, while Job stands at chapter 21)."""
+    before the first missing chapter in that order. Two things can stand in front of it: a book that has not
+    been started yet, which is passed over (Obay, 2026-11-23: Deuteronomy next, while Job stands at chapter
+    21), and a book begun somewhere other than its first chapter, whose last chapter is then the newest
+    (Obay, the same day: Deuteronomy 5 first, then back to chapter 1)."""
     try:
         first = json.load(open(os.path.join(ROOT, "data", "settings.json"))).get("first_books") or []
     except (OSError, ValueError):
@@ -504,6 +506,9 @@ def newest(chapters):
             elif found:
                 return found
             else:
+                later = [m for m in range(n + 1, b["chapters"] + 1) if (b["slug"], m) in have]
+                if later:
+                    return b, later[-1]
                 break
     return found or chapters[-1][:2]
 
