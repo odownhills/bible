@@ -11,6 +11,12 @@ that surah. Close calls go in the part's decision log, not here.
 - Allah: "God" (not "Allah"). Decided 2026-11-22.
 - 2026-11-22: the rules in QURAN_RULES.md are Obay's: from the Arabic only, plain English, nothing
   added, nothing from scholars or tradition, a bracket only for a real second reading.
+- ar-rahman ar-rahim: "the All-Merciful, the Ever-Merciful" (not "the Most Merciful, the Merciful", the
+  wording until then), everywhere it appears. Decided 2026-11-23, and changed that day in every
+  published part: the opening line of every surah, 1:1, 1:3, 2:163. Applied from that decision, not
+  ruled on by him one by one: ar-rahman standing alone is "the All-Merciful", and ar-rahim as a title
+  of God without ar-rahman is "the Ever-Merciful" (2:37, 54, 128, 160). Details under "Settled in
+  Surah 1".
 
 ## Conventions
 - ilah "god" (lowercase). Pronouns for God lowercase, including the plural "we" and "us".
@@ -21,15 +27,21 @@ that surah. Close calls go in the part's decision log, not here.
 - The unnumbered opening line of a surah is a `title:` line worded exactly as 1:1.
 
 ## Settled in Surah 1
-- bismi llahi r-rahmani r-rahim (1:1; 27:30): "In the name of God, the Most Merciful, the Merciful."
+- bismi llahi r-rahmani r-rahim (1:1; 27:30): "In the name of God, the All-Merciful, the Ever-Merciful."
   This is the `title:` line of every other surah except Surah 9, word for word, period included.
-- ar-rahman "the Most Merciful" (1:1, 3): the fuller form of the mercy-word, said only of God, always
-  with "the", and often standing alone as his name (17:110; 19:18; 20:5; 25:60; 55:1). Capital
-  letters. It is not the superlative arham ar-rahimin (7:151; 12:64, 92; 21:83), which needs its own
-  wording with what follows it ("the most merciful of those who show mercy"), in lowercase.
-- rahim "merciful"; ar-rahim "the Merciful" (1:1, 3): the ordinary adjective, said of people too
-  (9:128; 48:29), so that it is heard with rahma "mercy" and rahima "have mercy on" (67:28, just
-  before ar-rahman at 67:29). Lowercase when it is not a title ("forgiving, merciful").
+- ar-rahman "the All-Merciful" (1:1, 3; Obay, 2026-11-23): the fuller form of the mercy-word, mercy
+  that is full and overflowing, said only of God, always with "the", and often standing alone as his
+  name (17:110; 19:18; 20:5; 25:60; 55:1): "the All-Merciful" there too. Capital letters. It is not the
+  superlative arham ar-rahimin (7:151; 12:64, 92; 21:83), which needs its own wording with what
+  follows it ("the most merciful of those who show mercy"), in lowercase.
+- ar-rahim, as a title of God, "the Ever-Merciful" (1:1, 3; 2:163; Obay, 2026-11-23): the form of the
+  mercy-word for a lasting quality, mercy that keeps on. So also where it stands beside another title
+  without ar-rahman (at-tawwab ar-rahim "the Ever-Relenting, the Ever-Merciful", 2:37, 54, 128, 160;
+  al-ghafur ar-rahim, 10:107; al-'aziz ar-rahim, 26:9), so that the one Arabic title has one English
+  wording. Both names keep the one English word "merciful", as the Arabic keeps one root, so that
+  they are heard with rahma "mercy" and rahima "have mercy on" (67:28, just before ar-rahman at 67:29).
+- rahim, when it is not a title, stays plain "merciful", lowercase, with no "ever-": of God
+  ("forgiving, merciful", 2:173; "kind to people, merciful", 2:143) and of people (9:128; 48:29).
 - hamd "praise"; al-hamdu lillah "Praise belongs to God" (1:2; 10:10; 45:36): a statement, like lahu
   l-hamd "praise belongs to him" (64:1), with no "all" and no "be". shukr and sabbaha are other words
   and need other English.
@@ -69,7 +81,7 @@ that surah. Close calls go in the part's decision log, not here.
 - ghayri ... wa la (1:7) "not ..., nor ...", set straight after "those you have favored" with no
   second "of", as open as the Arabic: the words can describe the favored or set two other groups
   beside them.
-- Capitals: a title that stands for God takes a capital ("Lord", "the Most Merciful", "the Merciful",
+- Capitals: a title that stands for God takes a capital ("Lord", "the All-Merciful", "the Ever-Merciful",
   "Master"); the same word as a plain description stays lowercase. Pronouns for God stay lowercase.
 
 ## Settled in Surah 2
@@ -185,6 +197,8 @@ Verses 30-61:
 - al-'alim "the Knowing", al-hakim "the Wise" (2:32, 129): a title of God formed like ar-rahim takes
   "the" and a capital, with no "All-". Lowercase when it is said of him plainly ("knowing, wise").
   innaka anta, innahu huwa before such a title: "You are the ...", "He is the ..." (2:32, 37, 54).
+  (ar-rahim itself has been "the Ever-Merciful" since 2026-11-23, by Obay's decision for that pair of
+  names. The "Ever-" is not carried over to the other titles of its form unless he says so.)
 - abda "disclose" (2:33, 271, 284); katama "conceal" (2:33, 42, 72, 140, 146, 159, 174, 283). akhfa
   (2:271, 284) is another word ("hide").
 - sajada "bow down" (2:34, 58); raka'a "bow" (2:43, 125). aba "refuse"; istakbara "be arrogant" (2:34,
