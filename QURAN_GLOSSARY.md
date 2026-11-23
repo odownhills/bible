@@ -662,3 +662,243 @@ Verses 153-177:
   16:91, and "promise" is wa'ada (2:268).
 - al-ba'sa' "hardship", ad-darra' "suffering" (2:177, 214); hina l-ba's "in time of battle" (2:177; 33:18).
 - sadaqa "be truthful" (2:177; 29:3; 33:23), of the family of sadiqin in "if you are telling the truth".
+Verses 178-203:
+- kutiba 'ala "is prescribed for" (2:178, 180, 183, 216, 246): the Arabic is "written upon". kataba li "write for"
+  (2:187). The lost echo is noted once, at 2:187; no standing note.
+- qisas "retaliation" (2:178, 179, 194; 5:45): a return in kind, as the verse itself spells out. fi l-qatla "for those
+  who are killed"; wa-l-hurumatu qisas "for sacred things there is retaliation" (2:194), as 5:45 says of wounds.
+- al-hurr "the free"; al-'abd beside it "the slave" (2:178, 221). 'abd of God's servants stays "servant". al-untha
+  "the female".
+- 'ufiya lahu shay' "is pardoned something" (2:178): 'afa here is giving up a claim, as at 2:237, and keeps "pardon".
+- ittiba' "a following up" (2:178), of the family of ittaba'a "follow"; ada' "payment", adda "pay", "hand back"
+  (2:283; 3:75). The Arabic names neither the one who follows up nor the one who pays, and nothing is supplied.
+- ma'ruf "what is right"; bi-l-ma'ruf "as is right" (2:178, 180, 228, 229, 231-236, 240, 241; 4:19; 65:2). The Arabic
+  is "what is recognized", of the family of 'arafa "recognize": what everyone knows to be right. Not "fair", which
+  should be left for qist where it stands beside 'adl (4:3; 49:9). qawl ma'ruf (2:235, 263) may need its own
+  wording. Its opposite is munkar (3:104), left to be settled there.
+- bi-ihsan "in a good way" (2:178, 229), of the family of ahsana "do good". takhfif "a lightening" (2:178), of
+  khaffafa "lighten".
+- ulu l-albab "those who have understanding"; ya uli l-albab "you who have understanding" (2:179, 197, 269; 3:7,
+  190). The word is the core of a thing. ulu n-nuha (20:54) and ulu l-absar (3:13) are other words.
+- khayr, of what a man leaves behind, "goods" (2:180): the same word as "good".
+- wasiyya "bequest", awsa "make a bequest", musin "one making a bequest" (2:180, 182, 240; 4:11, 12; 5:106). It is of
+  the family of wassa "charge with" (2:132); where God is the one who does it (4:11) "charge" will fit.
+- al-aqrabun "nearest relatives" (2:180, 215; 4:7, 33), beside dhu l-qurba "relatives"; qarib "near" (2:186, 214).
+- haqqan 'ala "a duty on" (2:180, 236, 241).
+- janaf "partiality" (2:182); mutajanif "leaning toward" (5:3) is of the same family.
+- siyam "fasting", "the fast", "a fast" (2:183, 187, 196); sama "fast" (2:184, 185), with the month as its object
+  "fast it". safar "journey" (2:184, 185, 283). 'idda "number" (2:184, 185).
+- 2:184 opens with words that still belong to the sentence of 2:183 and stand in English as their own short
+  sentence, "For a limited number of days." The rulings that the Arabic states with no verb are left without one
+  in English: "then a number of other days", "then whatever offering comes easily", "then a ransom of ...".
+- ataqa "can bear" (2:184), of the family of taqa (2:249, 286). The Arabic says "those who can bear it" and does
+  not say what "it" is or how hard it is for them, and the English says no more.
+- fidya "ransom" (2:184, 196), like fada (2:85) and iftada (2:229). ta'am "food" (2:61, 184, 259).
+- shahr "month"; Ramadan "Ramadan"; al-qur'an "the Quran" (2:185). shahida with the month as its object "witness".
+- yusr "ease", 'usr "difficulty" (2:185; 65:7; 94:5-6); istaysara "come easily" (2:196), tayassara (73:20).
+- akmala "make full" (2:185; 5:3, where it stands beside atamma "complete"); kamil "in full", "full" (2:196, 233).
+- kabbara "declare great" (2:185; 22:37), like qaddasa "declare holy". 'ala ma hadakum "for having guided you".
+- ajaba and istajaba "answer" (2:186; 3:195; 8:24): one English for both forms. da'wa "call", ad-da'i "the one who
+  calls", like da'a "call on".
+- rashada "take the right course" (2:186); rushd "the right course" (2:256; 7:146), beside hada "guide".
+- rafath "intimacy", ar-rafath ila "be intimate with" (2:187, 197). bashara "lie with" (2:187): the Arabic is skin
+  against skin. nisa'ukum "your wives" where a man's own women are meant (2:187, 223, 226); "women" otherwise.
+- libas "garment" (2:187; 7:26). ikhtana nafsahu "betray himself" (2:187; 4:107), of khana "betray". al-ana "now".
+- ibtagha "seek" (2:187, 198, 207, 265, 272). al-khayt "thread"; al-fajr "the dawn" (2:187).
+- hudud Allah "God's limits" (2:187, 229, 230; 4:13; 65:1); tilka hududu llah "Those are God's limits".
+- akala amwal "eat up wealth" (2:188; 4:2, 10, 29): the picture of eating stays, as at 2:174. adla bi ... ila "put
+  before" (2:188): the words can be wealth handed to the judges or a case brought to them, and "put before" leaves
+  both. al-hukkam "the judges", of hakama "judge". fariq, of wealth, "a part" (2:188).
+- ahilla "new moons" (2:189). miqat, plural mawaqit, "appointed time" (2:189; 7:142, 143), like wa'ada "appoint".
+- ata l-buyut "come to houses"; min zuhuriha "from the back"; bab, of a house, "door" (2:189), of a town "gate" (2:58).
+- thaqifa "come upon" (2:191; 3:112; 4:91; 8:57), beside wajada and alfa "find".
+- fitna, of what is done to people to turn them from their religion, "persecution" (2:191, 193, 217; 8:39; 10:83;
+  16:110; 29:10; 85:10). It is the same word as "trial" (2:102). 2:217 says what it is here: "they will not stop
+  fighting you until they turn you back from your religion". ashaddu mina l-qatl "more severe than killing" (2:191),
+  beside akbaru mina l-qatl (2:217).
+- intaha "stop" (2:192, 193, 275). The other reading at 2:191, "kill" for "fight", is in the decision log (call:
+  clear).
+- ad-din li-llah "the religion belongs to God" (2:193; 8:39).
+- ash-shahr al-haram "the sacred month" (2:194, 217), lowercase. al-hurumat "sacred things" (2:194; 22:30), of the
+  family of haram "sacred".
+- i'tada 'ala "overstep against" (2:194): the Arabic uses one verb for what is done to them and for what they do
+  in return, and the English keeps it. bi-mithli ma, of an act, "in the same way" (2:194; 16:126).
+- alqa bi-yadihi ila "throw himself into ... with his own hands" (2:195). tahluka "destruction", of ahlaka "destroy"
+  (2:205).
+- uhsira "be held back" (2:196, 273). halaqa "shave" (2:196; 48:27).
+- hady "offering" (2:196; 5:2, 95, 97; 48:25): what is brought to the House. nusuk "sacrifice" (2:196), of the family
+  of mansak "rite". mahill "place" (2:196; 22:33; 48:25), as open as the Arabic.
+- adha, of the body, "ailment" (2:196); what it should be elsewhere (2:222, 262-264) is left to be settled there.
+- sadaqa "charity" (2:196, 263, 264, 271, 276), beside az-zakat "the alms".
+- amina "be safe" (2:196, 239), of the family of amn "safety". tamatta'a bi "enjoy" (2:196), of mata' "enjoyment".
+- ahl "family" (2:196), "people" of a place or a Book (2:105, 126, 217). hadir "present at" (2:196), of hadara.
+- 'iqab "retribution"; shadid al-'iqab "severe in retribution" (2:196, 211; 5:2; 8:13), beside shadid al-'adhab
+  "severe in punishment" (2:165). 'aqaba (16:126; 22:60) is of the same family.
+- ma'lum "known" (2:197). farada, of the pilgrimage, "undertake" (2:197); of a marriage portion (2:236, 237) it is
+  left to be settled there.
+- jidal "dispute", jadala "dispute" (2:197; 4:109; 22:3), beside hajja "argue with". fi l-hajj "in the pilgrimage"
+  (2:196, 197). The other reading at 2:197 is in the decision log (call: clear).
+- tazawwada "take supplies", zad "supply" (2:197), leaving "provision" for rizq.
+- afada "pour out" (2:198, 199): the Arabic is the word for water pouring (5:83; 7:50). 'Arafat "Arafat".
+- al-mash'ar al-haram "the Sacred Landmark" (2:198), with capitals as the name of that one place. The word is a
+  place that marks, of the family of sha'a'ir "symbols" (2:158).
+- wa-in ... la- "indeed" (2:143, 198). min qablihi "before that" (2:198).
+- istaghfara "ask for forgiveness" (2:199). qada, of rites, "finish" (2:200), beside qada amran "decide a matter".
+  dhikr "remembrance" (2:200).
+- wa-ma lahu after man yaqulu (2:200): "they have", since the Arabic goes on in the plural (2:202).
+- waqa "guard" (2:201), as the line for ittaqa says. nasib "portion" (2:202), beside khalaq "share".
+- sari' al-hisab "swift in reckoning" (2:202; 3:19, 199; 5:4; 13:41; 14:51; 24:39; 40:17); hisab "reckoning".
+- ta'ajjala "hurry away", ta'akhkhara "delay" (2:203). hashara "gather" (2:203).
+Verses 204-220:
+- wa-mina n-nasi man where the Arabic stays in the singular all the way (2:204-206, 207): "And among people there is
+  one who", "he". Where the Arabic goes on in the plural it stays "there are some who" (2:8, 165, 200).
+- a'jaba "impress" (2:204; 9:55; 63:4); what it should be of a person one might marry (2:221) is left to be settled
+  there. The other way of joining "in the life of this world" at 2:204 is in the decision log (call: clear).
+- ashhada "call to witness" (2:204; 11:54), of the family of shahid "witness".
+- aladdu l-khisam "the fiercest in a quarrel" (2:204); khisam "quarrel" (43:18). ludd (19:97) is of the family of aladd.
+  ikhtasama and khasm (22:19; 38:21) are left to be settled where they come, beside jadala "dispute" and hajja "argue".
+- tawalla stays "turn away" at 2:205; the other sense, "take charge", is in the decision log (call: clear).
+- sa'a fi l-ard "go about the earth" (2:205; 5:33, 64): the verb is brisk movement (2:260). sa'a fi with the thing
+  aimed at stays "strive for" (2:114). nasl "offspring" (2:205; 32:8). ahlaka "destroy".
+- al-'izza, of a man's sense of his own might, "pride" (2:206; 38:2), leaving "be arrogant" for istakbara; where it is
+  might itself "might" (4:139; 35:10; 63:8), of the family of al-'aziz "the Mighty". akhadhathu ... bi-l-ithm "takes
+  hold of him in sin": bi-l-ithm is "in sin" as at 2:85 and 188, and is left as open as the Arabic.
+- hasbuhu "is enough for him" (2:206; 58:8), sharing the English of kafa (2:137).
+- jahannam "Hell" (2:206), with a capital: a name of the Fire, beside al-jahim "the Blaze".
+- mihad "resting place" (2:206; 3:12, 197; 13:18; 38:56; 78:6), beside firash "bed" (2:22) and masir "destination".
+- shara nafsahu "sell himself" (2:207), as the line for 2:90 says; God is the one who buys at 9:111. ibtigha'a mardati
+  llah "seeking to please God" (2:207, 265; 4:114), of the family of radiya "be pleased with".
+- ra'ufun bi-l-'ibad "kind to his servants" (2:207; 3:30).
+- as-silm "peace" (2:208), the word of 8:61 and 47:35; al-islam stays "submission". The other sense is in the decision
+  log (call: ask). kaffatan "all together" (2:208; 9:36, 122).
+- zulal "canopies" (2:210; 39:16), zulla "canopy" (7:171); zallala "shade" (2:57) is of the same family.
+- hal yanzuruna illa an "Are they waiting for anything but that" (2:210; 6:158; 16:33). wa-l-mala'ika "and the angels":
+  in the Arabic the angels too are ones who come. wa-qudiya l-amr "and the matter is decided" (2:210; 6:8; 19:39): the
+  Arabic past stands in the English present, inside the question.
+- turja'u l-umur "matters are returned" (2:210; 3:109; 8:44), with no "all": the Quran writes "all of it" where it wants
+  it (11:123).
+- baddala ni'mata llah "change God's favor" (2:211; 14:28).
+- zayyana li "make attractive to" (2:212; 3:14; 6:43; 49:7); zina "adornment" (18:46) is of the same family.
+- sakhira min "ridicule" (2:212; 6:10; 11:38; 49:11), beside istahza'a "mock".
+- alladhina ttaqaw "those who are mindful of God" (2:212). bi-ghayri hisab "without reckoning" (2:212; 3:27, 37; 24:38;
+  39:10; 40:40), as open as the Arabic.
+- kana n-nasu ummatan wahida "People were one community" (2:213; 10:19); nothing is supplied between that and "then God
+  raised up the prophets". mubashshirin wa-mundhirin "as bringers of good news and warners" (2:213; 4:165; 6:48; 18:56),
+  like bashir and nadhir (2:119).
+- li-yahkuma bayna n-nas "to judge between people" (2:213): the Arabic does not say whether the one who judges is God or
+  the Book, and the English leaves it as open. baghyan baynahum "out of resentment among themselves" (2:213; 3:19;
+  42:14; 45:17). hada li "guide to" (2:213).
+- hasiba "suppose" (2:214, 273; 3:142; 24:11), leaving "think" for zanna. lamma with the short verb "not yet" (2:214).
+- mathalu lladhina khalaw "the example of those who passed away" (2:214; 24:34): mathal stays "example", as open as the
+  Arabic about whether it is their story or their lot that comes.
+- zulzila "be shaken" (2:214; 33:11). mata nasru llah "When is God's aid?" (2:214).
+- kariha "hate" (2:216; 9:81; 49:12), kurh "hateful" (2:216), karraha "make hateful" (49:7), set against ahabba "love".
+  The same root gives "unwillingly" (3:83) and ikrah (2:256), left to be settled there. 'asa an "it may be that" (2:216;
+  4:19).
+- sharr lakum "bad for you" (2:216; 24:11), set against khayr "good"; as a noun "evil" may fit (21:35; 99:8).
+- kabir, of a wrong, "grave", akbar "graver" (2:217); "great", "greater" where sin is weighed against benefit (2:219),
+  sharing the English of 'azim. kabira stays "hard" (2:45, 143). akbaru mina l-qatl "graver than killing" (2:217),
+  beside ashaddu mina l-qatl "more severe than killing" (2:191).
+- sadda 'an "bar from" (2:217; 5:91; 7:86; 22:25; 48:25), beside mana'a "keep from". Where no one is named, "people" is
+  the small word English needs; 7:86 names them. At 2:217 "the Sacred Place of Worship" goes with "barring", as it does
+  at 22:25, and "from" is written again to show it. kufrun bihi "disbelief in him".
+- la yazaluna "they will not stop" (2:217), sharing the English of intaha. istata'a "can", "be able" (2:217, 273, 282).
+- radda 'an "turn back from", irtadda 'an "turn back from" (2:217; 5:54): one root in Arabic, and the two are heard
+  together in English too.
+- habita "come to nothing" (2:217; 3:22; 5:5; 7:147; 39:65), beside ada'a "let go to waste" (2:143).
+- hajara "emigrate" (2:218; 4:97, 100; 8:72; 16:41). jahada "strive", jihad "striving" (2:218; 9:41; 22:78; 29:69),
+  not the "fight" of qatala. It shares its English with sa'a fi (2:114); sa'y (53:39-40) may need "effort".
+- raja "hope for" (2:218; 4:104), sharing the English of tami'a (2:75).
+- al-khamr "wine" (2:219; 5:90; 47:15; pressed at 12:36). al-maysir "gambling" (2:219; 5:90).
+- manafi' "benefits", naf' "benefit" (2:219), of nafa'a "benefit". The other reading at 2:219, "much sin", is in the
+  decision log (call: clear).
+- al-'afw, of what is spent, "what you can spare" (2:219): what is over and can be given up. It is of the family of 'afa
+  "pardon", which is itself the giving up of a claim (2:178, 237); the verb is "grow plentiful" at 7:95. What khudhi
+  l-'afw should be (7:199) is left to be settled there.
+- tafakkara "reflect", tafakkara fi "reflect on" (2:219, 266; 3:191), beside 'aqala "use reason". The sentence at the
+  end of 2:219 runs on into 2:220 and is kept whole across the verse number.
+- islah "setting things right", al-muslih "the one who sets things right", al-mufsid "the one who causes corruption"
+  (2:220), as at 2:11-12.
+- khalata "mingle with" (2:220), beside labasa "mix"; khulata' (38:24) is of the same family. ikhwan "brothers".
+- a'nata "put in distress" (2:220); 'anita "be in distress" (9:128; 49:7), 'anat "distress" (4:25).
+Verses 221-242:
+- nakaha "marry" (2:221, 230, 232); ankaha "give in marriage" (2:221), where the Arabic does not name the women
+  given and "women" is the small word English needs; nikah "marriage" (2:235, 237).
+- al-mushrikat "women who give God partners", mushrik beside a slave "a man who gives God partners" (2:221). ama
+  "slave woman". a'jaba stays "impress" of a person one might marry (2:221), as at 2:204.
+- da'a ila "call to" (2:221). tadhakkara "remember" (2:221, 269; 7:201; 79:35), sharing the English of dhakara.
+- al-mahid "menstruation" (2:222; 65:4); fi l-mahid "during menstruation". adha at 2:222 "discomfort", as of rain at
+  4:102; the other sense is in the decision log (call: clear). Of what is done to a person by words (2:262-264;
+  33:57) "hurt" will fit. i'tazala "keep away from" (2:222; 19:48; 44:21).
+- tahura "be pure", tatahhara "purify oneself", al-mutatahhirin "those who purify themselves" (2:222; 9:108), athar
+  "purer" (2:232): the family of tahhara "purify". at-tawwabin, of people, "those who repent often" (2:222).
+- ata, of wives and of a field, "come to" (2:222, 223), as of houses (2:189). anna "however" (2:223), "how" (2:247,
+  259); the other sense at 2:223 is in the decision log (call: clear).
+- yamin, plural ayman, "oath" (2:224, 225; 5:89). 'urda "obstacle" (2:224; decision log, call: close). barra "be
+  virtuous" (2:224), of al-birr "virtue". tattaqu with no object after God has been named "be mindful of him".
+- akhadha in its longer form "take to task" (2:225, 286; 5:89), keeping the "take" of akhadha. laghw "idle talk"
+  (2:225; 5:89; 23:3).
+- halim "forbearing" (2:225, 235, 263): one who holds back from punishing. Not "patient", which is sabr.
+- ala min "swear off" (2:226); the verb of 24:22 is of the same family. tarabbus "a waiting" (2:226); tarabbasa
+  bi-nafsihi "keep oneself waiting" (2:228, 234). fa'a "come back" (2:226; 49:9), beside raja'a "return".
+- 'azama "resolve on" (2:227, 235). talaq "divorce", tallaqa "divorce", al-mutallaqat "divorced women" (2:227-232,
+  236, 237, 241).
+- A ruling that the Arabic states as a plain "they do" stays a plain present in English: "divorced women keep
+  themselves waiting" (2:228), "mothers nurse" (2:233), "these keep themselves waiting" (2:234). A ruling stated with
+  a noun and no verb takes "there is to be" (2:229, as at 2:178) or stays without a verb (2:237, 239, 240).
+- quru' "periods" (2:228; decision log, call: close). The English word, like the Arabic, is a stretch of time and
+  a woman's monthly bleeding. arham "wombs".
+- ba'l, plural bu'ula, "husband" (2:228). zawj is "husband" or "wife" where English has to show which (2:230, 232,
+  234, 240), and "spouse" otherwise.
+- ahaqqu bi "have more right to" (2:228, 247). radd, of a wife, "take back" (2:228). fi dhalika "in that time":
+  "time" is the small word English needs. lahunna mithlu lladhi 'alayhinna "what is due to them is like what is
+  due from them" (2:228).
+  daraja "degree" (2:228, 253).
+- at-talaqu marratan "Divorce is twice" (2:229). imsak "keeping", amsaka "keep" (2:229, 231; 65:2); tasrih "letting
+  go", sarraha "let go" (2:229, 231; 33:28, 49).
+- aqama hududa llah "uphold God's limits" (2:229, 230), beside aqama s-salat "keep up the prayer". ta'adda
+  "overstep" (2:229), like i'tada. iftada bi "ransom oneself with" (2:229).
+- taraja'a "return to each other" (2:230). The second "if he divorces her" at 2:230 is left as bare as the Arabic.
+- ajal "term" (2:231, 232, 234, 235, 282); balagha "reach" (2:196, 231). 2:231 and 2:232 open with the same words
+  and are worded alike.
+- dirar "to harm" (2:231); darra in its longer form "harm" (2:233, 282). la tudarra walidatun "Let no mother be
+  harmed" (2:233): the Arabic form can also be "let no mother do harm", and either way neither parent is to be
+  hurt through the child, so there is no bracket.
+- wa'aza "counsel", yu'azu bihi "the counsel given to" (2:231, 232; 4:34; 16:90; 31:13; 65:2), of the family of
+  maw'iza "lesson". Not "warn", which is andhara.
+- 'adala "prevent" (2:232; 4:19), beside mana'a "keep from" and sadda "bar from". tarada "agree", taradin
+  "agreement" (2:232, 233; 4:29), of the family of radiya "be pleased with".
+- azka "cleaner" (2:232), of zakka "cleanse", beside atharu "purer".
+- al-walidat "mothers"; arda'a "nurse", ar-rada'a "the nursing", istarda'a "seek a nurse for" (2:233). hawl "year"
+  (2:233, 240), sharing the English of sana (2:96) and 'am (2:259). al-mawlud lahu "the one to whom the child is
+  born": the Arabic does not say "father" here. kiswa "clothing".
+- 'ala with what someone owes: "are on" (2:233), as at 2:184. kallafa "burden", wus' "capacity" (2:233, 286), of the
+  family of wasi' "vast"; taqa (2:249, 286) is another word.
+- al-warith "the heir" (2:233), as open as the Arabic about whose heir. fisal "weaning" (2:233; 31:14). tashawur
+  "consultation". sallama "hand over" (2:233), beside adda "pay".
+- tuwuffiya "be taken in death" (2:234, 240): the word is to be taken in full (39:42), and "die" is left for mata.
+  wadhara "leave behind" (2:234, 240).
+- khabir "aware"; bi-ma ta'maluna khabir "is aware of what you do" (2:234, 271), beside 'alim "has knowledge of"
+  and basir "sees".
+- 'arrada bi "hint"; khitba "proposal"; aknana fi nafsihi "keep within oneself" (2:235), beside katama "conceal"
+  and akhfa "hide". dhakara at 2:235 "think of". wa'ada in its longer form with sirran "make promises with ... in
+  secret" (2:235).
+- qawl ma'ruf after "say": "say what is right" (2:235; 4:5; 33:32).
+- 'uqdat an-nikah "the knot of marriage" (2:235, 237): the image stays. alladhi bi-yadihi 'uqdatu n-nikah "the one
+  in whose hand is the knot of marriage" (2:237) is left as open as the Arabic about who he is.
+- al-kitab at 2:235 "what is prescribed", as kutiba 'ala is "is prescribed for". hadhira "beware of" (2:235; 5:92; 63:4).
+- farada lahunna farida "set an amount for them" (2:236, 237). The word is to make a thing binding (2:197; 28:85;
+  33:38), here what the man binds himself to give the woman. faridatan mina llah (4:11; 9:60) is left to be settled
+  there.
+- matta'a, of a woman divorced or widowed, "give support"; mata' "support" (2:236, 240, 241; 33:28, 49). It is the
+  word of mata' "enjoyment" (2:36) and matta'a "let enjoy" (2:126): something given to live on and enjoy for a
+  time. Not "provision", which is rizq and stands in this passage (2:233).
+- al-musi' "the one who has plenty", al-muqtir "the one who has little"; qadaruhu "according to his means" (2:236).
+- 'afa at 2:237 keeps "pardon", with "it" for the half that is given up, so that "for you to pardon is nearer to
+  mindfulness of God" is heard with 2:109 and 2:178. al-fadl baynakum "bounty between yourselves" (2:237).
+- hafiza 'ala "watch over" (2:238; 6:92; 23:9), hifz (2:255) of the same family; "guard" is waqa and "keep up" is
+  aqama. as-salat al-wusta "the middle prayer", with no bracket after 2:143.
+- qanitin at 2:238 stays "obedient", and li-llah goes with it, "obedient to God", as at 2:116; 16:120; 33:31.
+- rijalan aw rukbanan "on foot or riding" (2:239). in khiftum with no object "if you are in fear".
+- ghayra ikhraj "without being driven out" (2:240), of akhraja min diyar "drive out of homes". min ma'ruf "that is
+  right" (2:240), beside bi-l-ma'ruf "as is right" (2:234).
