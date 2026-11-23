@@ -749,3 +749,75 @@ Verses 178-203:
 - waqa "guard" (2:201), as the line for ittaqa says. nasib "portion" (2:202), beside khalaq "share".
 - sari' al-hisab "swift in reckoning" (2:202; 3:19, 199; 5:4; 13:41; 14:51; 24:39; 40:17); hisab "reckoning".
 - ta'ajjala "hurry away", ta'akhkhara "delay" (2:203). hashara "gather" (2:203).
+Verses 204-220:
+- wa-mina n-nasi man where the Arabic stays in the singular all the way (2:204-206, 207): "And among people there is
+  one who", "he". Where the Arabic goes on in the plural it stays "there are some who" (2:8, 165, 200).
+- a'jaba "impress" (2:204; 9:55; 63:4); what it should be of a person one might marry (2:221) is left to be settled
+  there. The other way of joining "in the life of this world" at 2:204 is in the decision log (call: clear).
+- ashhada "call to witness" (2:204; 11:54), of the family of shahid "witness".
+- aladdu l-khisam "the fiercest in a quarrel" (2:204); khisam "quarrel" (43:18). ludd (19:97) is of the family of aladd.
+  ikhtasama and khasm (22:19; 38:21) are left to be settled where they come, beside jadala "dispute" and hajja "argue".
+- tawalla stays "turn away" at 2:205; the other sense, "take charge", is in the decision log (call: clear).
+- sa'a fi l-ard "go about the earth" (2:205; 5:33, 64): the verb is brisk movement (2:260). sa'a fi with the thing
+  aimed at stays "strive for" (2:114). nasl "offspring" (2:205; 32:8). ahlaka "destroy".
+- al-'izza, of a man's sense of his own might, "pride" (2:206; 38:2), leaving "be arrogant" for istakbara; where it is
+  might itself "might" (4:139; 35:10; 63:8), of the family of al-'aziz "the Mighty". akhadhathu ... bi-l-ithm "takes
+  hold of him in sin": bi-l-ithm is "in sin" as at 2:85 and 188, and is left as open as the Arabic.
+- hasbuhu "is enough for him" (2:206; 58:8), sharing the English of kafa (2:137).
+- jahannam "Hell" (2:206), with a capital: a name of the Fire, beside al-jahim "the Blaze".
+- mihad "resting place" (2:206; 3:12, 197; 13:18; 38:56; 78:6), beside firash "bed" (2:22) and masir "destination".
+- shara nafsahu "sell himself" (2:207), as the line for 2:90 says; God is the one who buys at 9:111. ibtigha'a mardati
+  llah "seeking to please God" (2:207, 265; 4:114), of the family of radiya "be pleased with".
+- ra'ufun bi-l-'ibad "kind to his servants" (2:207; 3:30).
+- as-silm "peace" (2:208), the word of 8:61 and 47:35; al-islam stays "submission". The other sense is in the decision
+  log (call: ask). kaffatan "all together" (2:208; 9:36, 122).
+- zulal "canopies" (2:210; 39:16), zulla "canopy" (7:171); zallala "shade" (2:57) is of the same family.
+- hal yanzuruna illa an "Are they waiting for anything but that" (2:210; 6:158; 16:33). wa-l-mala'ika "and the angels":
+  in the Arabic the angels too are ones who come. wa-qudiya l-amr "and the matter is decided" (2:210; 6:8; 19:39): the
+  Arabic past stands in the English present, inside the question.
+- turja'u l-umur "matters are returned" (2:210; 3:109; 8:44), with no "all": the Quran writes "all of it" where it wants
+  it (11:123).
+- baddala ni'mata llah "change God's favor" (2:211; 14:28).
+- zayyana li "make attractive to" (2:212; 3:14; 6:43; 49:7); zina "adornment" (18:46) is of the same family.
+- sakhira min "ridicule" (2:212; 6:10; 11:38; 49:11), beside istahza'a "mock".
+- alladhina ttaqaw "those who are mindful of God" (2:212). bi-ghayri hisab "without reckoning" (2:212; 3:27, 37; 24:38;
+  39:10; 40:40), as open as the Arabic.
+- kana n-nasu ummatan wahida "People were one community" (2:213; 10:19); nothing is supplied between that and "then God
+  raised up the prophets". mubashshirin wa-mundhirin "as bringers of good news and warners" (2:213; 4:165; 6:48; 18:56),
+  like bashir and nadhir (2:119).
+- li-yahkuma bayna n-nas "to judge between people" (2:213): the Arabic does not say whether the one who judges is God or
+  the Book, and the English leaves it as open. baghyan baynahum "out of resentment among themselves" (2:213; 3:19;
+  42:14; 45:17). hada li "guide to" (2:213).
+- hasiba "suppose" (2:214, 273; 3:142; 24:11), leaving "think" for zanna. lamma with the short verb "not yet" (2:214).
+- mathalu lladhina khalaw "the example of those who passed away" (2:214; 24:34): mathal stays "example", as open as the
+  Arabic about whether it is their story or their lot that comes.
+- zulzila "be shaken" (2:214; 33:11). mata nasru llah "When is God's aid?" (2:214).
+- kariha "hate" (2:216; 9:81; 49:12), kurh "hateful" (2:216), karraha "make hateful" (49:7), set against ahabba "love".
+  The same root gives "unwillingly" (3:83) and ikrah (2:256), left to be settled there. 'asa an "it may be that" (2:216;
+  4:19).
+- sharr lakum "bad for you" (2:216; 24:11), set against khayr "good"; as a noun "evil" may fit (21:35; 99:8).
+- kabir, of a wrong, "grave", akbar "graver" (2:217); "great", "greater" where sin is weighed against benefit (2:219),
+  sharing the English of 'azim. kabira stays "hard" (2:45, 143). akbaru mina l-qatl "graver than killing" (2:217),
+  beside ashaddu mina l-qatl "more severe than killing" (2:191).
+- sadda 'an "bar from" (2:217; 5:91; 7:86; 22:25; 48:25), beside mana'a "keep from". Where no one is named, "people" is
+  the small word English needs; 7:86 names them. At 2:217 "the Sacred Place of Worship" goes with "barring", as it does
+  at 22:25, and "from" is written again to show it. kufrun bihi "disbelief in him".
+- la yazaluna "they will not stop" (2:217), sharing the English of intaha. istata'a "can", "be able" (2:217, 273, 282).
+- radda 'an "turn back from", irtadda 'an "turn back from" (2:217; 5:54): one root in Arabic, and the two are heard
+  together in English too.
+- habita "come to nothing" (2:217; 3:22; 5:5; 7:147; 39:65), beside ada'a "let go to waste" (2:143).
+- hajara "emigrate" (2:218; 4:97, 100; 8:72; 16:41). jahada "strive", jihad "striving" (2:218; 9:41; 22:78; 29:69),
+  not the "fight" of qatala. It shares its English with sa'a fi (2:114); sa'y (53:39-40) may need "effort".
+- raja "hope for" (2:218; 4:104), sharing the English of tami'a (2:75).
+- al-khamr "wine" (2:219; 5:90; 47:15; pressed at 12:36). al-maysir "gambling" (2:219; 5:90).
+- manafi' "benefits", naf' "benefit" (2:219), of nafa'a "benefit". The other reading at 2:219, "much sin", is in the
+  decision log (call: clear).
+- al-'afw, of what is spent, "what you can spare" (2:219): what is over and can be given up. It is of the family of 'afa
+  "pardon", which is itself the giving up of a claim (2:178, 237); the verb is "grow plentiful" at 7:95. What khudhi
+  l-'afw should be (7:199) is left to be settled there.
+- tafakkara "reflect", tafakkara fi "reflect on" (2:219, 266; 3:191), beside 'aqala "use reason". The sentence at the
+  end of 2:219 runs on into 2:220 and is kept whole across the verse number.
+- islah "setting things right", al-muslih "the one who sets things right", al-mufsid "the one who causes corruption"
+  (2:220), as at 2:11-12.
+- khalata "mingle with" (2:220), beside labasa "mix"; khulata' (38:24) is of the same family. ikhwan "brothers".
+- a'nata "put in distress" (2:220); 'anita "be in distress" (9:128; 49:7), 'anat "distress" (4:25).
