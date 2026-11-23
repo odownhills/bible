@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#171223">
+<title>1 John 4: what it means</title>
+<style>
+:root{--bg:#171223;--panel:#1E1830;--shade:#241C3A;--text:#E8E2F2;--text-soft:#B3A7C9;--heading:#C9B8EC;--rule:#372C52;--accent:#B79BE8;--num:#7A6A9A;--alt-text:#C4B4E2;--note-bg:#201A32;
+--sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--serif:Georgia,"Times New Roman",Times,serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--serif);font-size:19px;line-height:1.75}
+a{color:var(--accent)}
+.wrap{max-width:42rem;margin:0 auto;padding:1.25rem 16px 4rem}
+.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:var(--sans);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;padding-bottom:.75rem;border-bottom:1px solid var(--rule);margin-bottom:1.5rem}
+.top a{text-decoration:none;color:var(--text-soft)}
+.top a:hover{color:var(--accent)}
+h1{font-family:var(--serif);color:var(--heading);font-weight:normal;font-size:2rem;line-height:1.25;margin:.5rem 0 .25rem}
+.sub{font-family:var(--sans);color:var(--text-soft);font-size:.85rem;margin:0 0 1.75rem}
+h2.sec{font-family:var(--sans);color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:600;line-height:1.4;border-bottom:1px solid var(--rule);padding-bottom:.4rem;margin:2.25rem 0 1rem}
+h3.group{font-family:var(--sans);color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:600;border-bottom:1px solid var(--rule);padding-bottom:.4rem;margin:2rem 0 1rem}
+p.v{margin:0 0 1.1rem}
+p.title{font-style:italic;color:var(--text-soft);margin:0 0 1rem}
+sup.n{font-family:var(--sans);font-size:.6em;color:var(--num);user-select:none;-webkit-user-select:none;margin:0 .2em 0 .1em;vertical-align:super;line-height:0}
+.alt{font-style:italic;font-size:.88em;color:var(--alt-text)}
+.note{font-style:italic;font-size:.85em;color:var(--text-soft);background:var(--note-bg);border-radius:4px;padding:0 .3em}
+.numbering{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:.6rem .8rem;margin:0 0 1.5rem}
+.pn{display:flex;justify-content:space-between;gap:.75rem;margin-top:3rem;font-family:var(--sans);font-size:.9rem}
+.pn a,.pn span{flex:1;display:block;padding:.85rem 1rem;border:1px solid var(--rule);border-radius:10px;background:var(--panel);text-decoration:none}
+.pn .next{text-align:right}
+.pn span{color:var(--num)}
+.btn{display:inline-block;font-family:var(--sans);font-size:.85rem;line-height:1.4;color:var(--bg);background:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:.5rem 1rem;text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(9.5rem,1fr));gap:.6rem;font-family:var(--sans);font-size:.95rem}
+.grid.ch{grid-template-columns:repeat(auto-fill,minmax(3.4rem,1fr))}
+.grid a,.grid span{display:block;padding:.7rem .8rem;border-radius:10px;border:1px solid var(--rule);background:var(--panel);text-decoration:none;line-height:1.3}
+.grid.ch a,.grid.ch span{text-align:center;padding:.7rem 0}
+.grid a{color:var(--text)}
+.grid a:hover{border-color:var(--accent)}
+.grid span{color:var(--num);background:transparent}
+.grid small{display:block;color:var(--text-soft);font-size:.75rem;margin-top:.2rem}
+.grid span small{color:var(--num)}
+.continue{display:block;margin:0 0 1.5rem;padding:1rem 1.1rem;border-radius:12px;background:var(--shade);border:1px solid var(--rule);text-decoration:none;font-family:var(--sans)}
+.continue b{display:block;color:var(--heading);font-family:var(--serif);font-weight:normal;font-size:1.2rem}
+.continue small{color:var(--text-soft)}
+.continue[hidden]{display:none}
+footer{margin-top:3rem;font-family:var(--sans);font-size:.75rem;color:var(--num);text-align:center}
+.seek{display:block;width:100%;margin:0;height:28px;background:transparent;-webkit-appearance:none;appearance:none;cursor:pointer;touch-action:none}
+.seek:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
+.seek::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:linear-gradient(to right,var(--accent) var(--p,0%),var(--rule) var(--p,0%))}
+.seek::-moz-range-track{height:6px;border-radius:3px;background:var(--rule)}
+.seek::-moz-range-progress{height:6px;border-radius:3px;background:var(--accent)}
+.seek::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--heading);margin-top:-6px;border:0}
+.seek::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--heading);border:0}
+.seek:disabled{opacity:.45}
+.times{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--text-soft);font-variant-numeric:tabular-nums;margin-top:.1rem}
+.alt-t{font:inherit;font-size:.78rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:0 .8rem;min-height:30px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.alt-t:active{background:var(--shade)}
+.alt-t:focus-visible{outline:2px solid var(--accent)}
+.tb{background:transparent;border:0;color:var(--text);padding:0;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;cursor:pointer;position:relative;-webkit-tap-highlight-color:transparent}
+.tb:active{background:var(--shade)}
+.tb:focus-visible{outline:2px solid var(--accent)}
+.tb:disabled{color:var(--num);cursor:default}
+.tb svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tb .solid{fill:currentColor;stroke:none}
+.tb.skip svg{width:36px;height:36px}
+.tb.skip span{position:absolute;font-size:.62rem;font-weight:700;top:50%;left:50%;transform:translate(-50%,-38%);font-variant-numeric:tabular-nums}
+.tb.main{width:72px;height:72px;background:var(--accent);color:var(--bg)}
+.tb.main:active{background:var(--heading)}
+.tb.main svg{width:34px;height:34px}
+.chips{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center}
+.chip{font:inherit;font-size:.82rem;color:var(--text);background:var(--shade);border:1px solid var(--rule);border-radius:999px;padding:.5rem .85rem;text-decoration:none;min-height:40px;display:inline-flex;align-items:center;gap:.35rem}
+select.chip{-webkit-appearance:none;appearance:none;text-align:center;cursor:pointer}
+.chip:focus-visible{outline:2px solid var(--accent)}
+body.lr{padding-bottom:10rem}
+#ch{position:relative;isolation:isolate}
+body.lr #ch p{color:#A396C6}
+body.lr #ch .w{color:#A396C6;cursor:pointer;transition:color .4s ease;-webkit-tap-highlight-color:transparent}
+body.lr #ch .w.on{color:var(--text)}
+body.lr #ch .w.now{color:#fff}
+.lr-pill{position:absolute;left:0;top:0;z-index:-1;border-radius:7px;background:rgba(183,155,232,.22);pointer-events:none;opacity:0;transition:transform .26s cubic-bezier(.25,.8,.35,1),width .26s cubic-bezier(.25,.8,.35,1),opacity .3s ease}
+body:not(.lr) .lr-pill{display:none}
+body.lr #ch .alt,body.lr #ch .note{opacity:.5}
+body.lr.noalt #ch .aside,body.lr.noalt #ch sup.n:has(+ .silent){display:none}
+@media (prefers-reduced-motion:reduce){body.lr #ch .w,.lr-pill{transition:none}}
+.sub .btn{margin:0 .35rem .4rem 0}
+.lr-bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--panel);border-top:1px solid var(--rule);font-family:var(--sans);padding:.3rem 14px calc(.5rem + env(safe-area-inset-bottom,0px))}
+.lr-bar[hidden]{display:none}
+.lr-in{max-width:42rem;margin:0 auto}
+.lr-row{display:flex;align-items:center;justify-content:space-between;gap:.25rem;margin-top:.2rem}
+.lr-mid{display:flex;align-items:center;gap:.7rem}
+.lr-bar .tb{width:46px;height:46px}
+.lr-bar .tb.main{width:56px;height:56px}
+.lr-bar .tb.main svg{width:28px;height:28px}
+.lr-bar .tb.skip svg{width:32px;height:32px}
+.lr-bar .tb.x svg{width:22px;height:22px}
+.lr-bar .chip{min-height:40px;padding:.35rem .5rem;min-width:4.4rem;justify-content:center}
+.lr-msg{font-size:.78rem;color:var(--text-soft);text-align:center;margin:.3rem 0 0}
+.lr-msg[hidden]{display:none}
+sup.n.here{color:var(--bg);background:var(--accent);border-radius:4px;padding:.15em .35em;transition:all .6s}
+.toast{position:fixed;left:12px;right:12px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:30;max-width:30rem;margin:0 auto;background:var(--shade);border:1px solid var(--accent);border-radius:14px;padding:.75rem .9rem;font-family:var(--sans);font-size:.9rem;color:var(--text);box-shadow:0 6px 24px rgba(0,0,0,.45);display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .6rem}
+.toast p{margin:0;flex:1 1 100%}
+.toast a,.toast button{font:inherit;font-size:.85rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:.45rem .85rem;text-decoration:none;cursor:pointer;min-height:40px;display:inline-flex;align-items:center}
+.toast .x{margin-left:auto;border:0;color:var(--text-soft)}
+#ch sup.n{scroll-margin-top:1.5rem}
+#ch .w.hit{background:rgba(183,155,232,.3);border-radius:3px;transition:background 1.5s ease}
+.top .find{display:inline-flex;align-items:center;padding:.15rem 0}
+@media (max-width:400px){.top{gap:.5rem;font-size:.74rem;letter-spacing:.03em}.top span{gap:.8rem!important}.top .lang a,.top .lang b{padding:.1rem .45rem!important}}
+@media (max-width:340px){.top span{gap:.5rem!important}.top .lang a,.top .lang b{padding:.1rem .35rem!important}.top .find svg{width:1.05rem;height:1.05rem}}
+.top .find svg{width:1.2rem;height:1.2rem;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
+body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
+.top span{display:flex;gap:1.4rem}
+.btn.tv{background:var(--shade);color:var(--heading);border-color:var(--accent)}
+.btn.tv svg{width:1.15em;height:1.15em;vertical-align:-.2em;margin-right:.4em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.top a.out{color:var(--accent)}
+p.open{color:var(--text-soft);margin:0 0 .5rem}
+h2.sec{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+h2.sec a{color:var(--text-soft);font-weight:400;letter-spacing:.06em;text-decoration:none;white-space:nowrap}
+h2.sec a:hover{color:var(--accent)}
+h3.rel{font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--num);margin:1.6rem 0 .6rem}
+.rs{background:var(--panel);border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:8px;padding:.8rem 1rem .9rem;margin:0 0 .9rem}
+.rs .ref{font-family:var(--sans);font-size:.8rem;letter-spacing:.04em;color:var(--accent);margin:0 0 .35rem}
+.rs .ref a{text-decoration:none}
+.rs .ref a:hover{text-decoration:underline}
+.rs blockquote{margin:0 0 .7rem;color:var(--text)}
+.rs .why{margin:0;font-size:.92em;line-height:1.65;color:var(--text-soft)}
+.rs .why+.why{margin-top:.6rem}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../">Books</a><span><a class="out" href="https://bible.odownhills.workers.dev/">The translation</a><a class="find" href="../search/" aria-label="Search" title="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a></span></nav>
+<h1>1 John 4</h1>
+<p class="sub">What the chapter means, section by section. <a class="btn ghost" href="https://bible.odownhills.workers.dev/1-john/4.html">Read the chapter</a></p>
+<p class="open">Chapter 3 ended with the spirit God gave (3:24). This chapter first tests the spirits (verses 1-6), then turns to love, named in every verse from 7 to 12 and from 16 to 21. Twice it says &quot;God is love&quot; (verses 8, 16), the only places in Scripture that do.</p>
+<h2 class="sec" id="s1"><span>Test the spirits</span><a href="https://bible.odownhills.workers.dev/1-john/4.html#v1">verses 1-6</a></h2>
+<p class="v">The false prophets &quot;have gone out,&quot; the verb of 2:19: there &quot;from us,&quot; here &quot;into the world&quot; (verse 1). As it stands, the confession of verse 2 is that Jesus Christ has come in the flesh; read the other way, that Jesus is the Christ come in the flesh.</p>
+<p class="v">Verses 4, 5 and 6 open with &quot;You yourselves,&quot; &quot;They themselves,&quot; &quot;We ourselves,&quot; each &quot;from&quot; God or the world. Read &quot;error,&quot; the second spirit is named by what is false; read &quot;leading astray,&quot; by what it does, as in 2:26.</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref">Deuteronomy 13:1-3</p><blockquote><sup class="n">1</sup>If a prophet or a dreamer of dreams arises among you and gives you a sign or a wonder, <sup class="n">2</sup>and the sign or the wonder comes about that he spoke of to you, saying, &quot;Let us go after other gods,&quot; which you have not known, &quot;and let us serve them,&quot; <sup class="n">3</sup>you must not listen to the words of that prophet or to that dreamer of dreams, because Yahweh your God is putting you to the test, to know whether you love Yahweh your God with all your heart and with all your soul.</blockquote><p class="why">A sign that comes about does not decide it; where the prophet leads does. Yahweh&#x27;s test is &quot;whether you love.&quot;</p></div>
+<div class="rs"><p class="ref">John 8:47</p><blockquote>The one who is from God hears the words of God. For this reason you yourselves do not hear, because you are not from God.</blockquote><p class="why">Here the one from God hears &quot;the words of God,&quot; and those &quot;not from God&quot; do not hear. Verse 6: &quot;whoever is not from God does not hear us.&quot;</p></div>
+<h2 class="sec" id="s2"><span>God is love</span><a href="https://bible.odownhills.workers.dev/1-john/4.html#v7">verses 7-12</a></h2>
+<p class="v">&quot;From God&quot; comes eight times in verses 1-7, then not again. Spirits were tested for it (verse 1); now &quot;love is from God&quot; (verse 7). Verse 11 does not say we ought to love God in return, but &quot;one another.&quot;</p>
+<p class="v">Verse 12 sets two sentences side by side with nothing joining them: no one has ever gazed at God; if we love one another, God remains in us. John 1:18 has the same three Greek words, &quot;God,&quot; &quot;no one,&quot; &quot;ever,&quot; with &quot;seen&quot; for &quot;gazed.&quot; In Exodus 24:9-11 the leaders of Israel see the God of Israel.</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref"><a href="https://bible.odownhills.workers.dev/john/3.html#v16">John 3:16-17</a></p><blockquote><sup class="n">16</sup>&quot;For God loved the world in this way, that he gave the only Son, so that everyone who believes in him might not perish but have eternal life. <sup class="n">17</sup>For God did not send the Son into the world so that he might judge the world, but so that the world might be saved through him.&quot;</blockquote><p class="why">Verse 9 has their words, &quot;only Son,&quot; &quot;into the world,&quot; &quot;through him.&quot; And &quot;God loved ... in this way&quot; is said of &quot;the world&quot; there, of &quot;us&quot; in verse 11.</p></div>
+<div class="rs"><p class="ref">Deuteronomy 7:7-8</p><blockquote><sup class="n">7</sup>It was not because you were more numerous than all the peoples that Yahweh set his affection on you and chose you, for you were the fewest of all the peoples. <sup class="n">8</sup>But it was because Yahweh loved you, and because he kept the oath that he swore to your fathers, that Yahweh brought you out with a strong hand and ransomed you from the house of slaves, from the hand of Pharaoh king of Egypt.</blockquote><p class="why">Not Israel&#x27;s numbers, but Yahweh&#x27;s love and his oath. Verse 10 has the same &quot;not&quot; and &quot;but&quot;: &quot;not that we ourselves have loved God, but that he himself loved us.&quot;</p></div>
+<h2 class="sec" id="s3"><span>God remains in us</span><a href="https://bible.odownhills.workers.dev/1-john/4.html#v13">verses 13-16</a></h2>
+<p class="v">&quot;Remain&quot; comes six times in verses 12-16, three times both ways (verses 13, 15, 16). Three things go with it: the spirit he has given, confessing that Jesus is the Son of God, and remaining in love. The first two were the matter of verses 1-6; love, of verses 7-12.</p>
+<p class="v">Verse 14 is the third time the chapter says the Son was sent: &quot;so that we might live through him&quot; (verse 9), &quot;as the atonement&quot; (verse 10), &quot;as savior of the world.&quot; What is confessed in verse 15 is a statement; what is known and believed in verse 16 is &quot;the love.&quot; Read &quot;in us,&quot; God&#x27;s love is within them; read &quot;for us,&quot; it is toward them.</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref"><a href="https://bible.odownhills.workers.dev/john/4.html#v42">John 4:42</a></p><blockquote>and they were saying to the woman, &quot;It is no longer because of your speaking that we believe; for we ourselves have heard, and we know that this is truly the savior of the world.&quot;</blockquote><p class="why">&quot;Savior of the world&quot; is found in the New Testament only there and in verse 14, both times said by a &quot;we ourselves&quot; who heard or gazed.</p></div>
+<h2 class="sec" id="s4"><span>Love made complete</span><a href="https://bible.odownhills.workers.dev/1-john/4.html#v17">verses 17-21</a></h2>
+<p class="v">&quot;Made complete&quot; comes four times in the letter: three times of love (2:5; 4:12, 17), and in verse 18 of a person, &quot;the one who fears.&quot; &quot;Fear&quot; comes four times in verse 18 and nowhere else in the letter. In 3:3 and 3:7, &quot;just as that one is&quot; goes on to say what he is, &quot;pure,&quot; &quot;righteous&quot;; verse 17 does not say.</p>
+<p class="v">Verse 19 has the pair of verse 10, &quot;we ourselves&quot; and &quot;he himself,&quot; and adds &quot;first.&quot; As it stands it names no one we love; read &quot;let us love,&quot; it is a call, as in verse 7; other copies add &quot;him.&quot; Verse 20 comes back to verse 12: God unseen, and the brother seen.</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref">Zephaniah 3:15-17</p><blockquote><sup class="n">15</sup>Yahweh has taken away the judgments against you; he has cleared away your enemy. The king of Israel, Yahweh, is in your midst; you will not fear evil anymore. <sup class="n">16</sup>On that day it will be said to Jerusalem, &quot;Do not fear, Zion; do not let your hands go weak.&quot; <sup class="n">17</sup>Yahweh your God is in your midst, a mighty one who saves. He will be glad over you with joy; he will be silent in his love; he will exult over you with a cry of joy.</blockquote><p class="why">On &quot;that day&quot; Zion is told &quot;Do not fear,&quot; with Yahweh &quot;in your midst,&quot; silent &quot;in his love.&quot; Verses 17-18 have &quot;the day of judgment&quot; and love that &quot;throws fear out.&quot;</p></div>
+<div class="rs"><p class="ref">Mark 12:29-31</p><blockquote><sup class="n">29</sup>Jesus answered, &quot;The first is, &#x27;Hear, Israel: the Lord our God, the Lord is one, <sup class="n">30</sup>and you must love the Lord your God with all your heart and with all your soul and with all your understanding and with all your strength.&#x27; <sup class="n">31</sup>The second is this: &#x27;You must love your neighbor as yourself.&#x27; There is no other commandment greater than these.&quot;</blockquote><p class="why">Jesus names a first commandment and a second. Verse 21 speaks of one, &quot;this commandment,&quot; joining love of God and of the brother.</p></div>
+<div class="pn"><a class="prev" href="3.html">&larr; 1 John 3</a><span class="next">More chapters coming</span></div>
+<footer>A close reading of each chapter of The Bible, Freshly Translated, with Scripture explaining Scripture.</footer>
+</div></body></html>
