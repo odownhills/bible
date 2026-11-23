@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#171223">
+<title>1 John 3: what it means</title>
+<style>
+:root{--bg:#171223;--panel:#1E1830;--shade:#241C3A;--text:#E8E2F2;--text-soft:#B3A7C9;--heading:#C9B8EC;--rule:#372C52;--accent:#B79BE8;--num:#7A6A9A;--alt-text:#C4B4E2;--note-bg:#201A32;
+--sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--serif:Georgia,"Times New Roman",Times,serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--serif);font-size:19px;line-height:1.75}
+a{color:var(--accent)}
+.wrap{max-width:42rem;margin:0 auto;padding:1.25rem 16px 4rem}
+.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:var(--sans);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;padding-bottom:.75rem;border-bottom:1px solid var(--rule);margin-bottom:1.5rem}
+.top a{text-decoration:none;color:var(--text-soft)}
+.top a:hover{color:var(--accent)}
+h1{font-family:var(--serif);color:var(--heading);font-weight:normal;font-size:2rem;line-height:1.25;margin:.5rem 0 .25rem}
+.sub{font-family:var(--sans);color:var(--text-soft);font-size:.85rem;margin:0 0 1.75rem}
+h2.sec{font-family:var(--sans);color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:600;line-height:1.4;border-bottom:1px solid var(--rule);padding-bottom:.4rem;margin:2.25rem 0 1rem}
+h3.group{font-family:var(--sans);color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:600;border-bottom:1px solid var(--rule);padding-bottom:.4rem;margin:2rem 0 1rem}
+p.v{margin:0 0 1.1rem}
+p.title{font-style:italic;color:var(--text-soft);margin:0 0 1rem}
+sup.n{font-family:var(--sans);font-size:.6em;color:var(--num);user-select:none;-webkit-user-select:none;margin:0 .2em 0 .1em;vertical-align:super;line-height:0}
+.alt{font-style:italic;font-size:.88em;color:var(--alt-text)}
+.note{font-style:italic;font-size:.85em;color:var(--text-soft);background:var(--note-bg);border-radius:4px;padding:0 .3em}
+.numbering{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:.6rem .8rem;margin:0 0 1.5rem}
+.pn{display:flex;justify-content:space-between;gap:.75rem;margin-top:3rem;font-family:var(--sans);font-size:.9rem}
+.pn a,.pn span{flex:1;display:block;padding:.85rem 1rem;border:1px solid var(--rule);border-radius:10px;background:var(--panel);text-decoration:none}
+.pn .next{text-align:right}
+.pn span{color:var(--num)}
+.btn{display:inline-block;font-family:var(--sans);font-size:.85rem;line-height:1.4;color:var(--bg);background:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:.5rem 1rem;text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(9.5rem,1fr));gap:.6rem;font-family:var(--sans);font-size:.95rem}
+.grid.ch{grid-template-columns:repeat(auto-fill,minmax(3.4rem,1fr))}
+.grid a,.grid span{display:block;padding:.7rem .8rem;border-radius:10px;border:1px solid var(--rule);background:var(--panel);text-decoration:none;line-height:1.3}
+.grid.ch a,.grid.ch span{text-align:center;padding:.7rem 0}
+.grid a{color:var(--text)}
+.grid a:hover{border-color:var(--accent)}
+.grid span{color:var(--num);background:transparent}
+.grid small{display:block;color:var(--text-soft);font-size:.75rem;margin-top:.2rem}
+.grid span small{color:var(--num)}
+.continue{display:block;margin:0 0 1.5rem;padding:1rem 1.1rem;border-radius:12px;background:var(--shade);border:1px solid var(--rule);text-decoration:none;font-family:var(--sans)}
+.continue b{display:block;color:var(--heading);font-family:var(--serif);font-weight:normal;font-size:1.2rem}
+.continue small{color:var(--text-soft)}
+.continue[hidden]{display:none}
+footer{margin-top:3rem;font-family:var(--sans);font-size:.75rem;color:var(--num);text-align:center}
+.seek{display:block;width:100%;margin:0;height:28px;background:transparent;-webkit-appearance:none;appearance:none;cursor:pointer;touch-action:none}
+.seek:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
+.seek::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:linear-gradient(to right,var(--accent) var(--p,0%),var(--rule) var(--p,0%))}
+.seek::-moz-range-track{height:6px;border-radius:3px;background:var(--rule)}
+.seek::-moz-range-progress{height:6px;border-radius:3px;background:var(--accent)}
+.seek::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--heading);margin-top:-6px;border:0}
+.seek::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--heading);border:0}
+.seek:disabled{opacity:.45}
+.times{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--text-soft);font-variant-numeric:tabular-nums;margin-top:.1rem}
+.alt-t{font:inherit;font-size:.78rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:0 .8rem;min-height:30px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.alt-t:active{background:var(--shade)}
+.alt-t:focus-visible{outline:2px solid var(--accent)}
+.tb{background:transparent;border:0;color:var(--text);padding:0;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;cursor:pointer;position:relative;-webkit-tap-highlight-color:transparent}
+.tb:active{background:var(--shade)}
+.tb:focus-visible{outline:2px solid var(--accent)}
+.tb:disabled{color:var(--num);cursor:default}
+.tb svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tb .solid{fill:currentColor;stroke:none}
+.tb.skip svg{width:36px;height:36px}
+.tb.skip span{position:absolute;font-size:.62rem;font-weight:700;top:50%;left:50%;transform:translate(-50%,-38%);font-variant-numeric:tabular-nums}
+.tb.main{width:72px;height:72px;background:var(--accent);color:var(--bg)}
+.tb.main:active{background:var(--heading)}
+.tb.main svg{width:34px;height:34px}
+.chips{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center}
+.chip{font:inherit;font-size:.82rem;color:var(--text);background:var(--shade);border:1px solid var(--rule);border-radius:999px;padding:.5rem .85rem;text-decoration:none;min-height:40px;display:inline-flex;align-items:center;gap:.35rem}
+select.chip{-webkit-appearance:none;appearance:none;text-align:center;cursor:pointer}
+.chip:focus-visible{outline:2px solid var(--accent)}
+body.lr{padding-bottom:10rem}
+#ch{position:relative;isolation:isolate}
+body.lr #ch p{color:#A396C6}
+body.lr #ch .w{color:#A396C6;cursor:pointer;transition:color .4s ease;-webkit-tap-highlight-color:transparent}
+body.lr #ch .w.on{color:var(--text)}
+body.lr #ch .w.now{color:#fff}
+.lr-pill{position:absolute;left:0;top:0;z-index:-1;border-radius:7px;background:rgba(183,155,232,.22);pointer-events:none;opacity:0;transition:transform .26s cubic-bezier(.25,.8,.35,1),width .26s cubic-bezier(.25,.8,.35,1),opacity .3s ease}
+body:not(.lr) .lr-pill{display:none}
+body.lr #ch .alt,body.lr #ch .note{opacity:.5}
+body.lr.noalt #ch .aside,body.lr.noalt #ch sup.n:has(+ .silent){display:none}
+@media (prefers-reduced-motion:reduce){body.lr #ch .w,.lr-pill{transition:none}}
+.sub .btn{margin:0 .35rem .4rem 0}
+.lr-bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--panel);border-top:1px solid var(--rule);font-family:var(--sans);padding:.3rem 14px calc(.5rem + env(safe-area-inset-bottom,0px))}
+.lr-bar[hidden]{display:none}
+.lr-in{max-width:42rem;margin:0 auto}
+.lr-row{display:flex;align-items:center;justify-content:space-between;gap:.25rem;margin-top:.2rem}
+.lr-mid{display:flex;align-items:center;gap:.7rem}
+.lr-bar .tb{width:46px;height:46px}
+.lr-bar .tb.main{width:56px;height:56px}
+.lr-bar .tb.main svg{width:28px;height:28px}
+.lr-bar .tb.skip svg{width:32px;height:32px}
+.lr-bar .tb.x svg{width:22px;height:22px}
+.lr-bar .chip{min-height:40px;padding:.35rem .5rem;min-width:4.4rem;justify-content:center}
+.lr-msg{font-size:.78rem;color:var(--text-soft);text-align:center;margin:.3rem 0 0}
+.lr-msg[hidden]{display:none}
+sup.n.here{color:var(--bg);background:var(--accent);border-radius:4px;padding:.15em .35em;transition:all .6s}
+.toast{position:fixed;left:12px;right:12px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:30;max-width:30rem;margin:0 auto;background:var(--shade);border:1px solid var(--accent);border-radius:14px;padding:.75rem .9rem;font-family:var(--sans);font-size:.9rem;color:var(--text);box-shadow:0 6px 24px rgba(0,0,0,.45);display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .6rem}
+.toast p{margin:0;flex:1 1 100%}
+.toast a,.toast button{font:inherit;font-size:.85rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:.45rem .85rem;text-decoration:none;cursor:pointer;min-height:40px;display:inline-flex;align-items:center}
+.toast .x{margin-left:auto;border:0;color:var(--text-soft)}
+body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
+.top span{display:flex;gap:1.4rem}
+.btn.tv{background:var(--shade);color:var(--heading);border-color:var(--accent)}
+.btn.tv svg{width:1.15em;height:1.15em;vertical-align:-.2em;margin-right:.4em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.top a.out{color:var(--accent)}
+p.open{color:var(--text-soft);margin:0 0 .5rem}
+h2.sec{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+h2.sec a{color:var(--text-soft);font-weight:400;letter-spacing:.06em;text-decoration:none;white-space:nowrap}
+h2.sec a:hover{color:var(--accent)}
+h3.rel{font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--num);margin:1.6rem 0 .6rem}
+.rs{background:var(--panel);border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:8px;padding:.8rem 1rem .9rem;margin:0 0 .9rem}
+.rs .ref{font-family:var(--sans);font-size:.8rem;letter-spacing:.04em;color:var(--accent);margin:0 0 .35rem}
+.rs .ref a{text-decoration:none}
+.rs .ref a:hover{text-decoration:underline}
+.rs blockquote{margin:0 0 .7rem;color:var(--text)}
+.rs .why{margin:0;font-size:.92em;line-height:1.65;color:var(--text-soft)}
+.rs .why+.why{margin-top:.6rem}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="../">Books</a><a class="out" href="https://bible.odownhills.workers.dev/">The translation</a></nav>
+<h1>1 John 3</h1>
+<p class="sub">What the chapter means, section by section. <a class="btn ghost" href="https://bible.odownhills.workers.dev/1-john/3.html">Read the chapter</a></p>
+<p class="open">This letter was written after a split: some had left (2:19), and others were trying to lead the readers astray (2:26). So the chapter keeps saying how things can be known: four times it says &quot;by this&quot; (verses 10, 16, 19 and 24).</p>
+<h2 class="sec" id="s1"><span>Children of God</span><a href="https://bible.odownhills.workers.dev/1-john/3.html#v1">verses 1-3</a></h2>
+<p class="v">The Father &quot;has given&quot; love, and the gift is a name that is also a fact: called children of God, &quot;and we are&quot; (verse 1). Verse 2 holds two times together: children now, and more not yet revealed. Of that future one thing is said: we will be like him, &quot;because we will see him just as he is.&quot; Whoever has this hope purifies himself already (verse 3).</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref">Hosea 1:10</p><blockquote>And the number of the children of Israel will be like the sand of the sea, which cannot be measured and cannot be counted. And in the place where it was said to them, &quot;You are not my people,&quot; it will be said to them, &quot;Children of the living God.&quot;</blockquote><p class="why">God told Israel &quot;not my people,&quot; then promised the same people this name. It is not earned. God gives it.</p></div>
+<div class="rs"><p class="ref"><a href="https://bible.odownhills.workers.dev/john/1.html#v10">John 1:10-13</a></p><blockquote><sup class="n">10</sup>He was in the world, and the world came to be through him, and the world did not know him. <sup class="n">11</sup>He came to what was his own, and those who were his own did not take him in. <sup class="n">12</sup>But as many as received him, to them he gave authority to become children of God, to those who believe in his name, <sup class="n">13</sup>who were born not from blood, nor from the will of flesh, nor from the will of a man, but from God.</blockquote><p class="why">Two facts stand together here as well: the world did not know him, and those who received him were born from God.</p></div>
+<h2 class="sec" id="s2"><span>Sin is lawlessness</span><a href="https://bible.odownhills.workers.dev/1-john/3.html#v4">verses 4-9</a></h2>
+<p class="v">Verse 4 defines sin as lawlessness: acting as if God&#x27;s law did not apply. Jesus was revealed to take away sins (verse 5) and to undo the works of the devil (verse 8), so remaining in him and going on in sin pull opposite ways. This is no claim to be sinless: to say we have no sin is to lead ourselves astray (1:8). Two ways of life are compared: &quot;does sin&quot; and &quot;does righteousness.&quot;</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref">Jeremiah 31:33</p><blockquote>For this is the covenant that I will make with the house of Israel after those days, declares Yahweh: I will put my law within them, and on their heart I will write it. And I will be their God, and they will be my people.</blockquote><p class="why">God promised to put his law within his people, written on the heart. John too points inside: &quot;his seed remains in him&quot; (verse 9).</p></div>
+<div class="rs"><p class="ref">John 8:34-36</p><blockquote><sup class="n">34</sup>Jesus answered them, &quot;Amen, amen, I say to you, everyone who does sin is a slave of sin. <sup class="n">35</sup>And the slave does not remain in the house forever; the son remains forever. <sup class="n">36</sup>So if the Son sets you free, you will really be free.&quot;</blockquote><p class="why">&quot;Everyone who does sin&quot; is word for word the opening of verse 4. Jesus says where it leads, slavery, and who ends it: the Son.</p></div>
+<h2 class="sec" id="s3"><span>The children of God and the children of the devil</span><a href="https://bible.odownhills.workers.dev/1-john/3.html#v10">verses 10-12</a></h2>
+<p class="v">Verse 10 is the chapter&#x27;s hinge: two families are &quot;revealed&quot; by what they do, and righteousness is now joined to love of a brother. Cain is the only Old Testament figure the letter names. Why did he kill? Not because Abel wronged him. Abel&#x27;s works were righteous and his own were evil (verse 12). John 3:19-20 says the same of the light: those whose works are evil hate it.</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref"><a href="https://bible.odownhills.workers.dev/genesis/4.html#v6">Genesis 4:6-8</a></p><blockquote><sup class="n">6</sup>And Yahweh said to Cain, &quot;Why are you angry, and why has your face fallen? <sup class="n">7</sup>If you do good, will there not be a lifting up? But if you do not do good, sin is crouching at the entrance, and its longing is for you, but you must govern it.&quot; <sup class="n">8</sup>And Cain spoke to his brother Abel. And when they were in the field, Cain rose up against his brother Abel and killed him.</blockquote><p class="why">Genesis records the warning before the murder: do good, because sin is crouching at the entrance. For John too, what divided the brothers was what each did.</p></div>
+<div class="rs"><p class="ref">John 8:44</p><blockquote>You are from your father the devil, and you want to do your father&#x27;s desires. That one was a murderer from the beginning and did not stand in the truth, because there is no truth in him. When he speaks the lie, he speaks from what is his own, because he is a liar and the father of it.</blockquote><p class="why">Jesus too spoke of people &quot;from&quot; the devil, a murderer &quot;from the beginning&quot; (verse 8). This Greek word for &quot;murderer&quot; appears in the New Testament only here and in verse 15.</p></div>
+<h2 class="sec" id="s4"><span>From death into life</span><a href="https://bible.odownhills.workers.dev/1-john/3.html#v13">verses 13-15</a></h2>
+<p class="v">After Cain, the world&#x27;s hatred is no surprise (verse 13). In verse 14, love is how we know we have crossed over, not how we crossed: the evidence, not the cause. Death here is more than the end of life: it is where a person &quot;remains&quot; until he leaves it.</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref">Leviticus 19:17-18</p><blockquote><sup class="n">17</sup>You must not hate your brother in your heart. You must certainly correct your countryman, and you must not bear sin because of him. <sup class="n">18</sup>You must not take revenge, and you must not hold a grudge against any of your people, but you must love your neighbor as yourself. I am Yahweh.</blockquote><p class="why">The law had already put hatred of a brother &quot;in your heart&quot; and set love against it in the next verse. Verse 15 says what that hidden hatred is: murder.</p></div>
+<div class="rs"><p class="ref"><a href="https://bible.odownhills.workers.dev/john/5.html#v24">John 5:24</a></p><blockquote>&quot;Amen, amen, I say to you, the one who hears my word and believes the one who sent me has eternal life and does not come into judgment, but has crossed over from death into life.&quot;</blockquote><p class="why">The same words: &quot;crossed over from death into life.&quot; Jesus says who crosses, the one who hears and believes. John says how they know it: they love the brothers.</p></div>
+<h2 class="sec" id="s5"><span>Love in deed and truth</span><a href="https://bible.odownhills.workers.dev/1-john/3.html#v16">verses 16-18</a></h2>
+<p class="v">Cain took his brother&#x27;s life (verse 12); &quot;that one&quot; laid down his own for us (verse 16). Love is known from that one act. Verse 17 turns to an ordinary day: a brother in need, and possessions to share. Compassion is pictured as something a person must shut off to refuse.</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref">Deuteronomy 15:7-8</p><blockquote><sup class="n">7</sup>If there is among you a poor person, one of your brothers, in one of your towns in your land that Yahweh your God is giving you, you must not harden your heart, and you must not shut your hand from your poor brother. <sup class="n">8</sup>But you must certainly open your hand to him, and you must certainly lend him enough for his need, whatever he lacks.</blockquote><p class="why">Verse 17 has the same three things: a brother, his need, and an act of shutting. Where the law speaks of a closed hand, John speaks of compassion shut off.</p></div>
+<div class="rs"><p class="ref">John 15:12-13</p><blockquote><sup class="n">12</sup>This is my commandment: that you should love one another just as I loved you. <sup class="n">13</sup>No one has greater love than this: that someone should lay down his life for his friends.</blockquote><p class="why">The Greek phrase behind &quot;lay down his life&quot; is found in the New Testament only in the Gospel of John and this letter. Jesus made his own death the measure of the love he commands.</p></div>
+<h2 class="sec" id="s6"><span>Boldness toward God</span><a href="https://bible.odownhills.workers.dev/1-john/3.html#v19">verses 19-24</a></h2>
+<p class="v">&quot;By this&quot; in verse 19 points back to love in deed and truth. The heart is not the final judge. In Greek, &quot;condemns&quot; is &quot;knows against&quot;: the heart knows something against us, but God &quot;knows all things&quot; (verse 20). Verse 23 gathers the commandments into one, believing and loving, and only here is Jesus named; until now he was &quot;that one.&quot; The chapter began with love the Father &quot;has given&quot; and ends with the spirit he &quot;gave,&quot; the letter&#x27;s first mention of the spirit.</p>
+<h3 class="rel">Related Scripture</h3>
+<div class="rs"><p class="ref">Ezekiel 36:26-27</p><blockquote><sup class="n">26</sup>And I will give you a new heart, and a new spirit I will put within you. And I will remove the heart of stone from your flesh, and I will give you a heart of flesh. <sup class="n">27</sup>And my spirit I will put within you, and I will make you walk in my statutes, and you will keep my judgments and do them.</blockquote><p class="why">Three things John joins here were promised together: a new heart, God&#x27;s spirit given within, and obedience to what he commands.</p></div>
+<div class="rs"><p class="ref">John 21:17</p><blockquote>He says to him the third time, &quot;Simon son of John, do you hold me dear?&quot; Peter was grieved that he said to him the third time, &quot;Do you hold me dear?&quot; And he says to him, &quot;Lord, you know all things; you know that I hold you dear.&quot; Jesus says to him, &quot;Feed my sheep.&quot;</blockquote><p class="why">Peter had denied Jesus three times (John 18:17, 25-27). Asked a third time, he rests on what Jesus knows: &quot;you know all things.&quot;</p></div>
+<div class="pn"><span class="prev">The first chapter here</span><span class="next">More chapters coming</span></div>
+<footer>A close reading of each chapter of The Bible, Freshly Translated, with Scripture explaining Scripture.</footer>
+</div></body></html>

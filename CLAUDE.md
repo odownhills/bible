@@ -6,8 +6,8 @@ Whole chapters are added every day. Books listed in `"first_books"` in `data/set
 (currently Job, then John; 1 John is done); after them the run continues in canonical order from the first
 untranslated chapter, Genesis 1 to Revelation 22.
 Accuracy matters more than speed.
-(The Quran is a separate translation and site built from this repository: see "Quran" at the end.
-Bible runs leave it alone.)
+(The Quran is a separate translation and site built from this repository: see "Quran" below.
+Bible runs leave it alone. So is the study site, which analyzes the Bible's chapters: see "Study site" at the end.)
 
 ## How much to translate
 `python3 scripts/next.py` prints this run's plan: one line per chapter (`<slug> <n> <Book> <estimated words>`),
@@ -127,3 +127,33 @@ A Quran run needs to do nothing for them.
   appended to `QURAN_GLOSSARY.md`, and `data/quran.json` when a surah is planned.
 - Never edit `sources/quran/`, an earlier part, a line under "Decided by Obay", or a `review:` line
   that Obay has set.
+
+# Study site
+
+A third site built from this repository: an analysis of each published Bible chapter, section by
+section (what it means, and the related Scripture), at https://study.odownhills.workers.dev (a third
+Cloudflare Worker, `study/wrangler.jsonc`, which deploys the `site-study/` folder on every push to main).
+A Bible run and a Quran run never touch it, and nothing above applies to it: an analysis run follows
+this section. There is no schedule for it yet. A chapter is analyzed when Obay asks (so far: 1 John 3,
+as a test).
+
+The analysis never changes the translation. It is written from the chapter as published.
+
+## Steps, repeated for each chapter, in order
+1. Follow `ANALYSIS_RULES.md` exactly (it lists what to read first) and write
+   `analysis/<slug>/<NNN>.md`. Only a published chapter can be analyzed.
+   The analysis, with its fresh translations of related passages, must be written by Fable 5.2 at
+   extra-high effort (Obay's explicit requirement). A thread that was started as Fable 5.2 at extra-high
+   effort does it itself. Any other run delegates the whole of this step with the Agent tool using
+   `model: "fable"` and `effort: "xhigh"`, one agent per chapter.
+2. `python3 scripts/study.py check analysis/<slug>/<NNN>.md` must print OK. If it fails, fix the
+   failures (up to 3 rounds). Never publish a failing file. Then reread the analysis against the chapter
+   and against every passage it quotes or names, and take out anything the text does not say.
+3. `python3 scripts/study.py` rebuilds `site-study/`, and `python3 scripts/build.py` rebuilds `site/`, where
+   the chapter's page gets its "Meaning" link (once `"study_url"` is set in `data/settings.json`).
+4. Commit on `main` with message `Add analysis: <Book> <n>`, `git pull --rebase origin main`, and push.
+
+## Limits
+- An analysis run changes only new files under `analysis/` and the rebuilt `site-study/` and `site/`.
+  It never edits a translation, a decision log, a glossary or an earlier analysis unless Obay asks.
+- `ANALYSIS_RULES.md` is Obay's prompt for this work and is improved over time: change it only when he asks.
