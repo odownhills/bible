@@ -24,7 +24,8 @@ The index of one site, under <site>/search/:
     w/_<word>.json   the places of a very common word ("the", "god"), in a file of its own (its entry says 1)
     t/...json        the text a result shows: a chapter's verses, a surah's verses, a study chapter's sections
     ar.txt, ar/      (the Quran site) every verse of the Arabic, in plain letters for matching and as the pages
-                     show it (see arabic_files)
+                     show it in the traditional script (see arabic_files)
+    arm/             the same verses as the pages show them in modern spelling, the default
     index.html, search.js   the search page
 The site's _headers file lets the other two sites read its index (and the Quran's font).
 
@@ -45,6 +46,7 @@ SITES = [
     {"id": "study", "name": "Study", "base": "https://study.odownhills.workers.dev"},
 ]
 QURAN_FONT = "https://quran.odownhills.workers.dev/fonts/scheherazade-new-arabic.woff2"
+ARABIC_FONT = "https://quran.odownhills.workers.dev/fonts/noto-naskh-arabic-400.woff2"   # the modern spelling's
 BIG = 6000   # a word whose places take more characters than this gets a file of its own
 
 
@@ -214,23 +216,40 @@ def quran_units(x):
 AR_CHUNK = 300   # verses in each file of the Arabic as shown (search/ar/<k>.txt)
 
 
-def arabic_files(shown):
+def arabic_files(shown, slots):
     """Every verse of the Arabic (sources/quran/), never changed. ar.txt, read whole by an Arabic search:
-    "2:255<TAB>plain words", a word's other plain spellings after "|" (see arabic_forms). ar/<k>.txt: the same
-    verses as the pages show them, one a line, AR_CHUNK verses a file, read only for the results on screen."""
-    plain, shown_lines = [], []
+    "2:255<TAB>plain words", a word's other plain spellings after "|" (see arabic_forms; the modern spelling of
+    the word is one of them, from sources/quran-modern/). ar/<k>.txt: the same verses as the pages show them in
+    the traditional script, one a line, AR_CHUNK verses a file, read only for the results on screen. arm/<k>.txt:
+    the same in modern spelling, word for word with the traditional words (slots(), scripts/quran_ar.py): the
+    modern words that start in one traditional word are joined by a no-break space (يَا أَيُّهَا), and a
+    traditional word in which no modern word starts is left empty, so that the n-th word is the same in both."""
+    plain, shown_lines, modern_lines = [], [], []
     for s in range(1, 115):
+        groups = slots(s)
         for line in open(os.path.join(ROOT, "sources", "quran", "%03d.txt" % s), encoding="utf-8"):
             if "\t" not in line:
                 continue
             v, text = line.rstrip("\n").split("\t", 1)
             if int(v) == 0:   # the opening line before the first verse
                 continue
-            plain.append("%d:%s\t%s" % (s, v, " ".join("|".join(arabic_forms(w)) for w in text.split(" "))))
+            ws, mod = text.split(" "), groups[int(v)]
+            if len(mod) != len(ws):
+                raise SystemExit("Search: surah %d verse %s has %d words in modern spelling, %d traditional" % (s, v, len(mod), len(ws)))
+            forms = []
+            for w, g in zip(ws, mod):
+                f = arabic_forms(w)
+                m = plain_ar("".join(g))
+                if m and m not in f:
+                    f.append(m)
+                forms.append("|".join(f))
+            plain.append("%d:%s\t%s" % (s, v, " ".join(forms)))
             shown_lines.append(shown(text))
+            modern_lines.append(" ".join("\u00a0".join(g) for g in mod))
     files = {"ar.txt": "\n".join(plain) + "\n"}
     for k in range(0, len(shown_lines), AR_CHUNK):
         files["ar/%d.txt" % (k // AR_CHUNK)] = "\n".join(shown_lines[k:k + AR_CHUNK]) + "\n"
+        files["arm/%d.txt" % (k // AR_CHUNK)] = "\n".join(modern_lines[k:k + AR_CHUNK]) + "\n"
     return files
 
 
@@ -289,8 +308,14 @@ def write_index(work, out, books, files, units, extra=None):
         h.update(written[f].encode("utf-8"))
     meta = {"v": 1, "site": work, "b": books, "w": sorted(shards), "n": len(units), "h": h.hexdigest()[:10]}
     if "ar.txt" in written:   # the Arabic never changes: its own fingerprint keeps it cached across new parts
-        meta["ar"] = hashlib.sha1(written["ar.txt"].encode("utf-8")).hexdigest()[:10]
+        h = hashlib.sha1()
+        for f in sorted(written):
+            if f == "ar.txt" or f.startswith(("ar/", "arm/")):
+                h.update(f.encode("utf-8"))
+                h.update(written[f].encode("utf-8"))
+        meta["ar"] = h.hexdigest()[:10]
         meta["arc"] = AR_CHUNK
+        meta["arm"] = 1   # the verses in modern spelling are there too (arm/)
     written["meta.json"] = dumps(meta)
     for f, text in written.items():
         p = os.path.join(out, "search", f)
@@ -325,7 +350,8 @@ h2.grp span{color:var(--text-soft);font-weight:400;letter-spacing:.06em}
 .hit mark{background:rgba(183,155,232,.3);color:#fff;border-radius:3px;padding:0 .08em}
 .hit .alt{font-style:italic;font-size:.88em;color:var(--alt-text)}
 .hit .note{font-style:italic;font-size:.85em;color:var(--text-soft)}
-.hit p.ar{font-family:"Quran Text","Noto Naskh Arabic","Geeza Pro","Arabic Typesetting",serif;font-size:1.5rem;line-height:2.1;direction:rtl;text-align:right}
+.hit p.ar{font-family:"Arabic Text","Noto Naskh Arabic","Geeza Pro","Arabic Typesetting",serif;font-size:1.35rem;line-height:2.1;direction:rtl;text-align:right}
+.hit p.ar.uth{font-family:"Quran Text","Noto Naskh Arabic","Geeza Pro","Arabic Typesetting",serif;font-size:1.5rem}
 .hit p.ar mark{padding:0}
 .hit p.en{font-size:.9em;color:var(--text-soft);margin-top:.35rem}
 .smore{display:block;width:100%;margin:1rem 0 0;font-family:var(--sans);font-size:.88rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:10px;padding:.75rem;cursor:pointer}
@@ -333,7 +359,7 @@ h2.grp span{color:var(--text-soft);font-weight:400;letter-spacing:.06em}
 .stips p{margin:0 0 .8rem}
 .stips .chips{justify-content:flex-start;margin:.2rem 0 1.2rem}
 .stips .chip{cursor:pointer}
-.stips .chip[lang=ar]{font-family:"Noto Naskh Arabic","Geeza Pro",serif;font-size:1.05rem}
+.stips .chip[lang=ar]{font-family:"Arabic Text","Noto Naskh Arabic","Geeza Pro",serif;font-size:1.05rem}
 .snote{font-family:var(--sans);font-size:.82rem;color:var(--text-soft);background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:.55rem .8rem;margin:.8rem 0}
 """
 
@@ -383,7 +409,7 @@ def build(work, out, x):
         books, files, units = bible_units(x)
     elif work == "quran":
         books, files, units = quran_units(x)
-        extra = arabic_files(x["shown"])
+        extra = arabic_files(x["shown"], x["slots"])
     else:
         books, files, units = study_units(x)
     known = write_index(work, out, books, files, units, extra)
@@ -391,9 +417,10 @@ def build(work, out, x):
     open(os.path.join(out, "search", "search.js"), "w", encoding="utf-8").write(js)
     js_name = "search.js?v=%s" % hashlib.sha1(js.encode("utf-8")).hexdigest()[:8]
     css = CSS
-    if work != "quran":   # the Quran site has the font already
-        css = ('@font-face{font-family:"Quran Text";src:url(%s) format("woff2");font-display:swap;'
-               'unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+FB50-FDFF,U+FE70-FEFF}\n' % QURAN_FONT) + css
+    if work != "quran":   # the Quran site has the fonts already
+        css = ''.join('@font-face{font-family:"%s";src:url(%s) format("woff2");font-display:swap;'
+                      'unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+FB50-FDFF,U+FE70-FEFF}\n' % (name, url)
+                      for name, url in (("Quran Text", QURAN_FONT), ("Arabic Text", ARABIC_FONT))) + css
     open(os.path.join(out, "search", "index.html"), "w", encoding="utf-8").write(
         x["page"](page_body(work, js_name), css))
     # Let the other two sites read this one's index, and on the Quran site its Arabic font.

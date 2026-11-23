@@ -13,7 +13,11 @@
    "en-<surah>") and in Arabic (scripts/quran_ar.py, manifest-ar.json, ids "ar-<surah>"). Their recordings
    play straight from the server instead of being downloaded whole first (they can be hours long), the
    seek bar marks where each section of the surah starts, and the Arabic words are shown right to left in
-   the Quran font, a verse or a phrase at a time, each verse closed with its number.
+   the Quran font, a verse or a phrase at a time, each verse closed with its number. The Arabic is shown in the
+   spelling the reader chose (Obay, 2026-11-23): modern spelling in an everyday font with plain verse numbers
+   (manifest-ar.json, the default), or the traditional Uthmani script in the Quran font with its verse signs
+   (manifest-ar-uthmani.json): the spelling of the page TV mode is opened from, else the choice remembered in
+   this browser (arScript, scripts/lang.js).
 
    Verse numbers (Obay, 2026-11-22: "the video doesn't show the verse numbers"): in English each verse's first
    word has its number before it, as on the page; the Arabic closes each verse with its number. Without
@@ -118,6 +122,8 @@ var CSS=
 '#tv.tv-noimg.tv-ui .tv-cap{-webkit-transform:translateX(-50%);transform:translateX(-50%)}'+
 '#tv.tv-rtl .tv-cap{direction:rtl;font-family:"Quran Text","Noto Naskh Arabic","Geeza Pro",serif;font-size:2.4rem;font-size:clamp(1.6rem,4.4vw,4.4rem);line-height:1.75;width:88vw;width:min(90vw,26em)}'+
 '#tv.tv-rtl .tv-cap .tv-end{color:#B79BE8;margin:0 .15em;white-space:nowrap}'+
+'#tv.tv-modern .tv-cap{font-family:"Arabic Text","Noto Naskh Arabic","Geeza Pro",serif;line-height:1.85}'+
+'#tv.tv-modern .tv-cap .tv-end{display:inline-block;min-width:1.75em;padding:0 .3em;font-size:.6em;line-height:1.7;text-align:center;vertical-align:.2em;border:1px solid rgba(183,155,232,.55);border-radius:999px}'+
 '#tv.tv-rtl.tv-noimg.tv-ui .tv-cap{opacity:.22}'+
 
 /* controls: they come up on a tap, a key or a move of the mouse, and leave again while it plays */
@@ -223,24 +229,28 @@ function coarse(){return !!(win.matchMedia&&win.matchMedia('(pointer:coarse)').m
 /* ---- what a chapter needs: fetched once, the next chapter ahead of time ---- */
 function manifest(id){
   // the Quran's whole surahs have their own lists, in Arabic and in English
-  var f=/^ar-/.test(id||'')?'manifest-ar.json':/^en-/.test(id||'')?'manifest-en.json':'manifest.json';
+  var f=/^ar-/.test(id||'')?(script()==='uthmani'?'manifest-ar-uthmani.json':'manifest-ar.json'):/^en-/.test(id||'')?'manifest-en.json':'manifest.json';
   if(!manifests[f]){ manifests[f]=json(ROOT+f); manifests[f].catch(function(){ delete manifests[f]; }); }
   return manifests[f];
 }
+function script(){   // the Arabic's spelling: the page's own, else the reader's choice
+  var ch=d.getElementById('ch'); return ch&&ch.getAttribute('data-script')||get('arScript','modern');
+}
 function bundle(c){
-  if(cache[c.id])return cache[c.id];
+  var key=c.id+(c.script?'.'+c.script:'');   // one surah in two spellings
+  if(cache[key])return cache[key];
   // The recording is downloaded whole and played from memory, as Listen + Read does: it can then be
   // moved around in at once, and the next chapter starts without a gap.
   var p=Promise.all([
-    json(ROOT+'tv/'+c.slug+'/'+c.chapter+'.json').catch(function(){return {verses:[],scenes:[]}}),
+    json(ROOT+(c.tv||'tv/'+c.slug+'/'+c.chapter+'.json')).catch(function(){return {verses:[],scenes:[]}}),
     fetch(ROOT+c.text).then(function(r){if(!r.ok)throw new Error('load');return r.text()}),
     c.sync?json(ROOT+c.sync).catch(function(){return null}):null,
     c.stream?ROOT+c.audio:fetch(ROOT+c.audio).then(function(r){if(!r.ok)throw new Error('load');return r.blob()}).then(function(b){return URL.createObjectURL(b)})
   ]).then(function(g){return {tv:g[0],text:g[1],sync:g[2],src:g[3]}});
-  cache[c.id]=p; order.push(c.id);
-  p.catch(function(){ if(cache[c.id]===p){ delete cache[c.id]; order.splice(order.indexOf(c.id),1); } });
+  cache[key]=p; order.push(key);
+  p.catch(function(){ if(cache[key]===p){ delete cache[key]; order.splice(order.indexOf(key),1); } });
   while(order.length>3){
-    var old=order[0]; if(S.me&&old===S.me.id){ if(order.length<2)break; order.push(order.shift()); continue; }
+    var old=order[0]; if(S.me&&old===S.me.id+(S.me.script?'.'+S.me.script:'')){ if(order.length<2)break; order.push(order.shift()); continue; }
     order.shift(); (function(q){ if(q) q.then(function(b){ if(b.src.indexOf('blob:')===0) URL.revokeObjectURL(b.src); },noop); })(cache[old]); delete cache[old];
   }
   return p;
@@ -426,10 +436,11 @@ function setup(b,o,mine){
   while((m=WORD.exec(text))){ S.seps.push(text.slice(last,m.index)); S.words.push(m[0]); last=m.index+m[0].length; }
   // a scene with no picture (a surah whose later parts are not pictured yet) shows the quiet background there
   S.scenes=(b.tv.scenes||[]).map(function(s){ return {w:s.w,img:s.img?ROOT+s.img:''}; }); S.verses=b.tv.verses||[];
-  S.rtl=c.lang==='ar'; S.ends={}; S.starts={};
+  S.rtl=c.lang==='ar'; S.ends={}; S.starts={}; S.modern=S.rtl&&c.script==='modern'; S.brk={};
+  (b.tv.breaks||[]).forEach(function(k){ S.brk[k]=1; });   // the modern words a pause sign follows (it is not shown)
   if(!S.rtl) S.verses.forEach(function(v){ if(v[0]>0) S.starts[v[1]]=v[0]; });   // the first word of each verse
   if(S.rtl) S.verses.forEach(function(v,k){ S.ends[(S.verses[k+1]?S.verses[k+1][1]:S.words.length)-1]=v[0]; });   // the last word of each verse
-  stage.classList.toggle('tv-noimg',!S.scenes.length||!S.scenes[0].img); stage.classList.toggle('tv-rtl',S.rtl);
+  stage.classList.toggle('tv-noimg',!S.scenes.length||!S.scenes[0].img); stage.classList.toggle('tv-rtl',S.rtl); stage.classList.toggle('tv-modern',S.modern);
   if(!S.scenes.length){ layers[0].classList.remove('tv-on'); layers[1].classList.remove('tv-on'); }
   function go(){
     audio.removeEventListener('loadedmetadata',go); if(mine!==S.serial)return;
@@ -467,7 +478,7 @@ function makeCards(){
     for(k=0;k<words.length;k++){
       if(starts[k]) cut(k);
       len+=words[k].length+1;
-      if((len>=46&&/[\u06d6-\u06dc]$/.test(words[k]))||len>=110) cut(k+1);
+      if((len>=46&&(/[\u06d6-\u06dc]$/.test(words[k])||S.brk[k]))||len>=110) cut(k+1);
     }
     cut(words.length);
     S.cards=cards; return;
@@ -513,7 +524,7 @@ function card(i){
   var c=S.cards[i],h='',k;
   for(k=c.a;k<c.b;k++){
     h+=(k>c.a?esc(S.seps[k]):'')+(S.starts[k]?'<span class="tv-n">'+S.starts[k]+'</span>':'')+'<span class="tv-w">'+esc(S.words[k])+'</span>';
-    if(S.rtl&&S.ends[k]) h+=' <span class="tv-end">\u06dd'+arabicNumber(S.ends[k])+'</span>';   // the verse's end, with its number
+    if(S.rtl&&S.ends[k]) h+=' <span class="tv-end">'+(S.modern?'':'\u06dd')+arabicNumber(S.ends[k])+'</span>';   // the verse's end, with its number
   }
   if(c.b<S.words.length&&/[—–]/.test(S.seps[c.b])) h+='—';
   capIn.innerHTML=h; cap.classList.remove('tv-out'); fit();

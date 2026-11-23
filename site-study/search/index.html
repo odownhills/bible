@@ -126,6 +126,7 @@ h3.rel{font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.1
 .rs .why{margin:0;font-size:.92em;line-height:1.65;color:var(--text-soft)}
 .rs .why+.why{margin-top:.6rem}
 @font-face{font-family:"Quran Text";src:url(https://quran.odownhills.workers.dev/fonts/scheherazade-new-arabic.woff2) format("woff2");font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+FB50-FDFF,U+FE70-FEFF}
+@font-face{font-family:"Arabic Text";src:url(https://quran.odownhills.workers.dev/fonts/noto-naskh-arabic-400.woff2) format("woff2");font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+FB50-FDFF,U+FE70-FEFF}
 
 .top .find{display:inline-flex;align-items:center}
 .top .find svg{width:1.15rem;height:1.15rem;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
@@ -152,7 +153,8 @@ h2.grp span{color:var(--text-soft);font-weight:400;letter-spacing:.06em}
 .hit mark{background:rgba(183,155,232,.3);color:#fff;border-radius:3px;padding:0 .08em}
 .hit .alt{font-style:italic;font-size:.88em;color:var(--alt-text)}
 .hit .note{font-style:italic;font-size:.85em;color:var(--text-soft)}
-.hit p.ar{font-family:"Quran Text","Noto Naskh Arabic","Geeza Pro","Arabic Typesetting",serif;font-size:1.5rem;line-height:2.1;direction:rtl;text-align:right}
+.hit p.ar{font-family:"Arabic Text","Noto Naskh Arabic","Geeza Pro","Arabic Typesetting",serif;font-size:1.35rem;line-height:2.1;direction:rtl;text-align:right}
+.hit p.ar.uth{font-family:"Quran Text","Noto Naskh Arabic","Geeza Pro","Arabic Typesetting",serif;font-size:1.5rem}
 .hit p.ar mark{padding:0}
 .hit p.en{font-size:.9em;color:var(--text-soft);margin-top:.35rem}
 .smore{display:block;width:100%;margin:1rem 0 0;font-family:var(--sans);font-size:.88rem;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:10px;padding:.75rem;cursor:pointer}
@@ -160,7 +162,7 @@ h2.grp span{color:var(--text-soft);font-weight:400;letter-spacing:.06em}
 .stips p{margin:0 0 .8rem}
 .stips .chips{justify-content:flex-start;margin:.2rem 0 1.2rem}
 .stips .chip{cursor:pointer}
-.stips .chip[lang=ar]{font-family:"Noto Naskh Arabic","Geeza Pro",serif;font-size:1.05rem}
+.stips .chip[lang=ar]{font-family:"Arabic Text","Noto Naskh Arabic","Geeza Pro",serif;font-size:1.05rem}
 .snote{font-family:var(--sans);font-size:.82rem;color:var(--text-soft);background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:.55rem .8rem;margin:.8rem 0}
 </style></head>
 <body><div class="wrap">
@@ -181,6 +183,6 @@ Typing in Arabic searches the Quran's Arabic, every surah, with or without vowel
 <div class="chips"><button class="chip" type="button">mercy</button><button class="chip" type="button">light</button><button class="chip" type="button">covenant</button><button class="chip" type="button">&quot;living creature&quot;</button><button class="chip" type="button">forgive</button><button class="chip" type="button" lang="ar">رحمة</button></div>
 </div>
 <script id="search-config" type="application/json">{"home":"study","sites":[{"base":"https://bible.odownhills.workers.dev","id":"bible","name":"Bible"},{"base":"https://quran.odownhills.workers.dev","id":"quran","name":"Quran"},{"base":"https://study.odownhills.workers.dev","id":"study","name":"Study"}]}</script>
-<script src="search.js?v=c9dd40b9" defer></script>
+<script src="search.js?v=cc00a575" defer></script>
 <footer>A close reading of each chapter of The Bible, Freshly Translated, with Scripture explaining Scripture.</footer>
 </div></body></html>
