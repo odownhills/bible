@@ -120,7 +120,9 @@ The Quran site also shows the Arabic alone (Obay, 2026-11-22): every surah's Ara
 `sources/quran/`, and an English | Arabic switch on every page. `WORK=quran python3 scripts/build.py`
 builds those pages too (`scripts/quran_ar.py`). The Arabic is read aloud only in a plain, ordinary
 speaking voice, never chanted or recited in the traditional way (Obay: "plain, honest scripture, no
-tradition"); until that voice is recorded, the Arabic pages are text only. A Quran run needs to do nothing for them.
+tradition"): Gemini's Sulafat, read by its own GitHub Action (`.github/workflows/arabic-voice.yml`,
+`scripts/arabic_voice.py`) on a model with its own free daily limit, starting at Surah 2 verse 75. Until a
+surah is read, its Arabic page is text only. A Quran run needs to do nothing for them.
 
 ## Limits
 - A Quran run changes only new part files, their decision logs, the rebuilt `site-quran/`, lines
