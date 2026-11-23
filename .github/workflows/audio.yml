@@ -84,11 +84,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          python3 scripts/build.py
-          WORK=quran python3 scripts/build.py
-          git add -A site site-quran data/audio.json
           if git ls-files site site-quran | grep -q '\.mp3$'; then echo "::error::A recording is about to be committed to git."; exit 1; fi
-          if git diff --cached --quiet; then echo "No new audio."; exit 0; fi
-          git commit -m "Add chapter audio"
-          git pull --rebase origin main
-          git push origin main
+          # builds both sites, commits, and starts again from main's newest commit if a push was first
+          python3 scripts/media.py push "Add chapter audio"
