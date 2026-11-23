@@ -902,3 +902,81 @@ Verses 221-242:
 - rijalan aw rukbanan "on foot or riding" (2:239). in khiftum with no object "if you are in fear".
 - ghayra ikhraj "without being driven out" (2:240), of akhraja min diyar "drive out of homes". min ma'ruf "that is
   right" (2:240), beside bi-l-ma'ruf "as is right" (2:234).
+Verses 243-260:
+- a-lam tara ila "Have you not seen" (2:243, 246, 258; 4:51, 60): "see" is kept, as in the Arabic, for a thing the
+  hearer is told of. aw ka-lladhi "Or like the one who" (2:259) goes on from it.
+- wa-hum uluf "in their thousands" (2:243). dhu fadlin 'ala "bountiful to" (2:243, 251; 10:60; 27:73; 40:61), beside
+  dhu l-fadli l-'azim "the possessor of great bounty" (2:105).
+- aqrada llaha qardan hasanan "lend God a good loan" (2:245; 5:12; 57:11, 18; 64:17; 73:20). man dha lladhi "Who is
+  it that" (2:245, 255). da'afa "multiply" (2:245, 261), ad'afan kathira "many times over"; di'f (2:265) is of the
+  same family.
+- qabada "withhold", basata "give amply" (2:245), where the Arabic names no object; zadahu bastatan "increase him
+  amply" (2:247; 7:69). The words are closing the hand and spreading it open (9:67; 5:64). What basata should be
+  with provision or the hand as its object (13:26; 5:28; 17:29) is left to be settled there.
+- al-mala' "the chiefs" (2:246; 7:60; 23:24; 27:29; 38:6). malik "king" (2:246, 247; 12:43).
+- hal 'asaytum "Might it be that" (2:246; 47:22), of 'asa an "it may be that". ma lana alla "why should we not"
+  (2:246; 14:12).
+- Talut "Saul", Jalut "Goliath", Dawud "David" (2:247-251). David and Goliath are the same names in their English
+  form. Talut is the Quran's own name for the king whom the Children of Israel were given before David, and it is
+  not the same name as "Saul"; the English name of that king is used, under the rule for a person whose name has
+  an English form. Told to Obay on 2026-11-22, to switch if he wants the Quran's own name kept.
+- sa'a "plenty" (2:247; 24:22; 65:7), of the family of al-musi' "the one who has plenty" and wasi' "vast".
+- at-tabut "the Chest" (2:248), with a capital as that one chest; "chest" at 20:39. Translated, and not "ark".
+- sakina "calm" (2:248; 9:26, 40; 48:4, 18, 26), beside itma'anna "be at rest" (2:260; 13:28; 89:27).
+- baqiyya "remnant" (2:248; 11:86, 116). al Musa "the family of Moses" (2:248; so 3:33; 4:54); al Fir'awn stays
+  "Pharaoh's people". taraka "leave" (2:17, 180, 248, 264), beside wadhara "leave behind".
+- fasala bi "set out with" (2:249; 12:94). jund, plural junud, "forces" (2:249, 250; 10:90).
+- laysa minni, innahu minni "is not one of mine", "is one of mine" (2:249; 14:36). ightarafa ghurfatan bi-yadihi
+  "scoop up a handful with his hand". jawaza "cross" (2:249; 7:138; 10:90).
+- la taqata lana bi "we have no strength against" (2:249), sharing the English of quwwa; "what we have no strength
+  to bear" may fit 2:286, as ataqa is "can bear" (2:184).
+- alladhina yazunnuna inside a story of the past: "those who thought that they would meet God" (2:249), the words
+  of 2:46.
+- fi'a "company" (2:249; 3:13; 8:16, 19, 45), qalila "small", kathira "large". ghalaba "overcome" (2:249; 3:12;
+  8:65; 30:3); hazama "defeat" (2:251; 54:45).
+- baraza li "come out against" (2:250). afragha 'ala "pour over" (2:250; 7:126; 18:96), beside afada "pour out".
+  thabbata "make firm" (2:250; 3:147; 14:27; 47:7); tathbit (2:265) is of the same family.
+- al-qawm al-kafirin "the disbelieving people" (2:250, 264, 286); al-qawm az-zalimin "the wrongdoing people" (2:258).
+- daf' "repelling", dafa'a "repel" (2:251; 22:40; 23:96; 41:34), beside dara'a "ward off". an-nasa ba'dahum bi-ba'd
+  "some people by means of others". fasadat "be corrupted" (2:251; 21:22; 23:71).
+- al-mursalin "those sent" (2:252; 7:6; 36:3), of arsala "send", beside rasul "messenger".
+- tilka r-rusul "Those messengers," (2:253), going back to "those sent" in the verse before. rafa'a ... darajat
+  "raise in degrees" (2:253; 6:83, 165; 12:76; 43:32; 58:11): not "by degrees", which in English is "little by little".
+- iqtatala "fight one another" (2:253; 28:15; 49:9). yaf'alu ma yurid "does what he wants" (2:253), as arada is
+  "want".
+- bay' "selling" (2:254, 275; 14:31; 24:37; 62:9), beside tijara "trade". khulla "friendship" (2:254); khilal (14:31)
+  and khalil (4:125; 43:67) are of the same family.
+- al-hayy "the Living" (2:255; 3:2; 20:111; 25:58; 40:65). al-qayyum "the Ever-Standing" (2:255; 3:2; 20:111): a
+  strong form of qa'im "standing", made like at-tawwab "the Ever-Relenting". Bracketed once, at 2:255 (decision
+  log, call: ask); no standing bracket.
+- sina "drowsiness", nawm "sleep" (2:255). akhadha, of sleep or pride, "take hold of" (2:206, 255).
+- shafa'a 'inda "intercede with" (2:255), of shafa'a "intercession".
+- ahata bi, of knowledge, "encompass" (2:255; 20:110; 27:22; 65:12); of people and of a fault it stays "surround"
+  (2:19, 81).
+- wasi'a "take in" (2:255; 6:80; 7:156; 40:7), of the family of wasi' "vast". kursi "seat" (2:255; 38:34), leaving
+  "throne" for 'arsh.
+- ada "tire" (2:255). hifz "watching over" (2:255), as hafiza 'ala is "watch over" (2:238).
+- al-'aliyy "the High" (2:255; 22:62; 31:30; 34:23; 40:12; 42:4), leaving "the Most High" for al-a'la (87:1; 92:20).
+  al-'azim "the Great" (2:255; 42:4; 56:74; 69:33).
+- ikrah "compulsion" (2:256), akraha "compel" (10:99; 16:106; 24:33): to make someone do what he hates, of the
+  family of kariha "hate".
+- ghayy "the wrong course" (2:256; 7:146), set against rushd "the right course"; ghawa "go wrong" (20:121; 53:2),
+  beside dalla "go astray" and dalala "error".
+- at-taghut "false gods" (2:256, 257; 4:51, 60, 76; 5:60; 16:36; 39:17): what is worshiped or followed in place of
+  God. The word is translated, not carried over. It is of the family of tughyan "excess" (2:15); tagha (20:24)
+  "go beyond all bounds". Bracketed once, at 2:256 (decision log, call: clear); no standing bracket.
+- istamsaka bi "grasp" (2:256; 31:22; 43:43), of the family of amsaka "keep". al-'urwa al-wuthqa "the firmest
+  handhold" (2:256; 31:22): the image stays. la nfisama laha "which does not break".
+- akhraja mina z-zulumati ila n-nur "bring out of the darkness into the light" (2:257; 5:16; 14:1, 5; 33:43; 57:9;
+  65:11).
+- yuhyi wa-yumit with no object "gives life and causes death" (2:258; 3:156; 7:158). buhita "be dumbfounded"
+  (2:258; 21:40).
+- marra 'ala "pass by" (2:259; 11:38; 12:105; 37:137). khawiya 'ala 'urushiha "fallen in on its roofs" (2:259;
+  18:42; 22:45).
+- labitha "stay" (2:259; 10:16; 18:19; 20:103); ba'da yawm "part of a day". tasannaha "spoil"; himar "donkey";
+  'izam "bones"; kasa "clothe" (2:259; 23:14), of kiswa "clothing".
+- anshaza "lift up" (2:259), leaving "raise" for rafa'a and "raise up" for ba'atha; the verb is "rise" at 58:11.
+  The other reading, and the other reading of "I know" at the end of 2:259, are in the decision log (call: clear).
+- a-wa-lam tu'min "Do you not believe?" (2:260). itma'anna "be at rest" (2:260; 13:28; 89:27). tayr "birds".
+- sara ila "draw to" (2:260; decision log, call: close). juz' "part" (2:260; 15:44; 43:15). ya'tinaka sa'yan "they
+  will come to you in haste" (2:260).
