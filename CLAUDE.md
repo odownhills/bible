@@ -117,10 +117,10 @@ sections to jump between (`scripts/quran_site.py`), and the same audio Action jo
 parts into one recording (`scripts/quran_join.py`). A Quran run needs to do nothing for this.
 
 The Quran site also shows the Arabic alone (Obay, 2026-11-22): every surah's Arabic text from
-`sources/quran/` with a human reciter's voice, Listen + Read and TV mode, and an English | Arabic switch
-on every page. `WORK=quran python3 scripts/build.py` builds those pages too (`scripts/quran_ar.py`), and
-the recitation is fetched by its own GitHub Action (`.github/workflows/recitation.yml`, `scripts/recite.py`).
-A Quran run needs to do nothing for them.
+`sources/quran/`, and an English | Arabic switch on every page. `WORK=quran python3 scripts/build.py`
+builds those pages too (`scripts/quran_ar.py`). The Arabic is read aloud only in a plain, ordinary
+speaking voice, never chanted or recited in the traditional way (Obay: "plain, honest scripture, no
+tradition"); until that voice is recorded, the Arabic pages are text only. A Quran run needs to do nothing for them.
 
 ## Limits
 - A Quran run changes only new part files, their decision logs, the rebuilt `site-quran/`, lines

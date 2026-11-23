@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""The Quran in Arabic: the Arabic text of every surah with a reciter's voice, beside the English site.
+"""The Quran in Arabic: the Arabic text of every surah, beside the English site, read aloud in a plain voice when
+its recording is ready.
 
 Built by `WORK=quran python3 scripts/build.py` together with the English pages (it calls build() below),
 into site-quran/:
@@ -8,13 +9,14 @@ into site-quran/:
     ar/<n>.html              one surah, whole, in the Arabic text of sources/quran/ (never translated)
     ar/listen.html, ar/tv.html   Listen and TV mode for the Arabic recordings
     manifest-ar.json         the surahs that have a recording (the English pages use manifest.json)
-    text/ar/<n>.txt          the words as recited (for TV mode's captions)
+    text/ar/<n>.txt          the words as read aloud (for TV mode's captions)
     tv/ar/<n>.json           where each verse starts, counted in words (for TV mode)
 
-Recordings are a human reciter's (see RECITER), fetched by scripts/recite.py into the R2 bucket as
-audio/ar/<n>.mp3 and listed in data/audio.json like every other recording; recite.py also writes the
-start time of every word, audio/ar/<n>.json, for Listen + Read and TV mode. A surah's page works with
-or without them: without a recording it is text only.
+Obay (2026-11-22): the Arabic is read in a plain, ordinary speaking voice, never chanted or recited in the
+traditional way ("plain, honest scripture, no tradition"). A recording goes in the R2 bucket as
+audio/ar/<n>.mp3, listed in data/audio.json like every other recording, with the start time of every word in
+site-quran/audio/ar/<n>.json for Listen + Read and TV mode. A surah's page works with or without them:
+without a recording it is text only.
 
 Every page of the Quran site has an English | Arabic switch at the top (scripts/lang.js), which lands on
 the same verse in the other language and remembers the choice in the browser.
@@ -31,10 +33,12 @@ import quran_site
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SURAHS = json.load(open(os.path.join(ROOT, "data", "quran.json"), encoding="utf-8"))
 NAMES = {s["n"]: s["name"] for s in json.load(open(os.path.join(ROOT, "data", "quran_arabic.json"), encoding="utf-8"))}
-RECITER = "Mahmoud Khalil al-Husary"
+# Who reads the recordings, as named on the pages ("" until the plain voice's recordings are made)
+VOICE = ""
 SLUG = "ar"
 FOOTER = ('The Arabic text of the Quran as written (the Hafs reading, from quranenc.com, CC BY-SA 4.0), with no '
-          'translation. Recitation by %s, from everyayah.com.' % RECITER)
+          'translation.' + (' Read aloud by %s.' % VOICE if VOICE else ''))
+NOT_YET = "The Arabic is not read aloud yet: a plain reading voice is on the way."
 
 # sources/quran/ writes the open (staggered) tanween with three older code points that only the
 # King Fahd Complex's own font draws as open tanween. On screen they are shown with the standard
@@ -87,9 +91,9 @@ def surah(n):
     return opening, verses
 
 
-def recited(n):
-    """The words of a surah in the order they are recited: the opening line (when apart), then every verse.
-    scripts/recite.py times exactly these words."""
+def spoken_words(n):
+    """The words of a surah in the order they are read aloud: the opening line (when apart), then every verse.
+    A recording's word times must be for exactly these words."""
     opening, verses = surah(n)
     return " ".join((opening or []) + [w for _, ws in verses for w in ws])
 
@@ -152,7 +156,7 @@ def build(out, x):
     for s in SURAHS:
         n = s["n"]
         opening, verses = surah(n)
-        spoken = recited(n)
+        spoken = spoken_words(n)
         count = len(words(spoken))
         rel = audio(n)
         secs = x["lengths"].get(rel) if rel else None
@@ -176,9 +180,9 @@ def build(out, x):
             parts.append('<p class="v">%s</p>' % " ".join(para))
         body_text = "\n".join(parts)
         if body_text.count('<span class="w">') != count:
-            raise SystemExit("Arabic surah %d: %d words on the page, %d recited" % (n, body_text.count('<span class="w">'), count))
+            raise SystemExit("Arabic surah %d: %d words on the page, %d read aloud" % (n, body_text.count('<span class="w">'), count))
 
-        # word timings from scripts/recite.py count only when made for exactly these words
+        # word timings count only when made for exactly these words
         sync = None
         if rel:
             try:
@@ -190,7 +194,7 @@ def build(out, x):
 
         nxt = n + 1 if n < len(SURAHS) else None
         data = (' data-id="%s-%d" data-title="%s" data-url="ar/%d.html" data-skip="0" data-lang="ar" data-stream="1"'
-                ' data-artist="%s"' % (SLUG, n, esc(title(n)), n, esc(RECITER)))
+                ' data-artist="%s"' % (SLUG, n, esc(title(n)), n, esc(VOICE or "The Quran in Arabic")))
         buttons = ""
         if rel:
             data += ' data-audio="../%s"' % rel
@@ -212,7 +216,7 @@ def build(out, x):
         bar = quran_site.section_bar(jumps, bool(rel))
         name = english_name(n)
         eyebrow = "Surah %d%s" % (n, " · " + name if name else "")
-        about = "%d verses" % s["verses"] + (" · recited by %s" % RECITER if rel else "")
+        about = "%d verses" % s["verses"] + (" · read aloud by %s" % VOICE if rel and VOICE else "")
         prev_link = '<a class="prev" href="%d.html">&larr; %s</a>' % (n - 1, esc(title(n - 1))) if n > 1 else \
             '<span class="prev">Beginning of the Quran</span>'
         next_link = '<a class="next" href="%d.html">%s &rarr;</a>' % (nxt, esc(title(nxt))) if nxt else \
@@ -236,7 +240,7 @@ def build(out, x):
             manifest.append({
                 "id": "%s-%d" % (SLUG, n), "book": "Surahs", "slug": SLUG, "chapter": n, "total": len(SURAHS),
                 "url": "ar/%d.html" % n, "audio": rel, "duration": secs, "text": "text/%s/%d.txt" % (SLUG, n),
-                "sync": sync, "title": title(n), "sub": "%d verses · %s" % (s["verses"], RECITER),
+                "sync": sync, "title": title(n), "sub": "%d verses" % s["verses"],
                 "lang": "ar", "stream": True,
             })
         cells.append('<a href="%d.html"><b class="arn" lang="ar">%s</b>Surah %d<small>%d verses%s</small></a>' % (
@@ -247,8 +251,8 @@ def build(out, x):
     # the Arabic home page
     have = len(manifest)
     sub = "The Arabic text of all 114 surahs, as written, with no translation. " + (
-        "Recited by %s%s." % (RECITER, "" if have == len(SURAHS) else " (%d of 114 surahs so far, more are on the way)" % have)
-        if have else "A recitation by %s is on the way." % RECITER)
+        "Read aloud in a plain voice%s." % ("" if have == len(SURAHS) else " (%d of 114 surahs so far, more are on the way)" % have)
+        if have else NOT_YET)
     resume = """<a class="continue" id="resume" href="#" hidden><small>Pick up where you left off</small><b></b></a>
 <script>
 (function(){
@@ -256,6 +260,7 @@ function get(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){
 function fmt(t){t=Math.floor(t||0);var m=Math.floor(t/60),x=t%60;return m+':'+(x<10?'0':'')+x}
 var s=get('lastSpot'),a=document.getElementById('resume'),href,small,label;
 if(!s||!s.url||!/^ar-/.test(s.id||''))return;
+if(!HEARD)s.mode='read';   // no recordings on the site (any more): pick up the reading
 if(s.mode==='listen'){href='listen.html';small='Keep listening';}
 else if(s.mode==='tv'){href='tv.html?c='+encodeURIComponent(s.id);small='Keep watching in TV mode';}
 else if(s.mode==='lr'){href='../'+s.url+'#resume-lr';small='Keep listening and reading';}
@@ -263,7 +268,7 @@ else{href='../'+s.url+(s.v>1?'#v'+s.v:'');small='Keep reading';}
 label=s.label+(s.mode==='read'?(s.v>1?', verse '+s.v:''):(s.t>3?' \\u00b7 at '+fmt(s.t):''));
 a.href=href;a.querySelector('small').textContent=small;a.querySelector('b').textContent=label;a.hidden=false;
 })();
-</script>"""
+</script>""".replace("HEARD", "true" if have else "false")
     body = ('<h1>The Quran in Arabic</h1><p class="sub">%s</p>%s<h3 class="group">Surahs</h3><div class="grid">%s</div>'
             % (esc(sub), resume, "".join(cells)))
     open(os.path.join(out, "ar", "index.html"), "w", encoding="utf-8").write(
@@ -272,9 +277,9 @@ a.href=href;a.querySelector('small').textContent=small;a.querySelector('b').text
     # Listen: the same player as the English site, over the Arabic recordings
     listen = open(os.path.join(ROOT, "scripts", "listen.html"), encoding="utf-8").read()
     listen = (listen.replace("'../manifest.json'", "'../manifest-ar.json'").replace("<h2>Chapters</h2>", "<h2>Surahs</h2>")
-              .replace("The Bible, Freshly Translated", RECITER))
+              .replace("The Bible, Freshly Translated", VOICE or "The Quran in Arabic"))
     if not manifest:
-        listen = '<h1>Listen</h1><p class="sub">%s</p>' % esc("A recitation by %s is on the way." % RECITER)
+        listen = '<h1>Listen</h1><p class="sub">%s</p>' % esc(NOT_YET)
     open(os.path.join(out, "ar", "listen.html"), "w", encoding="utf-8").write(
         x["page"]("Listen", listen, 1, "", footer=FOOTER, nav=nav(pill("ar", "../listen/", ""))))
 
@@ -282,11 +287,11 @@ a.href=href;a.querySelector('small').textContent=small;a.querySelector('b').text
     tv_cells = "".join('<a href="?c=%s" data-tv="%s"><b class="arn" lang="ar">%s</b>Surah %d<small>%s</small></a>' % (
         c["id"], c["id"], esc(NAMES[c["chapter"]]), c["chapter"], x["clock"](c["duration"]) if c["duration"] else "")
         for c in manifest)
-    body = ('<h1>TV mode</h1><p class="sub">The Arabic words light up as they are recited, over a calm background. '
+    body = ('<h1>TV mode</h1><p class="sub">The Arabic words light up as they are read aloud, over a calm background. '
             'Best on a TV, or on a phone turned sideways.</p>'
             '<a class="continue" id="tv-resume" href="#" hidden><small>Keep watching</small><b></b></a>'
             + ('<div class="grid">%s</div>' % tv_cells if manifest else
-               '<p class="tvnote">%s</p>' % esc("A recitation by %s is on the way." % RECITER)))
+               '<p class="tvnote">%s</p>' % esc(NOT_YET)))
     open(os.path.join(out, "ar", "tv.html"), "w", encoding="utf-8").write(
         x["page"]("TV mode", body, 1, x["tv_tag"], footer=FOOTER, nav=nav(pill("ar", "../tv/", ""))))
     return have
