@@ -15,7 +15,7 @@
 {"n": 14, "verses": 52, "arabic_words": 830},
 {"n": 15, "verses": 99, "arabic_words": 654},
 {"n": 16, "verses": 128, "arabic_words": 1844},
-{"n": 17, "verses": 111, "arabic_words": 1556},
+{"n": 17, "verses": 111, "arabic_words": 1556, "name": "The Night Journey", "parts": [[1, 21], [22, 44], [45, 65], [66, 89], [90, 111]]},
 {"n": 18, "verses": 110, "arabic_words": 1579},
 {"n": 19, "verses": 98, "arabic_words": 961},
 {"n": 20, "verses": 135, "arabic_words": 1335},

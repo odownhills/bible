@@ -1076,3 +1076,84 @@ Verses 261-286:
 - mawla "ally" (2:286; 3:150; 8:40; 22:78; 47:11), sharing the English of waliyy, of whose family it is: the one a
   person belongs with and is aided by, as the prayer goes straight on, "so aid us". Of the owner of a slave
   (16:76) "master" will fit.
+
+## Settled in Surah 17
+Verses 1-21:
+- The surah's name in data/quran.json is "The Night Journey". Its parts are planned as 1-21, 22-44, 45-65, 66-89
+  and 90-111; verse 22 opens the commands that verse 39 closes with the same words. This surah runs to about 2.2
+  English words for each Arabic word, more than Surah 2.
+- subhana lladhi "Glory to the one who" (17:1), as subhanahu is "Glory to him!".
+- asra bi, of God, "take by night" (17:1): the bi makes the verb "take", as dhahaba bi is "take away". Where a man
+  is told to set out with others (11:81; 15:65; 20:77; 26:52; 44:23) it is left to be settled there.
+- al-masjid al-aqsa "the Farthest Place of Worship" (17:1), with capitals like al-masjid al-haram "the Sacred Place
+  of Worship". al-masjid at 17:7 is lowercase, "the place of worship": the Arabic does not say there which one it
+  is, and the English leaves it as open. baraka hawlahu "bless its surroundings" (17:1); baraka fi (7:137; 21:71,
+  81) is the same verb.
+- as-sami' al-basir "the Hearing, the Seeing" (17:1); basir said of him plainly stays "sees" (17:17, 30, 96).
+- wakil "one to rely on" (17:2; so 17:65, 68, 86): the one a matter is handed over to. With 'ala and people (17:54;
+  6:107) "in charge of" may fit. tawakkala 'ala (3:122) is of the same family and is left to be settled there;
+  "rely on" would keep the two heard together where they stand side by side (4:81; 33:3). Not "guardian" or
+  "protector" (see waliyy), and not "trust", which is amina.
+- What the Book says at 17:2-3 is in quotation marks after a colon, as at 2:83, and the descendants of 17:3 are the
+  ones spoken to. The decree of 17:4-7 follows a colon with no quotation marks, because the Arabic does not mark
+  where its words end. The saying at 17:14 follows a colon at the end of 17:13.
+- hamala "carry" (17:3, 70). shakur "thankful" (17:3), sharing the English of shakir.
+- qada ila "decree to" (17:4; 15:66): a decision made and told to someone, of the family of qada amran "decide a
+  matter". qada alla (17:23) is the same verb. la- with the stressed verb "will certainly" (17:4), as at 2:155.
+- 'ala, of people, "rise high", 'uluww "height": la-ta'lunna 'uluwwan kabiran "you will certainly rise to a great
+  height" (17:4). The picture of height stays. It is the word said of Pharaoh (28:4; 10:83) and set beside
+  corruption at 28:83, and the same two words are said of God at 17:43. ma 'alaw "whatever they overcome" (17:7).
+- 17:5-7 stand in the English future, as words of the decree; the other way of reading them is in the decision log
+  (17:5, call: ask). fa-idha ja'a "So when ... comes" (17:5, 7, 104; 18:98; 23:27), beside fa-lamma ja'a "So when
+  ... came" (11:66, 82).
+- wa'd "promise" (17:5, 7, 104, 108); wa'd maf'ul "a promise carried out" (17:5, 108; 73:18). wa'du l-akhira at
+  17:7 is "the promise of the last one", the second of the two times; the same words at 17:104 are to be weighed
+  there.
+- ba'atha 'ala "raise up against" (17:5; 7:167). ba's "force in battle"; ulu ba'sin shadid "fierce in battle" (17:5;
+  27:33; 48:16), as hina l-ba's is "in time of battle" (2:177).
+- jasa khilala "go back and forth among" (17:5). al-karra 'ala "the turn against" (17:6), of karra "go back" (2:167).
+- amadda bi "supply with" (17:6, 20; 23:55; 26:132-133; 71:12), sharing the English of zad (2:197). banun "sons"
+  (17:6, 40). nafir "men", those who go out with someone (17:6): akthara nafiran "more numerous in men".
+- asa'a "do evil" (17:7), of the family of sayyi'a and su' "evil". sa'a wujuhahum "bring grief to their faces"
+  (17:7; 67:27) is of the same root. fa-laha "it is for yourselves", as bare as the Arabic.
+- The purpose clauses of 17:7 have no main verb in Arabic. "It is so that they may" is the small wording English
+  needs, and no "we raise them up" is supplied. The other readings of the first verb there ("he may", "we may")
+  say the same thing and are not noted.
+- tabbara "bring to ruin", tabbara tatbiran "bring to utter ruin" (17:7; 25:39). dammara "demolish", dammara
+  tadmiran "demolish completely" (17:16; 25:36). Both stand beside ahlaka "destroy" (17:16, 17).
+- hasir "prison" (17:8), of the family of uhsira "be held back" (2:196); the other sense is in the decision log
+  (call: clear).
+- lillati hiya aqwam "to what is straightest" (17:9), as the line for 2:282 planned. a'tada "prepare" (17:10),
+  sharing the English of a'adda.
+- al-insan "man", with no "the" (17:11, 53, 67, 83, 100); kullu insan "every person" (17:13). da'a bi "call for"
+  (17:11), du'a'ahu bi-l-khayr "as he calls for good".
+- 'ajul "hasty" (17:11), al-'ajila "the hasty life" (17:18; 75:20; 76:27), 'ajjala li "hasten for" (17:18): one
+  root in Arabic, kept as one in English. "Life" is the small word English needs, as with "the hereafter".
+- maha "erase" (17:12; 13:39), beside mahaqa "wipe out". mubsir, of the day, "giving sight" (17:12; 10:67; 27:86);
+  of a sign that is given (17:59; 27:13) it is left to be settled there. 'adad as-sinin wa-l-hisab "the number of
+  the years and the reckoning" (17:12; 10:5).
+- fassala "set out in detail" (17:12; 6:119; 11:1; 41:3), beside bayyana "make clear".
+- alzama "fasten" (17:13); 'unuq "neck" (17:13, 29). ta'ir "fate" (17:13): the word is "bird", and it is the
+  Quran's word for an omen (7:131; 27:47; 36:19), noted once at 17:13. What it should be in those verses, beside
+  the verb for seeing an evil omen in someone, is left to be settled there.
+- kitab of a person's record "book", lowercase (17:13, 14, 71). manshur "spread open" (17:13; 52:3; 81:10). qara'a
+  "read" (17:14, 71, 93), beside tala "recite"; with the Quran as its object (17:45, 106) it is left to be settled
+  there.
+- kafa bi ... "is enough as" (17:14, 17, 65, 96). hasib "reckoner" (17:14; 4:86; 33:39), of hisab "reckoning".
+- yahtadi li-nafsihi "is guided for himself", yadillu 'alayha "goes astray against himself" (17:15; 10:108; 39:41).
+- wizr "burden", wazira "bearer of burdens", wazara "bear" (17:15; 6:164; 35:18; 39:7; 53:38). The noun shares its
+  English with the verb kallafa (2:286). himl (35:18), of hamala, will need "load".
+- ma kunna mu'adhdhibin "we would not punish" (17:15), as ma kana llahu li is "God would not" (2:143).
+- mutraf "one who lives in luxury", mutrafuha "those in it who live in luxury" (17:16; 34:34; 43:23); atrafa
+  (23:33) is of the same family. The other reading of "we command" at 17:16 is in the decision log (call: clear).
+- haqqa 'alayhi l-qawl "the word comes true against it" (17:16; 36:7). qawl shares "word" with kalima here: the
+  Quran says the same thing with both (32:13; 11:119).
+- qarn, plural qurun, "generation" (17:17; 6:6; 10:13). dhanb, plural dhunub, "sin" (17:17), sharing the English of
+  ithm: English has no second plain word for it.
+- ja'alna lahu jahannam "we make Hell his" (17:18). saliya "burn in" (17:18; 4:10; 38:56).
+- madhmum "condemned" (17:18, 22; 68:49): the word set against praise. malum (17:29, 39) is another word and can
+  be "blamed". madhur "banished" (17:18, 39; 7:18), leaving "driven away" for khasi' (2:65).
+- sa'a laha sa'yaha "strive for it with the striving due to it" (17:19), sa'y "striving"; mashkur "thanked" (17:19;
+  76:22), of shakara "give thanks".
+- 'ata' "gift" (17:20; 11:108; 38:39). mahzur "restricted" (17:20).
+- tafdil "setting some above others" (17:21, 70), of faddala 'ala "set above". wa-la- "indeed" (17:21).
