@@ -8,7 +8,7 @@ name: Read the Arabic aloud
 # after that each run finds nothing to do. No text is changed and nothing is translated.
 on:
   push:
-    branches: [main, claude/project-thread-t95ud5]
+    branches: [main]
     paths: ["scripts/arabic_voice.py", ".github/workflows/arabic-voice.yml"]
   schedule:
     - cron: "41 */3 * * *"
@@ -49,9 +49,10 @@ jobs:
         env:
           MAX_CHUNKS: ${{ inputs.max }}
         run: |
-          # a push to the trial branch reads only two chunks, as a test
-          if [ "$GITHUB_REF_NAME" != main ]; then MAX_CHUNKS=2; fi
-          python3 scripts/arabic_voice.py --minutes 110 ${MAX_CHUNKS:+--max "$MAX_CHUNKS"}
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # each piece goes on the site as soon as it passes the check
+          python3 scripts/arabic_voice.py --minutes 110 --publish "$GITHUB_REF_NAME" ${MAX_CHUNKS:+--max "$MAX_CHUNKS"}
       - name: Publish
         if: always() && steps.read.outcome != 'skipped'
         run: |

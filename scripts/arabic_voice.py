@@ -26,6 +26,7 @@ lights up only those verses' words.
 
     python3 scripts/arabic_voice.py --minutes 100   # read chunks until the free limit or the time runs out
     python3 scripts/arabic_voice.py --max 2          # read at most 2 chunks
+    python3 scripts/arabic_voice.py --publish main  # and put each chunk on the site as soon as it is kept
     python3 scripts/arabic_voice.py publish         # commit and push what was read to main (the GitHub Action does)
     python3 scripts/arabic_voice.py plan            # list the chunks in the order they are read
 Needs GEMINI_API_KEY, OPENAI_API_KEY, ffmpeg and the R2 secrets (scripts/media.py).
@@ -60,7 +61,10 @@ VOICE = "Sulafat"
 STYLE = "Read this aloud in a plain, natural speaking voice, not chanted: "
 CHUNK = 5000          # characters of Arabic (with its vowel marks) per request: about 7 minutes of speech
 START = (2, 75)       # Obay: start at Surah 2 verse 75
-PARALLEL = 2          # requests at once (the free limit allows a few a minute)
+# Requests at once. The free tier lets only about 3 requests start each minute (a request over that is
+# answered "too many" and tried again a little later), and each takes a few minutes, so a few run together.
+PARALLEL = int(os.environ.get("ARABIC_PARALLEL") or 5)
+SPACING = 21          # seconds between starting two requests
 TAKES = 3
 RATE = 24000          # the voice's own sample rate
 SIGNS = str.maketrans({"۞": "", "۩": ""})   # marks on the page that are not words
@@ -513,7 +517,9 @@ def join_all(have):
 
 # ---------------------------------------------------------------- a run
 
-def main(minutes, most=None):
+def main(minutes, most=None, publish_to=None):
+    """Read chunks; with publish_to (a branch), each kept chunk goes on the site at once: its surah is joined
+    again and pushed, so the pages fill in while the run goes on."""
     if not media.configured():
         raise SystemExit("The R2 secrets are missing (see scripts/media.py).")
     for k in ("GEMINI_API_KEY", "OPENAI_API_KEY"):
@@ -533,7 +539,7 @@ def main(minutes, most=None):
             while queue and not stop[0] and len(running) < PARALLEL and time.time() - began < minutes * 60:
                 c = queue.pop(0)
                 running[pool.submit(read_chunk, c, work)] = c
-                time.sleep(3)
+                time.sleep(SPACING)
             if not running:
                 break
             fin, _ = concurrent.futures.wait(list(running), return_when=concurrent.futures.FIRST_COMPLETED)
@@ -571,6 +577,12 @@ def main(minutes, most=None):
                 print("Chunk %s (%s): kept, %.0f seconds, %.0f%% of the words heard"
                       % (c["id"], ", ".join("%d:%d-%d" % tuple(s) for s in c["segments"]), report["seconds"],
                          report["heard"] * 100), flush=True)
+                if publish_to:
+                    try:
+                        join_all(have)
+                        publish(publish_to)
+                    except (SystemExit, Exception) as e:   # the end of the run publishes again
+                        print("Could not publish yet (%s)" % e, flush=True)
             if time.time() - began > minutes * 60 and queue and not stop[0]:
                 print("Time is up for this run; the next run carries on.", flush=True)
                 stop[0] = True
@@ -636,4 +648,5 @@ if __name__ == "__main__":
                 [(v, ws) for _, v, ws in chunk_lines(c)]))
     else:
         main(int(args[args.index("--minutes") + 1]) if "--minutes" in args else 100,
-             int(args[args.index("--max") + 1]) if "--max" in args else None)
+             int(args[args.index("--max") + 1]) if "--max" in args else None,
+             args[args.index("--publish") + 1] if "--publish" in args else None)
