@@ -5,12 +5,13 @@
     python3 scripts/check.py translations/quran-2/003.md   # check one part (works out WORK itself)
     python3 scripts/quran.py                            # print the next part to translate
 
-A short surah is one page. A long surah is published in parts of about a thousand English words,
-planned in data/quran.json ("parts": [[first verse, last verse], ...]). To the other scripts each
-surah is a "book" with the slug quran-<surah> whose "chapters" are its parts, so pages, recordings,
-word timings and pictures all keep the usual paths: translations/quran-2/003.md,
-audio/quran-2/3.mp3. What a part is called on the site comes from label(): "Quran 2:62-82", or
-"Quran 1" when one part holds the whole surah. Rules for the translation: QURAN_RULES.md.
+A short surah is translated as one part. A long surah is translated in parts of about a thousand English
+words, planned in data/quran.json ("parts": [[first verse, last verse], ...]). To the other scripts each
+surah is a "book" with the slug quran-<surah> whose "chapters" are its parts, so part files, recordings
+and word timings all keep the usual paths: translations/quran-2/003.md, audio/quran-2/3.mp3. What a part
+is called comes from label(): "Quran 2:62-82", or "Quran 1" when one part holds the whole surah.
+Readers never see the parts: the site shows each surah as one page (scripts/quran_site.py), with its
+parts' recordings joined into one (scripts/quran_join.py). Rules for the translation: QURAN_RULES.md.
 """
 import json
 import os
@@ -77,17 +78,6 @@ def done(b):
     return b["ranges"][-1][1] == b["total_verses"]
 
 
-def surah_page(b, esc):
-    """Body of a surah's own page: its parts by verse range."""
-    cells = "".join('<a href="%d.html">Verses %d-%d</a>' % (k + 1, a, z) for k, (a, z) in enumerate(b["ranges"]))
-    if not done(b):
-        cells += "<span>Verses %d-%d<small>coming</small></span>" % (b["ranges"][-1][1] + 1, b["total_verses"])
-    progress = ("%d verses" % b["total_verses"]) if done(b) else (
-        "verses 1-%d of %d translated" % (b["ranges"][-1][1], b["total_verses"]))
-    return '<h1>%s</h1><p class="sub">%s</p><div class="grid">%s</div>' % (
-        esc(b["name"]), esc(" · ".join(x for x in (b["title"], progress) if x)), cells)
-
-
 def home(bks, esc):
     """The list of surahs on the home page, and the line under the site's title."""
     cells = []
@@ -96,9 +86,8 @@ def home(bks, esc):
             note = "%d verses" % b["total_verses"]
         else:
             note = "verses 1-%d of %d" % (b["ranges"][-1][1], b["total_verses"])
-        href = "%s/1.html" % b["slug"] if b["chapters"] == 1 and done(b) else "%s/" % b["slug"]
-        cells.append('<a href="%s">%s<small>%s</small></a>' % (
-            href, esc(b["name"]), esc(" · ".join(x for x in (b["title"], note) if x))))
+        cells.append('<a href="%s/">%s<small>%s</small></a>' % (
+            b["slug"], esc(b["name"]), esc(" · ".join(x for x in (b["title"], note) if x))))
     started = {b["surah"] for b in bks}
     rest = [s["n"] for s in SURAHS if s["n"] not in started]
     if rest:
