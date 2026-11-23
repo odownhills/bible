@@ -84,7 +84,7 @@ function build(){
   window.addEventListener('pagehide',function(){ savePos(true); });
 }
 function hooks(){
-  // The lock screen's buttons. Set again each time Listen + Read starts, because TV mode (scripts/tv.js)
+  // The lock screen's buttons. Set again each time Listen + Read starts, because Watch (scripts/tv.js)
   // uses them while it is open and clears them when it closes.
   if(!('mediaSession' in navigator))return;
   var set=function(a,f){try{navigator.mediaSession.setActionHandler(a,f)}catch(e){}};

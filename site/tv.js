@@ -1,7 +1,7 @@
-/* TV mode: a chapter's recording with a picture for each part of it and the words lighting up as they
-   are spoken, full screen. It opens over the page it is started from (a chapter page's "TV mode" button,
-   or a card on the TV page), so one tap goes straight to the full-screen picture with the voice playing,
-   and carries on from chapter to chapter.
+/* Watch (called "TV mode" until 2026-11-23; its code and files keep the name "tv"): a chapter's recording with
+   a picture for each part of it and the words lighting up as they are spoken, full screen. It opens over the
+   page it is started from (a chapter page's "Watch" button, or a chapter on a Watch page), so one tap goes
+   straight to the full-screen picture with the voice playing, and carries on from chapter to chapter.
 
    It reuses what Listen + Read already has: the recording, the read-aloud text (text/<book>/<n>.txt, which
    never holds alternate readings or notes) and the start time of every word (audio/<book>/<n>.json, made
@@ -223,7 +223,11 @@ function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')}
 function noop(){}
 function json(u){return fetch(u).then(function(r){if(!r.ok)throw new Error('load');return r.json()})}
 function name(c){return c.title||c.book+' '+c.chapter}
-function home(){return !!d.getElementById('tv-resume')}   // the TV page itself, not a chapter page
+function home(){return !!(d.getElementById('tv-resume')||d.getElementById('tv-list'))}   // a Watch page, not a chapter page
+function listPage(c){   // the Watch page that lists a chapter: its book's (the Bible), or the surahs in English or Arabic
+  var id=(c&&c.id)||'';
+  return ROOT+(/^ar-/.test(id)?'ar/watch.html':/^en-/.test(id)||!c?'watch/':'watch/'+c.slug+'/');
+}
 function coarse(){return !!(win.matchMedia&&win.matchMedia('(pointer:coarse)').matches)}
 
 /* ---- what a chapter needs: fetched once, the next chapter ahead of time ---- */
@@ -261,7 +265,7 @@ function build(){
   if(stage)return;
   var st=d.createElement('style'); st.textContent=CSS; d.head.appendChild(st);
   stage=d.createElement('div'); stage.id='tv'; stage.className='tv-paused'; stage.hidden=true; stage.tabIndex=-1;
-  stage.setAttribute('role','dialog'); stage.setAttribute('aria-label','TV mode');
+  stage.setAttribute('role','dialog'); stage.setAttribute('aria-label','Watch');
   function b(id,label,inner,cls){ return '<button type="button" id="tv-'+id+'" aria-label="'+label+'" title="'+label+'"'+(cls?' class="'+cls+'"':'')+'>'+inner+'</button>'; }
   stage.innerHTML=
     '<div class="tv-pic"><img alt=""></div><div class="tv-pic"><img alt=""></div>'+
@@ -287,11 +291,11 @@ function build(){
         b('full','Full screen',svg(I.full))+
       '</div>'+
     '</div>'+
-    '<div class="tv-ctl tv-x">'+b('close','Close TV mode',svg(I.x))+'</div>'+
+    '<div class="tv-ctl tv-x">'+b('close','Close',svg(I.x))+'</div>'+
     '<div class="tv-cover" id="tv-cover" hidden>'+
-      '<div class="tv-kick" id="tv-kick">TV mode</div><div class="tv-title" id="tv-title">&nbsp;</div><div class="tv-msg" id="tv-msg"></div>'+
+      '<div class="tv-kick" id="tv-kick">Watch</div><div class="tv-title" id="tv-title">&nbsp;</div><div class="tv-msg" id="tv-msg"></div>'+
       '<button class="tv-go" id="tv-go" type="button">'+svg(I.play)+'<span id="tv-go-t">Play</span></button>'+
-      '<div class="tv-alt"><button type="button" id="tv-again" hidden>Start from the beginning</button><a id="tv-all" href="'+ROOT+'tv/" hidden>All TV chapters</a><button type="button" id="tv-leave">Close</button></div>'+
+      '<div class="tv-alt"><button type="button" id="tv-again" hidden>Start from the beginning</button><a id="tv-all" href="'+ROOT+'watch/" hidden>Choose another chapter</a><button type="button" id="tv-leave">Close</button></div>'+
     '</div>'+
     '<div class="tv-spin" id="tv-spin" hidden></div>'+
     '<div class="tv-toast" id="tv-toast" role="status"><span></span><button type="button" hidden></button></div>';
@@ -389,7 +393,7 @@ function toast(text,action,fn,ms){
 function cover(kind,pos){
   S.cover=kind||null; el.cover.hidden=!kind; stage.classList.toggle('tv-covered',!!kind);
   if(!kind)return;
-  var c=S.me,plain=S.ready&&!S.scenes.length,go='Play',msg='',kick='TV mode',title=c?name(c):'TV mode',again=false,all=false;
+  var c=S.me,plain=S.ready&&!S.scenes.length,go='Play',msg='',kick='Watch',title=c?name(c):'Watch',again=false,all=false;
   if(kind==='start'){
     if(pos>5){ go='Carry on from '+fmt(pos); again=true; }
     if(plain) msg='Pictures for this chapter are on the way. Until then it plays with its words alone.';
@@ -402,8 +406,8 @@ function cover(kind,pos){
     all=!home();
   }
   el.kick.textContent=kick; el.title.textContent=title; el.msg.textContent=msg;
-  el.go.hidden=!go; el['go-t'].textContent=go; el.again.hidden=!again; el.all.hidden=!all;
-  el.leave.textContent=d.getElementById('ch')?'Back to the chapter':home()?'All TV chapters':'Close';
+  el.go.hidden=!go; el['go-t'].textContent=go; el.again.hidden=!again; el.all.hidden=!all; el.all.href=listPage(c);
+  el.leave.textContent=d.getElementById('ch')?'Back to the chapter':home()?'Back to the list':'Close';
   ui(false); stage.classList.remove('tv-idle'); spin(false);
   if(stage.contains(d.activeElement)||d.activeElement===d.body) (go?el.go:el.leave).focus();
 }
@@ -589,7 +593,7 @@ function savePos(force){
   var pos=get('listenPos',{}),id=S.me.id,t=audio.currentTime;
   if(t>3&&(!audio.duration||t<audio.duration-3)) pos[id]=Math.floor(t); else delete pos[id];
   put('listenPos',pos);
-  // the one place the site reopens to (see scripts/read.js), and the TV page's "Keep watching"
+  // the one place the site reopens to (see scripts/read.js), and the Watch page's "Keep watching"
   var spot={mode:'tv',id:id,url:S.me.url,label:name(S.me),t:pos[id]||0,at:now};
   put('lastSpot',spot); put('tvLast',spot);
 }
@@ -604,7 +608,7 @@ function posState(){
 }
 function media(){
   if(!('mediaSession' in navigator))return;
-  try{ navigator.mediaSession.metadata=new MediaMetadata({title:name(S.me),artist:SITE,album:'TV mode',
+  try{ navigator.mediaSession.metadata=new MediaMetadata({title:name(S.me),artist:SITE,album:'Watch',
     artwork:S.me.poster?[{src:ROOT+S.me.poster,sizes:'640x362',type:'image/jpeg'}]:[]}); }catch(e){}
 }
 function hooks(on){
@@ -628,7 +632,7 @@ function goFull(){
 function leaveFull(){ var x=d.exitFullscreen||d.webkitExitFullscreen; if(x&&fsEl()){ try{ var p=x.call(d); if(p&&p.catch) p.catch(noop); }catch(e){} } }
 function fsChange(){
   if(!stage)return; var on=!!fsEl(),mine=S.leaving; S.leaving=false; icons();
-  // On a phone, the back gesture leaves full screen; that is taken as leaving TV mode, back to the page.
+  // On a phone, the back gesture leaves full screen; that is taken as leaving Watch, back to the page.
   if(!on&&S.open&&!mine&&coarse()) setTimeout(function(){ if(S.open&&!d.hidden&&!fsEl()) close(); },350);
 }
 
@@ -684,7 +688,7 @@ function open(id,o){
   o=o||{}; build();
   if(!S.open){
     S.open=true; S.opener=o.opener||null; stage.hidden=false; d.documentElement.classList.add('tv-open');
-    // Listen + Read hands over: it stops and keeps its place, and TV mode carries on from that same second
+    // Listen + Read hands over: it stops and keeps its place, and Watch carries on from that same second
     var lr=d.getElementById('lr-close'); if(lr&&d.body.classList.contains('lr')) lr.click();
     if('CloseWatcher' in win){ try{ cw=new win.CloseWatcher(); cw.onclose=function(){ cw=null; close(); }; }catch(e){ cw=null; } }
     hooks(true); focusStage();
@@ -720,7 +724,7 @@ function close(){
 }
 
 /* ---- the pages ---- */
-function resume(){   // the TV page's "Keep watching"
+function resume(){   // the Watch page's "Keep watching"
   var a=d.getElementById('tv-resume'),s=get('tvLast',null); if(!a||!s||!s.id)return;
   var t=get('listenPos',{})[s.id]||0;
   a.href='?c='+encodeURIComponent(s.id); a.setAttribute('data-tv',s.id);

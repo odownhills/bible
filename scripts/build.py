@@ -47,9 +47,11 @@ else:
     SITE_TITLE, FOOTER = "The Bible, Freshly Translated", "An original translation from the Hebrew and Greek."
     HOME, UNIT, START = "Books", "chapter", "Beginning of the Bible"
 BY_SLUG = {b["slug"]: b for b in BOOKS}
-# TV mode (scripts/tv.js and the TV page). The Bible's chapters get TV mode once their pictures are made. Every
-# surah of the Quran with a recording plays in TV mode, with the pictures of the parts that have them and its words
-# over a quiet background elsewhere (scripts/quran_site.py).
+# Watch (called "TV mode" until 2026-11-23, and still "tv" in file names and code): scripts/tv.js plays a recording
+# full screen with pictures of what it says and the words lighting up. Every recorded chapter of the Bible can be
+# watched, with its pictures once they are made and with its words alone until then; so can every recorded surah of
+# the Quran, with the pictures of the parts that have them (scripts/quran_site.py). The Watch pages list them the way
+# the reading pages do (Obay, 2026-11-23): the books, then a book's chapters; the Quran's surahs.
 TV = WORK in ("bible", "quran")
 PICTURES = WORK == "bible"   # the Bible's per-chapter TV files; the Quran's are written per surah
 # The study site (scripts/study.py) analyzes Bible chapters. Once its address is set in data/settings.json
@@ -172,7 +174,7 @@ sup.n.here{color:var(--bg);background:var(--accent);border-radius:4px;padding:.1
 .top .find svg{width:1.2rem;height:1.2rem;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
 body.lr .toast{bottom:calc(10.5rem + env(safe-area-inset-bottom,0px))}
 """
-if TV:   # the TV link beside Listen, and a chapter's TV mode button
+if TV:   # the Watch link beside Listen, and a chapter's Watch button
     CSS += """.top span{display:flex;gap:1.4rem}
 .btn.tv{background:var(--shade);color:var(--heading);border-color:var(--accent)}
 .btn.tv svg{width:1.15em;height:1.15em;vertical-align:-.2em;margin-right:.4em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
@@ -180,6 +182,10 @@ if TV:   # the TV link beside Listen, and a chapter's TV mode button
 if WORK == "quran":   # the line above a part's title that names its surah; the Arabic pages and the language switch
     CSS += ".eyebrow{font-family:var(--sans);color:var(--text-soft);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin:0}\n"
     CSS += quran_ar.CSS + quran_site.CSS + ".tvnote{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);margin:2.5rem 0 0}\n"
+    # the top bar holds the language switch too: closer together, so "Watch" fits beside it on a phone
+    CSS += (".top span{gap:1rem}\n@media (max-width:400px){.top{letter-spacing:.02em}.top span{gap:.55rem!important}}\n"
+            "@media (max-width:340px){.top{gap:.35rem;font-size:.7rem;letter-spacing:0}.top span{gap:.4rem!important}"
+            ".top .lang a,.top .lang b{padding:.1rem .3rem!important}}\n")
 
 
 def esc(s):
@@ -298,7 +304,7 @@ def page(title, body, depth, tail="", css="", lang="", nav=None, footer=None):
     up = "../" * depth
     links = '<a href="%slisten/">Listen</a>%s' % (up, search.nav_link(up))
     if TV:
-        links = '<span><a href="%stv/">TV</a>%s%s</span>' % (up, links, lang)
+        links = '<span><a href="%swatch/">Watch</a>%s%s</span>' % (up, links, lang)
     if nav is None:
         nav = '<a href="%s?home">%s</a>%s' % (up or "./", HOME, links)
     if LANG_TAG:
@@ -318,11 +324,25 @@ def page(title, body, depth, tail="", css="", lang="", nav=None, footer=None):
 
 
 TV_ICON = ('<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="12.5" rx="2"/>'
-           '<path d="M8 20.5h8M12 17v3.5"/></svg>')
+           '<path d="M8 20.5h8M12 17v3.5"/><path d="M10.3 8.1v4.3l3.7-2.15z" fill="currentColor" stroke="none"/></svg>')
 
-# Only on the TV page: the chapters that have pictures, as cards with the chapter's first picture.
+
+def redirect(path, target, name):
+    """A page that only sends the reader on to target (a relative address), keeping what follows ? and #:
+    the old addresses of the Watch pages (site/tv/, the Quran's ar/tv.html) still work."""
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    open(path, "w", encoding="utf-8").write(
+        '<!doctype html><meta charset="utf-8"><title>%s</title><meta name="robots" content="noindex">'
+        '<script>location.replace("%s"+location.search+location.hash)</script>'
+        '<meta http-equiv="refresh" content="0; url=%s"><a href="%s">%s</a>\n' % (name, target, target, target, name))
+
+# Only on the Watch pages: a book's chapters as cards with the chapter's first picture (a quiet card with its
+# number while its pictures are being made), and larger type on a TV.
 TV_CSS = """
 .wrap{max-width:68rem}
+.tvh i.np{background:#241C3A;background:radial-gradient(120% 95% at 50% 0%,#2C2247 0%,#171223 58%,#0E0A18 100%)}
+.tvh i.np em{position:absolute;left:0;top:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:normal;font-size:2.2rem;color:var(--heading);opacity:.85}
+.eyebrow{font-family:var(--sans);color:var(--text-soft);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin:0}
 .tvh{display:grid;grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));gap:1rem .9rem;font-family:var(--sans)}
 .tvh a{display:block;text-decoration:none;color:var(--text);border-radius:12px;-webkit-tap-highlight-color:transparent}
 .tvh a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
@@ -342,7 +362,24 @@ h1{font-size:3rem}
 h3.group{font-size:1rem}
 .tvh{grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1.6rem 1.3rem}
 .tvh b{font-size:1.3rem}
-.tvh small,.tvnote{font-size:1rem}
+.tvh i.np em{font-size:3.4rem}
+.tvh small,.tvnote,.eyebrow{font-size:1rem}
+.continue{max-width:34rem}
+}
+"""
+
+
+# Only on the Watch home: the books (or surahs), in the same boxes as the home page, larger on a TV.
+WATCH_CSS = """
+.tvnote{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);margin:2.5rem 0 0}
+@media (min-width:1500px){
+.wrap{max-width:72rem;padding-top:2rem}
+.top{font-size:1rem}
+h1{font-size:3rem}
+.sub{font-size:1.15rem}
+h3.group{font-size:1rem}
+.grid{grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:1rem;font-size:1.25rem}
+.grid small,.tvnote{font-size:1rem}
 .continue{max-width:34rem}
 }
 """
@@ -479,7 +516,8 @@ def main():
             for a, z in (("The Bible, Freshly Translated", SITE_TITLE),
                          ("Pictures for this chapter are on the way. Until then it plays with its words alone.", ""),
                          ("<small>Pictures for this chapter are on the way</small>", "<small></small>"),
-                         ("More chapters arrive every day.", ""), ("All TV chapters", "All of TV mode"),
+                         ("More chapters arrive every day.", ""), ("Choose another chapter", "Choose another surah"),
+                         ("Back to the chapter", "Back to the surah"),
                          ("This chapter has no recording yet.", "This has no recording yet."),
                          ("That chapter was not found.", "That was not found."),
                          ("'Chapter before'", "'Before this'"), ("'Next chapter'", "'Next'"),
@@ -495,7 +533,7 @@ def main():
         open(os.path.join(OUT, "lang.js"), "w", encoding="utf-8").write(lang_js)
         LANG_TAG = '<script src="%%slang.js?v=%s" defer></script>' % hashlib.sha1(lang_js.encode("utf-8")).hexdigest()[:8]
     listed = pictures_listed() if PICTURES else {}
-    watch = []   # the chapters that have TV mode pictures, for the TV page
+    watch = []   # the chapters that can be watched (they have a recording), for the Watch pages
     surah_parts = {}   # the Quran: each surah's parts in order, for its one page (scripts/quran_site.py)
 
     def audio_of(c):
@@ -560,9 +598,11 @@ def main():
         if sync_url:
             data += ' data-sync="../%s"' % sync_url
         tv_url, poster = tv_scenes(b["slug"], n, verse_at, verse_text, listed) if PICTURES and has_audio else (None, None)
-        if tv_url:
-            # a plain link to the TV page; scripts/tv.js opens the player right here instead, full screen
-            buttons += '<a class="btn tv" href="../tv/?c=%s-%d" data-tv="%s-%d">%sTV mode</a> ' % (
+        if PICTURES and has_audio:
+            # Every recorded chapter can be watched (Obay, 2026-11-23: "there should also be a button on the chapter
+            # in read mode to watch"), with its words alone until its pictures are made. A plain link to the Watch
+            # page; scripts/tv.js opens the player right here instead, full screen.
+            buttons += '<a class="btn tv" href="../watch/?c=%s-%d" data-tv="%s-%d">%sWatch</a> ' % (
                 b["slug"], n, b["slug"], n, TV_ICON)
             watch.append((b, n, poster, lengths.get(audio_url)))
         if next_:
@@ -615,8 +655,10 @@ def main():
         cells = "".join(
             ('<a href="%d.html">%d</a>' % (n, n)) if (b["slug"], n) in have else '<span>%d</span>' % n
             for n in range(1, b["chapters"] + 1))
-        body = '<h1>%s</h1><p class="sub">%d of %d chapters translated</p><div class="grid ch">%s</div>' % (
-            esc(b["name"]), len(done), b["chapters"], cells)
+        to_watch = '' if not any(w[0] is b for w in watch) else \
+            ' <a class="btn tv" href="../watch/%s/">%sWatch</a>' % (b["slug"], TV_ICON)
+        body = '<h1>%s</h1><p class="sub">%d of %d chapters translated%s</p><div class="grid ch">%s</div>' % (
+            esc(b["name"]), len(done), b["chapters"], to_watch, cells)
         os.makedirs(os.path.join(OUT, b["slug"]), exist_ok=True)
         open(os.path.join(OUT, b["slug"], "index.html"), "w", encoding="utf-8").write(page(b["name"], body, 1))
 
@@ -648,7 +690,7 @@ function fmt(t){t=Math.floor(t||0);var m=Math.floor(t/60),x=t%60;return m+':'+(x
 var s=get('lastSpot'),r=get('lastRead'),a=document.getElementById('resume'),href,label,small;
 if(s&&s.url){
   if(s.mode==='listen'){href='listen/';small='Keep listening';label=s.label+(s.t>3?' \u00b7 at '+fmt(s.t):'');}
-  else if(s.mode==='tv'){href='tv/?c='+encodeURIComponent(s.id);small='Keep watching in TV mode';label=s.label+(s.t>3?' \u00b7 at '+fmt(s.t):'');}
+  else if(s.mode==='tv'){href='watch/'+(/^(en|ar)-/.test(s.id)?'':s.id.replace(/-\\d+$/,'')+'/')+'?c='+encodeURIComponent(s.id);small='Keep watching';label=s.label+(s.t>3?' \u00b7 at '+fmt(s.t):'');}
   else if(s.mode==='lr'){href=s.url+'#resume-lr';small='Keep listening and reading';label=s.label+(s.t>3?' \u00b7 at '+fmt(s.t):'');}
   else{href=s.url;small='Keep reading';label=s.label+(s.v>1?', verse '+s.v:'');}
 }else if(r&&r.url){href=r.url;small='Pick up where you left off';label=r.label;}
@@ -689,41 +731,78 @@ if(s&&s.url&&(!nav||nav.type==='navigate')&&!inside&&!/[?&]home/.test(location.s
             "page": page, "esc": esc, "inline": inline, "plain": plain, "lengths": lengths, "books": BOOKS,
             "parts": surah_parts, "listed": audio_listed(), "read_tag": read_tag, "tv_tag": tv_tag, "TV_ICON": TV_ICON,
             "pill": quran_ar.pill, "there": there, "phrase_at": phrase_at})
-        cells = "".join('<a href="?c=%s" data-tv="%s">%s<small>%s</small></a>' % (
-            c["id"], c["id"], esc(c["title"]), clock(c["duration"]) if c["duration"] else "") for c in surahs)
-        body = ('<h1>TV mode</h1><p class="sub">The words light up as they are read, over pictures of what they say '
+        # Watch: the recorded surahs, in the same boxes as the home page's list of surahs (Obay, 2026-11-23)
+        cells = []
+        for c in surahs:
+            name, _, called = c["title"].partition(" · ")
+            cells.append('<a href="?c=%s" data-tv="%s">%s<small>%s</small></a>' % (
+                c["id"], c["id"], esc(name), esc(" · ".join(x for x in (called, clock(c["duration"]) if c["duration"] else "") if x))))
+        cells.append(quran.coming([c["chapter"] for c in surahs]))
+        body = ('<h1>Watch</h1><p class="sub">The words light up as they are read, over pictures of what they say '
                 '(a calm background where the pictures are still to come). Best on a TV, or on a phone turned sideways.</p>'
                 '<a class="continue" id="tv-resume" href="#" hidden><small>Keep watching</small><b></b></a>'
-                + ('<div class="grid">%s</div>' % cells if cells else '<p class="tvnote">The first recordings are on the way.</p>'))
-        os.makedirs(os.path.join(OUT, "tv"), exist_ok=True)
-        open(os.path.join(OUT, "tv", "index.html"), "w", encoding="utf-8").write(
-            page("TV mode", body, 1, tv_tag, lang=quran_ar.pill("en", "", "../ar/tv.html")))
+                + ('<h3 class="group">Surahs</h3><div class="grid">%s</div>' % "".join(cells) if surahs else
+                   '<p class="tvnote">The first recordings are on the way.</p>'))
+        os.makedirs(os.path.join(OUT, "watch"), exist_ok=True)
+        open(os.path.join(OUT, "watch", "index.html"), "w", encoding="utf-8").write(
+            page("Watch", body, 1, tv_tag, WATCH_CSS, lang=quran_ar.pill("en", "", "../ar/watch.html")))
+        redirect(os.path.join(OUT, "tv", "index.html"), "../watch/", "Watch")
         n_ar = quran_ar.build(OUT, {"page": page, "esc": esc, "words": words, "checksum": checksum, "clock": clock,
                                     "lengths": lengths, "english": BOOKS, "read_tag": read_tag, "tv_tag": tv_tag,
-                                    "TV_ICON": TV_ICON, "sections": sections, "there": there})
+                                    "TV_ICON": TV_ICON, "sections": sections, "there": there,
+                                    "redirect": redirect})
         print("Built the Arabic pages of 114 surahs (%d read aloud)" % n_ar)
-    elif TV:   # the TV page: every chapter that has pictures, book by book; scripts/tv.js plays them
-        groups, book = [], None
+    elif TV:
+        # Watch, browsed the way the reading pages are (Obay, 2026-11-23: "similar to how you browse for a book in
+        # read mode"): watch/ lists the books, Old Testament then New, and watch/<book>/ that book's chapters as
+        # cards with their first picture. scripts/tv.js plays them, carrying on from chapter to chapter.
+        by_book = {}
         for b, n, poster, secs in watch:
-            if b is not book:
-                book = b
-                groups.append('</div><h3 class="group">%s</h3><div class="tvh">' % esc(b["name"]))
-            groups.append('<a href="?c=%s-%d" data-tv="%s-%d"><i><img src="../%s" alt="" loading="lazy"></i><b>%s</b>%s</a>' % (
-                b["slug"], n, b["slug"], n, esc(poster), esc(label(b, n)),
-                "<small>%s</small>" % clock(secs) if secs else ""))
-        body = ('<h1>TV mode</h1><p class="sub">Pictures for each part of a chapter, with the words lighting up as they '
-                'are read. Best on a TV, or on a phone turned sideways.</p>'
-                '<a class="continue" id="tv-resume" href="#" hidden><small>Keep watching</small><b></b></a>')
+            by_book.setdefault(b["slug"], []).append((n, poster, secs))
+        groups = []
+        for heading, t in (("Old Testament", "OT"), ("New Testament", "NT")):
+            cells = []
+            for b in (x for x in BOOKS if x["testament"] == t):
+                k = len(by_book.get(b["slug"], ()))
+                if k:
+                    cells.append('<a href="%s/">%s<small>%d of %d</small></a>' % (b["slug"], esc(b["name"]), k, b["chapters"]))
+                else:
+                    cells.append('<span>%s<small>coming</small></span>' % esc(b["name"]))
+            groups.append('<h3 class="group">%s</h3><div class="grid">%s</div>' % (heading, "".join(cells)))
+        pictured = sum(1 for w in watch if w[2])
+        body = ('<h1>Watch</h1><p class="sub">Pictures for each part of a chapter, with the words lighting up as they '
+                'are read. Pick a book, then a chapter. Best on a TV, or on a phone turned sideways.</p>'
+                '<a class="continue" id="tv-resume" href="#" hidden><small>Keep watching</small><b></b></a>'
+                + "".join(groups))
         if watch:
-            body += "".join(groups)[len("</div>"):] + "</div>"
             body += ('<p class="tvnote">%d chapter%s %s pictures so far. More are added as they are made; until then a '
-                     'chapter plays with its words alone.</p>' % (len(watch), "" if len(watch) == 1 else "s",
-                                                                 "has" if len(watch) == 1 else "have"))
-        else:
-            body += '<p class="tvnote">The first pictures are on the way.</p>'
-        os.makedirs(os.path.join(OUT, "tv"), exist_ok=True)
-        open(os.path.join(OUT, "tv", "index.html"), "w", encoding="utf-8").write(
-            page("TV mode", body, 1, tv_tag, TV_CSS))
+                     'chapter plays with its words alone.</p>' % (pictured, "" if pictured == 1 else "s",
+                                                                 "has" if pictured == 1 else "have"))
+        os.makedirs(os.path.join(OUT, "watch"), exist_ok=True)
+        open(os.path.join(OUT, "watch", "index.html"), "w", encoding="utf-8").write(
+            page("Watch", body, 1, tv_tag, WATCH_CSS))
+        deeper = tv_tag.replace('src="../', 'src="../../')
+        for b in BOOKS:
+            got = by_book.get(b["slug"])
+            if not got:
+                continue
+            cards = []
+            for n, poster, secs in got:
+                pic = ('<i><img src="../../%s" alt="" loading="lazy"></i>' % esc(poster) if poster else
+                       '<i class="np"><em>%d</em></i>' % n)
+                note = " · ".join(x for x in (clock(secs) if secs else "", "" if poster else "pictures coming") if x)
+                cards.append('<a href="../?c=%s-%d" data-tv="%s-%d">%s<b>Chapter %d</b>%s</a>' % (
+                    b["slug"], n, b["slug"], n, pic, n, "<small>%s</small>" % note if note else ""))
+            rest = b["chapters"] - len(got)
+            body = ('<p class="eyebrow">Watch</p><h1>%s</h1><p class="sub">%d of %d chapters ready to watch. '
+                    '<a class="btn ghost" href="../../%s/">Read %s</a></p><div class="tvh" id="tv-list">%s</div>%s' % (
+                        esc(b["name"]), len(got), b["chapters"], b["slug"], esc(b["name"]), "".join(cards),
+                        '<p class="tvnote">More chapters of %s arrive as they are translated and read aloud.</p>'
+                        % esc(b["name"]) if rest else ""))
+            os.makedirs(os.path.join(OUT, "watch", b["slug"]), exist_ok=True)
+            open(os.path.join(OUT, "watch", b["slug"], "index.html"), "w", encoding="utf-8").write(
+                page("Watch " + b["name"], body, 2, deeper, TV_CSS))
+        redirect(os.path.join(OUT, "tv", "index.html"), "../watch/", "Watch")
     # the search page and this site's search index (scripts/search.py); the Quran's also covers its Arabic
     search.build(WORK, OUT, {
         "chapters": chapters, "parse": parse, "books": BOOKS, "shown": quran_ar.shown if WORK == "quran" else None,

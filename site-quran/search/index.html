@@ -167,6 +167,9 @@ body.lr .sec-play{display:none}
 #ch.ar sup.n{scroll-margin-top:5.6rem}
 p.more{font-family:var(--sans);font-size:.9rem;color:var(--text-soft);background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:.8rem 1rem;margin:2rem 0 0}
 .tvnote{font-family:var(--sans);font-size:.85rem;color:var(--text-soft);margin:2.5rem 0 0}
+.top span{gap:1rem}
+@media (max-width:400px){.top{letter-spacing:.02em}.top span{gap:.55rem!important}}
+@media (max-width:340px){.top{gap:.35rem;font-size:.7rem;letter-spacing:0}.top span{gap:.4rem!important}.top .lang a,.top .lang b{padding:.1rem .3rem!important}}
 
 .top .find{display:inline-flex;align-items:center}
 .top .find svg{width:1.15rem;height:1.15rem;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
@@ -206,7 +209,7 @@ h2.grp span{color:var(--text-soft);font-weight:400;letter-spacing:.06em}
 .snote{font-family:var(--sans);font-size:.82rem;color:var(--text-soft);background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:.55rem .8rem;margin:.8rem 0}
 </style></head>
 <body><div class="wrap">
-<nav class="top"><a href="../?home">Surahs</a><span><a href="../tv/">TV</a><a href="../listen/">Listen</a><a class="find" href="../search/" aria-label="Search" title="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a><span class="lang" role="group" aria-label="Language"><b>English</b><a href="../ar/" data-lang="ar" lang="ar">عربي</a></span></span></nav>
+<nav class="top"><a href="../?home">Surahs</a><span><a href="../watch/">Watch</a><a href="../listen/">Listen</a><a class="find" href="../search/" aria-label="Search" title="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a><span class="lang" role="group" aria-label="Language"><b>English</b><a href="../ar/" data-lang="ar" lang="ar">عربي</a></span></span></nav>
 <h1>Search</h1>
 <form class="sf" id="sf" role="search" action="./" method="get">
 <input id="q" name="q" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"
