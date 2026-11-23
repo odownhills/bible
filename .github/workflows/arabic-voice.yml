@@ -1,0 +1,61 @@
+name: Read the Arabic aloud
+
+# The Quran site's Arabic pages are read aloud in a plain speaking voice, never chanted (Obay, 2026-11-22):
+# Gemini's Sulafat, on a model with its own free daily limit (scripts/arabic_voice.py), starting at Surah 2
+# verse 75. Each run reads chunks of the text until that limit or its time runs out, checks every take word
+# for word, joins each surah's chunks into its recording (Cloudflare R2, scripts/media.py) and pushes the
+# word times and the rebuilt site-quran/ to main. It runs every few hours until all 114 surahs are read;
+# after that each run finds nothing to do. No text is changed and nothing is translated.
+on:
+  push:
+    branches: [main]
+    paths: ["scripts/arabic_voice.py", ".github/workflows/arabic-voice.yml"]
+  schedule:
+    - cron: "41 */3 * * *"
+  workflow_dispatch:
+    inputs:
+      max:
+        description: "How many chunks to read in this run (empty: as many as the free limit allows)"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: arabic-voice
+  cancel-in-progress: false
+
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    env:
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the secrets and tools
+        run: |
+          for k in R2_ACCESS_KEY_ID R2_SECRET_ACCESS_KEY R2_ENDPOINT GEMINI_API_KEY OPENAI_API_KEY; do
+            if [ -z "${!k}" ]; then echo "::error::The $k repository secret is missing."; exit 1; fi
+          done
+          command -v aws >/dev/null || python3 -m pip install --quiet --break-system-packages awscli
+          command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - name: Read
+        id: read
+        env:
+          MAX_CHUNKS: ${{ inputs.max }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # each piece goes on the site as soon as it passes the check
+          python3 scripts/arabic_voice.py --minutes 110 --publish "$GITHUB_REF_NAME" ${MAX_CHUNKS:+--max "$MAX_CHUNKS"}
+      - name: Publish
+        if: always() && steps.read.outcome != 'skipped'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python3 scripts/arabic_voice.py publish --branch "$GITHUB_REF_NAME"
