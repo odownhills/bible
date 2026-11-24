@@ -10,7 +10,9 @@ The pace is set in data/settings.json:
                       (4 each weekday + 1 each weekend day = 22)
     "first_books":    optional list of book slugs to translate before the rest, in that order
                       (Obay, 2026-11-20: 1 John, then John; 2026-11-21: Job first, then John;
-                      2026-11-23: Deuteronomy first, then back to Job where it stopped)
+                      2026-11-23 morning: Deuteronomy first, then back to Job where it stopped;
+                      2026-11-23 afternoon: none, "start from beginning of Bible and continue in
+                      order", so the list is empty and the next chapter is Genesis 6)
 Each run's target is words_per_week / runs_per_week. Whole chapters are added in canonical
 order (after any "first_books"), stopping at whichever chapter boundary lands closest to the target (always at least one
 chapter). Estimates are each chapter's word count in a standard English Bible.

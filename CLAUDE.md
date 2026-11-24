@@ -2,11 +2,12 @@
 
 This repository is Obay's original English translation of the Bible, published at
 https://bible.odownhills.workers.dev (Cloudflare deploys the `site/` folder on every push to main).
-Whole chapters are added every day. Books listed in `"first_books"` in `data/settings.json` come first
-(currently Deuteronomy, then Job from where it stopped, then John; 1 John is done); after them the run continues in canonical order from the first
-untranslated chapter, Genesis 1 to Revelation 22.
-(Deuteronomy began with chapter 5, the Ten Commandments, at Obay's request on 2026-11-23; the plan then takes
-chapters 1 to 4 and carries on from chapter 6.)
+Whole chapters are added every day, in the order of the English Bible, Genesis 1 to Revelation 22: each run
+takes the first chapters that are not translated yet (Obay, 2026-11-23: "start from beginning of Bible and
+continue in order"; that began at Genesis 6). Chapters done earlier out of order are passed over when the
+run reaches them: Deuteronomy 5, Job 1 to 21, John 1 to 6, 1 John and Jude.
+(Books listed in `"first_books"` in `data/settings.json` would come before the rest; the list is empty now.
+Only Obay changes the order.)
 Accuracy matters more than speed.
 (The Quran is a separate translation and site built from this repository: see "Quran" below.
 Bible runs leave it alone. So is the study site, which analyzes the Bible's chapters: see "Study site" at the end.)
