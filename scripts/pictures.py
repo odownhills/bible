@@ -103,7 +103,6 @@ def make(scene, shape, key):
     """One picture: (jpeg bytes, cost in dollars)."""
     body = json.dumps({"model": MODEL, "prompt": full_prompt(scene, shape), "n": 1, "size": SHAPES[shape][0],
                        "quality": QUALITY, "output_format": "jpeg", "output_compression": 88}).encode()
-    last = "no reply"
     for attempt in range(5):
         req = urllib.request.Request("https://api.openai.com/v1/images/generations", data=body, headers={
             "Authorization": "Bearer " + key, "Content-Type": "application/json"})
@@ -125,15 +124,13 @@ def make(scene, shape, key):
             if e.code == 429 and (err.get("code") in ("insufficient_quota", "billing_hard_limit_reached")):
                 raise Refused("the OpenAI account is out of credit or over its budget (%s)" % err.get("code"))
             if e.code == 429 or e.code >= 500:
-                last = "HTTP %d %s %s" % (e.code, err.get("code") or err.get("type") or "", (err.get("message") or "")[:120])
                 time.sleep(8 * (attempt + 1))
                 continue
             raise RuntimeError("HTTP %d %s: %s" % (e.code, err.get("code") or err.get("type") or "",
                                                   (err.get("message") or "")[:300]))
-        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
-            last = "%s: %s" % (type(e).__name__, str(e)[:120])
+        except (urllib.error.URLError, TimeoutError, ConnectionError):
             time.sleep(8 * (attempt + 1))
-    raise RuntimeError("no answer after 5 tries (last: %s)" % last)
+    raise RuntimeError("no answer after 5 tries")
 
 
 def main():

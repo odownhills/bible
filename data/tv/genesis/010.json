@@ -1,5 +1,5 @@
 {
- "note": "Made by the steps in TV_PICTURES.md (trial stage, 2026-11-24): the chapter is split into sections that each carry one deep meaning, 10 picture ideas are written for each, and the top two for each picture are made as trials (candidates) to be chosen by eye. Wide pictures only (1920x1088). The important part of every picture sits in the upper 60% of the frame, clear of the word box. God is not pictured; Genesis 10 is a list of the peoples, so the pictures show what the list means (one family spreading into many nations, lands and languages) with the lands themselves, never Noah's sons beyond ordinary people of today. Nimrod is only an ordinary hunter seen from behind or in silhouette. No tower (Genesis 11) and no rainbow (Genesis 9).",
+ "note": "Made by the steps in TV_PICTURES.md: the chapter is split into sections that each carry one deep meaning (\"sections\"), 10 picture ideas are written for each, the top two for each picture are made and the better is chosen by eye (2026-11-24): 11 pictures from 22 trial pictures. Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. God is not pictured. Genesis 10 is a list of the peoples, so the pictures show what the list means (one family spreading into many nations, lands and families) through the lands themselves: three brothers walking together after the rain (v1, ordinary men of today), islands each with its own harbor town (the coastland nations), the great river (Egypt and Cush), a lone hunter seen against the sky (Nimrod, an ordinary hunter of today), a great city on a plain, families each at their own door, dandelion seeds crossing a boundary wall (scattered, the border), a long family table (Shem and Eber), a river dividing a plain (Peleg, the earth divided), the dry hill country of the east, and the lights of towns scattered over the dark earth. No tower (Genesis 11) and no rainbow (Genesis 9). Second picture of each pair kept out: an oak with three boughs, a market hall of many peoples, construction cranes, a savanna river, a boulder hunter with a dog, a wall between green and dry land, a family group from above (it ran lower than the word box allows), a valley river, sheep facing the dawn and villages at first light.",
  "method": "Second method, asked for by Obay on 2026-11-21: (1) split the chapter into sections that each carry one deep meaning, written as one plain sentence; (2) write 10 different picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
  "sections": [
   {
@@ -131,21 +131,12 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
    "verse": 1,
    "section": "1",
-   "image": "cand/01-tree-a.jpg",
-   "principle": "And these are the generations of the sons of Noah: Shem, Ham, and Japheth. And sons were born to them after the flood.",
-   "shows": "One huge old tree in a green field washed clean by rain, its trunk dividing into three great boughs that spread wide into the morning sky.",
-   "prompt": "At dawn, one huge old oak tree stands alone in a green field freshly washed by rain, mist lying low on the grass; its trunk divides low down into three great boughs that spread wide apart into the clear morning sky, so the three limbs are plain to see. The tree and sky are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 1,
-   "section": "1",
-   "image": "cand/01-tree-b.jpg",
+   "image": "01-brothers.jpg",
+   "tall": "tall/01-brothers.jpg",
    "principle": "And these are the generations of the sons of Noah: Shem, Ham, and Japheth. And sons were born to them after the flood.",
    "shows": "Three young men, brothers, seen from behind, walk side by side on a wet shining road across a fresh green plain at sunrise.",
    "prompt": "Seen from behind, three young men, brothers, ordinary people of today in plain clothes, walk shoulder to shoulder along a wet shining road across a wide fresh green plain at sunrise, the washed-clean land stretching before them. The three men and the horizon are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
@@ -153,16 +144,8 @@
   {
    "verse": 2,
    "section": "2-5",
-   "image": "cand/02-coasts-a.jpg",
-   "principle": "The sons of Japheth were Gomer and Magog and Madai and Javan and Tubal and Meshech and Tiras.",
-   "shows": "Seen from a high cliff at sunrise, small sailboats leave a harbor for far green islands and coasts across a calm blue sea.",
-   "prompt": "Seen from a high cliff at sunrise, a calm blue sea scattered with green islands and rocky headlands to the horizon, and a few small sailboats leaving a little harbor and heading out toward the far coasts. No people are visible. The sea, islands and boats are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 2,
-   "section": "2-5",
-   "image": "cand/02-coasts-b.jpg",
+   "image": "02-coasts.jpg",
+   "tall": "tall/02-coasts.jpg",
    "principle": "The sons of Japheth were Gomer and Magog and Madai and Javan and Tubal and Meshech and Tiras.",
    "shows": "Aerial view of an archipelago, every island with its own small harbor town and bay, turquoise water between.",
    "prompt": "Aerial view of an archipelago of many separate islands in turquoise water, each island with its own small white harbor town and curved sandy bay, small boats on the water between them. The islands fill the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
@@ -171,33 +154,18 @@
   {
    "verse": 6,
    "section": "6-7",
-   "image": "cand/03-river-a.jpg",
+   "image": "03-river.jpg",
+   "tall": "tall/03-river.jpg",
    "principle": "And the sons of Ham were Cush and Egypt and Put and Canaan.",
    "shows": "A broad slow river through desert at dawn, palm groves and reeds on its banks, golden dunes beyond, one white-sailed boat.",
    "prompt": "At dawn a broad slow river winds through a pale golden desert, thick green palm groves and reed beds along its banks and golden dunes beyond, a single white-sailed boat on the water. The river and the dunes are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 6,
-   "section": "6-7",
-   "image": "cand/03-river-b.jpg",
-   "principle": "And the sons of Ham were Cush and Egypt and Put and Canaan.",
-   "shows": "Green southern savanna at sunrise, flat-topped acacia trees by a wide river under a huge sky.",
-   "prompt": "At sunrise a wide brown river runs through green southern savanna with flat-topped acacia trees, tall golden grass and a huge pink sky. The river and trees are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 8,
    "section": "8-12",
-   "image": "cand/04-hunter-a.jpg",
-   "principle": "And Cush fathered Nimrod. He began to be a mighty man on the earth.",
-   "shows": "Seen from behind, a lone hunter with a bow stands on a high ridge at dawn over a vast golden plain, a hound beside him.",
-   "prompt": "Seen from behind, a lone strong hunter in plain outdoor clothes holding a bow stands on a high grassy ridge at dawn with a hound beside him, looking out over a vast golden plain under an enormous open sky. The hunter and the sky are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 8,
-   "section": "8-12",
-   "image": "cand/04-hunter-b.jpg",
+   "image": "04-hunter.jpg",
+   "tall": "tall/04-hunter.jpg",
    "principle": "And Cush fathered Nimrod. He began to be a mighty man on the earth.",
    "shows": "A powerful hunter silhouetted on a boulder against a huge open sky, bow in hand, a wide plain far below.",
    "prompt": "A powerful hunter in plain outdoor clothes stands tall on a great boulder, bow in hand, dark against an enormous glowing open sky, a wide plain far below with a far herd of deer. The hunter and sky are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
@@ -205,33 +173,18 @@
   {
    "verse": 10,
    "section": "8-12",
-   "image": "cand/05-plain-a.jpg",
+   "image": "05-plain.jpg",
+   "tall": "tall/05-plain.jpg",
    "principle": "And the beginning of his kingdom was Babylon and Erech and Accad and Calneh, in the land of Shinar.",
    "shows": "Aerial view at dusk of a great city sprawling across a wide plain beside a broad river, lit streets and bridges to the horizon.",
    "prompt": "Aerial view at dusk of a great city sprawling across a wide flat plain beside a broad river, its streets and bridges glowing with lights, the city stretching to the horizon under a deep orange sky. The city is in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 10,
-   "section": "8-12",
-   "image": "cand/05-plain-b.jpg",
-   "principle": "And the beginning of his kingdom was Babylon and Erech and Accad and Calneh, in the land of Shinar.",
-   "shows": "A city under construction at sunrise, tower cranes and half-built blocks rising over a broad river plain.",
-   "prompt": "At sunrise a new city under construction on a broad river plain: tower cranes and half-built concrete blocks with scaffolding rising over the flat land, soft dusty light, the river shining beyond. No people are visible. The cranes and buildings are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 13,
    "section": "13-20",
-   "image": "cand/06-peoples-a.jpg",
-   "principle": "And Egypt fathered the Ludim and the Anamim and the Lehabim and the Naphtuhim",
-   "shows": "A busy covered market hall seen from a balcony, people of many different backgrounds talking and trading in small groups.",
-   "prompt": "Seen from a balcony, a busy covered market hall where many people of different backgrounds and different everyday clothes talk and trade in small separate groups around stalls of spices, fabrics and fruit. The crowd and stalls are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 13,
-   "section": "13-20",
-   "image": "cand/06-peoples-b.jpg",
+   "image": "06-doors.jpg",
+   "tall": "tall/06-doors.jpg",
    "principle": "And Egypt fathered the Ludim and the Anamim and the Lehabim and the Naphtuhim",
    "shows": "A row of differently painted front doors down a narrow hill street, a different family on each doorstep.",
    "prompt": "A narrow sunlit hill street with a row of houses each with a differently painted front door, and a different family sitting or standing on each doorstep, the street climbing toward the top of the frame. The houses and families are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
@@ -239,89 +192,50 @@
   {
    "verse": 18,
    "section": "13-20",
-   "image": "cand/07-seeds-a.jpg",
+   "image": "07-seeds.jpg",
+   "tall": "tall/07-seeds.jpg",
    "principle": "and the Arvadites and the Zemarites and the Hamathites. And afterward the families of the Canaanites were scattered.",
    "shows": "A dandelion gone to seed on a green hill above the sea, its seeds streaming off in the wind over an old low stone wall.",
    "prompt": "A dandelion gone to seed on a green hillside above a far blue sea, its white seeds streaming off in the wind across an old low drystone wall. The dandelion, seeds and wall are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 18,
-   "section": "13-20",
-   "image": "cand/07-seeds-b.jpg",
-   "principle": "and the Arvadites and the Zemarites and the Hamathites. And afterward the families of the Canaanites were scattered.",
-   "shows": "An old drystone wall running over green hills from a harbor toward dry brown country, a border between green land and dry land.",
-   "prompt": "An old drystone boundary wall runs along a ridge over green hills from a far harbor on the sea toward dry brown country, green land on one side of the wall and dry land on the other, long morning light. The wall and hills are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 21,
    "section": "21-24",
-   "image": "cand/08-table-a.jpg",
+   "image": "08-table.jpg",
+   "tall": "tall/08-table.jpg",
    "principle": "And to Shem also, the father of all the sons of Eber, the brother of Japheth the eldest, sons were born.",
    "shows": "A very long outdoor table under trees at dusk with string lights, a family of three generations sharing a meal.",
    "prompt": "A very long outdoor table under big trees at dusk with warm string lights, one large family of three generations, grandparents, parents and many children, sharing a meal and laughing together, seen from the end of the table. The family and table are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
   },
   {
-   "verse": 21,
-   "section": "21-24",
-   "image": "cand/08-table-b.jpg",
-   "principle": "And to Shem also, the father of all the sons of Eber, the brother of Japheth the eldest, sons were born.",
-   "shows": "Seen from above, dozens of people of all ages gathered on a lawn around an old man, looking up and laughing.",
-   "prompt": "Seen from high above, dozens of people of all ages from one large family gathered on a green lawn in a loose crowd around an old man in a chair, all looking up and laughing. The crowd fills the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
    "verse": 25,
    "section": "25-31",
-   "image": "cand/09-divided-a.jpg",
+   "image": "09-divided.jpg",
+   "tall": "tall/09-divided.jpg",
    "principle": "And to Eber two sons were born. The name of the one was Peleg, because in his days the earth was divided, and his brother's name was Joktan.",
    "shows": "Aerial view of a green plain split in two by a river that divides around an island, fields on each side, morning mist.",
    "prompt": "Aerial view of a wide green plain of patchwork fields split in two by a broad river that divides around a long island into separate channels, morning mist in the hollows. The river and plain are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 25,
-   "section": "25-31",
-   "image": "cand/09-divided-b.jpg",
-   "principle": "And to Eber two sons were born. The name of the one was Peleg, because in his days the earth was divided, and his brother's name was Joktan.",
-   "shows": "A great valley seen from above with a river cutting a plateau into two halves, one half lit, the other in cloud shadow.",
-   "prompt": "A great valley seen from high above, a river cutting a broad green plateau cleanly into two halves, one half bright in sunlight and the other in the shadow of a cloud. The valley is in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 30,
    "section": "25-31",
-   "image": "cand/10-hills-a.jpg",
+   "image": "10-hills.jpg",
+   "tall": "tall/10-hills.jpg",
    "principle": "And the place where they lived was from Mesha, as you go toward Sephar, the hill country of the east.",
    "shows": "The sun rising behind a long range of bare golden hills in the east, a dusty track winding into them.",
    "prompt": "The sun rises behind a long range of bare golden hill country far to the east, soft light across dry slopes and a dusty track winding into the hills. No people are visible. The hills and sun are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 30,
-   "section": "25-31",
-   "image": "cand/10-hills-b.jpg",
-   "principle": "And the place where they lived was from Mesha, as you go toward Sephar, the hill country of the east.",
-   "shows": "A flock of sheep on a rocky ridge at sunrise, all facing east toward far hills.",
-   "prompt": "A flock of sheep standing on a rocky ridge at sunrise, all facing east toward far layered hills glowing in the dawn light. The sheep and far hills are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 32,
    "section": "32",
-   "image": "cand/11-nations-a.jpg",
+   "image": "11-nations.jpg",
+   "tall": "tall/11-nations.jpg",
    "principle": "These are the families of the sons of Noah, according to their generations, in their nations. And from these the nations separated on the earth after the flood.",
    "shows": "Aerial night view over a dark land with many separate glowing clusters of towns and cities scattered far apart.",
    "prompt": "Aerial night view over a wide dark land, many separate glowing clusters of towns and cities scattered far apart across it and along a coast, the horizon curving under a starry sky. The lights and horizon are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 32,
-   "section": "32",
-   "image": "cand/11-nations-b.jpg",
-   "principle": "These are the families of the sons of Noah, according to their generations, in their nations. And from these the nations separated on the earth after the flood.",
-   "shows": "At first light from a mountain pass, many far-apart small villages in valleys to the horizon, a thin line of smoke rising from each.",
-   "prompt": "At first light, seen from a mountain pass, many small villages far apart in separate valleys stretching to the far horizon, a thin line of smoke rising from each. No people are visible. The valleys and horizon are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false
   }
  ]
