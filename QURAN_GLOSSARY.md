@@ -1423,3 +1423,73 @@ Verses 66-89:
   li-ba'din zahiran "backed one another" (17:88), as tazahara is "back one another" (2:85).
 - sarrafa with its object named "put ... in many ways" (17:89; 18:54), as at 17:41; min kulli mathal "every kind of
   example". aba illa "refuse anything but" (17:89, 99; 25:50).
+Verses 90-111:
+- fajara and fajjara "make gush out" (17:90, 91; 18:33): one English for both forms, of the family of infajara
+  "gush out" (2:60). The other reading at 17:90 has the form of 17:91 and says the same. yanbu' "spring" (17:90;
+  39:21), sharing the English of 'ayn. khilalaha "through the midst of it" (17:91; 18:33); fajjara ... tafjiran
+  "make gush out ... in abundance".
+- asqata "make fall" (17:92; 26:187; 34:9). kisaf "pieces": kisafan "in pieces" (17:92). Another reading has the
+  word for one piece (52:44); either way the sky comes down on them, so nothing is noted.
+- qabilan (17:92) "face to face with us"; the other senses are in the decision log (call: close). qubulan (6:111;
+  18:55) is of the same family, "face to face".
+- zukhruf "gold" (17:93): the word is ornament, and gold as what a thing is decked with (6:112; 10:24; 43:35).
+  dhahab is the plain word for gold (43:53). A house "of" it is a house of gold; "ornament" or "finery" will fit
+  the other three. No bracket: either way it is a house of splendor.
+- raqiya fi "climb up into", ruqiyy "climb" (17:93); irtaqa (38:10) is of the same family. amana li with a thing
+  "believe in" (17:93). kitab at 17:93 "a book", lowercase: a writing they could hold and read (4:153; 6:7).
+- bashar "human being" (17:93, 94), beside al-ins "humans" and al-insan "man". basharan rasulan "a human being, a
+  messenger" (17:93), "a human being as a messenger" (17:94); malakan rasulan "an angel as a messenger" (17:95).
+- qul at 17:93 follows the Hafs reading, "Say". The other reading, "He said", gives the same answer and is not
+  noted.
+- wa-ma mana'a ... an ... illa an "nothing kept ... from ... except that" (17:59, 94; 18:55).
+- mutma'innin, of those who live in a place, "at ease" (17:95; so the town of 16:112); itma'anna of the heart stays
+  "be at rest" (2:260).
+- A sentence that follows a saying, with nothing to mark that the saying has ended, stays inside the quotation
+  marks (17:96, 100, 107-109), as at 17:81. Where the one spoken to changes, the marks close first (17:110, 111).
+- al-muhtadi "the one who is guided" (17:97; 7:178; 18:17). 'ala wujuhihim "on their faces" (17:97; 25:34). 'umyan
+  wa-bukman wa-summan "blind, mute and deaf" (17:97), in the Arabic's order, which is the reverse of 2:18.
+- ma'wa "shelter" (17:97; 3:151; 32:19), of awa "take shelter" (18:10): the place a person goes to for cover. The
+  picture stays. mathwa (3:151) is another word.
+- khaba, of a fire, "die down" (17:97). sa'ir "flame"; as a name of the Fire (4:10; 22:4; 67:5) "the Flame", with
+  a capital, beside al-jahim "the Blaze" and jahannam "Hell". zidnahum sa'iran "we increase the flame for them",
+  as zadahum maradan is "increased their sickness" (2:10).
+- 17:98 repeats 17:49 word for word. qadir 'ala an "has the power to" (17:99; 36:81; 46:33). ja'ala lahum ajalan
+  "set a term for them" (17:99).
+- antum set before its verb "If it were you who" (17:100), like nahnu (17:31). malaka with a thing as its object
+  "own" (17:100). khaza'in "storehouses" (17:100; 6:50; 12:55; 15:21).
+- amsaka with no object "hold back" (17:100); with a wife as its object it stays "keep" (2:229). al-infaq
+  "spending", of anfaqa "spend".
+- qatur "tightfisted" (17:100), of the family of qatara (25:67) and al-muqtir "the one who has little" (2:236).
+  bakhila (4:37) and shuhh (59:9) are other words.
+- inni la-azunnuka "I do think ... that you are" (17:101, 102): Moses answers Pharaoh in Pharaoh's own words, and
+  the English keeps the two sentences alike. idh ja'ahum fa-qala "When he came to them, Pharaoh said", as the line
+  for wa-idh says (2:34); "them" is left as open as the Arabic.
+- laqad 'alimta "You know well" (17:102), as at 2:65; the other reading is in the decision log (call: clear).
+- basa'ir "insights" (17:102; 6:104; 7:203; 28:43; 45:20): things that make a person see, of the family of basar
+  "sight" and mubsira "giving sight", the word for these same signs at 27:13. basira (12:108) "insight".
+- mathbur "doomed" (17:102), of thubur "destruction" (25:13-14; 84:11).
+- jami'an "all together" (17:103), as at 2:148. min ba'dihi "after him" (17:104; so 14:14).
+- wa'du l-akhira at 17:104 "the promise of the hereafter"; that these are the words of 17:7 is in the decision log
+  (call: ask). lafif "a mixed crowd" (17:104): people gathered from here and there and mingled.
+- bi-l-haqq with sending and sending down "with the truth" (17:105; 2:119). nazala "come down" (17:105).
+  mubashshir "bringer of good news" (17:105), sharing the English of bashir.
+- qur'anan with no "the" "a Quran" (17:106; 12:2). faraqa at 17:106 "divide"; the other sense is in the decision
+  log (call: clear). 'ala mukth "slowly" (17:106): the word is a staying, a taking of time; makatha (13:17; 27:22)
+  is left to be settled there.
+- nazzalnahu tanzilan "we have sent it down in stages" (17:106): the verse before has the other form, anzalnahu,
+  and this verse has just said "divided" and "slowly". Where nothing speaks of stages (25:25; 76:23) it is left to
+  be settled there; anzala and nazzala are otherwise one English, "send down".
+- alladhina utu l-'ilm "those who were given knowledge" (17:107). kharra "fall" (17:107, 109; 12:100; 19:58);
+  li-l-adhqan "on their chins": the picture stays, as with dhaqan "chin" at 36:8. sujjadan "bowing down".
+- in kana ... la- "is indeed" (17:108). baka "weep" (17:109). khushu' "humility" (17:109), of khashi' "humble"
+  (2:45), sharing the English of dhull at 17:24.
+- ud'u llaha "Call on God" (17:110), as at 7:180; ayyan ma "whichever". The Arabic can also be heard as "call him
+  God"; either way both are names of the one who is called on, so there is no bracket. al-asma' al-husna "the
+  best names" (17:110; 7:180; 20:8; 59:24), as ahsan is "best".
+- jahara bi "be loud in" (17:110; 20:7; 49:2); khafata bi "be hushed in" (17:110), takhafata (20:103; 68:23) of the
+  same family. bayna dhalika "between the two" (17:110; 2:68; 25:67).
+- lam yakun lahu "has no" (17:111; 25:2). waliyyun mina dh-dhull "ally against humiliation" (17:111): mina with
+  waliyy is "against", as mina llah is "against God" (2:120). The same two words are "because of humiliation"
+  at 42:45; read so here, he has no ally because he is low. Both say he is not one who needs an ally, so there
+  is no bracket. dhull is "humiliation" here and "humility" at 17:24.
+- kabbirhu takbiran "declare how great he is" (17:111), of kabbara "declare great" (2:185).
