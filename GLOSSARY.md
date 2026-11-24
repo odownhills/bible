@@ -33,6 +33,11 @@ closed. Close calls go in the chapter's decision log instead.
   Jesus being within his people.
 - Left to the translator by Obay on 2026-11-21: "Jesus" or "the Lord" at Jude 5; "the Jews" or
   "the Judeans"; "Amen, amen" or "Truly, truly"; the opening of Genesis 1:1.
+- Deut 5:21 is set in two paragraphs (Obay, 2026-11-23): "your neighbor's wife" ends one and "And you
+  must not crave your neighbor's house" begins the next, where the Hebrew text has a paragraph break
+  inside the verse, so that the ten words stand in ten paragraphs (5:6-10, 11, 12-15, 16, 17, 18, 19, 20,
+  and the two of 21). Layout only: the words are as they were. How it is written in the chapter file:
+  TRANSLATION_RULES.md, "File format". (In the same Hebrew text Exod 20:17 has no break inside the verse.)
 
 ## Settled in Genesis 1-2
 - Elohim "God"; YHWH "Yahweh"; YHWH Elohim "Yahweh God"; Adonai "Lord".

@@ -253,6 +253,12 @@ def plain(text):
     return re.sub(r"\s+", " ", re.sub(r"\s*\[[^\[\]]*\]", "", text)).strip()
 
 
+PARA = "\u00b6"   # the paragraph sign: at the start of a line, the verse above goes on in a new paragraph
+# Where a verse goes on in a new paragraph, the page leaves the same gap as between two paragraphs. It stays one
+# <p>, so that everything that finds a verse's words from its number (Listen + Read, search) needs no change.
+PARA_GAP = '<span style="display:block;height:1.1rem"></span>'
+
+
 def parse(path):
     raw = open(path, encoding="utf-8").read()
     m = re.match(r"---\n(.*?)\n---\n(.*)$", raw, re.S)
@@ -264,6 +270,9 @@ def parse(path):
             k, v = line.split(":", 1)
             meta[k.strip()] = v.strip()
     blocks = []  # ("h", text) | ("p", [(n, text)]) | ("t", text)
+    # A verse that goes on in a new paragraph (a line starting with the paragraph sign) keeps one entry:
+    # its text holds a line break ("\n") where the new paragraph starts. Chapter pages show a paragraph's
+    # gap there (PARA_GAP); everything else reads the line break as the space it is.
     para = []
 
     def flush():
@@ -282,6 +291,16 @@ def parse(path):
         elif s.lower().startswith("title:"):
             flush()
             blocks.append(("t", s[6:].strip()))
+        elif s.startswith(PARA):
+            # a new paragraph inside the verse above (Deuteronomy 5:21, where the Hebrew has one)
+            rest = s[len(PARA):].strip()
+            if not para and blocks and blocks[-1][0] == "p":
+                para = blocks.pop()[1]
+            if not para or not rest:
+                raise SystemExit("A line starting with %s goes on with the verse above it in a new paragraph, "
+                                 "but there is no verse above it, or nothing after the sign: %s: %r" % (PARA, path, s))
+            n, t = para[-1]
+            para[-1] = (n, t + "\n" + rest)
         else:
             vm = re.match(r"^(\d+)\s+(.*)$", s)
             if vm:
@@ -586,7 +605,8 @@ def main():
                 spoken_words += len(words(speech[-1]))
             else:
                 parts.append('<p class="v">%s</p>' % " ".join(
-                    '<sup class="n" id="v%d">%d</sup>%s' % (vn, vn, inline(t, True)) for vn, t in val))
+                    '<sup class="n" id="v%d">%d</sup>%s' % (
+                        vn, vn, PARA_GAP.join(inline(piece, True) for piece in t.split("\n"))) for vn, t in val))
                 for vn, t in val:
                     verse_at.append([vn, spoken_words])
                     speech.append(plain(t))

@@ -62,6 +62,7 @@ chapter: 1
 ```
 
 - Every verse is on its own line, starting with its number and a space. Every verse of the chapter must be present.
+- A new paragraph inside a verse: a blank line, then a line that starts with `¶ ` and goes on with the verse above it. The page starts a new paragraph there with no verse number; nothing changes in what is read aloud. Used at Deuteronomy 5:21, where the Hebrew has a paragraph break inside the verse (Obay, 2026-11-23).
 - `## ` starts a section heading.
 - `title: ...` is an unnumbered line such as a psalm superscription (when English numbering does not count it as a verse).
 - Optional front matter line `numbering: ...` for a one-time numbering note.
