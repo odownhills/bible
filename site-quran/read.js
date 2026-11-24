@@ -2,6 +2,7 @@
    brighten as the voice reaches them, a soft marker glides from word to word, and the page stays
    still while the voice reads down it, gliding up now and then to keep the words in view.
    Alternate readings and notes (not read aloud) are shown dimmed; "Hide alt" hides them.
+   Tapping a word starts the voice at that word, and tapping a verse number at the start of that verse.
    Word start times come from audio/<book>/<n>.json (made by scripts/align.py).
    A page marked data-stream (the Quran's Arabic surahs, whose recordings can be hours long) plays its
    recording straight from the server instead of downloading it whole first, and its Listen + Read button
@@ -10,7 +11,7 @@
 'use strict';
 var d=document,ch=null,words=[],T=null,cur=-1,active=false,want=false,busy=false,ready=false,dragging=false;
 var follow=true,followT=0,raf=0,lastSave=0,wake=null,blobs={},bar=null,audio=null,serial=0;
-var pill=null,pillTop=null,glideRaf=0,gliding=false;
+var pill=null,pillTop=null,glideRaf=0,gliding=false,pendingV=0;
 var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 var PLAY='<path class="solid" d="M8 5.200v13.600a.6.6 0 0 0 .900.500l11-6.800a.6.6 0 0 0 0-1L8.900 4.700a.6.6 0 0 0-.900.500z"/>';
 var PAUSE='<path class="solid" d="M7 5h3.500v14H7zM13.500 5H17v14h-3.500z"/>';
@@ -220,9 +221,12 @@ function begin(auto,note,fromVerse){
       if(mine!==serial)return;
       T=(j&&j.t&&j.t.length-skip===words.length)?j.t.slice(skip).map(function(x){return x/100}):estimate(audio.duration);
       var resume=get('listenPos',{})[id]||0;
-      if(fromVerse>1){ var fw=firstWordOf(fromVerse); if(fw>=0&&isFinite(T[fw])) resume=Math.max(0.01,T[fw]-0.4); }
+      var fw=pendingV?firstWordOf(pendingV):fromVerse>1?firstWordOf(fromVerse):-1;   // a verse number tapped while loading, or the verse on screen
+      if(fw>=0&&isFinite(T[fw])) resume=Math.max(0.01,T[fw]-(pendingV?0.3:0.4));
+      pendingV=0;
       if(resume&&resume<audio.duration-5) audio.currentTime=resume;
       busy=false; ready=true; $('lr-seek').disabled=false; paint(); mark(); posState(); scrollToWord(true);
+      if(want&&audio.paused) play();   // a verse number was tapped while the recording was loading
       if(note&&!want) msg(resume?'Back where you left off, at '+fmt(resume)+'. Press play to carry on.':'Press play to start.');
       if(ch.dataset.nextAudio&&!stream()) whole(abs(ch.dataset.nextAudio));
     });
@@ -238,8 +242,21 @@ function jump(t){
   audio.currentTime=Math.max(0,Math.min(audio.duration-0.2,t)); follow=true; clearTimeout(followT);
   paint(); mark(); posState(); savePos(true);
 }
+function verseOf(n){
+  // the verse a number belongs to: a verse marker's own, or for an Arabic verse's closing ring, the marker before it
+  for(var e=n;e;e=e.previousElementSibling) if(e.matches('sup.n')&&/^v\d+$/.test(e.id)) return parseInt(e.id.slice(1),10);
+  return 0;
+}
+function fromNumber(n){
+  var v=verseOf(n); if(!v)return;
+  if(!ready){ pendingV=v; want=true; icon(); return; }   // still loading: start there once it is ready
+  var k=firstWordOf(v); if(k<0||!T||!isFinite(T[k]))return;
+  // a moment before the verse's first word, but never back inside the word before it
+  var at=T[k]-0.3; if(k>0&&isFinite(T[k-1])) at=Math.max(at,(T[k-1]+T[k])/2);
+  jump(at); if(!want)play();
+}
 function close(){
-  if(!active)return; savePos(true); serial++; audio.pause(); active=false; want=false; ready=false; awake(false);
+  if(!active)return; savePos(true); serial++; pendingV=0; audio.pause(); active=false; want=false; ready=false; awake(false);
   d.body.classList.remove('lr'); bar.hidden=true; clearWords();
 }
 function ended(){
@@ -267,6 +284,10 @@ d.addEventListener('click',function(e){
   // the Listen + Read button; on the Quran site also the one in the bar of sections, which stays on screen
   if(t.closest('#lr-start,.lr-here')){ e.preventDefault(); if(active){ follow=true; scrollToWord(true); if(!want)play(); } else begin(true,false,$('ch')&&$('ch').dataset.stream?verseAtTop($('ch')):0); return; }
   if(!active)return;
+  // A verse number (on the Arabic pages, the number in the ring that closes each verse) starts the
+  // voice at the beginning of that verse.
+  var n=t.closest('#ch sup.n,#ch .end');
+  if(n){ e.preventDefault(); fromNumber(n); return; }
   var w=t.closest('#ch .w');
   if(w&&T&&ready){ jump(T[w._k]-LEAD+0.01); if(!want)play(); return; }
   var a=t.closest('.pn a');
