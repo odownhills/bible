@@ -37,6 +37,12 @@ jobs:
       R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The newest main, not the commit that started the run. Runs wait for each other, so a run
+          # that starts from its own older commit does not see what the run before it recorded: on
+          # 2026-11-24 that made it record again parts listed in redo.json that were already done,
+          # and put them back on that list when it pushed.
+          ref: main
       - name: Check the R2 secrets
         id: r2
         run: |
