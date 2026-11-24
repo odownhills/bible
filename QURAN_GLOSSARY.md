@@ -1259,3 +1259,91 @@ Verses 22-44:
   shay'in illa "there is nothing that does not".
 - faqiha "understand" (17:44, 46), sharing the English of 'aqala with an object (2:75).
 - halim ghafur "forbearing, forgiving" (17:44; 35:41).
+Verses 45-65:
+- qara'a with the Quran as its object stays "read" (17:45, 106; 16:98; 7:204), as at 17:14: the Quran's own name is
+  of this root, and "recite" is tala. It is reading aloud, as the next two verses show.
+- An Arabic past after "when", of what happens each time, is an English present: "we place", "they turn" (17:45, 46),
+  as at 17:16. The same words stand as a statement of their own at 6:25 and 18:57, "we have placed".
+- hijab "screen" (17:45; 7:46; 19:17; 33:53; 41:5; 42:51): what stands between two and keeps one from the other. It
+  is never a garment in the Quran, so not "veil". mastur "hidden" (17:45): the form is "covered". It can also be
+  taken as "that hides", but a screen hides by being a screen, so there is no bracket.
+- akinna "veils" (17:46; 6:25; 18:57; 41:5), beside ghishawa "covering" (2:7) and ghulf "wrapped" (2:88); it is of
+  the family of aknana "keep within oneself" (2:235). an yafqahuhu "so that they do not understand it". waqr
+  "heaviness" (17:46; 6:25; 31:7; 41:5, 44).
+- dhakara, of naming someone aloud, "mention" (17:46; 39:45; 19:16). It is the word for "remember" (2:40): one
+  meaning, so no bracket. wahdahu "alone" (17:46; 39:45; 40:12).
+- walla 'ala adbarihim "turn their backs" (17:46); dubur, plural adbar, "back". nufuran "in aversion", as at 17:41.
+- istama'a "listen", istama'a ila "listen to" (17:47; 6:25; 7:204), beside sami'a "hear". bi-ma yastami'una bihi
+  "what they listen with": as bare as the Arabic, which says "with" as it does of ears and hearts (7:179; 22:46)
+  and does not say what it is.
+- najwa "private talk"; hum najwa "they talk in private" (17:47; 21:3; 58:7, 10).
+- mashur "bewitched" (17:47, 101; 25:8), sahara "bewitch" (7:116); sihr stays "magic" (2:102).
+- daraba laka l-amthal "give examples for you" (17:48; 25:9), as the line for mathal says; so of God (16:74). la
+  yastati'una sabilan "cannot find a way": "find" is the small word English needs, and the Arabic does not say a
+  way to what.
+- rufat "crumbled remains" (17:49, 98), beside turab "dust" (23:82). a-idha ... a-inna la- "When we are ..., will we
+  really be" (17:49, 98). khalq jadid "a new creation" (17:49, 98; 13:5; 32:10). qalu here keeps its past, "they
+  said", as the line for 2:80 says.
+- hadid "iron" (17:50; 57:25). sadr, plural sudur, "chest" (17:51; 3:29, 154; 94:1): the picture stays, beside qalb
+  and fu'ad "heart"; 22:46 speaks of "the hearts that are in the chests". khalqan mimma yakburu fi sudurikum "some
+  creation of the kind that is great in your chests".
+- a'ada "bring back" (17:51; 10:4; 30:11), of 'ada "go back"; with fi (17:69; 20:55) it is left to be settled there.
+- fatara "bring into being" (17:51; 6:79; 11:51; 30:30), beside khalaqa "create", al-bari' "Maker" and badi'
+  "Originator"; fatir (6:14; 35:1) is of the same family. awwala marratin "the first time" (17:7, 51).
+- anghada ra'sahu ila "shake his head at" (17:51). mata huwa "When is it?", as bare as 2:214.
+- 17:52 is still inside the "Say" of 17:51: God is "he" in it, where the verses around it say "we". yawma at its
+  head "On the day". bi-hamdihi after "answer" "with praise of him". in labithtum illa qalilan "you stayed only a
+  little while" (17:52; 23:114): "while" is the small word English needs.
+- qul li-'ibadi yaqulu "tell my servants to say" (17:53; 14:31): that is English grammar, not another word for
+  qala. allati hiya ahsan after "say" "what is best" (17:53), which the line for 17:34 left to this part.
+- nazagha bayna "stir up trouble among", "between" (17:53; 12:100); with a person as its object (7:200; 41:36) it
+  is left to be settled there.
+- 'alayhim wakilan "as one in charge of them" (17:54; 6:107; 39:41; 42:6), as the line for 17:2 planned; wakil with
+  no 'ala stays "one to rely on" (17:65).
+- zabur "Scripture" (17:55; 4:163; 21:105), zubur "scriptures" (3:184; 26:196): the word means a writing. It is
+  translated by its meaning, with a capital as al-kitab is "the Book", and is not carried over or replaced by the
+  name of a book of the Bible; the Arabic here says "a", not "the". Told to Obay with the part, to switch if he
+  wants "the Psalms".
+- za'ama "claim" (17:56, 92; 6:22, 94; 34:22); alladhina za'amtum min dunihi "those you have claimed apart from
+  him": the Arabic does not say what they were claimed to be.
+- malaka with a deed as its object "have power to" (17:56). kashafa "lift" (17:56; 6:17; 7:134; 10:12), beside
+  kaffara 'an "remove from". durr "harm" (17:56, 67), of darra "harm".
+- tahwil "diverting" (17:56, 77; 35:43): moving a thing off to somewhere else. tabdil, which stands beside it at
+  35:43, is of baddala "change"; tasrif stays "shifting" (2:164).
+- al-wasila "the means of approach" (17:57; 5:35); ibtagha ila rabbihi l-wasila "seek the means of approach to his
+  Lord", to be heard with "sought a way to the Possessor of the Throne" (17:42). The two ways of taking "which of
+  them is nearest" are in the decision log (call: close).
+- mahdhur "a thing to beware of" (17:57), of hadhira "beware of" (2:235), beside khafa "fear" in the same verse.
+- wa-in min qaryatin illa "there is no town that ... not" (17:58), as at 17:44. mastur "inscribed" (17:58; 33:6;
+  52:2), satara (68:1): writing set down in lines, beside kataba "write".
+- al-awwalun "the earlier peoples" (17:59; 23:81; 56:13). kadhdhaba bi "call ... lies" (17:59), as at 2:39.
+- Thamud "Thamud": a name with no English form. an-naqa "the she-camel" (17:59; 7:73; 11:64; 54:27; 91:13).
+- mubsira, of a sign that is given, "giving sight" (17:59; 27:13), as of the day at 17:12. The form can also be
+  taken as "plain to see"; a sign that gives sight is plain to see, so there is no bracket.
+- zalama bi "do wrong by" (17:59; 7:9, 103).
+- khawwafa "frighten", takhwif "to frighten" (17:59, 60; 3:175; 39:16), of khawf "fear".
+- wa-idh qulna laka (17:60) stands on its own, as the line for 2:30 says. ahata bi-n-nas "has surrounded the
+  people".
+- ru'ya "vision" (17:60; 12:5, 43, 100; 37:105; 48:27): the word is "a seeing". In the stories of Joseph and of
+  Abraham it is what is seen in sleep (12:5; 37:102). "Vision" is as open as the Arabic; "dream" is kept for hulm
+  (12:44; 21:5). allati araynaka "that we showed you" has the verb of 17:1.
+- ash-shajara al-mal'una fi l-qur'an "the cursed tree in the Quran" (17:60): as open as the Arabic about whether "in
+  the Quran" says where it is cursed or where it is told of. In the Arabic it stands after "a trial for the people";
+  English has no case ending to show that it belongs with "the vision", so it is moved up beside it.
+- tin "clay" (17:61; 7:12; 38:76); khalaqta tinan "you created from clay": "from" is the small word English needs.
+- a-ra'aytaka "Do you see" (17:62): "see" is kept, as with a-lam tara (2:243). karrama 'ala "honor above" (17:62).
+- akhkhara "delay" (17:62; 63:10-11; 71:4), of ta'akhkhara "delay" (2:203), beside anzara "give time", the word of
+  7:14.
+- ihtanaka "put a bridle on" (17:62); the other sense is in the decision log (call: clear). illa qalilan, of
+  people, "all but a few".
+- jaza'ukum "the repayment of you all" (17:63): the "you" is plural, Iblis and those who follow him. mawfur "ample"
+  (17:63), beside waffa "pay in full", which is another root.
+- istafazza "unsettle" (17:64, 76, 103): to startle a thing into moving. With "from the land" (17:76, 103) the same
+  English word says the driving out too.
+- sawt "voice" (17:64; 31:19; 49:2). ajlaba 'ala ... bi "rally ... against" (17:64). khayl "horses" (17:64; 3:14;
+  8:60; 16:8); rajil "men on foot" (17:64), as rijalan is "on foot" (2:239).
+- sharaka fi "be a partner with ... in" (17:64), of sharik "partner". awlad "children" (17:31, 64).
+- wa'ada with no object "make promises to" (17:64; 4:120). ghurur "delusion" (17:64; 4:120; 3:185; 57:20), gharra
+  "delude" (31:33; 35:5; 57:14), beside khada'a "deceive".
+- The last words of 17:64 and of 17:65 are no longer said to Iblis ("Satan promises them", "your Lord"), so the
+  quotation marks close before them.
