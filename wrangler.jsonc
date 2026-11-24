@@ -1,8 +1,13 @@
 // Cloudflare deploys this Worker (named "bible", served at bible.odownhills.workers.dev) on every
 // push to main. Static files come from site/; recordings and pictures come from the R2 bucket.
+// The Worker named "analysis" (analysis.odownhills.workers.dev, the study site) is built from this same
+// file, because its build has no "Root directory". scripts/ci_site.js, run by the "build" command
+// below, gives that Worker site-study/ in the place of site/. For the "bible" Worker it changes nothing,
+// and "|| true" keeps a problem in it from ever stopping a deploy.
 {
   "name": "bible",
   "main": "worker/index.js",
+  "build": { "command": "node scripts/ci_site.js || true" },
   "compatibility_date": "2025-10-01",
   "assets": {
     "directory": "./site",
