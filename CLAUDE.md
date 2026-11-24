@@ -33,8 +33,9 @@ what the chapter needs. The translation rules and the decision log are unchanged
    the translator's brief (`scripts/translator_brief.md` filled in), and prints their paths. For a New
    Testament chapter, first put the Greek text where its note says.
 2. Translate: the translation must be done by Fable 5.2 (Obay's explicit requirement), at high effort
-   (Obay, 2026-11-24: "move to fable high as well with test"; extra-high before, and the test on
-   Genesis 9 the morning of 2026-11-25 checks it). Delegate it with the Agent tool using
+   (Obay, 2026-11-24: "move to fable high as well with test"; extra-high before. The test on
+   Genesis 8 that day, never published, cost about half of extra-high and found the same alternate as the
+   published chapter: /mnt/project-files/translation-cost/genesis-8-test/). Delegate it with the Agent tool using
    `model: "fable"` and `effort: "high"`, one agent per chapter, one chapter at a time (not in parallel,
    so each chapter sees the glossary as the last one left it), with the prompt
    `Read <path of brief.md> and follow it.` Do not translate it yourself on another model, and do not
