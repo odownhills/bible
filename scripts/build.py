@@ -28,6 +28,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import search   # the search page and index of each site (scripts/search.py)
+import icons    # the tab and home-screen icons (scripts/icons.py)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "translations")
@@ -332,14 +333,14 @@ def page(title, body, depth, tail="", css="", lang="", nav=None, footer=None):
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#171223">
-<title>%s</title>
+%s<title>%s</title>
 <style>%s</style></head>
 <body><div class="wrap">
 <nav class="top">%s</nav>
 %s
 <footer>%s</footer>
 </div>%s</body></html>
-""" % (esc(title), CSS + css, nav, body, FOOTER if footer is None else footer, tail)
+""" % (icons.tags(up), esc(title), CSS + css, nav, body, FOOTER if footer is None else footer, tail)
 
 
 TV_ICON = ('<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="12.5" rx="2"/>'
@@ -542,6 +543,8 @@ def main():
             full = os.path.join(OUT, name)
             shutil.rmtree(full) if os.path.isdir(full) else os.remove(full)
     os.makedirs(OUT, exist_ok=True)
+    # the tab and home-screen icons: a crescent for the Quran, a scroll for the Bible
+    icons.install(OUT, "crescent" if WORK == "quran" else "scroll", SITE_TITLE, "Quran" if WORK == "quran" else "Bible")
     have = {(b["slug"], n) for b, n, _ in chapters}
     manifest = []
     lengths = durations()

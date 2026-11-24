@@ -18,6 +18,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 os.environ["WORK"] = "bible"   # build.py also builds the Quran's site; the study site is about the Bible
 import build
+import icons
 import search
 from build import ROOT, SRC, BOOKS, BY_SLUG, esc, plain
 
@@ -295,14 +296,14 @@ def page(title, body, depth, css=""):
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#171223">
-<title>%s</title>
+%s<title>%s</title>
 <style>%s</style></head>
 <body><div class="wrap">
 <nav class="top"><a href="%s">Books</a><span><a class="out" href="%s/">The translation</a>%s</span></nav>
 %s
 <footer>%s</footer>
 </div></body></html>
-""" % (esc(title), CSS + css, up or "./", BIBLE_URL, search.nav_link(up), body, esc(FOOTER))
+""" % (icons.tags(up), esc(title), CSS + css, up or "./", BIBLE_URL, search.nav_link(up), body, esc(FOOTER))
 
 
 def span(a, z):
@@ -338,6 +339,7 @@ def main():
     if os.path.isdir(OUT):
         shutil.rmtree(OUT)
     os.makedirs(OUT)
+    icons.install(OUT, "scroll", SITE_TITLE, "Study")   # the Bible's scroll, as on the translation's site
     have = {(b["slug"], n) for b, n, _ in chapters}
 
     for idx, (b, n, path) in enumerate(chapters):
