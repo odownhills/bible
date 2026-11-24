@@ -21,27 +21,44 @@ own 5-hour usage window).
 Only Obay changes these. If the plan prints `DONE`, stop.
 
 ## Steps, repeated for each chapter in the plan, in order
-1. Translate the chapter following `TRANSLATION_RULES.md` and the settled renderings in `GLOSSARY.md`
-   exactly, and write it to `translations/<slug>/<NNN>.md` (three-digit chapter number).
-   The translation must be done by Fable 5.2 at extra-high effort (Obay's explicit requirement):
-   delegate it with the Agent tool using `model: "fable"` and `effort: "xhigh"`, one agent per chapter,
-   one chapter at a time (not in parallel, so each chapter sees the glossary as the last one left it).
-   Tell the agent to read TRANSLATION_RULES.md, GLOSSARY.md and the previous chapter's file (for
-   continuity of wording; for a book's first chapter, the last chapter translated), translate verse by verse from the original text without adapting any
-   existing English translation, write the file, run the check, reread the result against the
-   original and correct anything added, dropped or softened, and append any newly settled recurring
-   term to GLOSSARY.md. Do not translate it yourself on another model.
-   The same agent writes the chapter's decision log, `decisions/<slug>/<NNN>.md`: one entry for every
-   `[alt: ...]` in the chapter, in the format at the end of TRANSLATION_RULES.md. A bracket is only
-   for a real alternate; two English wordings of one meaning get no bracket and no log entry.
-   Reasons in the log point to Scripture, never to scholars, translations or tradition.
-2. `python3 scripts/check.py translations/<slug>/<NNN>.md` must print OK (it also checks the
+Obay decided on 2026-11-24 to cut the Fable use per chapter (about a third of it went to publishing,
+and every chapter read the whole glossary): Fable translates and does nothing else, the run around it
+may be any model (a project thread runs on Opus 5.5 at extra-high effort), and the translator reads only
+what the chapter needs. The translation rules and the decision log are unchanged.
+
+1. Prepare: `python3 scripts/prepare.py <slug> <n>` writes, outside the repository, the Hebrew text of
+   the chapter and of the chapters on either side (Westminster Leningrad Codex, with Ketiv, Qere and
+   paragraph marks), `glossary.md` (the parts of GLOSSARY.md this chapter needs: the opening, "Decided by
+   Obay", every section of this book, and every line elsewhere that names this chapter), and `brief.md`,
+   the translator's brief (`scripts/translator_brief.md` filled in), and prints their paths. For a New
+   Testament chapter, first put the Greek text where its note says.
+2. Translate: the translation must be done by Fable 5.2 (Obay's explicit requirement), at high effort
+   (Obay, 2026-11-24: "move to fable high as well with test"; extra-high before, and the test on
+   Genesis 9 the morning of 2026-11-25 checks it). Delegate it with the Agent tool using
+   `model: "fable"` and `effort: "high"`, one agent per chapter, one chapter at a time (not in parallel,
+   so each chapter sees the glossary as the last one left it), with the prompt
+   `Read <path of brief.md> and follow it.` Do not translate it yourself on another model, and do not
+   change the wording yourself afterward. The brief has the agent read TRANSLATION_RULES.md, the
+   glossary extract (searching GLOSSARY.md itself before settling any recurring word or name) and the
+   previous chapter with its notes; translate verse by verse from the original text without adapting
+   any existing English translation, in steps (a full draft into the file, then check, reread against
+   the original and correct anything added, dropped or softened); write the decision log,
+   `decisions/<slug>/<NNN>.md`, one entry for every `[alt: ...]` in the format at the end of
+   TRANSLATION_RULES.md (a bracket is only for a real alternate; reasons point to Scripture, never to
+   scholars, translations or tradition); append one line per newly settled recurring term to
+   GLOSSARY.md; and write short notes for the next chapter, `notes/<slug>/<NNN>.md` (what was weighed
+   and left unbracketed, and a last line "For <next chapter>:").
+3. `python3 scripts/check.py translations/<slug>/<NNN>.md` must print OK (it also checks the
    decision log against the chapter's brackets). If it fails, send the
    failures back to the same translation agent to fix (up to 3 rounds). Never publish a failing file;
    if a chapter cannot pass, stop the run there and report it.
-3. `python3 scripts/build.py`
-4. Commit on `main` with message `Add <Book> <n>` and push, before starting the next chapter, so
-   finished chapters are never lost. The commit includes the chapter's decision log.
+4. Publish, before starting the next chapter, so finished chapters are never lost:
+   `python3 scripts/publish.py <slug> <n> --branch <branch> --trailer "<line>" ...` runs the check again,
+   carries the chapter's files onto the newest main, refuses any change a run may not make (see Limits),
+   runs `scripts/build.py`, and commits `Add <Book> <n>` (the chapter, its decision log, its notes, the
+   glossary lines and the rebuilt `site/`) and pushes it to `<branch>`: `main` where the run may push
+   main, otherwise its own branch, merged into main by a pull request. After the merge,
+   `python3 scripts/publish.py --live <slug> <n>` waits until the page is live.
 
 Obay reviews the decision logs from time to time. Never wait for him: publish, and end the run's
 summary with the new chapters' `call: ask` entries (verse, the two readings, one line of why).
@@ -57,7 +74,8 @@ pushes to main, so `git pull --rebase origin main` before each push.
 - Translate only the chapters in this run's plan. Never edit an earlier chapter unless Obay asks.
   If a translator finds that an earlier chapter conflicts with the new one, do not change it:
   say so in the summary.
-- Besides new chapter files, their decision logs and the rebuilt `site/`, the only file a run may
+- Besides new chapter files, their decision logs, their notes (`notes/<slug>/<NNN>.md`) and the
+  rebuilt `site/`, the only file a run may
   change is `GLOSSARY.md`, by appending lines. Never change a line under "Decided by Obay", and never
   change a `review:` line that Obay has set in a decision log.
 - If usage limits or errors stop the run partway, that is fine: the next night continues from
