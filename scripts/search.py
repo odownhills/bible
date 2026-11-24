@@ -43,7 +43,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITES = [
     {"id": "bible", "name": "Bible", "base": "https://bible.odownhills.workers.dev"},
     {"id": "quran", "name": "Quran", "base": "https://quran.odownhills.workers.dev"},
-    {"id": "study", "name": "Study", "base": "https://study.odownhills.workers.dev"},
+    {"id": "study", "name": "Study", "base": "https://analysis.odownhills.workers.dev"},
 ]
 QURAN_FONT = "https://quran.odownhills.workers.dev/fonts/scheherazade-new-arabic.woff2"
 ARABIC_FONT = "https://quran.odownhills.workers.dev/fonts/noto-naskh-arabic-400.woff2"   # the modern spelling's
