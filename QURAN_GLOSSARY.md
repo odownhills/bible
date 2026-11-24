@@ -1171,3 +1171,91 @@ Verses 1-21:
   76:22), of shakara "give thanks".
 - 'ata' "gift" (17:20; 11:108; 38:39). mahzur "restricted" (17:20).
 - tafdil "setting some above others" (17:21, 70), of faddala 'ala "set above". wa-la- "indeed" (17:21).
+Verses 22-44:
+- la taj'al ma'a llahi ilahan akhara "Do not set up another god with God" (17:22, 39), as ja'ala li-llahi andadan is
+  "set up rivals to God" (2:22). The same words open and close the commands of 17:22-39.
+- fa- with its verb after "do not": "or you will" (17:22, 29, 39). qa'ada "sit" (17:22, 29): the picture stays.
+- makhdhul "abandoned" (17:22), khadhala "abandon" (3:160), khadhul (25:29): to leave without help one who counted
+  on it. It stands beside madhmum "condemned", malum "blamed" and madhur "banished".
+- qada alla "decree that ... none" (17:23), as the line for 17:4 planned. bi-l-walidayni ihsanan "do good to
+  parents", as at 2:83. 'indaka "with you". al-kibar "old age", as at 2:266.
+- uff (17:23; 21:67; 46:17): a sound of annoyance, translated by the English sound, "Ugh", and not carried over. With
+  "to you" after it (21:67; 46:17) it is left to be settled there.
+- nahara "scold" (17:23; 93:10).
+- karim, of what is said, "gracious": qawlan kariman "with gracious words" (17:23). It is of the family of karrama
+  "honor" (17:62, 70). What karim should be of provision, a reward, a messenger or the Quran (8:4; 57:11; 44:17;
+  56:77) is left to be settled there.
+- khafada janah "lower the wing" (17:24; 15:88; 26:215): the picture stays. dhull "humility" (17:24), of the family
+  of dhilla "humiliation" (2:61); the same word at 17:111 is to be weighed there.
+- rabba "raise" a child (17:24; 26:18). saghir, of a child, "small".
+- a'lamu bi with nothing to compare "knows best" (17:25, 47, 54, 55, 84); "know better" where two are compared
+  (2:140). ma fi nufusikum "what is within yourselves", as at 2:235.
+- awwab "one who keeps returning" (17:25; 38:17, 19, 30, 44; 50:32): the strong form of the word for returning
+  (ma'ab 3:14; iyab 88:25), made like tawwab. The Arabic does not say to what or to whom, and no "to him" is
+  supplied.
+- ati dha l-qurba haqqahu "give the relative his due" (17:26; 30:38): haqq here is what is due, as at 2:282. The
+  Arabic singular stays: "the relative", "the destitute", "the traveler".
+- badhdhara "squander", la tubadhdhir tabdhiran "do not squander wastefully", al-mubadhdhirin "those who squander"
+  (17:26, 27).
+- kafur "ungrateful" (17:27, 67), with li-rabbihi "to his Lord", as 100:6 says of man with another word: the strong
+  form of kafir, like kaffar (2:276). The echo with "disbelieve" was noted at 2:152. kufur (17:89, 99) is left to
+  be settled there.
+- qawl maysur "gentle words" (17:28): the word is "made easy", of the family of yusr "ease".
+- maghlula ila 'unuqika "chained to your neck" (17:29); so the hand at 5:64. The picture stays.
+- basata with the hand or provision as its object "extend" (17:29, 30; 13:26; 5:28), which the line for 2:245 left
+  to be settled; kulla l-bast "to its full extent". One English verb for the hand of 17:29 and the provision of
+  17:30, as in the Arabic. qadara, of provision, "measure out" (17:30; 13:26; 65:7; 89:16).
+- mahsur "stripped bare" (17:29): one who has been stripped, of his goods or of his strength; hasir (67:4) is the
+  second, "worn out". Either is what comes of a hand opened all the way, so there is no bracket. hasra "regret"
+  (2:167) is of the same root.
+- imlaq "poverty" (17:31; 6:151), sharing the English of faqr. nahnu set before its verb "It is we who" (17:31).
+- khit' "wrong", khit'an kabiran "a great wrong" (17:31), of the family of khati'a "fault" and akhta'a "make a
+  mistake". Another of the old readings has here the word the Quran uses for what is done by mistake (4:92);
+  either way the killing is called a wrong, so nothing is noted. kabir is "great" all through this surah (17:4, 9,
+  31, 43); it was "grave" at 2:217.
+- az-zina "unlawful sex" (17:32; the verb at 25:68 and 60:12, and 24:2-3): the Arabic word is sex between a man and
+  a woman who are not lawful to each other, married or not. Not "adultery", which in English is said only of the
+  married. Told to Obay with the part, to switch if he wants another wording.
+- fahisha "an indecency" (17:32; 4:22), as al-fahsha' is "indecency" (2:169). sa'a sabilan "an evil way".
+- an-nafs allati harrama llah "the soul that God has made sacred" (17:33; 6:151; 25:68): harrama with a soul or a
+  land (27:91) as its object is "make sacred", as haram is "sacred"; of a thing forbidden to people it stays
+  "forbid". illa bi-l-haqq "except by right", as bi-ghayri l-haqq is "without right" (2:61).
+- qutila mazluman "is killed wrongfully" (17:33), of zalama "wrong". sultan "authority" (17:33, 65, 80). waliyy here
+  "the one who acts for him", as the line for 2:282 planned.
+- asrafa "go too far" (17:33); of eating and spending (6:141; 7:31; 25:67) it is left to be settled there. The other
+  reading, "do not go too far", says the same thing and is not noted. mansur "aided", of nasara "aid": the Arabic
+  does not say who "he" is in "He is aided" (the one who acts for the dead man, or the dead man himself), and the
+  English does not either.
+- illa bi-llati hiya ahsan "except in the way that is best" (17:34; 6:152); allati hiya ahsan after "say" (17:53) is
+  left to that part. ashudd "full strength" (17:34; 12:22; 40:67; 46:15).
+- awfu bi-l-'ahd "keep the covenant" (17:34), as at 2:40 and 2:177.
+- mas'ul "asked about" (17:34, 36; 33:15); of a promise that is asked for (25:16) and of people who are questioned
+  (37:24) it is left to be settled there. The two ways of putting 17:36 together are in the decision log (call:
+  close).
+- awfa l-kayl "give full measure", kala "measure" (17:35; 6:152; 26:181). al-qistas "the scale" (17:35; 26:182),
+  leaving "balance" for mizan. ta'wil "outcome" (17:35; 4:59); of dreams and of the Book (12:6; 3:7) it is left to
+  be settled there.
+- qafa "follow after" (17:36), of the family of qaffa bi "make follow after" (2:87). fu'ad "heart" (17:36), sharing
+  the English of qalb; the two stand in one verse at 28:10.
+- marah "swaggering" (17:37; 31:18; 40:75). kharaqa "tear through" (17:37), as open as the Arabic, which can be
+  boring down through the earth or crossing it; of a boat (18:71) "make a hole in" will fit. tul "height".
+- 17:38 follows the Hafs reading, "In all of that, what is evil". The other reading, "All of that is an evil", says
+  the same of the same deeds and is not noted. makruh "hateful", of kariha "hate" (2:216).
+- awha ila "reveal to" (17:39, 73, 86); of the bee and of a man making signs (16:68; 19:11) it is left to be settled
+  there. alqa fi "throw into" (17:39).
+- asfa bi "choose ... for" (17:40; 43:16), of the family of istafa "choose". inath "females". qawl 'azim "a grave
+  thing" (17:40).
+- sarrafa, of what is said in the Quran, with no object named "put it in many ways" (17:41), of the family of
+  tasrif "shifting" (2:164); with its object named (17:89; 6:65; 20:113) it is left to be settled there.
+- nufur "aversion" (17:41, 46; 35:42; 67:21). ma yaziduhum illa "it only increases them in" (17:41, 60, 82; 35:42),
+  so that the refrain is heard each time it comes.
+- dhu l-'arsh "the Possessor of the Throne" (17:42; 40:15; 81:20; 85:15), with capitals as a title that stands for
+  God; dhu l-fadl is "the possessor of great bounty" (2:105). rabb al-'arsh (9:129; 21:22) is "the Lord of the
+  Throne". al-'arsh "the Throne", beside kursi "seat" (2:255).
+- ibtagha ila ... sabilan "seek a way to" (17:42): as open as the Arabic about whether the way is to come against
+  him (23:91) or to come near him (17:57; 73:19). No bracket, since the English says no more than the Arabic.
+- ta'ala 'amma "be high above"; 'uluwwan kabiran "by a great height" (17:43), the two words of 17:4.
+- as-samawat as-sab' "the seven heavens" (17:44). sabbaha lahu "glorify him"; tasbih "glorifying". wa-in min
+  shay'in illa "there is nothing that does not".
+- faqiha "understand" (17:44, 46), sharing the English of 'aqala with an object (2:75).
+- halim ghafur "forbearing, forgiving" (17:44; 35:41).
