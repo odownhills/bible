@@ -185,8 +185,8 @@ def bible_units(x):
         for kind, val in blocks:
             if kind == "t":            # a psalm's title line: "verse 0"
                 rows.append([0, val])
-            elif kind == "p":
-                rows += [[vn, t] for vn, t in val]
+            elif kind == "p":   # a verse set in two paragraphs holds a line break: here it is a space
+                rows += [[vn, " ".join(t.split())] for vn, t in val]
         key = order[b["slug"]] * 1000 + n
         books[str(order[b["slug"]])] = [b["name"], b["slug"]]
         files["t/%s/%d.json" % (b["slug"], n)] = rows

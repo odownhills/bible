@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.join(ROOT, "scripts"))
 QURAN = len(sys.argv) > 1 and os.path.basename(os.path.dirname(os.path.abspath(sys.argv[1]))).startswith("quran-")
 if QURAN:
     os.environ["WORK"] = "quran"
-from build import parse, BY_SLUG
+from build import parse, BY_SLUG, PARA
 
 BANNED = ["behold", "thee", "thy", "thou", "thine", "hearken", "iniquity", "begat", "lo", "verily", "hath", "doth", "unto", "ye"]
 if QURAN:
@@ -143,6 +143,8 @@ def main(path):
     if QURAN and re.search(r"[()]", text.split("---", 2)[2]):
         errs.append("contains parentheses: add no words in parentheses (QURAN_RULES.md)")
     if text.count("[") != text.count("]"): errs.append("unbalanced brackets")
+    if any(PARA in ln.strip()[1:] for ln in text.splitlines()):
+        errs.append("the paragraph sign %s belongs only at the start of a line (a new paragraph inside the verse above)" % PARA)
     if not any(k == "h" for k, _ in blocks): errs.append("no section headings")
     body = re.sub(r"\[[^\]]*\]", "", text.split("---", 2)[2]).lower()
     hits = sorted({w for w in BANNED if re.search(r"\b%s\b" % w, body)})
