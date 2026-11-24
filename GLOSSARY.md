@@ -1235,3 +1235,25 @@ closed. Close calls go in the chapter's decision log instead.
 - bekhor "firstborn" (Job 1:13); achar (10:18) "afterward" (Job 18:2). gevul "border". bo'akhah (10:19, 30; 13:10; 25:18) "as you go toward": the Hebrew is "your going", and the ending on the place name is "toward"; ad "as far as". The two halves of 10:19 have no "and" between them and stand on either side of a semicolon. moshav (10:30) "the place where they lived", beside yashav "live" (4:16; 11:2). har with the name of a region (10:30; 31:21; 36:8) "the hill country of"; elsewhere it stays "mountain". qedem "east" (2:8).
 - haggadol of a brother or a son: of one among three "the eldest" (10:21), as haqqatan is "the youngest" (9:24); of one of two "the elder" or "the older" (27:1, 15). avi kol-bene-Ever "the father of all the sons of Eber": "sons of" is kept, as it is all through the chapter. (Eber is the name heard in "Hebrew", 14:13; nothing is said of it here, and that chapter may want a note.)
 - For Genesis 11: safah (11:1, 6, 7, 9) is not lashon "language" (10:5, 20, 31), and "speech" (Job 12:20) would keep the two apart; kol-ha'arets (11:1, 9) is the people of the earth, as at 9:19. puts (11:4, 8, 9) "scatter", "be scattered", as at 9:19 and 10:18. erets Shin'ar (11:2) "the land of Shinar" and Bavel (11:9) "Babylon", as at 10:10, with a note that the name sounds like the word for "confused"; miqqedem beside qedem "east" (10:30; 2:8); yashav "live", banah "build" and ir "city" (10:11-12); hechel "begin" (10:8; 9:20). 11:10 elleh toledot Shem "These are the generations of Shem", with no "And". The decision log of 10:21 quotes 11:10 ahead of time (Shem was "a hundred years old", as at 5:32, and fathered Arpachshad "two years after the flood"), and that of 10:24 quotes 11:12 in the wording of chapter 5 ("And Arpachshad lived thirty-five years, and he fathered Shelah"); yalad in chapter 10 and holid in chapter 11 are both "fathered" (the Genesis 5 line). Arpachshad, Shelah, Eber and Peleg as at 10:22-25, and the note on "Peleg" (10:25) is not repeated. The alt about Kenan stands at 10:24; at 11:12-13 the old Greek has him again, with his years, and it is the same alternate. Kasdim (11:28, 31) "Chaldeans" (Job 1:17); erets Kena'an "the land of Canaan".
+
+## Settled in Genesis 11
+- safah of what people speak (11:1, 6, 7, 9) "speech", kept distinct from lashon "language" (10:5, 20, 31).
+- devarim achadim (11:1) "the same words" [alt: few words] (decision log, call: clear).
+- nasa (11:2; 13:11) "travel". miqqedem with it "eastward" [alt at 11:2: from the east] (decision log, call: close); of where a thing lies it stays "in the east", "east of" (2:8; 3:24).
+- biq'ah (11:2) "plain".
+- ish el-re'ehu (11:3) "to one another"; ish sefat re'ehu (11:7) "one another's speech".
+- havah (11:3, 4, 7) "Come,".
+- lavan levenim (11:3) "make bricks"; levenah "brick"; even "stone". saraf lisrefah of bricks "bake thoroughly" (saraf elsewhere "burn").
+- chemar (11:3; 14:10; Exod 2:3) "tar", kept distinct from kofer "pitch" (6:14). chomer of building (11:3; Exod 1:14) "mortar" ("clay" at Job 4:19).
+- migdal "tower"; rosh of a tower "top", as of a mountain (8:5); bashamayim (11:4) "in the sky".
+- asah shem (11:4) "make a name". pen (11:4) "so that ... not", as listed. puts with al-pene khol-ha'arets (11:4, 8, 9) "scatter over the face of the whole earth".
+- yarad of Yahweh (11:5, 7) "come down", "go down". bene ha'adam (11:5) "the sons of humankind", as benot ha'adam is "the daughters of humankind" (6:2).
+- zamam (11:6) "intend", kept distinct from chashav "plan". nivtsar min (11:6; Job 42:2) "be out of the reach of".
+- balal (11:7, 9) "confuse", with one bracketed note at 11:9 that it sounds like the name "Babylon". shama of a speech (11:7; 42:23) "understand".
+- chadal with an infinitive (11:8) "stop".
+- al-ken qara shemah (11:9) "That is why it was named": qara with no subject named is an English passive.
+- 11:10-26 keeps the genealogy formula of chapter 5, without its third sentence; we-X chay (11:12, 14) is the same English as wayechi X, "And X lived".
+- al-pene of a person (11:28) "in the presence of". erets moledet (11:28; 24:7; 31:13) "the land of one's birth".
+- aqarah (11:30) "barren": it shares its English with galmud (Job 3:7). walad "child". kallah "daughter-in-law". ben-beno "his son's son".
+- wayyeshvu sham (11:2, 31) "and they lived there", yashav as listed. ad with a place (11:31) "as far as", as at 10:19. lalekhet artsah Kena'an (11:31; 12:5) "to go to the land of Canaan".
+- Names: Reu, Serug, Nahor, Terah, Abram, Lot, Sarai, Milcah, Iscah; Ur Kasdim "Ur of the Chaldeans". Haran (11:26-31), Terah's son, and Charan (11:31, 32; 12:4, 5), the place, are both "Haran", as English has them, with one bracketed note at 11:31 that they are two names.
