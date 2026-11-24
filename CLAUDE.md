@@ -163,8 +163,14 @@ read and timed from the traditional text; the modern pages light up their own wo
 # Study site
 
 A third site built from this repository: an analysis of each published Bible chapter, section by
-section (what it means, and the related Scripture), at https://study.odownhills.workers.dev (a third
-Cloudflare Worker, `study/wrangler.jsonc`, which deploys the `site-study/` folder on every push to main).
+section (what it means, and the related Scripture), at https://analysis.odownhills.workers.dev (a third
+Cloudflare Worker, named `analysis`, which deploys the `site-study/` folder on every push to main).
+That Worker's build has no "Root directory", so Cloudflare builds it from the top `wrangler.jsonc`, the
+Bible's: the build step there, `scripts/ci_site.js`, gives the Worker named `analysis` the `site-study/`
+folder in the place of `site/` and changes nothing for the `bible` Worker. Never take that step out.
+(`study/wrangler.jsonc` is the other way to deploy it, for a Worker whose Root directory is `study/`. The
+Worker named `study` was set up for that on 2026-11-22 and has never deployed that way: its address,
+study.odownhills.workers.dev, is not the site.)
 A Bible run and a Quran run never touch it, and nothing above applies to it: an analysis run follows
 this section. There is no schedule for it yet. A chapter is analyzed when Obay asks (so far: 1 John 3,
 as a test).

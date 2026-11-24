@@ -1,5 +1,6 @@
-// Cloudflare deploys this third Worker (named "study", served at study.odownhills.workers.dev) on
-// every push to main. Its build setting "Root directory" is this folder, study/.
+// The study site is live at analysis.odownhills.workers.dev, deployed from the wrangler.jsonc at the top
+// of the repository (see scripts/ci_site.js). This file is the other way to deploy it: a Worker whose
+// build setting "Root directory" is this folder, study/, deploys from here on every push to main.
 // It is the study site: an analysis of each Bible chapter (ANALYSIS_RULES.md), built into site-study/
 // by `python3 scripts/study.py`. Plain pages only: no recordings, no pictures and no Worker code.
 {
