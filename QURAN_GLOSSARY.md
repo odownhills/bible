@@ -1347,3 +1347,79 @@ Verses 45-65:
   "delude" (31:33; 35:5; 57:14), beside khada'a "deceive".
 - The last words of 17:64 and of 17:65 are no longer said to Iblis ("Satan promises them", "your Lord"), so the
   quotation marks close before them.
+Verses 66-89:
+- azja "drive" (17:66; 24:43, of clouds): to push a thing along. fi l-bahr "on the sea" (17:66), "at sea" (17:67).
+  min fadlihi after "seek" "some of his bounty" (17:66).
+- dalla, of those who are called on, "be lost" (17:67): gone and not to be found, as what people invented is lost to
+  them (6:24; 7:53). It is the word for "go astray"; with 'an (6:24) it is left to be settled there.
+- najja ila "bring safely to" (17:67; 29:65; 31:32): the Arabic packs "save" and "to the land" into one verb. al-barr
+  "the land", "land" (17:67, 68, 70), set against the sea; al-ard beside it is "the land" of a country (17:76).
+- The Arabic past after "when", of what happens each time, is an English present at 17:67 and 17:83, as at 17:45.
+- amina an "feel safe that ... not" (17:68, 69; 7:97-98; 12:107; 16:45; 67:16-17), of amina "be safe" (2:196).
+- khasafa bi "make ... sink with" (17:68; 16:45; 28:81; 29:40; 34:9; 67:16). janib "side" (17:68); janib al-barr "the
+  side of the land", as bare as the Arabic. hasib "a storm of stones" (17:68; 29:40; 54:34; 67:17). qasif mina r-rih
+  "a shattering blast of wind" (17:69). arsala 'ala "send against" (17:68, 69).
+- The last words of 17:68 and 17:69 ("then you would not find") still hang on "that he will not" in the Arabic. They
+  stand as sentences of their own in English, with "would", so that a listener can follow.
+- a'ada fi "take back into" (17:69; 20:55; 71:18), which the line for 17:51 left to this part. taratan ukhra "another
+  time" (17:69; 20:55).
+- bi-ma kafartum at 17:69 "because you were ungrateful", taking up kafur "ungrateful" two verses before. kufur (17:89,
+  99) "disbelief", sharing the English of kufr: what follows it is "We will not believe you" (17:90), and what goes
+  before it at 17:99 is "they disbelieved in our signs" (17:98). No bracket at either: the echo was noted at 2:152.
+- tabi' "one to follow it up" (17:69), of ittiba' "a following up" (2:178).
+- bani Adam "the children of Adam" (17:70; 7:26, 27, 172; 36:60), lowercase. faddala ... tafdilan "set far above"
+  (17:70).
+- unas "group of people" (17:71), as at 2:60. imam at 17:71 "leader", as at 2:124; the other sense is in the decision
+  log (call: close). bi-yaminihi "in his right hand" (17:71; 69:19; 84:7); yamin is also "oath" (2:224).
+- fatil "a thread" (17:71; 4:49, 77): the Arabic is the thread in the groove of a date stone, a picture of the least
+  thing; "by so much as a thread". naqir (4:124) and qitmir (35:13) are other words for it and need other English.
+- fi hadhihi "in this life" (17:72): the Arabic says only "in this", and "life" is the small word English needs, as
+  with "the hasty life". The second "blind" can also be taken as "more blind"; that says more of the same thing, so
+  there is no bracket. adallu sabilan "further astray from the way" (17:72; 25:34, 42, 44); ahda sabilan "best
+  guided on the way" (17:84).
+- wa-in kadu la- "indeed they almost" (17:73, 76); kada "almost" (2:20, 71). fatana 'an "tempt away from" (17:73;
+  5:49), of fitna "trial".
+- iftara 'ala "invent ... against" (17:73); with kadhib (3:94; 6:21) "invent a lie against". ghayrahu "something
+  other than it".
+- khalil "friend" (17:73; 4:125), of khulla "friendship" (2:254). idhan "then" (17:42, 73, 75, 76).
+- rakana ila "lean toward" (17:74; 11:113). shay'an qalilan "a little".
+- adhaqa "make taste" (17:75; 11:9; 30:36). di'f "double" (17:75; 7:38), of di'fayn "twice over": the Arabic is "the
+  double of life and the double of death" and does not say of what, and the English does not either.
+- khilafaka "after you" (17:76; 9:81).
+- sunna "practice" (17:77; 33:62; 35:43; 48:23): how a thing has always been done. "Way" is sabil. sunnat al-awwalin
+  (8:38; 15:13; 18:55; 35:43) is left to be settled there. 17:77 has no verb; "That was" is the small wording English
+  needs.
+- duluk ash-shams "the declining of the sun" (17:78): as open as the Arabic, which can be the sun passing its height
+  or the sun going down. No bracket. li ... ila "from ... until". ghasaq "dark" (17:78); ghasiq (113:3) is of the
+  same family.
+- qur'an al-fajr "the reading at dawn" (17:78): the word "Quran" in its plain sense, a reading, as at 75:17-18. Noted
+  once in the verse. mashhud "witnessed" (17:78; 11:103; 85:3): the Arabic does not say by whom.
+- tahajjada bi "stay awake with" (17:79). nafila "something extra" (17:79; 21:72): as open as the Arabic about
+  whether it is an extra duty or an extra gift.
+- maqam mahmud "a praised standing" (17:79), of hamd "praise"; maqam Ibrahim stays "the place where Abraham stood".
+- adkhala "bring in" (17:80), beside akhraja "bring out". mudkhal sidq "a true entrance", mukhraj sidq "a true exit":
+  each noun can be the act or the place, as the English words can. sidq in the other phrases of this kind (10:2, 93;
+  19:50; 26:84; 54:55) is left to be settled there.
+- min ladunka "from yourself" (17:80; 3:8; 4:75; 18:10), beside min 'indi "from". sultan nasir "an authority to aid
+  me": "me" is the small word English needs. ja'ala li "give" (17:33, 80).
+- zahaqa "vanish", zahuq "bound to vanish" (17:81); zahiq (21:18). Of souls (9:55, 85) it is left to be settled there.
+  The last words of 17:81 stay inside the saying, since nothing marks where it ends.
+- shifa' "healing" (17:82; 10:57; 16:69; 41:44). nunazzilu mina l-qur'ani ma "we send down from the Quran what": "from"
+  is as open as the Arabic, which can be "the part of it that" or "the Quran, which". khasar "loss" (17:82; 35:39;
+  71:21), of khasir "loser".
+- na'a bi-janibihi "distance himself" (17:83; 41:51): an idiom, "move far off with his side", translated by its
+  meaning. sharr as a noun "evil" (17:11, 83). ya'us "in despair" (17:83; 11:9; 41:49); qanut (41:49) is another word.
+- shakila "manner" (17:84): a person's own way of being and acting. "Way" is sabil, which stands in the same verse.
+- ar-ruh "the spirit" (17:85), lowercase. Arabic has no capitals, and the verse does not say whether this is the one
+  that comes down with revelation (16:2; 26:193; 40:15; 42:52; 97:4) or what is breathed into man (15:29; 32:9). The
+  English word is as open as the Arabic, so there is no bracket. ruh al-qudus stays "the Holy Spirit". min amri rabbi
+  is in the decision log (call: clear).
+- la-in shi'na la- "if we willed, we would certainly" (17:86). bihi with wakil and tabi' "for it" (17:69, 86). 17:86
+  runs on into 17:87 and is kept whole across the verse number.
+- al-ins wa-l-jinn "humans and jinn" (17:88; 6:112, 130; 51:56; 55:33). "Jinn" is the English word for that kind of
+  being, as "angels" is for another, and is not a label carried over; al-ins beside it is "humans", leaving "man"
+  for al-insan and "people" for an-nas. Told to Obay with the part, to switch if he wants another wording.
+- ijtama'a 'ala an "come together to" (17:88). bi-mithli "the like of" (17:88; 2:137). zahir "backer": ba'duhum
+  li-ba'din zahiran "backed one another" (17:88), as tazahara is "back one another" (2:85).
+- sarrafa with its object named "put ... in many ways" (17:89; 18:54), as at 17:41; min kulli mathal "every kind of
+  example". aba illa "refuse anything but" (17:89, 99; 25:50).
