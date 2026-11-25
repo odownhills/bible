@@ -1,0 +1,174 @@
+{
+ "note": "Made by the steps in TV_PICTURES.md for Quran 2:83-103 (2026-11-25): 11 pictures from 22 trial pictures. Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. The Prophet Muhammad is never shown in any way, nor anyone standing in for him; God and the angels are not pictured; no religious symbols of any tradition; nothing violent. Tried and not chosen: A man in plain clothes kneels at a front door to give his bag of groceries to a small child and a worn old woman together. A line of people with bundles walks away down a road from a row of shut houses. A man calmly tears a paper contract in half and keeps only one half in his hand. A row of closed doors along a long corridor, each with a letter on the floor in front of it. A man sits with a thick scarf wound many times around his head and chest in a garden in full bloom. A long-expected guest arrives at a garden gate in the light while the host shuts the door. A man nods yes to a signpost while his shoes point the opposite way. An old man clutches an old clock to his chest on a park bench. A torn covenant paper flutters down a river. A closed book lies forgotten in the rain on a park bench. Two coffee cups stand on a table before two empty chairs turned toward opposite walls.",
+ "method": "Second method, asked for by Obay on 2026-11-21: (1) split the part into sections that each carry one deep meaning, written as one plain sentence; (2) write picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
+ "sections": [
+  {
+   "verses": "83-86",
+   "meaning": "The pledge: worship God alone, be good to parents, relatives, orphans and the poor, speak well; yet they turned away, drove their own from their homes, and believed part of the Book while disbelieving part.",
+   "ideas": [
+    "A modest kitchen table where parents, an orphan and a poor man are each served a bowl",
+    "A hand on a thin child's shoulder at a door",
+    "Suitcases piled on a curb outside a front door while a neighbor looks away",
+    "A line of people with bundles walking away from shut houses",
+    "A book with half its pages ripped out and blown away"
+   ]
+  },
+  {
+   "verses": "87-88",
+   "meaning": "Messenger after messenger came, and whenever one came with what their souls did not desire they were arrogant; they said their hearts were wrapped.",
+   "ideas": [
+    "A visitor's shadow on frosted glass and a man inside with his back turned and arms folded",
+    "A person wrapped head to toe in a heavy blanket in a bright room",
+    "A row of closed doors along a corridor"
+   ]
+  },
+  {
+   "verses": "89-91",
+   "meaning": "When a Book came that confirmed what they had, and what they had long awaited arrived, they disbelieved it out of resentment, believing only what was sent to them.",
+   "ideas": [
+    "A man who waited on a platform turns his back as a bright train arrives",
+    "A guest long expected arrives at a gate and the host shuts it",
+    "A man on a bench ignoring the sunrise he waited all night for"
+   ]
+  },
+  {
+   "verses": "92-93",
+   "meaning": "They said 'we hear and we disobey', and the calf was made to sink into their hearts.",
+   "ideas": [
+    "A man cups a hand to his ear toward a clear bell while his body walks away",
+    "Someone nods yes while his shoes point the other way"
+   ]
+  },
+  {
+   "verses": "94-96",
+   "meaning": "If the home of the hereafter were theirs alone they would wish for death, but they never do; they are the most eager of people for life, each wanting a thousand years.",
+   "ideas": [
+    "An old man at a table before a cake with a thousand candles",
+    "An old man clutching a clock to his chest on a bench",
+    "A man gripping a cliff ledge with both hands"
+   ]
+  },
+  {
+   "verses": "99-101",
+   "meaning": "They make covenants and a group of them throws them away; they threw the Book of God behind their backs as if they did not know.",
+   "ideas": [
+    "A man tosses a heavy book over his shoulder behind him as he walks on",
+    "A torn covenant paper fluttering into a river",
+    "A closed book left in the rain on a park bench"
+   ]
+  },
+  {
+   "verses": "102-103",
+   "meaning": "They followed what the devils recited, magic that separates a man from his spouse; they bought what harms them and does not benefit them, but being mindful of God would have been better.",
+   "ideas": [
+    "A kitchen table with a crack down the middle and two chairs turned away",
+    "A wedding ring on a floor in a crack of boards",
+    "Two coffee cups on a table before empty chairs"
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "verse": 83,
+   "section": "83-86",
+   "image": "01-kind-table.jpg",
+   "tall": "tall/01-kind-table.jpg",
+   "principle": "And when we took the pledge of the Children of Israel: \"You shall worship none but God, and do good to parents, and to relatives, orphans and the destitute, and say what is good to people, and keep up the prayer and give the alms.\" Then ...",
+   "shows": "At a modest kitchen table, a woman serves a bowl of soup each to an old couple, a small child on her own and a poor man in worn clothes.",
+   "prompt": "At a modest kitchen table in warm light, a woman in plain clothes ladles soup into bowls for an old couple, a small child sitting alone, and a poor man in worn coat, all seated around the same table with bread in the middle. The people are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 84,
+   "section": "83-86",
+   "image": "02-evicted.jpg",
+   "tall": "tall/02-evicted.jpg",
+   "principle": "And when we took your pledge: \"You shall not shed your own blood or drive your own out of your homes.\" Then you affirmed it, and you bore witness.",
+   "shows": "Suitcases and boxes are piled on a curb outside a front door while a neighbor looks away from her window.",
+   "prompt": "A tidy suburban street with a family's suitcases, boxes and chairs piled on the curb in front of a house with its front door shut, and a neighbor in the next house holding her curtain a little open then turning away. The pile, the door and the neighbor's window are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 85,
+   "from": "So do you believe in part of the Book",
+   "section": "83-86",
+   "image": "03-half-book.jpg",
+   "tall": "tall/03-half-book.jpg",
+   "principle": "Then here you are, killing your own and driving a group of you out of their homes, backing one another against them in sin and aggression.",
+   "shows": "A thick book has half its pages ripped out and blown away across a field by the wind.",
+   "prompt": "A thick book lying open on a field of grass with half of its pages torn out and whirling away on the wind across the field, soft light. The book and the flying pages are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 87,
+   "section": "87-88",
+   "image": "04-frosted-door.jpg",
+   "tall": "tall/04-frosted-door.jpg",
+   "principle": "And we certainly gave Moses the Book and made the messengers follow after him, and we gave Jesus son of Mary the clear proofs and strengthened him with the Holy Spirit.",
+   "shows": "A visitor's shadow shows on frosted glass of a front door, and a man inside turns his back with arms folded.",
+   "prompt": "Inside a plain hall, a man in plain clothes stands with his back turned and arms folded, facing away from a front door whose frosted glass shows the dark shadow of a visitor standing outside holding a bag of letters, bright light behind the glass. The man and the door are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 88,
+   "section": "87-88",
+   "image": "05-wrapped.jpg",
+   "tall": "tall/05-wrapped.jpg",
+   "principle": "And they said, \"Our hearts are wrapped.\" Rather, God has cursed them for their disbelief, so it is little that they believe.",
+   "shows": "A person sits wrapped head to toe in a thick wool blanket in a room full of morning sun.",
+   "prompt": "A person of today sits on a chair in a bright sunlit room completely wrapped from head to toe in a thick wool blanket, face covered, the sun streaming through a wide window around them. The person and the window are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 89,
+   "section": "89-91",
+   "image": "06-platform.jpg",
+   "tall": "tall/06-platform.jpg",
+   "principle": "And when a Book from God came to them, confirming what is with them, and before that they used to ask for victory over those who disbelieve, then when what they recognized came to them, they disbelieved in it.",
+   "shows": "A man on a long-empty platform turns his back and walks away as a bright train pulls in.",
+   "prompt": "An old station platform at dawn: a man in plain clothes who has clearly waited a long time, a worn bench behind him, turns his back and walks away along the platform as a bright train pulls in. The man and the train are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 93,
+   "section": "92-93",
+   "image": "07-hear-disobey.jpg",
+   "tall": "tall/07-hear-disobey.jpg",
+   "principle": "And when we took your pledge and raised the Mount above you: \"Take with strength what we have given you, and hear.\" They said, \"We hear and we disobey.\" And they were made to drink the calf into their hearts for their disbelief.",
+   "shows": "A man cups a hand to his ear toward a clear bell while his body is already walking away.",
+   "prompt": "A man of today in plain clothes stands on a village path cupping one hand to his ear toward a distant church-less bright bell tower sound, while his whole body and feet are turned and walking away from it down the path. The man is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 96,
+   "section": "94-96",
+   "image": "08-thousand-years.jpg",
+   "tall": "tall/08-thousand-years.jpg",
+   "principle": "And you will certainly find them the most eager of people for life, and more so than those who give God partners.",
+   "shows": "A very old man sits before a huge cake covered with a thousand tiny candles.",
+   "prompt": "A very old man in plain clothes sits at a table before an enormous cake covered in a thousand tiny lit candles, glowing, a surprised and hungry look for life. The old man and the cake are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 100,
+   "section": "99-101",
+   "image": "09-torn-covenant.jpg",
+   "tall": "tall/09-torn-covenant.jpg",
+   "principle": "And is it that whenever they made a covenant, a group of them threw it away? Rather, most of them do not believe.",
+   "shows": "A hand lets a rolled agreement fall into a puddle.",
+   "prompt": "A man's hand opens and lets a rolled paper agreement drop into a muddy puddle on a street, plain light. The hand and the paper are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 101,
+   "section": "99-101",
+   "image": "10-behind-back.jpg",
+   "tall": "tall/10-behind-back.jpg",
+   "principle": "And when a messenger from God came to them, confirming what is with them, a group of those who were given the Book threw the Book of God behind their backs, as if they did not know.",
+   "shows": "A man walks on down a road having tossed a heavy book over his shoulder behind him into the grass.",
+   "prompt": "Seen from the side, a man in plain clothes walks briskly along a country road and with one arm swings a heavy book over his shoulder, tossing it behind him into the grass beside the road, the book in the air. The man and the book are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 102,
+   "section": "102-103",
+   "image": "11-split-table.jpg",
+   "tall": "tall/11-split-table.jpg",
+   "principle": "And they followed what the devils recited against the kingdom of Solomon. Solomon did not disbelieve, but the devils disbelieved, teaching people magic and what was sent down to the two angels in Babylon, Harut and Marut.",
+   "shows": "A dining table with a crack down its middle, a chair turned away on each side.",
+   "prompt": "A plain dining table set for two with a deep crack running down the middle of it, one chair on each side, both pulled away and turned in opposite directions, a window of cold light behind. The table and the chairs are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  }
+ ]
+}
