@@ -1,5 +1,5 @@
 {
- "note": "Trial pictures for Quran 2:30-61.",
+ "note": "Made by the steps in TV_PICTURES.md for Quran 2:30-61 (2026-11-25): 23 pictures from 44 trial pictures. Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. The Prophet Muhammad is never shown in any way, nor anyone standing in for him; God and the angels are not pictured; no religious symbols of any tradition; nothing violent. Angels, Adam and Iblis are not pictured: the successor is a hand-over (a relay baton passed on a country road), the names a teacher with a child over a table of a hundred things, Iblis's refusal a man standing stiff with folded arms in a circle of people bowing, the garden two people of today walking into a fruit garden with one tree set apart, the going down two people on a hill path away from a green garden, the turning back a traveler walking up a road to a house with its porch lamp lit. The text's own images are shown as they are: the parted sea, the calf, the lightning, the white flakes of manna with quail, the twelve springs from one rock, the ruin. Second picture of each pair kept out: a keys-at-the-door handover (it repeats Quran 2:3's hands at a door), a child with a leaf in a meadow, a dead tree among bending reeds, hands picking fruit, the open garden gate, a seeker reaching a man's seat, a pawnbroker's counter, a river of clear and muddy water, a group kneeling in a bright room, a gardener at his neighbor's flowers, an envelope at a barred window, a cage with a freed bird, a calm sea with planks, a calf far off before a mountain, a lone man on a river bank, empty chairs before a storm, a cloud over quail alone, travelers stooping through a gate, twelve spouts into basins, a rusted gate. Quran 2:61 has three pictures: the foods asked for (a table of cucumbers, onions, garlic, lentils and greens beside one plain loaf), a man drinking from a muddy puddle beside a clear spring (the lower for the better) and a house in ruin (humiliation and destitution).",
  "method": "Second method, asked for by Obay on 2026-11-21: (1) split the part into sections that each carry one deep meaning, written as one plain sentence; (2) write picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
  "sections": [
   {
@@ -102,20 +102,12 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
    "verse": 30,
    "section": "30-33",
-   "image": "cand/01-successor-a.jpg",
-   "principle": "And when your Lord said to the angels, \"I am placing a successor on the earth,\" they said, \"Will you place on it one who will cause corruption there and shed blood, while we glorify you with praise and declare you holy?\" He said, \"I know ...",
-   "shows": "A young person stands at the open door of a house high above a wide untouched green valley at dawn, taking a ring of keys from an older hand.",
-   "prompt": "At dawn, inside the open doorway of a plain farmhouse on a high ridge, an older person's weathered hand holds out a ring of keys to a young person's hand reaching for them. Beyond the doorway a wide untouched green valley with a river lies in golden light. Only the hands, the forearms in plain everyday sleeves and the keys are seen close, with the valley beyond. Quiet, trusting. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
-   "verse": 30,
-   "section": "30-33",
-   "image": "cand/01-successor-b.jpg",
+   "image": "01-successor.jpg",
+   "tall": "tall/01-successor.jpg",
    "principle": "And when your Lord said to the angels, \"I am placing a successor on the earth,\" they said, \"Will you place on it one who will cause corruption there and shed blood, while we glorify you with praise and declare you holy?\" He said, \"I know ...",
    "shows": "Two runners on an empty country road at dawn, one passing the relay baton to the other, with a wide untouched green valley beyond.",
    "prompt": "On an empty country road at dawn, seen from behind and slightly to the side, one runner places a relay baton into the outstretched hand of another runner who is just starting to move, a wide untouched green valley with a river lying before them in golden mist. The two runners and the baton are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
@@ -123,15 +115,8 @@
   {
    "verse": 31,
    "section": "30-33",
-   "image": "cand/02-names-a.jpg",
-   "principle": "And he taught Adam the names, all of them. Then he presented them to the angels and said, \"Tell me the names of these, if you are telling the truth.\"",
-   "shows": "A small child holds up a leaf and a kneeling elder listens, with a meadow of plants and animals around them.",
-   "prompt": "In a sunlit meadow full of flowers, a small child proudly holds up a green leaf and names it, while a kneeling elder smiles and listens close beside, and a few animals, a rabbit, a heron, a horse at the fence, are scattered nearby. The child and the elder are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
-   "verse": 31,
-   "section": "30-33",
-   "image": "cand/02-names-b.jpg",
+   "image": "02-names.jpg",
+   "tall": "tall/02-names.jpg",
    "principle": "And he taught Adam the names, all of them. Then he presented them to the angels and said, \"Tell me the names of these, if you are telling the truth.\"",
    "shows": "A long table in a bright room spread with a hundred different objects while a child leans in to look at a seed held up in a hand.",
    "prompt": "In a bright airy room, a long wooden table is spread with a hundred different things: seeds, shells, feathers, stones, small tools, fruit. A hand holds up one small seed between finger and thumb, and a child leans in with wide eyes to look at it. The hand, the seed and the child's face are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
@@ -139,16 +124,8 @@
   {
    "verse": 34,
    "section": "34-39",
-   "image": "cand/03-stiff-a.jpg",
-   "principle": "And when we said to the angels, \"Bow down to Adam,\" they bowed down, except Iblis. He refused and was arrogant, and he was one of the disbelievers.",
-   "shows": "In a clear stream all the reeds bend with the current, but one rigid dead tree trunk stands stiff and unbending.",
-   "prompt": "A clear shallow stream in morning light, the tall green reeds on its banks all bending low with the water and the wind, and one tall rigid dead tree trunk standing in the middle of them, stiff and unbending, its branches pointing up like a raised chin. The reeds and the trunk are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 34,
-   "section": "34-39",
-   "image": "cand/03-stiff-b.jpg",
+   "image": "03-stiff.jpg",
+   "tall": "tall/03-stiff.jpg",
    "principle": "And when we said to the angels, \"Bow down to Adam,\" they bowed down, except Iblis. He refused and was arrogant, and he was one of the disbelievers.",
    "shows": "A circle of ordinary people bows low in a meadow, and one man stands stiff with his arms folded and his chin high.",
    "prompt": "In a sunlit meadow a wide circle of ordinary people of today in plain clothes all bow low from the waist toward the center, while one man in the circle stands stiff and straight with his arms folded and his chin raised, refusing, his long shadow across the grass. The standing man is clearly seen in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
@@ -156,47 +133,26 @@
   {
    "verse": 35,
    "section": "34-39",
-   "image": "cand/04-garden-tree-a.jpg",
+   "image": "04-garden-tree.jpg",
+   "tall": "tall/04-garden-tree.jpg",
    "principle": "And we said, \"Adam, live in the Garden, you and your spouse, and eat from it freely wherever you wish, but do not go near this tree, or you will be among the wrongdoers.\"",
    "shows": "Two people seen from behind enter a laden fruit garden; one tree stands apart in the distance behind a low ring of stones.",
    "prompt": "Seen from behind, two people of today in plain clothes walk into a lush overflowing garden of fruit trees heavy with fruit, a stream running through it, in golden morning light. Far ahead one single tree stands apart on a small rise, circled by a low ring of white stones. The two people and the lone tree are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 35,
-   "section": "34-39",
-   "image": "cand/04-garden-tree-b.jpg",
-   "principle": "And we said, \"Adam, live in the Garden, you and your spouse, and eat from it freely wherever you wish, but do not go near this tree, or you will be among the wrongdoers.\"",
-   "shows": "Close on a couple's hands picking fruit from a loaded branch, with one lone tree behind them circled by a low line of stones.",
-   "prompt": "A close view of a man's and a woman's hands picking ripe fruit from a heavily laden branch in a lush garden at sunrise. Out of focus behind them, one single tree stands alone inside a low ring of white stones. The hands, the branch and the lone tree are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 36,
    "section": "34-39",
-   "image": "cand/05-go-down-a.jpg",
+   "image": "05-go-down.jpg",
+   "tall": "tall/05-go-down.jpg",
    "principle": "Then Satan made them slip from it and brought them out of what they had been in. And we said, \"Go down, enemies to one another. And on the earth you have a place to settle and enjoyment for a time.\"",
    "shows": "Two people walk down a hill path away from a green terraced garden toward a dry plain, with a gap between them.",
    "prompt": "Seen from behind, two people of today in plain clothes walk down a long stony hill path, a green terraced garden with a stream glowing in sunlight above and behind them and a dry brown plain below. They walk with a clear gap of ground between them, not together. The two people and the garden's edge are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 36,
-   "section": "34-39",
-   "image": "cand/05-go-down-b.jpg",
-   "principle": "Then Satan made them slip from it and brought them out of what they had been in. And we said, \"Go down, enemies to one another. And on the earth you have a place to settle and enjoyment for a time.\"",
-   "shows": "A garden gate stands open behind two people who face different directions on dry ground outside it.",
-   "prompt": "On dry stony ground outside the open gate of a lush green garden, two people of today in plain clothes stand a little apart with their backs to the garden, each looking toward a different horizon of the dry land, the green garden glowing behind them. The people, the gate and the horizon are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 37,
    "section": "34-39",
-   "image": "cand/06-turn-back-a.jpg",
-   "principle": "Then Adam received words from his Lord, and he relented toward him. He is the Ever-Relenting, the Ever-Merciful.",
-   "shows": "A man sits alone in a dry field at dawn with his head bowed and open palms, a green shoot and the first sun at his feet.",
-   "prompt": "A man of today in plain clothes sits alone on dry ground at dawn, head bowed, his open palms resting on his knees, as the first sunlight touches him and a small green shoot has come up in the dust beside his foot. Quiet and humble. The man and the shoot are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
-   "verse": 37,
-   "section": "34-39",
-   "image": "cand/06-turn-back-b.jpg",
+   "image": "06-turn-back.jpg",
+   "tall": "tall/06-turn-back.jpg",
    "principle": "Then Adam received words from his Lord, and he relented toward him. He is the Ever-Relenting, the Ever-Merciful.",
    "shows": "A lamp burns on the porch of a house with the door unlocked, and a tired traveler walks up the road toward it at dusk.",
    "prompt": "At dusk a plain house stands at the end of a long country road, a warm lamp lit on its porch and the front door standing open, and a tired traveler in plain clothes, seen from behind, walks back up the road toward it. The house, the lamp and the traveler are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
@@ -204,16 +160,8 @@
   {
    "verse": 40,
    "section": "40-46",
-   "image": "cand/07-bridge-a.jpg",
-   "principle": "Children of Israel, remember my favor that I showed you, and keep my covenant, and I will keep your covenant, and it is me you should dread.",
-   "shows": "A footbridge across a gorge is built from both banks and its two halves meet in the middle.",
-   "prompt": "An aerial view of a narrow steel footbridge being built across a deep river gorge in morning light: two halves have reached out from the two banks and meet exactly in the middle, bolted at one joint. The bridge and the gorge are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 40,
-   "section": "40-46",
-   "image": "cand/07-bridge-b.jpg",
+   "image": "07-bridge.jpg",
+   "tall": "tall/07-bridge.jpg",
    "principle": "Children of Israel, remember my favor that I showed you, and keep my covenant, and I will keep your covenant, and it is me you should dread.",
    "shows": "Two farmers on opposite banks of a stream each mend their half of a stone footbridge, their arms meeting on the center stone.",
    "prompt": "Two farmers in plain work clothes kneel on opposite banks of a clear stream, each setting a stone on his own half of a small stone footbridge, their hands reaching the center stone at the same moment. The two men and the bridge are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
@@ -221,49 +169,27 @@
   {
    "verse": 41,
    "section": "40-46",
-   "image": "cand/08-lollipop-a.jpg",
+   "image": "08-lollipop.jpg",
+   "tall": "tall/08-lollipop.jpg",
    "principle": "And believe in what I have sent down, confirming what is with you, and do not be the first to disbelieve in it. And do not sell my signs for a small price, and it is me you should be mindful of.",
    "shows": "A small child hands a heavy gold coin to a street vendor for a single lollipop.",
    "prompt": "At a bright street stall, a small child holds up a large shining gold coin and hands it over to a vendor's hand in exchange for a single bright lollipop, with a priceless-looking pile of gold behind the counter. Only the child, the vendor's hand, the coin and the lollipop are the focus. They are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 41,
-   "section": "40-46",
-   "image": "cand/08-lollipop-b.jpg",
-   "principle": "And believe in what I have sent down, confirming what is with you, and do not be the first to disbelieve in it. And do not sell my signs for a small price, and it is me you should be mindful of.",
-   "shows": "A woman's hand slides a diamond ring across a pawn shop counter and receives a few crumpled bills.",
-   "prompt": "Close on a pawn shop counter: a woman's hand slides a sparkling diamond ring toward a pawnbroker, whose hand gives back a few crumpled low bills. The ring and the bills are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 42,
    "section": "40-46",
-   "image": "cand/09-ink-a.jpg",
+   "image": "09-ink.jpg",
+   "tall": "tall/09-ink.jpg",
    "principle": "And do not mix the truth with falsehood or conceal the truth while you know.",
    "shows": "A single drop of black ink falls into a clear glass of water and spreads.",
    "prompt": "A macro photograph of a single drop of black ink falling into a clear glass of still water and spreading in dark swirls through it, the glass lit from behind, a plain light background. The glass and the swirls are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 42,
-   "section": "40-46",
-   "image": "cand/09-ink-b.jpg",
-   "principle": "And do not mix the truth with falsehood or conceal the truth while you know.",
-   "shows": "Seen from above, a clear blue stream and a muddy brown stream meet and mix into one river.",
-   "prompt": "An aerial view of a clear blue stream meeting a muddy brown stream, the two colors swirling and mixing together into one river between green banks. The meeting of the waters is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 43,
    "section": "40-46",
-   "image": "cand/10-kneel-together-a.jpg",
-   "principle": "And keep up the prayer and give the alms, and bow with those who bow.",
-   "shows": "A row of ordinary people kneels and bows side by side in a plain bright room with tall windows.",
-   "prompt": "In a plain bright room with tall clear windows and a wooden floor, a row of ordinary people of today in plain clothes, an old man, a young woman, a boy, kneel and bow side by side, seen from behind and the side. Calm and together. The people are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
-   "verse": 43,
-   "section": "40-46",
-   "image": "cand/10-kneel-together-b.jpg",
+   "image": "10-kneel-together.jpg",
+   "tall": "tall/10-kneel-together.jpg",
    "principle": "And keep up the prayer and give the alms, and bow with those who bow.",
    "shows": "An old man and a young man kneel shoulder to shoulder on a plain mat in a morning garden.",
    "prompt": "In a garden in soft morning light, an old man and a young man in plain clothes kneel shoulder to shoulder on a plain mat, both bowing, seen from the side. The two men are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
@@ -271,15 +197,8 @@
   {
    "verse": 44,
    "section": "40-46",
-   "image": "cand/11-neighbor-garden-a.jpg",
-   "principle": "Do you command people to virtue and forget yourselves, while you recite the Book? Will you not use your reason?",
-   "shows": "A gardener tends his neighbor's flower bed over the fence while his own garden behind him is overgrown with weeds.",
-   "prompt": "A man in plain clothes kneels at a fence carefully tending his neighbor's neat flower bed, while behind him his own garden is choked with tall weeds and his own house has peeling paint. The man, the neat flowers and the weedy garden are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
-   "verse": 44,
-   "section": "40-46",
-   "image": "cand/11-neighbor-garden-b.jpg",
+   "image": "11-neighbor-garden.jpg",
+   "tall": "tall/11-neighbor-garden.jpg",
    "principle": "Do you command people to virtue and forget yourselves, while you recite the Book? Will you not use your reason?",
    "shows": "A man on a ladder paints his neighbor's fence while his own roof behind him is caving in.",
    "prompt": "A man in plain clothes on a ladder carefully paints his neighbor's white fence, while the roof of his own house behind him is sagging and caving in, tiles slipping. The man and the house are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
@@ -287,120 +206,66 @@
   {
    "verse": 48,
    "section": "47-50",
-   "image": "cand/12-no-pay-a.jpg",
+   "image": "12-no-pay.jpg",
+   "tall": "tall/12-no-pay.jpg",
    "principle": "And guard yourselves against a day when no soul will pay anything on behalf of another soul, and no intercession will be accepted from it, and no compensation will be taken from it, nor will they be aided.",
    "shows": "A hand holds out coins across a counter and the clerk's hand pushes them back.",
    "prompt": "Close on a plain counter at an office window: one hand holds out a handful of coins and bills, and a clerk's hand firmly pushes them back across the counter, refusing. The two hands and the money are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 48,
-   "section": "47-50",
-   "image": "cand/12-no-pay-b.jpg",
-   "principle": "And guard yourselves against a day when no soul will pay anything on behalf of another soul, and no intercession will be accepted from it, and no compensation will be taken from it, nor will they be aided.",
-   "shows": "A hand holds a thick envelope of money up to a barred window and the window slides shut.",
-   "prompt": "Close on a barred ticket window: a hand holds up a thick envelope of money, and the window's grille is sliding shut on it. The hand and the window are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 49,
    "section": "47-50",
-   "image": "cand/13-chain-a.jpg",
+   "image": "13-chain.jpg",
+   "tall": "tall/13-chain.jpg",
    "principle": "And when we saved you from Pharaoh's people, who were inflicting a terrible punishment on you, slaughtering your sons and letting your women live. And in that there was a great test from your Lord.",
    "shows": "A heavy iron chain with one cut link lies on the dust of a road at dawn.",
    "prompt": "A heavy iron chain with one link cut through lies on dusty ground at dawn, with a long open road running away from it toward a bright sunrise. The chain and the road are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 49,
-   "section": "47-50",
-   "image": "cand/13-chain-b.jpg",
-   "principle": "And when we saved you from Pharaoh's people, who were inflicting a terrible punishment on you, slaughtering your sons and letting your women live. And in that there was a great test from your Lord.",
-   "shows": "An open cage stands empty at dawn while a bird flies away into the sunrise.",
-   "prompt": "A bird cage with its door standing wide open sits on a stone wall at dawn while a bird flies off into the bright sunrise sky. The cage and the bird are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 50,
    "section": "47-50",
-   "image": "cand/14-parted-sea-a.jpg",
+   "image": "14-parted-sea.jpg",
+   "tall": "tall/14-parted-sea.jpg",
    "principle": "And when we parted the sea for you, and saved you, and drowned Pharaoh's people while you looked on.",
    "shows": "A dry path runs through the middle of a parted sea between two walls of water in morning light.",
    "prompt": "A wide sea parted in two: a dry path of wet sand runs straight through the middle between two towering walls of clear water, to a bright sunrise at the far end. The path and the walls are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 50,
-   "section": "47-50",
-   "image": "cand/14-parted-sea-b.jpg",
-   "principle": "And when we parted the sea for you, and saved you, and drowned Pharaoh's people while you looked on.",
-   "shows": "The sea has closed over, calm and smooth, with a few planks floating at sunrise.",
-   "prompt": "A wide calm sea at sunrise, smooth after a great wave has passed, a few wooden planks floating on its surface, a long empty horizon. The sea and the planks are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 51,
    "section": "51-54",
-   "image": "cand/15-calf-a.jpg",
+   "image": "15-calf.jpg",
+   "tall": "tall/15-calf.jpg",
    "principle": "And when we appointed forty nights for Moses, then you took the calf for yourselves after he had gone, and you were doing wrong.",
    "shows": "A golden calf statue glitters on a stone pedestal on an empty plain below a cloud-covered mountain.",
    "prompt": "A golden statue of a calf, glittering, on a plain stone pedestal on an empty desert plain, a dark mountain wrapped in cloud far behind it. The statue and the mountain are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 51,
-   "section": "51-54",
-   "image": "cand/15-calf-b.jpg",
-   "principle": "And when we appointed forty nights for Moses, then you took the calf for yourselves after he had gone, and you were doing wrong.",
-   "shows": "A cloud-wrapped mountain stands over a camp ground where a small golden calf-shaped glint shines in the foreground.",
-   "prompt": "A long dark mountain wrapped in cloud at dusk over an empty dry plain, and in the middle ground a small golden calf statue catching the last light. The mountain and the statue are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 54,
    "section": "51-54",
-   "image": "cand/16-turn-back-road-a.jpg",
+   "image": "16-turn-back-road.jpg",
+   "tall": "tall/16-turn-back-road.jpg",
    "principle": "And when Moses said to his people, \"My people, you have wronged yourselves by taking the calf for yourselves, so repent to your Maker and kill yourselves. That is better for you in the sight of your Maker.\" Then he relented toward you.",
    "shows": "A long line of ordinary people on a road have all turned around and walk back toward the dawn.",
    "prompt": "A long country road at dawn, a long line of ordinary people of today in plain clothes all turned around and walking back toward the rising sun, seen from behind. The line of people and the sun are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 54,
-   "section": "51-54",
-   "image": "cand/16-turn-back-road-b.jpg",
-   "principle": "And when Moses said to his people, \"My people, you have wronged yourselves by taking the calf for yourselves, so repent to your Maker and kill yourselves. That is better for you in the sight of your Maker.\" Then he relented toward you.",
-   "shows": "One person stands on a riverbank path and turns round to walk back toward the first light.",
-   "prompt": "A single person in plain clothes on a river bank path has stopped and turned around, now facing back toward the first light of dawn on the water behind. The person and the light are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 55,
    "section": "55-57",
-   "image": "cand/17-lightning-a.jpg",
+   "image": "17-lightning.jpg",
+   "tall": "tall/17-lightning.jpg",
    "principle": "And when you said, \"Moses, we will not believe you until we see God in plain sight,\" the thunderbolt took you while you looked on.",
    "shows": "A huge bolt of lightning from a clear sky strikes the empty dry ground of a vast plain.",
    "prompt": "A single huge bolt of lightning from a cloud over a vast dry plain, striking the empty ground far off, dramatic light. The bolt and the cloud are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 55,
-   "section": "55-57",
-   "image": "cand/17-lightning-b.jpg",
-   "principle": "And when you said, \"Moses, we will not believe you until we see God in plain sight,\" the thunderbolt took you while you looked on.",
-   "shows": "A great thundercloud over a dry plain, a row of empty chairs facing it.",
-   "prompt": "A great black thundercloud rising over a dry plain, lightning inside it, and a row of empty wooden chairs set facing it on the dry ground. The cloud and the chairs are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 57,
    "section": "55-57",
-   "image": "cand/18-manna-a.jpg",
-   "principle": "And we shaded you with clouds and sent down manna and quails to you: \"Eat from the good things we have provided for you.\" And they did not wrong us, but it was themselves they were wronging.",
-   "shows": "A cloud casts shade over a desert plain whose ground is dusted with white flakes, with quail walking among them.",
-   "prompt": "A broad desert plain where one large white cloud casts a cool shadow, and the ground below is dusted with small white flakes like frost, a flock of quail walking among them. The cloud and the quail are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 57,
-   "section": "55-57",
-   "image": "cand/18-manna-b.jpg",
+   "image": "18-manna.jpg",
+   "tall": "tall/18-manna.jpg",
    "principle": "And we shaded you with clouds and sent down manna and quails to you: \"Eat from the good things we have provided for you.\" And they did not wrong us, but it was themselves they were wronging.",
    "shows": "A family gathers white flakes into baskets on a desert morning under the shade of one large cloud.",
    "prompt": "On a desert plain, ordinary people of today in plain clothes gather small white flakes from the ground into baskets in the shade of one large white cloud, the ground dusted white and a few quail nearby. The people and the cloud are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
@@ -408,49 +273,27 @@
   {
    "verse": 58,
    "section": "58-59",
-   "image": "cand/19-gate-a.jpg",
+   "image": "19-gate.jpg",
+   "tall": "tall/19-gate.jpg",
    "principle": "And when we said, \"Enter this town and eat from it wherever you wish, freely, and enter the gate bowing down, and say, 'Unburden us,' and we will forgive you your faults. And we will give more to those who do good.\"",
    "shows": "A tired traveler sets down a huge heavy sack at the gate of a hill town as a table of food waits inside.",
    "prompt": "A tired traveler in plain clothes lowers a huge heavy sack from his shoulders at an arched stone gate of a hill town, relief in his shoulders, and inside the gate a welcoming table of food in the sun. The traveler, the sack and the gate are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 58,
-   "section": "58-59",
-   "image": "cand/19-gate-b.jpg",
-   "principle": "And when we said, \"Enter this town and eat from it wherever you wish, freely, and enter the gate bowing down, and say, 'Unburden us,' and we will forgive you your faults. And we will give more to those who do good.\"",
-   "shows": "Travelers stoop one by one to pass through a low stone gate into a sunlit hill town.",
-   "prompt": "A very low stone arched gateway in the wall of a sunlit hill town: ordinary travelers in plain clothes stoop low one by one to pass under it, seen from behind, the golden town opening beyond. The travelers and the gate are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 60,
    "section": "60-61",
-   "image": "cand/20-springs-a.jpg",
+   "image": "20-springs.jpg",
+   "tall": "tall/20-springs.jpg",
    "principle": "And when Moses asked for water for his people, we said, \"Strike the rock with your staff,\" and twelve springs gushed out of it. Each group of people knew its drinking place.",
    "shows": "Twelve separate streams of clear water gush from one rock face, each flowing into its own small pool.",
    "prompt": "In a dry desert, twelve separate streams of clear water gush out of one large rock face, each running down into its own small pool, in morning light, the dry land around it. The rock and its twelve springs are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 60,
-   "section": "60-61",
-   "image": "cand/20-springs-b.jpg",
-   "principle": "And when Moses asked for water for his people, we said, \"Strike the rock with your staff,\" and twelve springs gushed out of it. Each group of people knew its drinking place.",
-   "shows": "Twelve small clear fountains of water spring from the base of one great rock, each filling its own basin.",
-   "prompt": "A great rock in a dry land, twelve small clear fountains springing from its base, each filling its own stone basin, thirsty bright light. The rock and its springs are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 61,
    "section": "60-61",
-   "image": "cand/21-puddle-a.jpg",
-   "principle": "And when you said, \"Moses, we will not put up with one food, so call on your Lord for us, to bring out for us some of what the earth grows: its greens, its cucumbers, its garlic, its lentils and its onions,\" he said, \"Would you take what ...",
-   "shows": "A traveler kneels to drink from a muddy puddle while a clear spring runs beside him.",
-   "prompt": "A traveler in plain clothes kneels on the ground, bending to drink from a muddy puddle, while right beside him a clear spring of bright water runs unused over clean stones. The traveler, the puddle and the spring are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
-   "verse": 61,
-   "section": "60-61",
-   "image": "cand/21-puddle-b.jpg",
+   "image": "21-puddle.jpg",
+   "tall": "tall/21-puddle.jpg",
    "principle": "And when you said, \"Moses, we will not put up with one food, so call on your Lord for us, to bring out for us some of what the earth grows: its greens, its cucumbers, its garlic, its lentils and its onions,\" he said, \"Would you take what ...",
    "shows": "A table holds bowls of cucumbers, onions, garlic, lentils and greens beside one untouched plain loaf.",
    "prompt": "A rustic wooden table with bowls of cucumbers, onions, garlic, lentils and green leaves, and beside them a single plain golden loaf of bread untouched, in warm light. The bowls and the loaf are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
@@ -458,23 +301,24 @@
   },
   {
    "verse": 61,
+   "from": "Would you take what is lower",
    "section": "60-61",
-   "image": "cand/22-ruin-a.jpg",
+   "image": "21-puddle-2.jpg",
+   "tall": "tall/21-puddle-2.jpg",
    "principle": "And when you said, \"Moses, we will not put up with one food, so call on your Lord for us, to bring out for us some of what the earth grows: its greens, its cucumbers, its garlic, its lentils and its onions,\" he said, \"Would you take what ...",
-   "shows": "A once-grand house stands in ruin, its shutters hanging and weeds up to its doorway.",
-   "prompt": "A once-grand house now in ruin, its shutters hanging, windows empty, weeds up to the doorway, in cold gray light. The house is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false,
-   "from": "And humiliation and destitution were stamped on them"
+   "shows": "A traveler kneels to drink from a muddy puddle while a clear spring runs beside him.",
+   "prompt": "A traveler in plain clothes kneels on the ground, bending to drink from a muddy puddle, while right beside him a clear spring of bright water runs unused over clean stones. The traveler, the puddle and the spring are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
    "verse": 61,
+   "from": "And humiliation and destitution were stamped on them",
    "section": "60-61",
-   "image": "cand/22-ruin-b.jpg",
+   "image": "22-ruin.jpg",
+   "tall": "tall/22-ruin.jpg",
    "principle": "And when you said, \"Moses, we will not put up with one food, so call on your Lord for us, to bring out for us some of what the earth grows: its greens, its cucumbers, its garlic, its lentils and its onions,\" he said, \"Would you take what ...",
-   "shows": "A rusted padlocked gate stands at the end of a cracked pavement with weeds pushing through.",
-   "prompt": "A rusted gate of a grand entrance, chained and padlocked, cracked pavement leading to it with weeds pushing through, in cold gray light. The gate is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false,
-   "from": "And humiliation and destitution were stamped on them"
+   "shows": "A once-grand house stands in ruin, its shutters hanging and weeds up to its doorway.",
+   "prompt": "A once-grand house now in ruin, its shutters hanging, windows empty, weeds up to the doorway, in cold gray light. The house is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
   }
  ]
 }
