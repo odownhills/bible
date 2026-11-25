@@ -23,6 +23,10 @@
    top in the middle instead. The words themselves are only the text, cleanly written, with no verse numbers
    in them, in English or Arabic (Obay, 2026-11-23: "we already have it in the top left corner").
 
+   A phone held upright (Obay, 2026-11-25) does not go to the full screen: like a video site, the picture sits at
+   the top at its own 16:9 size, with the words and the controls under it. Turning the phone sideways, or the
+   full-screen button, gives the whole-screen picture; turning it back, or leaving the full screen, comes back.
+
    Written in plain old JavaScript on purpose, so that the browsers built into TVs can run it. */
 (function(){
 'use strict';
@@ -193,19 +197,35 @@ var CSS=
 '.tv-nudge.tv-l{left:9vw}.tv-nudge.tv-r{right:9vw}'+
 '.tv-nudge.tv-on{opacity:1;transition:none}'+
 
-/* a phone held upright: the wide picture sits on top with the words below it */
-'@media (orientation:portrait){'+
-  '#tv .tv-pic{bottom:auto;height:58vh}'+
-  '#tv .tv-scrim{background:linear-gradient(to bottom,rgba(0,0,0,.42) 0,rgba(0,0,0,0) 12%,rgba(0,0,0,0) 40%,#000 58%,#000 100%)}'+
-  '#tv .tv-cap,#tv.tv-ui .tv-cap{bottom:auto;top:58vh;height:calc(42vh - 7.5rem);display:flex;align-items:center;justify-content:center;width:88vw;font-size:1.6rem;font-size:clamp(1.35rem,6.4vw,2.3rem);-webkit-transform:translateX(-50%);transform:translateX(-50%)}'+
-  '#tv .tv-box{display:none}'+
-  '#tv.tv-noimg .tv-cap{top:34vh;height:auto}'+
-  '#tv.tv-rtl .tv-cap,#tv.tv-rtl.tv-ui .tv-cap{font-size:1.8rem;font-size:clamp(1.6rem,7.4vw,2.8rem)}'+
-  '#tv .tv-mid{top:29vh}'+
-  '#tv.tv-noimg .tv-mid{top:auto;bottom:8.5rem;-webkit-transform:translateX(-50%);transform:translateX(-50%)}'+
-  '#tv .tv-bar{flex-direction:column;align-items:stretch;padding-top:1rem;background:linear-gradient(to top,#000 60%,rgba(0,0,0,0))}'+
-  '#tv .tv-r2{margin:0;justify-content:space-between}'+
-'}'+
+/* a phone held upright (Obay, 2026-11-25: "Sometimes I want my screen vertical, even if the picture is smaller
+   like on YouTube"): the wide picture at its own 16:9 size at the top, the words under it and the controls at the
+   bottom, where they always stay (they cover nothing). Turning the phone sideways, or the full-screen button,
+   gives the whole-screen picture. layout() sets tv-port. */
+'#tv.tv-port{--pt:env(safe-area-inset-top,0px);--ph:56.25vw;--ph:min(56.25vw,46vh);background:#110D1B}'+
+'#tv.tv-port:before{content:"";position:absolute;left:0;right:0;top:var(--pt);height:var(--ph);background:#000}'+
+'#tv.tv-port.tv-noimg:before{display:none}'+
+'#tv.tv-port .tv-pic{top:var(--pt);bottom:auto;height:var(--ph)}'+
+'#tv.tv-port .tv-scrim{top:var(--pt);bottom:auto;height:var(--ph);background:linear-gradient(to bottom,rgba(0,0,0,.5) 0,rgba(0,0,0,0) 34%)}'+
+'#tv.tv-port .tv-tag{top:calc(var(--pt) + .95rem);left:.9rem;font-size:.72rem}'+
+'#tv.tv-port .tv-plain div{top:calc(var(--pt) + var(--ph) * .3)}'+
+'#tv.tv-port .tv-x{top:calc(var(--pt) + .3rem);right:.3rem}'+
+'#tv.tv-port .tv-x button{width:2.75rem;height:2.75rem}'+
+'#tv.tv-port .tv-cap,#tv.tv-port.tv-ui .tv-cap{top:calc(var(--pt) + var(--ph) + .8rem);bottom:11.6rem;bottom:calc(env(safe-area-inset-bottom,0px) + 11.6rem);height:auto;'+
+  'left:0;width:100%;padding:0 6vw;display:flex;align-items:center;justify-content:center;overflow:hidden;'+
+  'font-size:1.6rem;font-size:clamp(1.3rem,6.2vw,2.2rem);text-shadow:none;-webkit-transform:none;transform:none}'+
+'#tv.tv-port .tv-cap>span{display:block;max-width:34em}'+
+'#tv.tv-port.tv-rtl .tv-cap{font-size:1.8rem;font-size:clamp(1.5rem,7vw,2.6rem)}'+
+'#tv.tv-port.tv-rtl.tv-noimg .tv-cap:not(.tv-out){opacity:1}'+
+'#tv.tv-port .tv-box{display:none}'+
+'#tv.tv-port.tv-nowords .tv-cap{display:none}'+
+'#tv.tv-port .tv-ctl{opacity:1;visibility:visible;transition:none}'+
+'#tv.tv-port.tv-covered .tv-ctl,#tv.tv-port.tv-busy .tv-mid{opacity:0;visibility:hidden}'+
+'#tv.tv-port .tv-mid{top:auto;bottom:6.1rem;bottom:calc(env(safe-area-inset-bottom,0px) + 6.1rem);-webkit-transform:translateX(-50%);transform:translateX(-50%)}'+
+'#tv.tv-port .tv-mid button{width:3.2rem;height:3.2rem;margin:0 1.4rem;background:rgba(255,255,255,.07)}'+
+'#tv.tv-port .tv-mid .tv-big{width:4.4rem;height:4.4rem;background:rgba(183,155,232,.92)}'+
+'#tv.tv-port .tv-bar{flex-direction:column;align-items:stretch;padding:0 .5rem .4rem;padding:0 .5rem max(.4rem,env(safe-area-inset-bottom));background:none}'+
+'#tv.tv-port .tv-r2{margin:0;justify-content:space-between}'+
+'#tv.tv-port .tv-nudge,#tv.tv-port .tv-spin{top:calc(var(--pt) + var(--ph) / 2)}'+
 '@media (prefers-reduced-motion:reduce){.tv-pic img,.tv-plain i{-webkit-animation:none!important;animation:none!important}.tv-pic{transition-duration:.4s}}';
 
 var stage=null,audio,cap,capIn,capBox,seek,layers,el={};
@@ -317,15 +337,15 @@ function build(){
   el.next.onclick=function(){ if(S.next) load(S.next.id,{play:true,t:0}); };
   el.rate.onclick=function(){ var r=RATES[(RATES.indexOf(rate())+1)%RATES.length]; put('tvRate',r); audio.defaultPlaybackRate=r; audio.playbackRate=r; paint(); icons(); };
   el.words.onclick=function(){ put('tvWords',!get('tvWords',true)); icons(); };
-  el.full.onclick=function(){ if(fsEl()){ S.leaving=true; leaveFull(); } else goFull(); };
+  el.full.onclick=function(){ if(fsEl()){ S.leaving=true; leaveFull(); } else goFull(port()); };
   el.close.onclick=close; el.leave.onclick=close;
   el.go.onclick=function(){
     if(S.cover==='error'){ load(S.id,{play:true}); return; }
     if(!S.ready)return;
     if(S.cover==='end') audio.currentTime=0;
-    play(); goFull();   // the voice first: asking for the full screen uses up the tap
+    play(); autoFull();   // the voice first: asking for the full screen uses up the tap
   };
-  el.again.onclick=function(){ if(!S.ready)return; audio.currentTime=0; play(); goFull(); };
+  el.again.onclick=function(){ if(!S.ready)return; audio.currentTime=0; play(); autoFull(); };
   el.toast.lastChild.onclick=function(){ var f=S.toastDo; toast(null); if(f) f(); };
 
   seek.addEventListener('input',function(){ S.drag=true; paint(); mark(); poke(); });
@@ -340,22 +360,28 @@ function build(){
     if(!S.ready||S.cover)return;
     if(lastType==='touch'){
       // a tap brings the controls up or sends them away; a double tap at either side moves 10 seconds
-      var now=Date.now(),x=e.clientX/stage.clientWidth,zone=x<0.34?-1:x>0.66?1:0;
-      if(zone&&zone===tapZone&&now-tapAt<340){ tapAt=0; nudge(zone*10,true); if(!audio.paused) ui(false); return; }
+      var now=Date.now(),x=e.clientX/stage.clientWidth,zone=x<0.34?-1:x>0.66?1:0,up=stage.classList.contains('tv-port');
+      // upright, only the picture takes taps (the words and the controls under it are left alone)
+      if(up&&e.clientY>layers[0].getBoundingClientRect().bottom)return;
+      if(zone&&zone===tapZone&&now-tapAt<340){ tapAt=0; nudge(zone*10,true); if(!audio.paused&&!up) ui(false); return; }
       tapAt=now; tapZone=zone;
+      if(up){ if(!zone) toggle(); return; }   // the controls always show there, so a tap in the middle plays or pauses
       if(S.ui&&!audio.paused) ui(false); else poke();
     }else{ toggle(); poke(); }
   });
   stage.addEventListener('dblclick',function(e){
     var t=e.target; if(lastType==='touch'||t.closest('.tv-ctl')||t.closest('.tv-cover')||t.closest('.tv-toast'))return;
-    if(fsEl()){ S.leaving=true; leaveFull(); } else goFull();
+    if(fsEl()){ S.leaving=true; leaveFull(); } else goFull(port());
   });
   d.addEventListener('keydown',key,true);
   d.addEventListener('focusin',function(e){ if(S.open&&!stage.contains(e.target)) focusStage(); });
   ['fullscreenchange','webkitfullscreenchange'].forEach(function(ev){ d.addEventListener(ev,fsChange); });
   d.addEventListener('visibilitychange',function(){ if(!S.open)return; if(d.hidden) savePos(true); else if(!audio.paused) awake(true); });
   win.addEventListener('pagehide',function(){ if(S.open) savePos(true); });
-  win.addEventListener('resize',function(){ if(S.open) fit(); });
+  win.addEventListener('resize',function(){ if(S.open) layout(); });
+  // turning the phone: sideways goes to the whole screen, upright comes back to the picture on top
+  var so=screen.orientation;
+  if(so&&so.addEventListener) so.addEventListener('change',turned); else win.addEventListener('orientationchange',turned);
   if(d.fonts&&d.fonts.addEventListener) d.fonts.addEventListener('loadingdone',function(){ if(S.open) fit(); });   // e.g. the Arabic font arriving after the first words
 }
 function focusStage(){ try{ stage.focus({preventScroll:true}); }catch(e){ stage.focus(); } }
@@ -530,6 +556,13 @@ function card(i){
 function fit(){
   // the dark box hugs the lines of words: as wide as the longest line, as tall as the lines, and no bigger
   if(!capBox)return;
+  capIn.style.fontSize='';
+  if(stage.classList.contains('tv-port')){
+    // upright: a long phrase is made a little smaller, so it fits the room between the picture and the controls
+    var room=cap.clientHeight,sz=parseFloat(win.getComputedStyle(capIn).fontSize)||20,n=0;
+    while(room&&capIn.offsetHeight>room&&n++<8){ sz*=0.9; capIn.style.fontSize=sz+'px'; }
+    return;
+  }
   var r=d.createRange(),rs,c=cap.getBoundingClientRect(),l=1e9,t=1e9,rt=-1e9,b=-1e9,k,f=parseFloat(win.getComputedStyle(cap).fontSize)||16;
   r.selectNodeContents(capIn); rs=r.getClientRects();
   for(k=0;k<rs.length;k++){ if(!rs[k].width)continue; l=Math.min(l,rs[k].left); rt=Math.max(rt,rs[k].right); t=Math.min(t,rs[k].top); b=Math.max(b,rs[k].bottom); }
@@ -566,8 +599,9 @@ function play(){
   if(!S.ready)return; S.ended=false; cover(null); audio.playbackRate=rate();
   var p=audio.play();
   if(p&&p.then) p.then(function(){
-    if(!S.hinted&&!fsEl()&&win.matchMedia&&win.matchMedia('(orientation:portrait)').matches&&coarse()&&!el.toast.classList.contains('tv-on')){
-      S.hinted=true; toast('Turn your phone sideways for the full picture.',null,null,5000); }
+    // once in this browser: how to get the whole-screen picture from the upright one
+    if(!get('tvHint',false)&&!fsEl()&&port()&&coarse()&&!el.toast.classList.contains('tv-on')){
+      put('tvHint',true); toast('Turn your phone sideways for the full screen.',null,null,5000); }
   },function(){ if(S.ready&&audio.paused) cover('start',audio.currentTime); });   // the browser wants a tap first
 }
 function toggle(){ if(!S.ready)return; if(audio.paused) play(); else audio.pause(); }
@@ -618,16 +652,33 @@ function hooks(on){
 
 /* ---- full screen ---- */
 function fsEl(){ return d.fullscreenElement||d.webkitFullscreenElement||null; }
-function goFull(){
-  var req=stage.requestFullscreen||stage.webkitRequestFullscreen; if(!req||fsEl())return;
-  function turn(){ try{ var o=screen.orientation; if(o&&o.lock) o.lock('landscape').catch(noop); }catch(e){} }   // the pictures are wide
-  try{ var p=req.call(stage,{navigationUI:'hide'}); if(p&&p.then) p.then(turn,noop); else turn(); }catch(e){}
+function port(){ return win.innerHeight>win.innerWidth; }   // taller than wide: a phone held upright
+function layout(){ if(!stage)return; stage.classList.toggle('tv-port',port()); fit(); }
+function goFull(turn){
+  // turn: from an upright phone, also turn the screen sideways (the pictures are wide). It stays that way until
+  // the full screen is left (the button, or the phone's back gesture), which brings back the upright view.
+  var req=stage.requestFullscreen||stage.webkitRequestFullscreen; if(!req||fsEl()||S.asking)return;
+  S.asking=true; S.locked=false;
+  function done(){ S.asking=false; }
+  function lock(){ done(); if(!turn)return; try{ var o=screen.orientation; if(o&&o.lock) o.lock('landscape').then(function(){ S.locked=!!fsEl(); },noop); }catch(e){} }
+  try{ var p=req.call(stage,{navigationUI:'hide'}); if(p&&p.then) p.then(lock,done); else lock(); }catch(e){ done(); }
+}
+function autoFull(){ if(!(coarse()&&port())) goFull(false); }   // starting to play: the whole screen, unless the phone is upright
+function turned(){
+  // Chrome lets a page take the full screen as the phone is turned, with no tap, as video players do
+  if(!S.open||!coarse())return;
+  var o=screen.orientation,t=o&&o.type||'',side=t?t.indexOf('landscape')===0:Math.abs(win.orientation||0)===90;
+  if(side) goFull(false);
+  else if(fsEl()&&!S.locked){ S.leaving=true; leaveFull(); }
+  setTimeout(layout,250);
 }
 function leaveFull(){ var x=d.exitFullscreen||d.webkitExitFullscreen; if(x&&fsEl()){ try{ var p=x.call(d); if(p&&p.catch) p.catch(noop); }catch(e){} } }
 function fsChange(){
-  if(!stage)return; var on=!!fsEl(),mine=S.leaving; S.leaving=false; icons();
-  // On a phone, the back gesture leaves full screen; that is taken as leaving Watch, back to the page.
-  if(!on&&S.open&&!mine&&coarse()) setTimeout(function(){ if(S.open&&!d.hidden&&!fsEl()) close(); },350);
+  if(!stage)return; var on=!!fsEl(); S.leaving=false;
+  // Leaving the full screen (the button, or the phone's back gesture) stays in Watch: upright, the picture goes
+  // back on top. A second back closes Watch (CloseWatcher in open()).
+  if(!on){ S.locked=false; try{ var o=screen.orientation; if(o&&o.unlock) o.unlock(); }catch(e){} }
+  icons(); layout();
 }
 
 /* ---- keys: a keyboard, or a TV remote's arrows and OK ---- */
@@ -681,7 +732,7 @@ function key(e){
 function open(id,o){
   o=o||{}; build();
   if(!S.open){
-    S.open=true; S.opener=o.opener||null; stage.hidden=false; d.documentElement.classList.add('tv-open');
+    S.open=true; S.opener=o.opener||null; stage.hidden=false; d.documentElement.classList.add('tv-open'); layout();
     // Listen + Read hands over: it stops and keeps its place, and Watch carries on from that same second
     var lr=d.getElementById('lr-close'); if(lr&&d.body.classList.contains('lr')) lr.click();
     if('CloseWatcher' in win){ try{ cw=new win.CloseWatcher(); cw.onclose=function(){ cw=null; close(); }; }catch(e){ cw=null; } }
@@ -689,9 +740,10 @@ function open(id,o){
   }
   if(o.gesture){
     // inside the tap itself: a silent start, so the browser lets the voice begin once it has loaded, then the
-    // full screen (in that order: asking for the full screen uses up the tap)
+    // full screen (in that order: asking for the full screen uses up the tap). A phone held upright stays
+    // upright, with the picture on top (Obay, 2026-11-25).
     try{ audio.src=SILENT; var p=audio.play(); if(p&&p.catch) p.catch(noop); }catch(e){}
-    goFull();
+    autoFull();
   }
   load(id,{play:!!o.gesture});
 }
