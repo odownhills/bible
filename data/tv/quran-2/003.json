@@ -1,0 +1,211 @@
+{
+ "note": "Made by the steps in TV_PICTURES.md for Quran 2:62-82 (2026-11-25): 14 pictures from 28 trial pictures. Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. The Prophet Muhammad is never shown in any way, nor anyone standing in for him; God and the angels are not pictured; no religious symbols of any tradition; nothing violent. Tried and not chosen: A person walks calmly along a road under a clearing storm toward a lit window. Two hands grip a thick heavy book with white knuckles. A line of white stones runs across a field and footprints cross over it into a forbidden meadow. A single cow stands in a pasture ringed by puzzled people. The face of a golden-yellow cow in warm light. A farmer's hand runs over the smooth flank of a spotless cow, inspecting it. A locked iron chest with a thin beam of light shining out through its keyhole in a dark room. A butterfly climbs out of a split cocoon on a bare twig. A ring of hard gray stones in a dry riverbed with clear water cutting through them. Two hands twist a straight white ribbon into a knot. Two men whisper close in a dark doorway while a bright open street goes by behind them. A printing press feeds out blank sheets while a man counts bills. A man stands inside a ring of tall brick wall pieces he built himself. A sunlit orchard with a stream, a bench and fruit in the grass.",
+ "method": "Second method, asked for by Obay on 2026-11-21: (1) split the part into sections that each carry one deep meaning, written as one plain sentence; (2) write picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
+ "sections": [
+  {
+   "verses": "62",
+   "meaning": "Whoever believes in God and the Last Day and does what is righteous has a reward with their Lord, and no fear and no grief, whoever they are.",
+   "ideas": [
+    "Four roads from four directions meeting at one lit farmhouse",
+    "A calm walker under a clearing storm with a lit window ahead",
+    "People of every age at one long garden table at sunset",
+    "A harvest of equal sheaves",
+    "A wide meadow where many paths end at one gate"
+   ]
+  },
+  {
+   "verses": "63-66",
+   "meaning": "A pledge is taken with the Mount raised overhead, they turn away and would be losers without God's bounty; those who overstepped the Sabbath were made apes and driven away as a lesson.",
+   "ideas": [
+    "A huge cliff overhanging a small crowd on a plain",
+    "Hands gripping a thick book with white knuckles",
+    "A line of white stones across a field with footprints crossing it",
+    "Apes sitting alone on a crumbling wall at dusk outside a village"
+   ]
+  },
+  {
+   "verses": "67-71",
+   "meaning": "They are told to slaughter a cow and keep asking what kind, making the command harder each time, though it is plain what God asked.",
+   "ideas": [
+    "Villagers laughing behind a farmer who points at a pasture",
+    "A cow in a pasture with a ring of puzzled people",
+    "A golden yellow cow glowing in a sunlit field watched by a child",
+    "A golden cow's face in warm light",
+    "A flawless cow beside an idle plow",
+    "A farmer's hand on the flank of a spotless cow"
+   ]
+  },
+  {
+   "verses": "72-73",
+   "meaning": "They blame one another for a killing and God brings out what they hid, giving life to the dead as a sign.",
+   "ideas": [
+    "A circle of people each pointing at the next",
+    "A locked chest with light through the keyhole",
+    "A dead gray tree with one branch in full blossom",
+    "A butterfly emerging from a split cocoon"
+   ]
+  },
+  {
+   "verses": "74",
+   "meaning": "Their hearts hardened like stones or harder, though from stones rivers gush, some split and water comes, and some fall down in fear of God.",
+   "ideas": [
+    "A smooth hard stone in an open palm, a dry cracked field behind",
+    "A ring of hard gray stones in a dry riverbed with water cutting through",
+    "A fallen boulder at the foot of a cliff"
+   ]
+  },
+  {
+   "verses": "75-79",
+   "meaning": "Some of them twist God's words after understanding them, say 'we believe' in front of believers and argue in private, and write the Book with their own hands to sell it for a small price.",
+   "ideas": [
+    "A straight white ribbon twisted into a knot by hands",
+    "A man smiling to a group while whispering behind a pillar",
+    "A pen writing on a page with coins stacked at the elbow",
+    "A printing press feeding out blank sheets while a man counts money"
+   ]
+  },
+  {
+   "verses": "80-82",
+   "meaning": "Whoever earns evil and is surrounded by his fault belongs to the Fire forever; those who believe and do righteous deeds belong to the Garden forever.",
+   "ideas": [
+    "A man in the middle of a ring of his own wreckage",
+    "A tally of marks on a wall by a door",
+    "A terraced hillside garden at sunset with a path",
+    "A sunlit orchard with a bench and a stream"
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "verse": 62,
+   "section": "62",
+   "image": "01-roads.jpg",
+   "tall": "tall/01-roads.jpg",
+   "principle": "Those who believe, and those who are Jews, and the Christians, and the Sabians, whoever believes in God and the Last Day and does what is righteous, they have their reward with their Lord, and there is no fear for them, nor will they ...",
+   "shows": "Four roads from four directions cross a wide landscape of fields and meet at one farmhouse with a lit window.",
+   "prompt": "An aerial view at dusk of four different country roads, a dirt track, a paved road, a hill path and a lane between hedges, coming from four directions across a patchwork of fields and meeting at one plain farmhouse with a warm lit window. The roads and the farmhouse are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 63,
+   "section": "63-66",
+   "image": "02-overhang.jpg",
+   "tall": "tall/02-overhang.jpg",
+   "principle": "And when we took your pledge and raised the Mount above you: \"Take with strength what we have given you, and remember what is in it, so that you may be mindful of God.\"",
+   "shows": "A colossal cliff hangs over a small crowd of people on a plain, dwarfing them.",
+   "prompt": "A colossal rock cliff overhangs far above a small crowd of ordinary people of today in plain clothes standing on a wide plain, dwarfing them, dramatic light. The cliff and the people are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 65,
+   "section": "63-66",
+   "image": "03-apes.jpg",
+   "tall": "tall/03-apes.jpg",
+   "principle": "And you know well those of you who overstepped on the Sabbath, so we said to them, \"Be apes, driven away.\"",
+   "shows": "Apes sit alone on a crumbling wall at dusk outside an empty village.",
+   "prompt": "At dusk a few apes sit alone on a crumbling stone wall outside an empty abandoned village, the sky going dark orange behind them, quiet and still. The apes and the wall are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 67,
+   "section": "67-71",
+   "image": "04-mock.jpg",
+   "tall": "tall/04-mock.jpg",
+   "principle": "And when Moses said to his people, \"God commands you to slaughter a cow,\" they said, \"Are you making a mockery of us?\" He said, \"I take refuge in God from being one of the ignorant.\"",
+   "shows": "Villagers hide their laughter behind their hands while a calm farmer points to a pasture.",
+   "prompt": "In a village square, several villagers in plain clothes laugh and hide their smiles behind their hands, while one calm farmer in plain clothes stands apart and points steadily toward a green pasture. The farmer and the villagers are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 69,
+   "section": "67-71",
+   "image": "05-yellow-cow.jpg",
+   "tall": "tall/05-yellow-cow.jpg",
+   "principle": "They said, \"Call on your Lord for us, to make clear to us what its color is.\" He said, \"He says it is a yellow cow, bright in color, that delights those who look at it.\"",
+   "shows": "A bright golden-yellow cow stands glowing in a sunlit field and a small child watches it with delight.",
+   "prompt": "A bright golden-yellow cow standing in a sunlit green field, its coat glowing warm in the low sun, and a small child at the fence smiling with delight at it. The cow and the child are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 71,
+   "section": "67-71",
+   "image": "06-flawless.jpg",
+   "tall": "tall/06-flawless.jpg",
+   "principle": "He said, \"He says it is a cow not broken in to turn the earth or water the field, sound, with no mark on it.\" They said, \"Now you have brought the truth.\" So they slaughtered it, and they almost did not do it.",
+   "shows": "A flawless clean cow stands beside a rusting idle plow in a green field.",
+   "prompt": "A flawless, sound, cleanly colored cow with no mark on it stands in a green field beside an old plow that rusts unused in the grass. The cow and the plow are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 72,
+   "section": "72-73",
+   "image": "07-blame.jpg",
+   "tall": "tall/07-blame.jpg",
+   "principle": "And when you killed a soul, you blamed one another for it, and God would bring out what you were concealing.",
+   "shows": "A circle of people each pointing at the next.",
+   "prompt": "A circle of ordinary people of today in plain clothes standing in a bare yard, each pointing an accusing finger at the person next to them, seen from slightly above and the side. The circle is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 73,
+   "section": "72-73",
+   "image": "08-blossom.jpg",
+   "tall": "tall/08-blossom.jpg",
+   "principle": "So we said, \"Strike him with part of it.\" That is how God gives life to the dead, and he shows you his signs so that you may use your reason.",
+   "shows": "A dead gray tree in a winter orchard has one branch in full white blossom.",
+   "prompt": "A dead gray bare tree in a winter orchard, with one single branch in full white blossom, soft morning light. The tree and the blossoming branch are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 74,
+   "section": "74",
+   "image": "09-heart-stone.jpg",
+   "tall": "tall/09-heart-stone.jpg",
+   "principle": "Then your hearts hardened after that, so they are like stones, or harder.",
+   "shows": "A smooth hard dark stone rests in an open palm above a dry cracked field.",
+   "prompt": "An open palm holds one smooth dark hard stone like a heart, held out above a dry cracked field in a pale hard light. The palm and the stone are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 75,
+   "section": "75-79",
+   "image": "10-twist.jpg",
+   "tall": "tall/10-twist.jpg",
+   "principle": "So do you hope that they will believe you, when a group of them used to hear God's speech and then twist it after they had understood it, while they knew?",
+   "shows": "A straight steel ruler is bent by two strong hands.",
+   "prompt": "Close on two strong hands bending a long straight steel ruler into a curve until it nearly snaps, plain background. The hands and the ruler are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 76,
+   "section": "75-79",
+   "image": "11-whisper.jpg",
+   "tall": "tall/11-whisper.jpg",
+   "principle": "And when they meet those who believe, they say, \"We believe,\" but when they are alone with one another, they say, \"Do you talk to them about what God has opened to you, so that they may argue against you with it before your Lord?",
+   "shows": "A man smiles openly to a group in the light while whispering to another behind a pillar.",
+   "prompt": "In a bright hall, a man in plain clothes smiles and nods to a group of people in the light, while behind a pillar in shadow he turns and whispers to another man. The man and the pillar are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 79,
+   "section": "75-79",
+   "image": "12-write-sell.jpg",
+   "tall": "tall/12-write-sell.jpg",
+   "principle": "So woe to those who write the Book with their hands and then say, \"This is from God,\" to sell it for a small price. So woe to them for what their hands have written, and woe to them for what they earn.",
+   "shows": "A hand writes page after page at a desk with stacks of coins growing beside it.",
+   "prompt": "A hand with a pen writes at a desk piled with filled pages, seen from behind the pen so no words can be read, and a stack of coins growing at the writer's elbow, warm lamplight. The hand, the pages and the coins are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 81,
+   "section": "80-82",
+   "image": "13-wreckage.jpg",
+   "tall": "tall/13-wreckage.jpg",
+   "principle": "Not so. Whoever earns evil and is surrounded by his fault, those are the companions of the Fire; they will remain in it forever.",
+   "shows": "A man sits in the middle of a ring of his own wreckage: shattered glass, torn papers and a toppled chair.",
+   "prompt": "A man in plain clothes sits on the floor in the middle of a bare room, surrounded on all sides by a ring of his own wreckage: shattered glass, torn papers, a toppled chair, broken things, with no way out. The man and the ring are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 82,
+   "section": "80-82",
+   "image": "14-garden-terrace.jpg",
+   "tall": "tall/14-garden-terrace.jpg",
+   "principle": "And those who believe and do righteous deeds, those are the companions of the Garden; they will remain in it forever.",
+   "shows": "A terraced hillside garden of fruit trees glows at sunset, with a path and a bench.",
+   "prompt": "A terraced green hillside garden of fruit trees and flowers glowing in the golden light of sunset, a gentle path and a bench, calm and permanent. The garden is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  }
+ ]
+}
