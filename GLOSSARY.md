@@ -1257,3 +1257,26 @@ closed. Close calls go in the chapter's decision log instead.
 - aqarah (11:30) "barren": it shares its English with galmud (Job 3:7). walad "child". kallah "daughter-in-law". ben-beno "his son's son".
 - wayyeshvu sham (11:2, 31) "and they lived there", yashav as listed. ad with a place (11:31) "as far as", as at 10:19. lalekhet artsah Kena'an (11:31; 12:5) "to go to the land of Canaan".
 - Names: Reu, Serug, Nahor, Terah, Abram, Lot, Sarai, Milcah, Iscah; Ur Kasdim "Ur of the Chaldeans". Haran (11:26-31), Terah's son, and Charan (11:31, 32; 12:4, 5), the place, are both "Haran", as English has them, with one bracketed note at 11:31 that they are two names.
+
+## Settled in Genesis 12
+- lekh-lekha (12:1; 22:2) "Go": the lekha is not shown, as at Deut 5:30.
+- moledet by itself (12:1; 24:4; 43:7) "relatives" [alt at 12:1: your birthplace] (decision log, call: clear); erets moledet stays "the land of one's birth" (11:28). bet av "father's house".
+- asah le-goy (12:2) "make into a nation"; goy gadol "a great nation". giddel shem "make a name great". berakhah "blessing"; wehyeh berakhah "and be a blessing" [alt: so that you will be a blessing] (decision log, call: close).
+- qillel of one person against another (12:3) "call down a curse on", beside arar "curse" in the same sentence; of Yahweh it stays "bring a curse on" (8:21).
+- nivrekhu be- (12:3; 18:18; 28:14) "be blessed in" [alt at 12:3: bless themselves by] (decision log, call: clear). mishpechot ha'adamah "the families of the ground", adamah as listed.
+- rekush "possessions"; rakhash "amass". asah of people or wealth (12:5; 31:1) "gain". hannefesh of a household's people "the people".
+- avar ba- (12:6) "pass through". meqom Shekhem "the place of Shechem". elon (12:6; 13:18; 14:13; 18:1) "oak": it shares its English with allon (35:8), which is written with the same letters.
+- hakkena'ani az ba'arets (12:6) "the Canaanites were then in the land", as open as the Hebrew (already there, or still there); 13:7 has the same words with yoshev "living".
+- nir'ah el of Yahweh (12:7) "appear to". wayyiven sham mizbeach laYHWH (12:7, 8; 13:18) "built an altar there to Yahweh".
+- he'etiq with no object (12:8; 26:22) "move on". natah ohel "pitch a tent" (natah elsewhere "stretch out"). haharah "to the hill country". miyyam "on the west"; miqqedem "on the east", "east of".
+- halokh wenasoa after nasa (12:9) "travel steadily on", halokh as at 8:3. hannegev "the Negev", the name of the region; hannegbah "toward the Negev".
+- kaved of a famine (12:10; 41:31; 43:1) "severe". yarad Mitsraymah "go down to Egypt". gur "stay", as listed.
+- hiqriv lavo (12:11) "come near to entering". hinneh-na "Look now"; na in a request to a person (12:13; 13:8) "please" (with an imperative in Job it is "now").
+- yafeh "beautiful": it shares its English with tov of looks (6:2). yefat-mar'eh "beautiful in appearance".
+- chiyyah of a person who is not killed (12:12) "let live". wechayetah nafshi (12:13; 19:20) "and I may live": nafshi is "I".
+- hetiv le- (12:16) "treat well", beside yatav le- "go well with" (12:13). ba'avur "because of", as listed; biglal "on account of"; al-devar (12:17; 20:11, 18) "over the matter of".
+- sar of a king's men (12:15) "official" ("prince" at Job 3:15). hillel "praise". bet par'oh "Pharaoh's house"; beto of his people (12:17) "his household", as at 7:1.
+- tson-uvaqar (12:16; 13:5) "flocks and cattle" (miqneh stays "herds"). chamor "donkey" and aton "female donkey", as listed. eved and shifchah in a list of property (12:16) "male slaves and female slaves"; shifchah is kept distinct from amah "female servant".
+- nigga with nega'im (12:17) "strike with plagues"; nega (Exod 11:1) "plague". It shares "strike" with shuf (3:15).
+- qara le- (12:18) "call". laqach li le'ishah (12:19) "take as my wife". hinneh ishtekha "look, here is your wife". tsiwwah al "command concerning". shillach (12:20) "send out", as listed.
+- Names: Shechem, Moreh, Bethel, Ai, the Negev, Pharaoh; hammitsrim "the Egyptians".
