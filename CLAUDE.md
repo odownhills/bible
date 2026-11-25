@@ -193,12 +193,13 @@ The analysis never changes the translation. It is written from the chapter as pu
 2. `python3 scripts/study.py check analysis/<slug>/<NNN>.md` must print OK. If it fails, fix the
    failures (up to 3 rounds). Never publish a failing file. Then reread the analysis against the chapter
    and against every passage it quotes or names, and take out anything the text does not say.
-3. `python3 scripts/study.py` rebuilds `site-study/`, and `python3 scripts/build.py` rebuilds `site/`, where
-   the chapter's page gets its "Meaning" link (once `"study_url"` is set in `data/settings.json`).
+3. `python3 scripts/study.py` rebuilds `site-study/`. The Bible site never links to the analysis (Obay,
+   2026-11-25: "the Bible site should be pure Bible and plain. No analysis, only honest translation"); the
+   analysis site may link to the translation.
 4. Commit on `main` with message `Add analysis: <Book> <n>`, `git pull --rebase origin main`, and push.
 
 ## Limits
-- An analysis run changes only new files under `analysis/` and the rebuilt `site-study/` and `site/`.
+- An analysis run changes only new files under `analysis/` and the rebuilt `site-study/`.
   It never edits a translation, a decision log, a glossary or an earlier analysis unless Obay asks.
 - `ANALYSIS_RULES.md` is Obay's prompt for this work and is improved over time: change it only when he asks.
 
@@ -206,6 +207,6 @@ The analysis never changes the translation. It is written from the chapter as pu
 
 Every build also writes its own site's search index (`scripts/search.py`): `python3 scripts/build.py` into
 `site/search/`, `WORK=quran python3 scripts/build.py` into `site-quran/search/`, and `python3 scripts/study.py`
-into `site-study/search/`. Each site's search page (`/search/`) searches all three sites. A run does nothing extra
+into `site-study/search/`. Each site's search page (`/search/`) searches all three sites, except the Bible site's, which leaves out the analysis (Obay, 2026-11-25). A run does nothing extra
 for it: the index is part of the rebuilt site folder it already commits. Never edit those files by hand; if a
 rebase conflicts in them, take main's and rebuild.
