@@ -1,0 +1,363 @@
+{
+ "note": "Trial pictures for Quran 2:124-152.",
+ "method": "Second method, asked for by Obay on 2026-11-21: (1) split the part into sections that each carry one deep meaning, written as one plain sentence; (2) write picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
+ "sections": [
+  {
+   "verses": "124-126",
+   "meaning": "Abraham is tested with words and made a leader for the people, but the covenant does not reach wrongdoers; the House is made a place of return and safety, to be kept pure, and Abraham asks for a safe land with fruits.",
+   "ideas": [
+    "Geese in V formation led by one goose across a sunrise",
+    "A mountain guide roping a line of climbers up a ridge",
+    "Two people sweeping a plain stone room clean in a shaft of sun",
+    "A man scrubbing a worn stone step while others pass",
+    "A green orchard in a safe desert valley town",
+    "A courtyard table of fruit in the evening"
+   ]
+  },
+  {
+   "verses": "127-129",
+   "meaning": "Abraham and Ishmael raise the foundations of the House and pray: accept it from us, make us submit, raise up among them a messenger.",
+   "ideas": [
+    "Two pairs of hands lowering one stone into a foundation course",
+    "A father and a son carrying a block between them",
+    "An old man planting an olive sapling while a child holds the watering can",
+    "A path being laid stone by stone toward a far ridge"
+   ]
+  },
+  {
+   "verses": "130-134",
+   "meaning": "The creed of Abraham is submission, and he and Jacob charged their sons with it; a community that has passed away has what it earned, and you have what you earned.",
+   "ideas": [
+    "A swimmer floating on his back with open arms on calm water",
+    "A child falling backward into a father's arms",
+    "A worn pouch of seeds passed from hand to hand",
+    "An old man in bed with his grown sons gathered close",
+    "Footprints on sand being washed away by a wave",
+    "An old family photograph fading on a mantel"
+   ]
+  },
+  {
+   "verses": "135-141",
+   "meaning": "Follow the creed of Abraham, not a label; we make no distinction between any of the messengers; the dye of God, whose dye is better?; and who does greater wrong than one who conceals a testimony he has from God?",
+   "ideas": [
+    "A row of different cups filled exactly to the same line",
+    "Different flowers in one vase",
+    "A skein of wool lifted from a deep blue dye vat",
+    "Many colored fabrics drying on a line",
+    "A witness in a courtroom pressing his lips shut with papers behind his back",
+    "A man hiding a sealed envelope as a crowd waits at the door"
+   ]
+  },
+  {
+   "verses": "142-147",
+   "meaning": "To God belong the east and the west; a middle community to be witnesses over the people; turn your face to the Sacred Place of Worship; those who were given the Book recognize it as they recognize their sons.",
+   "ideas": [
+    "A level balance scale with one stone in each pan against a sunrise",
+    "A person standing midway on a long bridge",
+    "A field of sunflowers all turned to the morning sun",
+    "A compass needle swinging and settling",
+    "A father picking out his own son among many children at a school gate",
+    "A mother recognizing her daughter in a crowd photo"
+   ]
+  },
+  {
+   "verses": "148-152",
+   "meaning": "Each has a direction he turns toward, so race to what is good; remember me and I will remember you, and give thanks.",
+   "ideas": [
+    "Runners in separate lanes toward a lit finish line",
+    "Cyclists climbing a mountain road",
+    "Two hilltop fires at dusk answering each other across a dark valley",
+    "A signal lamp answered from a far window"
+   ]
+  }
+ ],
+ "scenes": [],
+ "candidates": [
+  {
+   "verse": 124,
+   "section": "124-126",
+   "image": "cand/01-leader-a.jpg",
+   "principle": "And when his Lord tested Abraham with words, he fulfilled them. He said, \"I am making you a leader for the people.\" He said, \"And of my descendants?\" He said, \"My covenant does not reach the wrongdoers.\"",
+   "shows": "Geese fly in a V across a sunrise, one goose in front leading the others.",
+   "prompt": "A flock of wild geese flying in a wide V formation across a glowing sunrise sky over a lake, one goose clearly leading at the point of the V. The geese are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 124,
+   "section": "124-126",
+   "image": "cand/01-leader-b.jpg",
+   "principle": "And when his Lord tested Abraham with words, he fulfilled them. He said, \"I am making you a leader for the people.\" He said, \"And of my descendants?\" He said, \"My covenant does not reach the wrongdoers.\"",
+   "shows": "A mountain guide at the front of a roped line of climbers leads the way up a ridge in morning light.",
+   "prompt": "A mountain guide at the front of a roped line of climbers in plain outdoor gear leading them up a snowy ridge in clear morning light, seen from behind. The guide and the climbers are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 125,
+   "section": "124-126",
+   "image": "cand/02-sweeping-a.jpg",
+   "principle": "And when we made the House a place of return for the people and a place of safety. And take from the place where Abraham stood a place of prayer.",
+   "shows": "Two people sweep clean a plain stone room with a broom in a shaft of light from a window.",
+   "prompt": "In a plain empty stone room with one tall window, two people in plain clothes sweep the stone floor clean with brooms, dust floating in a shaft of morning sun, a clean pale floor. There is no symbol of any religion in the room. The two people are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 125,
+   "section": "124-126",
+   "image": "cand/02-sweeping-b.jpg",
+   "principle": "And when we made the House a place of return for the people and a place of safety. And take from the place where Abraham stood a place of prayer.",
+   "shows": "A man scrubs a worn stone doorstep clean with a brush as people walk past into a plain house.",
+   "prompt": "A man in plain clothes kneels scrubbing a worn stone doorstep clean with a brush and a bucket of water, while people pass by him into a plain stone house in morning light. There is no symbol of any religion. The man and the step are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 126,
+   "section": "124-126",
+   "image": "cand/03-safe-orchard-a.jpg",
+   "principle": "And when Abraham said, \"My Lord, make this a safe land, and provide its people with fruits, those of them who believe in God and the Last Day,\" he said, \"And whoever disbelieves, I will let him enjoy himself a little, then I will force him ...",
+   "shows": "A green orchard of fruit trees fills a safe quiet valley in the desert, with a small town at the edge.",
+   "prompt": "A green orchard of pomegranate and fig and date trees heavy with fruit fills a quiet valley between dry desert hills, a small plain town at its edge with open doors and children's laundry hanging, golden afternoon light. The orchard and the town are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 126,
+   "section": "124-126",
+   "image": "cand/03-safe-orchard-b.jpg",
+   "principle": "And when Abraham said, \"My Lord, make this a safe land, and provide its people with fruits, those of them who believe in God and the Last Day,\" he said, \"And whoever disbelieves, I will let him enjoy himself a little, then I will force him ...",
+   "shows": "A table of ripe fruit in a quiet courtyard in the evening.",
+   "prompt": "A plain wooden table in a quiet whitewashed courtyard in the evening light, piled with ripe pomegranates, figs, dates and grapes, a tree overhead, peaceful. The table and the fruit are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 127,
+   "section": "127-129",
+   "image": "cand/04-foundation-a.jpg",
+   "principle": "And when Abraham was raising the foundations of the House, and Ishmael: \"Our Lord, accept this from us. You are the Hearing, the Knowing.",
+   "shows": "Two pairs of hands, a man's and a younger man's, lower one stone together into a foundation.",
+   "prompt": "Close on two pairs of hands, an older man's and a younger man's, lowering one rough block of stone together into the first course of a house foundation in a shallow trench, dust and morning sun. The hands and the stone are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 127,
+   "section": "127-129",
+   "image": "cand/04-foundation-b.jpg",
+   "principle": "And when Abraham was raising the foundations of the House, and Ishmael: \"Our Lord, accept this from us. You are the Hearing, the Knowing.",
+   "shows": "A father and his grown son carry a block of stone between them across bare ground to a foundation trench.",
+   "prompt": "A father and his grown son in plain work clothes carry a rough block of stone between them across bare ground toward a long foundation trench, a new wall of fitted stones beginning beside it, hills beyond in morning light. The two men and the stone are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 129,
+   "section": "127-129",
+   "image": "cand/05-olive-planting-a.jpg",
+   "principle": "Our Lord, and raise up among them a messenger from among them, who will recite your signs to them and teach them the Book and wisdom and cleanse them. You are the Mighty, the Wise.\"",
+   "shows": "An old man plants an olive sapling while a small child holds a watering can beside him.",
+   "prompt": "An old man in plain clothes plants a small olive sapling in the dry earth of a hillside while a small child beside him holds a watering can, ready to water it, golden light. The old man, the child and the sapling are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 129,
+   "section": "127-129",
+   "image": "cand/05-olive-planting-b.jpg",
+   "principle": "Our Lord, and raise up among them a messenger from among them, who will recite your signs to them and teach them the Book and wisdom and cleanse them. You are the Mighty, the Wise.\"",
+   "shows": "A path of flat stones is laid one by one across a meadow toward a far ridge.",
+   "prompt": "A path of flat stones being laid one by one across a green meadow toward a far ridge in clear light, the last laid stone still bright, a worker's hands setting the next one in place. The path and the ridge are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 131,
+   "section": "130-134",
+   "image": "cand/06-float-a.jpg",
+   "principle": "When his Lord said to him, \"Submit,\" he said, \"I have submitted to the Lord of the worlds.\"",
+   "shows": "A swimmer floats on his back on calm water with his arms open, letting the water hold him.",
+   "prompt": "A swimmer in plain swimwear floats on his back on perfectly calm clear water with both arms open wide, completely relaxed, eyes closed, held up by the water, sun above. The swimmer is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 131,
+   "section": "130-134",
+   "image": "cand/06-float-b.jpg",
+   "principle": "When his Lord said to him, \"Submit,\" he said, \"I have submitted to the Lord of the worlds.\"",
+   "shows": "A child falls backward with open arms into her father's waiting arms.",
+   "prompt": "A small child leans back and falls with arms wide open and eyes shut into her father's waiting arms behind her in a sunlit garden, complete trust. The child and the father are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 132,
+   "section": "130-134",
+   "image": "cand/07-pouch-a.jpg",
+   "principle": "And Abraham charged his sons with it, and so did Jacob: \"My sons, God has chosen the religion for you, so do not die except as people who submit.\"",
+   "shows": "An old man's hands pass a worn leather pouch of seeds across a table to his son's hands.",
+   "prompt": "Close on an old man's weathered hands passing a worn leather pouch of seeds across a wooden table to a younger man's waiting hands, soft window light. The hands and the pouch are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 132,
+   "section": "130-134",
+   "image": "cand/07-pouch-b.jpg",
+   "principle": "And Abraham charged his sons with it, and so did Jacob: \"My sons, God has chosen the religion for you, so do not die except as people who submit.\"",
+   "shows": "A father and his three grown sons stand on a hill at sunset looking over a valley, the father's hand on the nearest son's shoulder.",
+   "prompt": "A white-haired father and his three grown sons in plain clothes stand shoulder to shoulder on a hilltop at sunset looking over a wide valley, seen from behind, the father's hand on the nearest son's shoulder. The four men and the valley are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 133,
+   "section": "130-134",
+   "image": "cand/08-bedside-a.jpg",
+   "principle": "Or were you witnesses when death came to Jacob, when he said to his sons, \"What will you worship after me?\" They said, \"We will worship your god and the god of your fathers, Abraham, Ishmael and Isaac, one god, and to him we submit.\"",
+   "shows": "An old man lies in a bed at dusk with his grown sons gathered close, holding his hands.",
+   "prompt": "A very old man lies in a plain bed at dusk in a simple room with his grown sons gathered close around him, holding his hands, listening to him with serious faces, warm window light. The old man and his sons are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 133,
+   "section": "130-134",
+   "image": "cand/08-bedside-b.jpg",
+   "principle": "Or were you witnesses when death came to Jacob, when he said to his sons, \"What will you worship after me?\" They said, \"We will worship your god and the god of your fathers, Abraham, Ishmael and Isaac, one god, and to him we submit.\"",
+   "shows": "A family photograph of many generations fades on a mantel by a window.",
+   "prompt": "An old framed family photograph of many generations standing together, fading in the light on a wooden mantel by a window, a few dry flowers beside it. The photograph is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 134,
+   "section": "130-134",
+   "image": "cand/09-passed-away-a.jpg",
+   "principle": "That is a community that has passed away. It has what it earned, and you have what you earned, and you will not be asked about what they used to do.",
+   "shows": "Footprints on a beach are being washed away by a wave.",
+   "prompt": "A line of footprints along a wide empty beach at dawn being slowly washed away by a gentle wave, the last ones still clear. The footprints and the wave are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 134,
+   "section": "130-134",
+   "image": "cand/09-passed-away-b.jpg",
+   "principle": "That is a community that has passed away. It has what it earned, and you have what you earned, and you will not be asked about what they used to do.",
+   "shows": "An empty old rocking chair on a porch in the evening, still gently moving.",
+   "prompt": "An empty old wooden rocking chair on a porch in evening light, still moving gently as if someone just left, a field beyond. The chair is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 136,
+   "section": "135-141",
+   "image": "cand/10-same-line-a.jpg",
+   "principle": "Say, \"We believe in God and what has been sent down to us, and what was sent down to Abraham, Ishmael, Isaac, Jacob and the tribes, and what Moses and Jesus were given, and what the prophets were given from their Lord.",
+   "shows": "A row of different cups and glasses, each filled exactly to the same line with water.",
+   "prompt": "Five very different cups, a mug, a glass, a bowl, a tin cup and a jar, in a row on a wooden table in soft light, each filled with clear water exactly to the same height. The row of cups is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 136,
+   "section": "135-141",
+   "image": "cand/10-same-line-b.jpg",
+   "principle": "Say, \"We believe in God and what has been sent down to us, and what was sent down to Abraham, Ishmael, Isaac, Jacob and the tribes, and what Moses and Jesus were given, and what the prophets were given from their Lord.",
+   "shows": "Flowers of many different kinds are gathered in one vase of clear water.",
+   "prompt": "A single clear glass vase holding flowers of many different kinds and colors together, all in the same clear water, on a sunlit windowsill. The vase is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 138,
+   "section": "135-141",
+   "image": "cand/11-dye-a.jpg",
+   "principle": "\"The dye of God, and whose dye is better than God's? And it is him we worship.\"",
+   "shows": "Hands lift a skein of wool from a deep blue dye vat, dyed all the way through.",
+   "prompt": "Close on a pair of hands lifting a heavy skein of wool dripping deep blue out of a large wooden dye vat, the blue colored all the way through, soft outdoor light. The hands and the wool are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 138,
+   "section": "135-141",
+   "image": "cand/11-dye-b.jpg",
+   "principle": "\"The dye of God, and whose dye is better than God's? And it is him we worship.\"",
+   "shows": "Rolls of cloth in many colors hang drying on a long line in the wind.",
+   "prompt": "A long line of freshly dyed cloths in deep blues, reds and greens hanging in the wind outside a plain workshop, in bright sun. The hanging cloths are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 140,
+   "section": "135-141",
+   "image": "cand/12-silent-witness-a.jpg",
+   "principle": "Or do you say that Abraham, Ishmael, Isaac, Jacob and the tribes were Jews or Christians? Say, \"Do you know better, or does God?\" And who does greater wrong than one who conceals a testimony he has from God?",
+   "shows": "A man in a witness box presses his lips shut with papers hidden behind his back as a room waits.",
+   "prompt": "A man in plain clothes stands in a courtroom witness stand with his lips pressed shut and a folded sheaf of papers hidden behind his back, while a waiting crowd of people in the seats look toward him. The man is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 140,
+   "section": "135-141",
+   "image": "cand/12-silent-witness-b.jpg",
+   "principle": "Or do you say that Abraham, Ishmael, Isaac, Jacob and the tribes were Jews or Christians? Say, \"Do you know better, or does God?\" And who does greater wrong than one who conceals a testimony he has from God?",
+   "shows": "A man slides a sealed envelope into a drawer and shuts it while a crowd waits at his door.",
+   "prompt": "A man in plain clothes slides a sealed envelope into a desk drawer and shuts it tight, while through the glass door behind him a crowd of people waits expectantly. The man and the drawer are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 143,
+   "section": "142-147",
+   "image": "cand/13-balance-a.jpg",
+   "principle": "And that is how we have made you a middle community, so that you may be witnesses over the people and the messenger may be a witness over you.",
+   "shows": "A perfectly level balance scale with one stone in each pan stands against the sunrise.",
+   "prompt": "A brass balance scale perfectly level with one smooth stone in each pan, standing on a flat rock against a glowing sunrise sky. The scale is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 143,
+   "section": "142-147",
+   "image": "cand/13-balance-b.jpg",
+   "principle": "And that is how we have made you a middle community, so that you may be witnesses over the people and the messenger may be a witness over you.",
+   "shows": "A person stands exactly in the middle of a long bridge, equally far from both banks.",
+   "prompt": "A long footbridge across a wide river with a person in plain clothes standing exactly in the middle, equally far from both banks, seen from behind in soft light. The bridge and the person are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 144,
+   "section": "142-147",
+   "image": "cand/14-sunflowers-a.jpg",
+   "principle": "We do see your face turning about in the sky, so we will certainly turn you to a direction you will be pleased with. So turn your face toward the Sacred Place of Worship, and wherever you are, turn your faces toward it.",
+   "shows": "A field of sunflowers all turned the same way toward the morning sun.",
+   "prompt": "A wide field of sunflowers all turning their faces the same direction toward the low morning sun, golden light across them. The sunflowers are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 144,
+   "section": "142-147",
+   "image": "cand/14-sunflowers-b.jpg",
+   "principle": "We do see your face turning about in the sky, so we will certainly turn you to a direction you will be pleased with. So turn your face toward the Sacred Place of Worship, and wherever you are, turn your faces toward it.",
+   "shows": "A compass needle swings and settles to point firmly in one direction on a flat rock.",
+   "prompt": "A brass compass lying on a flat rock with its needle just settling to point firmly in one direction, a wide view of hills at sunrise behind. The compass and the hills are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 146,
+   "section": "142-147",
+   "image": "cand/15-school-gate-a.jpg",
+   "principle": "Those to whom we gave the Book recognize it as they recognize their sons, but a group of them conceal the truth while they know.",
+   "shows": "A father at a school gate scans a crowd of children and his face lights up when he sees his own son.",
+   "prompt": "At a school gate in afternoon light, a father in plain clothes scans a crowd of dozens of children and his whole face lights up as he recognizes his own son at once. The father and the crowd are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 146,
+   "section": "142-147",
+   "image": "cand/15-school-gate-b.jpg",
+   "principle": "Those to whom we gave the Book recognize it as they recognize their sons, but a group of them conceal the truth while they know.",
+   "shows": "A mother picks out her own grown daughter from a big group photograph at once.",
+   "prompt": "A mother in plain clothes holds a big framed group photograph of many young people and points straight at her own daughter, smiling, recognizing her at once, soft light. The mother and the photograph are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 148,
+   "section": "148-152",
+   "image": "cand/16-race-a.jpg",
+   "principle": "And each has a direction he turns toward, so race to what is good. Wherever you are, God will bring you all together. God has power over all things.",
+   "shows": "Runners in separate lanes race toward a finish line in the sunshine.",
+   "prompt": "Runners in plain athletic clothes racing in separate lanes of a track toward a finish tape in bright morning sunshine, seen from the front low, determined. The runners are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 148,
+   "section": "148-152",
+   "image": "cand/16-race-b.jpg",
+   "principle": "And each has a direction he turns toward, so race to what is good. Wherever you are, God will bring you all together. God has power over all things.",
+   "shows": "Cyclists climb a mountain road toward a bright summit.",
+   "prompt": "A group of cyclists in plain gear climbing a mountain road in clear light toward a bright summit, seen from behind. The cyclists and the summit are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 152,
+   "section": "148-152",
+   "image": "cand/17-answering-fires-a.jpg",
+   "principle": "So remember me, and I will remember you. And give thanks to me, and do not be ungrateful to me.",
+   "shows": "Two hilltop fires burn at dusk on opposite sides of a dark valley, answering each other.",
+   "prompt": "At dusk, two small bonfires burn on two opposite hilltops across a dark valley, each answering the other's light, the sky deep blue. The two fires are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 152,
+   "section": "148-152",
+   "image": "cand/17-answering-fires-b.jpg",
+   "principle": "So remember me, and I will remember you. And give thanks to me, and do not be ungrateful to me.",
+   "shows": "Two lit windows glow across a dark valley at night, one answering the other.",
+   "prompt": "At night, two lit windows of two distant houses on opposite sides of a dark valley glow warmly toward each other, as if answering. The two windows are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  }
+ ]
+}
