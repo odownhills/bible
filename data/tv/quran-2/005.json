@@ -1,0 +1,311 @@
+{
+ "note": "Trial pictures for Quran 2:104-123.",
+ "method": "Second method, asked for by Obay on 2026-11-21: (1) split the part into sections that each carry one deep meaning, written as one plain sentence; (2) write picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
+ "sections": [
+  {
+   "verses": "104-105",
+   "meaning": "Say 'wait for us' and hear; there are those who would not love any good to be sent down to you, but God singles out whom he wills for his mercy.",
+   "ideas": [
+    "Hikers pausing on a trail so the stragglers catch up",
+    "A raised hand at a stream crossing",
+    "A man with folded arms glaring at a neighbor's laden fruit tree"
+   ]
+  },
+  {
+   "verses": "106-108",
+   "meaning": "Whatever sign is cancelled or forgotten, God brings better or like it; whoever trades belief for disbelief has gone astray from the even way.",
+   "ideas": [
+    "A hand replacing a dim old bulb with a brighter one in a dark room",
+    "A street lamp being swapped for a brighter lamp at dusk",
+    "A smooth level path and a walker lost in rough brush beside it"
+   ]
+  },
+  {
+   "verses": "109-110",
+   "meaning": "Pardon and overlook; keep up prayer and alms, and whatever good you send ahead you will find with God.",
+   "ideas": [
+    "A father smiling while picking up the pieces of a toddler's broken cup",
+    "A man answering a neighbor's shouting with a calm smile and a basket of fruit",
+    "A traveler arriving at a lit house to find the basket he sent ahead on the porch",
+    "Soil cross-section with a seed and its roots"
+   ]
+  },
+  {
+   "verses": "111-113",
+   "meaning": "They say no one will enter the Garden but their own; 'bring your proof'. Whoever submits his face to God and does good has his reward. Each side says the other has nothing to stand on, though both recite the Book.",
+   "ideas": [
+    "A face lifted to the sunrise with eyes closed",
+    "A person kneeling on a plain floor with open hands",
+    "Two men on the same cliff ledge each pointing at the other's foothold"
+   ]
+  },
+  {
+   "verses": "114-115",
+   "meaning": "Whoever bars God's places of worship and strives for their ruin does great wrong; to God belong the east and the west, and wherever you turn, there is the face of God.",
+   "ideas": [
+    "A plain hall with chained doors and boarded windows and weeds on the steps",
+    "An excavator facing a plain hall",
+    "A person turning in a circle on a plain with golden light on every horizon",
+    "A person lying on a dune under a sky full of light"
+   ]
+  },
+  {
+   "verses": "116-117",
+   "meaning": "He is the Originator, and when he decides a matter he only says to it 'Be', and it is.",
+   "ideas": [
+    "A hand presses a switch and a vast dark hall blazes with light at once",
+    "Sunrise breaks over a dark valley all at once",
+    "A seed becoming a tree"
+   ]
+  },
+  {
+   "verses": "118-121",
+   "meaning": "Those who do not know ask why God does not speak to them or send a sign; the signs are clear; God's guidance is the guidance; those who read the Book as it should be read believe in it.",
+   "ideas": [
+    "A man on a hill with arms crossed demanding a sign while birds fill the sunrise behind him",
+    "A compass resting steady on a flat rock at sunrise",
+    "A man absorbed in reading a book on a bench in dappled light"
+   ]
+  },
+  {
+   "verses": "122-123",
+   "meaning": "Remember the favor, and guard against a day when no soul will pay for another.",
+   "ideas": [
+    "A waiting hall of rows of chairs, each person alone with their own ticket",
+    "A line of hikers each carrying their own pack up a trail"
+   ]
+  }
+ ],
+ "scenes": [],
+ "candidates": [
+  {
+   "verse": 104,
+   "section": "104-105",
+   "image": "cand/01-wait-for-us-a.jpg",
+   "principle": "You who believe, do not say, \"Attend to us,\" but say, \"Wait for us,\" and hear. And for the disbelievers there is a painful punishment.",
+   "shows": "Hikers stop on a mountain trail so that those behind can catch up.",
+   "prompt": "On a mountain trail in clear morning light, a group of ordinary hikers in plain outdoor clothes have stopped and turned back, waiting patiently for a slower friend and an older hiker climbing up the trail to catch up. The hikers are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 104,
+   "section": "104-105",
+   "image": "cand/01-wait-for-us-b.jpg",
+   "principle": "You who believe, do not say, \"Attend to us,\" but say, \"Wait for us,\" and hear. And for the disbelievers there is a painful punishment.",
+   "shows": "A raised open hand at a stream crossing, waiting for a friend on the other bank.",
+   "prompt": "At a stone crossing over a shallow stream, a man in plain clothes on one bank holds up one open hand to say wait, looking back toward a friend who is still crossing on the stepping stones, soft light. The man and the friend are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 105,
+   "section": "104-105",
+   "image": "cand/02-envy-tree-a.jpg",
+   "principle": "Those who disbelieve, among the People of the Book or among those who give God partners, would not love any good to be sent down to you from your Lord.",
+   "shows": "A man with folded arms glares over a fence at his neighbor's tree heavy with fruit.",
+   "prompt": "A man in plain clothes stands with folded arms at a garden fence glaring with a sour face across it at his neighbor's tree, which is heavy with ripe fruit in warm sun, while his own tree is bare. The man and the laden tree are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 105,
+   "section": "104-105",
+   "image": "cand/02-envy-tree-b.jpg",
+   "principle": "Those who disbelieve, among the People of the Book or among those who give God partners, would not love any good to be sent down to you from your Lord.",
+   "shows": "A man looks sourly from a dim room through a window at a neighbor's brightly lit window.",
+   "prompt": "At dusk a man in plain clothes stands in a dim dark room looking sourly through his window at the neighbor's house across the lane, whose windows glow warm and bright with a party inside. The man and the lit window are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 106,
+   "section": "106-108",
+   "image": "cand/03-bulb-a.jpg",
+   "principle": "Whatever sign we cancel or cause to be forgotten, we bring something better than it or like it. Do you not know that God has power over all things?",
+   "shows": "A hand takes out a dim old bulb and screws in a brighter one, and the dark room fills with light.",
+   "prompt": "Close on a hand reaching up to a ceiling light fitting in a dim room, screwing in a bright new bulb in place of the dim old one, light flooding down. The hand and the bulb are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 106,
+   "section": "106-108",
+   "image": "cand/03-bulb-b.jpg",
+   "principle": "Whatever sign we cancel or cause to be forgotten, we bring something better than it or like it. Do you not know that God has power over all things?",
+   "shows": "Workers at dusk change an old dim street lamp for a brighter one.",
+   "prompt": "At dusk on a quiet street, a worker on a cherry-picker lift fits a bright new lamp in place of an old dim street lamp, a warm bright circle of light spreading on the pavement below. The worker and the lamp are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 108,
+   "section": "106-108",
+   "image": "cand/04-even-way-a.jpg",
+   "principle": "Or do you want to ask your messenger as Moses was asked before? And whoever takes disbelief in exchange for belief has gone astray from the even way.",
+   "shows": "A smooth level path runs on in the light while a walker has gone off into rough brush beside it.",
+   "prompt": "A smooth even level path running through green fields into the distance in clear light, and beside it a walker in plain clothes who has left the path and is struggling through rough thorny brush and rocks, seen from the side. The walker and the path are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 108,
+   "section": "106-108",
+   "image": "cand/04-even-way-b.jpg",
+   "principle": "Or do you want to ask your messenger as Moses was asked before? And whoever takes disbelief in exchange for belief has gone astray from the even way.",
+   "shows": "A hiker leaves a smooth marked trail for a steep slope of loose scree.",
+   "prompt": "A hiker in plain outdoor clothes has left a smooth level marked trail and stands on a steep slope of loose gray scree above a drop, the easy trail still running level beside. The hiker and the trail are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 109,
+   "section": "109-110",
+   "image": "cand/05-broken-cup-a.jpg",
+   "principle": "Many of the People of the Book would love to turn you back into disbelievers after your belief, out of envy from their own selves, after the truth has become clear to them. So pardon and overlook, until God brings his command.",
+   "shows": "A father smiles and gently picks up the pieces of a broken cup while a small child stands ashamed.",
+   "prompt": "In a sunlit kitchen a father in plain clothes kneels on the floor smiling gently as he picks up the pieces of a broken cup, while a small child stands nearby looking ashamed and then relieved. The father and the child are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 109,
+   "section": "109-110",
+   "image": "cand/05-broken-cup-b.jpg",
+   "principle": "Many of the People of the Book would love to turn you back into disbelievers after your belief, out of envy from their own selves, after the truth has become clear to them. So pardon and overlook, until God brings his command.",
+   "shows": "Across a fence a man answers his neighbor's angry shouting with a calm smile and a basket of fruit.",
+   "prompt": "Across a garden fence a neighbor shouts angrily with a raised hand, while a calm man in plain clothes answers with a gentle smile and holds out a basket of fruit over the fence. The two men and the basket are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 110,
+   "section": "109-110",
+   "image": "cand/06-sent-ahead-a.jpg",
+   "principle": "And keep up the prayer and give the alms. And whatever good you send ahead for yourselves, you will find it with God. God sees what you do.",
+   "shows": "A tired traveler reaches a lit house at dusk and finds on the porch the basket of bread he sent ahead.",
+   "prompt": "At dusk a tired traveler in plain clothes, seen from behind, arrives at a warm lit house at the end of a long road and finds waiting on the porch a basket of bread and fruit, the gift he had sent ahead long before. The traveler and the porch are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 110,
+   "section": "109-110",
+   "image": "cand/06-sent-ahead-b.jpg",
+   "principle": "And keep up the prayer and give the alms. And whatever good you send ahead for yourselves, you will find it with God. God sees what you do.",
+   "shows": "A cross-section of dark soil shows a seed and the strong roots it has sent below.",
+   "prompt": "A cross-section view of soil in a garden showing a small seed pushed in by a finger on one side and, on the other, the same plant grown with strong deep roots below and fruit above, soft light. The soil section and the plant are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 112,
+   "section": "111-113",
+   "image": "cand/07-face-to-light-a.jpg",
+   "principle": "Not so. Whoever submits his face to God and does good, he has his reward with his Lord, and there is no fear for them, nor will they grieve.",
+   "shows": "A young person lifts their face to the sunrise with eyes closed.",
+   "prompt": "A young person in plain clothes stands on a hilltop at sunrise with eyes closed and the face lifted calmly toward the first light of the sun, seen from the side. The face and the light are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 112,
+   "section": "111-113",
+   "image": "cand/07-face-to-light-b.jpg",
+   "principle": "Not so. Whoever submits his face to God and does good, he has his reward with his Lord, and there is no fear for them, nor will they grieve.",
+   "shows": "A person kneels on a plain floor with a bowed head and open hands in morning light.",
+   "prompt": "A person in plain clothes kneels on a plain wooden floor in a bright room, head bowed and both open hands resting on the knees, seen from the side in soft morning light. The person is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 113,
+   "section": "111-113",
+   "image": "cand/08-ledge-a.jpg",
+   "principle": "And the Jews said, \"The Christians have nothing to stand on,\" and the Christians said, \"The Jews have nothing to stand on,\" while they recite the Book. In the same way, those who do not know said something like what they said.",
+   "shows": "Two men on the same wide cliff ledge each point down at the other's footing, though both stand on solid rock.",
+   "prompt": "Two men in plain outdoor clothes stand facing each other on the same wide solid rock ledge of a cliff, each pointing angrily down at the other's feet as if saying you have nothing to stand on, though the whole ledge is one rock. The two men are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 113,
+   "section": "111-113",
+   "image": "cand/08-ledge-b.jpg",
+   "principle": "And the Jews said, \"The Christians have nothing to stand on,\" and the Christians said, \"The Jews have nothing to stand on,\" while they recite the Book. In the same way, those who do not know said something like what they said.",
+   "shows": "Two men on one small island of rock each insist the other stands in water.",
+   "prompt": "Two men in plain clothes stand side by side on one wide flat rock in a calm lake, each pointing at the other's feet in accusation, though they stand on the same rock. The two men are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 114,
+   "section": "114-115",
+   "image": "cand/09-chained-hall-a.jpg",
+   "principle": "And who does greater wrong than one who keeps God's places of worship from having his name remembered in them, and strives for their ruin? It is not for those to enter them except in fear.",
+   "shows": "A plain hall stands with its doors chained, its windows boarded and weeds on its steps.",
+   "prompt": "A plain bright stone hall with simple tall windows, now abandoned: its doors are chained shut, windows boarded, and weeds growing through the steps, cold gray light. There is no tower, no dome and no symbols of any religion. The hall is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 114,
+   "section": "114-115",
+   "image": "cand/09-chained-hall-b.jpg",
+   "principle": "And who does greater wrong than one who keeps God's places of worship from having his name remembered in them, and strives for their ruin? It is not for those to enter them except in fear.",
+   "shows": "A yellow excavator waits in front of a plain hall that has been fenced off for demolition.",
+   "prompt": "A yellow excavator parked in front of a plain old stone hall with tall windows, fenced off with a barrier, ready to demolish it, gray light. There is no tower, no dome and no symbols of any religion. The hall and the machine are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 115,
+   "section": "114-115",
+   "image": "cand/10-every-horizon-a.jpg",
+   "principle": "And to God belong the east and the west, so wherever you turn, there is the face of God. God is vast, knowing.",
+   "shows": "A person stands in the middle of a vast open plain turning in a circle with golden light on every horizon.",
+   "prompt": "A person in plain clothes stands in the middle of a vast open plain at dusk slowly turning with arms slightly out, and there is glowing golden and rose light on every horizon in every direction around them. The person and the horizons are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 115,
+   "section": "114-115",
+   "image": "cand/10-every-horizon-b.jpg",
+   "principle": "And to God belong the east and the west, so wherever you turn, there is the face of God. God is vast, knowing.",
+   "shows": "A person lies on a dune looking up at a sky full of light from every horizon.",
+   "prompt": "A person in plain clothes lies on their back on a desert dune looking up at a vast sky glowing with light on every side from one horizon all around to the other, seen from the side. The person and the sky are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 117,
+   "section": "116-117",
+   "image": "cand/11-switch-a.jpg",
+   "principle": "He is the Originator of the heavens and the earth, and when he decides a matter, he only says to it, \"Be,\" and it is.",
+   "shows": "A hand presses a switch and a vast dark hall blazes with light all at once.",
+   "prompt": "A hand presses a plain wall switch at the entrance of an enormous dark hangar, and at the same instant every light along the whole length of the hall blazes on at once. The hand and the lights are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 117,
+   "section": "116-117",
+   "image": "cand/11-switch-b.jpg",
+   "principle": "He is the Originator of the heavens and the earth, and when he decides a matter, he only says to it, \"Be,\" and it is.",
+   "shows": "A dark valley at night blazes into full sunrise all at once as the sun appears over a ridge.",
+   "prompt": "A dark valley at night with the first blazing flash of the sun appearing over the ridge, instantly flooding the whole valley with gold light and color, mist lifting. The ridge and the sun are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 118,
+   "section": "118-121",
+   "image": "cand/12-demand-sign-a.jpg",
+   "principle": "And those who do not know said, \"Why does God not speak to us, or a sign come to us?\" In the same way, those before them said something like what they said. Their hearts are alike. We have made the signs clear for a people who are certain.",
+   "shows": "A man on a hill with folded arms waits for a sign, not noticing the sunrise and birds filling the sky behind him.",
+   "prompt": "A man in plain clothes stands on a hilltop with folded arms and a scowl, staring straight ahead as if demanding a sign, while behind him the whole sky glows with sunrise and a flock of birds crosses it, unnoticed. The man and the sky are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 118,
+   "section": "118-121",
+   "image": "cand/12-demand-sign-b.jpg",
+   "principle": "And those who do not know said, \"Why does God not speak to us, or a sign come to us?\" In the same way, those before them said something like what they said. Their hearts are alike. We have made the signs clear for a people who are certain.",
+   "shows": "A man at a window waits for a message on his phone, not seeing the garden in bloom outside.",
+   "prompt": "A man in plain clothes sits at a window staring at a phone waiting for a message, while right outside the window a garden is in full glorious bloom in morning sun, unnoticed. The man and the window are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 121,
+   "section": "118-121",
+   "image": "cand/13-reader-a.jpg",
+   "principle": "Those to whom we gave the Book, reciting it as it should be recited, those believe in it. And whoever disbelieves in it, those are the losers.",
+   "shows": "A man sits absorbed in reading a book on a bench in dappled light.",
+   "prompt": "A man in plain clothes sits on a bench under trees deeply absorbed in reading a book held in both hands, dappled morning light on him and the page, a calm face. The man and the book are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 121,
+   "section": "118-121",
+   "image": "cand/13-reader-b.jpg",
+   "principle": "Those to whom we gave the Book, reciting it as it should be recited, those believe in it. And whoever disbelieves in it, those are the losers.",
+   "shows": "A compass rests steady on a flat rock at sunrise with its needle pointing true.",
+   "prompt": "A brass compass resting steady on a flat rock at sunrise, its needle pointing true, a wide view of hills in morning light behind. The compass and the hills are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 123,
+   "section": "122-123",
+   "image": "cand/14-own-ticket-a.jpg",
+   "principle": "And guard yourselves against a day when no soul will pay anything on behalf of another soul, and no compensation will be accepted from it, and no intercession will benefit it, nor will they be aided.",
+   "shows": "A big waiting hall where each person sits alone with their own ticket number.",
+   "prompt": "A big plain waiting hall with long rows of chairs where ordinary people of today in plain clothes each sit alone holding their own paper ticket, nobody sitting together, an empty chair beside each, bright light. The people are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 123,
+   "section": "122-123",
+   "image": "cand/14-own-ticket-b.jpg",
+   "principle": "And guard yourselves against a day when no soul will pay anything on behalf of another soul, and no compensation will be accepted from it, and no intercession will benefit it, nor will they be aided.",
+   "shows": "A line of hikers each carries their own heavy pack up a steep mountain trail.",
+   "prompt": "A long line of hikers in plain outdoor clothes climbing a steep mountain trail one behind the other, each carrying their own heavy pack, no one carrying another's, seen from behind in clear light. The line of hikers is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  }
+ ]
+}
