@@ -55,14 +55,8 @@ BY_SLUG = {b["slug"]: b for b in BOOKS}
 # the reading pages do (Obay, 2026-11-23): the books, then a book's chapters; the Quran's surahs.
 TV = WORK in ("bible", "quran")
 PICTURES = WORK == "bible"   # the Bible's per-chapter TV files; the Quran's are written per surah
-# The study site (scripts/study.py) analyzes Bible chapters. Once its address is set in data/settings.json
-# ("study_url"), a chapter that has an analysis (analysis/<slug>/<NNN>.md) gets a "Meaning" link to it.
-STUDY_URL = ""
-if WORK == "bible":
-    try:
-        STUDY_URL = (json.load(open(os.path.join(ROOT, "data", "settings.json"))).get("study_url") or "").rstrip("/")
-    except (OSError, ValueError):
-        pass
+# The Bible site is the translation alone (Obay, 2026-11-25: "the Bible site should be pure Bible and plain. No
+# analysis, only honest translation"): no page links to the study site. The study site may link here.
 
 
 def label(b, n):
@@ -664,17 +658,14 @@ def main():
             if audio_of(next_):
                 data += ' data-next-audio="../%s"' % audio_of(next_)
         eyebrow = '<p class="eyebrow">%s</p>\n' % esc(b["eyebrow"]) if b.get("eyebrow") else ""
-        meaning = ""
-        if STUDY_URL and os.path.exists(os.path.join(ROOT, "analysis", b["slug"], "%03d.md" % n)):
-            meaning = ' <a class="btn ghost" href="%s/%s/%d.html">Meaning</a>' % (STUDY_URL, b["slug"], n)
         body = """%s<h1>%s</h1>
-<p class="sub">%s<a class="btn ghost" href="../listen/?from=%s-%d">%s</a>%s</p>
+<p class="sub">%s<a class="btn ghost" href="../listen/?from=%s-%d">%s</a></p>
 <div id="ch"%s>
 %s
 </div>
 <div class="pn">%s%s</div>""" % (
             eyebrow, esc(label(b, n)), buttons, b["slug"], n, "Listen only" if has_audio else "&#9654; Listen from here",
-            meaning, data, html_body,
+            data, html_body,
             link(prev_, "prev", "&larr;"), link(next_, "next", "&rarr;") if next_ else
             '<span class="next">Next %s coming soon</span>' % UNIT)
         os.makedirs(os.path.join(OUT, b["slug"]), exist_ok=True)

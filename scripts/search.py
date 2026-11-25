@@ -373,29 +373,37 @@ def nav_link(up):
 
 
 def page_body(work, js_name):
-    first = {"bible": "the Bible", "quran": "the Quran", "study": "the study notes"}[work]
-    others = [s for s in ("the Bible", "the Quran", "the study notes") if s != first]
-    config = {"home": work, "sites": SITES}
+    # The Bible site is the translation alone (Obay, 2026-11-25: "pure Bible and plain. No analysis"): its search
+    # leaves out the study notes. The Quran and study sites still search all three.
+    sites = [s for s in SITES if not (work == "bible" and s["id"] == "study")]
+    names = {"bible": "the Bible", "quran": "the Quran", "study": "the study notes"}
+    def listing(ids):
+        named = [names[i] for i in ids]
+        return ", ".join(named[:-1]) + " and " + named[-1]
+    ids = [s["id"] for s in sites]
+    first = listing([work] + [i for i in ids if i != work])   # the site being searched from comes first
+    plain = listing(ids)
+    config = {"home": work, "sites": sites}
     examples = ['<button class="chip" type="button">%s</button>' % w for w in
                 ("mercy", "light", "covenant", "&quot;living creature&quot;", "forgive")]
     examples.append('<button class="chip" type="button" lang="ar">\u0631\u062D\u0645\u0629</button>')
     return """<h1>Search</h1>
 <form class="sf" id="sf" role="search" action="./" method="get">
 <input id="q" name="q" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"
- placeholder="A word, or &quot;words in quotes&quot;" aria-label="Search %s, %s and %s">
+ placeholder="A word, or &quot;words in quotes&quot;" aria-label="Search %s">
 </form>
 <div class="scope" id="scope" hidden></div>
 <p class="sstat" id="sstat" aria-live="polite"></p>
 <div id="res"></div>
 <div class="stips" id="stips">
-<p>Type a word to find every verse that uses it, in the Bible, the Quran and the study notes. Its other forms are
+<p>Type a word to find every verse that uses it, in %s. Its other forms are
 found too: <em>love</em> also finds <em>loved</em>, <em>loves</em> and <em>loving</em>.</p>
 <p>Several words find the verses that have all of them. Put words in quotes to find them together, in that order.
 Typing in Arabic searches the Quran's Arabic, every surah, with or without vowel marks.</p>
 <div class="chips">%s</div>
 </div>
 <script id="search-config" type="application/json">%s</script>
-<script src="%s" defer></script>""" % (first, others[0], others[1], "".join(examples), dumps(config), js_name)
+<script src="%s" defer></script>""" % (first, plain, "".join(examples), dumps(config), js_name)
 
 
 def build(work, out, x):
