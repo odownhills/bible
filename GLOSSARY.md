@@ -1550,3 +1550,26 @@ closed. Close calls go in the chapter's decision log instead.
 - wayyuggad le- ... lemor (22:20) "it was told to ..., saying".
 - pilegesh (22:24) "concubine".
 - Names: Moriah; Buz, Kemuel, Chesed, Hazo, Pildash, Jidlaph, Bethuel, Rebekah, Reumah, Tebah, Gaham, Tahash, Maacah. Uz (22:21) is spelled as at 10:23 and Job 1:1.
+
+## Settled in Genesis 23
+- chayye X (23:1; 25:7, 17) "the life of X"; shene chayye "the years of the life of".
+- safad le- (23:2) "lament for", kept distinct from aval "mourn". bakah with a person as its object "weep for".
+- met of one who is to be buried (23:3-15) "dead": "his dead", "my dead", "your dead". me'al pene meto (23:3) "from beside his dead". qavar "bury"; qavar millefanay (23:4, 8) "bury out of my sight".
+- toshav (23:4; Lev 25:23; Ps 39:12) "settler": ger wetoshav "a resident foreigner and a settler".
+- achuzzat-qever (23:4, 9, 20; 49:30; 50:13) "a holding for a grave".
+- shama with a suffix or el, of heeding a person (23:6, 8, 11, 13, 15, 16) "listen to", the same English all six times.
+- nesi elohim (23:6) "a chieftain of God" [alt: a mighty chieftain] (decision log, call: clear).
+- mivchar (23:6) "the choicest of", beside bachar "choose". kala min (23:6) "withhold from", as planned.
+- am ha'arets (23:7, 12, 13) "the people of the land".
+- yesh et-nafshekhem (23:8; 2 Kgs 9:15) "you are willing": the idiom is translated by its meaning.
+- paga be- ... le- (23:8) "appeal to ... for", as at Job 21:15.
+- qetseh (23:9) "edge". bekhesef male (23:9; 1 Chr 21:22, 24) "for silver in full".
+- yashav betokh of one who is present (23:10) "sit among". ba'e sha'ar iro (23:10, 18) "who entered the gate of his city".
+- natatti of a gift or a payment made in the saying of it (23:11, 13) "I give", as at 9:3. le'ene (23:11, 18) "before the eyes of".
+- lu before an imperative (23:13) "if only", as at Job 6:2.
+- sheqel "shekel": the unit is kept, as ammah is. shaqal le- (23:16) "weigh out for". socher "merchant"; over lassocher "current among the merchants".
+- qum le- of property (23:17, 20) "be made over to". miqnah (23:18) "purchase".
+- lifne of a place (23:17) "in front of"; al-pene of a place (23:19; 25:9; 49:30; 50:13) "facing".
+- ets, a collective (23:17) "trees". bekhol-gevulo saviv "within its whole border on every side".
+- acharei-khen (23:19) "afterward", as at 6:4. qavar el "bury in".
+- Names: Kiriath-Arba, Ephron, Zohar, Machpelah (the Hebrew has the article each time). bene Chet "the sons of Heth"; hachitti "the Hittite".
