@@ -76,7 +76,7 @@
    "image": "cand/01-leaving-town-a.jpg",
    "principle": "Have you not seen those who went out of their homes in their thousands, for fear of death? So God said to them, \"Die.\" Then he gave them life. God is bountiful to people, but most people do not give thanks.",
    "shows": "A long line of people with bundles walks away from a hill town at dusk, the town behind them empty.",
-   "prompt": "A long line of ordinary people of today in plain clothes carrying bundles walks away along a road from a hill town at dusk, the empty town behind them with its windows dark, seen from behind in gray light. The line of people and the town are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+   "prompt": "A long line of ordinary people of today in plain clothes carrying bundles walks away along a road from a hill town at dusk, the empty town behind them with its windows dark, seen from behind in gray light. The line of people and the town are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture: only plain low houses with flat or tiled roofs. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
    "verse": 243,
@@ -84,7 +84,7 @@
    "image": "cand/01-leaving-town-b.jpg",
    "principle": "Have you not seen those who went out of their homes in their thousands, for fear of death? So God said to them, \"Die.\" Then he gave them life. God is bountiful to people, but most people do not give thanks.",
    "shows": "A crowd streams out through a town gate onto an open road at evening, looking back.",
-   "prompt": "A crowd of ordinary people of today in plain clothes streaming out of a town through an old gate onto an open road at evening, some looking back over their shoulders. The crowd and the gate are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+   "prompt": "A crowd of ordinary people of today in plain clothes streaming out of a town through an old gate onto an open road at evening, some looking back over their shoulders. The crowd and the gate are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture: only plain low houses with flat or tiled roofs. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
    "verse": 245,
@@ -241,7 +241,7 @@
    "image": "cand/11-star-trails-a.jpg",
    "principle": "God, there is no god but him, the Living, the Ever-Standing. Neither drowsiness nor sleep takes hold of him. To him belongs what is in the heavens and what is on the earth. Who is it that will intercede with him except by his permission?",
    "shows": "Star trails circle over a sleeping village by night while one window stays lit.",
-   "prompt": "A long-exposure night sky of circling star trails over a quiet sleeping village in a valley, one single window lit warm and steady all night. The star trails and the window are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "prompt": "A long-exposure night sky of circling star trails over a quiet sleeping village in a valley, one single window lit warm and steady all night. The star trails and the window are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture: only plain low houses with flat or tiled roofs. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
@@ -250,7 +250,7 @@
    "image": "cand/11-star-trails-b.jpg",
    "principle": "God, there is no god but him, the Living, the Ever-Standing. Neither drowsiness nor sleep takes hold of him. To him belongs what is in the heavens and what is on the earth. Who is it that will intercede with him except by his permission?",
    "shows": "A single steady lit window in a sleeping town at three in the morning.",
-   "prompt": "A single warm lit window in a quiet sleeping town at three in the morning, all the other windows dark, a clear starry sky above the roofs. The lit window and the sky are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "prompt": "A single warm lit window in a quiet sleeping town at three in the morning, all the other windows dark, a clear starry sky above the roofs. The lit window and the sky are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture: only plain low houses with flat or tiled roofs. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
