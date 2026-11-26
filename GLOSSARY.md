@@ -1722,3 +1722,25 @@ closed. Close calls go in the chapter's decision log instead.
 - hayah li lelohim (28:21) "be God to me", as at 17:7-8.
 - isser (28:22) "give a tenth", beside ma'aser "a tenth" (14:20).
 - Names: Mahalath; Luz.
+
+## Settled in Genesis 29
+- nasa raglav (29:1; only here) "lift one's feet": the picture is kept, nasa as listed. bene qedem "the people of the east", as at Job 1:3.
+- eder (29:2, 3, 8; 30:40) "flock"; tson beside it "sheep", as at 26:14: edre-tson "flocks of sheep".
+- ravats of flocks (29:2) "lie".
+- galal me'al (29:3, 8, 10) "roll off". pi habbe'er "the mouth of the well". heshiv of a stone (29:3) "put back".
+- hashalom lo (29:6; 43:27) "Is it well with him?"; shalom in answer "It is well".
+- hayyom gadol (29:7) "the day is long".
+- ra'ah of a shepherd, with the flock as its object (29:7) "graze"; ro'ah (29:9) "shepherd", of a woman too.
+- shema (29:13) "news". chibbeq "embrace". nishsheq (the piel; 29:13) "kiss", as nashaq. sipper "recount", as listed.
+- atsmi uvsari (29:14) "my bone and my flesh", singular as at Job 2:5.
+- chodesh yamim (29:14) "a full month".
+- avad of Jacob and Laban (29:15-30) "serve"; avad im (29:25, 27, 30) "serve with"; avodah (29:27) "service". maskoret (29:15; 31:7, 41) "wages".
+- haggedolah, haqqetannah of two daughters (29:16, 18) "the older", "the younger"; hatse'irah, habbekhirah (29:26) "the younger", "the firstborn", as at 19:31.
+- rakh of eyes (29:17) "tender" [alt: weak] (decision log, call: ask). yefat-to'ar (29:17; 39:6) "beautiful in form".
+- havah with an object (29:21) "Give me", as at Job 6:22.
+- rimmah (29:25) "deceive", beside mirmah "deceit" (27:35): it shares its English with hishshi (3:13).
+- shevua zot (29:27, 28) "this one's week"; zot ... zot (29:27) "this one ... that one". mille of a week "complete", beside male "be completed".
+- senu'ah of a wife (29:31, 33; Deut 21:15) "hated", not softened. patach rechem (29:31; 30:22) "open the womb".
+- ra'ah be'oni (29:32) "see the affliction of", so that it is heard with "saw" (29:31); ra'ah be- elsewhere "look on" (21:16).
+- nilvah el (29:34; Num 18:2) "be joined to". hodah (29:35; 49:8) "praise": it shares its English with hillel. amad min with an infinitive (29:35; 30:9) "stop".
+- Names: Rachel, Leah, Zilpah, Bilhah, Reuben, Simeon, Levi, Judah.
