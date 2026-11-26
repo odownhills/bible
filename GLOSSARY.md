@@ -1670,3 +1670,32 @@ closed. Close calls go in the chapter's decision log instead.
 - ish le'achiv of men who are not kin (26:31) "to one another".
 - morat ruach (26:35) "a bitterness of spirit".
 - Names: Ahuzzath; Esek, Sitnah, Rehoboth (10:11 has Rehoboth-Ir), Shibah; Judith, Beeri, Basemath, Elon.
+
+## Settled in Genesis 27
+- kahah of eyes, with min and an infinitive (27:1) "grow too dim to", kahah as at Job 17:7.
+- keli of a hunter (27:3) "gear"; teli (only here) "quiver". tsud tsayid (27:3, 5, 33) "hunt game"; tsayid of the hunting itself (27:30) "hunting".
+- mat'ammim (27:4-31) "tasty food"; ka'asher ahavti, ahev "the kind I love", "he loves".
+- nefesh as the one who blesses (27:4, 19, 25, 31) "soul": tevarekhekha nafshi "my soul may bless you", kept apart from the plain "bless" of 27:7, 10.
+- ba'avur with an imperfect (27:4, 19, 31), ba'avur asher (27:10) and lema'an with an imperfect (27:25) all "so that ... may".
+- gedi izzim (27:9, 16) "goat kid". laqach of what is fetched from the flock (27:9, 13, 14) "get".
+- sa'ir (27:11, 23) "hairy"; chalaq (27:11) "smooth"; chelqah (27:16) "the smooth part".
+- mush, mashash (27:12, 21, 22) "feel" ("grope" stays for mishshesh, Job 5:14). meta'tea (27:12) "mocker".
+- chamudot of garments (27:15) "best". hilbish with a person and with al (27:15, 16) "put on", one English for both.
+- nagash (27:21-27) "come close"; higgish (27:25) "bring close", leaving "come near" for qarav (27:41); 18:23 has "approach".
+- attah zeh (27:21, 24) "you ... really".
+- nashaq le- (27:26, 27) "kiss". reach of garments and of a field (27:27) "scent", as at Job 14:9.
+- tal "dew". mishmannim (27:28, 39) "richness", kept distinct from chelev "fat". rov (27:28) "plenty of". dagan "grain"; tirosh "new wine", kept distinct from yayin "wine".
+- gevir (27:29, 37) "master": it shares its English with adon. le'ummim beside ammim (27:29) both "peoples", as planned (25:23).
+- orerekha arur umevarakhekha barukh (27:29) "Cursed are those who curse you, and blessed are those who bless you".
+- akh with a doubled verb (27:30) "only just".
+- charad (27:33) "tremble"; charadah "trembling". ad-me'od (27:33, 34) "exceedingly". tse'aqah (27:34) "cry".
+- gam-ani after an imperative with "me" (27:34, 38) "me too".
+- haki (27:36; 29:15) "Is it because". aqav (27:36) "cheat", with one bracketed note on the name "Jacob". atsal (27:36) "set aside".
+- samakh with two objects (27:37) "sustain with". efo (27:33, 37) "then", as in Job.
+- min before mishmanne and tal with moshav (27:39) "away from" [alt: of] (decision log, call: ask).
+- herid (the hiphil of rud; 27:40; Ps 55:2) "grow restless" [alt at 27:40: roam free] (decision log, call: close). paraq ol me'al (27:40) "break a yoke off"; ol "yoke".
+- evel (27:41) "mourning", beside aval "mourn". qarav of days (27:41) "come near".
+- hitnachem le- (27:42) "comfort oneself about", beside nicham "comfort".
+- chemah (27:44) "wrath" and af (27:45) "anger", as listed; shuv of wrath and anger "turn away".
+- shakhol (27:45) "be bereaved of".
+- quts be- (27:46) "be sick of", kept distinct from naqat be- "loathe" (Job 10:1). benot Chet "the daughters of Heth"; benot ha'arets "the daughters of the land".
