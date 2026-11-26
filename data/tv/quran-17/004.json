@@ -1,0 +1,256 @@
+{
+ "note": "Made by the steps in TV_PICTURES.md for Quran 17:66-89 (2026-11-26): 19 pictures from 38 trial pictures. Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. The Prophet Muhammad is never shown in any way, nor anyone standing in for him; God and the angels are not pictured; no religious symbols of any tradition; nothing violent. Tried and not chosen: A fishing boat comes home heavy with its catch in the early light. A fishing crew clings to a lurching boat as a wave breaks over the bow. A sailor on a dry sunny quay turns his back on a calm harbor and strolls off into town. A peaceful village at dusk lies under a towering dark storm front with the first hail falling. A family eats at a plentiful table on a seaside terrace. A woman reads her own life book at a bright window with a calm face. A man with his eyes tightly shut stands in a bright garden full of flowers and a butterfly. A stone lighthouse-like tower stands unmoved as huge waves break against its base. A stream runs on past a fallen branch lodged across it, the water finding its way. Long evening shadows cross a quiet meadow as the sun nears the horizon. A row of birds on a wire at first light over empty fields. A single lit window glows in a dark sleeping town at night. A hallway with a door open at each end and light coming through. A window shutter is thrown open and light floods a dark room, the shadows shrinking. Wilted flowers lift and brighten after rain in a garden. Smoke from a snuffed candle curls up and fades into the air. A tiny flashlight beam cuts a short path into a huge dark forest. A row of painters at easels tries to copy the same sunrise, none matching the real one. A market stall of many colored lamps all lit, a man with hands in pockets walks by looking away.",
+ "method": "Second method, asked for by Obay on 2026-11-21: (1) split the part into sections that each carry one deep meaning, written as one plain sentence; (2) write picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
+ "sections": [
+  {
+   "verses": "66-70",
+   "meaning": "He drives the ships on the sea for you; when harm touches you at sea those you call on are lost except him, but once safe on land you turn aside; do you feel safe that the land will not sink with you or a storm of stones fall? We have honored the children of Adam, carried them on land and sea and provided them good things.",
+   "ideas": [
+    "Sailing ships on a calm sea at dawn",
+    "A man in a small boat in a huge storm reaches up, then walks away up the beach without looking back",
+    "A family picnic as a crack opens in the meadow",
+    "A peaceful village under a giant dark storm front",
+    "A sunlit harbor and market"
+   ]
+  },
+  {
+   "verses": "71-72",
+   "meaning": "On the day every group is called, whoever is given his book in his right hand will read it and not be wronged by a thread; whoever is blind in this life will be blind in the hereafter.",
+   "ideas": [
+    "A right hand takes a bound book handed across a desk",
+    "A man with eyes shut stands in a bright flower garden"
+   ]
+  },
+  {
+   "verses": "73-77",
+   "meaning": "They almost tempted away and unsettled the one addressed; had we not made him firm; this was the practice with earlier messengers and you will find no diverting of our practice. (Never shown: the one addressed, nor anyone for him. Only a tree that stays firm in a gale and a river that keeps to its old channel.)",
+   "ideas": [
+    "A huge old tree with deep roots stands firm in a gale",
+    "A river keeps its old channel past stones piled to dam it"
+   ]
+  },
+  {
+   "verses": "78-81",
+   "meaning": "Keep up the prayer from the declining of the sun to the dark of the night, and the reading at dawn, which is witnessed; stay awake part of the night; 'bring me in by a true entrance and out by a true exit'; the truth has come and falsehood has vanished. (Never shown: the one addressed. Only the hours: sun sinking, night, first light; the gates; the light.)",
+   "ideas": [
+    "The sun sinking over a wheat field into dusk",
+    "First light over a quiet village with one window lit",
+    "A single lit window in a dark sleeping town",
+    "A path with an open gate at each end in a vineyard",
+    "Morning sun pushes the shadows out of a valley"
+   ]
+  },
+  {
+   "verses": "82-84",
+   "meaning": "We send down from the Quran a healing and a mercy for the believers, though it only increases the wrongdoers in loss.",
+   "ideas": [
+    "A cracked bowl mended with gold seams on a windowsill",
+    "Wilted flowers lifting after rain"
+   ]
+  },
+  {
+   "verses": "85-87",
+   "meaning": "They ask about the spirit: it is from the command of my Lord, and you have been given only a little knowledge. (Never shown: the one addressed.)",
+   "ideas": [
+    "Dandelion seeds carried by an unseen wind",
+    "A single small lantern lights only a tiny circle in a huge dark field"
+   ]
+  },
+  {
+   "verses": "88-89",
+   "meaning": "If humans and jinn came together to bring the like of this Quran they would not bring the like of it, even if they backed one another; we have put every kind of example, but most people refuse anything but disbelief.",
+   "ideas": [
+    "A human pyramid reaching toward a high bright moon, far short",
+    "A row of painters at easels all trying to copy the same sunrise",
+    "A row of open doors each lit differently, a man passing with head down"
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "verse": 66,
+   "section": "66-70",
+   "image": "01-sail-dawn.jpg",
+   "tall": "tall/01-sail-dawn.jpg",
+   "principle": "Your Lord is the one who drives the ships for you on the sea, so that you may seek some of his bounty. He is merciful to you.",
+   "shows": "A line of sailing ships crosses a calm sea at golden dawn.",
+   "prompt": "A line of old sailing ships crossing a calm wide sea at golden dawn, full sails lit by the rising sun, no people visible. The ships are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 67,
+   "section": "66-70",
+   "image": "02-storm-at-sea.jpg",
+   "tall": "tall/02-storm-at-sea.jpg",
+   "principle": "And when harm touches you at sea, those you call on are lost, except him. But when he brings you safely to land, you turn aside. And man is ungrateful.",
+   "shows": "A man in a small boat in a huge storm lifts one open hand up in desperation.",
+   "prompt": "A man alone in a small wooden boat in a huge storm, enormous dark waves around him, the mast bent, lifting one open hand up toward the black sky in desperation. The man and the boat are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 67,
+   "from": "But when he brings you safely to land",
+   "section": "66-70",
+   "image": "03-walks-from-sea.jpg",
+   "tall": "tall/03-walks-from-sea.jpg",
+   "principle": "And when harm touches you at sea, those you call on are lost, except him. But when he brings you safely to land, you turn aside. And man is ungrateful.",
+   "shows": "A man steps onto the shore and walks up the beach without looking back at the sea, his boat pulled up behind him.",
+   "prompt": "A man steps ashore from a pulled-up small boat and walks up a sunny beach away from the sea without looking back, calm water behind him, afternoon light, seen from behind. The man and the boat are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 68,
+   "section": "66-70",
+   "image": "04-crack-at-picnic.jpg",
+   "tall": "tall/04-crack-at-picnic.jpg",
+   "principle": "Do you feel safe, then, that he will not make the side of the land sink with you, or send a storm of stones against you? Then you would find no one to rely on.",
+   "shows": "A family picnics on a green meadow while a long thin crack opens in the ground beside the blanket.",
+   "prompt": "A family laughing on a picnic blanket on a green meadow, unaware as a long thin crack slowly opens in the ground just beside the blanket, bright afternoon. The family and the crack are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 70,
+   "section": "66-70",
+   "image": "05-harbor-market.jpg",
+   "tall": "tall/05-harbor-market.jpg",
+   "principle": "And we have certainly honored the children of Adam, and carried them on land and sea, and provided them with good things, and set them far above many of those we have created.",
+   "shows": "A sunlit harbor town with fishing boats, a market piled with fruit and people at ease.",
+   "prompt": "A sunlit harbor town with fishing boats in the water, a market piled with fruit and bread along the quay, and people of many ages at ease and well fed, bright afternoon. The harbor, the market and the people are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 71,
+   "section": "71-72",
+   "image": "06-book-right-hand.jpg",
+   "tall": "tall/06-book-right-hand.jpg",
+   "principle": "On the day we call every group of people with their leader, whoever is given his book in his right hand, those will read their book, and they will not be wronged by so much as a thread.",
+   "shows": "A right hand takes a bound book handed across a desk in a calm bright room.",
+   "prompt": "A person's right hand receiving a thick bound book handed across a plain wooden desk by another hand, a calm bright room, window light. The two hands and the book are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 72,
+   "section": "71-72",
+   "image": "07-eyes-shut-garden.jpg",
+   "tall": "tall/07-eyes-shut-garden.jpg",
+   "principle": "And whoever is blind in this life will be blind in the hereafter, and further astray from the way.",
+   "shows": "A man in a blindfold stands in a sunny wide meadow with a rainbow of flowers around him.",
+   "prompt": "A man with a plain cloth blindfold stands in a sunny wide meadow with flowers of every color all around him, bright light, seen from the front. The man and the flowers are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 74,
+   "section": "73-77",
+   "image": "08-oak-in-gale.jpg",
+   "tall": "tall/08-oak-in-gale.jpg",
+   "principle": "And had we not made you firm, you would almost have leaned toward them a little.",
+   "shows": "A huge old tree with deep roots stands firm in a gale while the grass lies flat around it.",
+   "prompt": "A huge old tree with deep gnarled roots standing firm in a howling gale on a hill, the grass flat around it and clouds racing, no people. The tree is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 77,
+   "section": "73-77",
+   "image": "09-river-old-channel.jpg",
+   "tall": "tall/09-river-old-channel.jpg",
+   "principle": "That was the practice with those of our messengers we sent before you, and you will find no diverting of our practice.",
+   "shows": "A river keeps to its old channel, flowing around a heap of stones someone piled to dam it.",
+   "prompt": "A river keeping to its old channel through a valley, flowing around and over a heap of stones someone had piled in the middle to dam it, the water simply going on its way, morning light, no people. The river and the heap of stones are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 78,
+   "section": "78-81",
+   "image": "10-sun-declines.jpg",
+   "tall": "tall/10-sun-declines.jpg",
+   "principle": "Keep up the prayer from the declining of the sun until the dark of the night, and the reading at dawn. The reading at dawn is witnessed.",
+   "shows": "The sun sinks over a wheat field turning orange and then violet into dusk.",
+   "prompt": "The sun sinking low over a wide wheat field, the sky turning from orange to violet into dusk, the wheat glowing, no people. The sun and the sky are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 78,
+   "from": "and the reading at dawn",
+   "section": "78-81",
+   "image": "11-first-light.jpg",
+   "tall": "tall/11-first-light.jpg",
+   "principle": "Keep up the prayer from the declining of the sun until the dark of the night, and the reading at dawn. The reading at dawn is witnessed.",
+   "shows": "First light spreads over a quiet village with one window lit.",
+   "prompt": "First light of dawn spreading pale gold over a quiet sleeping village, one window already lit, birds just beginning on a roof, no people visible. The village and the sky are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 79,
+   "section": "78-81",
+   "image": "12-lit-window-night.jpg",
+   "tall": "tall/12-lit-window-night.jpg",
+   "principle": "And for part of the night, stay awake with it, as something extra for you. It may be that your Lord will raise you up to a praised standing.",
+   "shows": "Stars over rooftops with one lamp still lit.",
+   "prompt": "A starry night sky over the rooftops of a sleeping town with one lamp still lit in an attic window, no people visible. The stars and the lit window are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 80,
+   "section": "78-81",
+   "image": "13-two-gates.jpg",
+   "tall": "tall/13-two-gates.jpg",
+   "principle": "And say, \"My Lord, bring me in by a true entrance, and bring me out by a true exit, and give me from yourself an authority to aid me.\"",
+   "shows": "A path runs through a vineyard from an open gate at one end to an open gate at the other in morning light.",
+   "prompt": "A straight path through a vineyard in morning light from a plain open wooden gate at one end to another plain open gate at the far end, the way clear all the way through, no people. The two open gates and the path are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 81,
+   "section": "78-81",
+   "image": "14-shadows-flee.jpg",
+   "tall": "tall/14-shadows-flee.jpg",
+   "principle": "And say, \"The truth has come, and falsehood has vanished. Falsehood is bound to vanish.\"",
+   "shows": "The morning sun rises and the dark shadows and mist retreat from a valley.",
+   "prompt": "The morning sun rising over a valley as the dark shadows and mist retreat down the slopes, golden light spreading, no people. The sun, the mist and the valley are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 82,
+   "section": "82-84",
+   "image": "15-gold-mend.jpg",
+   "tall": "tall/15-gold-mend.jpg",
+   "principle": "And we send down from the Quran what is a healing and a mercy for the believers, but it only increases the wrongdoers in loss.",
+   "shows": "A cracked bowl mended with gold seams sits on a windowsill in morning light.",
+   "prompt": "A cracked ceramic bowl mended with gold seams sitting on a windowsill in soft morning light, a plant beside it, no people. The bowl is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 85,
+   "section": "85-87",
+   "image": "16-dandelion-wind.jpg",
+   "tall": "tall/16-dandelion-wind.jpg",
+   "principle": "And they ask you about the spirit. Say, \"The spirit is from the command of my Lord, and you have been given only a little knowledge.\"",
+   "shows": "Dandelion seeds are carried off by an unseen wind over a field.",
+   "prompt": "A dandelion head with its seeds being carried off by an unseen wind over a field at golden hour, close focus, no people. The dandelion and its seeds are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 85,
+   "from": "and you have been given only a little knowledge",
+   "section": "85-87",
+   "image": "17-tiny-circle.jpg",
+   "tall": "tall/17-tiny-circle.jpg",
+   "principle": "And they ask you about the spirit. Say, \"The spirit is from the command of my Lord, and you have been given only a little knowledge.\"",
+   "shows": "A single small lantern lights only a tiny circle in a huge dark field under the stars.",
+   "prompt": "A single small lantern on the ground lighting only a tiny circle of grass in a huge dark field under a vast sky of stars, no people. The lantern and the stars are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 88,
+   "section": "88-89",
+   "image": "18-pyramid-to-moon.jpg",
+   "tall": "tall/18-pyramid-to-moon.jpg",
+   "principle": "Say, \"If humans and jinn came together to bring the like of this Quran, they would not bring the like of it, even if they backed one another.\"",
+   "shows": "A human pyramid of people standing on one another's shoulders reaches up toward a high bright moon, far short of it.",
+   "prompt": "A human pyramid of many ordinary people standing on one another's shoulders reaching up toward a high bright moon in the sky, far short of it, dusk light. The human pyramid and the moon are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 89,
+   "section": "88-89",
+   "image": "19-open-doors-row.jpg",
+   "tall": "tall/19-open-doors-row.jpg",
+   "principle": "And we have certainly put every kind of example in many ways for people in this Quran, but most people have refused anything but disbelief.",
+   "shows": "A street of open doors each lit differently, with a man walking past with his head down.",
+   "prompt": "A quiet street of many open doorways each lit with a different warm light showing a different scene inside, a man in a plain coat walking past with his head down looking only at the ground. The doorways and the man are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  }
+ ]
+}
