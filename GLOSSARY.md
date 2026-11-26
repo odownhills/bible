@@ -1699,3 +1699,26 @@ closed. Close calls go in the chapter's decision log instead.
 - chemah (27:44) "wrath" and af (27:45) "anger", as listed; shuv of wrath and anger "turn away".
 - shakhol (27:45) "be bereaved of".
 - quts be- (27:46) "be sick of", kept distinct from naqat be- "loathe" (Job 10:1). benot Chet "the daughters of Heth"; benot ha'arets "the daughters of the land".
+
+## Settled in Genesis 28
+- qehal ammim (28:3; 48:4) "an assembly of peoples", qahal as listed (Deut 5:22).
+- shalach of a father and a son (28:5) "send"; shillach (28:6) "send away".
+- al-nashav (28:9) "in addition to his wives".
+- halakh with a place and -ah, on the way there (28:10) "go toward", as at 18:22.
+- paga be- of a place (28:11) "come upon"; "appeal to" stays where it is said of a request (23:8).
+- mera'ashot (28:11, 18) "at his head".
+- chalam (28:12) "dream", beside chalom.
+- sullam (28:12; only here) "stairway" [alt: ladder] (decision log, call: close). mutstsav "set up". higgia with -ah "reach to". olim weyoredim bo "going up and coming down on it", the English of John 1:51. hashamayim (28:12, 17) "the heavens".
+- nitsav alav of Yahweh (28:13) "stand beside him" [alt: above it] (decision log, call: ask).
+- parats of a people (28:14) "spread out", as of herds (Job 1:10).
+- shamar of God and a person (28:15, 20) "watch over". heshiv el of God and a person (28:15) "bring back to". ha'adamah hazzot "this ground".
+- akhen (28:16) "Surely".
+- nora (28:17) "fearsome", beside yare "be afraid". en zeh ki im "This is none other than". bet Elohim (28:17, 22) "the house of God". sha'ar hashamayim "the gate of the heavens".
+- matstsevah (28:18, 22; 31:13, 45; 35:14, 20) "pillar": it shares its English with ammud and netsiv. sim matstsevah "set up as a pillar". yatsaq shemen "pour oil"; rosh of a stone "top".
+- we'ulam (28:19) "but", as listed; larishonah "at the first", as barishonah (13:4).
+- nadar neder (28:20; 31:13) "make a vow".
+- beged of what one wears, as a whole (28:20) "clothing"; lavash with no object named "wear".
+- shuv beshalom (28:21) "return in peace".
+- hayah li lelohim (28:21) "be God to me", as at 17:7-8.
+- isser (28:22) "give a tenth", beside ma'aser "a tenth" (14:20).
+- Names: Mahalath; Luz.
