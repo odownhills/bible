@@ -200,8 +200,13 @@ var CSS=
 /* a phone held upright (Obay, 2026-11-25: "Sometimes I want my screen vertical, even if the picture is smaller
    like on YouTube"): the wide picture at its own 16:9 size at the top, the words under it and the controls at the
    bottom, where they always stay (they cover nothing). Turning the phone sideways, or the full-screen button,
-   gives the whole-screen picture. layout() sets tv-port. */
-'#tv.tv-port{--pt:env(safe-area-inset-top,0px);--ph:56.25vw;--ph:min(56.25vw,46vh);background:#110D1B}'+
+   gives the whole-screen picture. layout() sets tv-port.
+   Everything stacks from the top with even gaps (Obay, 2026-11-25: "too much space in vertical mode... move stuff
+   up"): the words get room for about four lines (fit() makes a longer phrase smaller), the controls follow, and
+   whatever is left over stays below them. */
+'#tv.tv-port{--pt:env(safe-area-inset-top,0px);--ph:56.25vw;--ph:min(56.25vw,46vh);--cf:1.6rem;--cf:clamp(1.3rem,6.2vw,2.2rem);'+
+  '--ch:calc(var(--cf) * 1.32 * 4);--ct:calc(var(--pt) + var(--ph) + 1.4rem);--mt:calc(var(--ct) + var(--ch) + 1.2rem);background:#110D1B}'+
+'#tv.tv-port.tv-rtl{--cf:1.8rem;--cf:clamp(1.5rem,7vw,2.6rem);--ch:calc(var(--cf) * 1.75 * 3.4)}'+
 '#tv.tv-port:before{content:"";position:absolute;left:0;right:0;top:var(--pt);height:var(--ph);background:#000}'+
 '#tv.tv-port.tv-noimg:before{display:none}'+
 '#tv.tv-port .tv-pic{top:var(--pt);bottom:auto;height:var(--ph)}'+
@@ -210,20 +215,20 @@ var CSS=
 '#tv.tv-port .tv-plain div{top:calc(var(--pt) + var(--ph) * .3)}'+
 '#tv.tv-port .tv-x{top:calc(var(--pt) + .3rem);right:.3rem}'+
 '#tv.tv-port .tv-x button{width:2.75rem;height:2.75rem}'+
-'#tv.tv-port .tv-cap,#tv.tv-port.tv-ui .tv-cap{top:calc(var(--pt) + var(--ph) + .8rem);bottom:11.6rem;bottom:calc(env(safe-area-inset-bottom,0px) + 11.6rem);height:auto;'+
+'#tv.tv-port .tv-cap,#tv.tv-port.tv-ui .tv-cap{top:var(--ct);bottom:auto;height:var(--ch);'+
   'left:0;width:100%;padding:0 6vw;display:flex;align-items:center;justify-content:center;overflow:hidden;'+
-  'font-size:1.6rem;font-size:clamp(1.3rem,6.2vw,2.2rem);text-shadow:none;-webkit-transform:none;transform:none}'+
+  'font-size:var(--cf);text-shadow:none;-webkit-transform:none;transform:none}'+
 '#tv.tv-port .tv-cap>span{display:block;max-width:34em}'+
-'#tv.tv-port.tv-rtl .tv-cap{font-size:1.8rem;font-size:clamp(1.5rem,7vw,2.6rem)}'+
+'#tv.tv-port.tv-rtl .tv-cap{font-size:var(--cf)}'+
 '#tv.tv-port.tv-rtl.tv-noimg .tv-cap:not(.tv-out){opacity:1}'+
 '#tv.tv-port .tv-box{display:none}'+
 '#tv.tv-port.tv-nowords .tv-cap{display:none}'+
 '#tv.tv-port .tv-ctl{opacity:1;visibility:visible;transition:none}'+
 '#tv.tv-port.tv-covered .tv-ctl,#tv.tv-port.tv-busy .tv-mid{opacity:0;visibility:hidden}'+
-'#tv.tv-port .tv-mid{top:auto;bottom:6.1rem;bottom:calc(env(safe-area-inset-bottom,0px) + 6.1rem);-webkit-transform:translateX(-50%);transform:translateX(-50%)}'+
+'#tv.tv-port .tv-mid{top:var(--mt);bottom:auto;-webkit-transform:translateX(-50%);transform:translateX(-50%)}'+
 '#tv.tv-port .tv-mid button{width:3.2rem;height:3.2rem;margin:0 1.4rem;background:rgba(255,255,255,.07)}'+
 '#tv.tv-port .tv-mid .tv-big{width:4.4rem;height:4.4rem;background:rgba(183,155,232,.92)}'+
-'#tv.tv-port .tv-bar{flex-direction:column;align-items:stretch;padding:0 .5rem .4rem;padding:0 .5rem max(.4rem,env(safe-area-inset-bottom));background:none}'+
+'#tv.tv-port .tv-bar{top:calc(var(--mt) + 5.2rem);bottom:auto;flex-direction:column;align-items:stretch;padding:0 .5rem;background:none}'+
 '#tv.tv-port .tv-r2{margin:0;justify-content:space-between}'+
 '#tv.tv-port .tv-nudge,#tv.tv-port .tv-spin{top:calc(var(--pt) + var(--ph) / 2)}'+
 '@media (prefers-reduced-motion:reduce){.tv-pic img,.tv-plain i{-webkit-animation:none!important;animation:none!important}.tv-pic{transition-duration:.4s}}';
