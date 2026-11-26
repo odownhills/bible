@@ -1999,3 +1999,27 @@ closed. Close calls go in the chapter's decision log instead.
 - natan yad (38:28) "put out a hand". shani (38:28, 30) "scarlet thread", with "thread" supplied. qashar al "tie on".
 - parats perets (38:29) "make a breach", perets as at Job 16:14, with one bracketed note on the name "Perez".
 - Names: Hirah, Shua, Er, Onan, Tamar, Chezib, Enaim, Perez; adullami "Adullamite". Shelah (38:5) is not the name of 10:24, which ends with another letter, and Timnah (38:12) is not the Timna of 36:12; English has one spelling for each pair. Zerah as at 36:13.
+
+## Settled in Genesis 39
+- qanah of a person (39:1) "buy", as of land (25:10).
+- matsliach of a person (39:2) "successful"; with what he does as its object (39:3, 23) "make succeed", as at 24:21.
+- sheret (39:4; 40:4) "attend", kept distinct from avad "serve": it shares its English with paqad "attend to" (21:1).
+- hifqid al (39:4, 5) "put in charge of"; hifqid be- (39:5) "put in charge in".
+- natan beyad (39:4, 8, 22) "give into the hand of"; azav beyad (39:6, 12, 13) "leave in the hand of".
+- lo yada itto, itti (39:6, 8) "with him there", "with me here ... give no thought to": yada of what a person keeps track of, with "there" and "here" supplied.
+- yefeh-to'ar wifeh mar'eh (39:6) "beautiful in form and beautiful in appearance", of a man too: the words of 29:17.
+- nasa enayim el (39:7) "lift one's eyes to", as listed.
+- ba'asher (39:9, 23) "because".
+- yom yom (39:10) "day after day". shakhav etsel (39:10) "lie beside", kept distinct from shakhav im "lie with" (39:7, 12, 14).
+- kehayyom hazzeh in a story (39:11) "on one such day".
+- tafas be- (39:12) "grab by" ("handle" at 4:21).
+- bo el followed by an infinitive (39:14, 17) "come to": not the idiom of 6:4.
+- tsicheq be- (39:14, 17) "toy with"; "joke" stays at 19:14.
+- qara beqol gadol (39:14) "call out with a loud voice". herim qol (39:15, 18) "raise one's voice", beside nasa qol "lift one's voice".
+- hinniach of a thing (39:16) "let lie".
+- kaddevarim ha'elleh (39:17) "in words like these"; (39:19) "the kind of thing".
+- eved of Joseph in Egypt (39:17, 19) "slave": a man who was bought (the Job 3 line).
+- 39:17 letsacheq bi with "came to me" [alt: with "you brought to us"] (decision log, call: close).
+- bet hassohar (39:20-23; 40:3, 5) "prison"; sar bet-hassohar "the commander of the prison", sar as at 37:36. asir "prisoner", as listed; asur of a prisoner (39:20; 40:3, 5) "confined" (asar elsewhere "bind").
+- natah chesed el (39:21) "extend faithful love to". natan chen be'ene (39:21; Exod 3:21) "give ... favor in the eyes of".
+- ra'ah et of one who oversees (39:23) "look into". kol me'umah "anything at all".
