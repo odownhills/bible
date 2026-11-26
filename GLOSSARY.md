@@ -1809,3 +1809,37 @@ closed. Close calls go in the chapter's decision log instead.
 - elohim with a plural verb in Laban's oath (31:53): elohe Nachor "the god of Nahor" and elohe avihem "the gods of their father" [alt: the God of Nahor, the God of their father] (decision log, call: ask).
 - zavach zevach (31:54) "offer a sacrifice". akhal lechem "eat bread".
 - Names: Gilead, Jegar-Sahadutha, Galeed, Mizpah.
+
+## Settled in Genesis 32
+- machaneh (32:2, 7, 8, 10, 21; 33:8) "camp": machaneh Elohim "God's camp"; shene machanot "two camps".
+- mal'akhim of men who are sent (32:3, 6) "messengers", with one bracketed note at 32:3 that it is the word for "angels" (32:1).
+- paga be- of persons (32:1) "meet": it shares its English with pagash (32:17; 33:8).
+- lefanav, lefanay of what is sent on or goes first (32:3, 16, 17, 20) and al-panav (32:21) "ahead of".
+- koh tomerun (32:4) "This is what you are to say"; koh amar "This is what ... says".
+- achar, the simple form (32:4) "delay", as ichar (24:56).
+- wayehi li (32:5) "I have come to have", as at 12:16; shor wachamor "oxen and donkeys".
+- wayyetser lo (32:7) "he was in distress", as at Job 20:22. chatsah (32:7; 33:1) "divide": it shares its English with palag.
+- hayah lifleitah (32:8) "escape", beside palit (14:13).
+- hetiv im (32:9, 12) "do good to".
+- qatonti min (32:10) "I am too small for". chasadim, the plural (32:10) "acts of faithful love".
+- maqqel of what a traveler carries (32:10) "staff"; "stick" stays at 30:37.
+- hitsil of a person (32:11) "rescue", as at Job 5:19; the niphal (32:30) "be rescued".
+- em al-banim (32:11; Hos 10:14) "mother with children".
+- chol hayyam (32:12) "the sand of the sea".
+- minchah of what is given to a person (32:13, 18, 20, 21; 33:10; 43:11) "present"; "offering" stays where it is brought to God (4:3), and "gift" for mattanah.
+- par "bull". ayir beside aton (32:15) "male donkey" ("colt" at Job 11:12).
+- eder of goats, sheep, camels, cattle and donkeys (32:16, 19) "herd"; "flock" stays where it is sheep (29:2).
+- rewach (32:16) "space".
+- kipper panim (32:20) "appease"; nasa panim of a person who is received (32:20) "accept": the idioms are translated by their meaning, with one bracketed note on "face".
+- ma'avar (32:22) "ford". he'evir of people and goods (32:23) "bring across". nachal of the Jabbok (32:23) "torrent".
+- notar (32:24) "be left": it shares its English with nish'ar (32:8).
+- ne'evaq (32:24, 25; only here) "wrestle": it shares its English with niftal (30:8).
+- yakhol le- (32:25) "prevail against".
+- kaf hayyarekh (32:25, 32) "the socket of the thigh". yaqa (32:25) "be put out of joint".
+- shillach of one who is held (32:26) "let go".
+- sarah (32:28; Hos 12:3) "struggle". elohim beside anashim (32:28) "God" [alt: divine beings] (decision log, call: clear).
+- panim el-panim (32:30) "face to face", as at Deut 5:4.
+- zarach le- (32:31) "rise on". tsala (32:31) "limp".
+- bene Yisra'el (32:32) "the sons of Israel", as "the sons of Heth" and "the sons of Ammon".
+- gid hannasheh (32:32; nasheh only here) "the sinew of the hip".
+- Names: Mahanaim, the Jabbok, Israel; Peniel (32:30) and Penuel (32:31), each as the Hebrew spells it.
