@@ -1744,3 +1744,33 @@ closed. Close calls go in the chapter's decision log instead.
 - ra'ah be'oni (29:32) "see the affliction of", so that it is heard with "saw" (29:31); ra'ah be- elsewhere "look on" (21:16).
 - nilvah el (29:34; Num 18:2) "be joined to". hodah (29:35; 49:8) "praise": it shares its English with hillel. amad min with an infinitive (29:35; 30:9) "stop".
 - Names: Rachel, Leah, Zilpah, Bilhah, Reuben, Simeon, Levi, Judah.
+
+## Settled in Genesis 30
+- qinne be- (30:1; 37:11) "envy", as with an object (26:14). banim in Rachel's demand (30:1) "sons", heard with "a son" (30:6).
+- charah af be- (30:2; 39:19) "anger burned against", charah of anger as at Job 19:11.
+- tachat Elohim (30:2; 50:19) "in the place of God". peri-beten (30:2; Deut 7:13) "the fruit of the womb". mana min "keep back from", as listed.
+- yalad al-birkayim (30:3; 50:23) "give birth on the knees of": the picture is kept.
+- yalad le- with ben (30:5-19) "bear ... a son", as at 21:2.
+- dan with a person as its object, of God taking up her case (30:6; Ps 54:1) "judge in favor of"; elsewhere it stays "judge" (15:14).
+- naftulim, niftal im (30:8; only here) "wrestlings", "wrestle with": naftule Elohim "wrestlings of God" [alt: mighty wrestlings] (decision log, call: clear). ne'evaq (32:24, 25) and sarah (32:28) are other verbs. yakhol with nothing after it (30:8; 32:28) "prevail".
+- begad (30:11, the Ketiv) "What good fortune!": gad "good fortune" (Isa 65:11).
+- be'oshri (30:13) "How happy I am!"; ishsher "call happy", as ashre. banot with no article (30:13; Song 6:9) "women".
+- duda'im (30:14-16; Song 7:13) "mandrakes". qetsir-chittim "the wheat harvest".
+- hame'at with an infinitive (30:15; Isa 7:13) "Is ... a small thing". tachat of a price (30:15) "in exchange for".
+- sakhar, the verb (30:16) "hire". sakhar, the noun, of what is paid for work (30:18, 28, 32, 33; 31:8) "pay", kept distinct from maskoret "wages"; "reward" stays at 15:1.
+- zavad, zeved (30:20; only here) "endow", "gift". zaval (30:20; only here) "make one's home with" [alt: honor] (decision log, call: close).
+- cherpah of a state that brings scorn (30:23; 34:14) "disgrace": asaf cherpah (30:23; Isa 4:1) "take away disgrace". "Insult" stays where it is a thing said (Job 16:10).
+- hosif le- (30:24) "add to".
+- nichesh (30:27; 44:5, 15) "learn by divination".
+- naqav sakhar al (30:28) "name one's pay to".
+- parats larov (30:30) "spread out into a multitude"; parats of a man (30:43) "spread out", as at 28:14. leragli (30:30) "wherever I set foot".
+- tson all through chapter 30 "flock": it covers the sheep and the goats. kesavim (30:32, 33, 35, 40) "sheep", beside izzim "goats"; seh there (30:32) "animal". tayish (30:35; 32:14) "male goat"; izzim beside it "female goats".
+- naqod "speckled"; talu "spotted"; aqod "striped"; chum (only in this chapter) "dark".
+- anah be- of what speaks for a person (30:33) "testify for"; elsewhere "testify against" (Deut 5:20). beyom machar (30:33) "on a day to come".
+- hen lu yehi (30:34) "Look, may it be".
+- derekh with a number of days (30:36; 31:23) "a journey of three days", "of seven days". hannotarot (30:36) "the rest of".
+- maqqel (30:37-41) "stick". livneh (30:37; Hos 4:13) "poplar"; luz "almond" (it shares its English with shaqed); ermon (30:37; Ezek 31:8) "plane tree". lach "fresh". pitsel "peel"; petsalot "strips"; machsof "laying bare".
+- rehatim (30:38, 41; Exod 2:16) "channels", beside shoqet "trough": shiqatot hammayim "the water troughs".
+- yacham, yicham of the flock (30:38, 39, 41; 31:10) "breed".
+- mequshsharot, qeshurim (30:41, 42) "sturdy"; he'etif, atufim (30:42) "be feeble", "feeble".
+- Names: Dan, Naphtali, Gad, Asher, Issachar, Zebulun, Dinah, Joseph.
