@@ -1,5 +1,5 @@
 {
- "note": "Trial pictures for Quran 2:243-260.",
+ "note": "Made by the steps in TV_PICTURES.md for Quran 2:243-260 (2026-11-26): 18 pictures from 36 trial pictures. Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. The Prophet Muhammad is never shown in any way, nor anyone standing in for him; God and the angels are not pictured; no religious symbols of any tradition; nothing violent. Tried and not chosen: A long line of people with bundles walks away from a hill town at dusk, the town behind them empty. A single coin dropped into a jar and the jar overflowing with coins. A hall full of people raising hands in a loud pledge, then nearly empty chairs with just a few left. A tall plain farmer stands apart in work clothes while a group of rich men in suits look him up and down. An old plain wooden chest rests closed in a shaft of light in a quiet empty hall. A hand scoops one handful of river water while around him others drink deeply. A man stands steady in a flowing stream bracing against the current. A small smooth stone lies in a child's open hand against a wall of dark storm cloud. A long staircase up a hillside with people at different heights. An empty market square at dusk with every stall shuttered and the scales left idle. A single steady lit window in a sleeping town at three in the morning. A great mountain range under huge clouds, stretching to the horizon in every direction. A climber's hand grips a solid rock handhold above a long drop. Two people pass each other at a tunnel mouth, one coming out into the light and one going in toward the dark. A man stares at the sunrise in the east and then turns toward the west horizon and finds nothing. A ruined village in the dusk with a single traveler standing at its edge looking at the fallen roofs. An old tree fills a ruined house to its roof beside a loaf of bread that is still fresh on a stone. Four mountain peaks each with a single bird perched on top at sunrise.",
  "method": "Second method, asked for by Obay on 2026-11-21: (1) split the part into sections that each carry one deep meaning, written as one plain sentence; (2) write picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
  "sections": [
   {
@@ -68,20 +68,12 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
    "verse": 243,
    "section": "243-245",
-   "image": "cand/01-leaving-town-a.jpg",
-   "principle": "Have you not seen those who went out of their homes in their thousands, for fear of death? So God said to them, \"Die.\" Then he gave them life. God is bountiful to people, but most people do not give thanks.",
-   "shows": "A long line of people with bundles walks away from a hill town at dusk, the town behind them empty.",
-   "prompt": "A long line of ordinary people of today in plain clothes carrying bundles walks away along a road from a hill town at dusk, the empty town behind them with its windows dark, seen from behind in gray light. The line of people and the town are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture: only plain low houses with flat or tiled roofs. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
-   "verse": 243,
-   "section": "243-245",
-   "image": "cand/01-leaving-town-b.jpg",
+   "image": "01-leaving-town.jpg",
+   "tall": "tall/01-leaving-town.jpg",
    "principle": "Have you not seen those who went out of their homes in their thousands, for fear of death? So God said to them, \"Die.\" Then he gave them life. God is bountiful to people, but most people do not give thanks.",
    "shows": "A crowd streams out through a town gate onto an open road at evening, looking back.",
    "prompt": "A crowd of ordinary people of today in plain clothes streaming out of a town through an old gate onto an open road at evening, some looking back over their shoulders. The crowd and the gate are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture: only plain low houses with flat or tiled roofs. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
@@ -89,48 +81,26 @@
   {
    "verse": 245,
    "section": "243-245",
-   "image": "cand/02-seed-field-a.jpg",
+   "image": "02-seed-field.jpg",
+   "tall": "tall/02-seed-field.jpg",
    "principle": "Who is it that will lend God a good loan, so that he may multiply it for him many times over? And God withholds and gives amply, and to him you will be returned.",
    "shows": "A single seed lies in an open palm with a field of golden wheat behind it.",
    "prompt": "A single grain of wheat lying in an open palm held in the foreground with a wide field of golden wheat stretching to the horizon behind, glowing in late sun. The palm and the field are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 245,
-   "section": "243-245",
-   "image": "cand/02-seed-field-b.jpg",
-   "principle": "Who is it that will lend God a good loan, so that he may multiply it for him many times over? And God withholds and gives amply, and to him you will be returned.",
-   "shows": "A single coin dropped into a jar and the jar overflowing with coins.",
-   "prompt": "A glass jar overflowing with coins, a single new coin just dropped in on top, warm light on a wooden table. The jar is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 246,
    "section": "246-248",
-   "image": "cand/03-turning-away-a.jpg",
+   "image": "03-turning-away.jpg",
+   "tall": "tall/03-turning-away.jpg",
    "principle": "Have you not seen the chiefs of the Children of Israel after Moses, when they said to a prophet of theirs, \"Raise up a king for us, and we will fight in the way of God\"?",
    "shows": "A crowd in a town square turns and walks away toward the exits while a few remain standing at the front.",
    "prompt": "A big crowd of ordinary people of today in plain clothes in a town square turn and walk away toward the exits, while just a few remain standing at the front facing forward, seen from behind the few. The few and the crowd are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 246,
-   "section": "246-248",
-   "image": "cand/03-turning-away-b.jpg",
-   "principle": "Have you not seen the chiefs of the Children of Israel after Moses, when they said to a prophet of theirs, \"Raise up a king for us, and we will fight in the way of God\"?",
-   "shows": "A hall full of people raising hands in a loud pledge, then nearly empty chairs with just a few left.",
-   "prompt": "A large town hall where almost all the chairs are now empty and a few people remain seated near the front, litter of papers on the floor, light through tall windows. The few people and the empty chairs are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 247,
    "section": "246-248",
-   "image": "cand/04-tall-farmer-a.jpg",
-   "principle": "And their prophet said to them, \"God has raised up Saul for you as king.\" They said, \"How can he have the kingdom over us, when we have more right to the kingdom than he does, and he has not been given plenty of wealth?\" He said, \"God has ...",
-   "shows": "A tall plain farmer stands apart in work clothes while a group of rich men in suits look him up and down.",
-   "prompt": "A tall strong plain farmer in work clothes stands apart in the sun with calm dignity while a group of rich men in suits look him up and down with doubtful faces, a field behind. The farmer and the group are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
-   "verse": 247,
-   "section": "246-248",
-   "image": "cand/04-tall-farmer-b.jpg",
+   "image": "04-tall-farmer.jpg",
+   "tall": "tall/04-tall-farmer.jpg",
    "principle": "And their prophet said to them, \"God has raised up Saul for you as king.\" They said, \"How can he have the kingdom over us, when we have more right to the kingdom than he does, and he has not been given plenty of wealth?\" He said, \"God has ...",
    "shows": "A strong plain man in work clothes stands head and shoulders over a crowd of men in fine suits.",
    "prompt": "A strong plain man in work clothes stands a head taller than a crowd of men in fine suits, who look up at him with doubt, bright sun. The man and the crowd are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
@@ -138,16 +108,8 @@
   {
    "verse": 248,
    "section": "246-248",
-   "image": "cand/05-chest-a.jpg",
-   "principle": "And their prophet said to them, \"The sign of his kingdom is that the Chest will come to you, in which there is calm from your Lord and a remnant of what the family of Moses and the family of Aaron left, carried by the angels.",
-   "shows": "An old plain wooden chest rests closed in a shaft of light in a quiet empty hall.",
-   "prompt": "An old plain wooden chest with iron bands rests closed in a shaft of warm light falling from a high window in a quiet empty stone hall, dust floating in the light, calm. The chest is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 248,
-   "section": "246-248",
-   "image": "cand/05-chest-b.jpg",
+   "image": "05-chest.jpg",
+   "tall": "tall/05-chest.jpg",
    "principle": "And their prophet said to them, \"The sign of his kingdom is that the Chest will come to you, in which there is calm from your Lord and a remnant of what the family of Moses and the family of Aaron left, carried by the angels.",
    "shows": "A plain old wooden chest rests on a table beside an open window with a calm field outside.",
    "prompt": "A plain old wooden chest resting on a plain table beside an open window with a calm green field and still trees outside, soft morning light, peaceful. The chest and the window are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
@@ -156,47 +118,26 @@
   {
    "verse": 249,
    "section": "249-252",
-   "image": "cand/06-scoop-a.jpg",
+   "image": "06-scoop.jpg",
+   "tall": "tall/06-scoop.jpg",
    "principle": "So when Saul set out with the forces, he said, \"God will test you with a river.",
    "shows": "Hikers kneel and gulp from a river with their faces in the water while one man scoops a single handful in his hand.",
    "prompt": "A group of hikers in plain outdoor clothes kneeling at a river bank gulping water with their faces down into it, while one man beside them stands and carefully scoops just one handful of water in his cupped hand, bright light. The hikers are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 249,
-   "section": "249-252",
-   "image": "cand/06-scoop-b.jpg",
-   "principle": "So when Saul set out with the forces, he said, \"God will test you with a river.",
-   "shows": "A hand scoops one handful of river water while around him others drink deeply.",
-   "prompt": "Close on a man's cupped hand scooping a single handful of clear river water, with out-of-focus figures of others kneeling and drinking deeply from the river beside him. The hand is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 250,
    "section": "249-252",
-   "image": "cand/07-firm-feet-a.jpg",
+   "image": "07-firm-feet.jpg",
+   "tall": "tall/07-firm-feet.jpg",
    "principle": "And when they came out against Goliath and his forces, they said, \"Our Lord, pour patience over us, make our feet firm, and aid us against the disbelieving people.\"",
    "shows": "Boots stand planted firmly on a rock in a rushing river with the water breaking white around them.",
    "prompt": "A pair of sturdy boots planted firmly on a large flat rock in the middle of a rushing river, the water breaking white around them, a steady stance, bright light. The boots and the rushing water are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 250,
-   "section": "249-252",
-   "image": "cand/07-firm-feet-b.jpg",
-   "principle": "And when they came out against Goliath and his forces, they said, \"Our Lord, pour patience over us, make our feet firm, and aid us against the disbelieving people.\"",
-   "shows": "A man stands steady in a flowing stream bracing against the current.",
-   "prompt": "A man in plain outdoor clothes standing steady and braced in a strong flowing stream, the water rushing around his legs, the current strong, a determined face, seen from the side. The man is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 251,
    "section": "249-252",
-   "image": "cand/08-pebble-storm-a.jpg",
-   "principle": "So they defeated them by God's permission, and David killed Goliath, and God gave him the kingdom and wisdom and taught him some of what he wills.",
-   "shows": "A small smooth stone lies in a child's open hand against a wall of dark storm cloud.",
-   "prompt": "A small smooth stone lying in a child's open palm held up in the foreground against a towering wall of dark storm cloud filling the sky behind, light breaking at the edge. The palm, the stone and the storm are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
-   "verse": 251,
-   "section": "249-252",
-   "image": "cand/08-pebble-storm-b.jpg",
+   "image": "08-pebble-storm.jpg",
+   "tall": "tall/08-pebble-storm.jpg",
    "principle": "So they defeated them by God's permission, and David killed Goliath, and God gave him the kingdom and wisdom and taught him some of what he wills.",
    "shows": "A boy with a slingshot stands before a huge skyscraper.",
    "prompt": "A small boy in plain clothes stands with a toy slingshot before a huge towering skyscraper, tiny against it, bright sky behind, seen from low. The boy and the building are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
@@ -204,32 +145,17 @@
   {
    "verse": 253,
    "section": "253-254",
-   "image": "cand/09-terraces-a.jpg",
+   "image": "09-terraces.jpg",
+   "tall": "tall/09-terraces.jpg",
    "principle": "Those messengers, we set some of them above others. Among them are some to whom God spoke, and he raised some of them in degrees. And we gave Jesus son of Mary the clear proofs and strengthened him with the Holy Spirit.",
    "shows": "A terraced mountainside with small groups of travelers on different levels, all climbing.",
    "prompt": "A great terraced mountainside in clear morning light with small groups of ordinary travelers in plain outdoor clothes standing on different levels, higher and lower, all climbing toward the summit. The mountain and the groups are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 253,
-   "section": "253-254",
-   "image": "cand/09-terraces-b.jpg",
-   "principle": "Those messengers, we set some of them above others. Among them are some to whom God spoke, and he raised some of them in degrees. And we gave Jesus son of Mary the clear proofs and strengthened him with the Holy Spirit.",
-   "shows": "A long staircase up a hillside with people at different heights.",
-   "prompt": "A long wide stone staircase rising up a green hillside with ordinary people in plain clothes standing at different heights on it, seen from the side in clear light. The staircase and the people are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 254,
    "section": "253-254",
-   "image": "cand/10-empty-market-a.jpg",
-   "principle": "You who believe, spend from what we have provided for you before a day comes in which there is no selling, no friendship and no intercession. And the disbelievers are the wrongdoers.",
-   "shows": "An empty market square at dusk with every stall shuttered and the scales left idle.",
-   "prompt": "An empty market square at dusk with every stall shuttered, the scales idle on a bare counter, a few crates, no people, the light fading to blue. The shuttered stalls and the scales are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 254,
-   "section": "253-254",
-   "image": "cand/10-empty-market-b.jpg",
+   "image": "10-empty-market.jpg",
+   "tall": "tall/10-empty-market.jpg",
    "principle": "You who believe, spend from what we have provided for you before a day comes in which there is no selling, no friendship and no intercession. And the disbelievers are the wrongdoers.",
    "shows": "A closed shop front at dusk with the shutter pulled all the way down and a sign turned over.",
    "prompt": "A row of shops at dusk with the metal shutters pulled all the way down, an empty street, no people, a last gleam of sunset in the sky above. The shutters are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
@@ -238,7 +164,8 @@
   {
    "verse": 255,
    "section": "255",
-   "image": "cand/11-star-trails-a.jpg",
+   "image": "11-star-trails.jpg",
+   "tall": "tall/11-star-trails.jpg",
    "principle": "God, there is no god but him, the Living, the Ever-Standing. Neither drowsiness nor sleep takes hold of him. To him belongs what is in the heavens and what is on the earth. Who is it that will intercede with him except by his permission?",
    "shows": "Star trails circle over a sleeping village by night while one window stays lit.",
    "prompt": "A long-exposure night sky of circling star trails over a quiet sleeping village in a valley, one single window lit warm and steady all night. The star trails and the window are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture: only plain low houses with flat or tiled roofs. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
@@ -246,45 +173,20 @@
   },
   {
    "verse": 255,
+   "from": "His seat takes in the heavens and the earth",
    "section": "255",
-   "image": "cand/11-star-trails-b.jpg",
-   "principle": "God, there is no god but him, the Living, the Ever-Standing. Neither drowsiness nor sleep takes hold of him. To him belongs what is in the heavens and what is on the earth. Who is it that will intercede with him except by his permission?",
-   "shows": "A single steady lit window in a sleeping town at three in the morning.",
-   "prompt": "A single warm lit window in a quiet sleeping town at three in the morning, all the other windows dark, a clear starry sky above the roofs. The lit window and the sky are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture: only plain low houses with flat or tiled roofs. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 255,
-   "section": "255",
-   "image": "cand/12-panorama-a.jpg",
+   "image": "12-panorama.jpg",
+   "tall": "tall/12-panorama.jpg",
    "principle": "God, there is no god but him, the Living, the Ever-Standing. Neither drowsiness nor sleep takes hold of him. To him belongs what is in the heavens and what is on the earth. Who is it that will intercede with him except by his permission?",
    "shows": "A vast panorama of earth and sky seen from a high peak above the clouds.",
    "prompt": "A vast panorama of earth and sky from a high peak above a sea of clouds with distant mountains and a huge sky in every direction, soft gold light. The panorama is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false,
-   "from": "His seat takes in the heavens and the earth"
-  },
-  {
-   "verse": 255,
-   "section": "255",
-   "image": "cand/12-panorama-b.jpg",
-   "principle": "God, there is no god but him, the Living, the Ever-Standing. Neither drowsiness nor sleep takes hold of him. To him belongs what is in the heavens and what is on the earth. Who is it that will intercede with him except by his permission?",
-   "shows": "A great mountain range under huge clouds, stretching to the horizon in every direction.",
-   "prompt": "A great mountain range under enormous clouds, stretching to the horizon in every direction, light breaking in shafts across the land. The mountains and clouds are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false,
-   "from": "His seat takes in the heavens and the earth"
+   "people": false
   },
   {
    "verse": 256,
    "section": "256-258",
-   "image": "cand/13-handhold-a.jpg",
-   "principle": "There is no compulsion in religion. The right course has become clear from the wrong course. So whoever disbelieves in false gods and believes in God has grasped the firmest handhold, which does not break. And God is hearing, knowing.",
-   "shows": "A climber's hand grips a solid rock handhold above a long drop.",
-   "prompt": "A climber's hand gripping a solid rock handhold on a cliff, firm and strong, with a long drop and a valley far below, bright light. The hand and the rock are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
-   "verse": 256,
-   "section": "256-258",
-   "image": "cand/13-handhold-b.jpg",
+   "image": "13-handhold.jpg",
+   "tall": "tall/13-handhold.jpg",
    "principle": "There is no compulsion in religion. The right course has become clear from the wrong course. So whoever disbelieves in false gods and believes in God has grasped the firmest handhold, which does not break. And God is hearing, knowing.",
    "shows": "A hand grips a strong iron ring on a quay while the sea heaves below.",
    "prompt": "A hand gripping a strong thick iron ring bolted to a stone quay while the sea heaves and splashes below, bright cloudy light. The hand and the ring are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
@@ -292,86 +194,48 @@
   {
    "verse": 257,
    "section": "256-258",
-   "image": "cand/14-tunnel-light-a.jpg",
+   "image": "14-tunnel-light.jpg",
+   "tall": "tall/14-tunnel-light.jpg",
    "principle": "God is the ally of those who believe; he brings them out of the darkness into the light. And those who disbelieve, their allies are false gods; they bring them out of the light into the darkness.",
    "shows": "A person walks out of a dark tunnel into bright daylight.",
    "prompt": "A person in plain clothes walks out of the mouth of a dark tunnel into bright green daylight, seen from behind and the side, the light falling on their face. The person and the tunnel mouth are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 257,
-   "section": "256-258",
-   "image": "cand/14-tunnel-light-b.jpg",
-   "principle": "God is the ally of those who believe; he brings them out of the darkness into the light. And those who disbelieve, their allies are false gods; they bring them out of the light into the darkness.",
-   "shows": "Two people pass each other at a tunnel mouth, one coming out into the light and one going in toward the dark.",
-   "prompt": "At the mouth of a long tunnel, two people in plain clothes pass each other: one walking out into the bright daylight and the other walking in toward the dark, seen from the side. The two people and the tunnel mouth are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 258,
    "section": "256-258",
-   "image": "cand/15-sun-west-a.jpg",
+   "image": "15-sun-west.jpg",
+   "tall": "tall/15-sun-west.jpg",
    "principle": "Have you not seen the one who argued with Abraham about his Lord, because God had given him the kingdom?",
    "shows": "A man in fine clothes points at the west horizon at dawn while the sun rises behind him in the east, dumbfounded.",
    "prompt": "A man in fine clothes stands on a hilltop at dawn pointing with his arm out at the empty western horizon, while behind him the sun is rising over the east, his shadow stretching long toward the west, his mouth open, dumbfounded, seen from the side. The man and the sky are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 258,
-   "section": "256-258",
-   "image": "cand/15-sun-west-b.jpg",
-   "principle": "Have you not seen the one who argued with Abraham about his Lord, because God had given him the kingdom?",
-   "shows": "A man stares at the sunrise in the east and then turns toward the west horizon and finds nothing.",
-   "prompt": "A man in fine clothes stands on a hilltop at dawn facing the dark empty western horizon with his arms open and a blank face, the glowing sunrise behind him in the east. The man and the sky are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 259,
    "section": "259-260",
-   "image": "cand/16-fallen-town-a.jpg",
+   "image": "16-fallen-town.jpg",
+   "tall": "tall/16-fallen-town.jpg",
    "principle": "Or like the one who passed by a town that had fallen in on its roofs. He said, \"How will God give life to this after its death?\" So God caused him to die for a hundred years, then raised him up.",
    "shows": "A hill town with fallen-in roofs stands silent while a traveler with a donkey and a loaf of bread stops on the road and looks.",
    "prompt": "A hill town with fallen-in roofs and empty windows on a slope in gray morning light, and on the road in front a traveler in plain clothes stops with his donkey carrying a loaf of bread and a jug and looks at it, seen from behind. The town and the traveler are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
    "verse": 259,
+   "from": "He said, \"How long have you stayed?\"",
    "section": "259-260",
-   "image": "cand/16-fallen-town-b.jpg",
-   "principle": "Or like the one who passed by a town that had fallen in on its roofs. He said, \"How will God give life to this after its death?\" So God caused him to die for a hundred years, then raised him up.",
-   "shows": "A ruined village in the dusk with a single traveler standing at its edge looking at the fallen roofs.",
-   "prompt": "A ruined village at dusk with its roofs fallen in and empty windows, and a single traveler in plain clothes standing at its edge looking at it, seen from behind. The village and the traveler are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
-   "verse": 259,
-   "section": "259-260",
-   "image": "cand/17-waking-tree-a.jpg",
+   "image": "17-waking-tree.jpg",
+   "tall": "tall/17-waking-tree.jpg",
    "principle": "Or like the one who passed by a town that had fallen in on its roofs. He said, \"How will God give life to this after its death?\" So God caused him to die for a hundred years, then raised him up.",
    "shows": "A man wakes under a huge old tree grown up through the ruins, with a fresh loaf and a jug beside him and his donkey nearby.",
-   "prompt": "A man in plain clothes wakes sitting up under a huge old tree that has grown up through a ruined house over many years, with a fresh warm loaf of bread and a jug beside him, still unspoiled, and his donkey standing near, soft light through the leaves. The man, the tree and the loaf are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "from": "He said, \"How long have you stayed?\""
-  },
-  {
-   "verse": 259,
-   "section": "259-260",
-   "image": "cand/17-waking-tree-b.jpg",
-   "principle": "Or like the one who passed by a town that had fallen in on its roofs. He said, \"How will God give life to this after its death?\" So God caused him to die for a hundred years, then raised him up.",
-   "shows": "An old tree fills a ruined house to its roof beside a loaf of bread that is still fresh on a stone.",
-   "prompt": "A huge old tree growing out through the walls of a ruined stone house, and on a stone in front a single fresh loaf of bread and a jug as if left a moment ago, soft light. The tree and the loaf are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false,
-   "from": "He said, \"How long have you stayed?\""
+   "prompt": "A man in plain clothes wakes sitting up under a huge old tree that has grown up through a ruined house over many years, with a fresh warm loaf of bread and a jug beside him, still unspoiled, and his donkey standing near, soft light through the leaves. The man, the tree and the loaf are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
    "verse": 260,
    "section": "259-260",
-   "image": "cand/18-four-birds-a.jpg",
+   "image": "18-four-birds.jpg",
+   "tall": "tall/18-four-birds.jpg",
    "principle": "And when Abraham said, \"My Lord, show me how you give life to the dead,\" he said, \"Do you not believe?\" He said, \"Yes, but so that my heart may be at rest.\" He said, \"Then take four birds and draw them to you, then place a part of them on ...",
    "shows": "Four birds fly in from four directions to an outstretched hand on a hilltop at sunrise.",
    "prompt": "On a hilltop at sunrise a person's single outstretched hand held up high, and four birds flying in toward it from four different directions across the sky, hurrying, light glowing. The hand and the birds are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
-   "verse": 260,
-   "section": "259-260",
-   "image": "cand/18-four-birds-b.jpg",
-   "principle": "And when Abraham said, \"My Lord, show me how you give life to the dead,\" he said, \"Do you not believe?\" He said, \"Yes, but so that my heart may be at rest.\" He said, \"Then take four birds and draw them to you, then place a part of them on ...",
-   "shows": "Four mountain peaks each with a single bird perched on top at sunrise.",
-   "prompt": "Four mountain peaks in a row in the morning light, each with a single bird perched on top, all four birds turned toward the same place, the sky glowing. The peaks and the birds are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
   }
  ]
 }
