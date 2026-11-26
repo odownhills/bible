@@ -1403,3 +1403,36 @@ closed. Close calls go in the chapter's decision log instead.
 - nasi (17:20; 25:16) "chieftain", kept distinct from sar "prince", "official" and rosh "chief", "head".
 - lammo'ed hazzeh (17:21) "at this set time", mo'ed as at 1:14; bashanah ha'acheret "next year".
 - alah me'al (17:22; 35:13) "go up from".
+
+## Settled in Genesis 18
+- nitsav al (18:2) "stand near"; amad al (18:8) "stand by"; amad lifne (18:22) "stand before". ruts liqrat "run to meet". hishtachawah artsah "bow down to the ground".
+- Adonay in Abraham's mouth (18:3) "Lord" [alt: My lord] (decision log, call: ask); with a preposition (18:27, 30, 31, 32) "the Lord".
+- im-na (18:3) "if": its na is carried by the "please" of the request.
+- avar me'al (18:3) "pass ... by"; avar alone (18:5) "pass on"; avar al "pass ... way". ki-al-ken (18:5; 19:8) "since".
+- laqach of water and food for guests (18:4, 5) "fetch". nish'an with no al (18:4) "recline". pat-lechem "a piece of bread".
+- sa'ad lev (18:5; Judg 19:5) "strengthen oneself": the idiom is translated by its meaning.
+- mihar (18:6, 7) "hurry". se'ah "seah": the unit is kept, as ammah is. qemach "flour"; solet "fine flour". lush "knead". uggah "cake".
+- ben-baqar (18:7, 8) "calf", baqar as listed. rakh "tender". hanna'ar (18:7) "the young man". asah of food "prepare". natan lifne "set before". chem'ah "curds" and chalav "milk", as listed.
+- hinneh in answer to "Where?" (18:9) "There,".
+- ka'et chayyah (18:10, 14; 2 Kgs 4:16, 17) "about this time next year", as ka'et machar is "about this time tomorrow" (Exod 9:18). lammo'ed (18:14) "At the set time".
+- zaqen as an adjective (18:11, 12) "old"; zaqan (18:13) "grow old". ba bayyamim (18:11; 24:1) "advanced in years".
+- orach kannashim (18:11) "the way of women".
+- beqirbah (18:12) "within herself", (18:24) "within it"; betokh ha'ir (18:24, 26) "inside the city".
+- balah of a person (18:12) "be worn out". ednah (only here) "pleasure". adoni of a husband "my lord".
+- ha'af (18:13, 23, 24) "really"; umnam "truly", as omnam: ha'af umnam "really and truly". lammah zeh "Why is it that".
+- nifla min (18:14) "be too hard for"; the echo with nifla'ot "wonders" is not shown.
+- kichesh with no object (18:15) "deny it".
+- hishqif al-pene (18:16; 19:28) "look down toward". shillach of guests (18:16) "send on one's way".
+- kissah min (18:17) "hide from": a fifth root that shares "hide".
+- atsum (18:18) "powerful", leaving "mighty" for gibbor. goye ha'arets "the nations of the earth".
+- yada of Yahweh and Abraham (18:19) "know": yeda'tiv "I have known him". lema'an asher "so that ... may". hevi al "bring on"; dibber al "speak concerning".
+- shamar derekh YHWH (18:19) "keep the way of Yahweh". asah tsedaqah umishpat "do righteousness and justice"; asah mishpat (18:25) "do justice".
+- za'aqah, tse'aqah of Sodom (18:20, 21; 19:13) "outcry" ("cry" at Job 16:18). kaved of sin (18:20) "heavy".
+- asu kalah (18:21) "have done altogether" [alt: have done ...; if so, it is the end] (decision log, call: clear).
+- panah (18:22) "turn". nagash (18:23) "approach".
+- safah (18:23, 24; 19:15, 17) "sweep away".
+- nasa le- of a place or a people (18:24, 26) "forgive". lema'an with a noun (18:24) "for the sake of"; ba'avur stays "because of" (18:26, 29, 31, 32).
+- chalilah lekha (18:25) "Far be it from you". shofet kol-ha'arets "the judge of the whole earth".
+- ho'il with an infinitive (18:27, 31) "take it on oneself". afar wa'efer "dust and ashes".
+- chaser with an object (18:28) "lack", as planned. be- of what a thing is done for (18:28) "over". shichet stays "ruin" (18:28, 31, 32).
+- akh happa'am (18:32) "only this once". halakh of Yahweh leaving (18:33) "go away".
