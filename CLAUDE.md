@@ -210,3 +210,12 @@ Every build also writes its own site's search index (`scripts/search.py`): `pyth
 into `site-study/search/`. Each site's search page (`/search/`) searches all three sites, except the Bible site's, which leaves out the analysis (Obay, 2026-11-25). A run does nothing extra
 for it: the index is part of the rebuilt site folder it already commits. Never edit those files by hand; if a
 rebase conflicts in them, take main's and rebuild.
+
+# Offline reading
+
+Both the Bible and Quran sites work with no connection (Obay, 2026-11-26). Every build writes `offline.js`,
+`offline.html` and `sw.js` (the service worker, from `scripts/offline.js` and `scripts/sw.js`) into the site it
+builds, and every page loads `offline.js`. Pages and their small files are always asked of the site first, so a new
+chapter or build shows up at once; a copy is kept for when there is no signal. A chapter's recording and Watch
+pictures are kept only when the reader presses "Save for offline". A run does nothing extra for it; never edit those
+built files by hand. To switch it off for every reader, see the comment at the top of `scripts/sw.js`.
