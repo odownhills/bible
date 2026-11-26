@@ -1,0 +1,198 @@
+{
+ "note": "Made by the steps in TV_PICTURES.md for Quran 2:204-220 (2026-11-26): 15 pictures from 30 trial pictures. Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. The Prophet Muhammad is never shown in any way, nor anyone standing in for him; God and the angels are not pictured; no religious symbols of any tradition; nothing violent. Tried and not chosen: A man smiles warmly and shakes a hand while hiding a clenched fist in his pocket. A man walks on through a ripe wheat field leaving a broad path of trampled stalks behind him. A rooster puffed up with pride on a fence turns his back on a hen. A man carries a heavy sack of grain through the rain to a neighbor's doorway. Many paths across a field all join into one wide road leading to a bright village. A lone man on a hilltop watches enormous clouds roll in over a dry plain. A child presses her face to the glass of a candy shop window full of sweets. A ring of people of every kind holds hands in a meadow, seen from above. A hiker in a blizzard sees the light of a mountain hut very near. A man at a roadside hands a warm blanket and a sandwich to a traveler in the rain. A man hesitates at the edge of a cold sea before diving in at sunrise. A beautiful chalk drawing on a pavement dissolves in the rain. A family of travelers climbs a mountain pass at first light toward a gap of sunrise. A tipped wine bottle spills across a table of scattered playing cards. An orphan boy sits among the family's children at the table, shoulder to shoulder, sharing one bowl.",
+ "method": "Second method, asked for by Obay on 2026-11-21: (1) split the part into sections that each carry one deep meaning, written as one plain sentence; (2) write picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
+ "sections": [
+  {
+   "verses": "204-206",
+   "meaning": "Some people's speech impresses you and they call God to witness what is in their hearts, yet they are the fiercest in a quarrel; they go about the earth to corrupt it and destroy crops and offspring; pride takes hold of them when told to be mindful of God.",
+   "ideas": [
+    "A smooth-talking man at a podium with a hand on his heart and the other fist clenched behind",
+    "A man walking through a ripe wheat field leaving a path of trampled stalks",
+    "A man turns away from an offered hand with his chin high",
+    "A bulldozer across an orchard"
+   ]
+  },
+  {
+   "verses": "207-209",
+   "meaning": "Some sell themselves seeking to please God; enter into peace all together and do not follow Satan's footsteps.",
+   "ideas": [
+    "A man sells his violin and puts the money in a donation jar",
+    "A man carries a heavy sack of grain to a neighbor's house in the rain",
+    "People of every kind walking together through one wide gate into a sunlit meadow"
+   ]
+  },
+  {
+   "verses": "210-213",
+   "meaning": "They wait for nothing but God to come in canopies of clouds; the life of this world is made attractive to those who disbelieve; people were one community, then differed out of resentment.",
+   "ideas": [
+    "A crowd in a dry field staring up at towering clouds with hands shading their eyes",
+    "A glittering shop window of watches and jewelry with a man staring through the glass",
+    "One enormous murmuration of starlings over a field",
+    "A ring of people holding hands in a meadow"
+   ]
+  },
+  {
+   "verses": "214-216",
+   "meaning": "Hardship shakes them until they cry 'When is God's aid?' and the answer is that his aid is near; spend on those in need; you may hate what is good for you and love what is bad for you.",
+   "ideas": [
+    "People on a flooded rooftop see a rescue boat come round the corner",
+    "A hiker in a blizzard sees the light of a hut near",
+    "Five different open hands each reaching for a loaf of bread",
+    "A child grimaces at bitter medicine on a spoon with a candy jar beside her"
+   ]
+  },
+  {
+   "verses": "217-220",
+   "meaning": "Persecution is graver than killing; deeds of those who turn back come to nothing; those who emigrate and strive hope for mercy; wine and gambling have great sin and some benefit; setting things right for orphans is good, for they are your brothers.",
+   "ideas": [
+    "A sand sculpture washed away by the tide at sunset",
+    "A boat of people crossing a calm sea at dawn toward a far shore",
+    "A pair of dice beside an empty wine glass and crumpled bills",
+    "A man and an orphan boy fixing a bicycle together",
+    "An orphan boy at the family table shoulder to shoulder with the children"
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "verse": 204,
+   "section": "204-206",
+   "image": "01-smooth-talker.jpg",
+   "tall": "tall/01-smooth-talker.jpg",
+   "principle": "And among people there is one whose speech impresses you in the life of this world, and he calls God to witness what is in his heart, though he is the fiercest in a quarrel.",
+   "shows": "A smooth-talking man at a podium puts one hand on his heart while his other fist is clenched behind his back.",
+   "prompt": "A man in a good suit speaks smoothly to a crowd from a plain podium with one hand laid on his heart and a warm smile, while his other hand behind his back is a clenched fist, seen from slightly behind and the side. The man is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 205,
+   "section": "204-206",
+   "image": "02-trampled.jpg",
+   "tall": "tall/02-trampled.jpg",
+   "principle": "And when he turns away, he goes about the earth to cause corruption on it and to destroy crops and offspring. And God does not love corruption.",
+   "shows": "A bulldozer cuts across a young orchard leaving the trees uprooted behind it.",
+   "prompt": "A bulldozer cutting across a young orchard in blossom with the small trees uprooted and lying behind it, bright cloudless light, no people visible. The bulldozer and the orchard are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 206,
+   "section": "204-206",
+   "image": "03-chin-up.jpg",
+   "tall": "tall/03-chin-up.jpg",
+   "principle": "And when he is told, \"Be mindful of God,\" pride takes hold of him in sin. So Hell is enough for him. And miserable is the resting place.",
+   "shows": "A man turns away from an offered hand with his chin held high in pride.",
+   "prompt": "A man in plain good clothes turns his back on a friend's offered helping hand with his chin held high and his nose in the air, the friend's open hand left hanging, bright light. The man and the offered hand are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 207,
+   "section": "207-209",
+   "image": "04-sells-violin.jpg",
+   "tall": "tall/04-sells-violin.jpg",
+   "principle": "And among people there is one who sells himself, seeking to please God. And God is kind to his servants.",
+   "shows": "A man sells his prized violin and puts the money into a donation jar beside a food bank table.",
+   "prompt": "A man in plain clothes lays his beloved violin down on a pawn counter and then, with the money in his hand, puts it into a donation jar at a food bank table, a smile on his face, soft light. The man and the jar are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 208,
+   "section": "207-209",
+   "image": "05-one-gate.jpg",
+   "tall": "tall/05-one-gate.jpg",
+   "principle": "You who believe, enter into peace, all together, and do not follow Satan's footsteps. He is a clear enemy to you.",
+   "shows": "People of every kind and age walk together through one wide gate in a garden wall into a sunlit meadow.",
+   "prompt": "People of every kind and age in different plain clothes, old and young, walk together side by side through one wide open gate in a garden wall into a sunlit meadow, seen from behind. The people and the gate are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 210,
+   "section": "210-213",
+   "image": "06-watching-clouds.jpg",
+   "tall": "tall/06-watching-clouds.jpg",
+   "principle": "Are they waiting for anything but that God should come to them in canopies of clouds, and the angels, and the matter is decided? And to God matters are returned.",
+   "shows": "A crowd in a dry field stares up at towering clouds with their hands shading their eyes, waiting.",
+   "prompt": "A crowd of ordinary people of today in plain clothes standing in a dry field staring up with hands shading their eyes at huge towering bright clouds filling the sky, waiting, seen from behind. The crowd and the clouds are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 212,
+   "section": "210-213",
+   "image": "07-shop-window.jpg",
+   "tall": "tall/07-shop-window.jpg",
+   "principle": "The life of this world has been made attractive to those who disbelieve, and they ridicule those who believe. But those who are mindful of God will be above them on the Day of Resurrection.",
+   "shows": "A man stares through a glittering shop window at watches, rings and jewelry on velvet.",
+   "prompt": "A man in plain clothes stands stopped on a street at night staring with wide eyes through a glittering shop window at gold watches, rings and jewelry on velvet, the lights reflecting on the glass. The man and the window are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 213,
+   "section": "210-213",
+   "image": "08-murmuration.jpg",
+   "tall": "tall/08-murmuration.jpg",
+   "principle": "People were one community, then God raised up the prophets as bringers of good news and warners, and sent down with them the Book with the truth, to judge between people about what they differed over.",
+   "shows": "One enormous murmuration of starlings swirls as a single shape over a field at dusk.",
+   "prompt": "One enormous flock of starlings swirling together as a single great flowing shape over an open field at dusk, a pink and golden sky. The flock is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 214,
+   "section": "214-216",
+   "image": "09-rescue-boat.jpg",
+   "tall": "tall/09-rescue-boat.jpg",
+   "principle": "Or did you suppose that you would enter the Garden when the example of those who passed away before you has not yet come to you?",
+   "shows": "People on a flooded rooftop see a rescue boat coming round the corner of a street.",
+   "prompt": "A few ordinary people of today in plain clothes huddled on a flooded house rooftop, exhausted, as a rescue boat appears coming round the corner of the flooded street toward them and the clouds break above, hope on their faces. The people and the boat are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 215,
+   "section": "214-216",
+   "image": "10-open-hands.jpg",
+   "tall": "tall/10-open-hands.jpg",
+   "principle": "They ask you what they should spend. Say, \"Whatever good you spend is for parents, nearest relatives, orphans, the destitute and the traveler.\" And whatever good you do, God has knowledge of it.",
+   "shows": "Five different open hands, a child's, an old person's, a worker's, a traveler's and a young mother's, each reach for a loaf of bread.",
+   "prompt": "Close on five different open hands, a small child's, a very old person's, a worker's rough hand, a traveler's hand with a backpack strap, and a young mother's hand, all reaching up and open for loaves of fresh bread being given, warm light. The hands and the bread are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 216,
+   "section": "214-216",
+   "image": "11-bitter-medicine.jpg",
+   "tall": "tall/11-bitter-medicine.jpg",
+   "principle": "Fighting is prescribed for you, though it is hateful to you. But it may be that you hate a thing while it is good for you, and it may be that you love a thing while it is bad for you. And God knows, and you do not know.",
+   "shows": "A child grimaces at a spoon of bitter medicine held by her mother while a jar of candy sits beside them.",
+   "prompt": "A small girl at a kitchen table grimaces and turns her head away from a spoon of medicine held out by her mother's hand, while right beside her a glass jar of bright candy tempts her, warm light. The girl, the spoon and the candy jar are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 217,
+   "from": "And whoever of you turns back from his religion",
+   "section": "217-220",
+   "image": "12-sand-sculpture.jpg",
+   "tall": "tall/12-sand-sculpture.jpg",
+   "principle": "They ask you about the sacred month, about fighting in it. Say, \"Fighting in it is grave, but barring people from the way of God, and disbelief in him, and from the Sacred Place of Worship, and driving its people out of it, are graver in ...",
+   "shows": "A great sand sculpture, a castle with towers, is washed away by the tide at sunset.",
+   "prompt": "A great detailed sand castle with towers at the edge of the sea at sunset, the incoming tide washing over it and melting its walls away, a few tiny footprints. The sand castle and the wave are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 218,
+   "section": "217-220",
+   "image": "13-boat-crossing.jpg",
+   "tall": "tall/13-boat-crossing.jpg",
+   "principle": "Those who believe, and those who have emigrated and striven in the way of God, those hope for God's mercy. And God is forgiving, merciful.",
+   "shows": "A crowded boat of ordinary people crosses a calm sea at dawn toward a far shore with a few lights.",
+   "prompt": "A boat carrying a crowd of ordinary people of today in plain clothes crossing a calm sea at dawn toward a distant shore with a few lights, hope in their posture, seen from the side. The boat and the far shore are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 219,
+   "section": "217-220",
+   "image": "14-dice-glass.jpg",
+   "tall": "tall/14-dice-glass.jpg",
+   "principle": "They ask you about wine and gambling. Say, \"In both there is great sin, and benefits for people, and their sin is greater than their benefit.\" And they ask you what they should spend.",
+   "shows": "A pair of dice sits beside an empty wine glass and a few crumpled bills on a green felt table.",
+   "prompt": "A pair of dice resting beside an empty wine glass and a few crumpled bills on a worn green felt table under a single warm lamp, no people visible. The dice, the glass and the bills are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 220,
+   "section": "217-220",
+   "image": "15-fix-bicycle.jpg",
+   "tall": "tall/15-fix-bicycle.jpg",
+   "principle": "on this world and the hereafter. And they ask you about orphans. Say, \"Setting things right for them is good.",
+   "shows": "A man and an orphan boy fix a bicycle together in a garage, both laughing.",
+   "prompt": "A man in plain clothes and a young boy kneel side by side in a sunny garage fixing the wheel of a bicycle together, both laughing, like father and son, soft light. The man and the boy are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  }
+ ]
+}
