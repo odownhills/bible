@@ -344,6 +344,41 @@ TV_ICON = ('<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" wi
            '<path d="M8 20.5h8M12 17v3.5"/><path d="M10.3 8.1v4.3l3.7-2.15z" fill="currentColor" stroke="none"/></svg>')
 
 
+def cast_page():
+    """site/cast/: the page a TV (a Chromecast or Google TV) opens when Watch is cast to it. Google's Cast framework
+    plays the recording there and scripts/tv.js shows the pictures and words with it (scripts/cast_receiver.js).
+    It serves both sites (the Quran's chapters come from its own address), so it also has the Quran's two fonts."""
+    js = open(os.path.join(ROOT, "scripts", "cast_receiver.js"), encoding="utf-8").read()
+    v = hashlib.sha1(open(os.path.join(OUT, "tv.js"), "rb").read()).hexdigest()[:8]
+    fonts = "".join('@font-face{font-family:"%s";src:url(%s) format("woff2");font-display:swap;'
+                    'unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+FB50-FDFF,U+FE70-FEFF}' % (n, u)
+                    for n, u in (("Quran Text", search.QURAN_FONT), ("Arabic Text", search.ARABIC_FONT)))
+    html = """<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Watch</title>
+<script src="https://www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
+<style>%s
+html,body{margin:0;height:100%%;background:#000;color:#E8E2F2;overflow:hidden}
+#splash{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+background:#171223;background:radial-gradient(120%% 95%% at 50%% 0%%,#2C2247 0%%,#171223 58%%,#0E0A18 100%%)}
+#splash[hidden]{display:none}
+#splash small{font:600 1.1rem system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#B79BE8}
+#splash b{font:normal 4rem Georgia,"Times New Roman",serif;color:#fff;margin-top:1rem}
+</style></head>
+<body><div id="splash"><small>Watch</small><b>Getting ready</b></div>
+<audio id="cast-audio" preload="auto"></audio>
+<script>window.TV_CAST_RECEIVER=true;</script>
+<script src="../tv.js?v=%s"></script>
+<script>
+%s</script>
+</body></html>
+""" % (fonts, v, js)
+    os.makedirs(os.path.join(OUT, "cast"), exist_ok=True)
+    open(os.path.join(OUT, "cast", "index.html"), "w", encoding="utf-8").write(html)
+
+
 def redirect(path, target, name):
     """A page that only sends the reader on to target (a relative address), keeping what follows ? and #:
     the old addresses of the Watch pages (site/tv/, the Quran's ar/tv.html) still work."""
@@ -791,6 +826,7 @@ if(s&&s.url&&(!nav||nav.type==='navigate')&&!inside&&!/[?&]home/.test(location.s
         os.makedirs(os.path.join(OUT, "watch"), exist_ok=True)
         open(os.path.join(OUT, "watch", "index.html"), "w", encoding="utf-8").write(
             page("Watch", body, 1, tv_tag, WATCH_CSS))
+        cast_page()
         deeper = tv_tag.replace('src="../', 'src="../../')
         for b in BOOKS:
             got = by_book.get(b["slug"])

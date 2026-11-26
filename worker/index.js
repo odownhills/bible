@@ -5,12 +5,23 @@
 const TYPES = { mp3: "audio/mpeg", jpg: "image/jpeg", jpeg: "image/jpeg", png: "image/png", webp: "image/webp" };
 const MEDIA = /^\/((?:audio|pictures)\/[a-z0-9\-\/]+\.(mp3|jpg|jpeg|png|webp))$/;
 
+// The word timings under audio/ (audio/<slug>/<n>.json) pass through this Worker, where the site's _headers file
+// may not reach, so they get the header that lets the TV's casting page (site/cast/ on the Bible site) read the
+// Quran's too. Everything here is public.
+async function files(request, env, url) {
+  const res = await env.ASSETS.fetch(request);
+  if (!url.pathname.endsWith(".json") || res.headers.has("access-control-allow-origin")) return res;
+  const out = new Response(res.body, res);
+  out.headers.set("access-control-allow-origin", "*");
+  return out;
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const m = url.pathname.match(MEDIA);
     if (!m || !env.MEDIA || (request.method !== "GET" && request.method !== "HEAD")) {
-      return env.ASSETS.fetch(request);
+      return files(request, env, url);
     }
     const key = m[1];
     const wantsRange = request.headers.has("range");
@@ -23,7 +34,7 @@ export default {
       // a malformed Range header: answer with the whole file instead
       obj = await env.MEDIA.get(key);
     }
-    if (!obj) return env.ASSETS.fetch(request);
+    if (!obj) return files(request, env, url);
 
     const headers = new Headers();
     obj.writeHttpMetadata(headers);
