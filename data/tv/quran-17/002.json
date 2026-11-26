@@ -1,0 +1,317 @@
+{
+ "note": "Trial pictures for Quran 17:22-44.",
+ "method": "Second method, asked for by Obay on 2026-11-21: (1) split the part into sections that each carry one deep meaning, written as one plain sentence; (2) write picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
+ "sections": [
+  {
+   "verses": "22-25",
+   "meaning": "Set up no other god with God, or you sit condemned and abandoned; do good to parents, never say 'Ugh' to them or scold, speak gracious words, lower the wing of humility out of mercy: 'as they raised me when I was small'.",
+   "ideas": [
+    "A man alone on a bare bench as the last train's lights recede",
+    "A young man gently ties his old father's shoelaces",
+    "A grown man bends low to wrap a shawl around his elderly mother",
+    "A mother bird with a lowered wing over her fledglings"
+   ]
+  },
+  {
+   "verses": "26-30",
+   "meaning": "Give the relative his due, the destitute, the traveler; do not squander wastefully; do not chain your hand to your neck nor spread it to its full extent; he extends provision and measures it.",
+   "ideas": [
+    "A traveler is handed water and bread at a door",
+    "Clean water poured into a gutter while a child holds an empty cup",
+    "A clenched fist, a wide-open spilling palm, and between them a cupped hand with a measured handful"
+   ]
+  },
+  {
+   "verses": "31-33",
+   "meaning": "Do not kill your children for fear of poverty: we provide for them and for you; do not go near unlawful sex; do not kill the soul God has made sacred. (Nothing violent is shown: provision, a boundary, a life held gently.)",
+   "ideas": [
+    "A father holding his sleeping child, a loaf on the table at dawn",
+    "A parent bird feeds chicks in a winter nest",
+    "A traveler stops short at a low fence before a crumbled cliff edge",
+    "Two cupped hands hold a small sparrow"
+   ]
+  },
+  {
+   "verses": "34-35",
+   "meaning": "Do not go near the orphan's wealth except in the best way until he reaches his full strength; keep the covenant, it will be asked about; give full measure and weigh with the straight scale.",
+   "ideas": [
+    "A man wraps coins safely away in a box for a sleeping boy",
+    "A man waits in the rain on a bridge at the agreed hour",
+    "A balance scale perfectly level with grain",
+    "Grain poured to the brim and over"
+   ]
+  },
+  {
+   "verses": "36-39",
+   "meaning": "Do not follow what you have no knowledge of; hearing, sight and heart will be asked about; do not walk on the earth swaggering: you will not tear through the earth nor reach the mountains in height.",
+   "ideas": [
+    "A line of people in thick fog each looking only at the back ahead, one has stopped to look around",
+    "A tiny strutting man before an enormous mountain"
+   ]
+  },
+  {
+   "verses": "40-44",
+   "meaning": "The seven heavens and the earth and whoever is in them glorify him; there is nothing that does not glorify him with praise, but you do not understand their glorifying. (Never shown: the angels or any god.)",
+   "ideas": [
+    "A meadow at sunrise alive with birds, dew-strung webs and bees",
+    "A night sky of stars over a still lake with fireflies"
+   ]
+  }
+ ],
+ "scenes": [],
+ "candidates": [
+  {
+   "verse": 22,
+   "section": "22-25",
+   "image": "cand/01-last-train-a.jpg",
+   "principle": "Do not set up another god with God, or you will sit condemned and abandoned.",
+   "shows": "A man sits alone on a bare bench on an empty platform as the last train's red lights shrink away.",
+   "prompt": "A man in plain clothes sits alone on a bare bench on an empty railway platform at night, the red tail lights of the last train shrinking away down the track, nobody else anywhere, a single cold lamp. The man, the bench and the red lights are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 22,
+   "section": "22-25",
+   "image": "cand/01-last-train-b.jpg",
+   "principle": "Do not set up another god with God, or you will sit condemned and abandoned.",
+   "shows": "A lone man at the end of a pier watches the last boat's lights go.",
+   "prompt": "A lone man sits at the end of an empty wooden pier at dusk watching the last boat's small lights going away across the water, nobody else, cold blue light. The man and the boat's lights are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 23,
+   "section": "22-25",
+   "image": "cand/02-shoelaces-a.jpg",
+   "principle": "And your Lord has decreed that you worship none but him, and do good to parents. If one of them or both of them reach old age with you, do not say \"Ugh\" to them, and do not scold them, but speak to them with gracious words.",
+   "shows": "A young man kneels to tie the shoelaces of his elderly father seated on a bench, with a patient gentle face.",
+   "prompt": "A young man kneels in a sunny park to tie the shoelaces of his elderly father seated on a bench, patient and gentle, the old father smiling down at him, soft warm light. The two men are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 23,
+   "section": "22-25",
+   "image": "cand/02-shoelaces-b.jpg",
+   "principle": "And your Lord has decreed that you worship none but him, and do good to parents. If one of them or both of them reach old age with you, do not say \"Ugh\" to them, and do not scold them, but speak to them with gracious words.",
+   "shows": "A young woman patiently buttons the coat of her old mother in a hallway.",
+   "prompt": "A young woman patiently buttons the coat of her elderly mother in a plain bright hallway, speaking softly, the old mother smiling, warm light. The two women are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 24,
+   "section": "22-25",
+   "image": "cand/03-shawl-a.jpg",
+   "principle": "And lower to them the wing of humility, out of mercy, and say, \"My Lord, have mercy on them, as they raised me when I was small.\"",
+   "shows": "A grown man bends low to wrap a shawl around the shoulders of his elderly mother sitting by a window.",
+   "prompt": "A grown man bends low and carefully wraps a soft shawl around the shoulders of his elderly mother sitting in a chair by a bright window, his head lowered gently, her hand resting on his, soft morning light. The man and his mother are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "from": "And lower to them the wing of humility"
+  },
+  {
+   "verse": 24,
+   "section": "22-25",
+   "image": "cand/03-shawl-b.jpg",
+   "principle": "And lower to them the wing of humility, out of mercy, and say, \"My Lord, have mercy on them, as they raised me when I was small.\"",
+   "shows": "A mother bird lowers a wing over her fledglings in a nest.",
+   "prompt": "A mother bird in a nest with one wing lowered and spread over her small fledglings, sheltering them, a soft green background and gentle light, no people. The mother bird and the fledglings are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false,
+   "from": "And lower to them the wing of humility"
+  },
+  {
+   "verse": 26,
+   "section": "26-30",
+   "image": "cand/04-water-at-door-a.jpg",
+   "principle": "And give the relative his due, and the destitute, and the traveler, and do not squander wastefully.",
+   "shows": "A woman hands a cup of water and bread to a dusty traveler with a pack at her door, a small child peeking from behind her.",
+   "prompt": "A woman at her doorway hands a cup of water and a piece of bread to a dusty traveler with a pack on his back, a small child peeking from behind her skirt, warm late light. The woman, the traveler and the cup are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 26,
+   "section": "26-30",
+   "image": "cand/04-water-at-door-b.jpg",
+   "principle": "And give the relative his due, and the destitute, and the traveler, and do not squander wastefully.",
+   "shows": "A man at a roadside hands his water bottle to a footsore traveler.",
+   "prompt": "A man at a roadside hands his water bottle to a footsore traveler with a worn pack, both sitting on the verge, a long road behind them, warm light. The two men are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 26,
+   "section": "26-30",
+   "image": "cand/05-poured-water-a.jpg",
+   "principle": "And give the relative his due, and the destitute, and the traveler, and do not squander wastefully.",
+   "shows": "Clean water is poured out into a gutter while a child beside holds an empty cup.",
+   "prompt": "A hand pours a full jug of clean water into a street gutter and onto the ground, wasting it, while a small thin child beside holds an empty cup and watches, plain street, afternoon light. The jug, the water and the child are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "from": "and do not squander wastefully"
+  },
+  {
+   "verse": 26,
+   "section": "26-30",
+   "image": "cand/05-poured-water-b.jpg",
+   "principle": "And give the relative his due, and the destitute, and the traveler, and do not squander wastefully.",
+   "shows": "A big banquet table of food is swept into a bin untouched.",
+   "prompt": "A long banquet table heaped with untouched food being swept off its edge into a large bin by a server's arm, a single thin man at the far end of the room watching, plain hall. The table, the food and the bin are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "from": "and do not squander wastefully"
+  },
+  {
+   "verse": 29,
+   "section": "26-30",
+   "image": "cand/06-measured-hand-a.jpg",
+   "principle": "And do not keep your hand chained to your neck, and do not extend it to its full extent, or you will sit blamed and stripped bare.",
+   "shows": "A clenched fist, a wide-open palm spilling coins, and between them a cupped hand holding a measured handful.",
+   "prompt": "Three hands over a plain wooden table in a row: on the left a tight clenched fist, on the right a wide-open palm with coins spilling off the table edge, and in the middle a cupped hand holding a small measured handful of coins steadily, soft window light. The three hands are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 29,
+   "section": "26-30",
+   "image": "cand/06-measured-hand-b.jpg",
+   "principle": "And do not keep your hand chained to your neck, and do not extend it to its full extent, or you will sit blamed and stripped bare.",
+   "shows": "Three bowls of water: one dry, one overflowing, one filled just right.",
+   "prompt": "Three plain bowls in a row on a table: the left one dry and empty, the right one overflowing and running over the table edge, and the middle one filled exactly to the right level, soft window light, no people. The three bowls are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 31,
+   "section": "31-33",
+   "image": "cand/07-loaf-at-dawn-a.jpg",
+   "principle": "And do not kill your children for fear of poverty. It is we who provide for them and for you. Killing them is a great wrong.",
+   "shows": "A father holds his sleeping small child in a bare kitchen at dawn, a loaf of bread on the table.",
+   "prompt": "A tired father holds his sleeping small child on his shoulder in a bare plain kitchen at dawn, morning light streaming through the window onto a loaf of bread on the table, calm. The father, the child and the loaf are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 31,
+   "section": "31-33",
+   "image": "cand/07-loaf-at-dawn-b.jpg",
+   "principle": "And do not kill your children for fear of poverty. It is we who provide for them and for you. Killing them is a great wrong.",
+   "shows": "A parent bird feeds a nest of open-mouthed chicks on a bare winter branch.",
+   "prompt": "A small parent bird feeds a nest of open-mouthed chicks on a bare winter branch, a soft pale light, no people. The nest and the parent bird are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 32,
+   "section": "31-33",
+   "image": "cand/08-cliff-fence-a.jpg",
+   "principle": "And do not go near unlawful sex. It is an indecency, and an evil way.",
+   "shows": "A traveler stops short at a low fence before a crumbled cliff edge on the path ahead.",
+   "prompt": "A traveler in plain clothes stops short at a low wooden fence before a crumbled cliff edge where the path ends in a drop, a plain safe path leading away to the side, seen from behind, afternoon light. The traveler and the fence are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 32,
+   "section": "31-33",
+   "image": "cand/08-cliff-fence-b.jpg",
+   "principle": "And do not go near unlawful sex. It is an indecency, and an evil way.",
+   "shows": "A closed gate in a hedge across a path that leads toward a dark bog.",
+   "prompt": "A closed wooden gate in a tall hedge across a path that leads toward a dark misty bog beyond, a bright safe road bending away to the side, no people. The gate and the hedge are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 33,
+   "section": "31-33",
+   "image": "cand/09-sparrow-in-hands-a.jpg",
+   "principle": "And do not kill the soul that God has made sacred, except by right. And whoever is killed wrongfully, we have given authority to the one who acts for him, but let him not go too far in killing. He is aided.",
+   "shows": "Two cupped hands hold a small sparrow gently.",
+   "prompt": "Two cupped hands holding a small sparrow gently, the bird calm and alive in the warm palms, soft morning light, a blurred green background. The hands and the bird are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 33,
+   "section": "31-33",
+   "image": "cand/09-sparrow-in-hands-b.jpg",
+   "principle": "And do not kill the soul that God has made sacred, except by right. And whoever is killed wrongfully, we have given authority to the one who acts for him, but let him not go too far in killing. He is aided.",
+   "shows": "A nurse cradles a newborn baby in her hands in a bright room.",
+   "prompt": "A midwife in plain clothes cradles a newborn baby wrapped in a blanket in her hands in a bright room with morning light, looking down gently. The midwife and the baby are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 34,
+   "section": "34-35",
+   "image": "cand/10-keep-for-the-boy-a.jpg",
+   "principle": "And do not go near the orphan's wealth, except in the way that is best, until he reaches his full strength. And keep the covenant. The covenant will be asked about.",
+   "shows": "A man carefully wraps coins and puts them into a box for a small boy sleeping on a cot nearby.",
+   "prompt": "A man at a plain table carefully wraps coins in cloth and puts them away safely in a wooden box, a small boy sleeping on a cot nearby, lamp light. The man, the box and the sleeping boy are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 34,
+   "section": "34-35",
+   "image": "cand/10-keep-for-the-boy-b.jpg",
+   "principle": "And do not go near the orphan's wealth, except in the way that is best, until he reaches his full strength. And keep the covenant. The covenant will be asked about.",
+   "shows": "A man's hand stops just short of a glass jar of coins marked by a child's drawing on a shelf.",
+   "prompt": "A man's hand stops just short of a glass jar of coins on a shelf, the jar covered with a child's crayon drawing, a small pair of boots nearby, afternoon light. The man's hand and the jar are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 34,
+   "section": "34-35",
+   "image": "cand/11-kept-promise-a.jpg",
+   "principle": "And do not go near the orphan's wealth, except in the way that is best, until he reaches his full strength. And keep the covenant. The covenant will be asked about.",
+   "shows": "A man waits in the rain on a bridge at dawn at the agreed place, though no one else has come.",
+   "prompt": "A man in a raincoat waits in the rain on a stone bridge at dawn at the agreed meeting place though no one else has come yet, checking his watch, patient. The man and the bridge are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "from": "And keep the covenant"
+  },
+  {
+   "verse": 34,
+   "section": "34-35",
+   "image": "cand/11-kept-promise-b.jpg",
+   "principle": "And do not go near the orphan's wealth, except in the way that is best, until he reaches his full strength. And keep the covenant. The covenant will be asked about.",
+   "shows": "A man in plain clothes arrives dusty and tired at a door to hand over a parcel he promised.",
+   "prompt": "A man dusty and tired from a long journey hands a wrapped parcel to a woman at her door as he promised, a long road behind him, warm light. The man, the woman and the parcel are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "from": "And keep the covenant"
+  },
+  {
+   "verse": 35,
+   "section": "34-35",
+   "image": "cand/12-level-scale-a.jpg",
+   "principle": "And give full measure when you measure, and weigh with the straight scale. That is better, and best in outcome.",
+   "shows": "A grocer's balance scale holds a heap of grain perfectly level against its weight.",
+   "prompt": "A grocer's balance scale with a heap of grain in one pan and a brass weight in the other, perfectly level, a plain market stall in soft light, no people. The scale is in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 35,
+   "section": "34-35",
+   "image": "cand/12-level-scale-b.jpg",
+   "principle": "And give full measure when you measure, and weigh with the straight scale. That is better, and best in outcome.",
+   "shows": "A seller pours grain to the brim of a woman's bag, with a little extra running over.",
+   "prompt": "A market seller pours grain into a woman's cloth bag filled right to the brim with a little extra running over the top, the woman smiling, bright market light. The seller, the woman and the bag are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 36,
+   "section": "36-39",
+   "image": "cand/13-fog-line-a.jpg",
+   "principle": "And do not follow after what you have no knowledge of. The hearing, the sight and the heart, each of those will be asked about.",
+   "shows": "A long line of people walk in single file through thick fog, each looking only at the back ahead, and one near the end has stopped to look around.",
+   "prompt": "A long single file line of ordinary people walking through thick fog toward the edge of a river, each looking only at the back of the one in front, and one person near the end of the line has stopped and turned to look carefully around himself, pale light. The line and the one who stopped are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 36,
+   "section": "36-39",
+   "image": "cand/13-fog-line-b.jpg",
+   "principle": "And do not follow after what you have no knowledge of. The hearing, the sight and the heart, each of those will be asked about.",
+   "shows": "A man closes his eyes and walks after a crowd off the path.",
+   "prompt": "A man with his eyes tightly closed walks after a crowd of people off a clear path into rough ground, while a clear signposted path runs on beside them in bright light. The man and the crowd are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 37,
+   "section": "36-39",
+   "image": "cand/14-strut-before-mountain-a.jpg",
+   "principle": "And do not walk on the earth swaggering. You will not tear through the earth, and you will not reach the mountains in height.",
+   "shows": "A tiny man struts with his chest out before an enormous mountain towering far above him.",
+   "prompt": "A tiny man striding with his chest puffed out and chin high in front of an enormous mountain towering far above him, a wide plain, the mountain peak in clear sky, bright light. The tiny man and the mountain are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 37,
+   "section": "36-39",
+   "image": "cand/14-strut-before-mountain-b.jpg",
+   "principle": "And do not walk on the earth swaggering. You will not tear through the earth, and you will not reach the mountains in height.",
+   "shows": "A man stamps his feet on a small hilltop under a huge range of mountains.",
+   "prompt": "A man stamps his feet proudly on a small grassy hilltop while a huge range of snowy mountains rises behind him far higher, bright light. The man and the mountains are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 44,
+   "section": "40-44",
+   "image": "cand/15-everything-sings-a.jpg",
+   "principle": "The seven heavens and the earth and whoever is in them glorify him. And there is nothing that does not glorify him with praise, but you do not understand their glorifying. He is forbearing, forgiving.",
+   "shows": "A meadow at sunrise alive with singing birds, dew on spiderwebs and bees in the flowers.",
+   "prompt": "A meadow at sunrise alive with life: small birds singing on stems, dew glittering on spiderwebs, bees in the flowers, a stream running, golden light on everything, no people. The birds, the webs and the flowers are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 44,
+   "section": "40-44",
+   "image": "cand/15-everything-sings-b.jpg",
+   "principle": "The seven heavens and the earth and whoever is in them glorify him. And there is nothing that does not glorify him with praise, but you do not understand their glorifying. He is forbearing, forgiving.",
+   "shows": "A night sky full of stars over a still lake with fireflies rising from the reeds.",
+   "prompt": "A night sky full of stars over a perfectly still lake with fireflies rising from the reeds along the bank, the stars reflected in the water, no people. The stars and the fireflies are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  }
+ ]
+}
