@@ -1377,3 +1377,29 @@ closed. Close calls go in the chapter's decision log instead.
 - al-pene khol-echav (16:12; 25:18) "in the presence of all his brothers" [alt at 16:12: in defiance of all his brothers] (decision log, call: close).
 - El ro'i (16:13) "a God of seeing". ra'iti acharei ro'i "seen the back of the one who sees me" [alt: gone on seeing, after the one who sees me] (decision log, call: ask).
 - Names: Hagar, Ishmael, Shur, Bered; Be'er Lachay Ro'i (16:14; 24:62; 25:11) "Beer-Lahai-Roi".
+
+## Settled in Genesis 17
+- El Shadday (17:1; 28:3; 35:11) "God Almighty": Shadday as at Job 5:17, with no bracket.
+- hithallekh lifne (17:1; 24:40; 48:15) "walk before".
+- natan berit ben (17:2) "set a covenant between", natan as at 9:12.
+- bime'od me'od (17:2, 6, 20) "very greatly", as me'od me'od (7:19).
+- nafal al-panav (17:3, 17) "fall on one's face". dibber et (17:3, 22, 23) "speak with", beside dibber el "speak to".
+- hamon (17:4, 5) "multitude": av hamon goyim "the father of a multitude of nations". It shares its English with rov (Job 11:2).
+- Avraham "Abraham" from 17:5 on, with one bracketed note at 17:5. Sarah "Sarah" from 17:15 on, with one bracketed note there. Yitschaq "Isaac", with one bracketed note at 17:19.
+- hifrah (the hiphil of parah; 17:6, 20) "make fruitful"; hirbah "multiply", as ravah.
+- natan with two objects (17:5) "make"; natan le- (17:6, 20) "make into", the same English as asah le- (12:2).
+- ledorotam, ledorotekhem (17:7, 9, 12) "through their generations", "through your generations".
+- hayah le- ... lelohim (17:7, 8) "be God to".
+- erets megurim (17:8; 28:4; 36:7; 37:1) "the land where ... is staying", megurim and gur as listed.
+- achuzzah (17:8; 23:4; 48:4) "holding": achuzzat olam "an everlasting holding". Kept distinct from rekush "possessions" and yarash "take possession of".
+- shamar berit (17:9, 10) "keep a covenant".
+- mul "circumcise"; the niphal "be circumcised", and with et-besar orlah "be circumcised in the flesh of the foreskin". orlah "foreskin"; arel "uncircumcised".
+- ben-shemonat yamim (17:12) "at eight days old".
+- miqnat kesef (17:12, 13, 23, 27) "bought with silver". ben-nekhar (17:12, 27) "foreigner": it shares its English with nokhri.
+- hannefesh hahi (17:14) "that person". nikhrat me'ammav "be cut off from one's people", nikhrat as listed. hefer berit "break a covenant".
+- 17:16 uverakhtiha wehayetah ... mimmennah "I will bless her, and she will become ... from her" [alt: him, he, from him, as the old Greek and Latin versions read] (decision log, call: clear). malkhe ammim "kings of peoples".
+- tsachaq (17:17; 18:12) "laugh": it shares its English with sachaq.
+- aval (17:19; 42:21) "Indeed" [alt at 17:19: But] (decision log, call: close); omnam stays "Truly".
+- nasi (17:20; 25:16) "chieftain", kept distinct from sar "prince", "official" and rosh "chief", "head".
+- lammo'ed hazzeh (17:21) "at this set time", mo'ed as at 1:14; bashanah ha'acheret "next year".
+- alah me'al (17:22; 35:13) "go up from".
