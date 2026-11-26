@@ -1978,3 +1978,24 @@ closed. Close calls go in the chapter's decision log instead.
 - saris (37:36; 39:1; 40:2, 7) "court official" [alt at 37:36: eunuch] (decision log, call: clear), kept distinct from sar "official" (12:15). sar hattabbachim (37:36; 39:1; 40:3) "the commander of the guard", sar as at 21:22.
 - hammedanim (37:36) "the Medanites" [alt: the Midianites] (decision log, call: clear).
 - Names: Dothan, Potiphar; hayyishme'elim "the Ishmaelites"; midyanim (37:28) "Midianite".
+
+## Settled in Genesis 38
+- natah ad, natah el of a person (38:1, 16) "turn aside to": it shares its English with sur el (19:2-3).
+- wehayah bikhziv (38:5) "And he was at Chezib" [alt: And she was at Chezib when she gave birth to them] (decision log, call: clear).
+- ra be'ene YHWH of a person and of what he did (38:7, 10) "evil in the eyes of Yahweh", with one bracketed note at 38:7 on the name "Er"; "bad in the eyes of" stays at 21:11 and 28:8.
+- yibbem (38:8; Deut 25:5, 7) "do the duty of a husband's brother to". heqim zera le- "raise up offspring for".
+- shichet artsah (38:9) "waste ... on the ground", with "his seed" supplied: zera is the word for "offspring" and for "seed". "Ruin" stays elsewhere.
+- almanah "widow"; almenut "widowhood": bigde almenutah "her widow's garments". cham "father-in-law".
+- wayyirbu hayyamim (38:12) "many days passed". kemishlosh chodashim (38:24) "about three months later".
+- rea of Hirah (38:12, 20) "friend", as at Job 2:11 [alt at 38:12: shepherd] (decision log, call: clear); the bracket is not repeated at 38:20.
+- hesir me'al of what a person wears (38:14, 19) "take off"; "remove" stays elsewhere. hit'allef (38:14) "wrap oneself up".
+- chashav le- of a person taken for what she is not (38:15) "take for"; "count as" stays at 31:15.
+- eravon (38:17, 18, 20) "pledge".
+- chotam, chotemet "seal"; petil "cord"; matteh "staff": it shares its English with maqqel (32:10).
+- qedeshah (38:21, 22; Deut 23:17; Hos 4:14) "shrine prostitute", kept distinct from zonah "prostitute" (38:15), with one bracketed note at 38:21. zanah (38:24) "prostitute oneself"; zenunim "prostitution".
+- hayah lavuz (38:23) "be held in contempt", buz as listed.
+- saraf of a person (38:24) "burn".
+- tsadaq min (38:26; Ezek 16:52) "be more righteous than" [alt at 38:26: She is in the right; it is by me] (decision log, call: clear).
+- natan yad (38:28) "put out a hand". shani (38:28, 30) "scarlet thread", with "thread" supplied. qashar al "tie on".
+- parats perets (38:29) "make a breach", perets as at Job 16:14, with one bracketed note on the name "Perez".
+- Names: Hirah, Shua, Er, Onan, Tamar, Chezib, Enaim, Perez; adullami "Adullamite". Shelah (38:5) is not the name of 10:24, which ends with another letter, and Timnah (38:12) is not the Timna of 36:12; English has one spelling for each pair. Zerah as at 36:13.
