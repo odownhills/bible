@@ -1,5 +1,5 @@
 {
- "note": "Trial pictures for Quran 17:90-111.",
+ "note": "Made by the steps in TV_PICTURES.md for Quran 17:90-111 (2026-11-26): 15 pictures from 30 trial pictures. Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. The Prophet Muhammad is never shown in any way, nor anyone standing in for him; God and the angels are not pictured; no religious symbols of any tradition; nothing violent. Tried and not chosen: Water bursts from a rock face in a dry canyon. Channels of water run among rows of palms and vines in a valley garden. A golden-roofed palace glitters at the end of a desert road. A rope hangs down from the clouds over an empty meadow. A single oak stands on the line between two farms in the noon light. A walker follows a clear stream out of a dark forest into a bright meadow. Sunlight pours down through the canopy of an ancient redwood forest. A man in a full pantry holds a clenched fist over a table of coins while a child watches at the window. A dark cloud of locusts hangs over a golden wheat field at sunset. A broken wagon axle on a quiet wet beach with the tide just gone out. A busy town square packed with every sort of person from morning to market. Steady rain falls on a dry garden in a measured, patient way. A man kneels in a plain bright room, head bowed, hand on his chest, tears on his face. A footbridge crosses halfway between a loud rapid and a quiet pool. A wide ocean horizon with the first gold of sunrise spreading.",
  "method": "Second method, asked for by Obay on 2026-11-21: (1) split the part into sections that each carry one deep meaning, written as one plain sentence; (2) write picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
  "sections": [
   {
@@ -63,48 +63,32 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
    "verse": 90,
    "section": "90-93",
-   "image": "cand/01-spring-gushes-a.jpg",
+   "image": "01-spring-gushes.jpg",
+   "tall": "tall/01-spring-gushes.jpg",
    "principle": "And they said, \"We will not believe you until you make a spring gush out of the earth for us,",
    "shows": "A spring gushes out of dry cracked ground and runs down a dry slope.",
    "prompt": "A bright clear spring gushing up out of dry cracked ground and running down a dry slope in a wide barren land, the water glittering in the sun, no people. The spring and the stream are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 90,
-   "section": "90-93",
-   "image": "cand/01-spring-gushes-b.jpg",
-   "principle": "And they said, \"We will not believe you until you make a spring gush out of the earth for us,",
-   "shows": "Water bursts from a rock face in a dry canyon.",
-   "prompt": "Water bursting out of a bare rock face in a dry canyon, the stream widening over red stones in the sun, no people. The water and the rock are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 91,
    "section": "90-93",
-   "image": "cand/02-palm-garden-rivers-a.jpg",
+   "image": "02-palm-garden-rivers.jpg",
+   "tall": "tall/02-palm-garden-rivers.jpg",
    "principle": "or you have a garden of date palms and grapevines, and you make rivers gush out through the midst of it in abundance,",
    "shows": "A garden of date palms and grapevines with rivers running through it in abundance.",
    "prompt": "A lush garden of tall date palms and heavy grapevines with several bright rivers running through the middle of it in abundance, golden afternoon light, no people. The palms, vines and rivers are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 91,
-   "section": "90-93",
-   "image": "cand/02-palm-garden-rivers-b.jpg",
-   "principle": "or you have a garden of date palms and grapevines, and you make rivers gush out through the midst of it in abundance,",
-   "shows": "Channels of water run among rows of palms and vines in a valley garden.",
-   "prompt": "A valley garden of rows of palms and vines with many bright channels of water running among them, seen from above in soft light, no people. The garden and the channels are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 93,
    "section": "90-93",
-   "image": "cand/03-golden-house-a.jpg",
+   "image": "03-golden-house.jpg",
+   "tall": "tall/03-golden-house.jpg",
    "principle": "or you have a house of gold, or you climb up into the sky. And we will not believe in your climb until you send down to us a book that we can read.\" Say, \"Glory to my Lord! Am I anything but a human being, a messenger?\"",
    "shows": "A house of gold gleams on a hill under a bright sky.",
    "prompt": "A small house made entirely of gleaming gold standing on a green hill under a bright blue sky, a plain empty road leading to it, no people. The golden house is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
@@ -112,113 +96,57 @@
   },
   {
    "verse": 93,
+   "from": "or you climb up into the sky",
    "section": "90-93",
-   "image": "cand/03-golden-house-b.jpg",
-   "principle": "or you have a house of gold, or you climb up into the sky. And we will not believe in your climb until you send down to us a book that we can read.\" Say, \"Glory to my Lord! Am I anything but a human being, a messenger?\"",
-   "shows": "A golden-roofed palace glitters at the end of a desert road.",
-   "prompt": "A golden-roofed palace glittering at the end of a long desert road in heat haze, no people. The palace is in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 93,
-   "section": "90-93",
-   "image": "cand/04-ladder-sky-a.jpg",
+   "image": "04-ladder-sky.jpg",
+   "tall": "tall/04-ladder-sky.jpg",
    "principle": "or you have a house of gold, or you climb up into the sky. And we will not believe in your climb until you send down to us a book that we can read.\" Say, \"Glory to my Lord! Am I anything but a human being, a messenger?\"",
    "shows": "A very tall ladder rises up into the clouds with no one on it.",
    "prompt": "A very tall wooden ladder standing in an empty green field and rising up into the clouds with nobody on it, bright sky, no people. The ladder and the clouds are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false,
-   "from": "or you climb up into the sky"
-  },
-  {
-   "verse": 93,
-   "section": "90-93",
-   "image": "cand/04-ladder-sky-b.jpg",
-   "principle": "or you have a house of gold, or you climb up into the sky. And we will not believe in your climb until you send down to us a book that we can read.\" Say, \"Glory to my Lord! Am I anything but a human being, a messenger?\"",
-   "shows": "A rope hangs down from the clouds over an empty meadow.",
-   "prompt": "A long rope hanging straight down from the clouds over an empty meadow, no people, bright sky. The rope and the clouds are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false,
-   "from": "or you climb up into the sky"
+   "people": false
   },
   {
    "verse": 96,
    "section": "94-96",
-   "image": "cand/05-boundary-stone-a.jpg",
+   "image": "05-boundary-stone.jpg",
+   "tall": "tall/05-boundary-stone.jpg",
    "principle": "Say, \"God is enough as a witness between me and you. He is aware of his servants and sees them.\"",
    "shows": "A weathered boundary stone stands between two fields in plain daylight.",
    "prompt": "A weathered old boundary stone standing alone between two different fields in plain bright daylight, one field green and one golden, a wide quiet landscape, no people. The stone is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 96,
-   "section": "94-96",
-   "image": "cand/05-boundary-stone-b.jpg",
-   "principle": "Say, \"God is enough as a witness between me and you. He is aware of his servants and sees them.\"",
-   "shows": "A single oak stands on the line between two farms in the noon light.",
-   "prompt": "A single old oak tree standing exactly on the line between two farms with a fence on either side in the noon light, no people. The oak is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 97,
    "section": "97-100",
-   "image": "cand/06-white-stones-a.jpg",
+   "image": "06-white-stones.jpg",
+   "tall": "tall/06-white-stones.jpg",
    "principle": "And whoever God guides, he is the one who is guided. And whoever he leads astray, you will find no allies for them apart from him. And we will gather them on the Day of Resurrection on their faces, blind, mute and deaf.",
    "shows": "A walker follows a line of white stones across a dark moor to a lit farmhouse.",
    "prompt": "A walker seen from behind following a line of white stones laid across a dark moor at dusk toward a warm lit farmhouse in the distance, mist on the moor. The walker, the stones and the farmhouse are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 97,
-   "section": "97-100",
-   "image": "cand/06-white-stones-b.jpg",
-   "principle": "And whoever God guides, he is the one who is guided. And whoever he leads astray, you will find no allies for them apart from him. And we will gather them on the Day of Resurrection on their faces, blind, mute and deaf.",
-   "shows": "A walker follows a clear stream out of a dark forest into a bright meadow.",
-   "prompt": "A walker seen from behind following a clear stream out of a dark forest into a bright sunlit meadow, morning light. The walker and the stream are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 99,
    "section": "97-100",
-   "image": "cand/07-child-milky-way-a.jpg",
+   "image": "07-child-milky-way.jpg",
+   "tall": "tall/07-child-milky-way.jpg",
    "principle": "Have they not seen that God, who created the heavens and the earth, has the power to create the like of them? And he has set a term for them in which there is no doubt. But the wrongdoers have refused anything but disbelief.",
    "shows": "A child looks up at the Milky Way over a small village.",
    "prompt": "A small child on a hilltop looking up at the vast Milky Way over a small sleeping village, seen from behind, stars everywhere. The child and the stars are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 99,
-   "section": "97-100",
-   "image": "cand/07-child-milky-way-b.jpg",
-   "principle": "Have they not seen that God, who created the heavens and the earth, has the power to create the like of them? And he has set a term for them in which there is no doubt. But the wrongdoers have refused anything but disbelief.",
-   "shows": "Sunlight pours down through the canopy of an ancient redwood forest.",
-   "prompt": "Shafts of sunlight pouring down through the canopy of an ancient redwood forest, enormous trunks, mist, no people. The trunks and the light are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 100,
    "section": "97-100",
-   "image": "cand/08-miser-granary-a.jpg",
+   "image": "08-miser-granary.jpg",
+   "tall": "tall/08-miser-granary.jpg",
    "principle": "Say, \"If it were you who owned the storehouses of my Lord's mercy, then you would hold back for fear of spending. And man is tightfisted.\"",
    "shows": "A miser hugs a huge sack of grain in a barn while hungry people wait at the open door.",
    "prompt": "A well-fed man hugs a huge sack of grain tightly in a full barn heaped with sacks while thin hungry people with empty bowls stand waiting at the open barn door, afternoon light. The man, the sacks and the people at the door are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 100,
-   "section": "97-100",
-   "image": "cand/08-miser-granary-b.jpg",
-   "principle": "Say, \"If it were you who owned the storehouses of my Lord's mercy, then you would hold back for fear of spending. And man is tightfisted.\"",
-   "shows": "A man in a full pantry holds a clenched fist over a table of coins while a child watches at the window.",
-   "prompt": "A man in a pantry full of food holds a clenched fist over a table of coins, a hungry child watching quietly through the window, afternoon light. The man, the pantry and the child are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 101,
    "section": "101-104",
-   "image": "cand/09-locust-cloud-a.jpg",
-   "principle": "And we certainly gave Moses nine clear signs. So ask the Children of Israel. When he came to them, Pharaoh said to him, \"I do think, Moses, that you are bewitched.\"",
-   "shows": "A dark cloud of locusts hangs over a golden wheat field at sunset.",
-   "prompt": "A dark swarming cloud of locusts hanging over a golden wheat field at sunset, the sky dim, no people. The swarm and the wheat are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 101,
-   "section": "101-104",
-   "image": "cand/09-locust-cloud-b.jpg",
+   "image": "09-locust-cloud.jpg",
+   "tall": "tall/09-locust-cloud.jpg",
    "principle": "And we certainly gave Moses nine clear signs. So ask the Children of Israel. When he came to them, Pharaoh said to him, \"I do think, Moses, that you are bewitched.\"",
    "shows": "Nine jars in a row each holding a different sign: a frog, red water, grain, a feather, ice.",
    "prompt": "Nine plain clay jars in a row on a long wooden table, each holding something different: a frog, red water, dry grain, a feather, ice, a flame, ashes, a cloud of mist and a stone, soft window light, no people. The nine jars are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
@@ -227,67 +155,37 @@
   {
    "verse": 103,
    "section": "101-104",
-   "image": "cand/10-wheel-on-shore-a.jpg",
+   "image": "10-wheel-on-shore.jpg",
+   "tall": "tall/10-wheel-on-shore.jpg",
    "principle": "So he wanted to unsettle them from the land, but we drowned him and those with him, all together.",
    "shows": "A wooden cart wheel half buried on a calm shore at sunrise, the sea smooth.",
    "prompt": "A wooden cart wheel half buried in wet sand on a calm shore at sunrise, the sea smooth and quiet, a few shells and foam, no people. The wheel is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 103,
-   "section": "101-104",
-   "image": "cand/10-wheel-on-shore-b.jpg",
-   "principle": "So he wanted to unsettle them from the land, but we drowned him and those with him, all together.",
-   "shows": "A broken wagon axle on a quiet wet beach with the tide just gone out.",
-   "prompt": "A broken wooden wagon axle and a scatter of planks on a quiet wet beach with the tide just gone out, soft early light, no people. The axle and the planks are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 104,
    "section": "101-104",
-   "image": "cand/11-mixed-crowd-a.jpg",
+   "image": "11-mixed-crowd.jpg",
+   "tall": "tall/11-mixed-crowd.jpg",
    "principle": "And after him we said to the Children of Israel, \"Live in the land. So when the promise of the hereafter comes, we will bring you as a mixed crowd.\"",
    "shows": "A mixed crowd of all kinds of people gathered together in a wide green field at morning.",
    "prompt": "A mixed crowd of all kinds of ordinary people of every age and background gathered together in a wide green field at morning, all milling and talking, bright light. The crowd is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 104,
-   "section": "101-104",
-   "image": "cand/11-mixed-crowd-b.jpg",
-   "principle": "And after him we said to the Children of Israel, \"Live in the land. So when the promise of the hereafter comes, we will bring you as a mixed crowd.\"",
-   "shows": "A busy town square packed with every sort of person from morning to market.",
-   "prompt": "A busy sunlit town square packed with every sort of ordinary person, old and young, from many backgrounds, mixed together, morning light. The crowd is in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 106,
    "section": "105-106",
-   "image": "cand/12-stepped-falls-a.jpg",
+   "image": "12-stepped-falls.jpg",
+   "tall": "tall/12-stepped-falls.jpg",
    "principle": "And it is a Quran that we have divided, so that you may read it to the people slowly, and we have sent it down in stages.",
    "shows": "Small waterfalls step down a green hillside in stages, each pool clear.",
    "prompt": "A series of small waterfalls stepping down a green hillside in gentle stages, each pool clear and still, soft morning light, no people. The waterfalls are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 106,
-   "section": "105-106",
-   "image": "cand/12-stepped-falls-b.jpg",
-   "principle": "And it is a Quran that we have divided, so that you may read it to the people slowly, and we have sent it down in stages.",
-   "shows": "Steady rain falls on a dry garden in a measured, patient way.",
-   "prompt": "Steady patient rain falling on a dry garden, the soil darkening and the plants lifting, soft light, no people. The garden and the rain are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 107,
    "section": "107-109",
-   "image": "cand/13-kneeling-tears-a.jpg",
-   "principle": "Say, \"Believe in it or do not believe. Those who were given knowledge before it, when it is recited to them, fall on their chins, bowing down,",
-   "shows": "A man kneels in a plain bright room, head bowed, hand on his chest, tears on his face.",
-   "prompt": "A middle-aged man kneeling on the floor of a plain bright room, head bowed, one hand on his chest, tears on his face, humbled, soft window light. The man is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
-   "verse": 107,
-   "section": "107-109",
-   "image": "cand/13-kneeling-tears-b.jpg",
+   "image": "13-kneeling-tears.jpg",
+   "tall": "tall/13-kneeling-tears.jpg",
    "principle": "Say, \"Believe in it or do not believe. Those who were given knowledge before it, when it is recited to them, fall on their chins, bowing down,",
    "shows": "A woman kneels in a quiet field at dawn with her hands over her face, weeping.",
    "prompt": "A woman kneeling in a quiet field at dawn with her hands over her face, weeping quietly, soft pink light. The woman is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
@@ -295,37 +193,21 @@
   {
    "verse": 110,
    "section": "110-111",
-   "image": "cand/14-middle-path-a.jpg",
+   "image": "14-middle-path.jpg",
+   "tall": "tall/14-middle-path.jpg",
    "principle": "Say, \"Call on God, or call on the All-Merciful. Whichever you call on, to him belong the best names.\" And do not be loud in your prayer, and do not be hushed in it, but seek a way between the two.",
    "shows": "A path runs between a roaring waterfall on one side and a silent still pond on the other.",
    "prompt": "A path running between a roaring waterfall on one side and a perfectly silent still pond on the other, steady and level in the middle, soft light, no people. The waterfall, the pond and the path are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 110,
-   "section": "110-111",
-   "image": "cand/14-middle-path-b.jpg",
-   "principle": "Say, \"Call on God, or call on the All-Merciful. Whichever you call on, to him belong the best names.\" And do not be loud in your prayer, and do not be hushed in it, but seek a way between the two.",
-   "shows": "A footbridge crosses halfway between a loud rapid and a quiet pool.",
-   "prompt": "A footbridge crossing halfway between a loud white rapid and a quiet still pool, soft light, no people. The bridge, the rapid and the pool are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 111,
    "section": "110-111",
-   "image": "cand/15-peaks-first-light-a.jpg",
+   "image": "15-peaks-first-light.jpg",
+   "tall": "tall/15-peaks-first-light.jpg",
    "principle": "And say, \"Praise belongs to God, who has not taken a child for himself, and has no partner in the kingdom, and has no ally against humiliation.\" And declare how great he is.",
    "shows": "First light touches only the highest peaks above a sea of cloud.",
    "prompt": "First light of the sun touching only the highest snowy peaks above a sea of cloud, the valleys still dark, vast and quiet, no people. The peaks and the cloud are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 111,
-   "section": "110-111",
-   "image": "cand/15-peaks-first-light-b.jpg",
-   "principle": "And say, \"Praise belongs to God, who has not taken a child for himself, and has no partner in the kingdom, and has no ally against humiliation.\" And declare how great he is.",
-   "shows": "A wide ocean horizon with the first gold of sunrise spreading.",
-   "prompt": "A wide empty ocean horizon with the first gold of sunrise spreading across the sky and water, vast and quiet, no people. The horizon and the sky are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   }
  ]
