@@ -1,0 +1,208 @@
+{
+ "note": "Made by the steps in TV_PICTURES.md for Quran 17:45-65 (2026-11-26): 15 pictures from 30 trial pictures. Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. The Prophet Muhammad is never shown in any way, nor anyone standing in for him; God and the angels are not pictured; no religious symbols of any tradition; nothing violent. Tried and not chosen: A frosted glass wall divides a bright room from a dim empty one. A woman keeps heavy dark curtains drawn across a window on a bright day. People whisper behind raised hands in a market crowd, glancing the same way. A traveler turns a map round and round in a forest of identical trails. A crumbled old brick wall in a desert, nothing left but dust. A seed sprouts in a fresh turn of dark soil with a tiny first leaf. A child wakes from an afternoon nap in a sunlit room, rubbing her eyes. An angry neighbor at a fence is answered softly by another with open hands. A man tries to block a rushing river with a flimsy garden gate. Climbers on a rock face with ropes each reaching toward a bright summit. A lone she-camel stands in a wide desert at sunrise. A strange dark tree at the edge of a valley with mist at its roots. A row of fresh clay bowls drying on a plain wooden shelf. A moth flies toward a bright flame on a dark night. A child sleeps peacefully in a parent's arms through the thunder.",
+ "method": "Second method, asked for by Obay on 2026-11-21: (1) split the part into sections that each carry one deep meaning, written as one plain sentence; (2) write picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
+ "sections": [
+  {
+   "verses": "45-48",
+   "meaning": "A hidden screen is placed between the reciting and those who do not believe in the hereafter; veils over their hearts and a heaviness in their ears; they whisper in private, and they have gone astray and cannot find a way. (Never shown: the one who recites or is addressed. Only the screen, the veil, the deafened and the whisperers.)",
+   "ideas": [
+    "A tall hanging cloth screen across a field path at dusk, a lantern beyond it",
+    "A man in heavy earmuffs faces a wall in a bright room while the window behind him is open",
+    "A hushed group whispering with heads together at night",
+    "A traveler at a crossroads with a dozen signposts pointing every way"
+   ]
+  },
+  {
+   "verses": "49-52",
+   "meaning": "'When we are bones and crumbled remains, will we be raised as a new creation?' The one who brought you into being the first time will bring you back; on the day he calls you, you will answer with praise and think you stayed only a little while.",
+   "ideas": [
+    "A handful of dry dust blown from an open palm over a plain",
+    "A newborn's hand gripping a finger",
+    "A man wakes under an enormous old tree",
+    "A child wakes from a nap in a sunlit room"
+   ]
+  },
+  {
+   "verses": "53-55",
+   "meaning": "Say what is best; Satan stirs up trouble among them; your Lord knows you best.",
+   "ideas": [
+    "A hand pours water over a spark in dry grass",
+    "An angry neighbor at a fence answered softly with open hands"
+   ]
+  },
+  {
+   "verses": "56-57",
+   "meaning": "Call on those you have claimed apart from him: they have no power to lift harm or divert it; those they call on are themselves seeking the means to approach their Lord, hoping for mercy and fearing punishment.",
+   "ideas": [
+    "A man leans his whole weight on a thin reed that bends",
+    "A man tries to stop a rushing river with a garden gate",
+    "A line of people climbing a long stone staircase toward light",
+    "Climbers on a rock face with a rope toward a summit light"
+   ]
+  },
+  {
+   "verses": "58-60",
+   "meaning": "The earlier peoples called the signs lies; we gave Thamud the she-camel as a sign and they did wrong by her; we send the signs only to frighten; the cursed tree was a trial. (Nothing violent is shown.)",
+   "ideas": [
+    "A she-camel drinks at a village well at dawn while villagers stand apart",
+    "A lone twisted tree on rocky ground at night"
+   ]
+  },
+  {
+   "verses": "61-65",
+   "meaning": "Iblis refuses to bow to one created from clay and says he will bridle Adam's descendants, all but a few; Satan promises nothing but delusion; over the servants of God he has no authority. (Never shown: Adam, the angels, Iblis. Only clay, delusion and shelter.)",
+   "ideas": [
+    "A lump of wet clay shaped into a bowl on a potter's wheel",
+    "A thirsty traveler walks toward a shimmering mirage over a dry lake bed",
+    "A small stone cottage glowing warm and firm in a storm",
+    "A child asleep in a parent's arms during thunder"
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "verse": 45,
+   "section": "45-48",
+   "image": "01-cloth-screen.jpg",
+   "tall": "tall/01-cloth-screen.jpg",
+   "principle": "And when you read the Quran, we place between you and those who do not believe in the hereafter a hidden screen.",
+   "shows": "A tall cloth screen hangs across a quiet field path at dusk, a lantern glowing dimly on the far side, no one in sight.",
+   "prompt": "A tall plain cloth screen hanging across a quiet path in an open field at dusk, a lantern glowing dimly on the far side and its light barely showing through the cloth, no people. The screen and the dim lantern are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 46,
+   "section": "45-48",
+   "image": "02-heavy-ears.jpg",
+   "tall": "tall/02-heavy-ears.jpg",
+   "principle": "And we place veils over their hearts, so that they do not understand it, and in their ears a heaviness. And when you mention your Lord alone in the Quran, they turn their backs in aversion.",
+   "shows": "A man wearing thick heavy earmuffs sits facing a blank wall in a bright room while an open window behind him fills with birdsong.",
+   "prompt": "A man in plain clothes wearing thick heavy earmuffs sits facing a blank wall in a bright room, his back turned to an open window behind him where birds sing in the sunlit garden, stubborn shoulders. The man, the earmuffs and the window are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 47,
+   "section": "45-48",
+   "image": "03-whisperers.jpg",
+   "tall": "tall/03-whisperers.jpg",
+   "principle": "We know best what they listen with when they listen to you, and when they talk in private, when the wrongdoers say, \"You are following only a bewitched man.\"",
+   "shows": "A group of men whisper with heads together over a table at night, one waving a flat hand dismissively.",
+   "prompt": "A small group of men whisper with heads close together over a table in a dim room at night, one waving a flat hand dismissively, a single oil lamp, hushed. The men are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 48,
+   "section": "45-48",
+   "image": "04-signposts.jpg",
+   "tall": "tall/04-signposts.jpg",
+   "principle": "Look how they have given examples for you, so they have gone astray and cannot find a way.",
+   "shows": "A traveler stands at a crossroads with a dozen signposts pointing every way, lost.",
+   "prompt": "A traveler with a pack stands at a crossroads in a field with a dozen blank signposts pointing in every direction at once, scratching his head, lost, afternoon light. The traveler and the signposts are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 49,
+   "section": "49-52",
+   "image": "05-dust-in-palm.jpg",
+   "tall": "tall/05-dust-in-palm.jpg",
+   "principle": "And they said, \"When we are bones and crumbled remains, will we really be raised up as a new creation?\"",
+   "shows": "A handful of dry dust is blown from an open palm over a wide empty plain.",
+   "prompt": "An open palm holding a handful of dry dust that the wind is blowing away over a wide empty dry plain, soft low light, close focus on the hand and the dust. The hand and the drifting dust are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 51,
+   "from": "The one who brought you into being the first time",
+   "section": "49-52",
+   "image": "06-first-time.jpg",
+   "tall": "tall/06-first-time.jpg",
+   "principle": "or some creation of the kind that is great in your chests.\" Then they will say, \"Who will bring us back?\" Say, \"The one who brought you into being the first time.\" Then they will shake their heads at you and say, \"When is it?\" Say, \"It may ...",
+   "shows": "A newborn baby's tiny hand grips a grown finger.",
+   "prompt": "A newborn baby's tiny hand gripping a grown person's finger, close and soft, warm morning light, shallow focus. The tiny hand and the finger are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 52,
+   "from": "you will think that you stayed only a little while",
+   "section": "49-52",
+   "image": "07-woke-under-tree.jpg",
+   "tall": "tall/07-woke-under-tree.jpg",
+   "principle": "On the day he calls you, you will answer with praise of him, and you will think that you stayed only a little while.\"",
+   "shows": "A man wakes under an enormous old tree with fallen leaves around him, thinking he has only dozed a little while.",
+   "prompt": "A man wakes sitting up at the foot of an enormous old tree with fallen leaves heaped around him and the grass grown long around his boots, rubbing his eyes as if he had only dozed a little while, soft afternoon light. The man and the tree are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 53,
+   "section": "53-55",
+   "image": "08-water-on-spark.jpg",
+   "tall": "tall/08-water-on-spark.jpg",
+   "principle": "And tell my servants to say what is best. Satan stirs up trouble among them. Satan is a clear enemy to man.",
+   "shows": "A hand pours water over a small spark in dry grass before it can spread.",
+   "prompt": "A hand tips a cup of water over a small glowing spark in dry grass, putting it out before it can spread, a wide dry field behind. The hand, the cup and the spark are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 56,
+   "section": "56-57",
+   "image": "09-reed-staff.jpg",
+   "tall": "tall/09-reed-staff.jpg",
+   "principle": "Say, \"Call on those you have claimed apart from him. They have no power to lift harm from you, or to divert it.\"",
+   "shows": "A man leans his whole weight on a thin reed that bends and begins to snap.",
+   "prompt": "A man in plain clothes leaning his whole weight on a thin reed that bends and begins to snap under him, his balance going, a dry plain, afternoon light. The man and the bending reed are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 57,
+   "from": "Those whom they call on are seeking",
+   "section": "56-57",
+   "image": "10-stair-to-light.jpg",
+   "tall": "tall/10-stair-to-light.jpg",
+   "principle": "Those whom they call on are seeking the means of approach to their Lord, to see which of them is nearest, and they hope for his mercy and fear his punishment. The punishment of your Lord is a thing to beware of.",
+   "shows": "A long line of people climb a wide stone staircase toward a warm light at the top.",
+   "prompt": "A long line of ordinary people climbing a wide stone staircase that rises toward a warm bright light at the top, each looking up, the ones near the top reaching down a hand, soft golden light. The staircase and the people are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 59,
+   "section": "58-60",
+   "image": "11-she-camel-well.jpg",
+   "tall": "tall/11-she-camel-well.jpg",
+   "principle": "And nothing kept us from sending the signs except that the earlier peoples called them lies. And we gave Thamud the she-camel, giving sight, but they did wrong by her. And we send the signs only to frighten.",
+   "shows": "A she-camel drinks from a stone trough at a desert well at dawn while villagers stand apart watching.",
+   "prompt": "A calm she-camel drinks from a stone trough at a village well in the desert at dawn, a few villagers standing apart at a distance watching, one with folded arms, quiet and calm, golden light. The camel and the trough are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 60,
+   "from": "And we made the vision",
+   "section": "58-60",
+   "image": "12-twisted-tree.jpg",
+   "tall": "tall/12-twisted-tree.jpg",
+   "principle": "And when we said to you, \"Your Lord has surrounded the people.\" And we made the vision that we showed you, and the cursed tree in the Quran, only a trial for the people. And we frighten them, but it only increases them in great excess.",
+   "shows": "A lone twisted dark tree grows from rocky ground under a stormy night sky.",
+   "prompt": "A lone twisted dark tree growing alone from rocky ground under a stormy moonlit night sky, its branches strangely shaped, no people. The tree is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 61,
+   "section": "61-65",
+   "image": "13-clay-bowl.jpg",
+   "tall": "tall/13-clay-bowl.jpg",
+   "principle": "And when we said to the angels, \"Bow down to Adam,\" they bowed down, except Iblis. He said, \"Shall I bow down to one you created from clay?\"",
+   "shows": "A lump of wet clay is shaped into a bowl on a potter's wheel.",
+   "prompt": "A lump of wet clay being shaped into a bowl on a potter's wheel, hands in the clay only, close and warm, soft window light. The wheel, the clay and the hands are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 64,
+   "from": "And Satan promises them nothing but delusion",
+   "section": "61-65",
+   "image": "14-mirage.jpg",
+   "tall": "tall/14-mirage.jpg",
+   "principle": "And unsettle whomever of them you can with your voice, and rally your horses and your men on foot against them, and be their partner in wealth and children, and make them promises.\" And Satan promises them nothing but delusion.",
+   "shows": "A thirsty traveler walks toward a shimmering lake that is only a mirage over a dry cracked lake bed.",
+   "prompt": "A thirsty traveler with a pack walks across a hot desert toward a shimmering pool of water on the horizon that is only a mirage over a dry cracked lake bed, heat haze, seen from behind. The traveler and the mirage are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 65,
+   "from": "And your Lord is enough as one to rely on",
+   "section": "61-65",
+   "image": "15-storm-cottage.jpg",
+   "tall": "tall/15-storm-cottage.jpg",
+   "principle": "\"As for my servants, you have no authority over them.\" And your Lord is enough as one to rely on.",
+   "shows": "A small stone cottage glows warm and stands firm on a hill in a howling storm.",
+   "prompt": "A small stone cottage with warm lit windows standing firm on a hill in a howling storm with wind-bent trees and rain, no people. The cottage is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  }
+ ]
+}
