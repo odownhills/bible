@@ -1436,3 +1436,39 @@ closed. Close calls go in the chapter's decision log instead.
 - ho'il with an infinitive (18:27, 31) "take it on oneself". afar wa'efer "dust and ashes".
 - chaser with an object (18:28) "lack", as planned. be- of what a thing is done for (18:28) "over". shichet stays "ruin" (18:28, 31, 32).
 - akh happa'am (18:32) "only this once". halakh of Yahweh leaving (18:33) "go away".
+
+## Settled in Genesis 19
+- yada of sex outside marriage too (19:5, 8) "be intimate with", as Obay's line on 4:1.
+- hishtachawah appayim artsah (19:1) "bow down with one's face to the ground". sha'ar "gate". rechov "square".
+- patsar be- with me'od (19:3, 9) "press ... hard"; uts be- (19:15) "urge".
+- matsot "unleavened bread"; afah "bake".
+- miqqatseh of a whole people (19:4) "to the last one". minna'ar we'ad-zaqen "from young to old"; miqqaton we'ad-gadol (19:11) "from the smallest to the greatest".
+- hera (19:7, 9) "do evil"; hera le- ... min "do worse evil to ... than to".
+- katov be'ene (19:8) "as is good in the eyes of". betsel qorati "under the shadow of my roof".
+- gesh-hal'ah (19:9) "Stand back!" gur with no place named (19:9) "stay as a foreigner". A verb followed by its own infinitive absolute (19:9 wayyishpot shafot) "actually".
+- shavar "break". sanwerim (19:11; 2 Kgs 6:18) "blindness": hikkah ba- "strike with". la'ah with an infinitive (19:11) "weary oneself trying to".
+- chatan "son-in-law". loqeche venotav (19:14) "who were to marry his daughters" [alt: who had married his daughters] (decision log, call: close).
+- A participle of what is about to happen, with no hinneh (19:13, 14) "be going to", as at 7:4.
+- tsicheq (the piel; 19:14; 21:9; 26:8; 39:14) "joke" where it fits, beside tsachaq "laugh".
+- hannimtsa'ot (19:15) "who are here". avon of a city about to be ruined (19:15) "punishment".
+- hitmahmah "linger". hecheziq beyad (19:16) "take hold of the hand of". chemlah (19:16; Isa 63:9), the noun of chamal "spare": bechemlat YHWH alav "because Yahweh was sparing him".
+- hinniach of a person (19:16) "set down" ("settle" at 2:15).
+- nimlat al-nefesh (19:17) "escape for one's life". hibbit achare "look behind"; amad of one who is fleeing "stop". haharah, bahar (19:17, 19, 30) "to the hill country", "in the hill country", as at 12:8 and 14:10.
+- Adonay in Lot's mouth (19:18) "Lord" [alt: my lords] (decision log, call: ask); adonay to the two (19:2) "my lords".
+- higdil chesed (19:19) "make one's faithful love great"; asah chesed im "show faithful love to". hecheyah et-nefesh "keep alive": nafshi is "me", as at 12:13.
+- davaq of disaster, with a person as its object (19:19) "overtake". hara'ah (19:19) "the disaster", as at Job 2:11.
+- mits'ar (19:20) "a small thing", as at Job 8:7, with one bracketed note at 19:22 that the name "Zoar" sounds like it.
+- nasa panim le- of a request (19:21) "grant": the idiom is translated by its meaning (of taking sides it stays "show favoritism to").
+- hafakh of cities (19:21, 25, 29) "overturn", as listed; hafekhah (19:29) "the overturning" (mahpekhah, Deut 29:23, is to stand beside it).
+- yatsa of the sun (19:23) "rise". himtir with an object (19:24) "rain". gofrit wa'esh "sulfur and fire". min-hashamayim "from the sky".
+- tsemach ha'adamah (19:25) "what sprouted from the ground". netsiv melach "a pillar of salt".
+- hishkim ... el (19:27) "rise early ... and go to", with "go" supplied.
+- qitor (19:28) "smoke": it shares its English with ashan. kivshan "furnace", kept distinct from tannur "oven".
+- mittokh (19:29) "from the midst of". me'arah "cave".
+- bekhirah "the firstborn" (of two daughters), as bekhor; tse'irah "the younger".
+- ba'arets (19:31) "in the land" [alt: on the earth] (decision log, call: close). kederekh kol-ha'arets "as is the way of all the earth".
+- bo al of a man and a woman (19:31; Deut 25:5) "sleep with", as bo el (6:4). shakhav im and shakhav et (19:32-35) "lie with".
+- hishqah yayin (19:32-35) "make ... drink wine". chiyyah zera min (19:32, 34) "keep offspring alive from". harah min (19:36) "conceive by".
+- mimmochorat "on the next day"; emesh "last night"; ballaylah hu "that night".
+- hu avi ... ad-hayyom (19:37, 38) "He is the father of ... to this day". bene Ammon "the sons of Ammon".
+- Names: Moab, Ben-Ammi, Ammon.
