@@ -1524,3 +1524,29 @@ closed. Close calls go in the chapter's decision log instead.
 - kivsah (21:28, 29, 30) "ewe lamb". hitsiv levad "set by themselves". edah (21:30; 31:52) "witness": it shares its English with ed.
 - eshel (21:33) "tamarisk". El Olam "the Everlasting God".
 - Names: Phicol; Be'er Shava "Beersheba"; midbar Paran "the wilderness of Paran".
+
+## Settled in Genesis 22
+- nissah (22:1) "test": it shares its English with dokimazo.
+- hinneni in answer to a call (22:1, 7, 11) "Here I am".
+- yachid (22:2, 12, 16) "only one": et-binkha et-yechidkha "your son, your only one".
+- he'elah le'olah (22:2, 13) "offer up as a burnt offering", as he'elah olot (8:20).
+- amar le- of a place (22:2, 3, 9) "tell ... of".
+- chavash of a donkey (22:3) "saddle" ("bind up" stays for wounds). biqqa etsim "split wood".
+- ne'arav (22:3, 5, 19) "his young men", as at 18:7; hanna'ar of Isaac (22:5, 12) "the boy", as of Ishmael (21:12).
+- yashav with poh (22:5) "stay": it shares its English with gur. ad-koh "over there". hishtachawah with nothing after it (22:5) stays "bow down".
+- ma'akhelet (22:6, 10) "knife".
+- seh (22:7, 8) "sheep": one animal of the flock, of any age (Exod 12:5), as tson with a number is "sheep" (Job 1:3); "lamb" stays for keves and amnos.
+- ra'ah lo (22:8) "see to ... for oneself". YHWH yir'eh (22:14) "Yahweh Will See to It"; yera'eh there "it will be seen to" [alt: he will be seen] (decision log, call: ask), with one bracketed note that the word is "see".
+- arakh of wood (22:9) "arrange". aqad (only here) "bind": it shares its English with asar. mimma'al le- "on top of".
+- shachat, the verb (22:10) "slaughter", the same English as sphazo.
+- shalach yad el (22:12) "reach out one's hand against", as at Job 1:12. me'umah "anything".
+- chasakh ... min of a thing not given (22:12, 16; 39:9) "withhold from": it shares its English with kala; of a person held from an act it stays "restrain" (20:6).
+- achar by itself, of place (22:13) "behind him" [alt: one ram, as other copies have it] (decision log, call: clear). sevakh "thicket". tachat of one put for another (22:13) "in place of", as at 4:25.
+- asher ye'amer hayyom (22:14) "as it is said today". har YHWH "the mountain of Yahweh".
+- bi nishba'ti (22:16) "By myself I have sworn". ne'um YHWH "declares Yahweh". ya'an asher (22:16) and eqev asher (22:18; 26:5) both "because".
+- kokhve hashamayim (22:17; 26:4) "the stars of the sky", as at 15:5. sefat hayyam "the shore of the sea".
+- yarash sha'ar (22:17; 24:60) "take possession of the gate of". oyevav of the offspring (22:17) "their enemies" [alt: his enemies] (decision log, call: clear).
+- hitbarekhu be- (22:18; 26:4) "be blessed in", the same English as nivrekhu be- (12:3) [alt at 22:18: bless themselves by] (decision log, call: close). shama beqol (22:18) "listen to the voice of", as at 21:12.
+- wayyuggad le- ... lemor (22:20) "it was told to ..., saying".
+- pilegesh (22:24) "concubine".
+- Names: Moriah; Buz, Kemuel, Chesed, Hazo, Pildash, Jidlaph, Bethuel, Rebekah, Reumah, Tebah, Gaham, Tahash, Maacah. Uz (22:21) is spelled as at 10:23 and Job 1:1.
