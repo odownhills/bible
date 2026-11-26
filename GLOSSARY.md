@@ -1643,3 +1643,30 @@ closed. Close calls go in the chapter's decision log instead.
 - makhar "sell". bekhorah "birthright". kayyom (25:31, 33) "first".
 - bazah (25:34) "despise", beside buz "contempt".
 - Names: Keturah; Zimran, Jokshan, Medan, Midian, Ishbak, Shuah (Job 2:11 has "the Shuhite"); the Asshurim, the Letushim, the Leummim; Ephah, Epher, Abida, Eldaah; Nebaioth, Kedar, Adbeel, Mibsam, Mishma, Dumah, Massa, Hadad, Jetur, Naphish, Kedemah; Paddan-Aram; ha'arammi "the Aramean"; Esau, Jacob, Edom. Chanokh (25:4) "Enoch": the name of 4:17 and 5:18, spelled as it is there ("Hanoch" in many English Bibles; Obay can switch it).
+
+## Settled in Genesis 26
+- millevad (26:1) "besides". harishon of the earlier of two (26:1) "the first".
+- shakan (26:2) "live" and gur (26:3) "stay", as listed. heqim et-hashevu'ah (26:3) "establish the oath", as heqim berit. ha'aratsot ha'el (26:3, 4) "these lands".
+- mishmeret (26:5) "charge". chuqqah "statute", as choq. torah (26:5) "law", the same English as nomos.
+- sha'al le- of a person (26:7) "ask about". al of a person (26:7, 9) "over". pen at the head of a thing said (26:7) "or", as at 19:19; (26:9) "So that ... not".
+- arkhu-lo sham hayyamim (26:8) "he had been there a long time". hishqif be'ad hachallon "look down through the window".
+- metsacheq et (26:8) "laughing with" [alt: caressing] (decision log, call: ask), with one bracketed note that it sounds like the name "Isaac".
+- kim'at with a perfect (26:10) "could easily have". asham "guilt": it shares its English with avon.
+- mot yumat (26:11) "will certainly be put to death".
+- matsa of a crop (26:12) "get". me'ah she'arim "a hundredfold".
+- gadal of a man and his wealth (26:13) "become great", "be great", as at 24:35; halokh wegadel "growing steadily greater".
+- miqneh-tson, miqneh vaqar (26:14) "herds of sheep", "herds of cattle". avuddah "servants", as at Job 1:3. qinne with a person as its object (26:14) "envy", beside qin'ah "jealousy".
+- sittem (26:15, 18) "stop up": it shares its English with niskar (8:2). afar of what fills a well (26:15) "earth".
+- atsam min (26:16) "be more powerful than", beside atsum "powerful".
+- nachal with the name of a place, and of where a well is dug (26:17, 19) "valley": it shares its English with emeq; "torrent" stays where it is the water (Job 6:15).
+- shuv before a second verb (26:18) "again", as hosif (25:1).
+- mayim chayyim (26:19) "living water", the same English as hydor zon (John 4:10), with no bracket.
+- hit'asseq im (26:20; only here) "dispute with".
+- karah of a well (26:25) "dig out", beside chafar "dig".
+- merea (26:26) "friend", as at Job 6:14.
+- shillach me'et (26:27) "send away from"; with beshalom (26:29) and of guests (26:31) "send on one's way".
+- alah of what is sworn between two sides (26:28) "an oath under a curse"; it stays "curse" at 24:41. benotenu "between us".
+- asah ra'ah im (26:29) "do harm to".
+- ish le'achiv of men who are not kin (26:31) "to one another".
+- morat ruach (26:35) "a bitterness of spirit".
+- Names: Ahuzzath; Esek, Sitnah, Rehoboth (10:11 has Rehoboth-Ir), Shibah; Judith, Beeri, Basemath, Elon.
