@@ -27,6 +27,15 @@
    the top at its own 16:9 size, with the words and the controls under it. Turning the phone sideways, or the
    full-screen button, gives the whole-screen picture; turning it back, or leaving the full screen, comes back.
 
+   Casting to a TV (Obay, 2026-11-25: "instead of mirror it would just play on TV"): in Chrome, when a Google Cast
+   device (a Chromecast or Google TV) is on the same Wi-Fi, a cast button shows in the top-right corner, as on
+   video sites. The chapter then plays on the TV by itself, carrying on from chapter to chapter, and the phone
+   becomes the remote: its pictures and words follow the TV, and its buttons control it. Leaving Watch on the
+   phone does not stop the TV; the cast button does. With CAST_APP set (the app registered in Google's Cast
+   console), the TV runs this same player from site/cast/ (scripts/build.py), so it shows the pictures and the
+   words lighting up; with CAST_APP empty it uses Google's plain media player, which plays the voice over the
+   chapter's first picture. The same file is that TV page's player: window.TV_CAST_RECEIVER switches it there.
+
    Written in plain old JavaScript on purpose, so that the browsers built into TVs can run it. */
 (function(){
 'use strict';
@@ -34,6 +43,9 @@ var d=document,win=window;
 if(win.TVMode)return;
 var here=d.currentScript&&d.currentScript.src,ROOT=new URL('.',here||new URL('../tv.js',location.href).href).href;
 var LEAD=0.06,RATES=[1,1.1,1.25,1.5],SITE='The Quran, Freshly Translated';
+// The Cast app registered for the TV page (site/cast/). Empty: Google's Default Media Receiver (the voice and a picture).
+var CAST_APP='';
+var RECV=!!win.TV_CAST_RECEIVER;   // this page is the TV's own player (site/cast/)
 var WORD;   // one spoken word: the same rule as scripts/build.py
 try{ WORD=new RegExp('[^\\s\\u2014\\u2013]*[\\p{L}\\p{N}_][^\\s\\u2014\\u2013]*','gu'); }
 catch(e){ WORD=/[^\s—–]*[\wÀ-ɏ][^\s—–]*/g; }
@@ -50,7 +62,9 @@ var I={
   wordsOff:'<rect x="3" y="5" width="18" height="14" rx="2.500"/><path d="M5 20.500L19.500 3.500"/>',
   full:'<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
   small:'<path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/>',
-  x:'<path d="M6 6l12 12M18 6L6 18"/>'
+  x:'<path d="M6 6l12 12M18 6L6 18"/>',
+  cast:'<path class="tv-s" d="M21 3H3c-1.1 0-2 .9-2 2v3h2V5h18v14h-7v2h7c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM1 18v3h3c0-1.660-1.340-3-3-3zm0-4v2c2.760 0 5 2.240 5 5h2c0-3.870-3.130-7-7-7zm0-4v2c4.970 0 9 4.030 9 9h2c0-6.080-4.930-11-11-11z"/>',
+  casting:'<path class="tv-s" d="M1 18v3h3c0-1.660-1.340-3-3-3zm0-4v2c2.760 0 5 2.240 5 5h2c0-3.870-3.130-7-7-7zm18-7H5v1.630c3.960 1.280 7.090 4.410 8.370 8.370H19V7zM1 10v2c4.970 0 9 4.030 9 9h2c0-6.080-4.930-11-11-11zm20-7H3c-1.100 0-2 .9-2 2v3h2V5h18v14h-7v2h7c1.100 0 2-.9 2-2V5c0-1.100-.9-2-2-2z"/>'
 };
 function svg(p){ return '<svg viewBox="0 0 24 24" aria-hidden="true">'+p+'</svg>'; }
 
@@ -134,6 +148,20 @@ var CSS=
 '#tv.tv-covered .tv-cap,#tv.tv-covered .tv-tag,#tv.tv-covered .tv-plain div{opacity:0}'+
 '.tv-x{position:absolute;top:2vh;top:max(2vh,env(safe-area-inset-top));right:2vw;right:max(2vw,env(safe-area-inset-right))}'+
 '#tv .tv-x button{width:3rem;height:3rem;border-radius:50%;background:rgba(12,8,22,.5);display:flex;align-items:center;justify-content:center}'+
+'.tv-x{display:flex}'+
+'#tv .tv-x button+button{margin-left:.6rem}'+
+'#tv .tv-x button[hidden]{display:none}'+
+'#tv .tv-x .tv-cast-on{background:rgba(183,155,232,.92)}'+
+'#tv .tv-x .tv-cast-on svg .tv-s{fill:#171223}'+
+'#tv .tv-x .tv-cast-wait svg{animation:tvpulse 1.2s ease-in-out infinite alternate}'+
+'@keyframes tvpulse{from{opacity:.35}to{opacity:1}}'+
+/* casting: the TV has its own speed */
+'#tv.tv-casting .tv-rate{display:none}'+
+/* the TV's own page (site/cast/): no buttons, nothing to tap; the bar and a paused sign show when it is paused or moved */
+'#tv.tv-recv{cursor:none}'+
+'#tv.tv-recv .tv-x,#tv.tv-recv .tv-r2,#tv.tv-recv #tv-back,#tv.tv-recv #tv-fwd,#tv.tv-recv .tv-alt,#tv.tv-recv .tv-go,#tv.tv-recv .tv-toast,#tv.tv-recv .tv-nudge{display:none}'+
+'#tv.tv-recv .tv-ctl{pointer-events:none}'+
+'#tv.tv-recv.tv-q .tv-plain small,#tv.tv-recv.tv-q .tv-msg{display:none}'+
 '.tv-mid{position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);display:flex;align-items:center}'+
 '#tv .tv-mid button{position:relative;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(12,8,22,.5);width:3.6rem;height:3.6rem;margin:0 1.1rem;margin:0 clamp(.7rem,3vw,2.2rem)}'+
 '#tv .tv-mid button svg{width:2.1rem;height:2.1rem}'+
@@ -235,6 +263,7 @@ var CSS=
 
 var stage=null,audio,cap,capIn,capBox,seek,layers,el={};
 var S={open:false,serial:0,ready:false,ui:false,top:0,scene:-1,card:-1,word:-1,verse:-2,words:[],seps:[],T:[],cards:[],scenes:[],verses:[],saved:0};
+var C={on:false,id:null,paused:true,run:false,t0:0,at:0,name:''};   // casting to a TV: the TV's state, as last heard
 var manifests={},cache={},order=[],wake=null,raf=0,idleT=0,toastT=0,nudgeT=0,cw=null,lastType='mouse',tapAt=0,tapZone=0,mx=-1,my=-1;
 
 function get(k,v){try{var x=localStorage.getItem(k);return x==null?v:JSON.parse(x)}catch(e){return v}}
@@ -256,10 +285,12 @@ function coarse(){return !!(win.matchMedia&&win.matchMedia('(pointer:coarse)').m
 function manifest(id){
   // the Quran's whole surahs have their own lists, in Arabic and in English
   var f=/^ar-/.test(id||'')?(script()==='uthmani'?'manifest-ar-uthmani.json':'manifest-ar.json'):/^en-/.test(id||'')?'manifest-en.json':'manifest.json';
-  if(!manifests[f]){ manifests[f]=json(ROOT+f); manifests[f].catch(function(){ delete manifests[f]; }); }
+  f=ROOT+f;   // the TV's page plays both sites
+  if(!manifests[f]){ manifests[f]=json(f); manifests[f].catch(function(){ delete manifests[f]; }); }
   return manifests[f];
 }
 function script(){   // the Arabic's spelling: the page's own, else the reader's choice
+  if(RECV) return S.castScript||'modern';
   var ch=d.getElementById('ch'); return ch&&ch.getAttribute('data-script')||get('arScript','modern');
 }
 function bundle(c){
@@ -271,7 +302,7 @@ function bundle(c){
     json(ROOT+(c.tv||'tv/'+c.slug+'/'+c.chapter+'.json')).catch(function(){return {verses:[],scenes:[]}}),
     fetch(ROOT+c.text).then(function(r){if(!r.ok)throw new Error('load');return r.text()}),
     c.sync?json(ROOT+c.sync).catch(function(){return null}):null,
-    c.stream?ROOT+c.audio:fetch(ROOT+c.audio).then(function(r){if(!r.ok)throw new Error('load');return r.blob()}).then(function(b){return URL.createObjectURL(b)})
+    c.stream||RECV?ROOT+c.audio:fetch(ROOT+c.audio).then(function(r){if(!r.ok)throw new Error('load');return r.blob()}).then(function(b){return URL.createObjectURL(b)})
   ]).then(function(g){return {tv:g[0],text:g[1],sync:g[2],src:g[3]}});
   cache[key]=p; order.push(key);
   p.catch(function(){ if(cache[key]===p){ delete cache[key]; order.splice(order.indexOf(key),1); } });
@@ -313,7 +344,7 @@ function build(){
         b('full','Full screen',svg(I.full))+
       '</div>'+
     '</div>'+
-    '<div class="tv-ctl tv-x">'+b('close','Close',svg(I.x))+'</div>'+
+    '<div class="tv-ctl tv-x">'+b('cast','Play on a TV',svg(I.cast))+b('close','Close',svg(I.x))+'</div>'+
     '<div class="tv-cover" id="tv-cover" hidden>'+
       '<div class="tv-kick" id="tv-kick">Watch</div><div class="tv-title" id="tv-title">&nbsp;</div><div class="tv-msg" id="tv-msg"></div>'+
       '<button class="tv-go" id="tv-go" type="button">'+svg(I.play)+'<span id="tv-go-t">Play</span></button>'+
@@ -322,19 +353,24 @@ function build(){
     '<div class="tv-spin" id="tv-spin" hidden></div>'+
     '<div class="tv-toast" id="tv-toast" role="status"><span></span><button type="button" hidden></button></div>';
   d.body.appendChild(stage);
-  audio=d.createElement('audio'); audio.preload='auto'; stage.appendChild(audio);
-  ['tag','cap','seek','ticks','cur','rem','play','back','fwd','prev','next','rate','words','full','close','cover','kick','title','msg','go','go-t','again','all','leave','spin','toast','nl','nr','ptitle','pverse']
+  // on the TV's page, the player plays what the Cast framework loads into the page's own audio element
+  audio=RECV&&d.getElementById('cast-audio');
+  if(!audio){ audio=d.createElement('audio'); audio.preload='auto'; stage.appendChild(audio); }
+  if(RECV) stage.classList.add('tv-recv');
+  ['cast','tag','cap','seek','ticks','cur','rem','play','back','fwd','prev','next','rate','words','full','close','cover','kick','title','msg','go','go-t','again','all','leave','spin','toast','nl','nr','ptitle','pverse']
     .forEach(function(k){ el[k]=d.getElementById('tv-'+k); });
   cap=el.cap; capBox=cap.firstChild; capIn=cap.lastChild; seek=el.seek; layers=stage.querySelectorAll('.tv-pic');
 
-  audio.addEventListener('play',function(){ if(!S.ready)return; stage.classList.remove('tv-paused'); icons(); loop(); awake(true); poke(); });
-  audio.addEventListener('pause',function(){ if(!S.ready)return; stage.classList.add('tv-paused'); icons(); awake(false); if(!audio.ended){ savePos(true); poke(); } });
-  audio.addEventListener('timeupdate',function(){ if(!S.ready)return; paint(); mark(); savePos(false); });
-  audio.addEventListener('seeked',function(){ if(!S.ready)return; paint(); mark(); });
+  // while casting, this audio stays silent and the TV's own state drives the screen (castPaused())
+  audio.addEventListener('play',function(){ if(!S.ready||C.on)return; stage.classList.remove('tv-paused'); icons(); loop(); awake(true); poke(); });
+  audio.addEventListener('pause',function(){ if(!S.ready||C.on)return; stage.classList.add('tv-paused'); icons(); awake(false); if(!audio.ended){ savePos(true); poke(); } });
+  audio.addEventListener('timeupdate',function(){ if(!S.ready||C.on)return; paint(); mark(); savePos(false); });
+  audio.addEventListener('seeked',function(){ if(!S.ready)return; paint(); mark(); if(RECV) poke(); });
   audio.addEventListener('ratechange',posState);
   audio.addEventListener('ended',ended);
   audio.addEventListener('error',function(){ if(S.ready){ S.ready=false; fail('load'); } });
 
+  el.cast.hidden=true; el.cast.onclick=castClick;
   el.play.onclick=toggle;
   el.back.onclick=function(){ nudge(-10); };
   el.fwd.onclick=function(){ nudge(10); };
@@ -350,7 +386,7 @@ function build(){
     if(S.cover==='end') audio.currentTime=0;
     play(); autoFull();   // the voice first: asking for the full screen uses up the tap
   };
-  el.again.onclick=function(){ if(!S.ready)return; audio.currentTime=0; play(); autoFull(); };
+  el.again.onclick=function(){ if(!S.ready)return; jump(0); play(); autoFull(); };
   el.toast.lastChild.onclick=function(){ var f=S.toastDo; toast(null); if(f) f(); };
 
   seek.addEventListener('input',function(){ S.drag=true; paint(); mark(); poke(); });
@@ -361,7 +397,8 @@ function build(){
   stage.addEventListener('mousemove',function(e){ if(e.clientX===mx&&e.clientY===my)return; mx=e.clientX; my=e.clientY; if(lastType!=='touch') poke(); });
   stage.addEventListener('click',function(e){
     var t=e.target;
-    if(t.closest('.tv-ctl')||t.closest('.tv-cover')||t.closest('.tv-toast')){ poke(); return; }
+    // (a button that has just redrawn its icon leaves the tap's target outside the page)
+    if(!stage.contains(t)||t.closest('.tv-ctl')||t.closest('.tv-cover')||t.closest('.tv-toast')){ poke(); return; }
     if(!S.ready||S.cover)return;
     if(lastType==='touch'){
       // a tap brings the controls up or sends them away; a double tap at either side moves 10 seconds
@@ -378,7 +415,7 @@ function build(){
     var t=e.target; if(lastType==='touch'||t.closest('.tv-ctl')||t.closest('.tv-cover')||t.closest('.tv-toast'))return;
     if(fsEl()){ S.leaving=true; leaveFull(); } else goFull(port());
   });
-  d.addEventListener('keydown',key,true);
+  if(!RECV) d.addEventListener('keydown',key,true);
   d.addEventListener('focusin',function(e){ if(S.open&&!stage.contains(e.target)) focusStage(); });
   ['fullscreenchange','webkitfullscreenchange'].forEach(function(ev){ d.addEventListener(ev,fsChange); });
   d.addEventListener('visibilitychange',function(){ if(!S.open)return; if(d.hidden) savePos(true); else if(!audio.paused) awake(true); });
@@ -388,10 +425,11 @@ function build(){
   var so=screen.orientation;
   if(so&&so.addEventListener) so.addEventListener('change',turned); else win.addEventListener('orientationchange',turned);
   if(d.fonts&&d.fonts.addEventListener) d.fonts.addEventListener('loadingdone',function(){ if(S.open) fit(); });   // e.g. the Arabic font arriving after the first words
+  castInit();
 }
 function focusStage(){ try{ stage.focus({preventScroll:true}); }catch(e){ stage.focus(); } }
 function icons(){
-  var paused=audio.paused||!S.ready,words=get('tvWords',true),full=!!fsEl();
+  var paused=isPaused()||!S.ready,words=get('tvWords',true),full=!!fsEl();
   el.play.innerHTML=svg(paused?I.play:I.pause); label(el.play,paused?'Play':'Pause');
   el.words.innerHTML=svg(words?I.words:I.wordsOff); el.words.className=words?'':'tv-off'; label(el.words,words?'Hide the words':'Show the words');
   stage.classList.toggle('tv-nowords',!words);
@@ -399,6 +437,7 @@ function icons(){
   el.rate.innerHTML=String(rate())+'&times;';
   el.prev.disabled=!S.prev; el.next.disabled=!S.next;
   label(el.prev,S.prev?name(S.prev):'Before this'); label(el.next,S.next?name(S.next):'Next');
+  castIcon();
 }
 function label(b,t){ b.setAttribute('aria-label',t); b.title=t; }
 function ui(on){
@@ -409,7 +448,7 @@ function ui(on){
 function poke(){
   if(!S.open)return;
   ui(true);
-  if(S.ready&&!audio.paused) idleT=setTimeout(function(){ if(S.ready&&!audio.paused&&!S.drag&&!S.cover) ui(false); },3200);
+  if(S.ready&&!isPaused()) idleT=setTimeout(function(){ if(S.ready&&!isPaused()&&!S.drag&&!S.cover) ui(false); },3200);
 }
 function spin(on){ el.spin.hidden=!on; stage.classList.toggle('tv-busy',!!on); }
 function toast(text,action,fn,ms){
@@ -446,12 +485,12 @@ function load(id,o){
   var mine=++S.serial; o=o||{};
   if(S.ready) savePos(true);
   S.ready=false; S.id=id; S.drag=false;
-  try{ audio.pause(); }catch(e){}
+  if(!RECV){ try{ audio.pause(); }catch(e){} }   // on the TV's page the Cast framework runs the audio
   S.scene=S.card=S.word=-1; S.verse=-2; cap.classList.add('tv-out'); cover(null); toast(null); spin(true);
   stage.classList.add('tv-paused'); ui(false); stage.classList.remove('tv-idle');
   manifest(id).then(function(m){
     var i=-1,k; for(k=0;k<m.length;k++) if(m[k].id===id){ i=k; break; }
-    S.me=i<0?null:m[i]; S.prev=S.next=null;
+    S.me=i<0?null:m[i]; S.prev=S.next=null; S.list=m;
     if(!S.me) throw new Error('unknown');
     // the chapter before and the next one that have a recording, with or without pictures
     for(k=i-1;k>=0;k--) if(m[k].audio){ S.prev=m[k]; break; }
@@ -473,14 +512,29 @@ function setup(b,o,mine){
   stage.classList.toggle('tv-noimg',!S.scenes.length||!S.scenes[0].img); stage.classList.toggle('tv-rtl',S.rtl); stage.classList.toggle('tv-modern',S.modern);
   if(!S.scenes.length){ layers[0].classList.remove('tv-on'); layers[1].classList.remove('tv-on'); }
   function go(){
-    audio.removeEventListener('loadedmetadata',go); if(mine!==S.serial)return;
+    audio.removeEventListener('loadedmetadata',go); audio.removeEventListener('durationchange',check); clearTimeout(S.waitT);
+    if(mine!==S.serial)return;
     var dur=audio.duration,sync=b.sync;
     S.T=(sync&&sync.t&&sync.t.length===S.words.length)?sync.t.map(function(x){return x/100}):spread(dur);
     makeCards(); S.scenes.forEach(function(s){ s.at=s.w>0?Math.max(0,S.T[s.w]-0.35):0; });
     var h='',k,at=S.scenes.map(function(s){ return s.at; });
     if(!at.length&&b.tv.sections) at=b.tv.sections.map(function(s){ return S.T[s[0]]; });   // no pictures: where each section starts
     for(k=1;k<at.length;k++) if(isFinite(at[k])) h+='<i style="left:'+(at[k]/dur*100).toFixed(2)+'%"></i>'; el.ticks.innerHTML=h;
+    if(RECV){   // the TV's page: the Cast framework has the recording playing already
+      S.ready=true; S.ended=false; seek.max=Math.floor(dur); spin(false); icons(); paint(); mark();
+      stage.classList.toggle('tv-paused',audio.paused); if(!audio.paused) loop(); else poke();
+      return;
+    }
     var pos=o.t!=null?o.t:(o.auto?0:(get('listenPos',{})[c.id]||0)),back=false;
+    if(C.on){   // casting: the TV plays it and the phone follows
+      if(o.t==null&&C.id===c.id) pos=castNow();
+      if(pos>0&&pos<dur-1) audio.currentTime=pos;
+      S.ready=true; S.ended=false; seek.max=Math.floor(dur); spin(false); icons(); paint(); mark(); posState();
+      put('listenAt',c.id); media();
+      if(C.id!==c.id&&(o.play||o.auto)) castLoad(c,pos>5&&pos<dur-8?pos:0);
+      else if(C.id!==c.id) cover('start',pos);
+      castPaused(); return;
+    }
     if(pos>5&&pos<dur-8){ audio.currentTime=pos; back=o.t==null; } else pos=0;
     S.ready=true; S.ended=false; seek.max=Math.floor(dur); spin(false); icons(); paint(); mark(); posState();
     put('listenAt',c.id); media();
@@ -489,7 +543,14 @@ function setup(b,o,mine){
       if(back) toast('Carrying on from '+fmt(pos)+'.','Start from the beginning',function(){ jump(0); });
     }else cover('start',pos);
     // have the next chapter ready, so it follows without a gap
-    setTimeout(function(){ if(mine===S.serial&&S.next) bundle(S.next).then(function(n){ if(n.tv.scenes&&n.tv.scenes[0]&&n.tv.scenes[0].img) (new Image()).src=ROOT+n.tv.scenes[0].img; },noop); },5000);
+    if(!RECV) setTimeout(function(){ if(mine===S.serial&&S.next) bundle(S.next).then(function(n){ if(n.tv.scenes&&n.tv.scenes[0]&&n.tv.scenes[0].img) (new Image()).src=ROOT+n.tv.scenes[0].img; },noop); },5000);
+  }
+  function check(){ if(audio.readyState>=1&&isFinite(audio.duration)&&(!c.duration||Math.abs(audio.duration-c.duration)<4)) go(); }
+  if(RECV){
+    // the Cast framework loads the recording itself: wait until the audio element has this one's
+    audio.addEventListener('loadedmetadata',check); audio.addEventListener('durationchange',check);
+    S.waitT=setTimeout(function(){ if(audio.readyState>=1) go(); else audio.addEventListener('loadedmetadata',go); },5000);
+    check(); return;
   }
   audio.addEventListener('loadedmetadata',go);
   audio.src=b.src; audio.defaultPlaybackRate=rate(); audio.playbackRate=rate(); audio.load();
@@ -576,7 +637,7 @@ function fit(){
 }
 function mark(){
   if(!S.ready)return;
-  var t=S.drag?parseFloat(seek.value):audio.currentTime,T=S.T,cards=S.cards,k;
+  var t=S.drag?parseFloat(seek.value):clock(),T=S.T,cards=S.cards,k;
   if(S.scenes.length){ var s=find(S.scenes,t,'at'); show(s<0?0:s); }
   var w=find(T,t+LEAD),ci=0;
   if(w>=0){
@@ -592,16 +653,20 @@ function mark(){
   if(v!==S.verse){ S.verse=v; el.tag.innerHTML=esc(name(S.me))+(v>=0?'<span>verse '+S.verses[v][0]+'</span>':''); el.pverse.textContent=v>=0&&S.verses[v][0]>0?'verse '+S.verses[v][0]:''; }
 }
 function paint(){
-  var dur=isFinite(audio.duration)?audio.duration:0,t=S.drag?parseFloat(seek.value):(audio.currentTime||0);
+  var dur=isFinite(audio.duration)?audio.duration:0,t=S.drag?parseFloat(seek.value):(clock()||0);
   if(!S.drag) seek.value=t;
   seek.style.setProperty('--p',(dur?Math.min(100,t/dur*100):0)+'%');
   el.cur.textContent=fmt(t); el.rem.textContent='-'+fmt((dur-t)/(audio.playbackRate||1));
 }
-function loop(){ if(raf)return; raf=requestAnimationFrame(function step(){ raf=0; if(!S.open)return; mark(); if(!audio.paused) raf=requestAnimationFrame(step); }); }
+function loop(){ if(raf)return; raf=requestAnimationFrame(function step(){ raf=0; if(!S.open)return; mark(); if(C.on) paint(); if(!isPaused()) raf=requestAnimationFrame(step); }); }
+function clock(){ return C.on&&C.id===S.id?Math.min(castNow(),isFinite(audio.duration)?audio.duration:1e9):audio.currentTime; }
+function isPaused(){ return C.on?(C.id!==S.id||C.paused):audio.paused; }
 
 /* ---- playing ---- */
 function play(){
-  if(!S.ready)return; S.ended=false; cover(null); audio.playbackRate=rate();
+  if(!S.ready)return; S.ended=false; cover(null);
+  if(C.on){ if(C.id!==S.me.id) castLoad(S.me,clock()); else if(C.paused) castDo('playOrPause'); return; }
+  audio.playbackRate=rate();
   var p=audio.play();
   if(p&&p.then) p.then(function(){
     // once in this browser: how to get the whole-screen picture from the upright one
@@ -609,21 +674,30 @@ function play(){
       put('tvHint',true); toast('Turn your phone sideways for the full screen.',null,null,5000); }
   },function(){ if(S.ready&&audio.paused) cover('start',audio.currentTime); });   // the browser wants a tap first
 }
-function toggle(){ if(!S.ready)return; if(audio.paused) play(); else audio.pause(); }
-function jump(t){ if(!S.ready)return; audio.currentTime=Math.max(0,Math.min(audio.duration-0.2,t)); paint(); mark(); posState(); savePos(true); }
+function pause(){ if(C.on){ if(C.id===S.id&&!C.paused) castDo('playOrPause'); } else audio.pause(); }
+function toggle(){ if(!S.ready)return; if(isPaused()) play(); else pause(); }
+function jump(t){
+  if(!S.ready)return; t=Math.max(0,Math.min(audio.duration-0.2,t));
+  if(C.on&&C.id===S.id){ C.t0=t; C.at=Date.now(); try{ C.player.currentTime=t; C.ctl.seek(); }catch(e){} }
+  else audio.currentTime=t;
+  paint(); mark(); posState(); savePos(true);
+}
 function nudge(by,flash){
-  if(!S.ready)return; jump(audio.currentTime+by);
+  if(!S.ready)return; jump(clock()+by);
   if(flash){ var n=by<0?el.nl:el.nr; n.classList.add('tv-on'); clearTimeout(nudgeT); nudgeT=setTimeout(function(){ el.nl.classList.remove('tv-on'); el.nr.classList.remove('tv-on'); },450); }
 }
 function ended(){
   if(!S.ready)return; S.ended=true;
+  if(RECV){   // the TV goes on to the next in its list by itself; at the end of the list, the closing card
+    var mine=S.serial; setTimeout(function(){ if(mine===S.serial&&S.ended&&audio.paused) cover('end'); },5000); return; }
   var done=get('listenDone',{}),pos=get('listenPos',{}); done[S.me.id]=1; delete pos[S.me.id]; put('listenDone',done); put('listenPos',pos);
   if(S.next){ load(S.next.id,{play:true,auto:true}); return; }
   awake(false); cover('end');
 }
 function savePos(force){
   if(!S.ready||!S.me)return; var now=Date.now(); if(!force&&now-S.saved<4000)return; S.saved=now;
-  var pos=get('listenPos',{}),id=S.me.id,t=audio.currentTime;
+  if(RECV)return;
+  var pos=get('listenPos',{}),id=S.me.id,t=clock();
   if(t>3&&(!audio.duration||t<audio.duration-3)) pos[id]=Math.floor(t); else delete pos[id];
   put('listenPos',pos);
   // the one place the site reopens to (see scripts/read.js), and the Watch page's "Keep watching"
@@ -637,7 +711,7 @@ function awake(on){
 }
 function posState(){
   if(!S.ready||!('mediaSession' in navigator)||!navigator.mediaSession.setPositionState||!isFinite(audio.duration))return;
-  try{ navigator.mediaSession.setPositionState({duration:audio.duration,playbackRate:audio.playbackRate,position:Math.min(audio.currentTime,audio.duration)}); }catch(e){}
+  try{ navigator.mediaSession.setPositionState({duration:audio.duration,playbackRate:C.on?1:audio.playbackRate,position:Math.min(clock(),audio.duration)}); }catch(e){}
 }
 function media(){
   if(!('mediaSession' in navigator))return;
@@ -648,12 +722,140 @@ function hooks(on){
   // The lock screen's buttons. Listen + Read sets its own again whenever it starts.
   if(!('mediaSession' in navigator))return;
   var set=function(a,f){ try{ navigator.mediaSession.setActionHandler(a,on?f:null); }catch(e){} };
-  set('play',play); set('pause',function(){ audio.pause(); });
+  set('play',play); set('pause',pause);
   set('seekbackward',function(){ nudge(-10); }); set('seekforward',function(){ nudge(10); });
   set('seekto',function(x){ if(x&&isFinite(x.seekTime)) jump(x.seekTime); });
   set('previoustrack',function(){ if(S.prev) load(S.prev.id,{play:true,t:0}); });
   set('nexttrack',function(){ if(S.next) load(S.next.id,{play:true,t:0}); });
 }
+
+/* ---- casting to a TV (Google Cast, in Chrome) ---- */
+function castInit(){
+  // Chrome only (on a phone or a computer); elsewhere the button never shows. Google's script is loaded once.
+  if(RECV||C.tried)return; C.tried=true;
+  if(!win.chrome||/iPhone|iPad|iPod/.test(navigator.userAgent||''))return;
+  if(win.cast&&win.cast.framework){ castReady(); return; }
+  var before=win.__onGCastApiAvailable;
+  win.__onGCastApiAvailable=function(ok){ if(before){ try{ before(ok); }catch(e){} } if(ok) castReady(); };
+  var sc=d.createElement('script'); sc.async=true; sc.src='https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1';
+  d.head.appendChild(sc);
+}
+function castReady(){
+  if(C.ctx)return;
+  try{
+    var f=win.cast.framework,ctx=f.CastContext.getInstance(),R=f.RemotePlayerEventType;
+    ctx.setOptions({receiverApplicationId:CAST_APP||win.chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID,
+                    autoJoinPolicy:win.chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED});
+    C.ctx=ctx; C.f=f; C.player=new f.RemotePlayer(); C.ctl=new f.RemotePlayerController(C.player);
+    ctx.addEventListener(f.CastContextEventType.CAST_STATE_CHANGED,castIcon);
+    C.ctl.addEventListener(R.IS_CONNECTED_CHANGED,castConn);
+    C.ctl.addEventListener(R.CURRENT_TIME_CHANGED,function(){ castTime(); if(C.on&&S.open&&S.ready){ paint(); mark(); } });
+    C.ctl.addEventListener(R.IS_PAUSED_CHANGED,castPaused);
+    C.ctl.addEventListener(R.PLAYER_STATE_CHANGED,castPaused);
+    C.ctl.addEventListener(R.MEDIA_INFO_CHANGED,castMedia);
+    castIcon(); castConn();
+  }catch(e){ C.ctx=null; }
+}
+function castIcon(){
+  // the button shows only while a TV is there to cast to; filled in while casting, as on video sites
+  if(!stage||!el.cast)return;
+  var st=C.ctx?C.ctx.getCastState():'',CS=C.f&&C.f.CastState||{};
+  el.cast.hidden=!C.ctx||!st||st===CS.NO_DEVICES_AVAILABLE;
+  el.cast.innerHTML=svg(C.on?I.casting:I.cast);
+  el.cast.className=C.on?'tv-cast-on':st===CS.CONNECTING?'tv-cast-wait':'';
+  label(el.cast,C.on?'Playing on '+(C.name||'the TV'):'Play on a TV');
+}
+function castClick(){
+  if(!C.ctx)return; poke();
+  if(C.on){ toast('Playing on '+(C.name||'the TV')+'.','Stop casting',function(){ try{ C.ctx.endCurrentSession(true); }catch(e){} },8000); return; }
+  C.asked=Date.now();
+  // Chrome's own list of the TVs on this Wi-Fi
+  try{ var p=C.ctx.requestSession(); if(p&&p.then) p.then(noop,function(){ C.asked=0; }); }catch(e){ C.asked=0; }
+}
+function castTime(){ if(!C.player)return; C.t0=C.player.currentTime||0; C.at=Date.now(); }
+function castNow(){ var t=C.t0+(C.run?(Date.now()-C.at)/1000:0); return t<0?0:t; }
+function castId(){
+  // which of this site's chapters the TV is playing: from the details sent with it, else from its address
+  var mi=C.player&&C.player.mediaInfo; if(!mi)return null;
+  var cd=mi.customData||{},u=mi.contentUrl||mi.contentId||'',k;
+  if(cd.id&&(!cd.root||cd.root===ROOT)) return cd.id;
+  if(cd.id) return null;   // the other site's
+  for(k=0;S.list&&k<S.list.length;k++) if(S.list[k].audio&&ROOT+S.list[k].audio===u) return S.list[k].id;
+  return null;
+}
+function castConn(){
+  var on=!!(C.player&&C.player.isConnected);
+  if(on===C.on){ castIcon(); return; }
+  C.on=on;
+  if(stage) stage.classList.toggle('tv-casting',on);
+  if(on){
+    try{ var se=C.ctx.getCurrentSession(),dv=se&&se.getCastDevice(); C.name=dv&&dv.friendlyName||''; }catch(e){ C.name=''; }
+    C.id=castId(); castTime(); C.paused=!!C.player.isPaused; C.run=C.player.playerState==='PLAYING';
+    try{ audio.pause(); }catch(e){}
+    if(S.open){
+      // the button just pressed: this one goes to the TV, from where it is; already casting: follow the TV
+      var asked=C.asked&&Date.now()-C.asked<120000; C.asked=0;
+      if(C.id&&C.id!==S.id) load(C.id,{follow:true});
+      else if(!C.id&&asked&&S.ready) castLoad(S.me,audio.currentTime);
+      toast('Playing on '+(C.name||'the TV')+'. This screen is the remote now.',null,null,5000);
+    }
+  }else{
+    // back on this screen, at the place the TV had reached, paused
+    var t=castNow(),same=C.id===S.id; C.id=null; C.run=false;
+    if(S.open&&S.ready){
+      if(same&&t>0) audio.currentTime=Math.min(t,audio.duration-0.2);
+      stage.classList.add('tv-paused'); paint(); mark(); poke();
+      toast('Stopped casting.',null,null,3500);
+    }
+  }
+  icons();
+}
+function castPaused(){
+  if(!C.player||!C.on)return;
+  castTime(); C.paused=!!C.player.isPaused; C.run=C.player.playerState==='PLAYING';
+  if(!S.open||!S.ready)return;
+  stage.classList.toggle('tv-paused',isPaused()); icons(); paint(); mark();
+  if(!isPaused()) loop(); poke();
+}
+function castMedia(){
+  if(!C.player||!C.on)return;
+  var id=castId();
+  // just sent: the TV still names the one before until the new one has loaded
+  if(C.want&&id){ if(id===C.want) C.want=null; else if(Date.now()-C.sent<6000)return; }
+  C.id=id; castTime();
+  if(!S.open)return;
+  if(id&&id!==S.id) load(id,{follow:true});   // the TV went on to the next one
+  else castPaused();
+}
+function castLoad(c,t){
+  // the TV gets this one and the ones after it, so it carries on by itself as Watch does here
+  var se=C.ctx&&C.ctx.getCurrentSession(),m=S.list||[],i=m.indexOf(c),items=[],k,q,ch=win.chrome.cast;
+  if(!se)return;
+  if(i<0) m=[c],i=0;
+  for(k=i;k<m.length&&items.length<25;k++){
+    q=m[k]; if(!q.audio)continue;
+    var mi=new ch.media.MediaInfo(ROOT+q.audio,'audio/mpeg'),md=new ch.media.GenericMediaMetadata();
+    mi.contentUrl=ROOT+q.audio; mi.streamType=ch.media.StreamType.BUFFERED; if(q.duration) mi.duration=q.duration;
+    md.title=name(q); md.subtitle=SITE; md.images=q.poster?[new ch.Image(ROOT+q.poster)]:[];
+    mi.metadata=md; mi.customData={id:q.id,root:ROOT,script:q.script||null};
+    var it=new ch.media.QueueItem(mi); it.autoplay=true; it.preloadTime=20;
+    if(!items.length&&t>1) it.startTime=t;
+    items.push(it);
+  }
+  if(!items.length)return;
+  C.want=c.id; C.sent=Date.now(); C.id=c.id; C.t0=t||0; C.at=Date.now(); C.paused=false; C.run=false;
+  stage.classList.remove('tv-paused'); icons(); spin(true);
+  function done(){ spin(false); }
+  function failed(){ spin(false); C.id=castId(); toast('The TV could not play this. Try again.',null,null,6000); icons(); }
+  try{
+    var req=new ch.media.QueueLoadRequest(items); req.startIndex=0;
+    se.getSessionObj().queueLoad(req,done,failed);
+  }catch(e){
+    try{ var lr=new ch.media.LoadRequest(items[0].media); lr.currentTime=items[0].startTime||0; lr.autoplay=true;
+      se.loadMedia(lr).then(done,failed); }catch(x){ failed(); }
+  }
+}
+function castDo(what){ try{ C.ctl[what](); }catch(e){} }
 
 /* ---- full screen ---- */
 function fsEl(){ return d.fullscreenElement||d.webkitFullscreenElement||null; }
@@ -701,11 +903,11 @@ function key(e){
     if(used){ e.preventDefault(); e.stopPropagation(); }
     return;
   }
-  if(k==='Escape'||k==='Esc'||c===461||c===10009){ if(on&&S.ui&&!audio.paused){ focusStage(); ui(false); e.preventDefault(); e.stopPropagation(); return; } if(fsEl()){ S.leaving=true; leaveFull(); } else close(); }
+  if(k==='Escape'||k==='Esc'||c===461||c===10009){ if(on&&S.ui&&!isPaused()){ focusStage(); ui(false); e.preventDefault(); e.stopPropagation(); return; } if(fsEl()){ S.leaving=true; leaveFull(); } else close(); }
   else if(k===' '||k==='Spacebar'||k==='Enter'){ if(on&&!isSeek) used=false; else toggle(); }
   else if(k==='k'||k==='K'||k==='MediaPlayPause'||c===179) toggle();
   else if(k==='MediaPlay'||c===415) play();
-  else if(k==='MediaPause'||k==='MediaStop'||c===19||c===413) audio.pause();
+  else if(k==='MediaPause'||k==='MediaStop'||c===19||c===413) pause();
   else if(k==='MediaFastForward'||c===417) nudge(10);
   else if(k==='MediaRewind'||c===412) nudge(-10);
   else if(k==='MediaTrackNext'||k==='n'||k==='N'){ if(S.next) el.next.click(); }
@@ -738,12 +940,14 @@ function open(id,o){
   o=o||{}; build();
   if(!S.open){
     S.open=true; S.opener=o.opener||null; stage.hidden=false; d.documentElement.classList.add('tv-open'); layout();
+    if(RECV){ load(id,{}); return; }
     // Listen + Read hands over: it stops and keeps its place, and Watch carries on from that same second
     var lr=d.getElementById('lr-close'); if(lr&&d.body.classList.contains('lr')) lr.click();
     if('CloseWatcher' in win){ try{ cw=new win.CloseWatcher(); cw.onclose=function(){ cw=null; close(); }; }catch(e){ cw=null; } }
     hooks(true); focusStage();
   }
-  if(o.gesture){
+  if(RECV){ load(id,{}); return; }
+  if(o.gesture&&!C.on){
     // inside the tap itself: a silent start, so the browser lets the voice begin once it has loaded, then the
     // full screen (in that order: asking for the full screen uses up the tap). A phone held upright stays
     // upright, with the picture on top (Obay, 2026-11-25).
@@ -786,7 +990,10 @@ d.addEventListener('click',function(e){
   var a=e.target.closest('[data-tv]'); if(!a||(stage&&stage.contains(a)))return;
   e.preventDefault(); open(a.getAttribute('data-tv'),{gesture:true,opener:a});
 });
-win.TVMode={open:open,close:close};
+win.TVMode={open:open,close:close,
+  // the TV's page (site/cast/): show the chapter the Cast framework is playing, from either site
+  receive:function(id,root,script){ ROOT=root; S.castScript=script||null; build(); stage.classList.toggle('tv-q',/quran/.test(root)); open(id,{}); }};
+if(RECV)return;
 resume();
 var asked=home()&&/[?&]c=([^&#]+)/.exec(location.search);
 if(asked) open(decodeURIComponent(asked[1]),{});   // a link straight to a chapter: its opening card, one tap from playing

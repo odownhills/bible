@@ -27,7 +27,7 @@ The index of one site, under <site>/search/:
                      show it in the traditional script (see arabic_files)
     arm/             the same verses as the pages show them in modern spelling, the default
     index.html, search.js   the search page
-The site's _headers file lets the other two sites read its index (and the Quran's font).
+The site's _headers file lets the other two sites read its index (the Quran's: all its files, for its font and casting).
 
 Nothing here changes a translation: the index is only read from the published files.
 """
@@ -434,7 +434,9 @@ def build(work, out, x):
     # Let the other two sites read this one's index, and on the Quran site its Arabic font.
     rules = "/search/*\n  Access-Control-Allow-Origin: *\n"
     if work == "quran":
-        rules += "/fonts/*\n  Access-Control-Allow-Origin: *\n"
+        # everything: also the TV's page for casting, which lives on the Bible site, reads the Quran's lists,
+        # words and timings (scripts/cast_receiver.js). One rule only, so the header is never sent twice.
+        rules = "/*\n  Access-Control-Allow-Origin: *\n"
     open(os.path.join(out, "_headers"), "w", encoding="utf-8").write(rules)
     print("Search: %d %s, %d words indexed into %s/search/" % (
         len(units), {"bible": "verses", "quran": "verses", "study": "sections"}[work], known, os.path.basename(out)))
