@@ -186,8 +186,8 @@
    "image": "08-stopped.jpg",
    "tall": "tall/08-stopped.jpg",
    "principle": "And Yahweh scattered them from there over the face of the whole earth, and they stopped building the city.",
-   "shows": "The tower stands unfinished and silent, tools and wheelbarrows left where they were dropped.",
-   "prompt": "A red-brick tower wrapped in scaffolding stands unfinished and silent on a flat plain, wheelbarrows, ladders and half-stacked bricks abandoned where they were dropped, cool even overcast light, no one working. The tower and the abandoned tools are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
+   "shows": "The stepped tower stands unfinished and silent over its city, tools and wheelbarrows left where they were dropped.",
+   "prompt": "The colossal tower of plain red fired brick, dozens of stories tall, rising in stepped tiers wrapped in wooden scaffolding, stands unfinished and silent over a new city of low brick houses on a flat plain; in the foreground wheelbarrows, ladders and stacks of bricks abandoned where they were dropped, the scaffolds and the streets empty, cool even overcast light, no one at work. The tower and the abandoned tools are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false
   },
   {
@@ -196,8 +196,8 @@
    "image": "09-scattered.jpg",
    "tall": "tall/09-scattered.jpg",
    "principle": "That is why it was named Babylon, because there Yahweh confused the speech of the whole earth, and from there Yahweh scattered them over the face of the whole earth.",
-   "shows": "From above, the tower stands alone on the plain with roads leading out in every direction and small groups walking away.",
-   "prompt": "Aerial view straight down on a red-brick tower standing alone in the middle of a vast flat plain, many dusty tracks and roads leading out from it in every direction like spokes, small groups of walkers leaving along each road far apart from one another, clear daylight. The tower and the roads fill the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+   "shows": "From above, the stepped tower and its city stand alone on the plain with roads leading out in every direction and small groups walking away.",
+   "prompt": "Aerial view straight down on the colossal stepped red-brick tower wrapped in scaffolding and its city of low brick houses in the middle of a vast flat plain, many dusty roads leading out from the city in every direction like spokes, small groups of walkers leaving along each road far apart from one another, clear daylight. The tower, the city and the roads fill the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
   },
   {
    "verse": 10,
@@ -338,8 +338,8 @@
    "section": "8-9",
    "image": "cand/08-stopped.jpg",
    "principle": "And Yahweh scattered them from there over the face of the whole earth, and they stopped building the city.",
-   "shows": "A wheelbarrow of bricks and a trowel left on a half-built wall in an empty yard.",
-   "prompt": "A wheelbarrow of red bricks and a trowel left on a half-built brick wall in an empty yard, the unfinished tower rising behind in cool overcast light, quiet and abandoned. The wall and wheelbarrow are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
+   "shows": "A wheelbarrow of bricks and a trowel left on a half-built wall, the empty tower behind.",
+   "prompt": "A wheelbarrow of red bricks and a trowel left on a half-built brick wall in an empty yard of a brick city, the colossal stepped red-brick tower with its empty wooden scaffolding rising behind among low brick houses, cool overcast light, quiet and abandoned, no modern buildings. The wall, wheelbarrow and tower are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false
   },
   {
@@ -347,8 +347,8 @@
    "section": "8-9",
    "image": "cand/09-scattered.jpg",
    "principle": "That is why it was named Babylon, because there Yahweh confused the speech of the whole earth, and from there Yahweh scattered them over the face of the whole earth.",
-   "shows": "Starlings burst outward in all directions from the top of an empty tower.",
-   "prompt": "A flock of hundreds of starlings bursting outward in every direction from the top of an empty red-brick tower against a pale sky, scattering far apart. The tower top and the birds are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
+   "shows": "Starlings burst outward in all directions from the top of the stepped tower.",
+   "prompt": "A flock of hundreds of starlings bursting outward in every direction from the top of the colossal stepped red-brick tower with its scaffolding against a pale sky, scattering far apart. The tower top and the birds are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false
   },
   {
