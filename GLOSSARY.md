@@ -1616,3 +1616,30 @@ closed. Close calls go in the chapter's decision log instead.
 - tsa'if (24:65; 38:14, 19) "veil". hitkassah "cover oneself".
 - nicham, the niphal, of one who has lost someone (24:67; 38:12) "be comforted" ("regret" stays at 6:6-7).
 - Names: Aram Naharayim "Aram-Naharaim"; Laban.
+
+## Settled in Genesis 25
+- hosif before a second verb (25:1) "again", as with an infinitive (8:10).
+- mattanah (25:6) "gift". shillach me'al (25:6) "send away from". erets qedem "the land of the east".
+- savea with nothing after it (25:8) "satisfied"; seva stays "full of".
+- ne'esaf el-ammav (25:8, 17; 35:29; 49:33) "be gathered to his people".
+- qanah of land (25:10) "buy", beside miqnah "purchase" (23:18).
+- yashav im with a place (25:11) "live by".
+- chatser (25:16) "village"; tirah "encampment". ummah (25:16; Num 25:15) "tribe": it shares its English with shevet.
+- al-pene Mitsrayim (25:18) "facing Egypt", as al-pene of a place (23:19). nafal of where a people has its place (25:18; Judg 7:12) "settle".
+- atar le- (25:21) "plead with": it shares its English with hitchannen. ne'tar le- "grant the plea of".
+- lenokhach (25:21; 30:38) "in front of" [alt at 25:21: on behalf of] (decision log, call: close).
+- hitrotsets (25:22; only here) "crush one another", ratsats as listed.
+- lammah zeh anokhi (25:22) "why am I alive?" [alt: why is this happening to me?] (decision log, call: ask).
+- darash et-YHWH of one who goes for an answer (25:22; 1 Kgs 22:8) "inquire of"; elsewhere darash stays "seek".
+- beten of a mother (25:23, 24) "womb"; me'ayim of a mother "body", as of a father (15:4).
+- le'om (25:23; 27:29) "people": it shares its English with am. amats min "be stronger than".
+- rav ... tsa'ir (25:23) "the older", "the younger" [alt: the greater, the lesser] (decision log, call: close).
+- male of days (25:24; 29:21) "be completed". te'omim "twins".
+- admoni (25:25) "red", as adom (25:30). adderet "coat", kept distinct from simlah "cloak" and me'il "robe". se'ar "hair".
+- qara shemo with no subject named (25:26, 30) "he was named", as at 11:9.
+- achaz be- of a hand that keeps its hold (25:26) "hold on to".
+- yodea tsayid (25:27) "who knew hunting"; tsayid of what is caught (25:28; 27:3) "game". ish tam (25:27) "a blameless man", tam as at Job 1:1.
+- zid (25:29) "cook"; nazid "stew"; adashim "lentils". ayef "exhausted". hil'it (25:30; only here) "let gulp down".
+- makhar "sell". bekhorah "birthright". kayyom (25:31, 33) "first".
+- bazah (25:34) "despise", beside buz "contempt".
+- Names: Keturah; Zimran, Jokshan, Medan, Midian, Ishbak, Shuah (Job 2:11 has "the Shuhite"); the Asshurim, the Letushim, the Leummim; Ephah, Epher, Abida, Eldaah; Nebaioth, Kedar, Adbeel, Mibsam, Mishma, Dumah, Massa, Hadad, Jetur, Naphish, Kedemah; Paddan-Aram; ha'arammi "the Aramean"; Esau, Jacob, Edom. Chanokh (25:4) "Enoch": the name of 4:17 and 5:18, spelled as it is there ("Hanoch" in many English Bibles; Obay can switch it).
