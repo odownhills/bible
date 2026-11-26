@@ -1907,3 +1907,29 @@ closed. Close calls go in the chapter's decision log instead.
 - nishmad (34:30) "be destroyed": it shares its English with ibbed.
 - zonah (34:31; 38:15) "prostitute". asah et of how a person is dealt with (34:31) "treat".
 - Names: hachiwwi (34:2) "the Hivite", as at 10:17.
+
+## Settled in Genesis 35
+- elohe hannekhar (35:2, 4; Josh 24:20, 23) "the foreign gods", beside ben-nekhar "foreigner".
+- hittaher (35:2) "make oneself clean", beside tahor "clean".
+- simlot, the plural, of what a person wears (35:2; 37:34; 41:14) "clothes"; "cloak" stays for the one garment (9:23). hechelif of clothes "change", as at 31:7.
+- tsarah, the singular (35:3; 42:21) "distress": yom tsarati "the day of my distress".
+- taman (35:4) "hide", as at Job 3:16.
+- elah (35:4; Isa 6:13) "terebinth", kept distinct from elon and allon "oak".
+- nasa with nothing after it (35:5) "set out"; (35:21) "travel on".
+- chittah (35:5; only here) "terror", as chat (9:2): chittat Elohim "the terror of God".
+- niglah el (35:7) "reveal oneself to", beside gillah "uncover". ha'elohim with a plural verb (35:7) "God" [alt: the divine beings] (decision log, call: clear).
+- El Bet-El (35:7) "God of Bethel", as ha'el Bet-El (31:13).
+- mittachat le- (35:8) "below".
+- qehal goyim (35:11) "an assembly of nations", beside qehal ammim "an assembly of peoples" (28:3). hayah min (35:11) "be from", as at 17:16.
+- chalatsayim (35:11; 1 Kgs 8:19) "loins", kept distinct from me'ayim "body" (15:4) and motnayim "waist".
+- hitsiv matstsevah (35:14, 20) "set up a pillar"; matstsevet even "a pillar of stone".
+- nesekh "drink offering"; nasakh nesekh (35:14) "pour out a drink offering", beside yatsaq "pour".
+- kivrat ha'arets (35:16; 48:7; 2 Kgs 5:19) "a stretch of land".
+- qishshah belidtah, hiqshah belidtah (35:16, 17) "have hard labor", "be in hard labor".
+- meyalledet (35:17; 38:28; Exod 1:15) "midwife".
+- yatsa of nefesh (35:18) "go out": nefesh there "life".
+- qevurah (35:20) "grave": it shares its English with qever.
+- mehal'ah le- (35:21) "beyond".
+- seva yamim (35:29; Job 42:17) "full of days".
+- 35:22 has a paragraph break inside the verse in the Hebrew text, set as at Deut 5:21.
+- Names: Deborah, Allon-Bacuth, Ephrath, Bethlehem, Ben-Oni, Benjamin, Migdal-Eder.
