@@ -1330,3 +1330,30 @@ closed. Close calls go in the chapter's decision log instead.
 - herim yad el (14:22) "raise one's hand to": the gesture of the oath is kept. im in an oath (14:23) "not", as listed. chut "thread"; serokh na'al "sandal strap". he'eshir "make rich".
 - bil'aday (14:24) "Nothing for me". cheleq of what was taken in war (14:24) "share" ("portion" stays for what God allots).
 - Names: Amraphel, Arioch, Ellasar, Chedorlaomer, Tidal, Goiim; Bera, Birsha, Shinab, Shemeber, Bela; Siddim; the Rephaim, the Zuzim, the Emim (Deut 2:10-11), the Horites, the Amalekites; Ashteroth-Karnaim, Ham (not the name of Noah's son), Shaveh-Kiriathaim, Seir, El-Paran, En-Mishpat, Kadesh, Hazazon-Tamar; Eshcol, Aner; Dan, Hobah, Damascus; Shaveh; Melchizedek, Salem.
+
+## Settled in Genesis 15
+- achar haddevarim ha'elleh (15:1; 22:1) "After these things". hayah devar-YHWH el (15:1) "the word of Yahweh came to"; with no verb (15:4) the same. machazeh "vision": it shares its English with chizzayon.
+- magen "shield", as listed; anokhi magen lakh "I am a shield to you". sakhar (15:1) "reward": sekharkha harbeh me'od "your reward will be very great" [alt: I am a shield to you, your very great reward] (decision log, call: close).
+- Adonai YHWH (15:2, 8) "Lord Yahweh".
+- ariri "childless"; holekh ariri "go childless".
+- ben-mesheq beti (15:2; mesheq only here) "the one who will get my house" [alt: the one in charge of my house] (decision log, call: close).
+- ben-bayit (15:3) "one of my household", kept distinct from yelid bayit "born in the house" (14:14).
+- yarash with a person as its object (15:3, 4) "be the heir of" ("be my heir", "be your heir"); of land it stays "take possession of" (15:7, 8).
+- me'im of a father (15:4; 2 Sam 7:12) "body" ("stomach" at Job 20:14). ki-im after a negative (15:4) "rather".
+- hibbit (15:5) "look": it shares its English with hinneh. safar "count" and kokhav "star", as listed.
+- he'emin be- (15:6) "put one's trust in", as listed. chashav with le- of a person (15:6) "count to ... as". tsedaqah "righteousness": it shares its English with tsedeq.
+- bammah (15:8) "how".
+- eglah "heifer"; ez "female goat"; ayil "ram"; tor "turtledove"; gozal (15:9; Deut 32:11) "young bird". meshullash of an animal (15:9) "three-year-old".
+- batar (15:10) "cut in two"; beter "half"; gezarim (15:17) "pieces". liqrat of things set facing each other "opposite".
+- ayit "birds of prey". peger "carcass". hishshiv (15:11) "drive away".
+- hashemesh lavo (15:12) "the sun was about to set"; hashemesh ba'ah (15:17) "the sun had set".
+- chashekhah (15:12) "darkness", as choshekh. alatah (15:17; Ezek 12:6, 7, 12) "dark".
+- yadoa teda (15:13) "Know for certain".
+- innah (15:13; 16:6) "afflict", beside oni "affliction".
+- dan (15:14) "judge": it shares its English with shafat.
+- bo el-avot (15:15) "go to one's fathers". niqbar "be buried". sevah tovah (15:15; 25:8) "a good old age".
+- dor revi'i (15:16) "in the fourth generation". shalem "complete"; ad-hennah "yet".
+- tannur "oven"; tannur ashan "a smoking oven". lappid esh "a flaming torch".
+- natatti in the words of a covenant (15:18) "I give", as at 9:3.
+- nehar Mitsrayim (15:18) "the river of Egypt". hannahar haggadol nehar-Perat "the great river, the river Euphrates".
+- Names: Eliezer; the Kenites, the Kenizzites, the Kadmonites, the Hittites.
