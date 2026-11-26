@@ -1843,3 +1843,30 @@ closed. Close calls go in the chapter's decision log instead.
 - bene Yisra'el (32:32) "the sons of Israel", as "the sons of Heth" and "the sons of Ammon".
 - gid hannasheh (32:32; nasheh only here) "the sinew of the hip".
 - Names: Mahanaim, the Jabbok, Israel; Peniel (32:30) and Penuel (32:31), each as the Hebrew spells it.
+
+## Settled in Genesis 33
+- acharonim, twice (33:2) "after them", beside rishonah "first".
+- nafal al-tsavvar (33:4; 45:14; 46:29) "fall on the neck of": the gesture is kept.
+- mi-elleh lakh (33:5) "Who are these to you?"; mi lekha with a thing (33:8) "What is ... of yours".
+- chanan with God as its subject (33:5, 11) "favor", heard with chen "favor" (33:8, 10, 15): with two objects "favor ... with". "Have pity on" stays in Job (19:21).
+- yesh-li rav (33:9) "I have plenty"; yesh-li-khol (33:11) "I have everything".
+- al-na by itself (33:10) "Please, no", as at 19:18.
+- ratsah with a person as its object (33:10) "accept": it shares its English with nasa panim (32:20).
+- berakhah of a thing given (33:11; 1 Sam 25:27) "blessing": the word is kept, so that it is heard with 27:35-36.
+- patsar be- with no me'od (33:11) "press".
+- lenegdekha of one who travels with another (33:12) "in front of you".
+- alot of flocks and cattle (33:13; Isa 40:11) "nursing": it shares its English with meniqot (32:15). alay "in my care".
+- dafaq of herds (33:13) "drive hard".
+- hitnahel (33:14; only here) "move along"; le'itti "slowly", beside la'at "gentle".
+- leregel (33:14) "at the pace of": the idiom is translated by its meaning.
+- melakhah of animals that are driven (33:14) "livestock": it shares its English with behemah; "work" stays at 2:2-3.
+- hitsig im (33:15) "leave with".
+- lammah zeh emtsa-chen (33:15) "Why is that? Let me find favor" [alt: Why is it that I should find favor] (decision log, call: close).
+- sukkah (33:17) "shelter", with one bracketed note on the name "Succoth".
+- shalem of one who arrives (33:18) "safely" [alt: the name Salem] (decision log, call: clear). ir Shekhem "the city of Shechem".
+- chanah et-pene (33:18) "camp in front of".
+- chelqat hassadeh (33:19; Josh 24:32; Ruth 2:3) "the plot of the field".
+- qesitah (33:19; Josh 24:32; Job 42:11) "kesitah": the unit is kept, as sheqel is.
+- hitsiv mizbeach (33:20) "set up an altar", beside banah "build".
+- El Elohe Yisra'el (33:20) "God, the God of Israel".
+- Names: Succoth, Hamor.
