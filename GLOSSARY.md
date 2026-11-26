@@ -1472,3 +1472,27 @@ closed. Close calls go in the chapter's decision log instead.
 - mimmochorat "on the next day"; emesh "last night"; ballaylah hu "that night".
 - hu avi ... ad-hayyom (19:37, 38) "He is the father of ... to this day". bene Ammon "the sons of Ammon".
 - Names: Moab, Ben-Ammi, Ammon.
+
+## Settled in Genesis 20
+- bachalom hallaylah (20:3; 31:24) "in a dream by night", chalom as listed.
+- hinnekha met (20:3) "Look, you are about to die": hinneh with a participle, as at 6:13.
+- be'ulat ba'al (20:3; Deut 22:22) "a married woman".
+- qarav el of a man and a woman (20:4) "come near".
+- tom levav (20:5, 6) "the blamelessness of one's heart", tom as at Job 4:6. niqyon kappayim "the innocence of one's palms", beside naqi "innocent" and kaf "palm".
+- gam anokhi (20:6, twice) "I too". chasakh min (20:6) "restrain from", as at Job 7:11. natan with an infinitive (20:6; 31:7) "let".
+- heshiv of a wife (20:7, 14) "give back".
+- navi (20:7) "prophet". hitpallel be'ad (20:7) "pray for"; hitpallel el (20:17) "pray to".
+- dibber be'ozne (20:8) "speak in the ears of", as at Deut 5:1.
+- chata'ah (20:9) "sin": it shares its English with chatta't. ma'asim asher lo ye'asu "deeds that are not done".
+- mah ra'ita ki (20:10) "What did you see, that".
+- raq at the head of a saying (20:11) "surely". yir'at elohim "fear of God", as in Job.
+- omnah (20:12; Josh 7:20) "truly", as omnam.
+- hit'ah (20:13) "make wander", as at Job 12:24. elohim with a plural verb (20:13; 35:7) "God" [alt at 20:13: the gods] (decision log, call: clear).
+- chesed between husband and wife (20:13) "loyalty": asah chesed im "show loyalty to".
+- amar el and amar le- of the person spoken about (20:2, 13) "say of".
+- elef kesef (20:16) "a thousand pieces of silver", with "pieces" supplied.
+- kesut enayim (20:16) "a covering of the eyes": the picture is kept. hu before it "it is" [alt: he is] (decision log, call: clear).
+- nokhachat (the niphal of hokhiach; 20:16) "be cleared" [alt: be rebuked] (decision log, call: ask).
+- amah (20:17; 21:10) "female servant", as at Job 19:15, kept distinct from shifchah "female slave" (20:14).
+- atsar be'ad rechem (20:18) "hold back a womb", atsar as at 16:2; the doubled verb "completely".
+- Names: Abimelech.
