@@ -1948,3 +1948,33 @@ closed. Close calls go in the chapter's decision log instead.
 - The Ketiv Ye'ish (36:5, 14) "Jeish", with one bracketed note at 36:5; Ye'ush as written (36:18) "Jeush".
 - Sha'ul of the king of Edom (36:37, 38) "Shaul", his usual English name; it is the Hebrew name of Saul, king of Israel (Obay can switch it).
 - Names: Oholibamah, Anah, Zibeon, Reuel, Jalam; Teman, Omar, Zepho, Gatam, Kenaz, Timna, Amalek; Nahath, Zerah, Shammah, Mizzah; Lotan, Shobal, Dishon, Ezer, Dishan; Hori, Hemam; Alvan, Manahath, Ebal, Shepho, Onam; Aiah; Hemdan, Eshban, Ithran, Cheran; Bilhan, Zaavan, Akan; Aran; Beor, Dinhabah, Bozrah, Husham, Bedad, Avith, Samlah, Masrekah, Baal-Hanan, Achbor, Hadar, Pau, Mehetabel, Matred, Me-Zahab; Alvah, Jetheth, Elah, Pinon, Mibzar, Magdiel, Iram. hattemani (36:34) "the Temanites"; Rechovot hannahar (36:37) "Rehoboth on the River". Already published and spelled the same: Adah (4:19), Eliphaz (Job 2:11), Korah (Jude 11), Uz (10:23), Bela (14:2), Jobab (10:29), Hadad (25:15, where the Hebrew name begins with another letter).
+
+## Settled in Genesis 37
+- ketonet passim (37:3, 23, 32; 2 Sam 13:18, 19) "a long tunic" [alt at 37:3: a tunic of many colors] (decision log, call: ask); the bracket is not repeated at 37:23, 32.
+- dibbah (37:2; Num 13:32) "report": dibbatam ra'ah "a bad report about them".
+- dibber leshalom (37:4) "speak peaceably to". ra'ah et-shelom (37:14) "see whether it is well with", as hashalom lo (29:6).
+- alummah (37:7) "sheaf"; illem "bind". savav of the sheaves "gather around".
+- An infinitive absolute with its own verb in a question (37:8, 10) "really", as at 24:5.
+- ga'ar be- (37:10) "rebuke": it shares its English with hokhiach (21:25).
+- shamar et-haddavar (37:11) "keep the matter in mind".
+- ra'ah of shepherds, with no object (37:13, 16) "shepherd"; with the flock as its object (37:12) "graze", as at 29:7.
+- heshiv davar (37:14) "bring back word".
+- biqqesh (37:15, 16) "look for", as at Job 10:6.
+- hitnakkel et (37:18) "plot against".
+- ba'al hachalomot (37:19) "dreamer": the idiom is translated by its meaning. hallazeh "that", as at 24:65.
+- bor (37:20-29; 40:15; 41:14) "pit": it shares its English with shachat (Job 9:31).
+- chayyah ra'ah (37:20, 33; Lev 26:6) "a savage animal".
+- hikkah nefesh (37:21; Deut 19:6, 11) "take the life of": the idiom is translated by its meaning.
+- hifshit with two objects (37:23) "strip ... of", as at Job 19:9.
+- orchah (37:25) "caravan", as at Job 6:19. nekhot (37:25; 43:11) "gum"; tsori "balm"; lot "resin".
+- betsa (37:26) "profit". kissah dam "cover blood", as at Job 16:18.
+- mashakh with he'elah (37:28) "pull up", "lift out". esrim kasef "twenty pieces of silver", as at 20:16.
+- begadim (37:29) "garments", as at 27:15; simlot (37:34) "clothes", as planned.
+- hayyeled enennu (37:30) "The child is gone": 42:13, 36 have the same word of Joseph.
+- se'ir izzim (37:31) "male goat": it shares its English with tayish (30:35).
+- hakker-na (37:32; 38:25) "Recognize it, please", hikkir as listed.
+- tarof toraf (37:33; 44:28) "has certainly been torn to pieces", taraf as listed.
+- hit'abbel al (37:34) "mourn for"; avel (37:35) "mourning". hitnachem (37:35) "be comforted", the English of the niphal (24:67).
+- saris (37:36; 39:1; 40:2, 7) "court official" [alt at 37:36: eunuch] (decision log, call: clear), kept distinct from sar "official" (12:15). sar hattabbachim (37:36; 39:1; 40:3) "the commander of the guard", sar as at 21:22.
+- hammedanim (37:36) "the Medanites" [alt: the Midianites] (decision log, call: clear).
+- Names: Dothan, Potiphar; hayyishme'elim "the Ishmaelites"; midyanim (37:28) "Midianite".
