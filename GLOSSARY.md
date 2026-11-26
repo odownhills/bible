@@ -1573,3 +1573,46 @@ closed. Close calls go in the chapter's decision log instead.
 - ets, a collective (23:17) "trees". bekhol-gevulo saviv "within its whole border on every side".
 - acharei-khen (23:19) "afterward", as at 6:4. qavar el "bury in".
 - Names: Kiriath-Arba, Ephron, Zohar, Machpelah (the Hebrew has the article each time). bene Chet "the sons of Heth"; hachitti "the Hittite".
+
+## Settled in Genesis 24
+- eved of Abraham's servant (24:2-66) "servant", and adon "master" (the Job 3 line), also in the narrator's mouth (24:9, 10); adoni to a stranger (24:18) "my lord". avadim ushefachot in a list of property (24:35) "male slaves and female slaves", as at 12:16.
+- zeqan beto (24:2) "the elder of his household". mashal be- of a steward (24:2) "govern", as listed.
+- sim yad tachat yerekh (24:2, 9; 47:29) "put one's hand under the thigh of".
+- hishbia (24:3, 37) "make swear". shevu'ah (24:8) "oath"; alah (24:41) "curse": the curse that an oath lays on the one who swears, kept distinct from shevu'ah. niqqah min and naqi min of an oath (24:8, 41; Josh 2:17, 20) "be clear of".
+- elohe hashamayim (24:3, 7) "the God of the heavens"; welohe ha'arets "and the God of the earth".
+- avah (24:5, 8) "be willing". halakh achare of a person (24:5, 8, 39, 61) "follow".
+- heshiv of a person, to a place (24:5, 6, 8) "take back". hishamer lekha pen (24:6) "be careful that ... not".
+- tuv (24:10; 45:18, 20) "good things".
+- hivrikh of camels (24:11) "make kneel". sha'av "draw"; hasho'avot "the women who draw water", with "water" supplied.
+- be'er (24:11, 20) "well" and ayin (24:13, 16, 29, 30, 42, 43, 45) "spring": never interchanged, as phrear and pege in John 4.
+- hiqrah lifne (24:12; 27:20) "make it happen before".
+- nitsav al of a spring (24:13, 43) "stand by": it shares its English with amad al (24:30).
+- na'arah (24:14, 16, 28, 55, 57) "young woman", as na'ar is "young man"; na'aroteha (24:61) "her young women". almah (24:43) "girl", kept distinct. betulah (24:16) "virgin".
+- kad "jar". hittah of a jar (24:14) "tilt"; horid (24:18, 46) "let down"; erah (24:20) "empty". shoqet (24:20; 30:38) "trough".
+- hishqah of camels (24:14, 46) "water"; of a person (24:18, 19, 43, 45) "give a drink", as at 21:19. higmi (24:17; only here) "let sip".
+- hokhiach le- (24:14, 44) "decide on ... for".
+- tovat mar'eh (24:16; 26:7) "beautiful in appearance", the English of yefat-mar'eh (12:11).
+- mishta'eh le- (24:21; only here) "gaze at" [alt: be astonished at] (decision log, call: clear). hecherish (24:21) "keep silent".
+- hitsliach derekh (24:21, 40, 42, 56) "make one's way succeed".
+- nezem "ring"; tsamid "bracelet"; yadayim of where bracelets are worn (24:22, 30, 47) "arms". beqa (24:22; Exod 38:26) "beka": the unit is kept, as sheqel is. asarah zahav (24:22) "ten shekels of gold", with "shekels" supplied.
+- lin, lun (24:23, 25, 54) "spend the night", as at 19:2. mispo "fodder": it shares its English with belil.
+- qadad (24:26, 48) "bow one's head", beside hishtachawah "bow down".
+- emet "truth": chesed we'emet of God (24:27) "faithful love and truth", between people (24:49) "loyalty and truth"; derekh emet (24:48) "a true way". azav ... me'im (24:27) "abandon ... toward".
+- nachah, hinchah (24:27, 48) "lead", as at Job 12:23.
+- bet immah (24:28) "her mother's household".
+- berukh YHWH (24:31; 26:29) "blessed of Yahweh". pinnah (24:31) "clear". pittach of camels (24:32) "unload".
+- yesh with a suffix and a participle (24:42, 49) "be going to".
+- im-lo after a prohibition (24:38) "Rather,".
+- acharei ziqnatah (24:36) "after she had grown old".
+- kelim (24:53) "articles". migdanot (24:53; Ezra 1:6) "precious things".
+- shillach of a guest and of Rebekah (24:54, 56, 59) "send on one's way", as at 18:16. ichar (24:56) "delay".
+- yamim o asor (24:55) "a few days, or ten" [alt: a year, or ten months] (decision log, call: clear).
+- sha'al et-pi (24:57) "ask ... herself": the idiom is translated by its meaning.
+- meneqet (24:59; 35:8) "nurse", beside heniq.
+- alfe revavah (24:60) "thousands of ten thousands". sone'av of the offspring (24:60) "those who hate them", as "their enemies" at 22:17.
+- rakhav al (24:61) "ride on".
+- suach (24:63; only here) "meditate" [alt: walk about] (decision log, call: clear). lifnot erev "toward evening".
+- nafal me'al of a rider (24:64; 2 Kgs 5:21) "drop down from".
+- tsa'if (24:65; 38:14, 19) "veil". hitkassah "cover oneself".
+- nicham, the niphal, of one who has lost someone (24:67; 38:12) "be comforted" ("regret" stays at 6:6-7).
+- Names: Aram Naharayim "Aram-Naharaim"; Laban.
