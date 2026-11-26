@@ -1305,3 +1305,28 @@ closed. Close calls go in the chapter's decision log instead.
 - le'orkah ulerochbah (13:17) "through its length and its width", orekh and rochav as listed.
 - be'elone Mamre (13:18; 14:13; 18:1) "among the oaks of Mamre".
 - Names: the Perizzites, the Jordan, Zoar, Mamre, Hebron.
+
+## Settled in Genesis 14
+- melekh goyim (14:1, 9; Josh 12:23) "king of Goiim" [alt at 14:1: king of nations] (decision log, call: close).
+- asah milchamah et (14:2) "make war against"; arakh milchamah et (14:8) "draw up for battle against": milchamah "war" or "battle", by context. et and ittam of the side fought (14:2, 8, 9) "against".
+- hu / hi before the other name of a place (14:2, 3, 7, 8, 17) "(that is, ...)", in parentheses.
+- chavar el (14:3) "join together at".
+- emeq (14:3, 8, 10, 17) "valley", kept distinct from kikkar and biq'ah "plain". yam hammelach "the Salt Sea". emeq hammelekh (14:17; 2 Sam 18:18) "the King's Valley".
+- avad with a king as its object (14:4) "serve", as listed. marad "rebel" (pesha stays "rebellion").
+- ushelosh-esreh shanah maradu (14:4) "and in the thirteenth year they rebelled" [alt: and for thirteen years they had rebelled] (decision log, call: close).
+- hikkah of peoples and kings in war (14:5, 7, 15, 17) "strike down", as listed.
+- beharram Se'ir (14:6) "in their hill country, Seir", har as listed. al-hammidbar "by the wilderness".
+- shuv on a march (14:7) "turn back". sedeh with the name of a people (14:7; 32:3) "the country of" (sadeh stays "field").
+- be'erot be'erot chemar (14:10) "full of tar pits": a noun said twice is "full of"; be'er elsewhere (21:25; 26:15) "well". nus "flee": it shares its English with barach. wayyippelu shammah "and they fell there".
+- palit (14:13; Ezek 24:26) "one who had escaped", beside nimlat "escape".
+- ha'ivri (14:13; 39:14) "the Hebrew". ba'ale berit (14:13) "have a covenant with": berit stays "covenant".
+- nishbah (14:14) "be taken captive". heriq of men (14:14) "lead out". chanikh (only here) "trained man". yelid bayit (14:14; 17:12, 13, 23, 27) "born in the house". radaf with no object "go in pursuit".
+- nechelaq al (14:15) "divide one's forces against". missemol le- (14:15) "north of" (Ezek 16:46). eved of the men of Abram's house (14:15) "servant".
+- heshiv with possessions and people (14:16) "bring back". yatsa liqrat (14:17) "go out to meet".
+- El Elyon (14:18, 19, 20, 22) "God Most High". kohen le- (14:18) "a priest of".
+- barukh with le- of the one who blesses (14:19; Ps 115:15) "Blessed is ... by".
+- qoneh shamayim wa'arets (14:19, 22) "owner of heaven and earth" [alt at 14:19: who brought heaven and earth into being] (decision log, call: ask). shamayim wa'arets with no article "heaven and earth".
+- miggen beyad (14:20) "deliver into the hand of"; tsar "foe", as listed. ma'aser "a tenth".
+- herim yad el (14:22) "raise one's hand to": the gesture of the oath is kept. im in an oath (14:23) "not", as listed. chut "thread"; serokh na'al "sandal strap". he'eshir "make rich".
+- bil'aday (14:24) "Nothing for me". cheleq of what was taken in war (14:24) "share" ("portion" stays for what God allots).
+- Names: Amraphel, Arioch, Ellasar, Chedorlaomer, Tidal, Goiim; Bera, Birsha, Shinab, Shemeber, Bela; Siddim; the Rephaim, the Zuzim, the Emim (Deut 2:10-11), the Horites, the Amalekites; Ashteroth-Karnaim, Ham (not the name of Noah's son), Shaveh-Kiriathaim, Seir, El-Paran, En-Mishpat, Kadesh, Hazazon-Tamar; Eshcol, Aner; Dan, Hobah, Damascus; Shaveh; Melchizedek, Salem.
