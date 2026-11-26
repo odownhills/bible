@@ -1774,3 +1774,38 @@ closed. Close calls go in the chapter's decision log instead.
 - yacham, yicham of the flock (30:38, 39, 41; 31:10) "breed".
 - mequshsharot, qeshurim (30:41, 42) "sturdy"; he'etif, atufim (30:42) "be feeble", "feeble".
 - Names: Dan, Naphtali, Gad, Asher, Issachar, Zebulun, Dinah, Joseph.
+
+## Settled in Genesis 31
+- kavod of what a man has gained (31:1) "wealth"; osher (31:16) "riches", beside he'eshir "make rich".
+- kitmol shilshom (31:2, 5) "as before".
+- hetel be- (31:7) "fool", as at Job 13:9. hechelif (31:7, 41) "change"; aseret monim "ten times".
+- hitsil of herds and riches taken from one man and given to another (31:9, 16) "take away"; "rescue" stays at Job 5:19.
+- attud (31:10, 12) "he-goat", kept distinct from tayish "male goat" (30:35). alah al of a male animal "mount". barod (31:10, 12; Zech 6:3, 6) "dappled".
+- ha'el Bet-El (31:13) "the God of Bethel". mashach "anoint".
+- cheleq wenachalah (31:14) "a share and an inheritance", cheleq as at 14:24. nokhriyyot "foreigners".
+- banim in chapter 31: of Jacob's household (31:16, 17) "children"; beside "daughters", of what is Laban's (31:28, 43, 55) "sons".
+- nahag of herds (31:18) "drive"; nihag of people (31:26) "drive off". miqneh qinyano (31:18) "the herds he had acquired".
+- gazaz of a flock (31:19) "shear" ("shave" of the head, Job 1:20).
+- terafim (31:19, 34, 35) "the teraphim": the name, as English has it, like the cherubim and the Nephilim; the chapter itself calls them gods (31:30, 32).
+- ganav lev, and ganav with a person as its object (31:20, 26, 27) "deceive", with one bracketed note at 31:20; it shares its English with rimmah (29:25).
+- hannahar by itself (31:21) "the River".
+- hidbiq with a person as its object (31:23) "catch up with"; hissig (31:25) "overtake".
+- mittov ad-ra after a negative (31:24, 29) "either good or bad". hishamer lekha pen "be careful that ... not" (24:6); hishamer lekha min with an infinitive (31:29) "be careful not to".
+- taqa ohel (31:25) "pitch a tent": it shares its English with natah ohel.
+- shevuyot cherev (31:26) "captives of the sword". nechba with an infinitive (31:27) "in secret". shir "song". natash with an infinitive (31:28) "let". hiskil aso "do a foolish thing".
+- yesh le'el yadi (31:29) "it is in the power of my hand". hera im (31:7) and asah im ... ra (31:29) "do harm"; lera'ah (31:52) "for harm".
+- nikhsaf le- (31:30) "yearn for", as kasaf (Job 14:15).
+- pen at the head of a thing said to oneself (31:31) "might". gazal "seize", as at Job 20:19.
+- kar haggamal (31:34) "the camel's saddle". mishshesh with an object (31:34, 37) "grope through". chippes "search".
+- charah be'ene (31:35; 45:5) "anger in the eyes of". derekh nashim li "the way of women is on me", as at 18:11.
+- riv be- (31:36) "quarrel with". pesha of a wrong that one man charges another with (31:36; Exod 22:9) "offense"; "rebellion" stays elsewhere. dalaq achare (31:36; 1 Sam 17:53) "chase hotly after".
+- kelim (31:37) "things". hokhiach ben (31:37) "decide between"; with nothing after it (31:42) "give one's decision".
+- rachel "ewe"; ez "female goat"; ayil "ram". terefah (31:39) "a torn animal". chitte (31:39) "bear the loss of". biqqesh miyyad "require from the hand of", beside darash miyyad "demand from the hand of" (9:5).
+- chorev (31:40) "heat": it shares its English with chom. qerach of the cold of night (31:40; Jer 36:30) "frost"; "ice" stays at Job 6:16. nadad of sleep "wander".
+- pachad Yitschaq (31:42, 53) "the Dread of Isaac", pachad as listed. hayah le- of God and a person (31:42; Ps 124:1) "be on the side of". reqam "empty-handed".
+- asah le- in welivnotay mah-e'eseh la'elleh (31:43) "do for" [alt: do to] (decision log, call: close).
+- hayah le'ed (31:44) "serve as a witness". herim of a stone (31:45) "raise". liqqet "gather". yarah of a pillar (31:51) "set up": it shares its English with sim matstsevah.
+- avar et of a mark set between two sides (31:52) "cross over".
+- elohim with a plural verb in Laban's oath (31:53): elohe Nachor "the god of Nahor" and elohe avihem "the gods of their father" [alt: the God of Nahor, the God of their father] (decision log, call: ask).
+- zavach zevach (31:54) "offer a sacrifice". akhal lechem "eat bread".
+- Names: Gilead, Jegar-Sahadutha, Galeed, Mizpah.
