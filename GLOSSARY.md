@@ -2023,3 +2023,27 @@ closed. Close calls go in the chapter's decision log instead.
 - bet hassohar (39:20-23; 40:3, 5) "prison"; sar bet-hassohar "the commander of the prison", sar as at 37:36. asir "prisoner", as listed; asur of a prisoner (39:20; 40:3, 5) "confined" (asar elsewhere "bind").
 - natah chesed el (39:21) "extend faithful love to". natan chen be'ene (39:21; Exod 3:21) "give ... favor in the eyes of".
 - ra'ah et of one who oversees (39:23) "look into". kol me'umah "anything at all".
+
+## Settled in Genesis 40
+- mashqeh of a man (40:1, 5, 13) "cupbearer"; ofeh "baker". sar hammashqim, sar ha'ofim (40:2-23; 41:9, 10) "the chief cupbearer", "the chief baker": sar here shares "chief" with alluf. mashqeh of his office (40:21) "cupbearing".
+- qatsaf al (40:2; 41:10) "be furious with", kept distinct from charah "be angry".
+- mishmar of a place where men are held (40:3, 4, 7; 41:10; 42:17) "custody".
+- paqad et ... et (40:4) "assign ... to".
+- yamim by itself, of a length of time (40:4) "for some time", as at 4:3.
+- patar "interpret"; pitron "interpretation"; ufoter en oto (40:8; 41:15) "and there is no one to interpret it". ish kefitron chalomo (40:5; 41:11) "each dream with its own interpretation".
+- zo'afim (40:6) "troubled". panim ra'im (40:7) "sad faces".
+- sipper with no object (40:8) "recount it".
+- sarigim (40:10, 12) "branches". parach "bud", as at Job 14:9; hivshil (40:10) "ripen"; eshkol "cluster"; anavim "grapes". sachat (40:11; only here) "squeeze". kos "cup".
+- natan al-kaf (40:11, 21) "put on the palm of", beside natan beyad (40:13) "give into the hand of".
+- nasa rosh (40:13, 19, 20) "lift the head of": the picture is kept all three times.
+- be'od sheloshet yamim (40:13, 19) "In three more days", as at 7:4.
+- heshiv al-ken (40:13; 41:13) "restore to one's post"; heshiv al (40:21) "restore to".
+- kammishpat harishon (40:13) "according to the former practice".
+- zakar ... ittekha (40:14) "keep in your memory"; hizkir el (40:14) "mention to", with one bracketed note; zakar (40:23) "remember" and shakhach "forget", as listed.
+- chesed between the cupbearer and Joseph (40:14) "loyalty", as at 20:13.
+- gunnav of a person (40:15) "be stolen".
+- sal (40:16-18) "basket". salle chori (40:16; chori only here) "baskets of white bread" [alt: open-weave baskets] (decision log, call: close).
+- ma'aseh ofeh (40:17) "the work of a baker". elyon of a basket "top".
+- me'al with a suffix (40:17, 19) "from off".
+- talah al-ets (40:19; Deut 21:22) "hang on a tree".
+- yom hulledet (40:20) "birthday".
