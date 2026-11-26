@@ -1,0 +1,418 @@
+{
+ "note": "Trial pictures for Quran 17:1-21.",
+ "method": "Second method, asked for by Obay on 2026-11-21: (1) split the part into sections that each carry one deep meaning, written as one plain sentence; (2) write picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
+ "sections": [
+  {
+   "verses": "1",
+   "meaning": "Glory to the one who took his servant by night from one place of worship to the farthest, so that he might show him signs. (Never shown: the servant, any building of worship. Only the night and the distance between two lit places.)",
+   "ideas": [
+    "A dark landscape at night with a thin line of light joining two far-apart glowing points",
+    "A huge starry night sky over hills with two tiny distant lights"
+   ]
+  },
+  {
+   "verses": "2-3",
+   "meaning": "The Book given to Moses is guidance for the Children of Israel: take no one to rely on but God, descendants of those carried with Noah.",
+   "ideas": [
+    "A hand gripping a thick rope bolted into rock beside a frayed thread",
+    "A small wooden boat carrying a family and animals over endless water at dawn"
+   ]
+  },
+  {
+   "verses": "4-8",
+   "meaning": "You will cause corruption on the earth twice and rise to a great height; when the promise comes, servants fierce in battle go back and forth among the homes; good or evil is only for yourselves; if you go back, we go back.",
+   "ideas": [
+    "A tall tower of blocks beside two collapsed heaps",
+    "An emptied street of open doors at dusk",
+    "A family return home with a full harvest",
+    "A man sawing a hole under his own seat in a boat",
+    "A door opening to dawn"
+   ]
+  },
+  {
+   "verses": "9-11",
+   "meaning": "This Quran guides to what is straightest; man calls for evil as he calls for good, and man is hasty.",
+   "ideas": [
+    "A straight lit road through a field of crooked winding trails",
+    "A child digs up a planted seed to see whether it has sprouted"
+   ]
+  },
+  {
+   "verses": "12-15",
+   "meaning": "Night and day are two signs, so you may seek bounty and know the number of the years and the reckoning; every person's fate is fastened to his neck; a book spread open: read your book, your own soul is enough as a reckoner; no bearer of burdens bears another's burden.",
+   "ideas": [
+    "Moon fading on one side of the sky and sun rising on the other over a farm valley",
+    "A notched tally post beside a farmhouse at dawn",
+    "A man alone reads an open album of his own days",
+    "A man faces his own reflection in an empty room",
+    "Two travelers each bent under his own pack"
+   ]
+  },
+  {
+   "verses": "16-17",
+   "meaning": "When we want to destroy a town, those in it who live in luxury are defiant and the word comes true and we demolish it completely; how many generations destroyed after Noah.",
+   "ideas": [
+    "A lit glass tower with a crack running up it",
+    "A once-lavish mansion overgrown and silent"
+   ]
+  },
+  {
+   "verses": "18-21",
+   "meaning": "Whoever wants the hasty life gets what we will for whom we want; whoever wants the hereafter and strives for it is thanked; each is supplied from the gift of your Lord, which is not restricted; look how some are set above others, and the hereafter is greater in degrees.",
+   "ideas": [
+    "One man runs downhill along a bright easy road, another climbs a steep path to a far sunrise",
+    "Rain falling on a patchwork of fields large and small, all watered",
+    "Terraces of rice paddies rising to a bright summit"
+   ]
+  }
+ ],
+ "scenes": [],
+ "candidates": [
+  {
+   "verse": 1,
+   "section": "1",
+   "image": "cand/01-night-road-a.jpg",
+   "principle": "Glory to the one who took his servant by night from the Sacred Place of Worship to the Farthest Place of Worship, whose surroundings we have blessed, so that we might show him some of our signs. He is the Hearing, the Seeing.",
+   "shows": "A dark landscape at night, a thin line of light road joining two far-apart glowing points, no one in sight.",
+   "prompt": "A wide dark landscape at night seen from high above, a single long thin road of pale light running across it and joining two far-apart glowing clusters of small lights at either horizon, a sky full of stars above, no people, no buildings of worship, quiet and vast. The road, the two glows and the stars are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 1,
+   "section": "1",
+   "image": "cand/01-night-road-b.jpg",
+   "principle": "Glory to the one who took his servant by night from the Sacred Place of Worship to the Farthest Place of Worship, whose surroundings we have blessed, so that we might show him some of our signs. He is the Hearing, the Seeing.",
+   "shows": "A huge starry night sky over dark hills with two tiny distant lights far apart.",
+   "prompt": "A huge starry night sky with the Milky Way arching over dark rolling hills, two tiny warm lights very far apart on the dark land below, no people, no buildings, a calm quiet. The sky and the two lights are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 2,
+   "section": "2-3",
+   "image": "cand/02-thick-rope-a.jpg",
+   "principle": "And we gave Moses the Book and made it guidance for the Children of Israel: \"Do not take for yourselves anyone to rely on other than me,",
+   "shows": "A hand grips a thick rope bolted into rock while a frayed thin thread hangs beside it.",
+   "prompt": "Close on a hand firmly gripping a thick strong rope bolted into a rock face above a deep gap, while right beside it a thin frayed thread of string dangles loose, daylight, mountain behind. The hand, the thick rope and the frayed thread are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 2,
+   "section": "2-3",
+   "image": "cand/02-thick-rope-b.jpg",
+   "principle": "And we gave Moses the Book and made it guidance for the Children of Israel: \"Do not take for yourselves anyone to rely on other than me,",
+   "shows": "A traveler steps onto a solid stone bridge while a rotted rope bridge sags beside it.",
+   "prompt": "A traveler in plain clothes steps confidently onto a solid old stone bridge over a gorge while right beside it a rotted rope-and-plank bridge sags and hangs broken, bright daylight. The traveler and both bridges are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 3,
+   "section": "2-3",
+   "image": "cand/03-family-boat-a.jpg",
+   "principle": "descendants of those we carried with Noah.\" He was a thankful servant.",
+   "shows": "A small wooden boat carrying a family and a few animals floats on endless calm water at dawn.",
+   "prompt": "A small plain wooden boat carrying a family of several people and a few animals floating on endless calm flood water that fills the whole horizon, a soft dawn light breaking through low clouds. The boat is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 3,
+   "section": "2-3",
+   "image": "cand/03-family-boat-b.jpg",
+   "principle": "descendants of those we carried with Noah.\" He was a thankful servant.",
+   "shows": "A mother and child at the rail of a small boat look toward a far sunrise on wide water.",
+   "prompt": "A mother and her small child at the rail of a small wooden boat look toward a far sunrise on wide still water, seen from behind, a few animals resting in the boat behind them. The mother, child and boat are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 4,
+   "section": "4-8",
+   "image": "cand/04-tower-of-blocks-a.jpg",
+   "principle": "And we decreed to the Children of Israel in the Book: You will certainly cause corruption on the earth twice, and you will certainly rise to a great height.",
+   "shows": "A tall tower of wooden blocks rises beside two earlier collapsed heaps, no one in sight.",
+   "prompt": "A tall wobbling tower of wooden building blocks standing in a plain room beside two earlier heaps of tumbled blocks, afternoon light, no people. The tall tower and the two heaps are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 4,
+   "section": "4-8",
+   "image": "cand/04-tower-of-blocks-b.jpg",
+   "principle": "And we decreed to the Children of Israel in the Book: You will certainly cause corruption on the earth twice, and you will certainly rise to a great height.",
+   "shows": "A tall stone tower stands in sunlight among two ruined earlier towers.",
+   "prompt": "A tall tower of stone standing in bright sunlight on a plain, with two earlier ruined towers of fallen stone beside it, grass growing in them, no people. The tall tower and the two ruins are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 5,
+   "section": "4-8",
+   "image": "cand/05-open-doors-a.jpg",
+   "principle": "So when the promise of the first of the two comes, we will raise up against you servants of ours who are fierce in battle, and they will go back and forth among the homes. And it is a promise that will be carried out.",
+   "shows": "An emptied town street at dusk, every door flung open, papers blowing through the air.",
+   "prompt": "A quiet emptied town street at dusk, every front door and shutter flung wide open, loose papers and leaves blowing along the road, nobody there, the light fading orange. The open doors and the street are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 5,
+   "section": "4-8",
+   "image": "cand/05-open-doors-b.jpg",
+   "principle": "So when the promise of the first of the two comes, we will raise up against you servants of ours who are fierce in battle, and they will go back and forth among the homes. And it is a promise that will be carried out.",
+   "shows": "A row of homes with open doors and lights left burning, nobody inside.",
+   "prompt": "A row of ordinary homes with open front doors and lamps left burning inside, chairs pushed back, no one to be seen, dusk. The homes are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 6,
+   "section": "4-8",
+   "image": "cand/06-harvest-home-a.jpg",
+   "principle": "Then we will give you back the turn against them, and we will supply you with wealth and sons and make you more numerous in men.",
+   "shows": "A family stands before their rebuilt house with children around them and a full granary behind.",
+   "prompt": "A mother, a father and several children stand before a newly rebuilt plain house in morning light, a wagon heaped high with grain beside them and a full barn behind, the family smiling together. The family and the house are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 6,
+   "section": "4-8",
+   "image": "cand/06-harvest-home-b.jpg",
+   "principle": "Then we will give you back the turn against them, and we will supply you with wealth and sons and make you more numerous in men.",
+   "shows": "A wagon heaped with grain rolls home with children riding on top.",
+   "prompt": "A wagon heaped high with golden grain rolling along a farm track toward a house at golden hour, several children riding on top laughing, a man walking beside it. The wagon and the children are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 7,
+   "section": "4-8",
+   "image": "cand/07-saw-the-seat-a.jpg",
+   "principle": "If you do good, you do good for yourselves, and if you do evil, it is for yourselves.",
+   "shows": "A man saws a hole in the boat's hull right beneath his own seat on a calm lake.",
+   "prompt": "A man in plain clothes sitting in a small wooden rowboat on a calm lake, sawing a hole in the planks of the hull right beneath his own seat, water beginning to seep in around his feet, calm lake and a bright morning behind. The man, the saw and the boat are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 7,
+   "section": "4-8",
+   "image": "cand/07-saw-the-seat-b.jpg",
+   "principle": "If you do good, you do good for yourselves, and if you do evil, it is for yourselves.",
+   "shows": "A man plants a tree whose shade falls across his own bench.",
+   "prompt": "A man in plain clothes plants a young tree in his own yard beside his own bench and house, a larger shade tree already beside it, the long shade of the tree falling across his bench, morning light. The man, the tree and the bench are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 8,
+   "section": "4-8",
+   "image": "cand/08-door-to-dawn-a.jpg",
+   "principle": "It may be that your Lord will have mercy on you. But if you go back, we will go back. And we have made Hell a prison for the disbelievers.",
+   "shows": "A man stands with a hand on the latch of a door opening a crack onto dawn light from a dark room.",
+   "prompt": "A man in plain clothes stands in a dark plain room with his hand on the latch of a door opening just a crack onto bright dawn light, a strip of light across the floor, seen from behind. The man and the door are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "from": "It may be that your Lord will have mercy on you"
+  },
+  {
+   "verse": 8,
+   "section": "4-8",
+   "image": "cand/08-door-to-dawn-b.jpg",
+   "principle": "It may be that your Lord will have mercy on you. But if you go back, we will go back. And we have made Hell a prison for the disbelievers.",
+   "shows": "A traveler at a fork turns away from the worn dark path toward a bright rising road.",
+   "prompt": "A traveler in plain clothes at a fork in the road turns his back on the dark worn path leading down and steps toward a bright rising road lit by morning sun, seen from behind. The traveler and the fork are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "from": "It may be that your Lord will have mercy on you"
+  },
+  {
+   "verse": 9,
+   "section": "9-11",
+   "image": "cand/09-straight-road-a.jpg",
+   "principle": "This Quran guides to what is straightest, and it gives good news to the believers who do righteous deeds that for them there is a great reward,",
+   "shows": "A single straight lit road runs through a field of crooked winding side trails.",
+   "prompt": "A single perfectly straight road lit by morning light running through a wide field crossed by many crooked winding side trails that wander off in every direction and fade, no people. The straight road and the winding trails are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 9,
+   "section": "9-11",
+   "image": "cand/09-straight-road-b.jpg",
+   "principle": "This Quran guides to what is straightest, and it gives good news to the believers who do righteous deeds that for them there is a great reward,",
+   "shows": "A straight canal of light through a maze of twisting hedges seen from above.",
+   "prompt": "Seen from high above, a maze of twisting overgrown hedges with one single straight bright path cut cleanly through the middle of it to the far side, soft morning light, no people. The straight path and the maze are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 11,
+   "section": "9-11",
+   "image": "cand/10-dug-up-seed-a.jpg",
+   "principle": "And man calls for evil as he calls for good, and man is hasty.",
+   "shows": "A child digs up a freshly planted seed with fingers to see if it has sprouted yet.",
+   "prompt": "A small child kneeling in a garden bed digs up a freshly planted seed with their fingers to check if it has sprouted yet, a small watering can beside them, impatient face, bright afternoon. The child and the open hole are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 11,
+   "section": "9-11",
+   "image": "cand/10-dug-up-seed-b.jpg",
+   "principle": "And man calls for evil as he calls for good, and man is hasty.",
+   "shows": "A man tears open an oven door early and a half-baked cake sinks.",
+   "prompt": "A man in a kitchen yanks open the oven door too early and a half-baked cake sinks flat, his impatient hurried face, warm light. The man, the oven and the cake are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 12,
+   "section": "12-15",
+   "image": "cand/11-moon-and-sun-a.jpg",
+   "principle": "And we have made the night and the day two signs. Then we erased the sign of the night and made the sign of the day give sight, so that you may seek bounty from your Lord, and so that you may know the number of the years and the reckoning.",
+   "shows": "A pale moon fades on one side of the sky while the sun rises on the other, over a farm valley.",
+   "prompt": "A wide sky above a farm valley, the pale moon fading in the dim blue on one side and a bright sun rising on the other, the dark of the night fading into a clear golden day, no people. The moon, the sun and the sky are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 12,
+   "section": "12-15",
+   "image": "cand/11-moon-and-sun-b.jpg",
+   "principle": "And we have made the night and the day two signs. Then we erased the sign of the night and made the sign of the day give sight, so that you may seek bounty from your Lord, and so that you may know the number of the years and the reckoning.",
+   "shows": "A farm at dawn with a last moon still up and the fields lit gold.",
+   "prompt": "A farmhouse and fields at dawn with a last pale moon still up in the sky and the fields just lit gold by the rising sun, a rooster on the fence, no people. The moon and the sunlit fields are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 12,
+   "section": "12-15",
+   "image": "cand/12-tally-post-a.jpg",
+   "principle": "And we have made the night and the day two signs. Then we erased the sign of the night and made the sign of the day give sight, so that you may seek bounty from your Lord, and so that you may know the number of the years and the reckoning.",
+   "shows": "A wooden post scratched with rows of tally marks stands beside a farmhouse at dawn.",
+   "prompt": "A weathered wooden post covered in rows of notched tally marks, years of them, standing beside an old farmhouse in the dawn light, close and sharp, no people. The post and its marks are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false,
+   "from": "so that you may know the number of the years"
+  },
+  {
+   "verse": 12,
+   "section": "12-15",
+   "image": "cand/12-tally-post-b.jpg",
+   "principle": "And we have made the night and the day two signs. Then we erased the sign of the night and made the sign of the day give sight, so that you may seek bounty from your Lord, and so that you may know the number of the years and the reckoning.",
+   "shows": "A stack of wall calendars from many years pinned to a barn wall.",
+   "prompt": "A barn wall with rows of faded hand-drawn wall calendars from many years pinned side by side, the closest one still crisp, daylight, no people and no readable words. The wall of calendars is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false,
+   "from": "so that you may know the number of the years"
+  },
+  {
+   "verse": 13,
+   "section": "12-15",
+   "image": "cand/13-open-album-a.jpg",
+   "principle": "And every person, we have fastened his fate to his neck. And on the Day of Resurrection we will bring out for him a book that he will meet spread open:",
+   "shows": "An old man alone at a table reads a huge open album of photographs of his own days.",
+   "prompt": "An old man alone at a wooden table reads a huge open photo album spread across the table showing the moments of his own life, a window light on his face, quiet plain room. The old man and the album are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 13,
+   "section": "12-15",
+   "image": "cand/13-open-album-b.jpg",
+   "principle": "And every person, we have fastened his fate to his neck. And on the Day of Resurrection we will bring out for him a book that he will meet spread open:",
+   "shows": "A woman sits alone with a large open scrapbook of her own life spread across the table.",
+   "prompt": "A woman sits alone at a table with a large open scrapbook of her own life spread wide open before her, tickets, photographs and letters, soft evening lamp light. The woman and the scrapbook are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 14,
+   "section": "12-15",
+   "image": "cand/14-mirror-a.jpg",
+   "principle": "\"Read your book. Your own soul is enough today as a reckoner against you.\"",
+   "shows": "A man faces his own reflection in a mirror in an empty room at dawn.",
+   "prompt": "A man stands alone in an empty plain room facing a large mirror at dawn, seeing only his own reflection looking steadily back at him, pale light from a window. The man and the mirror are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "from": "Your own soul is enough today"
+  },
+  {
+   "verse": 14,
+   "section": "12-15",
+   "image": "cand/14-mirror-b.jpg",
+   "principle": "\"Read your book. Your own soul is enough today as a reckoner against you.\"",
+   "shows": "A man sits alone on a bed's edge looking at his own reflection in a dark window.",
+   "prompt": "A man sits alone at the edge of a bed at night looking at his own reflection in a dark window, a single lamp, quiet. The man and the window are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "from": "Your own soul is enough today"
+  },
+  {
+   "verse": 15,
+   "section": "12-15",
+   "image": "cand/15-own-packs-a.jpg",
+   "principle": "Whoever is guided is guided only for himself, and whoever goes astray goes astray only against himself. And no bearer of burdens bears the burden of another. And we would not punish until we had raised up a messenger.",
+   "shows": "Two hikers climb the same trail, each bent under his own heavy pack.",
+   "prompt": "Two hikers climb the same mountain trail in single file, each bent under his own heavy pack, neither able to take the other's, bright daylight, seen from behind. The two hikers are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 15,
+   "section": "12-15",
+   "image": "cand/15-own-packs-b.jpg",
+   "principle": "Whoever is guided is guided only for himself, and whoever goes astray goes astray only against himself. And no bearer of burdens bears the burden of another. And we would not punish until we had raised up a messenger.",
+   "shows": "A row of people each carry a single stone of their own up the same hill.",
+   "prompt": "A row of ordinary people each carrying one heavy stone of their own up the same grassy hill in single file, each bent under his own stone, bright morning light. The row of people is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 16,
+   "section": "16-17",
+   "image": "cand/16-cracked-glass-tower-a.jpg",
+   "principle": "And when we want to destroy a town, we command those in it who live in luxury, and they are defiant in it, so the word comes true against it, and we demolish it completely.",
+   "shows": "A glass tower lit up all night with a wide crack running up its whole face.",
+   "prompt": "A tall luxurious glass tower of a rich city lit up brilliantly at night, a single wide crack running up its whole face, fountains and gardens at its foot, no people. The tower and the crack are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 16,
+   "section": "16-17",
+   "image": "cand/16-cracked-glass-tower-b.jpg",
+   "principle": "And when we want to destroy a town, we command those in it who live in luxury, and they are defiant in it, so the word comes true against it, and we demolish it completely.",
+   "shows": "A lavish party hall of a mansion in full light with the ceiling beginning to crack.",
+   "prompt": "A lavish empty banquet hall of a rich mansion in full chandelier light, rich food on the long tables, the ceiling beginning to crack and a fine dust falling, no people. The chandelier and the ceiling are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 17,
+   "section": "16-17",
+   "image": "cand/17-overgrown-mansion-a.jpg",
+   "principle": "And how many generations we have destroyed after Noah! And your Lord is enough as one who is aware of the sins of his servants and sees them.",
+   "shows": "A once-lavish mansion stands overgrown and silent, trees growing through its windows.",
+   "prompt": "A once-lavish mansion standing overgrown and silent, trees and vines growing through its windows and roof, an empty fountain, soft morning light, no people. The mansion is in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 17,
+   "section": "16-17",
+   "image": "cand/17-overgrown-mansion-b.jpg",
+   "principle": "And how many generations we have destroyed after Noah! And your Lord is enough as one who is aware of the sins of his servants and sees them.",
+   "shows": "A row of ruined old houses overgrown with vines on an empty lane.",
+   "prompt": "A row of ruined old houses of many different ages overgrown with vines along an empty lane, as if one generation after another has passed, mist, no people. The ruined houses are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 18,
+   "section": "18-21",
+   "image": "cand/18-easy-road-a.jpg",
+   "principle": "Whoever wants the hasty life, we hasten for him in it whatever we will, for whomever we want. Then we make Hell his, to burn in it, condemned and banished.",
+   "shows": "One man runs downhill on a bright easy road lined with lit shops while another climbs a steep path to a far sunrise.",
+   "prompt": "A hillside seen from the side: on the left a man running easily downhill along a bright road lined with lit shop windows and balloons, and on the right a woman climbing slowly up a steep rough path toward a far sunrise on the summit. Both people are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 18,
+   "section": "18-21",
+   "image": "cand/18-easy-road-b.jpg",
+   "principle": "Whoever wants the hasty life, we hasten for him in it whatever we will, for whomever we want. Then we make Hell his, to burn in it, condemned and banished.",
+   "shows": "A child grabs a sweet from a table while a woman plants an olive sapling.",
+   "prompt": "In a garden, a small child greedily grabs a sweet from a table while beside the child a woman kneeling plants a young olive sapling in the earth, patient, bright afternoon. The child, the woman and the sapling are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 20,
+   "section": "18-21",
+   "image": "cand/19-rain-on-fields-a.jpg",
+   "principle": "Each one we supply, these and those, from the gift of your Lord. And the gift of your Lord is not restricted.",
+   "shows": "Light rain falls evenly on a patchwork of fields, large and small, and every one is watered.",
+   "prompt": "A wide patchwork of farm fields, large and small, all under the same gentle rain falling evenly across all of them with shafts of sunlight, every field green and watered, no people. The fields and the rain are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 20,
+   "section": "18-21",
+   "image": "cand/19-rain-on-fields-b.jpg",
+   "principle": "Each one we supply, these and those, from the gift of your Lord. And the gift of your Lord is not restricted.",
+   "shows": "A single river splits into many small channels watering every garden in a village.",
+   "prompt": "A single river splitting into many small channels that water every garden and field of a village, big gardens and small ones alike all green, seen from high above in soft light, no people. The river and the gardens are in the upper two thirds of the picture. No church, no bell tower, no steeple and no tower of any kind anywhere in the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 21,
+   "section": "18-21",
+   "image": "cand/20-rice-terraces-a.jpg",
+   "principle": "Look how we have set some of them above others. And the hereafter is indeed greater in degrees and greater in setting some above others.",
+   "shows": "Terraced rice paddies rise step above step toward a bright summit lit by sun.",
+   "prompt": "Terraced rice paddies of different sizes rising step above step up a mountain toward a bright summit lit by sun, light shining on the upper terraces most, no people. The terraces are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 21,
+   "section": "18-21",
+   "image": "cand/20-rice-terraces-b.jpg",
+   "principle": "Look how we have set some of them above others. And the hereafter is indeed greater in degrees and greater in setting some above others.",
+   "shows": "A broad stone staircase rises through a green hillside toward bright light at its top.",
+   "prompt": "A broad plain stone staircase rising through a green hillside in many levels toward a bright light at its top, higher steps brighter, no people. The staircase is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  }
+ ]
+}
