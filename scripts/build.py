@@ -313,6 +313,7 @@ def parse(path):
 
 
 LANG_TAG = ""   # the language switch's script on the Quran site (scripts/lang.js), set in main()
+OFFLINE_TAG = ""   # offline reading on every page (scripts/offline.js and scripts/sw.js), set in main()
 
 
 def page(title, body, depth, tail="", css="", lang="", nav=None, footer=None):
@@ -326,6 +327,8 @@ def page(title, body, depth, tail="", css="", lang="", nav=None, footer=None):
         nav = '<a href="%s?home">%s</a>%s' % (up or "./", HOME, links)
     if LANG_TAG:
         tail += LANG_TAG % up
+    if OFFLINE_TAG:
+        tail += OFFLINE_TAG % up
     return """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -581,7 +584,13 @@ def main():
                 tv_js = tv_js.replace(a, z)
         open(os.path.join(OUT, "tv.js"), "w", encoding="utf-8").write(tv_js)
         tv_tag = '<script src="../tv.js?v=%s" defer></script>' % hashlib.sha1(tv_js.encode("utf-8")).hexdigest()[:8]
-    global LANG_TAG
+    global LANG_TAG, OFFLINE_TAG
+    # Offline reading (Obay, 2026-11-26): every page opened is kept on the reader's device and opens with no
+    # connection; a chapter's recording and Watch pictures are kept when the reader presses "Save for offline".
+    off_js = open(os.path.join(ROOT, "scripts", "offline.js"), encoding="utf-8").read()
+    open(os.path.join(OUT, "offline.js"), "w", encoding="utf-8").write(off_js)
+    off_tag = "offline.js?v=%s" % hashlib.sha1(off_js.encode("utf-8")).hexdigest()[:8]
+    OFFLINE_TAG = '<script src="%%s%s" defer></script>' % off_tag
     if WORK == "quran":   # the English | Arabic switch on every page
         lang_js = open(os.path.join(ROOT, "scripts", "lang.js"), encoding="utf-8").read()
         open(os.path.join(OUT, "lang.js"), "w", encoding="utf-8").write(lang_js)
@@ -855,7 +864,29 @@ if(s&&s.url&&(!nav||nav.type==='navigate')&&!inside&&!/[?&]home/.test(location.s
         "slots": quran_ar.slots if WORK == "quran" else None,
         "page": lambda body, css: page("Search", body, 1, "", css,
                                        lang=quran_ar.pill("en", "", "../ar/") if WORK == "quran" else "")})
+    offline(off_tag, [read_tag, tv_tag, LANG_TAG])
     print("Built %d %ss into %s/" % (len(chapters), UNIT, os.path.basename(OUT)))
+
+
+def offline(off_tag, tags):
+    """offline.html, the page a reader with no connection is given for a page that was never kept, and sw.js, the
+    service worker (scripts/sw.js), which keeps the pages. Its version changes only when what it keeps first does."""
+    lists = "manifest-en.json manifest-ar.json" if WORK == "quran" else "manifest.json"
+    body = ('<h1>You&rsquo;re offline</h1><p class="sub">This page has not been saved on this device yet. Everything '
+            'you have opened before still opens with no connection. A chapter&rsquo;s recording and pictures are kept '
+            'when you press &ldquo;Save for offline&rdquo; under its buttons.</p>'
+            '<h3 class="group">Ready to read now</h3><div id="off-list" data-lists="%s"></div>' % lists)
+    # It is given in place of a page at any address, so its links start from the top of the site.
+    html_ = page("Offline", body, 0).replace("<head>", '<head><base href="/"><meta name="robots" content="noindex">', 1)
+    open(os.path.join(OUT, "offline.html"), "w", encoding="utf-8").write(html_)
+    keep = ["./", "offline.html", off_tag] + lists.split()
+    if WORK == "bible":   # the books' lists of chapters, so the home page's books open with no connection
+        keep += [b["slug"] + "/" for b in BOOKS if os.path.exists(os.path.join(OUT, b["slug"], "index.html"))]
+    keep += [m.group(1) for t in tags if t for m in [re.search(r'src="(?:\.\./|%s)?([^"]+)"', t)] if m]
+    sw = open(os.path.join(ROOT, "scripts", "sw.js"), encoding="utf-8").read()
+    version = hashlib.sha1((sw + "\n".join(keep)).encode("utf-8")).hexdigest()[:8]
+    sw = sw.replace("'__VERSION__'", json.dumps(version)).replace("__PRECACHE__", json.dumps(keep))
+    open(os.path.join(OUT, "sw.js"), "w", encoding="utf-8").write(sw)
 
 
 if __name__ == "__main__":
