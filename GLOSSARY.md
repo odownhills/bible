@@ -1357,3 +1357,23 @@ closed. Close calls go in the chapter's decision log instead.
 - natatti in the words of a covenant (15:18) "I give", as at 9:3.
 - nehar Mitsrayim (15:18) "the river of Egypt". hannahar haggadol nehar-Perat "the great river, the river Euphrates".
 - Names: Eliezer; the Kenites, the Kenizzites, the Kadmonites, the Hittites.
+
+## Settled in Genesis 16
+- gevirah (16:4, 8, 9) "mistress". shifchah of Hagar "female slave", as listed.
+- atsar with min (16:2; 20:18) "hold back from", as atsar be-.
+- nivnah min of a woman (16:2; 30:3) "be built up from", with one bracketed note at 16:2 that it sounds like "son".
+- shama leqol (16:2; 3:17) "listen to the voice of"; shama el (16:11) "hear".
+- natan ... lo le'ishah (16:3) "give ... as his wife".
+- qalal be'ene of a person (16:4, 5) "count for little in the eyes of".
+- chamasi alekha (16:5) "The violence done to me is on you". natan becheq "give into the arms of".
+- shafat ben ... uven (16:5) "judge between ... and"; the jussive "May".
+- hattov be'ene (16:6) "what is good in the eyes of". barach mippene (16:6, 8) "flee from".
+- mal'akh YHWH "the angel of Yahweh". ayin "spring": it shares its English with ma'yan. bederekh with a place (16:7) "on the way to".
+- e-mizzeh va't (16:8) "from where have you come", as at Job 2:2.
+- hit'annah (16:9) "let oneself be afflicted" [alt: humble oneself] (decision log, call: close), beside innah "afflict" and oni "affliction".
+- lo yissafer merov (16:10; 32:12) "be too many to count".
+- harah, the adjective (16:11) "pregnant".
+- pere adam (16:12) "a wild donkey of a man". yad be- "hand against".
+- al-pene khol-echav (16:12; 25:18) "in the presence of all his brothers" [alt at 16:12: in defiance of all his brothers] (decision log, call: close).
+- El ro'i (16:13) "a God of seeing". ra'iti acharei ro'i "seen the back of the one who sees me" [alt: gone on seeing, after the one who sees me] (decision log, call: ask).
+- Names: Hagar, Ishmael, Shur, Bered; Be'er Lachay Ro'i (16:14; 24:62; 25:11) "Beer-Lahai-Roi".
