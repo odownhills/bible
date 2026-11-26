@@ -1,5 +1,5 @@
 {
- "note": "Trial pictures for Quran 2:153-177.",
+ "note": "Made by the steps in TV_PICTURES.md for Quran 2:153-177 (2026-11-26): 16 pictures from 32 trial pictures. Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. The Prophet Muhammad is never shown in any way, nor anyone standing in for him; God and the angels are not pictured; no religious symbols of any tradition; nothing violent. Tried and not chosen: A heron stands motionless in shallow water at dawn waiting. A fisherman sits calmly mending a torn net on the beach after a storm. Two low rocky hills stand joined by a plain stone path in morning light. Heavy curtains are thrown open and sunlight floods a dark room. The same lake at dawn, the dark night sky above pale gold light along the horizon. A small sailing boat with a full sail crosses a rolling blue sea. A desert in wild flower after rain, with a flock of small birds. Windmill blades turn on a ridge under large moving clouds. A crowd gathers in adoring rows before a huge glowing phone screen on a stage. A rope bridge snaps and its two halves hang loose over a gorge. A line of footprints in soft mud leads to the edge of a cliff. A farm cart's old ruts lead straight on into a muddy ditch. A man shouts into a wide empty canyon with cupped hands. A child's hands hold a steaming bowl at a kitchen window. A bowl at a table filled with glowing coals, a spoon resting in it. A hand gives a thick wallet to a small child at a doorstep.",
  "method": "Second method, asked for by Obay on 2026-11-21: (1) split the part into sections that each carry one deep meaning, written as one plain sentence; (2) write picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
  "sections": [
   {
@@ -72,54 +72,30 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
    "verse": 153,
    "section": "153-157",
-   "image": "cand/01-patient-boat-a.jpg",
+   "image": "01-patient-boat.jpg",
+   "tall": "tall/01-patient-boat.jpg",
    "principle": "You who believe, ask for help through patience and prayer. God is with those who are patient.",
    "shows": "A fisherman sits very still in a small boat at dawn with his line in calm water.",
    "prompt": "A fisherman in plain clothes sits perfectly still in a small boat on a calm misty lake at dawn, his line in the water, patient and relaxed, gold light on the mist. The fisherman and the boat are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 153,
-   "section": "153-157",
-   "image": "cand/01-patient-boat-b.jpg",
-   "principle": "You who believe, ask for help through patience and prayer. God is with those who are patient.",
-   "shows": "A heron stands motionless in shallow water at dawn waiting.",
-   "prompt": "A gray heron standing perfectly motionless in shallow water at dawn, waiting patiently, mist and soft gold light. The heron is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 155,
    "section": "153-157",
-   "image": "cand/02-hail-field-a.jpg",
+   "image": "02-hail-field.jpg",
+   "tall": "tall/02-hail-field.jpg",
    "principle": "And we will certainly test you with something of fear and hunger, and a loss of wealth, lives and fruits. And give good news to those who are patient,",
    "shows": "A farmer stands calm in a hail-flattened field and looks up at a clearing sky.",
    "prompt": "A farmer in plain clothes stands calm in the middle of his field of crops flattened by a hailstorm, the sky clearing behind him, and he looks up with a quiet steady face, seen from the side. The farmer and the sky are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 155,
-   "section": "153-157",
-   "image": "cand/02-hail-field-b.jpg",
-   "principle": "And we will certainly test you with something of fear and hunger, and a loss of wealth, lives and fruits. And give good news to those who are patient,",
-   "shows": "A fisherman sits calmly mending a torn net on the beach after a storm.",
-   "prompt": "A fisherman in plain clothes sits calmly on a beach mending a torn net beside his battered small boat after a storm, the clouds breaking and sunrise light on the sea behind. The fisherman and the net are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 158,
    "section": "158-162",
-   "image": "cand/03-two-hills-a.jpg",
-   "principle": "Safa and Marwa are among the symbols of God. So whoever makes the pilgrimage to the House or visits it, there is no blame on him if he goes around them. And whoever does good of his own accord, God is thankful, knowing.",
-   "shows": "Two low rocky hills stand joined by a plain stone path in morning light.",
-   "prompt": "Two low rocky hills a short way apart with a plain worn stone path between them across a dry valley floor in clear morning light, no one on it. The two hills and the path are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 158,
-   "section": "158-162",
-   "image": "cand/03-two-hills-b.jpg",
+   "image": "03-two-hills.jpg",
+   "tall": "tall/03-two-hills.jpg",
    "principle": "Safa and Marwa are among the symbols of God. So whoever makes the pilgrimage to the House or visits it, there is no blame on him if he goes around them. And whoever does good of his own accord, God is thankful, knowing.",
    "shows": "A footpath rises over one low rocky hill and runs down to a second hill across a dry valley.",
    "prompt": "A footpath of pale worn stone rising over one low rocky hill and running down across a dry valley to a second low hill, in warm early light, no one on it. The hills and the path are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
@@ -128,23 +104,17 @@
   {
    "verse": 159,
    "section": "158-162",
-   "image": "cand/04-hidden-lamp-a.jpg",
+   "image": "04-hidden-lamp.jpg",
+   "tall": "tall/04-hidden-lamp.jpg",
    "principle": "Those who conceal what we have sent down of the clear proofs and the guidance, after we have made it clear to the people in the Book, God curses them, and those who curse curse them,",
    "shows": "A man hides a bright lamp under a heavy blanket, with light leaking out at the edges.",
    "prompt": "A man in plain clothes in a dark room covers a bright burning lamp on a table with a heavy blanket, strong light leaking out at all the edges, his face worried. The man and the lamp are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 159,
-   "section": "158-162",
-   "image": "cand/04-hidden-lamp-b.jpg",
-   "principle": "Those who conceal what we have sent down of the clear proofs and the guidance, after we have made it clear to the people in the Book, God curses them, and those who curse curse them,",
-   "shows": "Heavy curtains are thrown open and sunlight floods a dark room.",
-   "prompt": "A person's hands throwing open heavy dark curtains in a gloomy room so that bright morning sunlight floods in and fills the room, dust floating in the light. The curtains and the light are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 164,
    "section": "163-164",
-   "image": "cand/05-dusk-sky-a.jpg",
+   "image": "05-dusk-sky.jpg",
+   "tall": "tall/05-dusk-sky.jpg",
    "principle": "In the creation of the heavens and the earth, and the alternation of night and day, and the ships that sail on the sea with what benefits people, and the water God has sent down from the sky, giving life with it to the earth after its ...",
    "shows": "The sky over hills holds day and night at once: a glowing sunset on one side and the first stars on the other.",
    "prompt": "A wide dusk sky over rolling hills, a glowing orange sunset on one side blending across the sky into deep blue night with the first stars on the other side. The sky is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
@@ -152,211 +122,113 @@
   },
   {
    "verse": 164,
+   "from": "the ships that sail on the sea",
    "section": "163-164",
-   "image": "cand/05-dusk-sky-b.jpg",
+   "image": "06-ship.jpg",
+   "tall": "tall/06-ship.jpg",
    "principle": "In the creation of the heavens and the earth, and the alternation of night and day, and the ships that sail on the sea with what benefits people, and the water God has sent down from the sky, giving life with it to the earth after its ...",
-   "shows": "The same lake at dawn, the dark night sky above pale gold light along the horizon.",
-   "prompt": "A calm lake at the moment before dawn, the dark starry night sky above fading into a pale gold light along the horizon, reflected in the water. The sky and the horizon are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "shows": "A large cargo ship carries its load across the open sea at sunrise.",
+   "prompt": "A large cargo ship loaded with colorful containers sailing across a wide open calm sea at sunrise, a long wake behind it. The ship is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
    "verse": 164,
+   "from": "and the water God has sent down from the sky",
    "section": "163-164",
-   "image": "cand/06-ship-a.jpg",
-   "principle": "In the creation of the heavens and the earth, and the alternation of night and day, and the ships that sail on the sea with what benefits people, and the water God has sent down from the sky, giving life with it to the earth after its ...",
-   "shows": "A large cargo ship carries its load across the open sea at sunrise.",
-   "prompt": "A large cargo ship loaded with colorful containers sailing across a wide open calm sea at sunrise, a long wake behind it. The ship is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false,
-   "from": "the ships that sail on the sea"
-  },
-  {
-   "verse": 164,
-   "section": "163-164",
-   "image": "cand/06-ship-b.jpg",
-   "principle": "In the creation of the heavens and the earth, and the alternation of night and day, and the ships that sail on the sea with what benefits people, and the water God has sent down from the sky, giving life with it to the earth after its ...",
-   "shows": "A small sailing boat with a full sail crosses a rolling blue sea.",
-   "prompt": "A small sailing boat with a full white sail crossing a rolling deep blue sea in bright sun, a few gulls overhead. The boat is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false,
-   "from": "the ships that sail on the sea"
-  },
-  {
-   "verse": 164,
-   "section": "163-164",
-   "image": "cand/07-rain-revives-a.jpg",
+   "image": "07-rain-revives.jpg",
+   "tall": "tall/07-rain-revives.jpg",
    "principle": "In the creation of the heavens and the earth, and the alternation of night and day, and the ships that sail on the sea with what benefits people, and the water God has sent down from the sky, giving life with it to the earth after its ...",
    "shows": "Rain pours over dry cracked ground and a lush green field stands beyond it.",
    "prompt": "Heavy rain falling out of a gray sky over dry cracked ground in the foreground, and beyond it a lush green field already springing up, soft light. The rain and the green field are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false,
-   "from": "and the water God has sent down from the sky"
+   "people": false
   },
   {
    "verse": 164,
+   "from": "and the shifting of the winds",
    "section": "163-164",
-   "image": "cand/07-rain-revives-b.jpg",
-   "principle": "In the creation of the heavens and the earth, and the alternation of night and day, and the ships that sail on the sea with what benefits people, and the water God has sent down from the sky, giving life with it to the earth after its ...",
-   "shows": "A desert in wild flower after rain, with a flock of small birds.",
-   "prompt": "A desert valley covered in wild flowers of every color after rain, with a flock of small birds and a few animals moving through, clear light. The flowers and the animals are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false,
-   "from": "and the water God has sent down from the sky"
-  },
-  {
-   "verse": 164,
-   "section": "163-164",
-   "image": "cand/08-wind-clouds-a.jpg",
+   "image": "08-wind-clouds.jpg",
+   "tall": "tall/08-wind-clouds.jpg",
    "principle": "In the creation of the heavens and the earth, and the alternation of night and day, and the ships that sail on the sea with what benefits people, and the water God has sent down from the sky, giving life with it to the earth after its ...",
    "shows": "Tall grass bends in the wind on a hillside while the shadows of moving clouds cross it.",
    "prompt": "A wide green hillside of tall grass bending in a strong wind, with the large moving shadows of clouds sweeping across it, big clouds in the sky above. The clouds and the hillside are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false,
-   "from": "and the shifting of the winds"
-  },
-  {
-   "verse": 164,
-   "section": "163-164",
-   "image": "cand/08-wind-clouds-b.jpg",
-   "principle": "In the creation of the heavens and the earth, and the alternation of night and day, and the ships that sail on the sea with what benefits people, and the water God has sent down from the sky, giving life with it to the earth after its ...",
-   "shows": "Windmill blades turn on a ridge under large moving clouds.",
-   "prompt": "A line of white windmills turning on a green ridge under huge moving clouds that cast shadows over the land, bright wind-swept light. The windmills and the clouds are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false,
-   "from": "and the shifting of the winds"
+   "people": false
   },
   {
    "verse": 165,
    "section": "165-167",
-   "image": "cand/09-gold-coin-a.jpg",
+   "image": "09-gold-coin.jpg",
+   "tall": "tall/09-gold-coin.jpg",
    "principle": "And among people there are some who take rivals for themselves apart from God, loving them as God is loved. But those who believe are stronger in love for God.",
    "shows": "A crowd kneels in a city square at night before a giant gold coin on a pedestal.",
    "prompt": "At night in a city square, a crowd of ordinary people of today in plain clothes kneel in rows before a giant shining gold coin on a tall pedestal, lit from below. The coin and the crowd are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 165,
-   "section": "165-167",
-   "image": "cand/09-gold-coin-b.jpg",
-   "principle": "And among people there are some who take rivals for themselves apart from God, loving them as God is loved. But those who believe are stronger in love for God.",
-   "shows": "A crowd gathers in adoring rows before a huge glowing phone screen on a stage.",
-   "prompt": "A big crowd of ordinary people of today in plain clothes face a huge glowing phone screen standing like a monument on a stage in a dark square, all with hands raised toward it. The screen and the crowd are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 166,
    "section": "165-167",
-   "image": "cand/10-cut-rope-a.jpg",
+   "image": "10-cut-rope.jpg",
+   "tall": "tall/10-cut-rope.jpg",
    "principle": "when those who were followed disown those who followed, and they see the punishment, and their ties are cut.",
    "shows": "A man at the front cuts the thick rope that ties many people to him and walks away.",
    "prompt": "A man in plain clothes at the front of a long thick rope tied to a crowd of people behind him cuts it with a knife and walks away, the crowd left holding the frayed rope end. The man and the cut rope are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 166,
-   "section": "165-167",
-   "image": "cand/10-cut-rope-b.jpg",
-   "principle": "when those who were followed disown those who followed, and they see the punishment, and their ties are cut.",
-   "shows": "A rope bridge snaps and its two halves hang loose over a gorge.",
-   "prompt": "A long rope footbridge over a deep gorge with its middle cut, the two halves hanging loose and frayed from each bank in clear light. The bridge and the gorge are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 168,
+   "from": "and do not follow Satan's footsteps",
    "section": "168-171",
-   "image": "cand/11-footprints-ice-a.jpg",
+   "image": "11-footprints-ice.jpg",
+   "tall": "tall/11-footprints-ice.jpg",
    "principle": "People, eat from what is on the earth, what is permitted and good, and do not follow Satan's footsteps. He is a clear enemy to you.",
    "shows": "A line of footprints crosses a frozen lake straight to a dark hole in the thin ice.",
    "prompt": "A line of footprints in snow crossing a wide frozen lake and leading straight to a dark hole in the thin ice, nobody in sight, cold blue morning light. The footprints and the hole are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false,
-   "from": "and do not follow Satan's footsteps"
-  },
-  {
-   "verse": 168,
-   "section": "168-171",
-   "image": "cand/11-footprints-ice-b.jpg",
-   "principle": "People, eat from what is on the earth, what is permitted and good, and do not follow Satan's footsteps. He is a clear enemy to you.",
-   "shows": "A line of footprints in soft mud leads to the edge of a cliff.",
-   "prompt": "A line of footprints in soft sand leading across a headland directly to the edge of a cliff above the sea, nobody in sight, clear light. The footprints and the cliff edge are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false,
-   "from": "and do not follow Satan's footsteps"
+   "people": false
   },
   {
    "verse": 170,
    "section": "168-171",
-   "image": "cand/12-sheep-circle-a.jpg",
+   "image": "12-sheep-circle.jpg",
+   "tall": "tall/12-sheep-circle.jpg",
    "principle": "And when they are told, \"Follow what God has sent down,\" they say, \"Rather, we follow what we found our fathers on.\" Even if their fathers understood nothing and were not guided?",
    "shows": "Sheep walk nose to tail in a worn circle around a single post in a field.",
    "prompt": "A flock of sheep walking nose to tail in a single worn circle around a single wooden post in the middle of a green field, a trodden ring in the grass, a wide green hill beyond. The sheep are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 170,
-   "section": "168-171",
-   "image": "cand/12-sheep-circle-b.jpg",
-   "principle": "And when they are told, \"Follow what God has sent down,\" they say, \"Rather, we follow what we found our fathers on.\" Even if their fathers understood nothing and were not guided?",
-   "shows": "A farm cart's old ruts lead straight on into a muddy ditch.",
-   "prompt": "A deep set of old cart ruts in a dirt road leading straight on into a muddy ditch at the road's end, green fields on both sides, soft light. The ruts and the ditch are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 171,
+   "from": "And the example of those who disbelieve",
    "section": "168-171",
-   "image": "cand/13-shout-cows-a.jpg",
+   "image": "13-shout-cows.jpg",
+   "tall": "tall/13-shout-cows.jpg",
    "principle": "And the example of those who disbelieve is like that of one who shouts at what hears nothing but a call and a cry. Deaf, mute, blind, so they do not use reason.",
    "shows": "A man shouts across a field at a herd of cows who look up blankly, hearing only noise.",
-   "prompt": "A man in plain clothes stands in a green field shouting with cupped hands toward a herd of cows that look up blankly at him, hearing only noise, soft light. The man and the cows are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "from": "And the example of those who disbelieve"
-  },
-  {
-   "verse": 171,
-   "section": "168-171",
-   "image": "cand/13-shout-cows-b.jpg",
-   "principle": "And the example of those who disbelieve is like that of one who shouts at what hears nothing but a call and a cry. Deaf, mute, blind, so they do not use reason.",
-   "shows": "A man shouts into a wide empty canyon with cupped hands.",
-   "prompt": "A man in plain clothes stands on a high rock ledge shouting with cupped hands across a wide empty canyon, hearing nothing but his own echo, seen from behind. The man and the canyon are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "from": "And the example of those who disbelieve"
+   "prompt": "A man in plain clothes stands in a green field shouting with cupped hands toward a herd of cows that look up blankly at him, hearing only noise, soft light. The man and the cows are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
    "verse": 172,
    "section": "172-176",
-   "image": "cand/14-loaf-a.jpg",
+   "image": "14-loaf.jpg",
+   "tall": "tall/14-loaf.jpg",
    "principle": "You who believe, eat from the good things we have provided for you, and give thanks to God, if it is him you worship.",
    "shows": "A man looks up with a thankful smile, holding a fresh loaf of bread in both hands.",
    "prompt": "A man in plain clothes stands at a bakery doorway in morning sun, looking up with a deeply thankful smile, holding a fresh warm loaf of bread in both hands. The man and the loaf are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 172,
-   "section": "172-176",
-   "image": "cand/14-loaf-b.jpg",
-   "principle": "You who believe, eat from the good things we have provided for you, and give thanks to God, if it is him you worship.",
-   "shows": "A child's hands hold a steaming bowl at a kitchen window.",
-   "prompt": "A child's hands hold a steaming bowl of soup at a kitchen window in warm morning light, steam rising, the child's grateful face just seen. The hands and the bowl are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 174,
    "section": "172-176",
-   "image": "cand/15-coal-plate-a.jpg",
+   "image": "15-coal-plate.jpg",
+   "tall": "tall/15-coal-plate.jpg",
    "principle": "Those who conceal what God has sent down of the Book and sell it for a small price, those eat nothing but the Fire into their bellies.",
    "shows": "A dinner plate set at a table with a heap of glowing red coals on it, with a fork and knife.",
    "prompt": "A dinner plate set at a dining table with a knife and fork, heaped with glowing red-hot coals instead of food, smoke rising, a plain dark room. The plate is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
    "people": false
   },
   {
-   "verse": 174,
-   "section": "172-176",
-   "image": "cand/15-coal-plate-b.jpg",
-   "principle": "Those who conceal what God has sent down of the Book and sell it for a small price, those eat nothing but the Fire into their bellies.",
-   "shows": "A bowl at a table filled with glowing coals, a spoon resting in it.",
-   "prompt": "A bowl on a dining table filled with glowing red-hot coals, a spoon resting in it, smoke curling up, a plain dark room. The bowl is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
-   "people": false
-  },
-  {
    "verse": 177,
    "section": "177",
-   "image": "cand/16-coat-a.jpg",
+   "image": "16-coat.jpg",
+   "tall": "tall/16-coat.jpg",
    "principle": "Virtue is not that you turn your faces in the direction of the east and the west, but virtue is the one who believes in God and the Last Day, the angels, the Book and the prophets, and gives wealth, though he loves it, to relatives, ...",
    "shows": "A man kneels at a roadside to put his coat around a shivering traveler, a signpost with two arrows pointing opposite ways behind them.",
    "prompt": "A man in plain clothes kneels at a roadside draping his own coat around a shivering traveler with a backpack, while behind them a signpost with two blank arrows points opposite directions, unnoticed. The two men and the signpost are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
-   "verse": 177,
-   "section": "177",
-   "image": "cand/16-coat-b.jpg",
-   "principle": "Virtue is not that you turn your faces in the direction of the east and the west, but virtue is the one who believes in God and the Last Day, the angels, the Book and the prophets, and gives wealth, though he loves it, to relatives, ...",
-   "shows": "A hand gives a thick wallet to a small child at a doorstep.",
-   "prompt": "Close on a man's hand holding out a thick wallet to a small child at a doorstep, the child's hands reaching up for it, warm light. The hand, the wallet and the child are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   }
  ]
 }
