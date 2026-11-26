@@ -1,5 +1,5 @@
 {
- "note": "Trial pictures for Quran 2:221-242.",
+ "note": "Made by the steps in TV_PICTURES.md for Quran 2:221-242 (2026-11-26): 12 pictures from 24 trial pictures. Wide pictures only (1920x1088); the \"tall\" names are kept for the day tall pictures are switched back on. Each scene starts at the first word of its verse, or at its \"from\" words inside the verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. The Prophet Muhammad is never shown in any way, nor anyone standing in for him; God and the angels are not pictured; no religious symbols of any tradition; nothing violent. Tried and not chosen: A glittering showy sports car stands beside a plain sturdy farm truck and a hand takes the truck's keys. A man stands frozen with a raised hand on a doorstep while a child behind him waits to be helped. A man stands at a crossroads at dusk, one road leading to a lit house and one away. A woman's hand on a windowsill with a calendar of marked days beside a seedling slowly growing. A man holds open a front door for a woman carrying her bags to leave, both calm and kind. A man lifts a road barrier so that two people may pass. A father carries a tired mother's bags up the steps while she holds the baby. A man stands on a street corner looking at a lit window and keeps his hands in his pockets. Two men each place their gift on a plain table, one a full basket and one a single loaf. A man opens his hand and lets a coin fall back into another's open palm. A worker lays down his tools and kneels on a plain mat in the corner of a workshop at midday. A neighbor mends the roof of a widow's house while her children watch from the porch.",
  "method": "Second method, asked for by Obay on 2026-11-21: (1) split the part into sections that each carry one deep meaning, written as one plain sentence; (2) write picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
  "sections": [
   {
@@ -64,199 +64,114 @@
    ]
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
    "verse": 221,
    "section": "221",
-   "image": "cand/01-real-plant-a.jpg",
+   "image": "01-real-plant.jpg",
+   "tall": "tall/01-real-plant.jpg",
    "principle": "And do not marry women who give God partners until they believe, and a believing slave woman is better than a woman who gives God partners, even if she impresses you.",
    "shows": "A hand passes over a bouquet of showy plastic flowers and reaches for a small real plant in a plain pot.",
    "prompt": "On a market table, a hand passes over a big showy bouquet of glittering plastic flowers and reaches instead for a small real green plant in a plain clay pot with a bud on it, warm light. The hand and the two plants are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 221,
-   "section": "221",
-   "image": "cand/01-real-plant-b.jpg",
-   "principle": "And do not marry women who give God partners until they believe, and a believing slave woman is better than a woman who gives God partners, even if she impresses you.",
-   "shows": "A glittering showy sports car stands beside a plain sturdy farm truck and a hand takes the truck's keys.",
-   "prompt": "A glittering showy red sports car parked beside a plain sturdy old farm truck on a country road in clear light, and a man's hand taking the truck's keys, passing over the other. The car, the truck and the hand are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 224,
    "section": "222-225",
-   "image": "cand/02-oath-door-a.jpg",
+   "image": "02-oath-door.jpg",
+   "tall": "tall/02-oath-door.jpg",
    "principle": "And do not make God, by your oaths, an obstacle to being virtuous, being mindful of him and setting things right between people. And God is hearing, knowing.",
    "shows": "A man stands with arms crossed outside a door he has sworn not to enter while a neighbor leans from the window needing help.",
    "prompt": "A man in plain clothes stands outside a closed front door with his arms crossed and a stubborn face, as an elderly neighbor leans out of the upper window beside it holding up a fallen basket, needing his help, afternoon light. The man and the neighbor are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 224,
-   "section": "222-225",
-   "image": "cand/02-oath-door-b.jpg",
-   "principle": "And do not make God, by your oaths, an obstacle to being virtuous, being mindful of him and setting things right between people. And God is hearing, knowing.",
-   "shows": "A man stands frozen with a raised hand on a doorstep while a child behind him waits to be helped.",
-   "prompt": "A man in plain clothes stands frozen on a doorstep with one hand raised and clenched in a vow, unable to move, while a small child behind him looks up waiting to be helped with a broken toy, afternoon light. The man and the child are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 226,
    "section": "226-232",
-   "image": "cand/03-gate-latch-a.jpg",
+   "image": "03-gate-latch.jpg",
+   "tall": "tall/03-gate-latch.jpg",
    "principle": "For those who swear off their wives there is a waiting of four months. Then if they come back, God is forgiving, merciful.",
    "shows": "A man stands at a gate with one hand on the latch and looks back at a house with a lit window.",
    "prompt": "A man in plain clothes stands at a garden gate at dusk with one hand on the latch, looking back thoughtfully over his shoulder toward a house with a warm lit window, seen from the side. The man, the gate and the lit house are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 226,
-   "section": "226-232",
-   "image": "cand/03-gate-latch-b.jpg",
-   "principle": "For those who swear off their wives there is a waiting of four months. Then if they come back, God is forgiving, merciful.",
-   "shows": "A man stands at a crossroads at dusk, one road leading to a lit house and one away.",
-   "prompt": "A man in plain clothes stands at a crossroads at dusk looking at two roads: one leading to a warm lit house and one leading away into the dark fields, seen from behind. The man and the two roads are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 228,
    "section": "226-232",
-   "image": "cand/04-waiting-window-a.jpg",
+   "image": "04-waiting-window.jpg",
+   "tall": "tall/04-waiting-window.jpg",
    "principle": "And divorced women keep themselves waiting for three periods. And it is not permitted to them to conceal what God has created in their wombs, if they believe in God and the Last Day.",
    "shows": "A woman waits patiently at a window as snow melts and spring comes outside.",
    "prompt": "A woman in plain clothes sits patiently at a window with a cup of tea, outside the window snow is melting and the first spring blossoms are appearing, soft morning light, seen from the side. The woman and the window are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 228,
-   "section": "226-232",
-   "image": "cand/04-waiting-window-b.jpg",
-   "principle": "And divorced women keep themselves waiting for three periods. And it is not permitted to them to conceal what God has created in their wombs, if they believe in God and the Last Day.",
-   "shows": "A woman's hand on a windowsill with a calendar of marked days beside a seedling slowly growing.",
-   "prompt": "A woman's hand resting on a sunlit windowsill beside a small seedling in a pot that is slowly growing, a quiet room, soft light, no writing visible. The hand and the seedling are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 229,
    "section": "226-232",
-   "image": "cand/05-parting-gate-a.jpg",
+   "image": "05-parting-gate.jpg",
+   "tall": "tall/05-parting-gate.jpg",
    "principle": "Divorce is twice. Then there is to be keeping as is right, or letting go in a good way. And it is not permitted to you to take anything of what you have given them, unless the two fear that they will not uphold God's limits.",
    "shows": "A couple part calmly at a front gate while he carries her suitcase to the car and they shake hands.",
    "prompt": "A man and a woman in plain clothes part calmly and kindly at a front gate in morning light, he has carried her suitcase to a waiting car and they shake hands with a gentle respectful nod. The two people are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 229,
-   "section": "226-232",
-   "image": "cand/05-parting-gate-b.jpg",
-   "principle": "Divorce is twice. Then there is to be keeping as is right, or letting go in a good way. And it is not permitted to you to take anything of what you have given them, unless the two fear that they will not uphold God's limits.",
-   "shows": "A man holds open a front door for a woman carrying her bags to leave, both calm and kind.",
-   "prompt": "A man in plain clothes holds open a front door with a calm kind face for a woman carrying her bags as she walks out, a quiet dignified farewell, morning light, seen from the side. The two people and the door are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 232,
    "section": "226-232",
-   "image": "cand/06-open-gate-a.jpg",
+   "image": "06-open-gate.jpg",
+   "tall": "tall/06-open-gate.jpg",
    "principle": "And when you divorce women and they reach their term, do not prevent them from marrying their husbands, when they agree between themselves as is right. That is the counsel given to whoever among you believes in God and the Last Day.",
    "shows": "A man steps aside and holds open a gate for a young couple to walk through together.",
    "prompt": "A man in plain clothes steps aside and holds open a wide garden gate for a young couple walking through it together hand in hand into the sunlit path beyond, seen from behind. The three people and the gate are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 232,
-   "section": "226-232",
-   "image": "cand/06-open-gate-b.jpg",
-   "principle": "And when you divorce women and they reach their term, do not prevent them from marrying their husbands, when they agree between themselves as is right. That is the counsel given to whoever among you believes in God and the Last Day.",
-   "shows": "A man lifts a road barrier so that two people may pass.",
-   "prompt": "A man in plain clothes lifts a red-and-white road barrier pole to let two people walk through together along the road ahead in the morning light. The man, the barrier and the two people are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 233,
    "section": "233-235",
-   "image": "cand/07-tray-blanket-a.jpg",
+   "image": "07-tray-blanket.jpg",
+   "tall": "tall/07-tray-blanket.jpg",
    "principle": "And mothers nurse their children for two full years, for whoever wants to complete the nursing. And their provision and their clothing are on the one to whom the child is born, as is right. No soul is burdened beyond its capacity.",
    "shows": "A father's hands bring a tray of food and a folded blanket to a mother resting in a chair with a baby on her lap.",
    "prompt": "In a warm living room, a father in plain clothes brings a tray of food and a folded blanket to a mother resting in a comfortable chair with a sleeping baby on her lap, tender, soft window light. The mother, baby and father are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 233,
-   "section": "233-235",
-   "image": "cand/07-tray-blanket-b.jpg",
-   "principle": "And mothers nurse their children for two full years, for whoever wants to complete the nursing. And their provision and their clothing are on the one to whom the child is born, as is right. No soul is burdened beyond its capacity.",
-   "shows": "A father carries a tired mother's bags up the steps while she holds the baby.",
-   "prompt": "A father in plain clothes carries a tired mother's heavy bags up the steps of a house while she walks beside him holding a baby in her arms, evening light. The family is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 235,
    "section": "233-235",
-   "image": "cand/08-hand-in-pocket-a.jpg",
+   "image": "08-hand-in-pocket.jpg",
+   "tall": "tall/08-hand-in-pocket.jpg",
    "principle": "And there is no blame on you for what you hint of a proposal to women, or keep within yourselves. God knows that you will think of them. But do not make promises with them in secret, unless you say what is right.",
    "shows": "A man stops with his hand halfway raised before a door and puts it back in his pocket.",
    "prompt": "A man in plain clothes stands before a neighbor's front door at dusk with one hand halfway raised to knock, and then puts the hand back in his pocket, restrained, seen from the side. The man and the door are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 235,
-   "section": "233-235",
-   "image": "cand/08-hand-in-pocket-b.jpg",
-   "principle": "And there is no blame on you for what you hint of a proposal to women, or keep within yourselves. God knows that you will think of them. But do not make promises with them in secret, unless you say what is right.",
-   "shows": "A man stands on a street corner looking at a lit window and keeps his hands in his pockets.",
-   "prompt": "A man in plain clothes stands on a quiet street corner at dusk looking up at a single lit window, keeping both hands in his pockets, restrained, seen from behind. The man and the lit window are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 236,
    "section": "236-237",
-   "image": "cand/09-envelope-coins-a.jpg",
+   "image": "09-envelope-coins.jpg",
+   "tall": "tall/09-envelope-coins.jpg",
    "principle": "There is no blame on you if you divorce women when you have not touched them or set an amount for them.",
    "shows": "A rich man's thick envelope and a poor man's few coins are each handed over with the same dignity.",
    "prompt": "Two hands side by side holding out what they can: a well-dressed man's hand with a thick envelope of money and a poor man's rough hand with a few coins, both held out with the same dignity to the same plain table, soft light. The two hands are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 236,
-   "section": "236-237",
-   "image": "cand/09-envelope-coins-b.jpg",
-   "principle": "There is no blame on you if you divorce women when you have not touched them or set an amount for them.",
-   "shows": "Two men each place their gift on a plain table, one a full basket and one a single loaf.",
-   "prompt": "Two men in plain clothes each place a gift on a plain table in front of a woman at a doorway, one a full rich basket of food and one a single plain loaf, both with the same dignity. The two men and the gifts are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 237,
    "section": "236-237",
-   "image": "cand/10-torn-note-a.jpg",
+   "image": "10-torn-note.jpg",
+   "tall": "tall/10-torn-note.jpg",
    "principle": "And if you divorce them before you touch them, when you have already set an amount for them, then half of what you set, unless they pardon it, or the one in whose hand is the knot of marriage pardons it.",
    "shows": "A man tears an IOU in two and hands the pieces back with a smile.",
    "prompt": "A man in plain clothes tears a slip of paper in two and hands the pieces back across a table to the other person with a generous smile, no writing visible, warm light. The man and the torn paper are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 237,
-   "section": "236-237",
-   "image": "cand/10-torn-note-b.jpg",
-   "principle": "And if you divorce them before you touch them, when you have already set an amount for them, then half of what you set, unless they pardon it, or the one in whose hand is the knot of marriage pardons it.",
-   "shows": "A man opens his hand and lets a coin fall back into another's open palm.",
-   "prompt": "A man in plain clothes opens his hand and lets coins fall back into another person's open palm, a generous smile, warm light. The two hands and the coins are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 238,
    "section": "238-239",
-   "image": "cand/11-still-in-crowd-a.jpg",
+   "image": "11-still-in-crowd.jpg",
+   "tall": "tall/11-still-in-crowd.jpg",
    "principle": "Watch over the prayers, and the middle prayer, and stand obedient to God.",
    "shows": "One person stands quietly with head bowed in a busy street while the crowd flows around.",
    "prompt": "A busy city street at midday with a crowd of people rushing past in motion blur, and one person in plain clothes standing perfectly still and quiet in the middle with head bowed, calm and sharp. The still person is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   },
   {
-   "verse": 238,
-   "section": "238-239",
-   "image": "cand/11-still-in-crowd-b.jpg",
-   "principle": "Watch over the prayers, and the middle prayer, and stand obedient to God.",
-   "shows": "A worker lays down his tools and kneels on a plain mat in the corner of a workshop at midday.",
-   "prompt": "A worker in plain clothes lays his tools on a bench and kneels on a plain mat in a quiet corner of a busy workshop at midday, head bowed, light from a window, the machines still. The worker is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
    "verse": 240,
    "section": "240-242",
-   "image": "cand/12-kitchen-neighbors-a.jpg",
+   "image": "12-kitchen-neighbors.jpg",
+   "tall": "tall/12-kitchen-neighbors.jpg",
    "principle": "And those of you who are taken in death and leave wives behind: a bequest for their wives of support for the year, without being driven out. But if they go out, there is no blame on you for what they do with themselves that is right.",
    "shows": "An old woman sits in her own kitchen while neighbors bring bread and soup.",
    "prompt": "An old woman in plain clothes sits at the table in her own warm kitchen at home while kind neighbors set bread and a pot of soup before her, the open door behind them, soft light. The woman and the neighbors are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
-  },
-  {
-   "verse": 240,
-   "section": "240-242",
-   "image": "cand/12-kitchen-neighbors-b.jpg",
-   "principle": "And those of you who are taken in death and leave wives behind: a bequest for their wives of support for the year, without being driven out. But if they go out, there is no blame on you for what they do with themselves that is right.",
-   "shows": "A neighbor mends the roof of a widow's house while her children watch from the porch.",
-   "prompt": "A neighbor in plain work clothes mends the roof of a small house on a ladder while a woman and her two children watch gratefully from the porch, afternoon light. The neighbor, the roof and the family are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
   }
  ]
 }
