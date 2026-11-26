@@ -1,0 +1,337 @@
+{
+ "note": "Trial pictures for Quran 2:178-203.",
+ "method": "Second method, asked for by Obay on 2026-11-21: (1) split the part into sections that each carry one deep meaning, written as one plain sentence; (2) write picture ideas for each section; (3) judge them: which shows the deep meaning most truly, then which a watcher understands at once while hearing the words, then which is most engaging; (4) make the top two for each picture slot as real pictures (\"candidates\") and choose by eye.",
+ "sections": [
+  {
+   "verses": "178-179",
+   "meaning": "Retaliation is prescribed, but whoever is pardoned something by his brother, a following up as is right and payment in a good way is a lightening and a mercy; there is life in it.",
+   "ideas": [
+    "A man sets down a heavy stone and offers an open hand to another, a basket of dates on the ground",
+    "A man lowers a raised hand and lets it open",
+    "Two men on a bridge, one stepping aside to let the other pass"
+   ]
+  },
+  {
+   "verses": "180-182",
+   "meaning": "When death comes, a bequest is made to parents and nearest relatives as is right; whoever changes it after hearing it bears the sin.",
+   "ideas": [
+    "An old man at a table writing, his grown children waiting in the next room",
+    "A house key on an envelope beside reading glasses on a table",
+    "A sealed letter handed to a young person"
+   ]
+  },
+  {
+   "verses": "183-185",
+   "meaning": "Fasting is prescribed for a limited number of days; for the sick or the traveler other days; God wants ease for you and not difficulty.",
+   "ideas": [
+    "A person sits calmly at a laid breakfast table with an untouched plate as the sun climbs",
+    "A table set with bread and fruit seen through a window at sunrise",
+    "A steep rocky path beside a gentle winding path, a traveler on the gentle one",
+    "A hiker setting down a heavy rucksack and a friend taking the strap"
+   ]
+  },
+  {
+   "verses": "186-187",
+   "meaning": "I am near; I answer the call of the one who calls. The night of the fast: spouses are a garment for one another, and you may eat and drink until the white thread of dawn is clear from the black thread.",
+   "ideas": [
+    "A lone traveler calls into the night and a window lights up very near",
+    "A telephone answered on the first ring",
+    "A couple wrapped in one shawl on a porch at night",
+    "The first thin white line of dawn over dark hills",
+    "A white thread and a black thread side by side on a table in dawn light"
+   ]
+  },
+  {
+   "verses": "188-189",
+   "meaning": "Do not eat up your wealth among yourselves by falsehood or bribe the judges; virtue is not coming to houses from the back but by their doors.",
+   "ideas": [
+    "A hand slides an envelope under a judge's bench",
+    "A man climbs in through a back window of a house whose front door stands open",
+    "A boy climbing over a fence beside an open gate"
+   ]
+  },
+  {
+   "verses": "190-195",
+   "meaning": "Do not overstep the limit; fight only those who fight you; if they stop there is no aggression; spend for good and do not throw yourselves into destruction with your own hands.",
+   "ideas": [
+    "A rope line at a boundary with a man's hand on it",
+    "A dam holding back a river",
+    "A family comes home carrying bundles to an open door",
+    "A man sitting on a branch sawing it off beside the trunk",
+    "A man digging a pit beneath his own house"
+   ]
+  },
+  {
+   "verses": "196-199",
+   "meaning": "Complete the pilgrimage and the visit, with supplies, and the best supply is mindfulness; then pour out from Arafat and ask forgiveness.",
+   "ideas": [
+    "A long road with small groups of travelers walking the same way at dawn",
+    "A traveler's pack on a table with bread, water and boots",
+    "An aerial view of a great crowd pouring across a plain like a river",
+    "A river pouring out through a gap in a ridge"
+   ]
+  },
+  {
+   "verses": "200-203",
+   "meaning": "Remember God as you remember your fathers, or more; some ask only for this world and have no share in the hereafter; others ask for good in this world and the hereafter.",
+   "ideas": [
+    "A man counts coins in a dim room while sunrise fills the window unseen",
+    "A woman at a window at dawn with both hands cupped open toward the light",
+    "A child holding two things at once, an apple and a book"
+   ]
+  }
+ ],
+ "scenes": [],
+ "candidates": [
+  {
+   "verse": 178,
+   "section": "178-179",
+   "image": "cand/01-pardon-a.jpg",
+   "principle": "You who believe, retaliation for those who are killed is prescribed for you: the free for the free, the slave for the slave, and the female for the female.",
+   "shows": "A man lets fall the heavy stone he carried and holds out an open hand to another man, a basket of dates at his feet.",
+   "prompt": "Two men in plain clothes face each other on a dusty village lane in morning light: one has let fall a heavy stone from his hand to the ground and now holds out his empty open hand toward the other, a basket of dates set at his feet as payment. The two men are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 178,
+   "section": "178-179",
+   "image": "cand/01-pardon-b.jpg",
+   "principle": "You who believe, retaliation for those who are killed is prescribed for you: the free for the free, the slave for the slave, and the female for the female.",
+   "shows": "A man lowers his raised hand and lets it open as another man stands still facing him.",
+   "prompt": "Two men in plain clothes stand face to face in a quiet street at morning: one has been holding a raised clenched fist and now slowly lowers it and opens his hand, while the other stands still and calm. The two men are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 180,
+   "section": "180-182",
+   "image": "cand/02-keys-envelope-a.jpg",
+   "principle": "It is prescribed for you, when death comes to one of you, if he leaves goods, to make a bequest to parents and nearest relatives, as is right: a duty on those who are mindful of God.",
+   "shows": "A house key rests on a sealed envelope beside a pair of reading glasses on a wooden table, light from a window.",
+   "prompt": "A wooden table by a window in soft light with a house key resting on top of a sealed envelope, a pair of reading glasses and a small framed photograph of a family beside them, as if left behind by someone dear. The key, envelope and glasses are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 180,
+   "section": "180-182",
+   "image": "cand/02-keys-envelope-b.jpg",
+   "principle": "It is prescribed for you, when death comes to one of you, if he leaves goods, to make a bequest to parents and nearest relatives, as is right: a duty on those who are mindful of God.",
+   "shows": "An old man's weathered hands write at a table while his grown children wait in the next room.",
+   "prompt": "An old man's weathered hands write carefully on a sheet of paper at a table, seen close from behind the pen so that no words can be read, a lamp and a window, and out of focus through an open door his grown children waiting quietly in the next room. The hands and the paper are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 183,
+   "section": "183-185",
+   "image": "cand/03-waiting-plate-a.jpg",
+   "principle": "You who believe, fasting is prescribed for you as it was prescribed for those before you, so that you may be mindful of God.",
+   "shows": "A person sits calmly at a laid breakfast table with an untouched plate and hands in lap as the sun climbs outside.",
+   "prompt": "A person in plain clothes sits calmly at a breakfast table laid with fresh bread, fruit and a glass of water, hands resting in the lap, not touching the food, the morning sun climbing in the window behind. The person and the table are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 183,
+   "section": "183-185",
+   "image": "cand/03-waiting-plate-b.jpg",
+   "principle": "You who believe, fasting is prescribed for you as it was prescribed for those before you, so that you may be mindful of God.",
+   "shows": "A full table of bread and fruit seen through a window at sunrise, a person's silhouette waiting.",
+   "prompt": "A table laid with fresh bread, dates and a jug of water seen through a window in the first light of sunrise, a person sitting patiently in front of it with hands folded, untouched. The table and the person are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 185,
+   "section": "183-185",
+   "image": "cand/04-easy-path-a.jpg",
+   "principle": "The month of Ramadan is the one in which the Quran was sent down, as guidance for the people and as clear proofs of the guidance and the criterion. So whoever of you witnesses the month, let him fast it.",
+   "shows": "Two paths up a hill, a steep rocky one and a gentle winding one, and a traveler walks the gentle one.",
+   "prompt": "A green hillside with two paths up it: a steep stony straight path and a gentle winding easy path, and a traveler in plain outdoor clothes walking up the gentle winding one, seen from behind in clear light. The traveler and both paths are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 185,
+   "section": "183-185",
+   "image": "cand/04-easy-path-b.jpg",
+   "principle": "The month of Ramadan is the one in which the Quran was sent down, as guidance for the people and as clear proofs of the guidance and the criterion. So whoever of you witnesses the month, let him fast it.",
+   "shows": "A hiker sets down a heavy rucksack and a friend takes the other strap to share the load.",
+   "prompt": "A hiker in plain outdoor clothes puts down a very heavy rucksack at the top of a steep path and relaxes his shoulders while a friend takes the other strap to share the load, soft light. The two hikers are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 186,
+   "section": "186-187",
+   "image": "cand/05-window-lights-a.jpg",
+   "principle": "And when my servants ask you about me, I am near. I answer the call of the one who calls, when he calls on me. So let them answer me and believe in me, so that they may take the right course.",
+   "shows": "A lone traveler calls out in a dark field at night and a window of a house very near lights up.",
+   "prompt": "A lone traveler in plain clothes stands in a dark field at night calling out with cupped hands, and just beside him a window of a plain farmhouse lights up warmly, very near. The traveler and the window are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 186,
+   "section": "186-187",
+   "image": "cand/05-window-lights-b.jpg",
+   "principle": "And when my servants ask you about me, I am near. I answer the call of the one who calls, when he calls on me. So let them answer me and believe in me, so that they may take the right course.",
+   "shows": "A phone on an old wall mount is picked up on the first ring in a lit hallway.",
+   "prompt": "A hand lifting the receiver of an old wall telephone in a warm lit hallway at night on the first ring, a clock just visible. The hand and the phone are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 187,
+   "section": "186-187",
+   "image": "cand/06-shawl-a.jpg",
+   "principle": "It is permitted to you, on the night of the fast, to be intimate with your wives. They are a garment for you, and you are a garment for them. God knew that you were betraying yourselves, so he relented toward you and pardoned you.",
+   "shows": "A couple wrapped together in one shawl on a porch at night looks at the stars.",
+   "prompt": "A man and a woman in plain clothes sit close on a porch at night wrapped together in one wide shawl, looking up at the stars, the porch lamp turned low. The couple is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 187,
+   "section": "186-187",
+   "image": "cand/06-shawl-b.jpg",
+   "principle": "It is permitted to you, on the night of the fast, to be intimate with your wives. They are a garment for you, and you are a garment for them. God knew that you were betraying yourselves, so he relented toward you and pardoned you.",
+   "shows": "Two people share one warm blanket on a bench at a dark lakeside.",
+   "prompt": "Two people in plain clothes share one warm blanket on a bench at a dark lakeside at night, close together, the water still and starry. The two people are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 187,
+   "section": "186-187",
+   "image": "cand/07-white-thread-a.jpg",
+   "principle": "It is permitted to you, on the night of the fast, to be intimate with your wives. They are a garment for you, and you are a garment for them. God knew that you were betraying yourselves, so he relented toward you and pardoned you.",
+   "shows": "The first thin white line of dawn lies on the horizon over dark hills, clearly separate from the black sky.",
+   "prompt": "The first thin white line of dawn lying along the horizon over dark hills, sharply separate from the deep black sky above it, a quiet pre-dawn landscape. The horizon and the white line are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false,
+   "from": "And eat and drink until the white thread"
+  },
+  {
+   "verse": 187,
+   "section": "186-187",
+   "image": "cand/07-white-thread-b.jpg",
+   "principle": "It is permitted to you, on the night of the fast, to be intimate with your wives. They are a garment for you, and you are a garment for them. God knew that you were betraying yourselves, so he relented toward you and pardoned you.",
+   "shows": "A white thread and a black thread lie side by side on a wooden table in the first light of dawn.",
+   "prompt": "Close on a plain wooden table in the first pale light of dawn from a window: one white thread and one black thread lie side by side, clearly distinct, a needle nearby. The two threads are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false,
+   "from": "And eat and drink until the white thread"
+  },
+  {
+   "verse": 188,
+   "section": "188-189",
+   "image": "cand/08-under-bench-a.jpg",
+   "principle": "And do not eat up your wealth among yourselves by falsehood, or put it before the judges so that you may eat up a part of people's wealth in sin, while you know.",
+   "shows": "A hand slides a thick envelope under the edge of a judge's bench.",
+   "prompt": "Close on a plain courtroom bench: a man's hand slides a thick envelope of money under the edge of the judge's bench, while above the judge's gavel rests. The hand and the envelope are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 188,
+   "section": "188-189",
+   "image": "cand/08-under-bench-b.jpg",
+   "principle": "And do not eat up your wealth among yourselves by falsehood, or put it before the judges so that you may eat up a part of people's wealth in sin, while you know.",
+   "shows": "A man hides a bundle of bills inside a law book while a judge looks away.",
+   "prompt": "A man in plain clothes slips a bundle of bills between the pages of a heavy book on a desk while a judge in the room looks away toward the window. The man and the book are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 189,
+   "section": "188-189",
+   "image": "cand/09-back-window-a.jpg",
+   "principle": "They ask you about the new moons. Say, \"They are appointed times for the people and for the pilgrimage.\" And virtue is not that you come to houses from the back, but virtue is the one who is mindful of God.",
+   "shows": "A man climbs in through a back window of a house whose front door stands wide open.",
+   "prompt": "A man in plain clothes struggles climbing in through a small back window of a plain house, while at the front the door stands wide open and welcoming, shown in the same view around the corner of the house, afternoon light. The man and the open door are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 189,
+   "section": "188-189",
+   "image": "cand/09-back-window-b.jpg",
+   "principle": "They ask you about the new moons. Say, \"They are appointed times for the people and for the pilgrimage.\" And virtue is not that you come to houses from the back, but virtue is the one who is mindful of God.",
+   "shows": "A boy climbs over a high fence beside a wide open gate in a garden wall.",
+   "prompt": "A boy in plain clothes struggles climbing over a high garden fence while right beside him a wide gate in the same fence stands open, afternoon light. The boy and the gate are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 190,
+   "section": "190-195",
+   "image": "cand/10-boundary-rope-a.jpg",
+   "principle": "And fight in the way of God those who fight you, and do not overstep. God does not love those who overstep.",
+   "shows": "A rope line marks a boundary across a field and a man stops with his hand on it, going no further.",
+   "prompt": "A rope line on wooden posts marking a boundary across a green field at dawn, and a man in plain clothes stops at it with one hand resting on the rope, going no further, seen from the side. The man and the rope are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 190,
+   "section": "190-195",
+   "image": "cand/10-boundary-rope-b.jpg",
+   "principle": "And fight in the way of God those who fight you, and do not overstep. God does not love those who overstep.",
+   "shows": "A strong dam holds a great river back within its banks.",
+   "prompt": "A strong concrete dam holding a wide river back within its banks, the water calm and full behind it, clear light, seen from the valley. The dam is in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 193,
+   "section": "190-195",
+   "image": "cand/11-home-again-a.jpg",
+   "principle": "And fight them until there is no persecution and the religion belongs to God. But if they stop, then there is no aggression except against the wrongdoers.",
+   "shows": "A family comes home carrying bundles to an open door of their house in the evening light.",
+   "prompt": "A family of ordinary people of today in plain clothes carrying bundles and bags returns home along a lane to the open door of their house, a lamp lit inside, evening light, seen from behind. The family and the door are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "from": "And fight them until there is no persecution"
+  },
+  {
+   "verse": 193,
+   "section": "190-195",
+   "image": "cand/11-home-again-b.jpg",
+   "principle": "And fight them until there is no persecution and the religion belongs to God. But if they stop, then there is no aggression except against the wrongdoers.",
+   "shows": "A girl and her father unlock the door of their old house and light streams out.",
+   "prompt": "A girl and her father in plain clothes stand at the open door of their old house after a long time away, warm light streaming out over them, seen from behind. The two and the door are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "from": "And fight them until there is no persecution"
+  },
+  {
+   "verse": 195,
+   "section": "190-195",
+   "image": "cand/12-cut-branch-a.jpg",
+   "principle": "And spend in the way of God, and do not throw yourselves into destruction with your own hands, and do good. God loves those who do good.",
+   "shows": "A man sits on a tree branch and saws it off at the trunk, so that it is about to fall with him.",
+   "prompt": "A man in plain clothes sits on a thick tree branch sawing through it at the trunk with a hand saw, so that the branch with himself on it is about to fall, bright summer light. The man and the branch are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 195,
+   "section": "190-195",
+   "image": "cand/12-cut-branch-b.jpg",
+   "principle": "And spend in the way of God, and do not throw yourselves into destruction with your own hands, and do good. God loves those who do good.",
+   "shows": "A man digs a deep pit beneath the foundation of his own house.",
+   "prompt": "A man in plain clothes digs a deep pit with a shovel right beneath the corner foundation of his own house, the corner already cracking, afternoon light. The man and the house corner are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 196,
+   "section": "196-199",
+   "image": "cand/13-road-travelers-a.jpg",
+   "principle": "And complete the pilgrimage and the visit for God. But if you are held back, then whatever offering comes easily. And do not shave your heads until the offering reaches its place.",
+   "shows": "Small groups of ordinary travelers walk the same long road in the same direction at dawn.",
+   "prompt": "A long road across a wide plain at dawn with small groups of ordinary travelers in plain clothes with light packs walking the same way along it toward a far low glowing horizon, seen from behind. The travelers and the horizon are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 196,
+   "section": "196-199",
+   "image": "cand/13-road-travelers-b.jpg",
+   "principle": "And complete the pilgrimage and the visit for God. But if you are held back, then whatever offering comes easily. And do not shave your heads until the offering reaches its place.",
+   "shows": "A traveler's pack lies ready on a table with bread, a water bottle and a pair of boots.",
+   "prompt": "A traveler's pack lying ready on a wooden table in early light with bread, a water bottle, a clean cloth and a pair of sturdy boots beside it. The pack and the supplies are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 198,
+   "section": "196-199",
+   "image": "cand/14-pouring-out-a.jpg",
+   "principle": "There is no blame on you if you seek bounty from your Lord. Then when you pour out from Arafat, remember God at the Sacred Landmark. And remember him as he has guided you, and before that you were indeed among those who had gone astray.",
+   "shows": "An aerial view of a great crowd pouring across a wide plain like a river toward the evening.",
+   "prompt": "An aerial view at evening of a huge crowd of ordinary people in plain clothes pouring across a wide open plain in one flowing river of people toward a glowing horizon. The crowd and the horizon are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 198,
+   "section": "196-199",
+   "image": "cand/14-pouring-out-b.jpg",
+   "principle": "There is no blame on you if you seek bounty from your Lord. Then when you pour out from Arafat, remember God at the Sacred Landmark. And remember him as he has guided you, and before that you were indeed among those who had gone astray.",
+   "shows": "A river pours out of a lake through a gap in a ridge and spreads into the plain.",
+   "prompt": "A broad river pouring out of a lake through a narrow gap in a ridge and spreading wide into a golden plain at evening, seen from above. The river and the ridge are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 201,
+   "section": "200-203",
+   "image": "cand/15-cupped-hands-a.jpg",
+   "principle": "And among them there are some who say, \"Our Lord, give us good in this world and good in the hereafter, and guard us against the punishment of the Fire.\"",
+   "shows": "A woman at a window at dawn holds both hands cupped open toward the rising light.",
+   "prompt": "A woman in plain clothes stands at an open window at dawn with both hands held out cupped and open, lit by the rising sun, a garden and sky behind. The woman and her hands are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  },
+  {
+   "verse": 201,
+   "section": "200-203",
+   "image": "cand/15-cupped-hands-b.jpg",
+   "principle": "And among them there are some who say, \"Our Lord, give us good in this world and good in the hereafter, and guard us against the punishment of the Fire.\"",
+   "shows": "A man at a table counts coins in a dim room while the sunrise fills the window unseen behind him.",
+   "prompt": "A man in plain clothes sits at a table in a dim room counting a pile of coins, never looking up, while the sunrise and a garden fill the window behind him unseen. The man and the window are in the upper two thirds of the picture. Everything that matters is in the upper part of the frame; the lower part is plain foreground."
+  }
+ ]
+}
