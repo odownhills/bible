@@ -1280,3 +1280,28 @@ closed. Close calls go in the chapter's decision log instead.
 - nigga with nega'im (12:17) "strike with plagues"; nega (Exod 11:1) "plague". It shares "strike" with shuf (3:15).
 - qara le- (12:18) "call". laqach li le'ishah (12:19) "take as my wife". hinneh ishtekha "look, here is your wife". tsiwwah al "command concerning". shillach (12:20) "send out", as listed.
 - Names: Shechem, Moreh, Bethel, Ai, the Negev, Pharaoh; hammitsrim "the Egyptians".
+
+## Settled in Genesis 13
+- kaved of wealth (13:2) "rich": kaved me'od "very rich" ("severe" of a famine, 12:10). kesef "silver" and zahav "gold", as listed.
+- lemassa'av (13:3; Exod 17:1; Num 10:12) "by his stages": massa is the noun of nasa "travel" (11:2).
+- battechillah (13:3) "at the beginning" (it shares its English with reshit); barishonah (13:4) "at the first".
+- wayyiqra sham Avram beshem YHWH (13:4) "and there Abram called on the name of Yahweh" [alt: where Abram had called on the name of Yahweh] (decision log, call: clear).
+- nasa of a land and those who live on it (13:6; 36:7) "support"; nasa enayim (13:10, 14) "lift one's eyes", as listed. yachdav "together", as yachad. yakhol "be able".
+- riv of people in a story (13:7; 26:20-22) "quarrel" ("contend" stays in the speeches of Job); merivah (13:8) "quarreling".
+- ro'e miqneh (13:7) "the shepherds of ... herds", ro'eh and miqneh as listed.
+- anashim achim (13:8) "men who are brothers"; ach stays "brother" where it is a brother's son (13:8, 11; 14:14, 16). ish me'al achiv (13:11) "each from his brother".
+- nifrad me'al, me'im (13:9, 11, 14) "separate from", parad as listed.
+- hassemol, hayyamin (13:9) "the left", "the right"; hemin "go to the right"; hismil "go to the left".
+- kikkar (13:10, 11, 12; 19:17, 25, 28, 29) "plain": kikkar hayyarden "the plain of the Jordan"; are hakkikkar "the cities of the plain". It shares its English with biq'ah (11:2); Deut 34:3 has the two side by side.
+- mashqeh (13:10) "well watered", beside hishqah "water" (2:6, 10). gan-YHWH "the garden of Yahweh". lifne with an infinitive "before".
+- shichet of Sodom and Gomorrah (13:10; 19:13, 14, 29) "ruin", as listed.
+- bachar lo (13:11) "choose for himself".
+- ahal (13:12, 18) "move one's tent", kept distinct from natah ohel "pitch a tent" (12:8).
+- anshe Sedom (13:13; 19:4) "the men of Sodom". chatta "sinner" (the same English as hamartolos): chatta'im laYHWH "sinners against Yahweh". me'od at the end of a sentence with no verb (13:13) "very much so".
+- na with an imperative, of Yahweh to a person (13:14) "now".
+- tsafonah, negbah, qedmah, yammah (13:14; 28:14) "northward", "southward", "eastward", "westward".
+- ad-olam (13:15) "forever": it shares its English with le'olam.
+- sim ke- (13:16) "make like". afar ha'arets (13:16; 28:14) "the dust of the earth". manah "count".
+- le'orkah ulerochbah (13:17) "through its length and its width", orekh and rochav as listed.
+- be'elone Mamre (13:18; 14:13; 18:1) "among the oaks of Mamre".
+- Names: the Perizzites, the Jordan, Zoar, Mamre, Hebron.
