@@ -2074,3 +2074,37 @@ closed. Close calls go in the chapter's decision log instead.
 - shavar of grain (41:56, 57) "buy grain"; with le- of the buyer (41:56) "sell grain to". It is not shavar "break" (19:9).
 - Mitsrayim of the people (41:55, 56) "Egypt", as the Genesis 10 line says.
 - Names: Zaphenath-Paneah, Asenath, Potiphera (not the Potiphar of 37:36; the Hebrew spellings differ), On, Manasseh, Ephraim.
+
+## Settled in Genesis 42
+- shever (42:1, 2) "grain for sale"; of what has been bought (42:26; 43:2) "the grain they had bought"; (42:19) "grain". It is the noun of shavar "buy grain", kept apart from bar "grain" where the two stand close (42:25-26).
+- hitra'ah (42:1) "look at one another".
+- qara of ason (42:4, 38; 44:29) "come to": ason "harm" (it shares its English with ra'ah, 31:52). pen at the head of a thing said (42:4) "might", as at 31:31. haqqorot otam (42:29) "all that had happened to them".
+- shallit (42:6) "the one who held power", kept distinct from mashal "govern" and radah "rule over". hammashbir "the one who sold grain", as at 41:56.
+- hitnakker el (42:7) "act as a stranger toward", with one bracketed note that it is a form of hikkir "recognize".
+- dibber qashot et (42:7, 30) "speak harshly with".
+- me'ayin ba'tem (42:7) "From where have you come?", as at 16:8. shavar okhel (42:7, 10; 43:2) "buy food".
+- chalam le- (42:9) "dream about".
+- meraggelim (42:9-34) "spies"; with et-ha'arets (42:30) "men spying on the land". ervat ha'arets (42:9, 12) "the nakedness of the land": the picture is kept.
+- kenim (42:11, 19, 31, 33, 34) "honest".
+- enennu of Joseph and of Simeon (42:13, 32, 36) "is gone", as at 37:30.
+- bachan (42:15, 16) "test", as at Job 7:18.
+- che far'oh (42:15, 16) "by the life of Pharaoh"; ki after it (42:16) "surely".
+- ne'esar of men held (42:16, 19) "be confined", as asur (39:20); asar (42:24) "bind". bet mishmarkhem (42:19) "the house where you are in custody". asaf el-mishmar (42:17) "gather into custody".
+- ra'avon (42:19, 33) "hunger", beside ra'av "famine". In 42:33 "grain" is supplied.
+- ne'eman of words (42:20) "be confirmed" ("trusted" at Job 12:20).
+- ashem al (42:21) "guilty over", beside asham "guilt". tsarat nafsho "his distress of soul".
+- chata be- (42:22) "sin against". nidrash of blood (42:22) "be demanded", as at 9:5.
+- shama of Joseph (42:23) "understand", as at 11:7, with one bracketed note that it is the word for "listen" (42:21, 22).
+- melits of one who stands between two languages (42:23) "interpreter": it shares its English with patar "interpret"; "spokesman" stays at Job 33:23.
+- savav me'al (42:24) "turn away from".
+- kelim of what grain is carried in (42:25; 43:11) "containers". saq (42:25, 27, 35) "sack" ("sackcloth" at 37:34); amtachat (42:27, 28; 43:12-44:12) "bag"; tseror kesef (42:35) "bundle of silver" (tseror is "bag" at Job 14:17).
+- tsedah laddarekh (42:25; 45:21) "provisions for the way".
+- wayya'as with no subject named (42:25) "it was done", as at 11:9.
+- malon (42:27; 43:21) "lodging place".
+- wayyetse libbam (42:28) "their hearts sank": the idiom is translated by its meaning. charad el (42:28) "turn to ... trembling".
+- adone ha'arets (42:30, 33) "the lord of the land". natan ke- (42:30) "treat as".
+- hinniach et (42:33) "leave with": it shares its English with hitsig im (33:15).
+- shikkel with a person as its object (42:36; 43:14) "bereave", beside shakhol "be bereaved of" (27:45).
+- alay hayu (42:36) "have come on me".
+- natan al-yad (42:37) "put in the care of".
+- sevah of an old man's head (42:38; 44:29, 31) "gray hair"; "old age" stays at 15:15. yagon (42:38; 44:31) "sorrow". horid she'olah "bring down to Sheol".
