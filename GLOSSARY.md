@@ -2047,3 +2047,30 @@ closed. Close calls go in the chapter's decision log instead.
 - me'al with a suffix (40:17, 19) "from off".
 - talah al-ets (40:19; Deut 21:22) "hang on a tree".
 - yom hulledet (40:20) "birthday".
+
+## Settled in Genesis 41
+- ye'or (41:1-18) "the Nile"; sefat haye'or "the bank of the Nile" (safah of the sea stays "shore").
+- parah "cow". bari (41:2-20) "fat": beri'ot basar "fat in flesh". daq (41:3-24) "thin"; raq (41:19, 20, 27; only here) "lean"; dal of cattle (41:19) "poor". ra'ot mar'eh, ra'ot to'ar "bad in appearance", "bad in form"; roa "badness".
+- shibbolet "ear of grain", then "ear". qaneh of grain (41:5, 22) "stalk"; "reed" stays elsewhere. shaduf (41:6, 23, 27) "scorched". tsanum (41:23; only here) "shriveled". req of an ear (41:27) "empty".
+- nif'am of a spirit (41:8; Ps 77:4; Dan 2:1, 3) "be disturbed", kept distinct from zo'afim "troubled" (40:6).
+- chartummim (41:8, 24; Exod 7:11) "magicians"; chakhamim "wise men".
+- chet (41:9) "sin": it shares its English with chatta't. hizkir with an object (41:9) "mention", as at 40:14.
+- herits (41:14) "rush". gillach "shave": it shares its English with gazaz (Job 1:20).
+- bil'aday as an answer (41:16) "Not I"; bil'adekha (41:44) "without you". anah et-shelom (41:16) "give an answer for the welfare of".
+- sava (41:29-53) "plenty": it shares its English with rov (27:28). shene hassava, shene hara'av "the years of plenty", "the years of famine".
+- killah with a land as its object (41:30) "make an end of", as at Job 9:22. nakhon of a matter (41:32) "established".
+- navon (41:33, 39) "discerning", beside bin "discern". ra'ah of a man to be picked out (41:33) "look for": it shares its English with biqqesh.
+- paqid (41:34) "overseer"; hifqid ... al "put in charge of", as at 39:4.
+- chimmesh (41:34; only here) "take a fifth from" [alt: make ready] (decision log, call: close).
+- qavats (41:35, 48) "gather": it shares its English with asaf. tsavar (41:35, 49) "heap up". bar (41:35, 49) "grain": it shares its English with dagan. tachat yad "under the hand of". piqqadon (41:36) "reserve".
+- ruach elohim in Pharaoh's mouth (41:38) "the spirit of God" [alt: a spirit of gods] (decision log, call: clear).
+- al-pikha yishshaq (41:40) "submit to your word" [alt: arm themselves at your word] (decision log, call: close). kisse "throne".
+- natan al, shit al of a man and a land (41:33, 41, 43) "set over".
+- tabba'at (41:42) "signet ring"; shesh "fine linen"; ravid "chain". hirkiv (41:43) "have ride"; mirkevet hammishneh asher-lo (41:43; 2 Chr 35:24) "his second chariot".
+- avrekh (41:43; only here) "Kneel!" [alt: an Egyptian word whose meaning is not given] (decision log, call: close).
+- yatsa al (41:45) "go out over". liqmatsim (41:47) "by the handful".
+- nishshah (41:51) "make forget", beside hishshah "let be forgotten" (Job 11:6). amal of Joseph (41:51) "misery", as listed.
+- chazaq of a famine (41:56, 57) "grow strong", "be strong"; kaved of it stays "severe" (41:31).
+- shavar of grain (41:56, 57) "buy grain"; with le- of the buyer (41:56) "sell grain to". It is not shavar "break" (19:9).
+- Mitsrayim of the people (41:55, 56) "Egypt", as the Genesis 10 line says.
+- Names: Zaphenath-Paneah, Asenath, Potiphera (not the Potiphar of 37:36; the Hebrew spellings differ), On, Manasseh, Ephraim.
