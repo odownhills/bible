@@ -1870,3 +1870,40 @@ closed. Close calls go in the chapter's decision log instead.
 - hitsiv mizbeach (33:20) "set up an altar", beside banah "build".
 - El Elohe Yisra'el (33:20) "God, the God of Israel".
 - Names: Succoth, Hamor.
+
+## Settled in Genesis 34
+- ra'ah be- of people one goes out to (34:1) "see"; "look on" stays at 21:16.
+- innah of a man and a woman (34:2; Deut 22:24, 29; 2 Sam 13:12, 14) "violate": the word does not itself say force; "afflict" stays elsewhere (15:13; 16:6; 31:50).
+- dibber al-lev (34:3; 50:21) "speak to the heart of": the picture is kept. davaq nefesh be- (34:3) "his soul clung to", davaq as at 2:24.
+- yaldah (34:4) "girl": it shares its English with almah.
+- timme (34:5, 13, 27) "defile", beside tame "unclean": it shares its English with miaino.
+- keshom'am (34:7) with "came in from the field", as the Hebrew accents divide the verse [alt: with "the men were pained"] (decision log, call: close).
+- nevalah (34:7; Deut 22:21; Josh 7:15) "outrage": the noun of naval "foolish" (Job 2:10). asah nevalah beYisra'el "do an outrage in Israel" [alt at 34:7: against Israel] (decision log, call: clear).
+- wekhen lo ye'aseh (34:7; 2 Sam 13:12) "and such a thing is not done".
+- chashaq nefesh be- (34:8) "his soul is set on".
+- hitchatten et (34:9) "intermarry with", beside chatan "son-in-law".
+- sachar with a land as its object (34:10, 21; 42:34) "trade in", beside socher "merchant" [alt at 34:10: move about in] (decision log, call: clear).
+- ne'echaz be- (34:10; 47:27) "take holdings in", beside achuzzah "holding".
+- mohar (34:12; Exod 22:17) "bride price". mattan (34:12) "gift": it shares its English with mattanah. hirbah al ... me'od (34:12) "put a very great ... on".
+- ish asher-lo orlah (34:14) "a man who has a foreskin"; arel stays "uncircumcised".
+- ne'ot le- (34:15, 22, 23) "consent to"; akh-bezot (34:15, 22) "Only on this condition".
+- yatav be'ene (34:18; 41:37) "be good in the eyes of", as tov be'ene.
+- chafets be- of a person (34:19) "delight in"; "wish" stays in Job (9:3).
+- nikhbad mikkol (34:19) "the most honored of all".
+- shalem im (34:21) "at peace with", with one bracketed note that it is the word for "safely" (33:18).
+- rachavat yadayim (34:21; Judg 18:10) "broad on every side", rachav as at Job 11:9.
+- qinyan (34:23; 36:6) "what one has acquired", as at 31:18.
+- kol-yots'e sha'ar iro (34:24) "all who went out of the gate of his city", as ba'e sha'ar iro (23:10, 18).
+- ko'ev (34:25) "in pain", as at Job 14:22.
+- betach (34:25) "in security", as at Job 11:18, taken with the ones who came [alt: of the city, "while it felt secure"] (decision log, call: close).
+- ba al of an attack (34:25) "come against"; with the slain (34:27) "come upon".
+- harag lefi-charev (34:26) "kill with the edge of the sword", as at Job 1:15.
+- chalal (34:27) "the slain". bazaz (34:27, 29) "plunder".
+- taf (34:29; 43:8) "little ones", kept distinct from yeled "child". shavah (34:29) "take captive", as nishbah (14:14).
+- babbayit, a collective (34:29) "in the houses".
+- akhar (34:30; Josh 7:25) "bring trouble on". hiv'ish be- (34:30; 1 Sam 27:12) "make stink among": the picture is kept.
+- yoshev ha'arets (34:30; 50:11) "those who live in the land".
+- mete mispar (34:30; Deut 4:27) "few in number", as the Job 16 line planned.
+- nishmad (34:30) "be destroyed": it shares its English with ibbed.
+- zonah (34:31; 38:15) "prostitute". asah et of how a person is dealt with (34:31) "treat".
+- Names: hachiwwi (34:2) "the Hivite", as at 10:17.
