@@ -1496,3 +1496,31 @@ closed. Close calls go in the chapter's decision log instead.
 - amah (20:17; 21:10) "female servant", as at Job 19:15, kept distinct from shifchah "female slave" (20:14).
 - atsar be'ad rechem (20:18) "hold back a womb", atsar as at 16:2; the doubled verb "completely".
 - Names: Abimelech.
+
+## Settled in Genesis 21
+- paqad of Yahweh and a person (21:1; 50:24) "attend to"; of what one owns it stays "inspect" (Job 5:24).
+- zequnim (21:2, 7; 37:3) "old age": lizqunav "in his old age".
+- millel with le- (21:7) "say to" ("utter" at Job 8:2). heniq "nurse", as yanaq. nigmal (21:8) "be weaned".
+- tsechoq (21:6) "laughter". tsachaq le- (21:6) "laugh with" [alt: laugh at] (decision log, call: close).
+- metsacheq with nothing after it (21:9) "laughing" [alt: mocking] (decision log, call: ask); "joke" stays at 19:14.
+- yarash im (21:10) "be heir with".
+- ra be'ene (21:11, 12) "be bad in the eyes of", beside tov be'ene "good in the eyes of".
+- al-odot (21:11) "on account of"; (21:25) "over".
+- yeled (21:8, 14, 15, 16) "child"; na'ar of Ishmael (21:12, 17-20) "boy".
+- beYitschaq yiqqare lekha zara (21:12) "in Isaac offspring will be called yours".
+- sim le-goy (21:13, 18) "make into a nation", as asah le-goy (12:2).
+- chemet (21:14, 15, 19) "skin": chemat mayim "a skin of water".
+- shillach of Hagar (21:14) "send out", beside garash "drive out" (21:10), the pair of 3:23-24.
+- ta'ah (21:14; 37:15) "wander", beside hit'ah "make wander" (20:13).
+- kalah of water (21:15) "run out". hishlikh of a person (21:15; 37:22) "throw". siach "shrub", as at 2:5.
+- minneged (21:16) "opposite"; harcheq "far off"; kimtachawe qeshet "about a bowshot away". ra'ah be- "look on".
+- mal'akh Elohim (21:17) "the angel of God". min-hashamayim of a call from God (21:17; 22:11, 15) "from the heavens".
+- mah-lakh (21:17) "What is the matter?"
+- hecheziq yad be- (21:18) "hold fast with one's hand". hishqah of a person (21:19) "give a drink".
+- roveh qashshat (21:20) "an archer, a bowman".
+- sar tsava (21:22, 32; 26:26) "commander of the army".
+- nishba le- ... be- (21:23) "swear to ... by". shaqar le- "deal falsely with". chesed between Abimelech and Abraham "loyalty", as at 20:13.
+- hokhiach (21:25) "rebuke". gam ... gam with a negative (21:26) "neither ... nor"; bilti hayyom "except today".
+- kivsah (21:28, 29, 30) "ewe lamb". hitsiv levad "set by themselves". edah (21:30; 31:52) "witness": it shares its English with ed.
+- eshel (21:33) "tamarisk". El Olam "the Everlasting God".
+- Names: Phicol; Be'er Shava "Beersheba"; midbar Paran "the wilderness of Paran".
