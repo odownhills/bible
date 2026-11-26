@@ -1933,3 +1933,18 @@ closed. Close calls go in the chapter's decision log instead.
 - seva yamim (35:29; Job 42:17) "full of days".
 - 35:22 has a paragraph break inside the verse in the Hebrew text, set as at Deut 5:21.
 - Names: Deborah, Allon-Bacuth, Ephrath, Bethlehem, Ben-Oni, Benjamin, Migdal-Eder.
+
+## Settled in Genesis 36
+- alluf (36:15-43; Exod 15:15) "chief": it shares its English with rosh of a leader (Job 12:24); nasi stays "chieftain". alluf with a name "chief Teman" [alt at 36:40: the chief of Timna] (decision log, call: clear). le'allufehem (36:30) "chief by chief".
+- Esav hu Edom (36:1) "Esau (that is, Edom)"; as a sentence of its own (36:8) "Esau is Edom"; hu Edom, hu Esav at the end of a list (36:19, 43) "That is Edom", "That is Esau".
+- nafshot beto (36:6) "the people of his household", as hannefesh (12:5).
+- mippene of a person one moves away from (36:6) "away from"; of a cause (36:7) it stays "because of".
+- rav min with an infinitive (36:7) "too many to".
+- yoshve ha'arets (36:20) "those who lived in the land", as at 34:30.
+- hayyemim (36:24; only here) "the hot springs" [alt: the mules, or the Emim] (decision log, call: ask).
+- malakh "reign"; malakh tachtav (36:33-39) "reign in his place". lifne melokh-melekh livne Yisra'el (36:31) "before any king of the sons of Israel reigned".
+- limqomotam (36:40) "according to their places"; lemoshvotam (36:43) "according to the places where they lived", as moshav (10:30); erets achuzzatam "the land of their holding".
+- 36:2 bat-Tsiv'on "the daughter of Zibeon" [alt: the son of Zibeon] (decision log, call: clear); the bracket is not repeated at 36:14. 36:26 Dishan [alt: Dishon] (decision log, call: clear).
+- The Ketiv Ye'ish (36:5, 14) "Jeish", with one bracketed note at 36:5; Ye'ush as written (36:18) "Jeush".
+- Sha'ul of the king of Edom (36:37, 38) "Shaul", his usual English name; it is the Hebrew name of Saul, king of Israel (Obay can switch it).
+- Names: Oholibamah, Anah, Zibeon, Reuel, Jalam; Teman, Omar, Zepho, Gatam, Kenaz, Timna, Amalek; Nahath, Zerah, Shammah, Mizzah; Lotan, Shobal, Dishon, Ezer, Dishan; Hori, Hemam; Alvan, Manahath, Ebal, Shepho, Onam; Aiah; Hemdan, Eshban, Ithran, Cheran; Bilhan, Zaavan, Akan; Aran; Beor, Dinhabah, Bozrah, Husham, Bedad, Avith, Samlah, Masrekah, Baal-Hanan, Achbor, Hadar, Pau, Mehetabel, Matred, Me-Zahab; Alvah, Jetheth, Elah, Pinon, Mibzar, Magdiel, Iram. hattemani (36:34) "the Temanites"; Rechovot hannahar (36:37) "Rehoboth on the River". Already published and spelled the same: Adah (4:19), Eliphaz (Job 2:11), Korah (Jude 11), Uz (10:23), Bela (14:2), Jobab (10:29), Hadad (25:15, where the Hebrew name begins with another letter).
