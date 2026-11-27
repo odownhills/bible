@@ -2161,3 +2161,32 @@ closed. Close calls go in the chapter's decision log instead.
 - en hanna'ar (44:31) "the boy is not there"; enennu ittanu, itti (44:26, 30, 34) "is not with us", "with me".
 - arav ... me'im (44:32) "become guarantor for ... to".
 - yashav tachat (44:33) "stay in place of".
+
+## Settled in Genesis 45
+- hitwadda el (45:1; Num 12:6) "make oneself known to".
+- natan qol bivkhi (45:2) "let out one's voice in weeping", beside nasa qol "lift one's voice".
+- nivhal mippene (45:3) "be dismayed before", nivhal as at Job 4:5.
+- michyah (45:5) "preserving life": lemichyah "to preserve life".
+- charish (45:6) "plowing", beside charash "plow".
+- she'erit (45:7) "remnant". peletah of those who come through (45:7) "company of survivors" [alt: deliverance] (decision log, call: clear); hayah lifletah stays "escape" (32:8).
+- ba'arets with she'erit (45:7; compare 2 Sam 14:7) "on the earth"; beqerev ha'arets of the famine (45:6) "in the midst of the land", as at 43:1.
+- sim le- of a person and his place (45:8, 9) "make", as natan with two objects (17:5); sim she'erit (45:7) "set a remnant".
+- adon of Joseph over Pharaoh's house and over Egypt (45:8, 9) "lord", as at 42:30.
+- amad of one who is called to come (45:9) "delay": it shares its English with achar.
+- kilkel (45:11; 47:12; 50:21) "provide for".
+- nivrash (45:11) "come to poverty".
+- kavod of a man's standing (45:13) "honor"; "wealth" stays at 31:1.
+- bakah al of one who is embraced (45:14, 15) "weep on".
+- qol of what is heard about a thing that has happened (45:16) "news": it shares its English with shema (29:13).
+- ta'an (45:17; only here) "load": it shares its English with amas al and nasa al. be'ir (45:17; Exod 22:5; Num 20:4) "animals".
+- chelev ha'arets (45:18) "the fat of the land": the picture is kept.
+- agalah (45:19, 21, 27; 46:5) "wagon".
+- chus with ayin, of things left behind (45:20) "look with regret on": the idiom is translated by its meaning.
+- al-pi with a person (45:21) "according to the word of".
+- chalifot semalot (45:22) "changes of clothes", simlot as at 35:2.
+- kezot before a list (45:23) "as follows". mazon (45:23) "food": it shares its English with okhel.
+- ragaz (45:24) "get angry" [alt: be afraid] (decision log, call: ask).
+- pug of the heart (45:26) "go numb". he'emin le- (45:26) "believe", as he'emin ki (Job 9:16).
+- chayah of a spirit (45:27) "revive".
+- rav by itself (45:28) "Enough!"
+- Names: Goshen.
