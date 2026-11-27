@@ -2108,3 +2108,32 @@ closed. Close calls go in the chapter's decision log instead.
 - alay hayu (42:36) "have come on me".
 - natan al-yad (42:37) "put in the care of".
 - sevah of an old man's head (42:38; 44:29, 31) "gray hair"; "old age" stays at 15:15. yagon (42:38; 44:31) "sorrow". horid she'olah "bring down to Sheol".
+
+## Settled in Genesis 43
+- he'id be- with its infinitive absolute (43:3) "solemnly warn". sha'ol sha'al le- (43:7) "ask closely about", sha'al le- as at 26:7.
+- hera le- (43:6) "do harm to", as hera im (31:7).
+- al-pi haddevarim ha'elleh (43:7) "according to these words".
+- hanna'ar of Benjamin (43:8; 44:22-34) "the boy", as of Ishmael and Isaac.
+- arav with a person as its object (43:9; 44:32) "be guarantor for", as the Job 17 line planned. hitsig lifne (43:9) "set before".
+- chata le- with kol-hayyamim (43:9; 44:32) "have sinned against ... for all time".
+- zimrat ha'arets (43:11; only here) "the prized produce of the land".
+- devash "honey", as listed; botnim (43:11; only here) "pistachios"; sheqedim "almonds".
+- kesef mishneh, mishneh-kesef (43:12, 15) "double the silver". heshiv of the silver (43:12, 21) "bring back". mishgeh (43:12; only here) "mistake".
+- rachamim (43:14, 30) "compassion": it shares its English with splanchna. natan rachamim lifne (43:14) "give compassion before"; nikhmeru rachamav el (43:30; 1 Kgs 3:26) "his compassion was stirred toward".
+- shillach le- of men who are held (43:14) "release to".
+- ka'asher shakholti shakhalti (43:14) "if I am bereaved, I am bereaved", as Esth 4:16 is built.
+- asher al-beto, asher al-bet Yosef (43:16, 19; 44:1, 4) "the one who was over his house", "the man who was over Joseph's house", as at 41:40.
+- tavach tevach (43:16) "slaughter an animal": it shares its English with shachat. hekhin (43:16, 25) "make ready".
+- battechillah of the earlier of two journeys (43:18, 20) "the first time"; "at the beginning" stays at 13:3 and 41:21.
+- hitgolel al (43:18; only here) "rush on"; hitnappel al "fall on".
+- bi adoni (43:20; 44:18) "Pardon, my lord": it opens a statement, not a request, so it is kept apart from na "please".
+- bemishqalo (43:21) "in its full weight".
+- shalom lakhem as a statement (43:23) "It is well with you", as shalom le- in answer (43:28; 29:6). sha'al le- leshalom (43:27) "ask whether it is well with".
+- matmon (43:23) "hidden treasure", as at Job 3:21.
+- biqqesh with an infinitive (43:30) "want to". cheder of a house (43:30) "inner room" ("chamber" at Job 9:9).
+- hit'appeq (43:31; 45:1) "control oneself".
+- sim lechem (43:31, 32) "set out bread".
+- to'evah (43:32; 46:34) "a detestable thing", beside ti'ev "detest".
+- bekhorah of the firstborn's place at table (43:33) "birthright", as at 25:31; tse'irah (only here) "youth". tamah el (43:33) "turn to ... in astonishment", as charad el (42:28).
+- mas'et (43:34; 2 Sam 11:8) "portion": it shares its English with cheleq. chamesh yadot (43:34) "five times over".
+- Names: ha'ivrim (43:32) "the Hebrews".
