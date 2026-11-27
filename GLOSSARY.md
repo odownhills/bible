@@ -2282,3 +2282,21 @@ closed. Close calls go in the chapter's decision log instead.
 - nezir echav (49:26; Deut 33:16) "the one set apart from his brothers".
 - ze'ev (49:27) "wolf". ad "prey": it shares its English with teref. shalal "spoil", leaving "plunder" for bazaz.
 - Names: Shiloh.
+
+## Settled in Genesis 50
+- chanat (50:2, 26) "embalm"; chanutim (50:3) "embalming". rofe'im of Joseph's servants (50:2) "physicians"; "healer" stays at Job 13:4.
+- bekhit (50:4) "weeping", as bekhi.
+- karah of a grave (50:5; 2 Chr 16:14) "dig out", as of a well (26:25) [alt at 50:5: buy] (decision log, call: clear).
+- rekhev (50:9) "chariots"; parashim "horsemen".
+- kaved of a camp (50:9) "large"; of a lament and of mourning (50:10, 11) "heavy".
+- goren (50:10, 11) "threshing floor". be'ever hayyarden "across the Jordan".
+- safad misped (50:10) "lament with a lament", safad as at 23:2. asah evel le- "hold a mourning for", evel as at 27:41.
+- lu at the head of a fear (50:15) "What if"; "If only" stays where it is a wish (17:18).
+- heshiv ra'ah le- (50:15) "pay back evil to", beside shillem "repay" (44:4). gamal with ra'ah (50:15, 17) "deal".
+- tsiwwah el of a message given for someone (50:16) "send word to"; elsewhere tsiwwah stays "command".
+- anna with na (50:17) "Oh, please". nasa pesha and nasa le-fesha between people (50:17) "forgive the offense of", pesha as at 31:36.
+- nafal lifne (50:18) "fall before", as at 44:14.
+- chashav ra'ah al (50:20) "plan evil against"; chashav le- of what God meant a thing for "plan for". kayyom hazzeh (50:20) "as it is this day". am-rav (50:20) "many people".
+- bene shilleshim (50:23) "sons of the third generation", shilleshim as at Deut 5:9.
+- aron of Joseph (50:26) "coffin": the word is also the chest of Exod 25:10.
+- Names: Atad, Machir; Avel Mitsrayim (50:11) "Abel-Mizraim", with one bracketed note (the Hebrew name is not that of Cain's brother).
