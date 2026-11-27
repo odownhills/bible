@@ -1,0 +1,250 @@
+{
+ "note": "Made by the steps in TV_PICTURES.md (2026-11-26). Wide pictures only (1920x1088). Each scene starts at the first word of its verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. God is not pictured; Abram, Sarai, Lot and the others are only ordinary people of today, seen from behind or small. Fixed recurring objects: Abram's tent is a small plain weathered tan canvas tent on a simple wooden pole frame; the altar is a small altar of stacked rough fieldstones; the oak is one huge old oak with a broad gnarled trunk and a wide dark-green crown.",
+ "method": "Second method, asked for by Obay on 2026-11-21: (1) split the chapter into sections that each carry one deep meaning; (2) write picture ideas for each; (3) judge them; (4) make the top two for each slot as real pictures and choose by eye.",
+ "sections": [
+  {
+   "verses": "1-12",
+   "meaning": "Four kings from the east make war on the five kings of the plain; the five are beaten at the tar-pit valley, and Lot is carried off with everything."
+  },
+  {
+   "verses": "13-16",
+   "meaning": "An escaped man tells Abram; Abram takes his three hundred eighteen trained men, strikes by night, and brings back Lot, the people and the goods."
+  },
+  {
+   "verses": "17-24",
+   "meaning": "The king of Sodom and Melchizedek meet him; Melchizedek blesses him and Abram gives a tenth; Abram will take nothing from the king of Sodom."
+  }
+ ],
+ "scenes": [
+  {
+   "verse": 1,
+   "section": "1-12",
+   "image": "01-nine.jpg",
+   "tall": "tall/01-nine.jpg",
+   "principle": "And in the days of Amraphel king of Shinar, Arioch king of Ellasar, Chedorlaomer king of Elam, and Tidal king of Goiim,",
+   "shows": "Four dark encampments face five smaller camps across a wide dusty valley.",
+   "prompt": "From a high ridge at dusk, a wide dusty valley with four large dark encampments on one side and five smaller bright camps on the other, facing each other, smoke from cookfires, stormy light. The camps are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 5,
+   "section": "1-12",
+   "image": "02-road.jpg",
+   "tall": "tall/02-road.jpg",
+   "principle": "And in the fourteenth year Chedorlaomer came, and the kings who were with him, and they struck down the Rephaim in Ashteroth-Karnaim, and the Zuzim in Ham, and the Emim in Shaveh-Kiriathaim,",
+   "shows": "A huge dust cloud rolls along a long empty road over bare hill country toward an emptied village.",
+   "prompt": "A huge advancing dust cloud rolling along a long straight road across bare hill country toward a deserted stone village with smoke thinly rising, no one in view, hard bleak light. The dust cloud and the village are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 10,
+   "section": "1-12",
+   "image": "03-tar.jpg",
+   "tall": "tall/03-tar.jpg",
+   "principle": "Now the valley of Siddim was full of tar pits, and the kings of Sodom and Gomorrah fled, and they fell there, and those who were left fled to the hill country.",
+   "shows": "A valley floor of black tar pools and scorched ground, small figures running to the hills.",
+   "prompt": "A wide flat valley floor covered with glistening black tar pools and scorched ground, a few tiny ordinary people running away toward distant hills, heavy stormy sky. The tar pools and the hills are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 12,
+   "section": "1-12",
+   "image": "04-taken.jpg",
+   "tall": "tall/04-taken.jpg",
+   "principle": "And they took Lot, Abram's brother's son, and his possessions, and went away. Now he was living in Sodom.",
+   "shows": "A long line of loaded carts and bundled people trudge away under a dusty sky; a young man looks back at a small city.",
+   "prompt": "Seen from a distance, a long line of loaded carts and bundled people trudging along a road away from a small city under a dusty orange sky, one young man in plain clothes at the line's edge looking back over his shoulder. The line is in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 13,
+   "section": "13-16",
+   "image": "05-word.jpg",
+   "tall": "tall/05-word.jpg",
+   "principle": "And one who had escaped came and told Abram the Hebrew. Now he was living among the oaks of Mamre the Amorite, the brother of Eshcol and the brother of Aner, and they had a covenant with Abram.",
+   "shows": "An exhausted dusty man gasps news to a man who stands under a great oak.",
+   "prompt": "Two ordinary men under one huge old oak with a broad gnarled trunk and a wide dark-green crown, one dusty, exhausted and out of breath speaking urgently with his hands, the other standing and listening very still, a tent beside them, afternoon light. The men are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 14,
+   "section": "13-16",
+   "image": "06-men.jpg",
+   "tall": "tall/06-men.jpg",
+   "principle": "And when Abram heard that his brother had been taken captive, he led out his trained men, born in his house, three hundred and eighteen, and went in pursuit as far as Dan.",
+   "shows": "A long line of men with packs set out down a ridge road at dawn, seen from behind.",
+   "prompt": "Seen from behind and from some distance, a long, orderly line of several hundred ordinary men with packs setting out down a country road at dawn from among a few tents and a great oak, mist, low pink light. The line of men is in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 15,
+   "section": "13-16",
+   "image": "07-night.jpg",
+   "tall": "tall/07-night.jpg",
+   "principle": "And he divided his forces against them by night, he and his servants, and struck them down, and pursued them as far as Hobah, which is north of Damascus.",
+   "shows": "Moonlit hills with a distant camp's small fires, small dark groups creeping down from three sides.",
+   "prompt": "A moonlit hollow among hills with a distant camp of small orange fires, small dark groups of people moving quietly down the slopes from three sides, deep blue night. The camp and the hills are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 16,
+   "section": "13-16",
+   "image": "08-home.jpg",
+   "tall": "tall/08-home.jpg",
+   "principle": "And he brought back all the possessions, and Lot his brother and his possessions he brought back too, and also the women and the people.",
+   "shows": "A long homeward column of people, flocks and goods crosses a dawn plain, a young man among them.",
+   "prompt": "A long homeward column of ordinary people on foot with flocks and loaded carts crossing a wide plain at sunrise, relief on their faces, among them a young man walking free, golden light. The column is in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 18,
+   "section": "17-24",
+   "image": "09-bread.jpg",
+   "tall": "tall/09-bread.jpg",
+   "principle": "And Melchizedek king of Salem brought out bread and wine. Now he was a priest of God Most High.",
+   "shows": "Hands set a round loaf, a jug of red wine and two cups on a plain table in a green valley.",
+   "prompt": "Seen close, an ordinary man's hands setting a round loaf of bread, a jug of dark red wine and two plain cups on a rough plain table set in a green open valley with hills behind, warm light. The table and the hands are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 19,
+   "section": "17-24",
+   "image": "10-blessing.jpg",
+   "tall": "tall/10-blessing.jpg",
+   "principle": "And he blessed him and said, \"Blessed is Abram by God Most High, owner of heaven and earth,",
+   "shows": "An old man's hands lifted open toward the wide sky above a green valley, a traveler bowing his head before him.",
+   "prompt": "An old ordinary man standing with both hands lifted open toward a wide sky above a green valley, an ordinary traveler in work clothes before him with head bowed, seen from the side, soft golden light. The two men and the sky are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 20,
+   "section": "17-24",
+   "image": "11-tenth.jpg",
+   "tall": "tall/11-tenth.jpg",
+   "principle": "and blessed is God Most High, who has delivered your foes into your hand.\" And he gave him a tenth of everything.",
+   "shows": "Ten neat sacks of grain in a row, one set slightly apart.",
+   "prompt": "Ten neat identical sacks of grain in a row on a flat stone, the tenth set a little apart from the other nine, in clean bright light. The sacks are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 21,
+   "section": "17-24",
+   "image": "12-offer.jpg",
+   "tall": "tall/12-offer.jpg",
+   "principle": "And the king of Sodom said to Abram, \"Give me the people, and the possessions take for yourself.\"",
+   "shows": "A richly dressed man holds out an open chest of gold across a table to a plain man who shakes his head.",
+   "prompt": "A richly dressed man holds out an open chest of gold and silver across a plain table to an ordinary plain man who shakes his head and holds his palm up, seen from the side, plain room, window light. The two men are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 22,
+   "section": "17-24",
+   "image": "13-thread.jpg",
+   "tall": "tall/13-thread.jpg",
+   "principle": "And Abram said to the king of Sodom, \"I have raised my hand to Yahweh, God Most High, owner of heaven and earth,",
+   "shows": "A raised open hand against a bright sky; a single thread and a sandal strap on a stone below.",
+   "prompt": "An ordinary man's raised open right hand against a bright open sky, and low on a flat stone a single loose thread and a sandal strap lying, clear light. The hand and the sky are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  }
+ ],
+ "candidates": [
+  {
+   "verse": 1,
+   "section": "1-12",
+   "image": "cand/01-nine-b.jpg",
+   "principle": "And in the days of Amraphel king of Shinar, Arioch king of Ellasar, Chedorlaomer king of Elam, and Tidal king of Goiim,",
+   "shows": "Four men sit on one side of a long table, five on the other, arms crossed.",
+   "prompt": "A long bare table in a plain hall with four hard-faced ordinary men in dark clothes sitting on one side and five on the other, arms crossed, nobody speaking, cold light. The men are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 5,
+   "section": "1-12",
+   "image": "cand/02-road-b.jpg",
+   "principle": "And in the fourteenth year Chedorlaomer came, and the kings who were with him, and they struck down the Rephaim in Ashteroth-Karnaim, and the Zuzim in Ham, and the Emim in Shaveh-Kiriathaim,",
+   "shows": "An abandoned, scorched village on a barren hill, thin smoke rising.",
+   "prompt": "An abandoned stone village on a barren hill with scorched walls and thin smoke rising into a flat gray sky, no one in view, bleak light. The village is in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 10,
+   "section": "1-12",
+   "image": "cand/03-tar-b.jpg",
+   "principle": "Now the valley of Siddim was full of tar pits, and the kings of Sodom and Gomorrah fled, and they fell there, and those who were left fled to the hill country.",
+   "shows": "Black glistening tar pits steaming under a heavy sky, a road to the hills.",
+   "prompt": "A wide flat valley of glistening black tar pits with thin steam rising, a narrow escape road leading to far hills, heavy sky, no one in view. The tar pits and the hills are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 12,
+   "section": "1-12",
+   "image": "cand/04-taken-b.jpg",
+   "principle": "And they took Lot, Abram's brother's son, and his possessions, and went away. Now he was living in Sodom.",
+   "shows": "A young man looks back from a cart column at his home city shrinking behind him.",
+   "prompt": "A young ordinary man in plain clothes riding on a loaded cart in a trudging column looks back over his shoulder at his home city small in the dust behind him, dim light. The young man and the city are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 13,
+   "section": "13-16",
+   "image": "cand/05-word-b.jpg",
+   "principle": "And one who had escaped came and told Abram the Hebrew. Now he was living among the oaks of Mamre the Amorite, the brother of Eshcol and the brother of Aner, and they had a covenant with Abram.",
+   "shows": "A runner arrives breathless at a tent under a huge oak, a man standing to meet him.",
+   "prompt": "An ordinary runner arriving breathless and dusty at a small plain weathered tan canvas tent on a simple wooden pole frame pitched under one huge old oak with a broad gnarled trunk and a wide dark-green crown, a man standing up from the shade to meet him, afternoon light. The two men are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 14,
+   "section": "13-16",
+   "image": "cand/06-men-b.jpg",
+   "principle": "And when Abram heard that his brother had been taken captive, he led out his trained men, born in his house, three hundred and eighteen, and went in pursuit as far as Dan.",
+   "shows": "Rows of men gather in a farmyard at first light before tents.",
+   "prompt": "Many ordinary men in plain work clothes gathered in orderly rows in a big farm yard at first light, tents behind, mist rising from the grass, quiet and ready. The men are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 15,
+   "section": "13-16",
+   "image": "cand/07-night-b.jpg",
+   "principle": "And he divided his forces against them by night, he and his servants, and struck them down, and pursued them as far as Hobah, which is north of Damascus.",
+   "shows": "A silent night valley, a distant camp asleep around its embers.",
+   "prompt": "A silent moonlit valley with a distant camp asleep around dying embers, deep blue night, long pale shadows, nothing moving. The camp is in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
+   "people": false
+  },
+  {
+   "verse": 16,
+   "section": "13-16",
+   "image": "cand/08-home-b.jpg",
+   "principle": "And he brought back all the possessions, and Lot his brother and his possessions he brought back too, and also the women and the people.",
+   "shows": "Women and families walk home with their flocks across green hills in the early light.",
+   "prompt": "Ordinary women, men and children walking home with their sheep and loaded carts down a green hill road at sunrise, glad and tired, golden light. The people are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 18,
+   "section": "17-24",
+   "image": "cand/09-bread-b.jpg",
+   "principle": "And Melchizedek king of Salem brought out bread and wine. Now he was a priest of God Most High.",
+   "shows": "A round loaf and a jug of wine on a cloth on the grass between two men.",
+   "prompt": "A round loaf of bread and a jug of dark red wine on a plain cloth spread on the grass between two ordinary men seen from the side, a green valley behind, warm light. The cloth and the two men are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 19,
+   "section": "17-24",
+   "image": "cand/10-blessing-b.jpg",
+   "principle": "And he blessed him and said, \"Blessed is Abram by God Most High, owner of heaven and earth,",
+   "shows": "A man stands with arms lifted to the whole sky and land around him.",
+   "prompt": "Seen from behind, an ordinary man standing with arms lifted toward a huge sky over a wide land of valleys and hills, soft golden light. The man and the sky are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 20,
+   "section": "17-24",
+   "image": "cand/11-tenth-b.jpg",
+   "principle": "and blessed is God Most High, who has delivered your foes into your hand.\" And he gave him a tenth of everything.",
+   "shows": "A hand lays one coin apart from a stack of ten.",
+   "prompt": "Seen close, an ordinary hand sliding one gleaming coin apart from a stack of ten silver coins on a flat stone, clean bright light. The hand and the coins are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 21,
+   "section": "17-24",
+   "image": "cand/12-offer-b.jpg",
+   "principle": "And the king of Sodom said to Abram, \"Give me the people, and the possessions take for yourself.\"",
+   "shows": "An open chest of gold pushed across a table, a hand pushing it back.",
+   "prompt": "Seen close, an ordinary hand pushing an open chest of gold and silver coins back across a plain table toward the man who offered it, window light. The hand and the chest are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+  },
+  {
+   "verse": 22,
+   "section": "17-24",
+   "image": "cand/13-thread-b.jpg",
+   "principle": "And Abram said to the king of Sodom, \"I have raised my hand to Yahweh, God Most High, owner of heaven and earth,",
+   "shows": "A single thread and a worn sandal strap alone on a plain stone.",
+   "prompt": "A single loose thread and a worn sandal strap lying alone on a plain flat stone, nothing else in the frame, clear light. The thread and strap are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
+   "people": false
+  }
+ ]
+}
