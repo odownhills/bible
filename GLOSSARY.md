@@ -2137,3 +2137,27 @@ closed. Close calls go in the chapter's decision log instead.
 - bekhorah of the firstborn's place at table (43:33) "birthright", as at 25:31; tse'irah (only here) "youth". tamah el (43:33) "turn to ... in astonishment", as charad el (42:28).
 - mas'et (43:34; 2 Sam 11:8) "portion": it shares its English with cheleq. chamesh yadot (43:34) "five times over".
 - Names: ha'ivrim (43:32) "the Hebrews".
+
+## Settled in Genesis 44
+- gavia (44:2, 12, 16, 17) "goblet", kept distinct from kos "cup" (40:11).
+- kesef shivro (44:2) "the silver for his grain", shever as at 42:26.
+- habboqer or (44:3) "The morning was light".
+- hirchiq of travelers (44:4) "go far". radaf achare (44:4) "pursue", as at 31:23.
+- shillem ra'ah tachat tovah (44:4) "repay evil for good", shillem as at Job 21:19.
+- adon of Joseph in the mouth of the one over his house, and of that man's master (44:5, 8) "master", as at 24:9 and 39:8; adoni said to the man or to Joseph stays "my lord".
+- nichesh bo (44:5) "learn by divination with it" [alt: learn about it by divination] (decision log, call: clear).
+- naqi of men who are let go (44:10) "innocent", as listed.
+- amas al (44:13) "load": it shares its English with nasa al (42:26).
+- ma'aseh of a thing done (44:15) "deed", as at 20:9.
+- hitstaddeq (44:16; only here) "show oneself righteous", beside tsadaq "be righteous".
+- matsa et-avon (44:16) "find the guilt of"; matsa of evil that comes on a person (44:34) "find": the verb of 44:8-17 is kept.
+- yeled zequnim (44:20) "a child of his old age", as ben-zequnim (37:3); qatan after it "a young one".
+- notar le- (44:20) "be left of".
+- sim ayin al (44:21; Jer 39:12; 40:4) "set one's eye on": the picture is kept.
+- lo hosif lir'ot panim (44:23) "not see ... face again".
+- ad-hennah after a negative perfect (44:28) "since".
+- bera'ah of how a man goes down to Sheol (44:29) "in misery", beside beyagon "in sorrow" (44:31; 42:38); ra of what comes on a person (44:34) "evil".
+- nefesh qeshurah be- (44:30; 1 Sam 18:1) "soul is bound up with".
+- en hanna'ar (44:31) "the boy is not there"; enennu ittanu, itti (44:26, 30, 34) "is not with us", "with me".
+- arav ... me'im (44:32) "become guarantor for ... to".
+- yashav tachat (44:33) "stay in place of".
