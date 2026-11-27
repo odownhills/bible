@@ -2232,3 +2232,22 @@ closed. Close calls go in the chapter's decision log instead.
 - asah chesed we'emet im (47:29) "show loyalty and truth to", as at 24:49. qevurah (47:30) "grave", as at 35:20.
 - mittah (47:31; 48:2; 49:33) "bed" [alt at 47:31: staff] (decision log, call: clear); rosh hammittah "the head of the bed".
 - Names: Rameses.
+
+## Settled in Genesis 48
+- wayyomer le- and wayyagged le- with no subject named (48:1, 2) "it was said to", "it was told to ..., saying", as wayyuggad (22:20).
+- choleh (48:1) "sick". hitchazzeq (48:2) "gather one's strength".
+- moledet of a man's own children (48:6) "those born to you", beside nolad "be born" (48:5); "relatives" stays at 12:1.
+- niqra al-shem (48:6) "be called by the name of"; niqra be- of a name (48:16) "be called in", as at 21:12. nachalah (48:6) "inheritance", as at 31:14.
+- met al (48:7) "die on": al as at 42:36.
+- zoqen (48:10; only here) "old age", as zequnim; kaved of eyes "heavy".
+- pillel (48:11) "think". her'ah of God and a person (48:11) "let see".
+- me'im birkav (48:12) "from beside his knees". hishtachawah le'appav artsah "bow down with his face to the ground", as at 19:1 [alt at 48:12: they bowed down to him] (decision log, call: clear).
+- sikkel et-yadav (48:14) "guide one's hands with insight", beside haskil "gain insight" (3:6) [alt: cross one's hands] (decision log, call: ask).
+- ra'ah of God, with a person as its object (48:15) "shepherd". me'odi (48:15; Num 22:30) "all my life".
+- ga'al of the angel (48:16) "redeem", beside go'el "redeemer" (Job 19:25).
+- dagah (48:16; only here) "teem", with one bracketed note that it is from the word for "fish"; larov "into a multitude", as at 30:30.
+- tamakh (48:17) "grasp", kept distinct from hecheziq be- "take hold of".
+- melo haggoyim (48:19) "the fullness of the nations".
+- berekh be- of a person whose name is used in blessing (48:20) "bless by".
+- shekhem achad (48:22) "one shoulder of land", with "of land" supplied [alt: Shechem, one portion] (decision log, call: clear), with one bracketed note on the name "Shechem". al-achekha "more than your brothers".
+- Names: Paddan (48:7), as the Hebrew has it, with no "Aram".
