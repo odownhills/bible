@@ -2251,3 +2251,34 @@ closed. Close calls go in the chapter's decision log instead.
 - berekh be- of a person whose name is used in blessing (48:20) "bless by".
 - shekhem achad (48:22) "one shoulder of land", with "of land" supplied [alt: Shechem, one portion] (decision log, call: clear), with one bracketed note on the name "Shechem". al-achekha "more than your brothers".
 - Names: Paddan (48:7), as the Hebrew has it, with no "Aram".
+
+## Settled in Genesis 49
+- be'acharit hayyamim (49:1; Num 24:14) "in the latter days", acharit as at Job 8:7.
+- he'asef (49:1) "gather together" and hiqqavets (49:2) "come together", side by side. asaf raglav (49:33) "gather one's feet up", beside ne'esaf "be gathered" (49:29, 33).
+- yeter (49:3) "excelling in"; hotir (49:4) "excel". se'et of a firstborn (49:3) "dignity" ("majesty" at Job 13:11).
+- pachaz (49:4) "reckless".
+- chillel (49:4; 1 Chr 5:1) "desecrate", kept distinct from timme "defile". yatsua beside mishkav "bed" (49:4) "couch".
+- mekherot (49:5; only here) "swords" [alt: dealings, or kinship] (decision log, call: close). kele chamas "weapons of violence".
+- yachad be- (49:6) "be united with", kept distinct from nilvah "be joined". kavod beside nefesh (49:6) "glory". ratson (49:6; Esth 9:5) "pleasure": birtsonam "at their pleasure".
+- iqqer shor (49:6; Josh 11:6, 9) "hamstring an ox" [alt: tear down a wall] (decision log, call: clear).
+- az of anger (49:7) "fierce"; qashah of fury "harsh". chilleq (49:7, 27) "divide"; hefits "scatter".
+- gur aryeh (49:9) "a lion's cub". kara of a lion (49:9; Num 24:9) "crouch", with ravats beside it "lie down" (49:9, 14; "crouch" stays at 4:7). heqim of one who is lying down "rouse".
+- shevet of a ruler (49:10; Num 24:17) "scepter"; mechoqeq beside it "ruler's staff". yiqqahah (49:10; Prov 30:17) "obedience".
+- ad ki-yavo Shiloh (49:10) "until Shiloh comes" [alt: until he comes to Shiloh; or until he comes to whom it belongs] (decision log, call: ask).
+- ayir beside ben-aton (49:11; Zech 9:9) "colt" and "the foal of a female donkey". soreqah "choice vine". kibbes "wash". sut (only here) "robe": it shares its English with me'il.
+- chakhlili (49:12; Prov 23:29) "dark"; min after it "from" [alt: than] (decision log, call: close).
+- chof (49:13) "shore": it shares its English with safah. yarkhah "far side".
+- chamor garem (49:14) "a strong-boned donkey". mishpetayim (49:14; Judg 5:16) "sheepfolds".
+- menuchah (49:15) "rest". natah shekhem "bend one's shoulder"; saval "bear a burden". mas oved (49:15; Josh 16:10) "forced laborer".
+- shefifon (49:17; only here) "adder", beside nachash "snake"; peten stays "cobra" and ef'eh "viper". nashakh "bite".
+- gedud (49:19) "raiders" and gud "raid", with one bracketed note on the name "Gad"; "troops" stays in Job.
+- shamen of bread (49:20) "rich". ma'adannim "delicacies".
+- ayyalah sheluchah (49:21) "a doe let loose"; imre-shafer "beautiful words" [alt: fawns; or a tree and its branches] (decision log, call: close).
+- ben porat (49:22) "a fruitful bough"; banot of it "branches" [alt: a wild donkey's colt] (decision log, call: close). shur (49:22; Ps 18:29) "wall".
+- merar (49:23) "deal bitterly with". ravav "shoot". ba'ale chitsim "archers": the idiom is translated by its meaning.
+- etan of a bow (49:24) "firm". pazaz "be nimble". avir Ya'aqov (49:24; Ps 132:2) "the Mighty One of Jacob". ro'eh and even Yisra'el of God "the Shepherd", "the Stone of Israel".
+- Shadday by itself (49:25) "the Almighty". tehom rovetset tachat (49:25; Deut 33:13) "the deep that lies below".
+- horay (49:26) "my parents". ta'avat giv'ot olam "the delight of the everlasting hills", ta'avah as at 3:6 [alt at 49:26: the blessings of the enduring mountains] (decision log, call: clear).
+- nezir echav (49:26; Deut 33:16) "the one set apart from his brothers".
+- ze'ev (49:27) "wolf". ad "prey": it shares its English with teref. shalal "spoil", leaving "plunder" for bazaz.
+- Names: Shiloh.
