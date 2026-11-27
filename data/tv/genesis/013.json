@@ -1,5 +1,5 @@
 {
- "note": "Made by the steps in TV_PICTURES.md (2026-11-26). Wide pictures only (1920x1088). Each scene starts at the first word of its verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. God is not pictured; Abram, Sarai, Lot and the others are only ordinary people of today, seen from behind or small. Fixed recurring objects: Abram's tent is a small plain weathered tan canvas tent on a simple wooden pole frame; the altar is a small altar of stacked rough fieldstones; the oak is one huge old oak with a broad gnarled trunk and a wide dark-green crown.",
+ "note": "Made by the steps in TV_PICTURES.md (2026-11-27): 13 pictures chosen from 26 trial pictures. Wide pictures only (1920x1088). Each scene starts at the first word of its verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. God is not pictured; Abram, Sarai, Lot and the others are only ordinary people of today, seen from behind or small. Fixed recurring objects: Abram's tent is a small plain weathered tan canvas tent on a simple wooden pole frame; the altar is a small altar of stacked rough fieldstones; the oak is one huge old oak with a broad gnarled trunk and a wide dark-green crown.",
  "method": "Second method, asked for by Obay on 2026-11-21: (1) split the chapter into sections that each carry one deep meaning; (2) write picture ideas for each; (3) judge them; (4) make the top two for each slot as real pictures and choose by eye.",
  "sections": [
   {
@@ -41,8 +41,8 @@
    "image": "03-first-place.jpg",
    "tall": "tall/03-first-place.jpg",
    "principle": "And he went by his stages from the Negev as far as Bethel, as far as the place where his tent had been at the beginning, between Bethel and Ai,",
-   "shows": "A man stands where his tent once was beside an old weathered altar of stones, two towns far off.",
-   "prompt": "Seen from behind, an ordinary man stands on a high ridge at dusk beside a weathered, moss-grown a small altar of stacked rough fieldstones and a flat pale square of ground where a tent once stood, a town far off on each side, a calm wide sky. The man and the altar are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+   "shows": "A man rests his hand on the old altar stones and a tent is pitched beside it.",
+   "prompt": "Seen from behind, an ordinary man resting one hand on an old weathered a small altar of stacked rough fieldstones on a hill, a small plain weathered tan canvas tent on a simple wooden pole frame pitched beside it, evening light over a wide land. The man and the altar are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
   },
   {
    "verse": 5,
@@ -133,118 +133,6 @@
    "section": "14-18",
    "image": "13-mamre.jpg",
    "tall": "tall/13-mamre.jpg",
-   "principle": "And Abram moved his tent and came and lived among the oaks of Mamre, which are in Hebron, and he built an altar there to Yahweh.",
-   "shows": "A tent pitched under a grove of huge old oaks with a fieldstone altar beside it.",
-   "prompt": "a small plain weathered tan canvas tent on a simple wooden pole frame pitched in the shade of a grove of huge old oaks, a small altar of stacked rough fieldstones beside it, a wide hill country behind, bright afternoon light. The tent and the oaks are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  }
- ],
- "candidates": [
-  {
-   "verse": 1,
-   "section": "1-4",
-   "image": "cand/01-up-b.jpg",
-   "principle": "And Abram went up from Egypt, he and his wife and all that he had, and Lot with him, to the Negev.",
-   "shows": "A man walks a hill road back toward green country with a laden donkey, the dry desert behind.",
-   "prompt": "Seen from behind, an ordinary man leading one loaded donkey up a stony road that leaves a dry brown desert behind and rises into soft green hills ahead, clear morning light. The man and the road are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 2,
-   "section": "1-4",
-   "image": "cand/02-rich-b.jpg",
-   "principle": "Now Abram was very rich in herds, in silver and in gold.",
-   "shows": "Silver and gold in an open chest beside a vast herd.",
-   "prompt": "An open plain wooden chest of heaped silver and gold coins on a flat rock at the edge of a grassy hillside, a vast herd of cattle and sheep grazing across the slope behind it, warm light. The chest and herd are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 3,
-   "section": "1-4",
-   "image": "cand/03-first-place-b.jpg",
-   "principle": "And he went by his stages from the Negev as far as Bethel, as far as the place where his tent had been at the beginning, between Bethel and Ai,",
-   "shows": "A man rests his hand on the old altar stones and a tent is pitched beside it.",
-   "prompt": "Seen from behind, an ordinary man resting one hand on an old weathered a small altar of stacked rough fieldstones on a hill, a small plain weathered tan canvas tent on a simple wooden pole frame pitched beside it, evening light over a wide land. The man and the altar are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 5,
-   "section": "5-13",
-   "image": "cand/04-crowded-b.jpg",
-   "principle": "And Lot too, who went with Abram, had flocks and cattle and tents.",
-   "shows": "From above, a worn hillside with two big flocks and crowded tents.",
-   "prompt": "Looking down from a high rock at a bare worn hillside where two big flocks and a jam of tents crowd into the same small patch of land, dust in the air, hard light. The flocks are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 7,
-   "section": "5-13",
-   "image": "cand/05-quarrel-b.jpg",
-   "principle": "And there was a quarrel between the shepherds of Abram's herds and the shepherds of Lot's herds. Now the Canaanites and the Perizzites were then living in the land.",
-   "shows": "Two shepherds argue at a watering trough while their sheep push in.",
-   "prompt": "Two ordinary shepherds face each other angrily over a stone watering trough, arguing, their sheep from two flocks pushing in around them, a village far off behind, hard light. The men are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 8,
-   "section": "5-13",
-   "image": "cand/06-offer-b.jpg",
-   "principle": "And Abram said to Lot, \"Please, let there be no quarreling between me and you, or between my shepherds and your shepherds, for we are men who are brothers.",
-   "shows": "An older man's hand on a younger man's shoulder, a wide valley ahead.",
-   "prompt": "Seen from behind, an older man's hand rests on a younger man's shoulder as both look over a wide green valley and hills ahead, soft light. The two men are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 10,
-   "section": "5-13",
-   "image": "cand/07-plain-b.jpg",
-   "principle": "And Lot lifted his eyes and saw the whole plain of the Jordan, that all of it was well watered (before Yahweh ruined Sodom and Gomorrah), like the garden of Yahweh, like the land of Egypt, as you go toward Zoar.",
-   "shows": "A lush well-watered plain of orchards and channels in golden light.",
-   "prompt": "A vast lush well-watered plain of orchards, green fields and silver irrigation channels along a winding bright river in golden light, no sign of people anywhere. The plain is in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 11,
-   "section": "5-13",
-   "image": "cand/08-fork-b.jpg",
-   "principle": "And Lot chose for himself the whole plain of the Jordan, and Lot traveled eastward, and they separated, each from his brother.",
-   "shows": "Two lines of travelers go opposite ways along a ridge.",
-   "prompt": "Two lines of travelers with pack animals going in opposite directions along a high ridge under a huge sky, seen small and from behind, getting farther apart. The lines of travelers are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 12,
-   "section": "5-13",
-   "image": "cand/09-sodom-b.jpg",
-   "principle": "Abram lived in the land of Canaan, and Lot lived in the cities of the plain and moved his tent as far as Sodom.",
-   "shows": "A tent pitched near a city that sits under a dark, heavy sky.",
-   "prompt": "A tent on grass near a dense city whose crowded streets sit under a dark low sky, a feeling of unease, soft dim light. The tent and the city are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 14,
-   "section": "14-18",
-   "image": "cand/10-look-b.jpg",
-   "principle": "And Yahweh said to Abram, after Lot had separated from him, \"Lift your eyes now and look from the place where you are, northward and southward and eastward and westward,",
-   "shows": "A man turns slowly on a hilltop, the land wide on every side.",
-   "prompt": "Seen from behind, an ordinary man on a hilltop with his arms at his sides slowly turning to take in a huge land in every direction, golden hills, valleys, a far river. The man and the land are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 16,
-   "section": "14-18",
-   "image": "cand/11-dust-b.jpg",
-   "principle": "And I will make your offspring like the dust of the earth, so that if anyone is able to count the dust of the earth, your offspring too will be counted.",
-   "shows": "Countless dust motes in a great shaft of sunlight over a field.",
-   "prompt": "A great shaft of low sunlight over a plowed field filled with countless drifting dust motes, too many to count, golden light. The dust and the light are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 17,
-   "section": "14-18",
-   "image": "cand/12-walk-b.jpg",
-   "principle": "Rise, walk about in the land, through its length and its width, for to you I will give it.\"",
-   "shows": "A trail of footprints winds through a wide field to far hills.",
-   "prompt": "A trail of footprints leading across a wide field of tall grass to distant hills, clear morning light, no one in view. The trail and the hills are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 18,
-   "section": "14-18",
-   "image": "cand/13-mamre-b.jpg",
    "principle": "And Abram moved his tent and came and lived among the oaks of Mamre, which are in Hebron, and he built an altar there to Yahweh.",
    "shows": "A man stacks the last stone on a fieldstone altar in the shade of a great oak, the tent behind.",
    "prompt": "Seen from behind, an ordinary man stacking the last stone on a rough fieldstone a small altar of stacked rough fieldstones under one huge old oak with a broad gnarled trunk and a wide dark-green crown, a small plain weathered tan canvas tent on a simple wooden pole frame pitched behind, afternoon light. The man and the altar are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."

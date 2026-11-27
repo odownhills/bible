@@ -1,5 +1,5 @@
 {
- "note": "Made by the steps in TV_PICTURES.md (2026-11-26). Wide pictures only (1920x1088). Each scene starts at the first word of its verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. God is not pictured; Abram, Sarai, Lot and the others are only ordinary people of today, seen from behind or small. Fixed recurring objects: Abram's tent is a small plain weathered tan canvas tent on a simple wooden pole frame; the altar is a small altar of stacked rough fieldstones; the oak is one huge old oak with a broad gnarled trunk and a wide dark-green crown.",
+ "note": "Made by the steps in TV_PICTURES.md (2026-11-27): 16 pictures chosen from 32 trial pictures. Wide pictures only (1920x1088). Each scene starts at the first word of its verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. God is not pictured; Abram, Sarai, Lot and the others are only ordinary people of today, seen from behind or small. Fixed recurring objects: Abram's tent is a small plain weathered tan canvas tent on a simple wooden pole frame; the altar is a small altar of stacked rough fieldstones; the oak is one huge old oak with a broad gnarled trunk and a wide dark-green crown.",
  "method": "Second method, asked for by Obay on 2026-11-21: (1) split the chapter into sections that each carry one deep meaning; (2) write picture ideas for each; (3) judge them; (4) make the top two for each slot as real pictures and choose by eye.",
  "sections": [
   {
@@ -55,8 +55,8 @@
    "image": "04-stars.jpg",
    "tall": "tall/04-stars.jpg",
    "principle": "And he brought him outside and said, \"Look toward the sky now and count the stars, if you are able to count them.\" And he said to him, \"So will your offspring be.\"",
-   "shows": "A man outside his tent under an astonishing sky of stars, looking up.",
-   "prompt": "Seen from behind, an ordinary man standing outside a small plain tent at night looking up at an astonishing sky filled with countless stars and the Milky Way, deep blue-black sky. The man and the stars are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
+   "shows": "A hand points up at a star-crowded sky from a dark hilltop.",
+   "prompt": "Seen from behind, an ordinary man on a dark hilltop with one arm raised and pointing toward a sky so crowded with stars that no gap is left, deep blue night. The man and the sky are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
   },
   {
    "verse": 6,
@@ -166,141 +166,6 @@
    "section": "17-21",
    "image": "16-peoples.jpg",
    "tall": "tall/16-peoples.jpg",
-   "principle": "the Kenites and the Kenizzites and the Kadmonites,",
-   "shows": "A patchwork of many different villages on hills, ten kinds of homes, in the land.",
-   "prompt": "A wide hill country with ten clearly different villages on separate hills, each with its own style of houses and fields, soft morning light, no church or steeple or tower of any kind. The villages are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  }
- ],
- "candidates": [
-  {
-   "verse": 1,
-   "section": "1-6",
-   "image": "cand/01-shield-b.jpg",
-   "principle": "After these things the word of Yahweh came to Abram in a vision, saying, \"Do not be afraid, Abram. I am a shield to you; your reward will be very great.\"",
-   "shows": "A man stands calm in an open field at dusk under a wide band of golden light overhead.",
-   "prompt": "Seen from behind, an ordinary man standing calm in an open field at dusk, a wide band of gold light arching over him like a canopy in the sky, a quiet land. The man and the light are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 2,
-   "section": "1-6",
-   "image": "cand/02-childless-b.jpg",
-   "principle": "And Abram said, \"Lord Yahweh, what will you give me, since I go childless, and the one who will get my house is Eliezer of Damascus?\"",
-   "shows": "A long table set for many, with only an old couple at the end.",
-   "prompt": "A long wooden table laid with many places in a big plain farmhouse at evening, only an old ordinary couple sitting at its far end, the rest of the seats empty, soft warm light. The couple and the table are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 4,
-   "section": "1-6",
-   "image": "cand/03-body-b.jpg",
-   "principle": "And look, the word of Yahweh came to him, saying, \"This one will not be your heir; rather, one who will come out of your body, he will be your heir.\"",
-   "shows": "An old farmer's weathered hand holds a single seed over rich dark soil.",
-   "prompt": "Seen close, an old farmer's weathered open hand holding a single seed over a bed of rich dark soil, bright light. The hand and the seed are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 5,
-   "section": "1-6",
-   "image": "cand/04-stars-b.jpg",
-   "principle": "And he brought him outside and said, \"Look toward the sky now and count the stars, if you are able to count them.\" And he said to him, \"So will your offspring be.\"",
-   "shows": "A hand points up at a star-crowded sky from a dark hilltop.",
-   "prompt": "Seen from behind, an ordinary man on a dark hilltop with one arm raised and pointing toward a sky so crowded with stars that no gap is left, deep blue night. The man and the sky are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 6,
-   "section": "1-6",
-   "image": "cand/05-trust-b.jpg",
-   "principle": "And he put his trust in Yahweh, and he counted it to him as righteousness.",
-   "shows": "A man sits calm at dusk, face lifted toward the last light.",
-   "prompt": "An ordinary man sitting calm and still on a rock at dusk, his face lifted toward the last warm light and his hands open on his knees, seen from the side. The man is in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 7,
-   "section": "7-11",
-   "image": "cand/06-road-b.jpg",
-   "principle": "And he said to him, \"I am Yahweh, who brought you out of Ur of the Chaldeans to give you this land to take possession of.\"",
-   "shows": "A man crouches and presses his hand into the soil of a hillside, doubt on his face.",
-   "prompt": "An ordinary man crouching on a hillside pressing one hand into the soil and looking up with a questioning face, seen from the side, soft light. The man is in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 9,
-   "section": "7-11",
-   "image": "cand/07-animals-b.jpg",
-   "principle": "And he said to him, \"Take for me a three-year-old heifer and a three-year-old female goat and a three-year-old ram, and a turtledove and a young bird.\"",
-   "shows": "A man leads a heifer on a rope across a field with a ram and a goat behind.",
-   "prompt": "Seen from behind, an ordinary man leading a young heifer on a rope across a field, a ram and a goat following, two doves in a small wicker cage in his other hand, calm light. The man and the animals are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 10,
-   "section": "7-11",
-   "image": "cand/08-rows-b.jpg",
-   "principle": "And he took all these for him, and he cut them in two down the middle and put each half opposite the other, but the birds he did not cut in two.",
-   "shows": "From above, two parallel rows of rough flat stones with a narrow path between.",
-   "prompt": "Looking down at two long parallel rows of rough flat stones on dry ground with a narrow bare path between them, low evening light. The stones are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 11,
-   "section": "7-11",
-   "image": "cand/09-birds-b.jpg",
-   "principle": "And the birds of prey came down on the carcasses, and Abram drove them away.",
-   "shows": "Dark birds wheel in a darkening sky over two rows of stones.",
-   "prompt": "Big dark birds of prey wheeling in a darkening sky above two rows of pale stones in a dusk field, one small figure far off with raised arms. The birds and the stones are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 12,
-   "section": "12-16",
-   "image": "cand/10-dark-b.jpg",
-   "principle": "And when the sun was about to set, a deep sleep fell on Abram, and look, a terror, a great darkness, was falling on him.",
-   "shows": "A huge black cloud swallows the last light over a field, no one in view.",
-   "prompt": "A huge black cloud swallowing the last light over a wide empty field, only a thin ember band left at the horizon, heavy dark colors, no one in view. The cloud and the horizon are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 13,
-   "section": "12-16",
-   "image": "cand/11-strangers-b.jpg",
-   "principle": "And he said to Abram, \"Know for certain that your offspring will be resident foreigners in a land that is not theirs, and they will serve them, and they will afflict them, four hundred years.",
-   "shows": "A long road stretches over a vast empty land, four faint lines like rows of years.",
-   "prompt": "A long road stretching away across a vast empty land under a huge sky, four faint parallel tracks crossing it in the distance, no one in view. The road and the tracks are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 14,
-   "section": "12-16",
-   "image": "cand/12-out-b.jpg",
-   "principle": "And also the nation that they serve I am going to judge, and afterward they will come out with great possessions.",
-   "shows": "Carts heaped with goods roll out across an open plain at sunrise.",
-   "prompt": "Carts heaped with goods, flocks and walking families rolling out across an open plain at sunrise, free, golden light. The carts are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 15,
-   "section": "12-16",
-   "image": "cand/13-peace-b.jpg",
-   "principle": "And as for you, you will go to your fathers in peace; you will be buried at a good old age.",
-   "shows": "An old man asleep in a chair at a window in the golden evening.",
-   "prompt": "An old ordinary man asleep peacefully in a chair at a window with golden evening light on his face, a quiet room, seen from the side. The old man is in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
-  },
-  {
-   "verse": 17,
-   "section": "17-21",
-   "image": "cand/14-fire-b.jpg",
-   "principle": "And when the sun had set and it was dark, look, a smoking oven and a flaming torch, which passed between these pieces.",
-   "shows": "A flaming torch and a trail of smoke pass between two rows of stones in the dark.",
-   "prompt": "At night, a single flaming torch and a thin trail of smoke hovering and moving along a path between two rows of pale stones in the dark, deep black sky, no one in view. The torch and the stones are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 18,
-   "section": "17-21",
-   "image": "cand/15-river-b.jpg",
-   "principle": "On that day Yahweh made a covenant with Abram, saying, \"To your offspring I give this land, from the river of Egypt to the great river, the river Euphrates:",
-   "shows": "Sunrise over a great wide river and the land stretching toward it.",
-   "prompt": "Sunrise over a great wide shining river with the land stretching toward it, hills and plains, soft gold light, no one in view. The river and the land are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false
-  },
-  {
-   "verse": 19,
-   "section": "17-21",
-   "image": "cand/16-peoples-b.jpg",
    "principle": "the Kenites and the Kenizzites and the Kadmonites,",
    "shows": "Ten different settlements dotted across a wide valley, each with its own smoke.",
    "prompt": "A wide valley with ten different small settlements dotted across it, each with its own thin line of cookfire smoke, soft morning light, no church or steeple or tower of any kind. The settlements are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground."
