@@ -2190,3 +2190,21 @@ closed. Close calls go in the chapter's decision log instead.
 - chayah of a spirit (45:27) "revive".
 - rav by itself (45:28) "Enough!"
 - Names: Goshen.
+
+## Settled in Genesis 46
+- mar'ot hallaylah (46:2) "visions of the night": it shares its English with chezyonot laylah (Job 4:13).
+- ha'el elohe avikha (46:3) "God, the God of your father", as El Elohe Yisra'el (33:20).
+- anokhi set first, twice (46:4) "I myself". he'elah of a person (46:4; 50:24) "bring up"; gam with its infinitive absolute (46:4) "certainly ... as well".
+- shit yad al (46:4; 48:14, 17) "lay one's hand on", as at Job 9:33.
+- nefesh with a number (46:15-27) "people"; kol-nefesh before the number "... people in all".
+- yots'e yerekho (46:26; Exod 1:5; Judg 8:30) "who came out of his loins": yarekh here shares its English with chalatsayim (35:11); "thigh" stays where it is the limb (24:2; 32:25).
+- le- of those who are a man's own (46:26 habba'ah leYa'aqov) "belonging to".
+- 46:27 shiv'im "seventy" [alt: seventy-five] (decision log, call: clear).
+- horah with no object (46:28) "show the way" [alt: appear before him] (decision log, call: clear); "teach" stays elsewhere (Job 6:24).
+- asar merkavah (46:29; Exod 14:6) "harness a chariot".
+- nir'ah el of a person (46:29) "appear to", as of God (12:7).
+- od at the end of a sentence, of weeping (46:29) "for a long time".
+- happa'am with a cohortative (46:30) "Now".
+- anshe miqneh (46:32, 34) "herdsmen", kept distinct from ro'eh tson "shepherd of flocks" (46:32, 34; 47:3).
+- mah-ma'asekhem (46:33; 47:3) "What is your work?"
+- Names: Pallu, Hezron (46:9 and 46:12, two men), Carmi; Jemuel, Jamin, Ohad, Jachin; Gershon, Kohath, Merari; Hamul; Tola, Puvah, Shimron; Sered, Jahleel; Ziphion, Haggi, Shuni, Ezbon, Eri, Arodi, Areli; Imnah, Ishvah, Ishvi, Beriah, Serah, Heber, Malchiel; Becher, Ashbel, Gera, Naaman, Ehi, Rosh, Muppim, Huppim, Ard; Hushim; Jahzeel, Guni, Jezer, Shillem. Yov (46:13) "Iob" [alt: Jashub] (decision log, call: clear). Already published and spelled the same: Chanokh (46:9) "Enoch", as at 25:4; Sha'ul (46:10) "Shaul", as at 36:37; Zohar (23:8), Elon (26:34), Bela (14:2), Zerah (38:30).
