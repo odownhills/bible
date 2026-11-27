@@ -2208,3 +2208,27 @@ closed. Close calls go in the chapter's decision log instead.
 - anshe miqneh (46:32, 34) "herdsmen", kept distinct from ro'eh tson "shepherd of flocks" (46:32, 34; 47:3).
 - mah-ma'asekhem (46:33; 47:3) "What is your work?"
 - Names: Pallu, Hezron (46:9 and 46:12, two men), Carmi; Jemuel, Jamin, Ohad, Jachin; Gershon, Kohath, Merari; Hamul; Tola, Puvah, Shimron; Sered, Jahleel; Ziphion, Haggi, Shuni, Ezbon, Eri, Arodi, Areli; Imnah, Ishvah, Ishvi, Beriah, Serah, Heber, Malchiel; Becher, Ashbel, Gera, Naaman, Ehi, Rosh, Muppim, Huppim, Ard; Hushim; Jahzeel, Guni, Jezer, Shillem. Yov (46:13) "Iob" [alt: Jashub] (decision log, call: clear). Already published and spelled the same: Chanokh (46:9) "Enoch", as at 25:4; Sha'ul (46:10) "Shaul", as at 36:37; Zohar (23:8), Elon (26:34), Bela (14:2), Zerah (38:30).
+
+## Settled in Genesis 47
+- hitsig lifne (47:2) "set before", as at 43:9; he'emid lifne (47:7) "stand ... before".
+- gur (47:4) "stay", as at 12:10; megurim of a man's own life (47:9) "staying as a foreigner", "staying as foreigners": gur is to live where one is a ger "resident foreigner". mir'eh (47:4) "pasture".
+- metav ha'arets (47:6, 11) "the best of the land". hoshiv (47:6, 11) "settle".
+- anshe chayil (47:6; Exod 18:21) "capable men"; chayil of goods stays "wealth" (34:29). sare miqneh (47:6) "chiefs of herds", sar as at 40:2.
+- me'at wera'im of days (47:9) "few and bad". hissig of days (47:9) "reach"; "overtake" stays at 31:25.
+- lefi hattaf (47:12) "according to the little ones".
+- lahah (47:13; only here) "grow faint".
+- liqqet of silver (47:14) "gather", as at 31:46. be- of the price (47:14-19) "for".
+- tamam of silver (47:15, 18) "run out"; of a year (47:18) "come to an end". afes (47:15, 16) "be gone".
+- sus "horse". miqneh hatson, miqneh habbaqar (47:17) "the herds of sheep", "the herds of cattle", as at 26:14; miqneh habbehemah (47:18) "the herds of livestock".
+- nihel (47:17) "lead through", beside hitnahel "move along slowly" (33:14).
+- kichad min (47:18) "conceal from", as at Job 6:10. geviyyah (47:18) "body".
+- adamah of the fields that people own (47:18-26) "ground", kept distinct from erets "land" (47:20).
+- eved of people who are bought (47:19, 25) "slave", as at 44:9; "your servants" stays (47:3, 4).
+- yasham of ground (47:19) "be desolate". chazaq al of the famine (47:20) "be strong over", as at 41:57.
+- he'evir of a people (47:21) "move" [alt: he made them slaves] (decision log, call: clear).
+- choq of what is given regularly (47:22) "allowance"; of a rule (47:26) "statute", as listed.
+- he (47:23) "Here is". tevu'ot (47:24) "crops": battevu'ot "when the crops come in"; qatsir stays "harvest". chamishit, chomesh (47:24, 26) "a fifth"; arba hayyadot (47:24) "four parts".
+- qarav of days, with lamut (47:29; Deut 31:14) "the days came near for ... to die", qarav as at 27:41.
+- asah chesed we'emet im (47:29) "show loyalty and truth to", as at 24:49. qevurah (47:30) "grave", as at 35:20.
+- mittah (47:31; 48:2; 49:33) "bed" [alt at 47:31: staff] (decision log, call: clear); rosh hammittah "the head of the bed".
+- Names: Rameses.
