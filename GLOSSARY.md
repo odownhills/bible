@@ -2300,3 +2300,29 @@ closed. Close calls go in the chapter's decision log instead.
 - bene shilleshim (50:23) "sons of the third generation", shilleshim as at Deut 5:9.
 - aron of Joseph (50:26) "coffin": the word is also the chest of Exod 25:10.
 - Names: Atad, Machir; Avel Mitsrayim (50:11) "Abel-Mizraim", with one bracketed note (the Hebrew name is not that of Cain's brother).
+
+## Settled in Job 22
+- sakan (22:2) "be of use", as planned (15:3); hiskin im (22:21) "get to know" (Ps 139:3), with one bracketed note on the echo. maskil (22:2) "one who has insight", beside sekhel "insight" (17:4).
+- chefets le- (22:3) "care", as planned (21:21): hachefets leShadday ki "Does the Almighty care that". betsa "profit", as at Gen 37:26. hetem derakhim "make one's ways blameless", beside tom (4:6).
+- bo im bammishpat (22:4) "come into judgment with", like 14:3.
+- chaval with a person as its object (22:6; 24:3, 9) "take pledges from": "pledge" is shared with eravon (Gen 38:17).
+- ayef (22:7) "the exhausted", as at Gen 25:29. hishqah mayim "give water to drink".
+- ish zeroa (22:8) "the man with a strong arm": "strong" is supplied, and zeroa stays "arm" (22:9). nesu fanim (22:8) "the favored man", beside nasa panim "show favoritism to" (13:8).
+- almanah "widow" and reqam "empty-handed", as at Gen 38:11; 31:42.
+- sevivot with a suffix (22:10) "all around". bihel (22:10) "dismay", the piel of nivhal (4:5).
+- shif'ah (22:11; 38:34) "abundance": shif'at mayim "an abundance of water", leaving "flood" for mabbul.
+- govah shamayim (22:12) "as high as the heavens", as at 11:8. rosh kokhavim "the highest stars".
+- be'ad (22:13) "through". seter (22:14) "hiding place" (basseter stays "in secret", 13:10). chug (22:14; 26:10) "circle".
+- orach olam (22:15) "the path of old", olam as at Gen 6:4. shamar with a path (22:15; 23:11) "keep to". mete-awen "men of harm".
+- qummat (22:16) "be seized", as the Job 16 line planned. welo-et "before their time", like 15:32. yutsaq "be poured out", yatsaq as at Gen 28:18.
+- pa'al le- (22:17) "do for" [alt: do to] (decision log, call: close); it is "do to" at 7:20.
+- qim (22:20; only here) "those who rose against": qum be- is "rise against" (16:8). yeter of what remains (22:20) "what they had left"; it is "cord" at 4:21.
+- shalam (22:21) "be at peace", as the Job 9 line allowed.
+- torah (22:22) "teaching", beside horah "teach": it shares its English with leqach (11:4); of God's commands it stays "law" (Gen 26:5).
+- shuv ad (22:23) "return to". nivnah of a person (22:23) "be built up".
+- betser (22:24, 25; only here) "gold ore": "gold" is supplied, since "ore" alone is not clear when heard. Ofir alone (22:24) "the gold of Ophir". to'afot (22:25) "heaps": the word is "peaks" in Ps 95:4.
+- hit'anneg al (22:26; 27:10) "take delight in": it shares "delight" with chafets be- (Gen 34:19).
+- he'tir el (22:27) "plead with", as atar le- at Gen 25:21. shillem neder "pay a vow".
+- gazar (22:28) "decree"; omer "a thing"; qum le- "stand for".
+- hishpil (22:29; 40:11) "bring low": it shares its English with tsa'ar (14:21). gewah (22:29) "Rise up" [alt: pride] (decision log, call: ask); at 33:17 it is "pride". shach enayim "the one with downcast eyes".
+- i-naqi (22:30) "one who is not innocent" [alt: the innocent man] (decision log, call: close). millet "deliver" and nimlat (22:30) "be delivered", so that the echo is heard; elsewhere nimlat stays "escape". bor kappayim "the cleanness of one's palms", as planned (9:30).
