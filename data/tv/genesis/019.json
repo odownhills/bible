@@ -1,0 +1,271 @@
+{
+ "note": "Made by the steps in TV_PICTURES.md (2026-11-28). Wide pictures only (1920x1088). Each scene starts at the first word of its verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. God and the angels are not pictured; Abraham, Sarah, Lot, Hagar, Abimelech and the others are only ordinary people of today, seen from behind, small, or as hands. Fixed recurring objects: the town of Sodom is a walled town of plain flat-roofed pale stone houses with a heavy timber gate, no church, no dome, no steeple and no tower of any kind; the pillar of salt is a single tall pillar of rough white crystalline salt, taller than a person, standing alone on a barren plain. Kept tasteful: the mob and the daughters' scenes are shown only by a shut door, a night street, an old man alone and the two nations' beginnings.",
+ "method": "Second method, asked for by Obay on 2026-11-21: (1) split the chapter into sections that each carry one deep meaning; (2) write picture ideas for each; (3) judge them; (4) make the top two for each slot as real pictures and choose by eye.",
+ "sections": [
+  {
+   "verses": "1-11",
+   "meaning": "Two travelers come to Sodom at evening; Lot welcomes them in, the men of the city surround his house, and the men inside strike them blind."
+  },
+  {
+   "verses": "12-22",
+   "meaning": "Lot is told to bring his family out before the city is ruined; he lingers, they take his hand and lead him out, and he asks to flee to a small city."
+  },
+  {
+   "verses": "23-29",
+   "meaning": "Fire falls on the cities of the plain; Lot's wife looks back and becomes salt; Abraham sees the smoke at dawn, and God remembers him."
+  },
+  {
+   "verses": "30-38",
+   "meaning": "Lot lives afraid in a cave in the hills; his daughters bear Moab and Ben-Ammi."
+  }
+ ],
+ "scenes": [],
+ "candidates": [
+  {
+   "verse": 1,
+   "section": "1-11",
+   "principle": "And the two angels came to Sodom in the evening, and Lot was sitting in the gate of Sodom. And Lot saw, and he rose to meet them and bowed down with his face to the ground.",
+   "shows": "A man sits at the plain gate of a stone town at dusk as two travelers small in the distance come up the road.",
+   "prompt": "An ordinary man sitting alone on a stone bench at the heavy timber gate of a walled town of plain flat-roofed pale stone houses with a heavy timber gate, no church, no dome, no steeple and no tower of any kind, at dusk, two small travelers far down the road coming toward him in the last light, lamps just lit in windows.",
+   "image": "cand/01-01-gate-evening-a.jpg"
+  },
+  {
+   "verse": 1,
+   "section": "1-11",
+   "principle": "And the two angels came to Sodom in the evening, and Lot was sitting in the gate of Sodom. And Lot saw, and he rose to meet them and bowed down with his face to the ground.",
+   "shows": "A man sits at the plain gate of a stone town at dusk as two travelers small in the distance come up the road.",
+   "prompt": "Seen from behind, a man standing up to bow low with his forehead near the ground before two small traveling figures on a dusty street just inside the gate of a walled town of plain flat-roofed pale stone houses with a heavy timber gate, no church, no dome, no steeple and no tower of any kind at evening, warm lamplight.",
+   "image": "cand/01-01-gate-evening-b.jpg"
+  },
+  {
+   "verse": 2,
+   "section": "1-11",
+   "principle": "And he said, \"Look now, my lords, please turn aside to your servant's house and spend the night, and wash your feet, and you may rise early and go on your way.\" And they said, \"No, we will spend the night in the square.\"",
+   "shows": "A basin of water and a towel at a doorway, two pairs of dusty traveling sandals set beside it.",
+   "prompt": "At the open doorway of a plain stone house at evening, a clay basin of water and a folded cloth on the step, two pairs of dusty worn sandals set beside it, warm light from inside.",
+   "image": "cand/02-02-wash-feet-a.jpg",
+   "people": false
+  },
+  {
+   "verse": 2,
+   "section": "1-11",
+   "principle": "And he said, \"Look now, my lords, please turn aside to your servant's house and spend the night, and wash your feet, and you may rise early and go on your way.\" And they said, \"No, we will spend the night in the square.\"",
+   "shows": "A basin of water and a towel at a doorway, two pairs of dusty traveling sandals set beside it.",
+   "prompt": "A plain wooden table inside a stone house with fresh flat unleavened bread, a clay bowl and a lit oil lamp, a basin of water on the floor near the door, warm evening light.",
+   "image": "cand/02-02-wash-feet-b.jpg",
+   "people": false
+  },
+  {
+   "verse": 4,
+   "section": "1-11",
+   "principle": "They had not yet lain down when the men of the city, the men of Sodom, surrounded the house, from young to old, all the people, to the last one.",
+   "shows": "A heavy shut door of a house at night, a hand flat against it, a dark crowd shadowed in the street beyond.",
+   "prompt": "A heavy timber door shut at night, one man's hand pressed flat against it from the outside, dark shapes of a crowd only as long shadows on the stone street behind him lit by one lamp. No faces visible. Tasteful and quiet, no violence.",
+   "image": "cand/03-04-shut-door-a.jpg"
+  },
+  {
+   "verse": 4,
+   "section": "1-11",
+   "principle": "They had not yet lain down when the men of the city, the men of Sodom, surrounded the house, from young to old, all the people, to the last one.",
+   "shows": "A heavy shut door of a house at night, a hand flat against it, a dark crowd shadowed in the street beyond.",
+   "prompt": "A plain stone house at night with one lit window and a shut door, seen from across a dark street, a great crowd of dark silhouettes far away at the edges, no faces, no violence, tense stillness.",
+   "image": "cand/03-04-shut-door-b.jpg"
+  },
+  {
+   "verse": 11,
+   "section": "1-11",
+   "principle": "And the men who were at the entrance of the house they struck with blindness, from the smallest to the greatest, and they wearied themselves trying to find the entrance.",
+   "shows": "People grope blindly along a blank stone wall, searching for a door they cannot find.",
+   "prompt": "Many hands of ordinary people feeling blindly along a blank pale stone wall at night in the upper part of the frame, searching for a door that is not there, eyes closed, no violence.",
+   "image": "cand/04-11-blind-a.jpg"
+  },
+  {
+   "verse": 11,
+   "section": "1-11",
+   "principle": "And the men who were at the entrance of the house they struck with blindness, from the smallest to the greatest, and they wearied themselves trying to find the entrance.",
+   "shows": "People grope blindly along a blank stone wall, searching for a door they cannot find.",
+   "prompt": "A narrow stone alley at night where several people with closed eyes walk with arms stretched out, hands feeling the blank walls, lost and confused, a shut door unreachable beside them.",
+   "image": "cand/04-11-blind-b.jpg"
+  },
+  {
+   "verse": 12,
+   "section": "1-11",
+   "principle": "And the men said to Lot, \"Who else do you have here? A son-in-law, and your sons and your daughters, and all that you have in the city—bring them out of the place.",
+   "shows": "A house window glows in a dark town while a hand beckons toward the open gate road.",
+   "prompt": "Seen from behind, an ordinary man at an open doorway at night pointing outward along a road toward the open gate of a walled town of plain flat-roofed pale stone houses with a heavy timber gate, no church, no dome, no steeple and no tower of any kind, a faint red glow on the horizon beyond, his other hand holding the door.",
+   "image": "cand/05-12-lit-house-a.jpg"
+  },
+  {
+   "verse": 12,
+   "section": "1-11",
+   "principle": "And the men said to Lot, \"Who else do you have here? A son-in-law, and your sons and your daughters, and all that you have in the city—bring them out of the place.",
+   "shows": "A house window glows in a dark town while a hand beckons toward the open gate road.",
+   "prompt": "A sleeping town at night seen from a hill, a walled town of plain flat-roofed pale stone houses with a heavy timber gate, no church, no dome, no steeple and no tower of any kind with a faint dull red glow on the far horizon behind it, a single road leading out to the dark plain in the foreground.",
+   "image": "cand/05-12-lit-house-b.jpg"
+  },
+  {
+   "verse": 14,
+   "section": "12-22",
+   "principle": "And Lot went out and spoke to his sons-in-law, who were to marry his daughters, and said, \"Get up, go out of this place, for Yahweh is going to ruin the city.\" But in the eyes of his sons-in-law he was like one who was joking.",
+   "shows": "Two young men laugh at a table while an older man stands pleading with open hands.",
+   "prompt": "At a wooden table, two relaxed young men laughing and waving a hand dismissively, an older worried ordinary man standing before them with open pleading hands, seen from a slight distance, plain room, evening light.",
+   "image": "cand/06-14-joke-a.jpg"
+  },
+  {
+   "verse": 14,
+   "section": "12-22",
+   "principle": "And Lot went out and spoke to his sons-in-law, who were to marry his daughters, and said, \"Get up, go out of this place, for Yahweh is going to ruin the city.\" But in the eyes of his sons-in-law he was like one who was joking.",
+   "shows": "Two young men laugh at a table while an older man stands pleading with open hands.",
+   "prompt": "Seen from behind, an older man standing in a doorway speaking earnestly to two young men who laugh together at the far end of a plain room, one waving his hand as if hearing a joke.",
+   "image": "cand/06-14-joke-b.jpg"
+  },
+  {
+   "verse": 16,
+   "section": "12-22",
+   "principle": "And he lingered. And the men took hold of his hand and his wife's hand and the hands of his two daughters, because Yahweh was sparing him, and they brought him out and set him down outside the city.",
+   "shows": "A family's hands joined in a line, pulling a hesitating hand out through the town gate at dawn.",
+   "prompt": "Close view of several hands holding on to one another in a line, strong hands gripping a reluctant hand and pulling it forward through the heavy timber gate of a walled town of plain flat-roofed pale stone houses with a heavy timber gate, no church, no dome, no steeple and no tower of any kind at first dawn light, upper part of frame.",
+   "image": "cand/07-16-hands-pull-a.jpg"
+  },
+  {
+   "verse": 16,
+   "section": "12-22",
+   "principle": "And he lingered. And the men took hold of his hand and his wife's hand and the hands of his two daughters, because Yahweh was sparing him, and they brought him out and set him down outside the city.",
+   "shows": "A family's hands joined in a line, pulling a hesitating hand out through the town gate at dawn.",
+   "prompt": "A man standing hesitating at the doorway of a stone house at dawn, his head turned back, two strong hands taking his hand and his wife's hand and gently leading them out toward the bright road.",
+   "image": "cand/07-16-hands-pull-b.jpg"
+  },
+  {
+   "verse": 17,
+   "section": "12-22",
+   "principle": "And when they had brought them outside, he said, \"Escape for your life! Do not look behind you, and do not stop anywhere in the plain. Escape to the hill country, so that you are not swept away.\"",
+   "shows": "A family walks quickly away from the town across the wide plain toward distant hills, not looking back.",
+   "prompt": "Seen from behind, a small family of four hurrying along a dusty road across a wide flat plain toward distant brown hills in the early light, away from a walled town of plain flat-roofed pale stone houses with a heavy timber gate, no church, no dome, no steeple and no tower of any kind far behind, in the upper part of the frame.",
+   "image": "cand/08-17-escape-a.jpg"
+  },
+  {
+   "verse": 17,
+   "section": "12-22",
+   "principle": "And when they had brought them outside, he said, \"Escape for your life! Do not look behind you, and do not stop anywhere in the plain. Escape to the hill country, so that you are not swept away.\"",
+   "shows": "A family walks quickly away from the town across the wide plain toward distant hills, not looking back.",
+   "prompt": "A long empty road crossing a wide plain toward a line of hills in bright morning light, one small figure running ahead on it far away, the road and hills in the upper part of the frame.",
+   "image": "cand/08-17-escape-b.jpg"
+  },
+  {
+   "verse": 20,
+   "section": "12-22",
+   "principle": "Look now, this city is near to flee to, and it is a small thing. Please let me escape there—is it not a small thing?—and I may live.\"",
+   "shows": "A tiny village of a few houses at the foot of a great hill, a man standing near it.",
+   "prompt": "A tiny village of only a dozen small flat-roofed stone houses at the foot of a great hill in bright morning light, one small man standing at its edge looking at it, hill and village in the upper part of the frame. No church, no dome, no steeple and no tower of any kind.",
+   "image": "cand/09-20-small-town-a.jpg"
+  },
+  {
+   "verse": 20,
+   "section": "12-22",
+   "principle": "Look now, this city is near to flee to, and it is a small thing. Please let me escape there—is it not a small thing?—and I may live.\"",
+   "shows": "A tiny village of a few houses at the foot of a great hill, a man standing near it.",
+   "prompt": "A very small hamlet of a few pale stone houses beside a single road at the edge of a plain, towering hills behind it, soft morning light, a tiny figure running toward it. No church, no dome, no steeple and no tower of any kind.",
+   "image": "cand/09-20-small-town-b.jpg"
+  },
+  {
+   "verse": 24,
+   "section": "23-29",
+   "principle": "And Yahweh rained sulfur and fire on Sodom and on Gomorrah, from Yahweh, from the sky.",
+   "shows": "Fire and burning sulfur fall from the sky onto a plain, with smoke rising.",
+   "prompt": "Glowing orange embers and fire raining from a dark heavy sky onto a broad barren plain with distant buildings burning, thick smoke towers rising, no people visible, dramatic, no bodies, no violence shown.",
+   "image": "cand/10-24-fire-sky-a.jpg",
+   "people": false
+  },
+  {
+   "verse": 24,
+   "section": "23-29",
+   "principle": "And Yahweh rained sulfur and fire on Sodom and on Gomorrah, from Yahweh, from the sky.",
+   "shows": "Fire and burning sulfur fall from the sky onto a plain, with smoke rising.",
+   "prompt": "A vast dark sky over a plain with streams of fiery sparks falling like rain onto distant rooftops and fields, the horizon glowing, black smoke columns, no people visible. No church, no dome, no steeple and no tower of any kind.",
+   "image": "cand/10-24-fire-sky-b.jpg",
+   "people": false
+  },
+  {
+   "verse": 26,
+   "section": "23-29",
+   "principle": "And his wife looked back from behind him, and she became a pillar of salt.",
+   "shows": "A single pillar of white salt stands alone on a plain with the smoking valley behind it.",
+   "prompt": "A pillar: a single tall pillar of rough white crystalline salt, taller than a person, standing alone on a barren plain, long shadow at sunrise, far behind it a smoking ruined valley, the pillar in the left upper part of the frame, no person visible.",
+   "image": "cand/11-26-salt-pillar-a.jpg",
+   "people": false
+  },
+  {
+   "verse": 26,
+   "section": "23-29",
+   "principle": "And his wife looked back from behind him, and she became a pillar of salt.",
+   "shows": "A single pillar of white salt stands alone on a plain with the smoking valley behind it.",
+   "prompt": "Close view of a single tall pillar of rough white crystalline salt, taller than a person, standing alone on a barren plain on a dry white salt flat at sunrise, its crystals glittering, a dim line of smoke far on the horizon, no person visible, the pillar in the upper part of the frame.",
+   "image": "cand/11-26-salt-pillar-b.jpg",
+   "people": false
+  },
+  {
+   "verse": 28,
+   "section": "23-29",
+   "principle": "And he looked down toward Sodom and Gomorrah and toward all the land of the plain, and he saw, and look, the smoke of the land had gone up like the smoke of a furnace.",
+   "shows": "A man stands on a ridge at sunrise looking down at smoke rising from the plain like a furnace.",
+   "prompt": "Seen from behind, an old ordinary man standing on a stony ridge at sunrise, looking down over a vast plain from which a thick black column of smoke rises like the smoke of a furnace, the smoke and man in the upper part of the frame.",
+   "image": "cand/12-28-smoke-furnace-a.jpg"
+  },
+  {
+   "verse": 28,
+   "section": "23-29",
+   "principle": "And he looked down toward Sodom and Gomorrah and toward all the land of the plain, and he saw, and look, the smoke of the land had gone up like the smoke of a furnace.",
+   "shows": "A man stands on a ridge at sunrise looking down at smoke rising from the plain like a furnace.",
+   "prompt": "A wide view over a plain from a high ridge at sunrise, a huge dark furnace-like column of smoke rising from the whole plain into a clear sky, one small man standing on the ridge at the far left.",
+   "image": "cand/12-28-smoke-furnace-b.jpg"
+  },
+  {
+   "verse": 29,
+   "section": "23-29",
+   "principle": "And when God ruined the cities of the plain, God remembered Abraham, and he sent Lot out from the midst of the overturning, when he overturned the cities in which Lot had lived.",
+   "shows": "A man walks away from the smoke toward green hills under a clear bright sky.",
+   "prompt": "Seen from behind, a lone ordinary man walking away from a smoking dark plain toward distant green hills under a clear bright sky, a shaft of warm light over the hills, upper part of frame.",
+   "image": "cand/13-29-carried-out-a.jpg"
+  },
+  {
+   "verse": 29,
+   "section": "23-29",
+   "principle": "And when God ruined the cities of the plain, God remembered Abraham, and he sent Lot out from the midst of the overturning, when he overturned the cities in which Lot had lived.",
+   "shows": "A man walks away from the smoke toward green hills under a clear bright sky.",
+   "prompt": "A hand taken firmly by a stronger hand pulling a man up out of a dark smoky pit onto bright ground, close view of hands only, hill daylight, upper part of the frame.",
+   "image": "cand/13-29-carried-out-b.jpg"
+  },
+  {
+   "verse": 30,
+   "section": "30-38",
+   "principle": "And Lot went up from Zoar and lived in the hill country, and his two daughters with him, for he was afraid to live in Zoar. And he lived in a cave, he and his two daughters.",
+   "shows": "An old man sits alone at the mouth of a cave in the dry hills at dusk, two small figures beside him.",
+   "prompt": "An old ordinary man sitting alone at the mouth of a rocky cave in dry hill country at dusk, looking out, an empty clay cup beside him, the cave and man in the upper part of the frame, sparse bare hills.",
+   "image": "cand/14-30-cave-a.jpg"
+  },
+  {
+   "verse": 30,
+   "section": "30-38",
+   "principle": "And Lot went up from Zoar and lived in the hill country, and his two daughters with him, for he was afraid to live in Zoar. And he lived in a cave, he and his two daughters.",
+   "shows": "An old man sits alone at the mouth of a cave in the dry hills at dusk, two small figures beside him.",
+   "prompt": "A rocky cave opening in bare hills at dusk with a small lantern glowing inside and a lone old man seated at the entrance, seen from far away, the cave in the upper part of the frame.",
+   "image": "cand/14-30-cave-b.jpg"
+  },
+  {
+   "verse": 37,
+   "section": "30-38",
+   "principle": "And the firstborn gave birth to a son and named him Moab. He is the father of Moab to this day.",
+   "shows": "Two small boys sit side by side on a hillside, two beginnings of two nations.",
+   "prompt": "Two small young boys, brothers a year or so apart, sitting side by side on a dry hillside in the evening, small in the upper part of the frame, looking at the valley, soft warm light.",
+   "image": "cand/15-37-two-boys-a.jpg"
+  },
+  {
+   "verse": 37,
+   "section": "30-38",
+   "principle": "And the firstborn gave birth to a son and named him Moab. He is the father of Moab to this day.",
+   "shows": "Two small boys sit side by side on a hillside, two beginnings of two nations.",
+   "prompt": "Two young saplings growing side by side from rocky dry ground in a hill valley at sunrise, one slightly taller, in the upper part of the frame, no people.",
+   "image": "cand/15-37-two-boys-b.jpg"
+  }
+ ]
+}
