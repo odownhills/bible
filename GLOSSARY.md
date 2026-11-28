@@ -2340,3 +2340,19 @@ closed. Close calls go in the chapter's decision log instead.
 - kahennah rabbot (23:14) "many such things". immo (23:14) "in his mind", as at 10:13.
 - herakh lev (23:16) "make the heart faint". hivhil (23:16) "dismay", as bihel (22:10).
 - mippene (23:15, 17) "before"; kissah min (23:17) "cover from".
+
+## Settled in Job 24
+- nitspan min (24:1) "be hidden away from" [alt: be stored up by] (decision log, call: ask). ittim "times".
+- hissig gevul (24:2) "move a boundary": gevul is "border" at Gen 10:19, and hissig "overtake" at Gen 31:25. ra'ah with a flock as its object (24:2) "pasture"; with a person (24:21) "feed on".
+- nahag (24:3) "drive off", as at Gen 31:26. chaval with a thing as its object (24:3) "take as a pledge"; chaval al (24:9) "take pledges from" [alt: take the infant of ... as a pledge] (decision log, call: close).
+- ani (24:4, 9, 14) "the afflicted", beside oni "affliction" (10:15), leaving "the poor" for dal and "the needy" for evyon. chubba (24:4) "be made to hide", beside nechba (5:21).
+- teref of what donkeys look for (24:5) "food"; it stays "prey" at 4:11. aravah (24:5; 39:6) "the desert", beside midbar "wilderness".
+- liqqesh (24:6; only here) "glean". kerem "vineyard", as at Gen 9:20.
+- levush "clothing"; kesut "covering", as at Gen 20:16; qarah "cold". zerem "downpour"; ratav (24:8; only here) "be wet"; machseh "shelter", leaving "refuge" for manos (11:20).
+- shod (24:9) "breast", as shadayim (3:12). omer "sheaves". shurot (24:11; only here) "walls"; hitshir (only here) "press oil"; yeqev "winepress"; tsame "be thirsty".
+- na'aq (24:12) "groan"; chalal "the wounded" ("the slain" at Gen 34:27). sim tiflah (24:12) "make a charge of wrongdoing", as natan tiflah le- (1:22) [alt: consider the prayer] (decision log, call: close).
+- morede-or (24:13) "those who rebel against the light", marad as at Gen 14:4. rotseach "murderer"; gannav "thief"; no'ef "adulterer". sim seter panim (24:15) "put one's face in hiding". chatar (24:16) "dig into"; chittem lamo "seal themselves in", chatam as at 9:7.
+- chelqah (24:18) "plot", as at Gen 33:19. tsiyyah (24:19) "drought".
+- mashakh with a person as its object (24:22) "drag away" [alt: prolong the life of] (decision log, call: ask); it is "follow after" at 21:33. abbirim "the mighty": it shares its English with kabbir and ammits. lo he'emin bachayyin (24:22; Deut 28:66) "not be sure of life".
+- hummakh (24:24) "be brought low": it shares its English with tsa'ar (14:21). niqpats (24:24; only here) "be shut away", beside qafats "shut" (5:16). rosh shibbolet "the head of an ear of grain".
+- hikhziv (24:25) "prove a liar", beside kizzev "lie" (6:28). sim le'al "turn into nothing", as sim X le-Y (17:12).
