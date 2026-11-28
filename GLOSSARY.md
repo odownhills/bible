@@ -2375,3 +2375,24 @@ closed. Close calls go in the chapter's decision log instead.
 - raga with the sea as its object (26:12; Isa 51:15) "stir up" [alt: still] (decision log, call: ask). machats stays "wound" (5:18).
 - ruach (26:13) "wind" [alt: spirit] (decision log, call: close). shifrah (only here) "fair", beside shefer (Gen 49:21). cholel with yad as its subject (26:13; Isa 51:9) "pierce" [alt: bring forth] (decision log, call: close): it shares its English with chalaf (20:24). nachash bariach (26:13; Isa 27:1) "the fleeing snake".
 - qetsot (26:14) "edges", as qetseh (Gen 23:9). ra'am "thunder". hitbonen of what cannot be looked at (26:14) "understand", so that it is heard with tevunah "understanding" (26:12); elsewhere it stays "look closely (at)" (11:11).
+
+## Settled in Job 27
+- hosif se'et meshalo (27:1; 29:1) "again took up his discourse": mashal of a whole speech "discourse"; "proverb" stays at 13:12.
+- chay-El (27:2) "As God lives"; im after it (27:4) "certainly not", as at 6:28. hesir mishpat (27:2; 34:5) "remove (someone's) justice"; hemar nefesh "make the soul bitter", beside mar nefesh (3:20).
+- kol-od (27:3; 2 Sam 1:9) "for as long as" [alt: still whole] (decision log, call: close). af of where the breath is (27:3) "nostrils", as at Gen 2:7.
+- hagah (27:4) "utter": it shares its English with millel (8:2).
+- chalilah li im (27:5) "Far be it from me to", as at Gen 18:25. hitsdiq with a person as its object (27:5) "declare in the right", beside tsadaq "be righteous".
+- cheref (27:6) "insult" (verb), beside cherpah (16:10); miyyamay "any of my days".
+- batsa (the simple form; 27:8) "cut off", the same English as bitstsa (6:9) [alt: make a profit] (decision log, call: ask). shalah with nefesh (27:8; only here) "draw out".
+- tse'aqah (27:9) "cry", as at Gen 27:34; tsarah, the singular, "distress", as at Gen 35:3. qara with God as its object (27:10) "call on"; bekhol-et "at all times".
+- horah be- (27:11) "teach about". im-Shadday, im-El (27:11, 13) "with the Almighty", "with God", the same English both times.
+- haval hevel (27:12; the verb only here in Job) "breathe out mere breath", keeping hevel "a breath" (7:16); "in vain" stays at 9:29 and 21:34.
+- laqach of an inheritance (27:13) "receive". ravah of sons (27:14) "be many", beside rav (5:25).
+- mawet beside the sword and hunger (27:15; Jer 15:2) "the plague" [alt: death] (decision log, call: clear).
+- tsavar "heap up", as at Gen 41:35. malbush (27:16) "clothing": it shares its English with levush (24:7). lavash with a garment (27:17) "wear". chalaq (the simple form; 27:17) "portion out", as chilleq (21:17).
+- sukkah (27:18) "shelter", as at Gen 33:17; notser "watchman", beside natsar "watch" (7:20).
+- ashir "rich". ne'esaf of a dead man (27:19) "be gathered", as at Gen 25:8 [alt: do so again] (decision log, call: close).
+- hissig (27:20) "overtake", as at Gen 31:25. laylah as an adverb "by night", beside yomam "by day" (5:14).
+- se'er (27:21; the verb of se'arah "storm", 9:17) "sweep": it shares its English with chalaf (9:11).
+- hishlikh al with no object (27:22) "let fly at". baroach yivrach "flee headlong".
+- safaq kappayim al (27:23; Lam 2:15) "clap one's hands at"; sharaq al "hiss at".
