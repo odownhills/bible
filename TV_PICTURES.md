@@ -21,6 +21,13 @@ for choosing the pictures. They apply to every chapter. A chapter's plan is `dat
    picture should stay up at least 8 seconds or so.
 5. Check the result against the chapters before and after it, and with the words laid over it.
 
+Family lists (Obay, 2026-11-28): before planning, look for runs of 3 or more verses that are only names,
+ages and "fathered" / "sons of", and add them to `data/family_lists.json` (verse ranges; `"all"` for a chapter
+that is a family list from start to end). Verses that tell something stay in (Genesis 5:22-24 Enoch, 10:8-12
+Nimrod, 10:25 Peleg), and so does a heading such as "These are the generations of Shem". Watch and the
+Listen page skip those verses by default with a spoken notice, so they need no pictures: a scene for the
+verses after a list starts at the first verse after it. The text itself is never changed.
+
 ## The test, in this order
 1. **Does the picture itself show the meaning?** Name the one thing that has to be seen for the verse to
    land ("feet landing in someone else's footprints", "a man who cannot see where he is going") and check

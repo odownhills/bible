@@ -188,6 +188,8 @@ p.more{font-family:var(--sans);font-size:.9rem;color:var(--text-soft);background
 .transport{display:flex;align-items:center;justify-content:space-between;margin:1rem 0 .9rem}
 .note-line{font-size:.78rem;color:var(--text-soft);text-align:center;margin:.9rem 0 0}
 .note-line[hidden]{display:none}
+.chip.fam[aria-pressed="false"]{color:var(--text-soft)}
+.chip[hidden]{display:none}
 .lib{margin-top:1.75rem;font-family:var(--sans)}
 .lib-head{display:flex;justify-content:space-between;align-items:center;gap:.75rem;border-bottom:1px solid var(--rule);padding-bottom:.5rem;margin-bottom:.4rem}
 .lib-head h2{font-size:.8rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.12em;margin:0}
@@ -227,6 +229,7 @@ p.more{font-family:var(--sans);font-size:.9rem;color:var(--text-soft);background
       <option value="0" selected>Timer off</option><option value="15">Stop in 15 min</option><option value="30">Stop in 30 min</option>
       <option value="60">Stop in 60 min</option><option value="end">Stop after chapter</option>
     </select>
+    <button class="chip fam" id="fam" type="button" aria-pressed="false" hidden>Family lists: off</button>
     <a class="chip" id="read" href="#">Read along</a>
   </div>
   <p class="note-line" id="note" hidden></p>
@@ -236,6 +239,7 @@ p.more{font-family:var(--sans);font-size:.9rem;color:var(--text-soft);background
   <ul class="rows" id="rows"></ul>
 </div>
 <audio id="audio" preload="auto"></audio>
+<audio id="say" preload="auto"></audio>
 <script>
 (function(){
 var $=function(id){return document.getElementById(id)};
@@ -246,6 +250,73 @@ var PAUSE='<path class="solid" d="M7 5h3.500v14H7zM13.500 5H17v14h-3.500z"/>';
 function get(k,d){try{var v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}}
 function put(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
 var pos=get('listenPos',{}),done=get('listenDone',{});
+/* Story only (Obay, 2026-11-28): the family lists marked in data/family_lists.json (runs of verses that are only names
+   and ages) are skipped, with a short spoken notice: "Skipping 6 verses of family names." A chapter that is a family
+   list from start to end is skipped whole, even when it is chosen ("Skipping Genesis chapter 36, a list of family
+   names."). The "Family lists" switch plays everything. Listen + Read on the chapter pages always reads every verse.
+   The times come from the manifest (scripts/build.py); the notices are recorded by scripts/notices.py, and until one
+   is, the phone's own voice says it. */
+var sayEl=$('say'),N={busy:false,n:0,t:0,unlocked:false},famT=0;
+var SILENT='data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=';
+function lists(){ return !!get('familyLists',false); }   // true: the family lists play too
+function wholeSkip(c){ return !!(c&&c.familyAll&&!lists()); }
+function famOf(c){ return c&&c.family&&!lists()&&mode==='audio'?c.family:null; }
+function unlock(){   // inside a tap: lets the notice play later, when the phone is in a pocket
+  if(N.unlocked||N.busy)return; N.unlocked=true;
+  try{ sayEl.src=SILENT; var p=sayEl.play(); if(p&&p.catch) p.catch(function(){}); }catch(e){}
+}
+function say(item,then){
+  // the notice in the chapters' own voice, else the phone's voice; never more than 9 seconds
+  var mine=++N.n,fin=false,spoke=false; N.busy=true; clearTimeout(N.t);
+  function end(){ if(fin||mine!==N.n)return; fin=true; clearTimeout(N.t); N.busy=false; then(); }
+  function speak(){
+    if(spoke||fin||mine!==N.n)return; spoke=true;
+    if(!synth||!window.SpeechSynthesisUtterance){ N.t=setTimeout(end,600); return; }
+    try{ synth.cancel(); var u=new SpeechSynthesisUtterance(item.say); u.rate=Math.min(rate(),1.5); u.onend=u.onerror=end; synth.speak(u); }catch(e){ end(); }
+  }
+  N.t=setTimeout(end,9000);
+  if(item.clip){
+    sayEl.onended=end; sayEl.onerror=speak; sayEl.src='../'+item.clip; sayEl.playbackRate=rate();
+    try{ var p=sayEl.play(); if(p&&p.catch) p.catch(speak); }catch(e){ speak(); }
+  }else speak();
+}
+function hush(){ N.n++; N.busy=false; clearTimeout(N.t); try{ sayEl.pause(); }catch(e){} if(synth&&mode==='audio') try{ synth.cancel(); }catch(e){} }
+function hint(){
+  if(get('familyHint',false))return; put('familyHint',true);
+  var n=$('note'); n.hidden=false; n.textContent='Family lists are skipped. Turn on Family lists to hear every name.';
+}
+function famBtn(){
+  var b=$('fam'),on=lists(); b.setAttribute('aria-pressed',on?'true':'false'); b.textContent='Family lists: '+(on?'on':'off');
+}
+function inFam(c,t){ var f=famOf(c),k; if(!f)return null;
+  for(k=0;k<f.length;k++){ var r=f[k]; if(r.t&&t>=r.t[0]&&(r.t[1]==null||t<r.t[1]-0.25)) return r; } return null; }
+function famCheck(){   // from timeupdate and its own timer: at a family list, say so and go on after it
+  clearTimeout(famT); var c=list[i];
+  if(!want||busy||N.busy||mode!=='audio'||audio.paused||!c)return;
+  var r=inFam(c,audio.currentTime);
+  if(r){ skipOver(c,r); return; }
+  var f=famOf(c),t=audio.currentTime,k; if(!f)return;
+  for(k=0;k<f.length;k++) if(f[k].t&&f[k].t[0]>t){ famT=setTimeout(famCheck,Math.max(20,(f[k].t[0]-t)/rate()*1000)); break; }
+}
+function skipOver(c,r){
+  N.to=r.t[1]; N.from=r.t[0]; audio.pause(); hint(); $('sub').textContent=r.say.replace(/\.$/,'');
+  say(r,function(){
+    if(list[i]!==c)return; $('sub').textContent=place(c);
+    if(r.t[1]==null||r.t[1]>=audio.duration-0.3){ ended(); return; }
+    audio.currentTime=r.t[1]; if(want) audio.play().catch(function(){want=false;setIcon();});
+  });
+}
+function noticeStop(){   // pause pressed while a notice is said: stop there, just after the family list
+  var c=list[i]; hush(); if(c) $('sub').textContent=place(c);
+  if(N.whole){ N.whole=false; return; }
+  if(N.to==null) return; if(isFinite(audio.duration)&&N.to<audio.duration-0.3) audio.currentTime=N.to;
+}
+function skipWhole(c){   // a chapter that is a family list from start to end
+  N.whole=true; hint(); $('sub').textContent='A list of family names, skipped';
+  say(c.familyAll,function(){ N.whole=false; if(list[i]!==c)return; $('sub').textContent=place(c);
+    if(stopAtEnd){ stopAtEnd=false; $('sleep').value='0'; want=false; setIcon(); return; }
+    var k=i+1; if(k<list.length) load(k,true); else { want=false; setIcon(); $('sub').textContent='You are all caught up'; } });
+}
 function fmt(s){if(!isFinite(s)||s<0)s=0;s=Math.floor(s);var h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return (h?h+':'+(m<10?'0':''):'')+m+':'+(x<10?'0':'')+x}
 function rate(){return parseFloat($('rate').value)||1}
 function name(c){return c.title||c.book+' '+c.chapter}
@@ -286,7 +357,8 @@ function show(){
   $('prev').disabled=false; $('next').disabled=i>=list.length-1;
   if($('book').value!==c.slug) $('book').value=c.slug;
   var n=$('note');
-  if(c.audio){n.hidden=true;$('sub').textContent=place(c);}
+  if(wholeSkip(c)){n.hidden=false;n.textContent='This chapter is a list of family names, so it is skipped. Turn on Family lists to hear it.';$('sub').textContent=place(c);}
+  else if(c.audio){n.hidden=true;$('sub').textContent=place(c);}
   else{n.hidden=false;n.textContent='No recording for this chapter yet, so your phone’s own voice reads it. Keep the screen on while it plays.';$('sub').textContent='Recording coming soon';}
   rows(); meta(); put('listenAt',c.id); spot();
 }
@@ -303,7 +375,11 @@ function speakNext(){
   synth.speak(u);
 }
 function load(k,auto){
-  busy=true; stopAll(); i=k; var c=list[i]; want=!!auto; setIcon(); show();
+  busy=true; stopAll(); hush(); clearTimeout(famT); i=k; var c=list[i]; want=!!auto; setIcon(); show();
+  if(wholeSkip(c)){   // said, not played: the next chapter follows (it is loaded only once it is reached)
+    mode='audio'; busy=false; audio.removeAttribute('src'); seek.disabled=true; paint(0,0); $('tcur').textContent='0:00'; $('trem').textContent='';
+    if(want) skipWhole(c); return;
+  }
   if(c.audio){
     mode='audio'; seek.disabled=false; seek.step=0.1; paint(0,c.duration||0);
     var resume=pos[c.id]||0; seek.disabled=true; $('sub').textContent='Loading\u2026';
@@ -343,29 +419,38 @@ function ended(){
   if(stopAtEnd){ stopAtEnd=false; $('sleep').value='0'; want=false; setIcon(); rows(); return; }
   if(i+1<list.length) load(i+1,true); else { want=false; setIcon(); rows(); $('sub').textContent='You are all caught up'; }
 }
-function play(){ want=true; setIcon(); if(mode==='audio'&&list[i]&&list[i].audio) $('note').hidden=true; if(mode==='audio'){ if(busy)return; audio.playbackRate=rate(); audio.play().catch(function(){want=false;setIcon();}); } else speakNext(); }
-function pause(){ want=false; setIcon(); if(mode==='audio'){ if(busy)return; audio.pause(); savePos(true); } else if(synth) synth.cancel(); }
+function play(){ unlock(); want=true; setIcon(); var c=list[i];
+  if(wholeSkip(c)){ if(!N.busy) skipWhole(c); return; }
+  if(mode==='audio'&&c&&c.audio) $('note').hidden=true;
+  if(mode==='audio'){ if(busy)return; if(N.busy) return; audio.playbackRate=rate(); audio.play().catch(function(){want=false;setIcon();}); } else speakNext(); }
+function pause(){ want=false; setIcon(); if(N.busy){ noticeStop(); savePos(true); rows(); return; } if(mode==='audio'){ if(busy)return; audio.pause(); savePos(true); } else if(synth) synth.cancel(); }
 function toggle(){ want?pause():play(); }
 function seekBy(d){
-  if(mode==='audio'){ if(!isFinite(audio.duration))return; audio.currentTime=Math.max(0,Math.min(audio.duration-0.2,audio.currentTime+d)); paint(audio.currentTime,audio.duration); posState(); savePos(true); }
+  if(mode==='audio'){ if(!isFinite(audio.duration))return; if(N.busy){ noticeStop(); }
+    var to=Math.max(0,Math.min(audio.duration-0.2,audio.currentTime+d)),r=inFam(list[i],to);
+    if(r) to=d<0?Math.max(0,r.t[0]-5):(r.t[1]==null?audio.duration-0.2:r.t[1]);   // over a family list, not into it
+    audio.currentTime=to; paint(audio.currentTime,audio.duration); posState(); savePos(true); famCheck(); }
   else if(sents.length){ si=Math.max(0,Math.min(sents.length-1,si+(d<0?-1:1))); synth.cancel(); paint(si,sents.length); if(want) setTimeout(speakNext,80); }
 }
-function next(){ if(i+1<list.length){ savePos(true); load(i+1,want); } }
+function next(){ if(i+1<list.length){ savePos(true); load(i+1,want||N.busy); } }
 function prev(){
   if(mode==='audio'&&audio.currentTime>5){ audio.currentTime=0; paint(0,audio.duration); posState(); return; }
   if(mode==='tts'&&si>1){ si=0; synth.cancel(); paint(0,sents.length); if(want) setTimeout(speakNext,80); return; }
-  if(i>0){ delete pos[list[i-1].id]; load(i-1,want); }
+  var k=i-1; while(k>0&&wholeSkip(list[k])) k--;   // back past a chapter that is only a family list
+  if(k>=0){ delete pos[list[k].id]; load(k,want||N.busy); }
 }
-audio.addEventListener('timeupdate',function(){ if(mode!=='audio')return; paint(audio.currentTime,audio.duration); savePos(false); });
+audio.addEventListener('timeupdate',function(){ if(mode!=='audio')return; paint(audio.currentTime,audio.duration); savePos(false); famCheck(); });
+audio.addEventListener('seeked',famCheck); audio.addEventListener('ratechange',famCheck);
 audio.addEventListener('durationchange',function(){ if(mode==='audio'){ paint(audio.currentTime,audio.duration); posState(); } });
 audio.addEventListener('ended',function(){ if(mode==='audio') ended(); });
-audio.addEventListener('play',function(){ want=true; setIcon(); posState(); });
-audio.addEventListener('pause',function(){ if(!busy&&mode==='audio'&&!audio.ended&&audio.readyState>0&&!audio.seeking){ want=false; setIcon(); savePos(true); rows(); } });
+audio.addEventListener('play',function(){ if(N.busy){ audio.pause(); return; } want=true; setIcon(); posState(); famCheck(); });
+audio.addEventListener('pause',function(){ if(N.busy)return; if(!busy&&mode==='audio'&&!audio.ended&&audio.readyState>0&&!audio.seeking){ want=false; setIcon(); savePos(true); rows(); } });
 audio.addEventListener('ratechange',posState);
 audio.addEventListener('error',function(){ if(mode==='audio'&&audio.getAttribute('src')){ want=false; setIcon(); $('note').hidden=false; $('note').textContent='This recording could not be loaded. Check your connection and press play again.'; } });
 seek.addEventListener('input',function(){ dragging=true; paint(mode==='audio'?audio.currentTime:si,mode==='audio'?audio.duration:sents.length); });
 seek.addEventListener('change',function(){ var v=parseFloat(seek.value); dragging=false;
-  if(mode==='audio'){ if(isFinite(audio.duration)){ audio.currentTime=Math.min(v,audio.duration-0.2); posState(); savePos(true); } }
+  if(mode==='audio'){ if(isFinite(audio.duration)){ if(N.busy) noticeStop(); var r=inFam(list[i],v); if(r) v=r.t[1]==null?audio.duration-0.2:r.t[1];
+    audio.currentTime=Math.min(v,audio.duration-0.2); posState(); savePos(true); } }
   else if(sents.length){ si=Math.min(sents.length-1,Math.floor(v)); synth.cancel(); paint(si,sents.length); if(want) setTimeout(speakNext,80); } });
 $('play').onclick=toggle; $('back').onclick=function(){seekBy(-15)}; $('fwd').onclick=function(){seekBy(30)}; $('next').onclick=next; $('prev').onclick=prev;
 $('rate').onchange=function(){ put('listenRate',$('rate').value); audio.defaultPlaybackRate=rate(); audio.playbackRate=rate(); paint(audio.currentTime,audio.duration);
@@ -373,6 +458,15 @@ $('rate').onchange=function(){ put('listenRate',$('rate').value); audio.defaultP
 $('sleep').onchange=function(){ clearTimeout(sleepT); stopAtEnd=false; var v=$('sleep').value;
   if(v==='end') stopAtEnd=true; else if(+v) sleepT=setTimeout(function(){ pause(); $('sleep').value='0'; },+v*60000); };
 $('book').onchange=rows;
+$('fam').onclick=function(){
+  put('familyLists',!lists()); famBtn(); var c=list[i]; if(!c)return;
+  if(lists()&&N.busy){   // turned on while a notice is said: play what it was skipping
+    var whole=N.whole,from=N.from; hush(); N.whole=false;
+    if(whole){ load(i,true); return; }
+    $('sub').textContent=place(c); if(from!=null) audio.currentTime=from; audio.play().catch(function(){want=false;setIcon();}); return; }
+  if(c.familyAll){ load(i,want); return; }   // the chapter on screen is a family list: show it as it now plays
+  famCheck();
+};
 $('rows').addEventListener('click',function(e){ var b=e.target.closest('button'); if(!b)return; savePos(true); load(+b.dataset.k,true); window.scrollTo({top:0,behavior:'smooth'}); });
 document.addEventListener('keydown',function(e){ if(/SELECT|INPUT|BUTTON|A/.test(e.target.tagName))return;
   if(e.key===' '){e.preventDefault();toggle();} else if(e.key==='ArrowLeft')seekBy(-15); else if(e.key==='ArrowRight')seekBy(30); });
@@ -389,6 +483,7 @@ fetch('../manifest-en.json').then(function(r){return r.json()}).then(function(m)
   var seen={},opts=''; list.forEach(function(c){ if(!seen[c.slug]){ seen[c.slug]=1; opts+='<option value="'+c.slug+'">'+c.book+'</option>'; } });
   $('book').innerHTML=opts; $('book').hidden=Object.keys(seen).length<2;   // one list only (the Quran's surahs): no picker
   var r=get('listenRate',null); if(r) $('rate').value=r;
+  if(list.some(function(c){ return c.family||c.familyAll; })){ $('fam').hidden=false; famBtn(); }
   var from=new URLSearchParams(location.search).get('from')||get('listenAt',null),k=0;
   list.forEach(function(c,n){ if(c.id===from) k=n; });
   load(k,false);
@@ -397,4 +492,4 @@ fetch('../manifest-en.json').then(function(r){return r.json()}).then(function(m)
 </script>
 
 <footer>An original translation from the Arabic.</footer>
-</div><script src="../lang.js?v=49bb63b3" defer></script><script src="../offline.js?v=5f503327" defer></script></body></html>
+</div><script src="../lang.js?v=49bb63b3" defer></script><script src="../offline.js?v=db99b678" defer></script></body></html>

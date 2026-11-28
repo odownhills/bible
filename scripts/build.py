@@ -53,6 +53,14 @@ BY_SLUG = {b["slug"]: b for b in BOOKS}
 # watched, with its pictures once they are made and with its words alone until then; so can every recorded surah of
 # the Quran, with the pictures of the parts that have them (scripts/quran_site.py). The Watch pages list them the way
 # the reading pages do (Obay, 2026-11-23): the books, then a book's chapters; the Quran's surahs.
+# Family lists (Obay, 2026-11-28): the verse ranges that Story only skips in Watch and on the Listen page
+FAMILY = {}
+if WORK == "bible":
+    try:
+        FAMILY = {k: v for k, v in json.load(open(os.path.join(ROOT, "data", "family_lists.json"), encoding="utf-8")).items()
+                  if not k.startswith("_")}
+    except OSError:
+        pass
 TV = WORK in ("bible", "quran")
 PICTURES = WORK == "bible"   # the Bible's per-chapter TV files; the Quran's are written per surah
 # The Bible site is the translation alone (Obay, 2026-11-25: "the Bible site should be pure Bible and plain. No
@@ -509,6 +517,48 @@ def tv_scenes(slug, n, verse_at, verse_text, listed):
     return rel, poster if there(poster) else scenes[0]["img"]
 
 
+def notice_clip(text):
+    """Where the spoken notice for a skipped family list is kept: audio/notices/<words of it>.mp3."""
+    return "audio/notices/%s.mp3" % re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+
+def family_lists(b, n, verse_at, total, times, listed):
+    """What Story only skips in a chapter (data/family_lists.json): ({"say", "clip"} when the whole chapter is a
+    family list, else None; and [{"v": [first, last], "w": [first word, word after], "t": [start, end] seconds,
+    "say", "clip"}]). The times are there only when the chapter's words are timed; "end" null means the end of
+    the recording. "clip" is the recorded notice (scripts/notices.py), or null until it is recorded."""
+    marked = FAMILY.get("%s-%d" % (b["slug"], n))
+    if not marked:
+        return None, []
+    start = {v: w for v, w in verse_at}
+    order = [v for v, _ in verse_at]
+
+    def said(text):
+        clip = notice_clip(text)
+        return {"say": text, "clip": clip if clip in listed else None}
+    if marked == "all":
+        return said("Skipping %s chapter %d, a list of family names." % (b["name"], n)), []
+    out, covered = [], set()
+    for first, last in marked:
+        if first not in start or last not in start or last - first < 2:
+            raise SystemExit("data/family_lists.json: %s %d has no verses %d to %d, or fewer than 3" % (b["name"], n, first, last))
+        covered.update(range(first, last + 1))
+        after = order.index(last) + 1
+        wa, wb = start[first], (verse_at[after][1] if after < len(verse_at) else total)
+        item = {"v": [first, last], "w": [wa, wb]}
+        if times:
+            t0 = times[wa] - 0.08
+            if wa > 0:
+                t0 = max(t0, times[wa - 1] + 0.05)
+            t1 = max(times[wb] - 0.1, times[wb - 1] + 0.05) if wb < total else None
+            item["t"] = [round(t0, 2), round(t1, 2) if t1 is not None else None]
+        item.update(said("Skipping %d verses of family names." % (last - first + 1)))
+        out.append(item)
+    if covered >= set(order):
+        return said("Skipping %s chapter %d, a list of family names." % (b["name"], n)), []
+    return None, out
+
+
 def clock(seconds):
     return "%d:%02d" % (seconds // 60, seconds % 60)
 
@@ -653,6 +703,8 @@ def main():
                     sync_url = audio_url[:-4] + ".json"
             except (OSError, ValueError):
                 pass
+        whole, family = family_lists(b, n, verse_at, len(words(spoken)),
+                                     [x / 100.0 for x in timing["t"]] if sync_url else None, lengths)
         data = ' data-id="%s-%d" data-title="%s" data-url="%s/%d.html" data-skip="%d"' % (
             b["slug"], n, esc(label(b, n)), b["slug"], n, skip)
         buttons = ""
@@ -704,6 +756,10 @@ def main():
         })
         if TV:   # the chapter's scene file when it has pictures, and its cover for the TV page
             manifest[-1].update(tv=tv_url, poster=poster)
+        if whole:   # Story only: a chapter that is a family list from start to end is skipped whole
+            manifest[-1]["familyAll"] = whole
+        elif family:   # Story only: the family lists in it (scripts/listen.html, scripts/tv.js)
+            manifest[-1]["family"] = family
         if "labels" in b:   # a part of the Quran: its own name, where it stands in its surah, and how many words
             # its recording opens with ("Quran, surah 2, verses 30 to 61."), which scripts/quran_join.py leaves out
             manifest[-1].update(title=label(b, n), total=b["planned"], sub="Part %d of %d" % (n, b["planned"]), skip=skip)

@@ -16,8 +16,8 @@
      self.addEventListener('install',function(){self.skipWaiting()});
      self.addEventListener('activate',function(e){e.waitUntil(self.registration.unregister())});
 */
-var VERSION = "0e9bf0dc";
-var PRECACHE = ["./", "offline.html", "offline.js?v=5f503327", "manifest-en.json", "manifest-ar.json", "read.js?v=bac59fe3", "tv.js?v=388acad3", "lang.js?v=49bb63b3"];   // the home page, the offline page and the current scripts
+var VERSION = "dd9b92a0";
+var PRECACHE = ["./", "offline.html", "offline.js?v=db99b678", "manifest-en.json", "manifest-ar.json", "read.js?v=bac59fe3", "tv.js?v=26e80c05", "lang.js?v=49bb63b3"];   // the home page, the offline page and the current scripts
 var PAGES = 'pages', ASSETS = 'assets', SAVED = 'saved';
 var WAIT = 4000;   // how long a page waits for the site before its kept copy is used
 

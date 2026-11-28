@@ -59,6 +59,8 @@
       var small = [list, c.text, c.sync, location.href.split('#')[0]];
       var big = [c.audio];
       if (c.poster) big.push(c.poster);
+      // Story only's spoken notices for the family lists it skips in this chapter
+      ((c.family || []).concat(c.familyAll ? [c.familyAll] : [])).forEach(function (f) { if (f.clip && small.indexOf(f.clip) < 0) small.push(f.clip); });
       var tv = c.tv || 'tv/' + c.slug + '/' + c.chapter + '.json';
       return json(tv).then(function (t) {
         small.push(tv);
