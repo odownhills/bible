@@ -2326,3 +2326,17 @@ closed. Close calls go in the chapter's decision log instead.
 - gazar (22:28) "decree"; omer "a thing"; qum le- "stand for".
 - hishpil (22:29; 40:11) "bring low": it shares its English with tsa'ar (14:21). gewah (22:29) "Rise up" [alt: pride] (decision log, call: ask); at 33:17 it is "pride". shach enayim "the one with downcast eyes".
 - i-naqi (22:30) "one who is not innocent" [alt: the innocent man] (decision log, call: close). millet "deliver" and nimlat (22:30) "be delivered", so that the echo is heard; elsewhere nimlat stays "escape". bor kappayim "the cleanness of one's palms", as planned (9:30).
+
+## Settled in Job 23
+- meri (23:2) "defiance" [alt: bitter] (decision log, call: close), leaving "rebellion" for pesha. yadi (23:2) "my hand" [alt: his hand] (decision log, call: close).
+- tekhunah (23:3) "seat". bo ad (23:3) "come right to".
+- nokhach im (23:7) "argue with", as hokhiach (13:3). pillet with no object (23:7) "go free"; of a cow it stays "calve" (21:10).
+- qedem, achor, semol, yamin as the four directions (23:8-9) "east", "west", "north", "south", as semol is "north" at Gen 14:15.
+- ataf (23:9) "wrap oneself": it shares its English with hit'allef (Gen 38:14).
+- ashur (23:11; 31:7) "footsteps", leaving "step" for tsa'ad. hittah with no object (23:11) "turn aside".
+- hemish min (23:12) "depart from": it shares its English with sur min (15:30). mitswah "commandment", as listed.
+- chuqqi (23:12, 14) "what is allotted to me", the same English both times; mechuqqi (23:12) "more than what is allotted to me" [alt: within me] (decision log, call: close). hishlim (23:14) "carry out".
+- be'echad (23:13) "one" [alt: of one mind] (decision log, call: close). iwwah (23:13) "desire": it shares its English with chamad.
+- kahennah rabbot (23:14) "many such things". immo (23:14) "in his mind", as at 10:13.
+- herakh lev (23:16) "make the heart faint". hivhil (23:16) "dismay", as bihel (22:10).
+- mippene (23:15, 17) "before"; kissah min (23:17) "cover from".
