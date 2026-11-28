@@ -1,5 +1,5 @@
 {
- "note": "Made by the steps in TV_PICTURES.md (2026-11-28): ? pictures chosen from 30 trial pictures. Wide pictures only (1920x1088). Each scene starts at the first word of its verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. God and the angel are not pictured; Abraham, Sarah, Hagar and the others are only ordinary people of today, seen from behind or small. Fixed recurring objects: Abraham's tent is a small plain weathered tan canvas tent on a simple wooden pole frame; the oak is one huge old oak with a broad gnarled trunk and a wide dark-green crown; the spring (Genesis 16) is a small spring of clear water welling into a shallow stone-rimmed pool in dry stony wilderness; the well is a plain round well ringed with rough fieldstones with a wooden beam, rope and bucket.",
+ "note": "Made by the steps in TV_PICTURES.md (2026-11-28): 15 pictures chosen from 30 trial pictures. Wide pictures only (1920x1088). Each scene starts at the first word of its verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. God and the angel are not pictured; Abraham, Sarah, Hagar and the others are only ordinary people of today, seen from behind or small. Fixed recurring objects: Abraham's tent is a small plain weathered tan canvas tent on a simple wooden pole frame; the oak is one huge old oak with a broad gnarled trunk and a wide dark-green crown; the spring (Genesis 16) is a small spring of clear water welling into a shallow stone-rimmed pool in dry stony wilderness; the well is a plain round well ringed with rough fieldstones with a wooden beam, rope and bucket.",
  "method": "Second method, asked for by Obay on 2026-11-21: (1) split the chapter into sections that each carry one deep meaning; (2) write picture ideas for each; (3) judge them; (4) make the top two for each slot as real pictures and choose by eye.",
  "sections": [
   {
@@ -19,32 +19,14 @@
    "meaning": "On that very day Abraham circumcises Ishmael and every male of his house, as God had spoken."
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
    "verse": 1,
    "section": "1-8",
    "principle": "And when Abram was ninety-nine years old, Yahweh appeared to Abram and said to him, \"I am God Almighty. Walk before me and be blameless,",
    "shows": "An old man seen from behind walks a long straight road toward bright dawn light.",
    "prompt": "Seen from behind, an old ordinary man with white hair walking steadily along a long straight road toward a bright clear dawn on the horizon, long shadow behind him. The man and the road are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/01-walk-blameless-a.jpg"
-  },
-  {
-   "verse": 1,
-   "section": "1-8",
-   "principle": "And when Abram was ninety-nine years old, Yahweh appeared to Abram and said to him, \"I am God Almighty. Walk before me and be blameless,",
-   "shows": "A long straight plumb line hangs perfectly still beside a standing wall.",
-   "prompt": "A plumb line hanging perfectly still and straight beside a tall stone wall, the weight a pale stone, clear daylight. The line and the wall are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/01-walk-blameless-b.jpg"
-  },
-  {
-   "verse": 3,
-   "section": "1-8",
-   "principle": "And Abram fell on his face, and God spoke with him, saying,",
-   "shows": "An old man lies face down on a golden hillside, arms spread, seen from a distance.",
-   "prompt": "An old man seen from a distance lying face down on the earth of a golden grass hillside with his arms stretched out flat, early light, wide quiet land. The man and the hillside are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/02-face-down-a.jpg"
+   "image": "01-walk-blameless.jpg"
   },
   {
    "verse": 3,
@@ -52,7 +34,7 @@
    "principle": "And Abram fell on his face, and God spoke with him, saying,",
    "shows": "An old man kneeling with his forehead on the ground, white hair, seen from behind.",
    "prompt": "Seen from behind, an old man with white hair kneeling with his forehead on the dusty ground in front of a small plain weathered tan canvas tent on a simple wooden pole frame, early light. The man and the tent are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/02-face-down-b.jpg"
+   "image": "02-face-down.jpg"
   },
   {
    "verse": 5,
@@ -60,16 +42,7 @@
    "principle": "And your name will no longer be called Abram, but your name will be Abraham, for the father of a multitude of nations I have made you.",
    "shows": "Many pairs of hands of every skin tone reaching in to clasp one old weathered hand.",
    "prompt": "Many pairs of hands of every skin tone reaching in from all sides to clasp one single old weathered hand held in the middle, warm light. The hands are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/03-many-hands-a.jpg"
-  },
-  {
-   "verse": 5,
-   "section": "1-8",
-   "principle": "And your name will no longer be called Abram, but your name will be Abraham, for the father of a multitude of nations I have made you.",
-   "shows": "One old oak tree with young saplings of many kinds growing all around it.",
-   "prompt": "One huge old oak with a broad gnarled trunk and a wide dark-green crown with young saplings of many different kinds growing all around it in every direction across a wide meadow, clear morning light. The oak and the saplings are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/03-many-hands-b.jpg"
+   "image": "03-many-hands.jpg"
   },
   {
    "verse": 7,
@@ -77,16 +50,7 @@
    "principle": "And I will establish my covenant between me and you and your offspring after you, through their generations, as an everlasting covenant, to be God to you and to your offspring after you.",
    "shows": "An old man's hands hold a handful of rich earth with a wide green land behind.",
    "prompt": "An old man's weathered hands cupping a handful of dark rich earth, a wide green valley with fields stretching out behind them, golden light. The hands and the valley are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/04-everlasting-land-a.jpg"
-  },
-  {
-   "verse": 7,
-   "section": "1-8",
-   "principle": "And I will establish my covenant between me and you and your offspring after you, through their generations, as an everlasting covenant, to be God to you and to your offspring after you.",
-   "shows": "An unbroken ring of fieldstones around a green valley with no start and no end.",
-   "prompt": "A perfectly unbroken ring of rough fieldstones laid around a green valley, the ring with no start and no end, seen from a high hillside, clear daylight. The ring and the valley are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/04-everlasting-land-b.jpg"
+   "image": "04-everlasting-land.jpg"
   },
   {
    "verse": 9,
@@ -94,15 +58,7 @@
    "principle": "And God said to Abraham, \"And as for you, my covenant you are to keep, you and your offspring after you, through their generations.",
    "shows": "Three pairs of hands stacked on a fence rail: old, grown, and a child's.",
    "prompt": "Three pairs of hands stacked one on top of another on a wooden fence rail: an old man's, a grown man's and a small child's, soft evening light. The hands are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/05-hands-generations-a.jpg"
-  },
-  {
-   "verse": 9,
-   "section": "9-14",
-   "principle": "And God said to Abraham, \"And as for you, my covenant you are to keep, you and your offspring after you, through their generations.",
-   "shows": "A burning lamp passed from one hand to the next in a line of hands.",
-   "prompt": "A small burning oil lamp being passed from one hand to the next in a line of hands of different ages, warm light in the dark. The lamp and the hands are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/05-hands-generations-b.jpg"
+   "image": "05-hands-generations.jpg"
   },
   {
    "verse": 11,
@@ -110,15 +66,7 @@
    "principle": "And you are to be circumcised in the flesh of your foreskins, and it will serve as a sign of a covenant between me and you.",
    "shows": "A newborn's tiny hand grips an old man's finger.",
    "prompt": "A newborn's tiny hand gripping the finger of an old man's weathered hand, soft warm light. The two hands are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/06-sign-a.jpg"
-  },
-  {
-   "verse": 11,
-   "section": "9-14",
-   "principle": "And you are to be circumcised in the flesh of your foreskins, and it will serve as a sign of a covenant between me and you.",
-   "shows": "A plain band ring on a hand resting on a table.",
-   "prompt": "A plain simple band ring on a hand resting on a wooden table, clear window light. The hand is in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/06-sign-b.jpg"
+   "image": "06-sign.jpg"
   },
   {
    "verse": 12,
@@ -126,16 +74,7 @@
    "principle": "And at eight days old every male among you is to be circumcised, through your generations: the one born in the house and the one bought with silver from any foreigner, who is not of your offspring.",
    "shows": "A long crowded table in a farmyard where men of every kind sit together as one household.",
    "prompt": "A long crowded wooden table in a big farmyard where men of every age and kind sit together shoulder to shoulder as one household, a small plain weathered tan canvas tent on a simple wooden pole frame behind them, evening light. The table and the men are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/07-one-household-a.jpg"
-  },
-  {
-   "verse": 12,
-   "section": "9-14",
-   "principle": "And at eight days old every male among you is to be circumcised, through your generations: the one born in the house and the one bought with silver from any foreigner, who is not of your offspring.",
-   "shows": "One big open farmhouse door with many coats hanging beside it, all of one house.",
-   "prompt": "One big open farmhouse door with many different coats and hats hanging on pegs beside it, warm light inside, all belonging to one house. The door and the pegs are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/07-one-household-b.jpg"
+   "image": "07-one-household.jpg"
   },
   {
    "verse": 14,
@@ -144,15 +83,7 @@
    "shows": "A branch broken off lies on the ground beside a living tree.",
    "prompt": "A single leafy branch broken off and lying on the ground beside the trunk of a living tree, its leaves already dull, clear light. The branch and the trunk are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false,
-   "image": "cand/08-cut-off-a.jpg"
-  },
-  {
-   "verse": 14,
-   "section": "9-14",
-   "principle": "And an uncircumcised male, one who is not circumcised in the flesh of his foreskin—that person will be cut off from his people; my covenant he has broken.\"",
-   "shows": "An empty chair at a crowded table.",
-   "prompt": "One empty chair pushed back at the end of a crowded table of people eating together, warm light. The chair and the table are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/08-cut-off-b.jpg"
+   "image": "08-cut-off.jpg"
   },
   {
    "verse": 15,
@@ -160,16 +91,7 @@
    "principle": "And God said to Abraham, \"As for Sarai your wife, you are not to call her by the name Sarai, for Sarah is her name.",
    "shows": "An older woman stands at a tent door with her face in the first light of morning.",
    "prompt": "An older woman with grey hair standing at the open door of a small plain weathered tan canvas tent on a simple wooden pole frame, her face turned into the first golden light of morning, seen from the side. The woman and the tent are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/09-sarah-morning-a.jpg"
-  },
-  {
-   "verse": 15,
-   "section": "15-22",
-   "principle": "And God said to Abraham, \"As for Sarai your wife, you are not to call her by the name Sarai, for Sarah is her name.",
-   "shows": "A small spring grows into a wide river flowing across a land.",
-   "prompt": "A small spring in the hills growing into a wide river that flows down and spreads across a wide land to the horizon, seen from high above, clear light. The spring and the river are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/09-sarah-morning-b.jpg"
+   "image": "09-sarah-morning.jpg"
   },
   {
    "verse": 17,
@@ -177,15 +99,7 @@
    "principle": "And Abraham fell on his face and laughed, and he said in his heart, \"Will a child be born to a man a hundred years old? And Sarah—will a woman ninety years old give birth?\"",
    "shows": "An old man on his face laughs in disbelief, his face lifted.",
    "prompt": "Close view of an old man with white hair laughing in disbelief with his face lifted, tears of laughter in his eyes, out in an open field in daylight. The man's face is in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/10-laughed-a.jpg"
-  },
-  {
-   "verse": 17,
-   "section": "15-22",
-   "principle": "And Abraham fell on his face and laughed, and he said in his heart, \"Will a child be born to a man a hundred years old? And Sarah—will a woman ninety years old give birth?\"",
-   "shows": "An old man with a hand over his mouth, his shoulders shaking with quiet laughter, seen from the side.",
-   "prompt": "An old man seen from the side with a hand over his mouth, his shoulders shaking with quiet laughter, beside a small plain weathered tan canvas tent on a simple wooden pole frame in daylight. The man and the tent are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/10-laughed-b.jpg"
+   "image": "10-laughed.jpg"
   },
   {
    "verse": 18,
@@ -193,16 +107,7 @@
    "principle": "And Abraham said to God, \"If only Ishmael might live before you!\"",
    "shows": "An old man's hand rests on the shoulder of a thirteen-year-old boy in the sun beside the tent.",
    "prompt": "An old man's weathered hand resting on the shoulder of a thirteen-year-old boy standing in the sun beside a small plain weathered tan canvas tent on a simple wooden pole frame, both seen from behind, warm light. The hand, the boy and the tent are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/11-ishmael-hand-a.jpg"
-  },
-  {
-   "verse": 18,
-   "section": "15-22",
-   "principle": "And Abraham said to God, \"If only Ishmael might live before you!\"",
-   "shows": "A boy's sandals set beside an old man's sandals at the tent door.",
-   "prompt": "A boy's small sandals set neatly beside an old man's larger sandals at the door of a small plain weathered tan canvas tent on a simple wooden pole frame, warm light. The sandals and the door are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/11-ishmael-hand-b.jpg"
+   "image": "11-ishmael-hand.jpg"
   },
   {
    "verse": 19,
@@ -210,16 +115,7 @@
    "principle": "And God said, \"Indeed, Sarah your wife is going to bear you a son, and you will name him Isaac. And I will establish my covenant with him as an everlasting covenant for his offspring after him.",
    "shows": "A baby laughing, mouth open, in a sunlit room.",
    "prompt": "A baby laughing with its mouth wide open, bright eyes, in a sunlit plain room, soft light. The baby's face is in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/12-he-laughs-a.jpg"
-  },
-  {
-   "verse": 19,
-   "section": "15-22",
-   "principle": "And God said, \"Indeed, Sarah your wife is going to bear you a son, and you will name him Isaac. And I will establish my covenant with him as an everlasting covenant for his offspring after him.",
-   "shows": "A cradle under the oak with a small rattle, sunlight through the leaves.",
-   "prompt": "A plain wooden cradle with a small rattle in it under one huge old oak with a broad gnarled trunk and a wide dark-green crown, sunlight falling through the leaves. The cradle and the oak are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/12-he-laughs-b.jpg"
+   "image": "12-he-laughs.jpg"
   },
   {
    "verse": 20,
@@ -228,16 +124,7 @@
    "shows": "Twelve young trees standing in a row across a green field.",
    "prompt": "Twelve young strong trees standing in an even row across a wide green field, clear morning light. The trees are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false,
-   "image": "cand/13-twelve-a.jpg"
-  },
-  {
-   "verse": 20,
-   "section": "15-22",
-   "principle": "And as for Ishmael, I have heard you. Look, I have blessed him, and I will make him fruitful and multiply him very greatly. Twelve chieftains he will father, and I will make him into a great nation.",
-   "shows": "Twelve campfires glowing evenly around a wide plain at dusk.",
-   "prompt": "Twelve small campfires glowing evenly spaced across a wide plain at dusk, each with its own plume of smoke, deep blue sky. The campfires are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/13-twelve-b.jpg"
+   "image": "13-twelve.jpg"
   },
   {
    "verse": 22,
@@ -246,15 +133,7 @@
    "shows": "A single shaft of light rises through breaking clouds from an empty hilltop above a tent.",
    "prompt": "A single bright shaft of light rising up through breaking clouds from an empty hilltop above a small plain weathered tan canvas tent on a simple wooden pole frame, no one in view. The shaft of light and the hilltop are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false,
-   "image": "cand/14-went-up-a.jpg"
-  },
-  {
-   "verse": 22,
-   "section": "15-22",
-   "principle": "And he finished speaking with him, and God went up from Abraham.",
-   "shows": "An old man alone looks up into a wide empty sky from beside the tent.",
-   "prompt": "Seen from behind, an old man alone standing by a small plain weathered tan canvas tent on a simple wooden pole frame and looking up into a wide empty sky with a few bright clouds. The man and the sky are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/14-went-up-b.jpg"
+   "image": "14-went-up.jpg"
   },
   {
    "verse": 23,
@@ -262,16 +141,7 @@
    "principle": "And Abraham took Ishmael his son, and all those born in his house and all those bought with his silver, every male among the men of Abraham's house, and he circumcised the flesh of their foreskins on that very day, as God had spoken with him.",
    "shows": "At first light men line up at the gate of a farmyard, an old man and a boy at the front.",
    "prompt": "At first light a line of ordinary men gathering at the gate of a big farmyard, an old man and a boy standing at the front, seen from behind, long shadows. The gate and the men are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/15-same-day-a.jpg"
-  },
-  {
-   "verse": 23,
-   "section": "23-27",
-   "principle": "And Abraham took Ishmael his son, and all those born in his house and all those bought with his silver, every male among the men of Abraham's house, and he circumcised the flesh of their foreskins on that very day, as God had spoken with him.",
-   "shows": "The sun at its highest over a quiet camp of tents.",
-   "prompt": "The sun at its highest point in a pale clear sky over a quiet camp of tents and the oak, short shadows, no one in view. The sun and the camp are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/15-same-day-b.jpg"
+   "image": "15-same-day.jpg"
   }
  ]
 }
