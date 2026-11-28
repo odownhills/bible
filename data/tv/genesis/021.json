@@ -1,0 +1,155 @@
+{
+ "note": "Made by the steps in TV_PICTURES.md (2026-11-28): 16 pictures chosen from 32 trial pictures. Wide pictures only (1920x1088). Each scene starts at the first word of its verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. God and the angels are not pictured; Abraham, Sarah, Lot, Hagar, Abimelech and the others are only ordinary people of today, seen from behind, small, or as hands. Fixed recurring objects: Abraham's tent is a small plain weathered tan canvas tent on a simple wooden pole frame; the oak is one huge old oak with a broad gnarled trunk and a wide dark-green crown; the well is a plain round well ringed with rough fieldstones with a wooden beam, rope and bucket (the well in the wilderness and at Beersheba). Hagar and the boy are only ordinary people of today, small or seen from behind; the angel and God are not pictured. Rebuilt wording for the Beersheba tamarisk: one tamarisk tree with feathery grey-green foliage.",
+ "method": "Second method, asked for by Obay on 2026-11-21: (1) split the chapter into sections that each carry one deep meaning; (2) write picture ideas for each; (3) judge them; (4) make the top two for each slot as real pictures and choose by eye.",
+ "sections": [
+  {
+   "verses": "1-7",
+   "meaning": "Isaac is born to Abraham and Sarah in their old age, as God had said; Sarah laughs."
+  },
+  {
+   "verses": "8-14",
+   "meaning": "Isaac is weaned; Sarah wants Hagar and her son driven out; Abraham is troubled, God tells him to listen; he sends them away with bread and water."
+  },
+  {
+   "verses": "15-21",
+   "meaning": "The water runs out; God hears the boy, opens Hagar's eyes to a well, and is with the boy as he grows in the wilderness."
+  },
+  {
+   "verses": "22-34",
+   "meaning": "Abimelech and Abraham make an oath at Beersheba over a well; seven ewe lambs; Abraham plants a tamarisk and calls on the Everlasting God."
+  }
+ ],
+ "scenes": [
+  {
+   "verse": 1,
+   "section": "1-7",
+   "principle": "Now Yahweh attended to Sarah as he had said, and Yahweh did for Sarah as he had spoken.",
+   "shows": "An old woman's hands hold a newborn at a tent door in morning light.",
+   "prompt": "An old woman's wrinkled hands gently holding a swaddled newborn baby at the open door of a small plain weathered tan canvas tent on a simple wooden pole frame in warm morning light, upper part of frame.",
+   "image": "01-01-newborn.jpg"
+  },
+  {
+   "verse": 3,
+   "section": "1-7",
+   "principle": "And Abraham named his son who had been born to him, whom Sarah had borne to him, Isaac.",
+   "shows": "An old man holds his infant son's tiny hand.",
+   "prompt": "Close view of a very old man's weathered finger held by a newborn baby's tiny hand, soft warm light, upper part of frame.",
+   "image": "02-03-old-father.jpg"
+  },
+  {
+   "verse": 6,
+   "section": "1-7",
+   "principle": "And Sarah said, \"Laughter God has made for me; everyone who hears will laugh with me.\"",
+   "shows": "An old woman laughs with joy holding her baby, others laughing with her.",
+   "prompt": "An elderly woman laughing with open joy holding her baby to her chest, seen from slightly side, near a small plain weathered tan canvas tent on a simple wooden pole frame, a few neighbors beside her laughing too, upper part of frame.",
+   "image": "03-06-laughter.jpg"
+  },
+  {
+   "verse": 8,
+   "section": "8-14",
+   "principle": "And the child grew and was weaned, and Abraham held a great feast on the day Isaac was weaned.",
+   "shows": "A long feast table under the oak with a toddler holding bread.",
+   "prompt": "A small young boy sitting at a long feast table, a loaf of flat bread in both hands, grown-ups laughing around him, all in the upper part of the frame, sunlit under a tree.",
+   "image": "04-08-weaning-feast.jpg"
+  },
+  {
+   "verse": 9,
+   "section": "8-14",
+   "principle": "And Sarah saw the son of Hagar the Egyptian, whom she had borne to Abraham, laughing.",
+   "shows": "A woman watches from a tent door, arms folded, as an older boy plays with a toddler in the yard.",
+   "prompt": "An older woman standing at the door of a small plain weathered tan canvas tent on a simple wooden pole frame with arms folded watching with a hard thoughtful look, in the yard a teenage boy and a toddler playing and laughing, upper part of frame.",
+   "image": "05-09-sarah-watches.jpg"
+  },
+  {
+   "verse": 11,
+   "section": "8-14",
+   "principle": "And the thing was very bad in Abraham's eyes, on account of his son.",
+   "shows": "An old man sits at dusk with his head in his hands.",
+   "prompt": "An old ordinary man sitting on a bench beside a small plain weathered tan canvas tent on a simple wooden pole frame at dusk with his head in his hands, long shadows, upper part of frame, distressed stillness.",
+   "image": "06-11-troubled.jpg"
+  },
+  {
+   "verse": 13,
+   "section": "8-14",
+   "principle": "And the son of the female servant too I will make into a nation, for he is your offspring.\"",
+   "shows": "Two saplings grow side by side, one tall and one small: two nations from one family.",
+   "prompt": "Two young trees growing side by side on a hillside, one larger and one smaller, their branches almost touching, sunrise light, upper part of frame, no people.",
+   "image": "07-13-two-saplings.jpg",
+   "people": false
+  },
+  {
+   "verse": 14,
+   "section": "8-14",
+   "principle": "And Abraham rose early in the morning and took bread and a skin of water and gave them to Hagar, putting them on her shoulder, and he gave her the child and sent her out. And she went and wandered in the wilderness of Beersheba.",
+   "shows": "A loaf and a waterskin sit on a stone ledge at dawn, a hand lifting the skin to a woman's shoulder.",
+   "prompt": "At first dawn light, a round flat loaf of bread and a leather water skin on a stone ledge beside a small plain weathered tan canvas tent on a simple wooden pole frame, an old man's hand lifting the skin, upper part of the frame.",
+   "image": "08-14-bread-skin.jpg"
+  },
+  {
+   "verse": 15,
+   "section": "15-21",
+   "principle": "And the water in the skin ran out, and she threw the child under one of the shrubs.",
+   "shows": "An empty water skin lies on dry ground by a lone shrub in the wilderness.",
+   "prompt": "An empty slack leather water skin on cracked dry ground beside a single scrubby shrub in a vast wilderness at midday, no people, upper part of frame, bleached light.",
+   "image": "09-15-empty-skin.jpg",
+   "people": false
+  },
+  {
+   "verse": 17,
+   "section": "15-21",
+   "principle": "And God heard the voice of the boy, and the angel of God called to Hagar from the heavens and said to her, \"What is the matter, Hagar? Do not be afraid, for God has heard the voice of the boy where he is.",
+   "shows": "A shaft of light falls on a wilderness while a woman lifts her head.",
+   "prompt": "A woman sitting on a rock in a wilderness lifting her head toward a shaft of clear soft light that breaks through cloud above her, seen from behind and far, no face, no figure in the light, upper part of frame.",
+   "image": "10-17-heard.jpg"
+  },
+  {
+   "verse": 19,
+   "section": "15-21",
+   "principle": "And God opened her eyes, and she saw a well of water, and she went and filled the skin with water and gave the boy a drink.",
+   "shows": "A woman kneeling at a well in the wilderness fills a skin, a boy drinks beside her.",
+   "prompt": "A woman kneeling at a plain round well ringed with rough fieldstones with a wooden beam, rope and bucket in a dry wilderness, filling a leather skin with fresh water, a young boy drinking from cupped hands beside her, upper part of the frame.",
+   "image": "11-19-well-opened.jpg"
+  },
+  {
+   "verse": 20,
+   "section": "15-21",
+   "principle": "And God was with the boy, and he grew, and he lived in the wilderness and became an archer, a bowman.",
+   "shows": "A young man draws a bow at a target in the desert.",
+   "prompt": "A young ordinary man drawing a bow at a distant plain wooden target in desert hills in bright sun, the man and target in the upper part of the frame.",
+   "image": "12-20-archer.jpg"
+  },
+  {
+   "verse": 23,
+   "section": "22-34",
+   "principle": "And now, swear to me here by God that you will not deal falsely with me or with my progeny or with my posterity. The same loyalty that I have shown you, you are to show me and the land in which you have stayed.\"",
+   "shows": "Two men face each other with a raised hand, swearing an oath.",
+   "prompt": "Two ordinary men standing face to face on a hillside at dawn, one with his right hand raised in an oath, both serious, upper part of frame, wide flat dry country behind.",
+   "image": "13-23-oath.jpg"
+  },
+  {
+   "verse": 25,
+   "section": "22-34",
+   "principle": "And Abraham rebuked Abimelech over the well of water that Abimelech's servants had seized.",
+   "shows": "Two men argue beside a well; one points at it.",
+   "prompt": "Two ordinary men beside a plain round well ringed with rough fieldstones with a wooden beam, rope and bucket in the afternoon, one pointing firmly at the well, the other holding up his hands in a gesture of not knowing, upper part of frame.",
+   "image": "14-25-well-dispute.jpg"
+  },
+  {
+   "verse": 28,
+   "section": "22-34",
+   "principle": "And Abraham set seven ewe lambs of the flock by themselves.",
+   "shows": "Seven white lambs are set apart in a row on a green slope beside a well.",
+   "prompt": "Seven small white lambs standing apart in a neat row on a green slope on their own, with a flock of grown sheep farther away, upper part of frame, golden light.",
+   "image": "15-28-seven-lambs.jpg",
+   "people": false
+  },
+  {
+   "verse": 33,
+   "section": "22-34",
+   "principle": "And he planted a tamarisk at Beersheba, and there he called on the name of Yahweh, the Everlasting God.",
+   "shows": "A man plants a tamarisk tree by the well at dusk, calling on the Everlasting God.",
+   "prompt": "An old ordinary man seen from behind kneeling to plant a young feathery grey-green tamarisk tree in the earth beside a plain round well ringed with rough fieldstones with a wooden beam, rope and bucket at dusk, upper part of frame.",
+   "image": "16-33-tamarisk.jpg"
+  }
+ ]
+}
