@@ -1,0 +1,10 @@
+{
+  "_about": "Family lists skipped by Story only in Watch and in the Listen page (Obay, 2026-11-28). Verse ranges, first and last verse, of runs of 3 or more verses that hold nothing but names, ages and 'fathered' / 'sons of'. Verses that tell something stay in, and so does a heading like 'These are the generations of Shem' that tells the listener whose list is skipped. \"all\" marks a chapter that is a family list from start to end (skipped whole). The text is never changed: scripts/build.py turns these into times in site/manifest.json, and scripts/notices.py records the spoken notices.",
+  "genesis-5": [[4, 21], [25, 27]],
+  "genesis-10": [[2, 4], [13, 18], [22, 24], [26, 29]],
+  "genesis-11": [[11, 26]],
+  "genesis-25": [[2, 4], [13, 15]],
+  "genesis-35": [[23, 26]],
+  "genesis-36": [[2, 5], [10, 43]],
+  "genesis-46": [[9, 25]]
+}

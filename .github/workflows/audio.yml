@@ -10,7 +10,7 @@ name: Record chapter audio
 on:
   push:
     branches: [main]
-    paths: ["translations/**", "scripts/media.py", "scripts/quran_join.py"]
+    paths: ["translations/**", "scripts/media.py", "scripts/quran_join.py", "data/family_lists.json"]
   schedule:
     - cron: "17 8 * * *"    # 12:17 AM Pacific, just after Gemini's free daily limit resets
     - cron: "23 14 * * *"   # daily catch-up, 6:23 AM Pacific
@@ -64,6 +64,8 @@ jobs:
           for work in bible quran; do
             export WORK=$work
             python3 scripts/build.py
+            # the short notices Story only says where it skips a family list (one request for all that are missing)
+            if [ "$work" = bible ]; then python3 scripts/notices.py || echo "::warning::The family-list notices were not recorded."; fi
             python3 scripts/tts.py --max "${MAX_CHAPTERS:-10}" --strict
             python3 scripts/build.py
           done

@@ -212,6 +212,15 @@ into `site-study/search/`. Each site's search page (`/search/`) searches all thr
 for it: the index is part of the rebuilt site folder it already commits. Never edit those files by hand; if a
 rebase conflicts in them, take main's and rebuild.
 
+# Family lists (Story only)
+
+Watch and the Listen page skip family lists by default (Obay, 2026-11-28): runs of 3 or more verses that are only
+names and ages, marked as verse ranges in `data/family_lists.json`, with a spoken notice ("Skipping 6 verses of
+family names."); a chapter that is only a family list is skipped whole ("Skipping 1 Chronicles chapter 1, a list
+of family names."), even when it is chosen. A "Family lists" switch plays everything; Listen + Read always reads
+every verse. The text is never changed. A Bible run does nothing for it: the chapter's pictures thread marks new
+family lists (TV_PICTURES.md), and the audio Action records missing notices (`scripts/notices.py`).
+
 # Offline reading
 
 Both the Bible and Quran sites work with no connection (Obay, 2026-11-26). Every build writes `offline.js`,
