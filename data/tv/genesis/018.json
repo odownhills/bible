@@ -1,5 +1,5 @@
 {
- "note": "Made by the steps in TV_PICTURES.md (2026-11-28): ? pictures chosen from 40 trial pictures. Wide pictures only (1920x1088). Each scene starts at the first word of its verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. God and the angel are not pictured; Abraham, Sarah, Hagar and the others are only ordinary people of today, seen from behind or small. Fixed recurring objects: Abraham's tent is a small plain weathered tan canvas tent on a simple wooden pole frame; the oak is one huge old oak with a broad gnarled trunk and a wide dark-green crown; the spring (Genesis 16) is a small spring of clear water welling into a shallow stone-rimmed pool in dry stony wilderness; the well is a plain round well ringed with rough fieldstones with a wooden beam, rope and bucket.",
+ "note": "Made by the steps in TV_PICTURES.md (2026-11-28): 20 pictures chosen from 40 trial pictures. Wide pictures only (1920x1088). Each scene starts at the first word of its verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. God and the angel are not pictured; Abraham, Sarah, Hagar and the others are only ordinary people of today, seen from behind or small. Fixed recurring objects: Abraham's tent is a small plain weathered tan canvas tent on a simple wooden pole frame; the oak is one huge old oak with a broad gnarled trunk and a wide dark-green crown; the spring (Genesis 16) is a small spring of clear water welling into a shallow stone-rimmed pool in dry stony wilderness; the well is a plain round well ringed with rough fieldstones with a wooden beam, rope and bucket.",
  "method": "Second method, asked for by Obay on 2026-11-21: (1) split the chapter into sections that each carry one deep meaning; (2) write picture ideas for each; (3) judge them; (4) make the top two for each slot as real pictures and choose by eye.",
  "sections": [
   {
@@ -19,23 +19,14 @@
    "meaning": "Abraham stands before Yahweh and pleads for the righteous in Sodom, from fifty down to ten, then goes home."
   }
  ],
- "scenes": [],
- "candidates": [
+ "scenes": [
   {
    "verse": 1,
    "section": "1-8",
    "principle": "And Yahweh appeared to him among the oaks of Mamre, as he was sitting at the entrance of the tent in the heat of the day.",
    "shows": "Three small travelers walk a road in heat haze toward a lone tent under the oak, an old man sitting at its door.",
    "prompt": "Three ordinary travelers small in the distance walking a shimmering road in the heat of noon toward a small plain weathered tan canvas tent on a simple wooden pole frame under one huge old oak with a broad gnarled trunk and a wide dark-green crown, an old man sitting at the tent's door, hard midday light. The tent and the travelers are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/01-noon-travelers-a.jpg"
-  },
-  {
-   "verse": 1,
-   "section": "1-8",
-   "principle": "And Yahweh appeared to him among the oaks of Mamre, as he was sitting at the entrance of the tent in the heat of the day.",
-   "shows": "Three long shadows stretch across the ground toward a tent in the noon glare.",
-   "prompt": "Three long thin shadows of unseen walkers stretching across hot bare ground toward the entrance of a small plain weathered tan canvas tent on a simple wooden pole frame under one huge old oak with a broad gnarled trunk and a wide dark-green crown, an old man sitting there, white noon glare. The tent and the shadows are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/01-noon-travelers-b.jpg"
+   "image": "01-noon-travelers.jpg"
   },
   {
    "verse": 2,
@@ -43,24 +34,7 @@
    "principle": "And he lifted his eyes and saw, and look, three men were standing near him. And he saw, and he ran from the entrance of the tent to meet them and bowed down to the ground.",
    "shows": "An old man runs across the yard toward the road, arms out, dust rising.",
    "prompt": "An old ordinary man running across a dusty yard with his arms stretched out, dust rising at his feet, toward a road where three travelers stand small and far, a small plain weathered tan canvas tent on a simple wooden pole frame behind him, bright noon light. The man and the tent are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/02-running-a.jpg"
-  },
-  {
-   "verse": 2,
-   "section": "1-8",
-   "principle": "And he lifted his eyes and saw, and look, three men were standing near him. And he saw, and he ran from the entrance of the tent to meet them and bowed down to the ground.",
-   "shows": "An old man bows low to the ground at the edge of the road in front of three standing travelers.",
-   "prompt": "An old man bowing low to the ground at the edge of a dusty road, in front of three ordinary travelers standing seen from behind, bright noon light. The man and the travelers are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/02-running-b.jpg"
-  },
-  {
-   "verse": 4,
-   "section": "1-8",
-   "principle": "Let a little water be fetched, please, and wash your feet, and recline under the tree.",
-   "shows": "Three pairs of dusty sandals beside a clay basin of water under the oak.",
-   "prompt": "Three pairs of dusty sandals set beside a clay basin of clear water and a folded cloth in the shade of one huge old oak with a broad gnarled trunk and a wide dark-green crown, soft dappled light. The sandals, the basin and the tree are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/03-basin-a.jpg"
+   "image": "02-running.jpg"
   },
   {
    "verse": 4,
@@ -68,7 +42,7 @@
    "principle": "Let a little water be fetched, please, and wash your feet, and recline under the tree.",
    "shows": "A hand pours water over dusty feet.",
    "prompt": "A hand pouring clear water from a clay jug over a pair of dusty bare feet into a basin, dappled shade beneath a large tree. The feet and the jug are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/03-basin-b.jpg"
+   "image": "03-basin.jpg"
   },
   {
    "verse": 6,
@@ -76,16 +50,7 @@
    "principle": "And Abraham hurried into the tent to Sarah and said, \"Hurry! Three seahs of flour, fine flour! Knead it and make cakes.\"",
    "shows": "A woman's floury hands knead dough in a hurry at the tent mouth.",
    "prompt": "A woman's floury hands kneading dough quickly on a flat board at the mouth of a small plain weathered tan canvas tent on a simple wooden pole frame, flour dust rising in the light. The hands and the dough are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/04-flour-a.jpg"
-  },
-  {
-   "verse": 6,
-   "section": "1-8",
-   "principle": "And Abraham hurried into the tent to Sarah and said, \"Hurry! Three seahs of flour, fine flour! Knead it and make cakes.\"",
-   "shows": "Fine flour pours from a sack in a white cloud into a bowl.",
-   "prompt": "Fine white flour pouring from a sack in a rising white cloud into a wide clay bowl, bright light. The flour and the bowl are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/04-flour-b.jpg"
+   "image": "04-flour.jpg"
   },
   {
    "verse": 7,
@@ -94,15 +59,7 @@
    "shows": "A tender young calf in fresh green grass looks up, the herd behind it.",
    "prompt": "A tender young calf standing in fresh green grass looking up, the rest of a cattle herd behind it on a green hillside, soft morning light. The calf and the herd are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false,
-   "image": "cand/05-calf-a.jpg"
-  },
-  {
-   "verse": 7,
-   "section": "1-8",
-   "principle": "And to the cattle Abraham ran, and he took a calf, tender and good, and gave it to the young man, and he hurried to prepare it.",
-   "shows": "A man runs across a pasture toward the herd, dust rising.",
-   "prompt": "An ordinary man running across a wide pasture toward a cattle herd, dust rising at his heels, bright light. The man and the herd are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/05-calf-b.jpg"
+   "image": "05-calf.jpg"
   },
   {
    "verse": 8,
@@ -110,16 +67,7 @@
    "principle": "And he took curds and milk and the calf that he had prepared and set them before them, and he was standing by them under the tree, and they ate.",
    "shows": "Three men eat at a low table under the oak, an old man standing off to one side with hands folded.",
    "prompt": "Seen from behind, three ordinary men eating at a low table laid with bread, curds, a bowl of milk and roast meat in the shade of one huge old oak with a broad gnarled trunk and a wide dark-green crown, an old man standing a little aside with his hands folded, dappled light. The table and the men are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/06-table-under-tree-a.jpg"
-  },
-  {
-   "verse": 8,
-   "section": "1-8",
-   "principle": "And he took curds and milk and the calf that he had prepared and set them before them, and he was standing by them under the tree, and they ate.",
-   "shows": "A low table under the oak laid with bread, curds, milk and meat, no one yet seated.",
-   "prompt": "A low plain wooden table in the shade of one huge old oak with a broad gnarled trunk and a wide dark-green crown laid with flat bread, a bowl of curds, a jug of milk and roast meat, dappled light, no one in view. The table and the tree are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/06-table-under-tree-b.jpg"
+   "image": "06-table-under-tree.jpg"
   },
   {
    "verse": 10,
@@ -127,23 +75,7 @@
    "principle": "And he said, \"I will certainly return to you about this time next year, and look, Sarah your wife will have a son.\" Now Sarah was listening at the entrance of the tent, and it was behind him.",
    "shows": "A woman's hand draws a tent flap open a sliver as she listens, the table seen beyond.",
    "prompt": "Inside a small plain weathered tan canvas tent on a simple wooden pole frame, a woman's hand drawing the door flap open only a sliver as she listens, through the gap the shaded table and men seen beyond, soft light. The hand, the flap and the gap are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/07-listening-a.jpg"
-  },
-  {
-   "verse": 10,
-   "section": "9-15",
-   "principle": "And he said, \"I will certainly return to you about this time next year, and look, Sarah your wife will have a son.\" Now Sarah was listening at the entrance of the tent, and it was behind him.",
-   "shows": "A woman half hidden behind the tent pole, listening, with the men at the table far in the background.",
-   "prompt": "A woman half hidden behind the front pole of a small plain weathered tan canvas tent on a simple wooden pole frame, leaning to listen, with men sitting at a low table under one huge old oak with a broad gnarled trunk and a wide dark-green crown far in the background, dappled light. The woman and the tent are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/07-listening-b.jpg"
-  },
-  {
-   "verse": 11,
-   "section": "9-15",
-   "principle": "Now Abraham and Sarah were old, advanced in years; the way of women had stopped for Sarah.",
-   "shows": "Two old wrinkled hands held together on a wooden table.",
-   "prompt": "Two old wrinkled hands, a man's and a woman's, held together on a wooden table, soft warm window light. The hands are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/08-old-hands-a.jpg"
+   "image": "07-listening.jpg"
   },
   {
    "verse": 11,
@@ -151,7 +83,7 @@
    "principle": "Now Abraham and Sarah were old, advanced in years; the way of women had stopped for Sarah.",
    "shows": "An old couple with grey hair sit on a bench seen from behind, facing the sunset.",
    "prompt": "Seen from behind, an old couple with grey hair sitting side by side on a bench facing a sunset over a wide plain, soft golden light. The couple and the sunset are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/08-old-hands-b.jpg"
+   "image": "08-old-hands.jpg"
   },
   {
    "verse": 12,
@@ -159,15 +91,7 @@
    "principle": "And Sarah laughed within herself, saying, \"After I am worn out, am I to have pleasure, when my lord is old?\"",
    "shows": "An old woman half hidden at the tent flap, a quiet private smile on her face.",
    "prompt": "An old woman half hidden at the door flap of a small plain weathered tan canvas tent on a simple wooden pole frame, a quiet private smile on her face, seen in soft shade. The woman and the flap are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/09-laugh-within-a.jpg"
-  },
-  {
-   "verse": 12,
-   "section": "9-15",
-   "principle": "And Sarah laughed within herself, saying, \"After I am worn out, am I to have pleasure, when my lord is old?\"",
-   "shows": "An old woman's hand over her mouth, her eyes laughing.",
-   "prompt": "Close view of an old woman with grey hair holding her hand over her mouth, her eyes crinkled with silent laughter, soft light. The woman's face is in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/09-laugh-within-b.jpg"
+   "image": "09-laugh-within.jpg"
   },
   {
    "verse": 14,
@@ -176,16 +100,7 @@
    "shows": "A green sprout pushes up through the crack of a great boulder in a dry riverbed.",
    "prompt": "A single bright green sprout pushing up through a crack in a great boulder in a dry riverbed, clear light. The boulder and the sprout are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false,
-   "image": "cand/10-too-hard-a.jpg"
-  },
-  {
-   "verse": 14,
-   "section": "9-15",
-   "principle": "Is anything too hard for Yahweh? At the set time I will return to you, about this time next year, and Sarah will have a son.\"",
-   "shows": "A huge heavy stone door stands open by itself with light pouring through.",
-   "prompt": "A huge heavy stone door standing wide open with bright light pouring through the doorway, no one in view, clear light. The door and the light are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/10-too-hard-b.jpg"
+   "image": "10-too-hard.jpg"
   },
   {
    "verse": 15,
@@ -193,15 +108,7 @@
    "principle": "And Sarah denied it, saying, \"I did not laugh,\" for she was afraid. And he said, \"No, you did laugh.\"",
    "shows": "A startled old woman, a hand pressed to her chest, her face turned.",
    "prompt": "Close view of a startled old woman with grey hair, one hand pressed to her chest, her face half turned in fear, in shade at a tent door. The woman is in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/11-denied-a.jpg"
-  },
-  {
-   "verse": 15,
-   "section": "9-15",
-   "principle": "And Sarah denied it, saying, \"I did not laugh,\" for she was afraid. And he said, \"No, you did laugh.\"",
-   "shows": "A tent flap swinging shut with a hand just pulling away.",
-   "prompt": "A tent door flap swinging shut with a woman's hand just pulling away from it, soft shade. The flap and the hand are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/11-denied-b.jpg"
+   "image": "11-denied.jpg"
   },
   {
    "verse": 16,
@@ -209,16 +116,7 @@
    "principle": "And the men rose from there and looked down toward Sodom, and Abraham was walking with them to send them on their way.",
    "shows": "Three men seen from behind on a ridge look down a long valley to a distant plain under dark haze, an old man walking beside them.",
    "prompt": "Seen from behind, three ordinary men standing on a ridge looking down a long valley to a distant plain with far dark hazy towns, an old man walking beside them, no church, no dome, no steeple and no tower of any kind in the towns, afternoon light. The men and the valley are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/12-look-down-a.jpg"
-  },
-  {
-   "verse": 16,
-   "section": "16-21",
-   "principle": "And the men rose from there and looked down toward Sodom, and Abraham was walking with them to send them on their way.",
-   "shows": "A far plain with distant towns under a heavy dark haze, seen from a high ridge.",
-   "prompt": "A far wide plain with distant low towns under a heavy dark haze seen from a high bare ridge, no church, no dome, no steeple and no tower of any kind, late grey light, no one in view. The plain and the haze are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/12-look-down-b.jpg"
+   "image": "12-look-down.jpg"
   },
   {
    "verse": 17,
@@ -226,15 +124,7 @@
    "principle": "Now Yahweh said, \"Am I to hide from Abraham what I am going to do,",
    "shows": "An old man teaching his sons around a fire in the evening, seen from behind.",
    "prompt": "Seen from behind, an old man talking to a ring of young men and boys seated around a small fire in the evening in front of a small plain weathered tan canvas tent on a simple wooden pole frame, firelight on their faces. The group and the fire are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/13-teaching-sons-a.jpg"
-  },
-  {
-   "verse": 17,
-   "section": "16-21",
-   "principle": "Now Yahweh said, \"Am I to hide from Abraham what I am going to do,",
-   "shows": "An old man's finger traces a long road in the dust while a boy watches.",
-   "prompt": "An old man's finger tracing a long straight line in the dust while a boy kneels beside him watching closely, soft evening light. The line and the hands are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/13-teaching-sons-b.jpg"
+   "image": "13-teaching-sons.jpg"
   },
   {
    "verse": 20,
@@ -243,24 +133,7 @@
    "shows": "A far city under a black smoky haze, one thin shaft of light reaching down to it.",
    "prompt": "A far city of low plain buildings, no church, no dome, no steeple and no tower of any kind, under a heavy black smoky haze, one thin shaft of light breaking through the clouds down onto it, no one in view. The city and the haze are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false,
-   "image": "cand/14-outcry-a.jpg"
-  },
-  {
-   "verse": 20,
-   "section": "16-21",
-   "principle": "And Yahweh said, \"The outcry of Sodom and Gomorrah is great indeed, and their sin is very heavy indeed.",
-   "shows": "A heavy dark cloud pressing low over the far plain.",
-   "prompt": "A heavy dark storm cloud pressing low over a far wide plain with small distant lights below it, no one in view, dramatic light. The cloud and the plain are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/14-outcry-b.jpg"
-  },
-  {
-   "verse": 22,
-   "section": "22-33",
-   "principle": "And the men turned from there and went toward Sodom, and Abraham was still standing before Yahweh.",
-   "shows": "An old man stands alone on a hilltop facing the setting sun, small in the frame, palms open.",
-   "prompt": "An old man standing alone on a bare hilltop facing a huge setting sun, small in the wide frame, his palms open at his sides, seen from behind, warm light. The man and the sun are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/15-stands-before-a.jpg"
+   "image": "14-outcry.jpg"
   },
   {
    "verse": 22,
@@ -268,7 +141,7 @@
    "principle": "And the men turned from there and went toward Sodom, and Abraham was still standing before Yahweh.",
    "shows": "An old man steps forward with open palms toward a bright empty horizon.",
    "prompt": "Seen from behind, an old man stepping forward on a bare ridge with open palms toward a bright empty horizon, soft light. The man and the horizon are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/15-stands-before-b.jpg"
+   "image": "15-stands-before.jpg"
   },
   {
    "verse": 23,
@@ -277,16 +150,7 @@
    "shows": "A balance scale held level with white stones on one side and dark stones on the other.",
    "prompt": "A simple old balance scale held perfectly level, white stones in one pan and dark stones in the other, on a plain table, clear light. The scale is in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false,
-   "image": "cand/16-scale-a.jpg"
-  },
-  {
-   "verse": 23,
-   "section": "22-33",
-   "principle": "And Abraham approached and said, \"Will you really sweep away the righteous with the wicked?",
-   "shows": "A single white stone lying among many dark stones.",
-   "prompt": "One single white stone lying among many dark stones on the ground, close view, clear light. The stones are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/16-scale-b.jpg"
+   "image": "16-scale.jpg"
   },
   {
    "verse": 26,
@@ -295,16 +159,7 @@
    "shows": "A long row of fifty small lit lanterns along a wall at dusk.",
    "prompt": "A very long row of small lit lanterns lined up along a stone wall at dusk, fifty of them, all burning, deep blue sky. The lanterns and the wall are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false,
-   "image": "cand/17-fifty-lanterns-a.jpg"
-  },
-  {
-   "verse": 26,
-   "section": "22-33",
-   "principle": "And Yahweh said, \"If I find in Sodom fifty righteous people inside the city, I will forgive the whole place because of them.\"",
-   "shows": "A broad dark street with fifty small lights in its windows.",
-   "prompt": "A broad dark street at night with many small lights burning in the windows of low plain houses, no church, no dome, no steeple and no tower of any kind. The street and the lights are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/17-fifty-lanterns-b.jpg"
+   "image": "17-fifty-lanterns.jpg"
   },
   {
    "verse": 27,
@@ -312,15 +167,7 @@
    "principle": "And Abraham answered and said, \"Look now, I have taken it on myself to speak to the Lord, though I am dust and ashes.",
    "shows": "An old man's open hands let a pinch of dust and ash fall.",
    "prompt": "An old man's weathered open hands letting a pinch of grey dust and ash fall through his fingers, close view, soft light. The hands and the ash are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/18-dust-ashes-a.jpg"
-  },
-  {
-   "verse": 27,
-   "section": "22-33",
-   "principle": "And Abraham answered and said, \"Look now, I have taken it on myself to speak to the Lord, though I am dust and ashes.",
-   "shows": "An old man kneeling on bare ground with dust on his hands, seen from behind.",
-   "prompt": "Seen from behind, an old man kneeling on bare ground with dust on his open hands, a wide dusk landscape beyond. The man is in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/18-dust-ashes-b.jpg"
+   "image": "18-dust-ashes.jpg"
   },
   {
    "verse": 32,
@@ -329,16 +176,7 @@
    "shows": "Only ten small lit lanterns on a long dark wall full of unlit ones.",
    "prompt": "A long dark stone wall lined with many unlit lanterns, and only ten small lanterns in a row burning among them, deep blue dusk. The lanterns are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
    "people": false,
-   "image": "cand/19-ten-lanterns-a.jpg"
-  },
-  {
-   "verse": 32,
-   "section": "22-33",
-   "principle": "And he said, \"Please let the Lord not be angry, and let me speak only this once. Perhaps ten will be found there.\" And he said, \"I will not ruin it, because of the ten.\"",
-   "shows": "A broad dark street with only ten faint lights left in its windows.",
-   "prompt": "A broad dark street at night with only ten faint lights left burning in all the windows of low plain houses, the rest dark, no church, no dome, no steeple and no tower of any kind. The street and the lights are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/19-ten-lanterns-b.jpg"
+   "image": "19-ten-lanterns.jpg"
   },
   {
    "verse": 33,
@@ -346,16 +184,7 @@
    "principle": "And Yahweh went away when he had finished speaking to Abraham, and Abraham returned to his place.",
    "shows": "An old man seen from behind walks home slowly at dusk toward his lit tent under the oak.",
    "prompt": "Seen from behind, an old man walking slowly home along a worn path at dusk toward a small plain weathered tan canvas tent on a simple wooden pole frame under one huge old oak with a broad gnarled trunk and a wide dark-green crown with a warm lamp glowing inside, deep blue sky. The man and the tent are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "image": "cand/20-going-home-a.jpg"
-  },
-  {
-   "verse": 33,
-   "section": "22-33",
-   "principle": "And Yahweh went away when he had finished speaking to Abraham, and Abraham returned to his place.",
-   "shows": "An empty hilltop with a long path down to a lit tent under the oak.",
-   "prompt": "An empty hilltop at dusk with a long worn path winding down to a small plain weathered tan canvas tent on a simple wooden pole frame under one huge old oak with a broad gnarled trunk and a wide dark-green crown with a warm lamp glowing inside, deep blue sky, no one in view. The hilltop and the tent are in the upper part of the frame. The subject and every important detail are in the upper part of the frame.  The important part is in the upper half of the picture; the lower part is plain foreground.",
-   "people": false,
-   "image": "cand/20-going-home-b.jpg"
+   "image": "20-going-home.jpg"
   }
  ]
 }
