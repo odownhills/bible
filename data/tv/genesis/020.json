@@ -1,0 +1,225 @@
+{
+ "note": "Made by the steps in TV_PICTURES.md (2026-11-28). Wide pictures only (1920x1088). Each scene starts at the first word of its verse. The important part of every picture sits in the upper 60% of the frame, clear of the word box. God and the angels are not pictured; Abraham, Sarah, Lot, Hagar, Abimelech and the others are only ordinary people of today, seen from behind, small, or as hands. Fixed recurring objects: Abraham's tent is a small plain weathered tan canvas tent on a simple wooden pole frame; the oak is one huge old oak with a broad gnarled trunk and a wide dark-green crown; Abimelech's town is a walled town of plain flat-roofed pale stone houses with a heavy timber gate, no church, no dome, no steeple and no tower of any kind; the king's hall is a plain large room of pale stone with a long wooden table.",
+ "method": "Second method, asked for by Obay on 2026-11-21: (1) split the chapter into sections that each carry one deep meaning; (2) write picture ideas for each; (3) judge them; (4) make the top two for each slot as real pictures and choose by eye.",
+ "sections": [
+  {
+   "verses": "1-2",
+   "meaning": "Abraham moves to Gerar and says of Sarah, 'She is my sister', and Abimelech takes her."
+  },
+  {
+   "verses": "3-7",
+   "meaning": "God warns Abimelech in a dream that the woman is married and that Abraham, a prophet, will pray for him."
+  },
+  {
+   "verses": "8-13",
+   "meaning": "Abimelech tells his servants, then confronts Abraham, who explains his fear and half-truth."
+  },
+  {
+   "verses": "14-18",
+   "meaning": "Abimelech gives Sarah back with flocks and silver; Abraham prays, and God heals Abimelech's household."
+  }
+ ],
+ "scenes": [],
+ "candidates": [
+  {
+   "verse": 1,
+   "section": "1-2",
+   "principle": "And Abraham traveled from there to the land of the Negev, and he lived between Kadesh and Shur, and he stayed in Gerar.",
+   "shows": "A man leads a flock and a tent camp south across dry land.",
+   "prompt": "Seen from a distance, a small traveling household with a flock of sheep moving south over dry rolling Negev scrubland under a huge sky, a rolled a small plain weathered tan canvas tent on a simple wooden pole frame on a donkey, in the upper part of the frame.",
+   "image": "cand/01-01-journey-a.jpg"
+  },
+  {
+   "verse": 1,
+   "section": "1-2",
+   "principle": "And Abraham traveled from there to the land of the Negev, and he lived between Kadesh and Shur, and he stayed in Gerar.",
+   "shows": "A man leads a flock and a tent camp south across dry land.",
+   "prompt": "An old ordinary man seen from behind leading a donkey with a rolled tent along a faint track through dry sunlit desert scrub toward a distant pale walled town, upper part of frame.",
+   "image": "cand/01-01-journey-b.jpg"
+  },
+  {
+   "verse": 2,
+   "section": "1-2",
+   "principle": "And Abraham said of Sarah his wife, \"She is my sister.\" And Abimelech king of Gerar sent and took Sarah.",
+   "shows": "A man whispers anxiously to a woman at a town gate.",
+   "prompt": "Seen from behind and slightly side, an anxious older ordinary man bending close to whisper to his wife at the gate of a walled town of plain flat-roofed pale stone houses with a heavy timber gate, no church, no dome, no steeple and no tower of any kind, his hand half raised near his mouth, soft daylight, upper part of frame.",
+   "image": "cand/02-02-whisper-a.jpg"
+  },
+  {
+   "verse": 2,
+   "section": "1-2",
+   "principle": "And Abraham said of Sarah his wife, \"She is my sister.\" And Abimelech king of Gerar sent and took Sarah.",
+   "shows": "A man whispers anxiously to a woman at a town gate.",
+   "prompt": "Close view of an older man's hand covering his own mouth, a woman standing next to him blurred, plain stone wall behind, worry in the posture, soft daylight.",
+   "image": "cand/02-02-whisper-b.jpg"
+  },
+  {
+   "verse": 2,
+   "section": "1-2",
+   "principle": "And Abraham said of Sarah his wife, \"She is my sister.\" And Abimelech king of Gerar sent and took Sarah.",
+   "shows": "A lone man stands at an empty tent door watching a distant dust cloud leave on the road.",
+   "prompt": "An old ordinary man standing alone at the open door of a small plain weathered tan canvas tent on a simple wooden pole frame watching a column of horsemen and a cart go away in a rising dust cloud along a road toward a walled town far away, upper part of frame.",
+   "image": "cand/03-02b-taken-a.jpg",
+   "people": false
+  },
+  {
+   "verse": 2,
+   "section": "1-2",
+   "principle": "And Abraham said of Sarah his wife, \"She is my sister.\" And Abimelech king of Gerar sent and took Sarah.",
+   "shows": "A lone man stands at an empty tent door watching a distant dust cloud leave on the road.",
+   "prompt": "An empty woven stool beside a cold fire ring before a small plain weathered tan canvas tent on a simple wooden pole frame, an open tent flap, far away down the road a dust cloud, no people visible, evening light.",
+   "image": "cand/03-02b-taken-b.jpg",
+   "people": false
+  },
+  {
+   "verse": 3,
+   "section": "3-7",
+   "principle": "And God came to Abimelech in a dream by night and said to him, \"Look, you are about to die because of the woman you have taken, for she is a married woman.\"",
+   "shows": "A man sleeps while a soft bright light fills the dark room, no figure.",
+   "prompt": "A man asleep in a plain large bed in a dark stone room, a soft bright pure white-gold light entering through the window and filling the room, no figure in the light, upper part of frame.",
+   "image": "cand/04-03-dream-a.jpg"
+  },
+  {
+   "verse": 3,
+   "section": "3-7",
+   "principle": "And God came to Abimelech in a dream by night and said to him, \"Look, you are about to die because of the woman you have taken, for she is a married woman.\"",
+   "shows": "A man sleeps while a soft bright light fills the dark room, no figure.",
+   "prompt": "A man sitting up in bed at night in a dark room, hands on knees, anxious, a beam of pale moonlight across the floor and a bright glow from the window behind him, no figure in the light.",
+   "image": "cand/04-03-dream-b.jpg"
+  },
+  {
+   "verse": 5,
+   "section": "3-7",
+   "principle": "Did he not himself say to me, 'She is my sister'? And she herself also said, 'He is my brother.' In the blamelessness of my heart and the innocence of my palms I did this.\"",
+   "shows": "Two open empty palms held out.",
+   "prompt": "Close view of two open, empty, clean palms held out in a gesture of innocence against a soft dark background of a stone room, golden window light.",
+   "image": "cand/05-05-palms-a.jpg"
+  },
+  {
+   "verse": 5,
+   "section": "3-7",
+   "principle": "Did he not himself say to me, 'She is my sister'? And she herself also said, 'He is my brother.' In the blamelessness of my heart and the innocence of my palms I did this.\"",
+   "shows": "Two open empty palms held out.",
+   "prompt": "Seen from slightly above, a man standing with open palms facing up before a dark window glowing with first light, upper part of frame, quiet.",
+   "image": "cand/05-05-palms-b.jpg"
+  },
+  {
+   "verse": 8,
+   "section": "8-13",
+   "principle": "And Abimelech rose early in the morning and called all his servants and spoke all these words in their ears, and the men were very afraid.",
+   "shows": "A row of servants stand pale and afraid in a stone hall at dawn.",
+   "prompt": "A row of ordinary servants standing close together in a pale stone hall at dawn with pale frightened faces, a man speaking to them from the far end, all in the upper part of the frame.",
+   "image": "cand/06-08-servants-afraid-a.jpg"
+  },
+  {
+   "verse": 8,
+   "section": "8-13",
+   "principle": "And Abimelech rose early in the morning and called all his servants and spoke all these words in their ears, and the men were very afraid.",
+   "shows": "A row of servants stand pale and afraid in a stone hall at dawn.",
+   "prompt": "A ruler standing before a small crowd of his household in a plain stone courtyard at dawn, speaking, the crowd with hands over their mouths in fear, upper part of frame.",
+   "image": "cand/06-08-servants-afraid-b.jpg"
+  },
+  {
+   "verse": 9,
+   "section": "8-13",
+   "principle": "And Abimelech called Abraham and said to him, \"What have you done to us? And how have I sinned against you, that you have brought on me and on my kingdom a great sin? Deeds that are not done you have done to me.\"",
+   "shows": "Two men face each other across a table, one with open hands in anger, the other looking down.",
+   "prompt": "Two ordinary men at a long plain wooden table in a stone hall, one standing leaning on the table with open questioning hands, the other, an older man, sitting looking down at his hands, upper part of frame.",
+   "image": "cand/07-09-confront-a.jpg"
+  },
+  {
+   "verse": 9,
+   "section": "8-13",
+   "principle": "And Abimelech called Abraham and said to him, \"What have you done to us? And how have I sinned against you, that you have brought on me and on my kingdom a great sin? Deeds that are not done you have done to me.\"",
+   "shows": "Two men face each other across a table, one with open hands in anger, the other looking down.",
+   "prompt": "Close view across a wooden table: one man's pointing hand toward another man's lowered head, a lamp between them, the older man turned away, stone wall behind.",
+   "image": "cand/07-09-confront-b.jpg"
+  },
+  {
+   "verse": 12,
+   "section": "8-13",
+   "principle": "And besides, she truly is my sister, the daughter of my father, only not the daughter of my mother, and she became my wife.",
+   "shows": "Two figures walk side by side, one half hidden by the other, a half-true story.",
+   "prompt": "A half-lit stone wall with a man's long shadow and a woman's shadow beside it, two shadows only, half in light and half in dark, no people visible, upper part of frame.",
+   "image": "cand/08-12-half-sister-a.jpg",
+   "people": false
+  },
+  {
+   "verse": 12,
+   "section": "8-13",
+   "principle": "And besides, she truly is my sister, the daughter of my father, only not the daughter of my mother, and she became my wife.",
+   "shows": "Two figures walk side by side, one half hidden by the other, a half-true story.",
+   "prompt": "Two old coins half in light and half in shadow lying on a plain wooden table, no people visible, soft side light.",
+   "image": "cand/08-12-half-sister-b.jpg",
+   "people": false
+  },
+  {
+   "verse": 14,
+   "section": "14-18",
+   "principle": "And Abimelech took flocks and cattle and male slaves and female slaves and gave them to Abraham, and he gave Sarah his wife back to him.",
+   "shows": "Flocks and cattle are led out of a gate and a woman is given back to a man's outstretched hand.",
+   "prompt": "A man's outstretched hand receiving a woman's hand from another man's hand at the gate of a walled town of plain flat-roofed pale stone houses with a heavy timber gate, no church, no dome, no steeple and no tower of any kind, a flock of sheep and cattle being led out through the gate behind, upper part of frame.",
+   "image": "cand/09-14-gifts-a.jpg"
+  },
+  {
+   "verse": 14,
+   "section": "14-18",
+   "principle": "And Abimelech took flocks and cattle and male slaves and female slaves and gave them to Abraham, and he gave Sarah his wife back to him.",
+   "shows": "Flocks and cattle are led out of a gate and a woman is given back to a man's outstretched hand.",
+   "prompt": "Seen from a distance, sheep and cattle streaming out of the heavy gate of a walled town of plain flat-roofed pale stone houses with a heavy timber gate, no church, no dome, no steeple and no tower of any kind onto a sunlit road in warm dust, a small group of people waiting for them, upper part of frame.",
+   "image": "cand/09-14-gifts-b.jpg"
+  },
+  {
+   "verse": 16,
+   "section": "14-18",
+   "principle": "And to Sarah he said, \"Look, I have given a thousand pieces of silver to your brother. Look, it is for you a covering of the eyes for all who are with you, and with everyone you are cleared.\"",
+   "shows": "A leather pouch of silver on a table next to a folded veil.",
+   "prompt": "A heavy leather pouch of silver pieces spilling a few coins on a plain wooden table beside a folded plain cloth veil, soft window light, no people.",
+   "image": "cand/10-16-silver-a.jpg",
+   "people": false
+  },
+  {
+   "verse": 16,
+   "section": "14-18",
+   "principle": "And to Sarah he said, \"Look, I have given a thousand pieces of silver to your brother. Look, it is for you a covering of the eyes for all who are with you, and with everyone you are cleared.\"",
+   "shows": "A leather pouch of silver on a table next to a folded veil.",
+   "prompt": "A woman's veiled head seen from behind in soft light as a man gives her a leather pouch of silver, close view, plain stone wall, upper part of frame.",
+   "image": "cand/10-16-silver-b.jpg",
+   "people": false
+  },
+  {
+   "verse": 17,
+   "section": "14-18",
+   "principle": "And Abraham prayed to God, and God healed Abimelech and his wife and his female servants, and they bore children.",
+   "shows": "A man kneels and prays under an open sky while a household watches.",
+   "prompt": "An old ordinary man kneeling with his hands open and his head bowed at the edge of a field under a huge evening sky, a small household standing at a respectful distance behind him, upper part of frame.",
+   "image": "cand/11-17-prayer-a.jpg"
+  },
+  {
+   "verse": 17,
+   "section": "14-18",
+   "principle": "And Abraham prayed to God, and God healed Abimelech and his wife and his female servants, and they bore children.",
+   "shows": "A man kneels and prays under an open sky while a household watches.",
+   "prompt": "A small sunlit cradle with a sleeping newborn in a plain stone house, morning light through a window, a mother's hand resting on it, upper part of frame.",
+   "image": "cand/11-17-prayer-b.jpg"
+  },
+  {
+   "verse": 18,
+   "section": "14-18",
+   "principle": "For Yahweh had completely held back every womb of Abimelech's household, over the matter of Sarah, Abraham's wife.",
+   "shows": "A row of empty cradles in a quiet house.",
+   "prompt": "A row of empty plain wooden cradles in a quiet stone room, soft grey light through one window, no people, upper part of frame.",
+   "image": "cand/12-18-empty-cradles-a.jpg",
+   "people": false
+  },
+  {
+   "verse": 18,
+   "section": "14-18",
+   "principle": "For Yahweh had completely held back every womb of Abimelech's household, over the matter of Sarah, Abraham's wife.",
+   "shows": "A row of empty cradles in a quiet house.",
+   "prompt": "A quiet courtyard with an empty swing and unused toys beside a closed door, grey morning light, no people.",
+   "image": "cand/12-18-empty-cradles-b.jpg",
+   "people": false
+  }
+ ]
+}
