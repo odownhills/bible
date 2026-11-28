@@ -2356,3 +2356,9 @@ closed. Close calls go in the chapter's decision log instead.
 - mashakh with a person as its object (24:22) "drag away" [alt: prolong the life of] (decision log, call: ask); it is "follow after" at 21:33. abbirim "the mighty": it shares its English with kabbir and ammits. lo he'emin bachayyin (24:22; Deut 28:66) "not be sure of life".
 - hummakh (24:24) "be brought low": it shares its English with tsa'ar (14:21). niqpats (24:24; only here) "be shut away", beside qafats "shut" (5:16). rosh shibbolet "the head of an ear of grain".
 - hikhziv (24:25) "prove a liar", beside kizzev "lie" (6:28). sim le'al "turn into nothing", as sim X le-Y (17:12).
+
+## Settled in Job 25
+- hamshel (25:2; the form only here as a noun) "dominion", beside mashal "govern". asah shalom "make peace". meromav (25:2) "his heights": marom with a suffix; without one it stays "on high" (5:11; 16:19). It shares its English with bamot (9:8).
+- hayesh mispar le- (25:3) "Is there any number to". qum al of light (25:3) "rise on" [alt: the old Greek "ambush"] (decision log, call: close).
+- 25:4 repeats 9:2 and 15:14, and 25:5b repeats 15:15b, and the English repeats them. ad before a noun (25:5) "even". yareach "moon", as at Gen 37:9. he'ehil (25:5; only here) "shine": a spelling of hehel (29:3; 31:26; 41:18), as Isa 13:10 and 13:20 show the two spellings crossing.
+- rimmah of one creature (25:6) "a maggot"; tole'ah "a worm", as the Job 7 line planned. In 25:6 "who is" is supplied twice. ben-adam "a human being", as at 16:21.
