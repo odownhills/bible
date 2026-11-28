@@ -6,8 +6,9 @@ Whole chapters are added every day, in the order of the English Bible, Genesis 1
 takes the first chapters that are not translated yet (Obay, 2026-11-23: "start from beginning of Bible and
 continue in order"; that began at Genesis 6). Chapters done earlier out of order are passed over when the
 run reaches them: Deuteronomy 5, Job 1 to 21, John 1 to 6, 1 John and Jude.
-(Books listed in `"first_books"` in `data/settings.json` would come before the rest; the list is empty now.
-Only Obay changes the order.)
+(Books listed in `"first_books"` in `data/settings.json` come before the rest. Obay, 2026-11-27, with Genesis
+done: "Finish Job and then go back to Exodus and continue forward", so the list is Job now: Job 22 to 42,
+then Exodus 1 onward. Only Obay changes the order.)
 Accuracy matters more than speed.
 (The Quran is a separate translation and site built from this repository: see "Quran" below.
 Bible runs leave it alone. So is the study site, which analyzes the Bible's chapters: see "Study site" at the end.)
