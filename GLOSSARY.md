@@ -2362,3 +2362,16 @@ closed. Close calls go in the chapter's decision log instead.
 - hayesh mispar le- (25:3) "Is there any number to". qum al of light (25:3) "rise on" [alt: the old Greek "ambush"] (decision log, call: close).
 - 25:4 repeats 9:2 and 15:14, and 25:5b repeats 15:15b, and the English repeats them. ad before a noun (25:5) "even". yareach "moon", as at Gen 37:9. he'ehil (25:5; only here) "shine": a spelling of hehel (29:3; 31:26; 41:18), as Isa 13:10 and 13:20 show the two spellings crossing.
 - rimmah of one creature (25:6) "a maggot"; tole'ah "a worm", as the Job 7 line planned. In 25:6 "who is" is supplied twice. ben-adam "a human being", as at 16:21.
+
+## Settled in Job 26
+- azar "help", beside ezrah (6:13); ya'ats (26:3) "counsel", beside etsah. larov (26:3) "in abundance": it shares its English with shif'ah (22:11). higgid et (26:4) "tell to" [alt: with whose help] (decision log, call: close).
+- refa'im of those in Sheol (26:5; Ps 88:10; Prov 9:18; Isa 14:9; 26:14) "the dead" [alt at 26:5: the Rephaim] (decision log, call: clear): it shares its English with metim; the people stay "the Rephaim" (Gen 14:5). yecholalu (26:5) "writhe", as hitcholel (15:20).
+- Avaddon (26:6; 28:22; 31:12) "Abaddon": a name, as English has it, like Sheol. we'en kesut "and there is no covering", as at 24:7.
+- tsafon "the north". tohu beside "nothing" (26:7) "the waste", as at 6:18. talah al "hang on", as at Gen 40:19; beli-mah (only here) "nothing".
+- tsarar with water as its object (26:8; Prov 30:4) "wrap up". avim beside anan (26:8) "thick clouds", as the Job 20 line allowed. nivqa of a cloud "burst", as at Gen 7:11.
+- ichez (the piel of achaz; 26:9, only here) "close off" (Neh 7:3). kisseh (26:9) "throne" [alt: full moon] (decision log, call: close). parshez (only here) "spread".
+- choq beside takhlit (26:10) "boundary": it shares its English with gevul (24:2); takhlit stays "limit" (11:7). chag (only here) "draw a circle", beside chug "circle" (22:14).
+- rofaf (26:11; only here) "quake". tamah min "be astonished at", as at Gen 43:33. ga'arah "rebuke", beside ga'ar (Gen 37:10).
+- raga with the sea as its object (26:12; Isa 51:15) "stir up" [alt: still] (decision log, call: ask). machats stays "wound" (5:18).
+- ruach (26:13) "wind" [alt: spirit] (decision log, call: close). shifrah (only here) "fair", beside shefer (Gen 49:21). cholel with yad as its subject (26:13; Isa 51:9) "pierce" [alt: bring forth] (decision log, call: close): it shares its English with chalaf (20:24). nachash bariach (26:13; Isa 27:1) "the fleeing snake".
+- qetsot (26:14) "edges", as qetseh (Gen 23:9). ra'am "thunder". hitbonen of what cannot be looked at (26:14) "understand", so that it is heard with tevunah "understanding" (26:12); elsewhere it stays "look closely (at)" (11:11).
